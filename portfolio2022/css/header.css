@@ -1,0 +1,74 @@
+body,div, p, a, ul, li, strong, h1, h2, h3, h4{margin: 0;padding: 0;box-sizing: border-box;}
+body{overflow-x: hidden;}
+li{list-style: none;}
+a{all: unset;}
+a:link {text-decoration: none;color: #3f464d;cursor:pointer;}
+
+.intro{
+    background-color: #eaf1f4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+.intro .header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro .header .logo{
+    width: 10vw;
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.intro .header .navi{
+    line-height: 1.5vw;
+}
+
+.intro .header .year{
+    position: absolute;
+    right: 0;
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+.intro .title{
+    font-size: 6vw;
+    line-height: 6vw;
+}
+
+.intro .contents{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: 'Roboto', sans-serif;
+}
+
+.intro .contents .contact{
+    width: 30vw;
+}
+.intro .contents .wai{
+    text-align: right;
+   width: 100%;
+}
+
+.intro .contents strong{
+    color:#ff7e0c;
+    line-height: 2vw;
+}
+
+.intro .contents p{
+    font-size: 0.8vw;
+    font-family: 'Noto Sans KR', sans-serif;
+}
