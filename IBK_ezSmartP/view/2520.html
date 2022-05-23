@@ -1,0 +1,225 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 101.97px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">계좌조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e4" style="left: 0px; top: 101.97px; width: auto; height: 91.38px; right: 0px; bottom: auto; z-index: 1; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-w="1280" dock-h="91" dock-r="left:0px;top:92px;width:1280px;height:112px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_subTitle" ui-class="UILabel"><span class="ui-content">거래내역조회</span></span><span class="ui-control ui-label" id="ui-172e5840fb8" style="left: 257px; top: 28px; width: 120px; height: 32px; right: auto; bottom: auto; color: rgb(191, 191, 191); font-size: 20px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_divider" ui-class="UILabel"><span class="ui-content">|</span></span><span class="ui-control ui-label" id="ui-172e587fc7b" style='left: 280px; top: 17px; width: 619px; height: 32px; right: auto; bottom: auto; font-family: "IBKIDreamL", "IBK iDream L", sans-serif; font-size: 21px; z-index: 2;' anchor="0b0101" dock="0" ui-id="LB_subTitleInfo1" ui-class="UILabel"><span class="ui-content">2013년 1월 1일 이후부터 현재까지 거래내역을 조회할 수 있습니다.</span></span><span class="ui-control ui-label" id="ui-172e5899b3d" style='left: 280px; top: 44px; width: 619px; height: 32px; right: auto; bottom: auto; font-family: "IBKIDreamL", "IBK iDream L", sans-serif; font-size: 21px; z-index: 3;' anchor="0b0101" dock="0" ui-id="LB_subTitleInfo2" ui-class="UILabel"><span class="ui-content">한번에 최대 1년까지 조회할 수 있습니다.</span></span><span class="ui-control ui-label" id="ui-172e8c639f3" style='left: 648px; top: 44px; width: 619px; height: 32px; right: auto; bottom: auto; color: rgb(255, 113, 69); font-family: "IBKIDreamL", "IBK iDream L", sans-serif; font-size: 21px; z-index: 4;' anchor="0b0101" dock="0" ui-id="LB_subTitleInfo3" ui-class="UILabel"><span class="ui-content">최근 10년 거래내역은 창구를 방문해주세요.</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a4b083a4" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2; background-color: transparent;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-171a4b083a5" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">조회</span></span><span class="ui-control ui-button theme-orange" id="ui-171a4b083a6" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">닫기</span></span></div><span class="ui-control ui-label" id="ui-1721784f6b1" style='left: 78px; top: 252px; width: 494px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 3;' anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content">계좌조회</span></span><div class="ui-control ui-panel ui-container" id="ui-17225659336" style="left: 78px; top: 363px; width: 1085px; height: 521px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="PN_accountList" ui-class="UIPanel"></div><span class="ui-control ui-scrollbar" id="ui-1721787f7d3" style="left: 1209px; top: 363px; width: 32px; height: 521px; right: auto; bottom: auto; z-index: 5;" anchor="0b0101" dock="0" ui-id="SB_scrollbar1" ui-class="UIScrollBar" scroll-control-id="PN_accountList"><span class="track"></span><span class="trackbutton" style="top: 0px;"></span></span><span class="ui-control ui-datepicker" id="ui-172e8dea45a" style="left: 606px; top: 287px; width: 250px; height: 54px; right: auto; bottom: auto; z-index: 6;" anchor="0b0101" dock="0" ui-id="DP_dateFrom" ui-class="UIDatePicker" tick="1593010800000"><span class="ui-content">2020-06-25</span><span class="ui-icon-image"></span></span><span class="ui-control ui-datepicker" id="ui-172e8df42f9" style="left: 912px; top: 287px; width: 250px; height: 54px; right: auto; bottom: auto; z-index: 7;" anchor="0b0101" dock="0" ui-id="DP_dateTo" ui-class="UIDatePicker" tick="1593010800000"><span class="ui-content">2020-06-25</span><span class="ui-icon-image"></span></span><span class="ui-control ui-label" id="ui-172e8e03b04" style="left: 878px; top: 299px; width: 18px; height: 32px; right: auto; bottom: auto; color: rgb(191, 191, 191); font-size: 20px; z-index: 8;" anchor="0b0101" dock="0" ui-id="LB_label9" ui-class="UILabel"><span class="ui-content">~</span></span><div class="ui-control ui-panel ui-container" id="ui-172e8e56e82" style="left: 606px; top: 223px; width: 560px; height: 58px; right: auto; bottom: auto; z-index: 9;" anchor="0b0101" dock="0" ui-id="PN_selectMonth" ui-class="UIPanel"><span class="ui-control ui-button" id="ui-172e8e42e5e" style="border-radius: 27px; border: 2px solid rgb(181, 181, 181); border-image: none; left: 106px; top: 0px; width: 94px; height: 54px; right: auto; bottom: auto; color: black; font-size: 18px; z-index: 0;" anchor="0b0101" dock="0" ui-id="BT_button3" ui-class="UIButton" theme=""><span class="ui-content">1개월</span></span><span class="ui-control ui-button" id="ui-172e8e2664a" style="border-radius: 27px; border: 2px solid rgb(181, 181, 181); border-image: none; left: 0px; top: 0px; width: 94px; height: 54px; right: auto; bottom: auto; color: black; font-size: 18px; z-index: 1;" anchor="0b0101" dock="0" ui-id="BT_button2" ui-class="UIButton" theme=""><span class="ui-content">1주일</span></span><span class="ui-control ui-button" id="ui-172e8fcaad3" style="border-radius: 27px; border: 2px solid rgb(181, 181, 181); border-image: none; left: 212px; top: 0px; width: 94px; height: 54px; right: auto; bottom: auto; color: black; font-size: 18px; z-index: 2;" anchor="0b0101" dock="0" ui-id="BT_button4" ui-class="UIButton" theme=""><span class="ui-content">3개월</span></span><span class="ui-control ui-button" id="ui-172e8fcdeb5" style="border-radius: 27px; border: 2px solid rgb(181, 181, 181); border-image: none; left: 318px; top: 0px; width: 94px; height: 54px; right: auto; bottom: auto; color: black; font-size: 18px; z-index: 3;" anchor="0b0101" dock="0" ui-id="BT_button5" ui-class="UIButton" theme=""><span class="ui-content">6개월</span></span><span class="ui-control ui-button" id="ui-172e8fd1d53" style="border-radius: 27px; border: 2px solid rgb(181, 181, 181); border-image: none; left: 424px; top: 0px; width: 94px; height: 54px; right: auto; bottom: auto; color: black; font-size: 18px; z-index: 4;" anchor="0b0101" dock="0" ui-id="BT_button6" ui-class="UIButton" theme=""><span class="ui-content">1년</span></span></div><span class="ui-control ui-textbox" id="ui-1734683a2fe" style="border-color: rgb(205, 205, 205); left: 78px; top: 287px; width: 494px; height: 54px; right: auto; bottom: auto; font-size: 22px; z-index: 10;" anchor="0b0101" dock="0" ui-id="TB_accountNumber" ui-class="UITextBox"><span><input class="ui-input" type="text" maxlength="32767"></span></span><div class="ui-control ui-panel ui-container" id="ui-17226d717c1" style="left: 228px; top: 460px; width: 800px; height: 300px; right: auto; bottom: auto; z-index: 11;" anchor="0b0101" dock="0" ui-id="PN_nullData" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-17226ce462d" style="left: 364px; top: 77px; width: 73px; height: 75px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel7" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-17226cd18f8" style='left: 0px; top: 171px; width: 800px; height: 48px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label4" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">거래내역이 없습니다.</span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js"); // LibUtil import
+/*
+	#2520 - 거래내역조회(외환)
+*/
+let p = parent;
+let currentObj = {}; // 현재 화면에서 컨트롤할 객체
+let retObj = {};	 // 화면에서 리턴시켜줄 객체
+
+function Form_OnLoad(e) {
+	let currentDate = p.GetCurrentDate();
+	let setCurrentValue = GetCurrentDateInstance(currentDate);
+	
+	// 달력 초기화 - from : 7일전, to : now
+	DP_dateFrom.setValue(GetCurrentDateInstance(com.date.fnGetAddDate("D", -7, currentDate)));
+	DP_dateTo.setValue(setCurrentValue);
+	
+	// 1주일 ~ 1년 버튼 클릭이벤트
+	PN_selectMonth.$.find("span.ui-button").each(function(i){
+		$(this).mousedown(function(e){
+			let currentText = e.currentTarget.innerText;
+			let rangeDate = "";
+			
+			switch(currentText) {
+				case "1주일" :
+					rangeDate = com.date.fnGetAddDate("D", -7, currentDate);
+     	         	break;
+              	case "1개월" :
+                  	rangeDate = com.date.fnGetAddDate("M", -1, currentDate);
+              		break;
+              	case "3개월" :
+                  	rangeDate = com.date.fnGetAddDate("M", -3, currentDate);
+              		break;
+              	case "6개월" :
+                  	rangeDate = com.date.fnGetAddDate("M", -6, currentDate);
+              		break;
+              	case "1년" :
+                  	rangeDate = com.date.fnGetAddDate("Y", -1, currentDate);
+              		break;
+              	default: //전체
+              		break;
+        	}
+        	
+			DP_dateFrom.setValue(GetCurrentDateInstance(rangeDate));
+			DP_dateTo.setValue(setCurrentValue);
+			
+			// 선택한 버튼 css 수정
+			PN_selectMonth.$.find("span.ui-button").css({'border':'3px solid #b5b5b5'});
+			PN_selectMonth.$.find(e.currentTarget).css({'border':'3px solid #176bc8'});
+		});
+	});
+};
+
+// 닫기버튼
+function BT_left_OnClick(e){
+	let currentDate = p.GetCurrentDate();
+	let setCurrentValue = GetCurrentDateInstance(currentDate);
+	
+	// 달력 초기화 - from : 7일전, to : now
+	DP_dateFrom.setValue(GetCurrentDateInstance(com.date.fnGetAddDate("D", -7, currentDate)));
+	DP_dateTo.setValue(setCurrentValue);
+	
+	// 개월 버튼 초기화
+	PN_selectMonth.$.find("span.ui-button").css({'border':'3px solid #b5b5b5'});
+
+	// 전체 계좌조회 - 계좌조회 페이지로 이동
+	p.ChangeTab("2511");
+}
+
+// 조회 or 계속조회 버튼
+function BT_right_OnClick(e){
+	let currentDate = p.GetCurrentDate();
+	
+	retObj.CUS_ACN = currentObj.CUS_ACN;									   // 계좌번호
+	retObj.valueFrom = DP_dateFrom.getText().replace(/-/g, ''); 			   // 검색시작일자
+	retObj.valueTo = currentDate; 											   // 검색종료일자
+	retObj.CRCD = currentObj.CRCD; 											   // 통화
+	retObj.TOB_NO = currentObj.TOB_NO;									       // 회차번호
+	
+	// CBKEBKD00062 거래내역조회(외환)
+	p.sendRequest("searchExchangeTranList", retObj);
+}
+
+// DatePicker에 setValue하기 편한 형태로 return 
+function GetCurrentDateInstance(currentDate){
+	let year = currentDate.substr(0,4);
+	let month = parseInt(currentDate.substr(4,2))-1;
+	let day = currentDate.substr(6,2); 
+ 	return new Date(year, month, day);
+}
+
+// 수신 데이터 처리
+function ReceiveTran(obj){
+	// 값 할당
+	currentObj = {
+		CUS_ACN : obj.CUS_ACN || "",
+		CSM : obj.CSM,
+		TOB_NO : obj.TOB_NO,
+		CRCD : obj.CRCD
+	}
+	
+	// 계좌번호	
+	TB_accountNumber.setText(p.ReturnFormatAccount(currentObj.CUS_ACN));
+	
+	// 거래내역
+	let rows = obj.list;
+	
+	let rowCnt = 0; // 거래내역 카운트
+	if(rows.length > 0){
+		PN_nullData.Visible = false;
+	
+		// 리스트 컨테이너 생성
+		let $PN_accountList = $("div[ui-id='PN_accountList']");
+		$PN_accountList.html(""
+			+'<div class="list-panel"></div>'
+		);
+		
+		for(let i=0; i<rows.length; i++){
+			let record = rows[i];
+			MakeTranList(record, i);
+		}
+		
+		// PN_accountList의 height를 list-panel의 height처럼 적용되게 .. 
+		$panel = $("div.list-panel");
+	
+		if($panel[0].offsetHeight <= $panel[0].parentElement.clientHeight){
+			$panel.height("100%");
+		}
+	
+		// 기타 리스트 css 
+		$panel.find(">div.list_info").css({'justify-content':'space-between', 'padding':'0 40px'});
+		$panel.find(">div.list_info").each(function(i){
+			let $this = $(this);
+			
+			$this.find(">div.text_area").css({'display':'flex','flex-direction':'row','padding-left':'20px', 'width':'auto'});
+			$this.find(">div.text_area div.sub_text").css({'font-family':'IBK iDream L'});
+			$this.find(">div.text_area_balance").css({'display':'flex','flex-direction':'column','font-size':'24px', 'font-family':'IBK iDream M'});
+			$this.find(">div.text_area_balance div.balance").css({'display':'flex','justify-content':'flex-end', 'flex-flow':'row-reverse'});
+			$this.find(">div.text_area_balance div.balance span").css({'order':'1', 'margin-right':'5px'});
+			$this.find(">div.text_area_balance div.balance span.grey").css({'font-family':'IBK iDream L', 'order':'2'});
+			$this.find("div.img").css({'width':'45px','display':'flex', 'align-items':'center', 'justify-content':'flex-start', 'margin-right':'20px'});
+		});
+	} else {
+		// 리스트 컨테이너 생성
+		let $PN_accountList = $("div[ui-id='PN_accountList']");
+		$PN_accountList.html(""
+			+'<div class="list-panel"></div>'
+		);
+		
+		PN_nullData.Visible = true;
+	}
+	
+	
+	SB_scrollbar1.Invalidate();
+}
+
+// 거래내역 리스트 생성
+function MakeTranList(row, index){
+	console.log(row);
+	let tag = [];
+	let imgIcon = "";			// 입,출금 아이콘
+	let balanceText = "";		// 입,출금 텍스트
+	let inot_name = ""; 		// 입,출금인
+	let balanceTextColor = "";  // 입,출금 금액 컬러
+	
+	if(row.INOT_DCD == "1"){ // 입금
+		imgIcon = '<img src="/KRG/media/ic_deposit.png"/>';
+		balanceText = "입금";
+		inot_name = row.RMTN_RQTR_NM;
+		balanceTextColor = "#176bc8";
+	} else if(row.INOT_DCD == "2") { // 출금
+		imgIcon = '<img src="/KRG/media/ic_withdraw.png"/>';
+		balanceText = "출금";
+		inot_name = row.RMTN_RQTR_NM;
+		balanceTextColor = "#f45408";
+	} else if(row.INOT_DCD == "3") { // 입금 취소
+		imgIcon = '';
+		balanceText = "입금 취소";
+		inot_name = row.RMTN_RQTR_NM;
+		balanceTextColor = "#000";
+	} else if(row.INOT_DCD == "4") { // 입금 취소
+		imgIcon = '';
+		balanceText = "출금 취소";
+		inot_name = row.RMTN_RQTR_NM;
+		balanceTextColor = "#000";
+	}
+	
+	
+	tag.push(""
+		+'<div class="list_info">'
+        +'	<div class="text_area">'
+		+'  	<div class="img">' + imgIcon + '</div>'
+		+'		<div>'
+        +'  		<div class="main_text usetype" style="margin-bottom:12px;">' + balanceText + '</div>'
+        +'  		<div class="sub_text">' + p.ReturnFormatDateHyphen(row.TRN_YMD) + ' | ' + inot_name + '</div>'
+		+'		</div>'
+        +'	</div>'
+        +'  <div class="text_area_balance">'
+        +'  	<div class="balance" style="margin-bottom:8px;"><span class="grey">' + row.CRCD + '</span><span style="color:' + balanceTextColor + '"> ' + parseInt(row.TRN_AMT).toLocaleString() + '</span></div>'
+        +'  	<div class="balance"><span class="grey">잔액 ' + row.CRCD + '</span><span>' + parseInt(row.AFTR_BAL).toLocaleString() + '</span></div>'
+        +'  </div>'
+        +'</div>'
+	);
+
+	let $panel = $("div[ui-id='PN_accountList'] div.list-panel");
+	$panel.append(tag.join(""));
+}</script></xjscript></body>
+</html>

@@ -1,0 +1,199 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1402,1120">
+<div class="ui-control ui-panel ui-container" id="ui-171a570e5a0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel1" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-171a570e5a3" style='left: 140px; top: 214px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 44px; z-index: 0;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">검색하시려는 도로명 주소를 말씀해주세요.</span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a570e5a6" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 1; background-color: transparent;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-171a4b083a6" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span></div><span class="ui-back-image" style='background-image: url("/KRG/media/voice2.gif");'></span><span class="ui-control ui-label" id="ui-17282be88b5" style='left: 330px; top: 820px; width: 621px; height: 32px; right: auto; bottom: auto; font-family: "IBK IDream M"; font-size: 28px; z-index: 2;' ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">예시) 경기도 용인시 신수로 799</span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*****************************************************************************
+*
+*			include
+*
+******************************************************************************/
+includeJSS("common","/KRG/0301/common.js");
+
+
+//let httpQuerys = parseLocationQueryString();
+//let viewType = httpQuerys["type"]; // 0 : 도로명주소, 1: 구주소, 2: 음성인식 실행 화면(메뉴), 3: 적요 입력(STT)
+
+//var gSttType = httpQuerys["type"];	// 0 : 메뉴, 1: 주소(지번), 2: 주소(도로명), 3: 문자열, 4: 검색(키보드)
+//var gSttData = httpQuerys["data"];	// 
+var gScreen;
+var gSttType;
+var gSttData;
+var gTimeCheck = 0;					// 음성인식 타임아웃 횟수
+var gValidCheck = 0;				// 음성인식 실패 횟수
+
+
+function Form_OnLoad(e){
+	
+}
+
+// 해당 화면 탭이 활성화된 경우
+function InitPage(screen, type, data){
+	console.log("9052 InitPage screen : " + screen + " type : " + type + " data : " + data);
+	
+	gTimeCheck = 0;
+	gValidCheck = 0;
+	
+	// 메뉴
+	if (type == "0"){
+		LB_label1.$.find("> .ui-content").text("검색하시려는 업무를 말씀해주세요.");
+		LB_label2.$.css("visibility","hidden");
+	}
+	// 주소(지번)
+	else if(type == "1"){
+		LB_label1.$.find("> .ui-content").text("검색하시려는 지번(구주소) 주소를 말씀해주세요.");
+		LB_label2.$.find("> .ui-content").text("예시) 경기도 용인시 동천동 185");
+	}
+	// 주소(도로명)
+	else if(type == "2"){
+		LB_label1.$.find("> .ui-content").text("검색하시려는 도로명 주소를 말씀해주세요.");
+		LB_label2.$.find("> .ui-content").text("예시) 경기도 용인시 신수로 799");
+	}
+	// 문자열 (TODO : 확인 필요)
+	else if(type == "3"){
+		LB_label1.$.find("> .ui-content").text("입력하실 내용을 말씀해 주십시오.");
+		LB_label2.$.css("visibility","hidden");
+	}
+	// 검색(키보드) (TODO : 확인 필요)
+	else if(type == "4"){
+		LB_label1.$.find("> .ui-content").text("입력하실 내용을 말씀해 주십시오.");
+		LB_label2.$.css("visibility","hidden");
+	} 
+	
+	gScreen = screen;
+	gSttType = type;
+	gSttData = data;
+	
+	setTimeout(STTRequestProcess);
+}
+
+var tid = 0;
+
+function DisplayErrorMsg(msg){
+	
+	let p = parent;
+	
+	// 9047 화면 취소 및 확인 버튼 visible false
+	p.SetVisible("9047", "BT_left", false);
+	p.SetVisible("9047", "BT_right", false);
+
+	// 9047 화면에 에러 데이터 출력
+	p.DisplayMsg("9047", msg);
+}
+
+function STTRequestProcess(){
+	console.log("type = " + gSttType);
+	console.log("data = " + gSttData);
+	
+	let p = parent;
+	
+	// TIME OUT 설정 30초
+	tid = setTimeout(function(){
+		console.log(">> RequestKey Timeout(30초) 발생 tid = " + tid);
+		
+		gTimeCheck++;
+		if (gTimeCheck > 3){
+			let msg = [];
+			msg.push("<p>음성인식 시간초과></p>");
+			DisplayErrorMsg(msg);
+						
+			setTimeout(function(){
+				p.ChangeTab(gScreen);
+			}, 3000);
+		}
+		else{
+			setTimeout(function(){
+				STTRequestProcess();
+			}, 5000);
+		}
+		
+	}, 30000);
+	
+	let ret = STTIBK.RequestKey(parseInt(gSttType), gSttData, function(result){
+		clearTimeout(tid);
+		console.log(">> RequestKey Timeout(30초) Clear tid = " + tid);
+		
+		console.log("RequestKey result = " + result);
+		
+		// 음성인식 실패
+		if (result == "UNK"){
+			gTimeCheck++;
+			gValidCheck++;
+			console.log("gTimeCheck = " + gTimeCheck + ", gValidCheck : " + gValidCheck);
+			
+			if (gValidCheck > 3){
+				
+				let msg = [];
+				msg.push("<p><음성인식 실패></p>");
+				msg.push("<p>처음부터 다시 시도하여 주십시오.</p>");
+				DisplayErrorMsg(msg);
+				
+				setTimeout(function(){
+					p.ChangeTab(gScreen);
+				}, 3000);
+			}
+			else{
+				// 검색(키보드)
+				if (gSttType == "4"){
+					let msg = [];
+					msg.push("<p><입력문구 분석 실패></p>");
+					msg.push("<p>다시 시도하여 주십시오.</p>");
+					DisplayErrorMsg(msg);
+					
+					setTimeout(function(){
+						// 키보드 검색화면
+						p.ChangeTab(gScreen);
+					}, 5000);
+				}
+				else{
+					setTimeout(function(){
+						STTRequestProcess();
+					}, 5000);
+				}
+			}
+		}
+		else{
+			// "경기도|용인시|신수로|799|"
+			// "||신수로|799|
+			// "서울특별시|마포구|||"
+			// "||||"	-> 빈 응답이 올 수 있음
+			
+			if (gSttType == "1" || gSttType == "2" || gSttType == "3"){
+				
+				// 응답 출력
+				p.DisplayMsg(gScreen, result);
+			}
+		}
+		
+		
+	});
+	
+	console.log("STTIBK.RequestKey ret = " + ret);
+	let json = eval("(" + ret + ")");
+	console.log("STTIBK.RequestKey json.Result = " + json.Result);
+
+}
+
+// 취소키
+function BT_left_OnClick(e){
+	console.log("취소키 - 음성인식 취소");
+	// 취소
+	STTIBK.RequestKey(99, null, null);
+	
+	let p = parent;
+	p.ChangeTab(gScreen);	
+}</script></xjscript></body>
+</html>

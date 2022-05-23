@@ -1,0 +1,3707 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1280,1024" xonload="Form_OnLoad">
+<div class="ui-control ui-tab ui-dock ui-dock-top ui-tab-head-hide" id="ui-172924db50b" style="left: 0px; top: 0px; width: auto; height: 1024px; right: 0px; bottom: auto; z-index: 0;" ui-class="UITab" ui-id="TP_main" dock="1" anchor="0b0101" dock-r="left:143px;top:26px;width:200px;height:100px;right:auto;bottom:auto" dock-h="1024" dock-w="200"><div class="ui-tab-heads" id="ui-172924db50c"><div class="ui-tab-head ui-tab-selected" id="ui-172924db50d">9059</div><div class="ui-tab-head" id="ui-172924db50e">4011</div><div class="ui-tab-head" id="ui-172928dc5ee">9043</div><div class="ui-tab-head" id="ui-17308093a0e">4012</div><div class="ui-tab-head" id="ui-1730956d9b1">9055</div></div><div class="ui-tab-pages" id="ui-172924db50f"><div class="ui-tab-page ui-container ui-tab-selected" id="ui-172924db510" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-172928e3176" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel1" dock="0" anchor="0b0101"><iframe class="ui-include" src="9059.html" frameborder="0" scrolling="0"></iframe></div></div><div class="ui-tab-page ui-container" id="ui-172924db511" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-1729677e998" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel2" dock="0" anchor="0b0101"><iframe class="ui-include" src="4011.html" frameborder="0" scrolling="0"></iframe></div></div><div class="ui-tab-page ui-container" id="ui-172928dc5ef" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-17296787d6d" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel4" dock="0" anchor="0b0101"><iframe class="ui-include" src="9043.html" frameborder="0" scrolling="0"></iframe></div></div><div class="ui-tab-page ui-container" id="ui-17308093a0f" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-1730809b32b" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel5" dock="5" anchor="0b0101" dock-r="left:478px;top:200px;width:200px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="200"><iframe class="ui-include" src="4012.html" frameborder="0" scrolling="0"></iframe></div></div><div class="ui-tab-page ui-container" id="ui-1730956d9b2" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-1730956fba3" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel8" dock="5" anchor="0b0101" dock-r="left:607px;top:208px;width:200px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="200"><iframe class="ui-include" src="9055.html" frameborder="0" scrolling="0"></iframe></div></div></div></div></div><xcomponent><xios><xio>{
+  "Name": "IO_03401001",
+  "Description": "CBKCUS110071",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "CLPH_LLN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "CLPH_TON",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "CLPH_INCS_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "PDLN_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "PDGR_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "PDTM_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "PDCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "WBCS_RLNM_ALTR_NO",
+      "GridData": []
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "ONBN_CUS_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CPN_MDFC_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RNL_TGT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "EBK_JNNG_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "ADR_MDFC_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RDNM_USE_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NOFC_IOTA_HOLD_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "MNGM_BRCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "FNTR_LMAC_HOLD_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "FNTR_OBJT_CNFA_TGYN_RSLT_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "SHTR_MLTAC_OPN_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "WBCS_RLNM_ALTR_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TLBN_JNNG_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "KSK_UTL_COSN_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NCP_STMT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "PSVT_GRDN_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "AGE",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "CUS_ELCR_ADR",
+      "GridData": []
+    }
+  ]
+}</xio><xio>{
+  "Name": "IO_03401002",
+  "Description": "CBKEBKE00002",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TRN_BRCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "CUS_ACN",
+      "GridData": []
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "RNN_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "BZN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 15,
+      "Name": "RPPR_RRN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 13,
+      "Name": "CGN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "KRN_CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ENSN_CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "RPPR_KRN_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "INDV_CORP_DTL_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "CUS_CLCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "PSNT_BRCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "VICS_GDCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "BNCS_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "RM_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "DBTO_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "FRGN_NRSD_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "WRPL_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "WRPL_WORK_DVM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "LAST_JBTT_JBCL_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TELRC_RFSL_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "PSML_RFRV_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CRRC_APCT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CRRC_CNPE_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "EBK_NEJN_ALCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "PSML_SNPL_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RDND_USE_YN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "RDND_ZPCD_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "RDNM_BSC_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "RDNM_DTL_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "RDNM_ALL_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "BLDN_NM_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ZPCD_BSC_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ZPCD_DTL_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "ZPCD_ALL_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "OOH_ZPCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 25,
+      "Name": "BLDN_MNGM_NO_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_HSCM_NO_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_NM_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "APT_DNG_NO_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_DNG_NM_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "APT_RNM_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TEL_LLN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TPN_TON_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "TPN_SRN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "FAX_LLN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "FAX_TON_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "FAX_SRN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "CLPH_LLN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "CLPH_TON_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "CLPH_SRN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "WRPL_ZPCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RDND_USE_YN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 25,
+      "Name": "UNQ_BLDN_MNGM_NO_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "RDND_ZPCD_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "RDNM_BSC_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "RDNM_DTL_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "RDNM_ALL_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "BLDN_NM_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 25,
+      "Name": "BLDN_MNGM_NO_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ZPCD_BSC_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ZPCD_DTL_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "ZPCD_ALL_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_HSCM_NO_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_NM_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "APT_DNG_NO_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_DNG_NM_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "APT_RNM_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TEL_LLN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TPN_TON_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "TPN_SRN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "FXN_TON_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "FAX_SRN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "FAX_LLN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "HMPG_ADR",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "EAD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "SLCT_EMN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "DTH_STMT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CHNM_STMT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NCP_STMT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TRSG_STMT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CNTF_RLNM_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "RPPR_EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "BSNN_EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "RFNO_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "REF_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "SIC_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TXTN_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NFL_APLY_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "BCCA_VIP_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RM_RGTG_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "CSMN_TEAM_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "BRNC_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 9,
+      "Name": "CSAC_IDNT_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "LON_ADMC_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "FEX_ADMC_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "RSDN_NTCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "NTCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "FRGN_ENCN_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "MNGM_EMN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "ADR_CNFA_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "ADR_CNFA_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CUS_BRTD_LNR_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "BRTD_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "MARY_SCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RSDN_SCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "HSNG_KIND_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "INCM_LEVL_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TEL_CLRR_RGSN_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "SMS_RCV_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "COSN_RCL_RNG_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "BNKP_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "EML_ID",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "EML_SRVR_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 25,
+      "Name": "UNQ_BLDN_MNGM_NO_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "ENSN_ZPCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ENSN_ZPCD_BSC_ADR",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ENSN_ZPCD_DTL_ADR",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "ENSN_ZPCD_ALL_ADR",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_INCS_NO_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_LLN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_TON_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "SPUS_TEL_SRN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_INCS_NO_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_LLN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_TON_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "SPUS_TEL_SRN_2",
+      "GridData": []
+    }
+  ]
+}</xio><xio>{
+  "Name": "IO_03401003",
+  "Description": "CBKEBKE00318",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TRN_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "EDPS_CSN",
+      "GridData": []
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 13,
+      "Name": "USR_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 15,
+      "Name": "ICN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "INDV_CORP_DTL_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RPPR_RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 13,
+      "Name": "CGN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 5,
+      "Name": "TRLR_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "KRN_CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "USER_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "LAST_TFTR_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "TNAA_MN12E_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "OSTP_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "SECU_MDIA_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "PMED_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "OTP_COPCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "OTP_IOB_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "OTP_VALD_TRM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "EROR_EXCE_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TRAN_PWD_RGSN_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 3,
+      "Name": "PWD_LEN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "PWD_EROR_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "OVRS_IP_INTC_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "DRACT_ATHR_RGSN_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "LFAC_NO_HOLD_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "TRFE_EXMP_FNSH_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "TRFE_EMRS_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "EBK_FEE_SPEX_RT",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "WRDD_HLDD_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "INNF_WTCNS_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "UTL_MDIA_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "PC_DSGT_SVC_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 14,
+      "Name": "VALD_STTG_TS",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CLPH_SMCF_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "OTBK_IMPTM_CTCT_TPN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TRAN_PWD_RGDS_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "EBK_FEEX_RSN_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "CPN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "YO60_ABV_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TWO_CHNL_ARS_ATHZ_USE_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "SMS_AFFC_NTC_USE_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "VICS_GRD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "BSLS_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "HMO_RDND_USE_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "WPF_RDND_USE_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "PNPM_DSNC_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "HNDC_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "MNMR_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "MFOIM_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "MODM_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "PODA_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "MBL_USE_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "SMBK_JNNG_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "PDF_CNSL_PGRS_NBI",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 5,
+      "Name": "MSG_ACVT_RGSN_NBI",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 500,
+      "Name": "EBK_DRACT_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "EBNK_USER_SCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TWCH_ACVT_SCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "SCCD_SBTG_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "MRACT_DSGT_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "JNNG_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SVC_LMTN_STTG_HMS",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SVC_LMTN_FNSH_HMS",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "TRAN_PWD_RNL_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "HRNG_HNDC_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "DYTC_JNNG_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "BOB_PDF_SHBK_RGSN_NBI",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "MRKN_ID",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "ONAR_JNNG_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 3,
+      "Name": "CUS_AGE",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "COPN_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "SMEX_FGRS_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 19,
+      "Name": "DALY_TRLM_AMT",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "ENPR_KRN_NM",
+      "GridData": []
+    }
+  ]
+}</xio><xio>{
+  "Name": "IO_03401004",
+  "Description": "CBKEBK826111",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "PWD_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "CUS_ACN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 128,
+      "Name": "ACNT_PWD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "EBNK_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 13,
+      "Name": "USR_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "SECU_CDN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "OTP_CDN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "OTP_COPCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 15,
+      "Name": "ICN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "LMT_RDCT_EN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Number",
+      "Size": 5,
+      "Name": "ACPWDEROR_ROWCOUNT",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Grid",
+      "Size": -1,
+      "Name": "Grid1",
+      "GridData": [
+        {
+          "DataType": "String",
+          "Size": 3,
+          "Name": "ARR_ADDIF_TCD"
+        },
+        {
+          "DataType": "String",
+          "Size": 50,
+          "Name": "ARR_ADDIF_CON"
+        },
+        {
+          "DataType": "Number",
+          "Size": 5,
+          "Name": "PWD_EROR_NBT"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "LSMD_YMD"
+        }
+      ]
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 5,
+      "Name": "ACPWDEROR_ROWCOUNT",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Grid",
+      "Size": -1,
+      "Name": "Grid1",
+      "GridData": [
+        {
+          "DataType": "String",
+          "Size": 3,
+          "Name": "ARR_ADDIF_TCD"
+        },
+        {
+          "DataType": "String",
+          "Size": 50,
+          "Name": "ARR_ADDIF_CON"
+        },
+        {
+          "DataType": "Number",
+          "Size": 5,
+          "Name": "PWD_EROR_NBT"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "LSMD_YMD"
+        }
+      ]
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ECCD_OTDA_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "SCAN_IMG_DATA_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TRN_BRCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "TRN_BRCD_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "TRN_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "TRN_HMS",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "TMN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "OPRG_EMN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 15,
+      "Name": "XCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "XCD_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "TRN_SMR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "TRN_SMR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "SMR_NM_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "SMR_NM_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "SMR_NM_3",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "ADDT_TRN_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "LMT_RDCT_EN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "CLMN_ITM_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "UNFC_YN",
+      "GridData": []
+    }
+  ]
+}</xio><xio>{
+  "Name": "IO_03401005",
+  "Description": "CBKEBK826111",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "PWD_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "CUS_ACN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 128,
+      "Name": "ACNT_PWD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "EBNK_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 13,
+      "Name": "USR_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "SECU_CDN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "OTP_CDN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "OTP_COPCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 15,
+      "Name": "ICN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "LMT_RDCT_EN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Number",
+      "Size": 5,
+      "Name": "ACPWDEROR_ROWCOUNT",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Grid",
+      "Size": -1,
+      "Name": "Grid1",
+      "GridData": [
+        {
+          "DataType": "String",
+          "Size": 3,
+          "Name": "ARR_ADDIF_TCD"
+        },
+        {
+          "DataType": "String",
+          "Size": 50,
+          "Name": "ARR_ADDIF_CON"
+        },
+        {
+          "DataType": "Number",
+          "Size": 5,
+          "Name": "PWD_EROR_NBT"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "LSMD_YMD"
+        }
+      ]
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 5,
+      "Name": "ACPWDEROR_ROWCOUNT",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Grid",
+      "Size": -1,
+      "Name": "Grid1",
+      "GridData": [
+        {
+          "DataType": "String",
+          "Size": 3,
+          "Name": "ARR_ADDIF_TCD"
+        },
+        {
+          "DataType": "String",
+          "Size": 50,
+          "Name": "ARR_ADDIF_CON"
+        },
+        {
+          "DataType": "Number",
+          "Size": 5,
+          "Name": "PWD_EROR_NBT"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "LSMD_YMD"
+        }
+      ]
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ECCD_OTDA_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "SCAN_IMG_DATA_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TRN_BRCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "TRN_BRCD_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "TRN_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "TRN_HMS",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "TMN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "OPRG_EMN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 15,
+      "Name": "XCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "XCD_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "TRN_SMR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "TRN_SMR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "SMR_NM_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "SMR_NM_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "SMR_NM_3",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "ADDT_TRN_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "LMT_RDCT_EN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "CLMN_ITM_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "UNFC_YN",
+      "GridData": []
+    }
+  ]
+}</xio></xios><xcms><xcm>{
+  "Name": "CM_03401001",
+  "ServiceName": "CBKCUS110071",
+  "RefIoName": "IO_03401001",
+  "Input": [
+    {
+      "RNN": "RNN"
+    },
+    {
+      "CLPH_LLN": "CLPH_LLN"
+    },
+    {
+      "CLPH_TON": "CLPH_TON"
+    },
+    {
+      "CLPH_INCS_NO": "CLPH_INCS_NO"
+    },
+    {
+      "CSM": "CSM"
+    },
+    {
+      "PDLN_CD": "PDLN_CD"
+    },
+    {
+      "PDGR_CD": "PDGR_CD"
+    },
+    {
+      "PDTM_CD": "PDTM_CD"
+    },
+    {
+      "PDCD": "PDCD"
+    },
+    {
+      "WBCS_RLNM_ALTR_NO": "WBCS_RLNM_ALTR_NO"
+    }
+  ],
+  "Output": [
+    {
+      "ONBN_CUS_YN": "ONBN_CUS_YN"
+    },
+    {
+      "CPN_MDFC_YN": "CPN_MDFC_YN"
+    },
+    {
+      "RNL_TGT_YN": "RNL_TGT_YN"
+    },
+    {
+      "EBK_JNNG_YN": "EBK_JNNG_YN"
+    },
+    {
+      "ADR_MDFC_YN": "ADR_MDFC_YN"
+    },
+    {
+      "RDNM_USE_YN": "RDNM_USE_YN"
+    },
+    {
+      "NOFC_IOTA_HOLD_YN": "NOFC_IOTA_HOLD_YN"
+    },
+    {
+      "MNGM_BRCD": "MNGM_BRCD"
+    },
+    {
+      "FNTR_LMAC_HOLD_YN": "FNTR_LMAC_HOLD_YN"
+    },
+    {
+      "FNTR_OBJT_CNFA_TGYN_RSLT_CON": "FNTR_OBJT_CNFA_TGYN_RSLT_CON"
+    },
+    {
+      "EDPS_CSN": "EDPS_CSN"
+    },
+    {
+      "SHTR_MLTAC_OPN_YN": "SHTR_MLTAC_OPN_YN"
+    },
+    {
+      "CSM": "CSM"
+    },
+    {
+      "WBCS_RLNM_ALTR_NO": "WBCS_RLNM_ALTR_NO"
+    },
+    {
+      "TLBN_JNNG_YN": "TLBN_JNNG_YN"
+    },
+    {
+      "KSK_UTL_COSN_YN": "KSK_UTL_COSN_YN"
+    },
+    {
+      "NCP_STMT_YN": "NCP_STMT_YN"
+    },
+    {
+      "PSVT_GRDN_DCD": "PSVT_GRDN_DCD"
+    },
+    {
+      "AGE": "AGE"
+    },
+    {
+      "CUS_ELCR_ADR": "CUS_ELCR_ADR"
+    }
+  ]
+}</xcm><xcm>{
+  "Name": "CM_03401002",
+  "ServiceName": "CBKEBKE00002",
+  "RefIoName": "IO_03401002",
+  "Input": [
+    {
+      "RNN": "RNN"
+    },
+    {
+      "TRN_BRCD": "TRN_BRCD"
+    },
+    {
+      "CUS_ACN": "CUS_ACN"
+    }
+  ],
+  "Output": [
+    {
+      "RNN_DCD": "RNN_DCD"
+    },
+    {
+      "RNN": "RNN"
+    },
+    {
+      "BZN": "BZN"
+    },
+    {
+      "RPPR_RRN": "RPPR_RRN"
+    },
+    {
+      "CGN": "CGN"
+    },
+    {
+      "KRN_CSM": "KRN_CSM"
+    },
+    {
+      "ENSN_CSM": "ENSN_CSM"
+    },
+    {
+      "RPPR_KRN_NM": "RPPR_KRN_NM"
+    },
+    {
+      "INDV_CORP_DTL_DCD": "INDV_CORP_DTL_DCD"
+    },
+    {
+      "CUS_CLCD": "CUS_CLCD"
+    },
+    {
+      "PSNT_BRCD": "PSNT_BRCD"
+    },
+    {
+      "VICS_GDCD": "VICS_GDCD"
+    },
+    {
+      "BNCS_YN": "BNCS_YN"
+    },
+    {
+      "RM_DCD": "RM_DCD"
+    },
+    {
+      "DBTO_DCD": "DBTO_DCD"
+    },
+    {
+      "FRGN_NRSD_YN": "FRGN_NRSD_YN"
+    },
+    {
+      "WRPL_NM": "WRPL_NM"
+    },
+    {
+      "WRPL_WORK_DVM": "WRPL_WORK_DVM"
+    },
+    {
+      "LAST_JBTT_JBCL_CD": "LAST_JBTT_JBCL_CD"
+    },
+    {
+      "TELRC_RFSL_YN": "TELRC_RFSL_YN"
+    },
+    {
+      "PSML_RFRV_YN": "PSML_RFRV_YN"
+    },
+    {
+      "CRRC_APCT_YN": "CRRC_APCT_YN"
+    },
+    {
+      "CRRC_CNPE_YN": "CRRC_CNPE_YN"
+    },
+    {
+      "EBK_NEJN_ALCD": "EBK_NEJN_ALCD"
+    },
+    {
+      "PSML_SNPL_DCD": "PSML_SNPL_DCD"
+    },
+    {
+      "RDND_USE_YN_1": "RDND_USE_YN_1"
+    },
+    {
+      "RDND_ZPCD_1": "RDND_ZPCD_1"
+    },
+    {
+      "RDNM_BSC_ADR_1": "RDNM_BSC_ADR_1"
+    },
+    {
+      "RDNM_DTL_ADR_1": "RDNM_DTL_ADR_1"
+    },
+    {
+      "RDNM_ALL_ADR_1": "RDNM_ALL_ADR_1"
+    },
+    {
+      "BLDN_NM_1": "BLDN_NM_1"
+    },
+    {
+      "ZPCD_BSC_ADR_1": "ZPCD_BSC_ADR_1"
+    },
+    {
+      "ZPCD_DTL_ADR_1": "ZPCD_DTL_ADR_1"
+    },
+    {
+      "ZPCD_ALL_ADR_1": "ZPCD_ALL_ADR_1"
+    },
+    {
+      "OOH_ZPCD": "OOH_ZPCD"
+    },
+    {
+      "BLDN_MNGM_NO_1": "BLDN_MNGM_NO_1"
+    },
+    {
+      "APT_HSCM_NO_1": "APT_HSCM_NO_1"
+    },
+    {
+      "APT_NM_1": "APT_NM_1"
+    },
+    {
+      "APT_DNG_NO_1": "APT_DNG_NO_1"
+    },
+    {
+      "APT_DNG_NM_1": "APT_DNG_NM_1"
+    },
+    {
+      "APT_RNM_1": "APT_RNM_1"
+    },
+    {
+      "TEL_LLN_1": "TEL_LLN_1"
+    },
+    {
+      "TPN_TON_1": "TPN_TON_1"
+    },
+    {
+      "TPN_SRN_1": "TPN_SRN_1"
+    },
+    {
+      "FAX_LLN_1": "FAX_LLN_1"
+    },
+    {
+      "FAX_TON_1": "FAX_TON_1"
+    },
+    {
+      "FAX_SRN_1": "FAX_SRN_1"
+    },
+    {
+      "CLPH_LLN_1": "CLPH_LLN_1"
+    },
+    {
+      "CLPH_TON_1": "CLPH_TON_1"
+    },
+    {
+      "CLPH_SRN_1": "CLPH_SRN_1"
+    },
+    {
+      "WRPL_ZPCD": "WRPL_ZPCD"
+    },
+    {
+      "RDND_USE_YN_2": "RDND_USE_YN_2"
+    },
+    {
+      "UNQ_BLDN_MNGM_NO_2": "UNQ_BLDN_MNGM_NO_2"
+    },
+    {
+      "RDND_ZPCD_2": "RDND_ZPCD_2"
+    },
+    {
+      "RDNM_BSC_ADR_2": "RDNM_BSC_ADR_2"
+    },
+    {
+      "RDNM_DTL_ADR_2": "RDNM_DTL_ADR_2"
+    },
+    {
+      "RDNM_ALL_ADR_2": "RDNM_ALL_ADR_2"
+    },
+    {
+      "BLDN_NM_2": "BLDN_NM_2"
+    },
+    {
+      "BLDN_MNGM_NO_2": "BLDN_MNGM_NO_2"
+    },
+    {
+      "ZPCD_BSC_ADR_2": "ZPCD_BSC_ADR_2"
+    },
+    {
+      "ZPCD_DTL_ADR_2": "ZPCD_DTL_ADR_2"
+    },
+    {
+      "ZPCD_ALL_ADR_2": "ZPCD_ALL_ADR_2"
+    },
+    {
+      "APT_HSCM_NO_2": "APT_HSCM_NO_2"
+    },
+    {
+      "APT_NM_2": "APT_NM_2"
+    },
+    {
+      "APT_DNG_NO_2": "APT_DNG_NO_2"
+    },
+    {
+      "APT_DNG_NM_2": "APT_DNG_NM_2"
+    },
+    {
+      "APT_RNM_2": "APT_RNM_2"
+    },
+    {
+      "TEL_LLN_2": "TEL_LLN_2"
+    },
+    {
+      "TPN_TON_2": "TPN_TON_2"
+    },
+    {
+      "TPN_SRN_2": "TPN_SRN_2"
+    },
+    {
+      "FXN_TON_2": "FXN_TON_2"
+    },
+    {
+      "FAX_SRN_2": "FAX_SRN_2"
+    },
+    {
+      "FAX_LLN_2": "FAX_LLN_2"
+    },
+    {
+      "HMPG_ADR": "HMPG_ADR"
+    },
+    {
+      "EAD": "EAD"
+    },
+    {
+      "SLCT_EMN": "SLCT_EMN"
+    },
+    {
+      "DTH_STMT_YN": "DTH_STMT_YN"
+    },
+    {
+      "CHNM_STMT_YN": "CHNM_STMT_YN"
+    },
+    {
+      "NCP_STMT_YN": "NCP_STMT_YN"
+    },
+    {
+      "TRSG_STMT_YN": "TRSG_STMT_YN"
+    },
+    {
+      "CNTF_RLNM_YN": "CNTF_RLNM_YN"
+    },
+    {
+      "EDPS_CSN": "EDPS_CSN"
+    },
+    {
+      "RPPR_EDPS_CSN": "RPPR_EDPS_CSN"
+    },
+    {
+      "BSNN_EDPS_CSN": "BSNN_EDPS_CSN"
+    },
+    {
+      "RFNO_DCD": "RFNO_DCD"
+    },
+    {
+      "REF_NO": "REF_NO"
+    },
+    {
+      "SIC_CD": "SIC_CD"
+    },
+    {
+      "TXTN_CD": "TXTN_CD"
+    },
+    {
+      "NFL_APLY_YN": "NFL_APLY_YN"
+    },
+    {
+      "BCCA_VIP_YN": "BCCA_VIP_YN"
+    },
+    {
+      "RM_RGTG_DCD": "RM_RGTG_DCD"
+    },
+    {
+      "CSMN_TEAM_CD": "CSMN_TEAM_CD"
+    },
+    {
+      "BRNC_CSN": "BRNC_CSN"
+    },
+    {
+      "CSAC_IDNT_NO": "CSAC_IDNT_NO"
+    },
+    {
+      "LON_ADMC_NO": "LON_ADMC_NO"
+    },
+    {
+      "FEX_ADMC_NO": "FEX_ADMC_NO"
+    },
+    {
+      "RSDN_NTCD": "RSDN_NTCD"
+    },
+    {
+      "NTCD": "NTCD"
+    },
+    {
+      "FRGN_ENCN_YMD": "FRGN_ENCN_YMD"
+    },
+    {
+      "MNGM_EMN": "MNGM_EMN"
+    },
+    {
+      "ADR_CNFA_YN": "ADR_CNFA_YN"
+    },
+    {
+      "ADR_CNFA_YMD": "ADR_CNFA_YMD"
+    },
+    {
+      "CUS_BRTD_LNR_YN": "CUS_BRTD_LNR_YN"
+    },
+    {
+      "BRTD_YMD": "BRTD_YMD"
+    },
+    {
+      "MARY_SCD": "MARY_SCD"
+    },
+    {
+      "RSDN_SCD": "RSDN_SCD"
+    },
+    {
+      "HSNG_KIND_DCD": "HSNG_KIND_DCD"
+    },
+    {
+      "INCM_LEVL_CD": "INCM_LEVL_CD"
+    },
+    {
+      "TEL_CLRR_RGSN_YN": "TEL_CLRR_RGSN_YN"
+    },
+    {
+      "SMS_RCV_YN": "SMS_RCV_YN"
+    },
+    {
+      "COSN_RCL_RNG_DCD": "COSN_RCL_RNG_DCD"
+    },
+    {
+      "BNKP_YN": "BNKP_YN"
+    },
+    {
+      "EML_ID": "EML_ID"
+    },
+    {
+      "EML_SRVR_CD": "EML_SRVR_CD"
+    },
+    {
+      "UNQ_BLDN_MNGM_NO_1": "UNQ_BLDN_MNGM_NO_1"
+    },
+    {
+      "ENSN_ZPCD": "ENSN_ZPCD"
+    },
+    {
+      "ENSN_ZPCD_BSC_ADR": "ENSN_ZPCD_BSC_ADR"
+    },
+    {
+      "ENSN_ZPCD_DTL_ADR": "ENSN_ZPCD_DTL_ADR"
+    },
+    {
+      "ENSN_ZPCD_ALL_ADR": "ENSN_ZPCD_ALL_ADR"
+    },
+    {
+      "SPUS_TEL_INCS_NO_1": "SPUS_TEL_INCS_NO_1"
+    },
+    {
+      "SPUS_TEL_LLN_1": "SPUS_TEL_LLN_1"
+    },
+    {
+      "SPUS_TEL_TON_1": "SPUS_TEL_TON_1"
+    },
+    {
+      "SPUS_TEL_SRN_1": "SPUS_TEL_SRN_1"
+    },
+    {
+      "SPUS_TEL_INCS_NO_2": "SPUS_TEL_INCS_NO_2"
+    },
+    {
+      "SPUS_TEL_LLN_2": "SPUS_TEL_LLN_2"
+    },
+    {
+      "SPUS_TEL_TON_2": "SPUS_TEL_TON_2"
+    },
+    {
+      "SPUS_TEL_SRN_2": "SPUS_TEL_SRN_2"
+    }
+  ]
+}</xcm><xcm>{
+  "Name": "CM_03401003",
+  "ServiceName": "CBKEBKE00318",
+  "RefIoName": "IO_03401003",
+  "Input": [
+    {
+      "TRN_DCD": "TRN_DCD"
+    },
+    {
+      "EDPS_CSN": "EDPS_CSN"
+    }
+  ],
+  "Output": [
+    {
+      "USR_NO": "USR_NO"
+    },
+    {
+      "ICN": "ICN"
+    },
+    {
+      "INDV_CORP_DTL_DCD": "INDV_CORP_DTL_DCD"
+    },
+    {
+      "RNN": "RNN"
+    },
+    {
+      "RPPR_RNN": "RPPR_RNN"
+    },
+    {
+      "CGN": "CGN"
+    },
+    {
+      "TRLR_NO": "TRLR_NO"
+    },
+    {
+      "EDPS_CSN": "EDPS_CSN"
+    },
+    {
+      "KRN_CSM": "KRN_CSM"
+    },
+    {
+      "USER_NM": "USER_NM"
+    },
+    {
+      "LAST_TFTR_YMD": "LAST_TFTR_YMD"
+    },
+    {
+      "TNAA_MN12E_YMD": "TNAA_MN12E_YMD"
+    },
+    {
+      "OSTP_YN": "OSTP_YN"
+    },
+    {
+      "SECU_MDIA_DCD": "SECU_MDIA_DCD"
+    },
+    {
+      "PMED_NO": "PMED_NO"
+    },
+    {
+      "OTP_COPCD": "OTP_COPCD"
+    },
+    {
+      "OTP_IOB_DCD": "OTP_IOB_DCD"
+    },
+    {
+      "OTP_VALD_TRM": "OTP_VALD_TRM"
+    },
+    {
+      "EROR_EXCE_YN": "EROR_EXCE_YN"
+    },
+    {
+      "TRAN_PWD_RGSN_YN": "TRAN_PWD_RGSN_YN"
+    },
+    {
+      "PWD_LEN": "PWD_LEN"
+    },
+    {
+      "PWD_EROR_YMD": "PWD_EROR_YMD"
+    },
+    {
+      "OVRS_IP_INTC_YN": "OVRS_IP_INTC_YN"
+    },
+    {
+      "DRACT_ATHR_RGSN_YN": "DRACT_ATHR_RGSN_YN"
+    },
+    {
+      "LFAC_NO_HOLD_YN": "LFAC_NO_HOLD_YN"
+    },
+    {
+      "TRFE_EXMP_FNSH_YMD": "TRFE_EXMP_FNSH_YMD"
+    },
+    {
+      "TRFE_EMRS_CON": "TRFE_EMRS_CON"
+    },
+    {
+      "EBK_FEE_SPEX_RT": "EBK_FEE_SPEX_RT"
+    },
+    {
+      "WRDD_HLDD_DCD": "WRDD_HLDD_DCD"
+    },
+    {
+      "INNF_WTCNS_DCD": "INNF_WTCNS_DCD"
+    },
+    {
+      "UTL_MDIA_CD": "UTL_MDIA_CD"
+    },
+    {
+      "PC_DSGT_SVC_YN": "PC_DSGT_SVC_YN"
+    },
+    {
+      "VALD_STTG_TS": "VALD_STTG_TS"
+    },
+    {
+      "CLPH_SMCF_YN": "CLPH_SMCF_YN"
+    },
+    {
+      "OTBK_IMPTM_CTCT_TPN": "OTBK_IMPTM_CTCT_TPN"
+    },
+    {
+      "TRAN_PWD_RGDS_NO": "TRAN_PWD_RGDS_NO"
+    },
+    {
+      "EBK_FEEX_RSN_CON": "EBK_FEEX_RSN_CON"
+    },
+    {
+      "CPN": "CPN"
+    },
+    {
+      "YO60_ABV_YN": "YO60_ABV_YN"
+    },
+    {
+      "TWO_CHNL_ARS_ATHZ_USE_YN": "TWO_CHNL_ARS_ATHZ_USE_YN"
+    },
+    {
+      "SMS_AFFC_NTC_USE_YN": "SMS_AFFC_NTC_USE_YN"
+    },
+    {
+      "VICS_GRD": "VICS_GRD"
+    },
+    {
+      "BSLS_YN": "BSLS_YN"
+    },
+    {
+      "HMO_RDND_USE_YN": "HMO_RDND_USE_YN"
+    },
+    {
+      "WPF_RDND_USE_YN": "WPF_RDND_USE_YN"
+    },
+    {
+      "PNPM_DSNC_NO": "PNPM_DSNC_NO"
+    },
+    {
+      "HNDC_YN": "HNDC_YN"
+    },
+    {
+      "MNMR_YN": "MNMR_YN"
+    },
+    {
+      "MFOIM_YN": "MFOIM_YN"
+    },
+    {
+      "MODM_YN": "MODM_YN"
+    },
+    {
+      "PODA_YN": "PODA_YN"
+    },
+    {
+      "MBL_USE_YN": "MBL_USE_YN"
+    },
+    {
+      "SMBK_JNNG_YN": "SMBK_JNNG_YN"
+    },
+    {
+      "PDF_CNSL_PGRS_NBI": "PDF_CNSL_PGRS_NBI"
+    },
+    {
+      "MSG_ACVT_RGSN_NBI": "MSG_ACVT_RGSN_NBI"
+    },
+    {
+      "EBK_DRACT_CON": "EBK_DRACT_CON"
+    },
+    {
+      "EBNK_USER_SCD": "EBNK_USER_SCD"
+    },
+    {
+      "TWCH_ACVT_SCD": "TWCH_ACVT_SCD"
+    },
+    {
+      "SCCD_SBTG_YN": "SCCD_SBTG_YN"
+    },
+    {
+      "MRACT_DSGT_DCD": "MRACT_DSGT_DCD"
+    },
+    {
+      "JNNG_YN": "JNNG_YN"
+    },
+    {
+      "SVC_LMTN_STTG_HMS": "SVC_LMTN_STTG_HMS"
+    },
+    {
+      "SVC_LMTN_FNSH_HMS": "SVC_LMTN_FNSH_HMS"
+    },
+    {
+      "TRAN_PWD_RNL_YMD": "TRAN_PWD_RNL_YMD"
+    },
+    {
+      "HRNG_HNDC_YN": "HRNG_HNDC_YN"
+    },
+    {
+      "DYTC_JNNG_YN": "DYTC_JNNG_YN"
+    },
+    {
+      "BOB_PDF_SHBK_RGSN_NBI": "BOB_PDF_SHBK_RGSN_NBI"
+    },
+    {
+      "MRKN_ID": "MRKN_ID"
+    },
+    {
+      "ONAR_JNNG_YN": "ONAR_JNNG_YN"
+    },
+    {
+      "CUS_AGE": "CUS_AGE"
+    },
+    {
+      "COPN_NO": "COPN_NO"
+    },
+    {
+      "SMEX_FGRS_CON": "SMEX_FGRS_CON"
+    },
+    {
+      "DALY_TRLM_AMT": "DALY_TRLM_AMT"
+    },
+    {
+      "ENPR_KRN_NM": "ENPR_KRN_NM"
+    }
+  ]
+}</xcm><xcm>{
+  "Name": "CM_03401004",
+  "ServiceName": "CBKEBK826111",
+  "RefIoName": "IO_03401004",
+  "Input": [
+    {
+      "PWD_DCD": "PWD_DCD"
+    },
+    {
+      "CUS_ACN": "CUS_ACN"
+    },
+    {
+      "ACNT_PWD": "ACNT_PWD"
+    },
+    {
+      "EBNK_DCD": "EBNK_DCD"
+    },
+    {
+      "RNN": "RNN"
+    },
+    {
+      "USR_NO": "USR_NO"
+    },
+    {
+      "SECU_CDN": "SECU_CDN"
+    },
+    {
+      "OTP_CDN": "OTP_CDN"
+    },
+    {
+      "OTP_COPCD": "OTP_COPCD"
+    },
+    {
+      "ICN": "ICN"
+    },
+    {
+      "LMT_RDCT_EN": "LMT_RDCT_EN"
+    },
+    {
+      "EDPS_CSN": "EDPS_CSN"
+    },
+    {
+      "ACPWDEROR_ROWCOUNT": "ACPWDEROR_ROWCOUNT"
+    },
+    {
+      "Grid1": "Grid1"
+    }
+  ],
+  "Output": [
+    {
+      "RNN": "RNN"
+    },
+    {
+      "CSM": "CSM"
+    },
+    {
+      "ACPWDEROR_ROWCOUNT": "ACPWDEROR_ROWCOUNT"
+    },
+    {
+      "Grid1": "Grid1"
+    },
+    {
+      "ECCD_OTDA_CON": "ECCD_OTDA_CON"
+    },
+    {
+      "SCAN_IMG_DATA_CON": "SCAN_IMG_DATA_CON"
+    },
+    {
+      "TRN_BRCD": "TRN_BRCD"
+    },
+    {
+      "TRN_BRCD_NM": "TRN_BRCD_NM"
+    },
+    {
+      "TRN_YMD": "TRN_YMD"
+    },
+    {
+      "TRN_HMS": "TRN_HMS"
+    },
+    {
+      "TMN": "TMN"
+    },
+    {
+      "OPRG_EMN": "OPRG_EMN"
+    },
+    {
+      "XCD": "XCD"
+    },
+    {
+      "XCD_NM": "XCD_NM"
+    },
+    {
+      "TRN_SMR_1": "TRN_SMR_1"
+    },
+    {
+      "TRN_SMR_2": "TRN_SMR_2"
+    },
+    {
+      "SMR_NM_1": "SMR_NM_1"
+    },
+    {
+      "SMR_NM_2": "SMR_NM_2"
+    },
+    {
+      "SMR_NM_3": "SMR_NM_3"
+    },
+    {
+      "ADDT_TRN_DCD": "ADDT_TRN_DCD"
+    },
+    {
+      "LMT_RDCT_EN": "LMT_RDCT_EN"
+    },
+    {
+      "CLMN_ITM_NM": "CLMN_ITM_NM"
+    },
+    {
+      "UNFC_YN": "UNFC_YN"
+    }
+  ]
+}</xcm><xcm>{
+  "Name": "CM_03401005",
+  "ServiceName": "CBKEBK826111",
+  "RefIoName": "IO_03401005",
+  "Input": [
+    {
+      "PWD_DCD": "PWD_DCD"
+    },
+    {
+      "CUS_ACN": "CUS_ACN"
+    },
+    {
+      "ACNT_PWD": "ACNT_PWD"
+    },
+    {
+      "EBNK_DCD": "EBNK_DCD"
+    },
+    {
+      "RNN": "RNN"
+    },
+    {
+      "USR_NO": "USR_NO"
+    },
+    {
+      "SECU_CDN": "SECU_CDN"
+    },
+    {
+      "OTP_CDN": "OTP_CDN"
+    },
+    {
+      "OTP_COPCD": "OTP_COPCD"
+    },
+    {
+      "ICN": "ICN"
+    },
+    {
+      "LMT_RDCT_EN": "LMT_RDCT_EN"
+    },
+    {
+      "EDPS_CSN": "EDPS_CSN"
+    },
+    {
+      "ACPWDEROR_ROWCOUNT": "ACPWDEROR_ROWCOUNT"
+    },
+    {
+      "Grid1": "Grid1"
+    }
+  ],
+  "Output": [
+    {
+      "RNN": "RNN"
+    },
+    {
+      "CSM": "CSM"
+    },
+    {
+      "ACPWDEROR_ROWCOUNT": "ACPWDEROR_ROWCOUNT"
+    },
+    {
+      "Grid1": "Grid1"
+    },
+    {
+      "ECCD_OTDA_CON": "ECCD_OTDA_CON"
+    },
+    {
+      "SCAN_IMG_DATA_CON": "SCAN_IMG_DATA_CON"
+    },
+    {
+      "TRN_BRCD": "TRN_BRCD"
+    },
+    {
+      "TRN_BRCD_NM": "TRN_BRCD_NM"
+    },
+    {
+      "TRN_YMD": "TRN_YMD"
+    },
+    {
+      "TRN_HMS": "TRN_HMS"
+    },
+    {
+      "TMN": "TMN"
+    },
+    {
+      "OPRG_EMN": "OPRG_EMN"
+    },
+    {
+      "XCD": "XCD"
+    },
+    {
+      "XCD_NM": "XCD_NM"
+    },
+    {
+      "TRN_SMR_1": "TRN_SMR_1"
+    },
+    {
+      "TRN_SMR_2": "TRN_SMR_2"
+    },
+    {
+      "SMR_NM_1": "SMR_NM_1"
+    },
+    {
+      "SMR_NM_2": "SMR_NM_2"
+    },
+    {
+      "SMR_NM_3": "SMR_NM_3"
+    },
+    {
+      "ADDT_TRN_DCD": "ADDT_TRN_DCD"
+    },
+    {
+      "LMT_RDCT_EN": "LMT_RDCT_EN"
+    },
+    {
+      "CLMN_ITM_NM": "CLMN_ITM_NM"
+    },
+    {
+      "UNFC_YN": "UNFC_YN"
+    }
+  ]
+}</xcm></xcms></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*		includeJs	*/
+includeJSS("LibCommon","/KRG/0301/common.js");
+
+
+/*		includeWindow	*/
+var iwin2 = PN_panel2.IncludeWindow;
+var iwin5 = PN_panel5.IncludeWindow;
+var iwin4 = PN_panel4.IncludeWindow;
+var iwin8 = PN_panel8.IncludeWindow;
+let tranEnd = false;
+
+
+function Form_OnLoad(e){
+	//시작
+	ChangeTab("9059");
+	sendRequest('searchCustomerInfo');
+}
+
+function sendRequest(act){
+	switch(act){
+		//고객정보조회
+		case 'searchCustomerInfo':
+			searchCustomerInfo();
+			break;
+		//보안카드 거래송수신
+		case 'setSecurityCard':
+			setSecurityCard();
+			break;
+		//OTP 거래 송수신
+		case 'setOTP':
+			setOTP();
+			break;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//																					   //
+//										공통											   //
+//																					   //
+/////////////////////////////////////////////////////////////////////////////////////////
+
+function ChangeTab(name){
+	TP_main.ChangeTab(name, Input_OnChangedTab);
+}
+//이전페이지
+function goPrevTabPage(){
+    let name = TP_main.prevTabPage();
+    TP_main.ChangeTab(name, Input_OnChangedTab);
+}
+//다음페이지
+function goNextTabPage(){
+    let name = TP_main.nextTabPage();
+    TP_main.ChangeTab(name, Input_OnChangedTab);
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+function Input_OnChangedTab(e){	
+	let time = 0;
+	console.log("ChangeTab  :  "+e.after);
+	
+	com.screen.clearTimeoutEx();
+	
+	// 화면 탭이 변경될 경우 mp3 재생 정지
+	//com.mp3.pause(gAudio);
+	com.mp3.pause();
+	
+	//TODO : 타임아웃 시간 설정
+	// 송수신 대기화면은 시간 설정하지 않음
+	// 수신전문 NG인 경우 설정 안함 -> ATMCOMM.BusinessEnd(ATMCOMM.RET_NG);
+	// 최종 거래 완료된 경우 설정 안함 -> ATMCOMM.BusinessEnd(ATMCOMM.RET_OK);
+	switch(e.after){
+		
+		case "4011":
+			time = 30000;
+			iwin2.setSecurityCardNo(PMED_NO);
+			break;
+			
+		case "4012":
+			time = 30000;
+			iwin5.setOTPNo(PMED_NO);
+			break;
+		
+		// 송수신 처리 화면 : mp3 재생
+		case "9059":
+			com.mp3.play("/KRG/media/tran.mp3");
+			break;
+			
+		case "9043":
+			tranEnd = true;
+			time = 30000;
+			EndPageTextChange();
+			break;
+			
+		case "9055":
+			break;
+	}
+	// 타임아웃 설정
+	if (time > 0)
+		com.screen.setTimeoutEx(time, onScreenTimeout);
+}
+
+// 타임아웃이 발생하면 거래가 취소되어 종료된다.
+function onScreenTimeout(){
+	console.log("[4010] Screen Timeout!!!");
+	com.screen.clearTimeoutEx();
+	// 거래 취소
+	if( tranEnd == true ){
+		ATMCOMM.BusinessEnd(ATMCOMM.RET_OK);
+	}
+	else{
+		ATMCOMM.BusinessEnd(ATMCOMM.RET_TO);
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////////////
+//																					   //
+//										Page0										   //
+//																					   //
+/////////////////////////////////////////////////////////////////////////////////////////
+var gRNN;
+//CBKCUS110071   
+function searchCustomerInfo(){
+	console.log("InitPage0");
+	let headerData = "";
+	
+	let ret = Net.Request(
+		"CM_03401001", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			//주민번호
+			gRNN = ATMCOMM.GetInfo("jumin");
+			xioInput.RNN = gRNN;
+			console.log("xioInput.RNN  :  "+xioInput.RNN);
+		},
+		function fcb_OnAfterResponse(result, xioOutput , errorCode) {
+			// OK
+			if (result == "00") {
+				console.log("당행고객 여부 : " + xioOutput.ONBN_CUS_YN);
+				
+				if (xioOutput.ONBN_CUS_YN == 'Y'){
+					setTimeout(CustomInfoRequest);
+				}
+			} else {
+				// Error Message
+				errorMsg = xioOutput;
+				console.log("Error : " + xioOutput);
+				console.log("errorCode  :  "+errorCode);
+
+				ChangeTab("9055");
+				iwin8.setErrorMsg(errorMsg);
+
+				setTimeout(function(){
+					ATMCOMM.BusinessEnd(ATMCOMM.RET_NG);
+				}, 5000);
+			}
+		}
+	);
+}
+
+
+var EDPS_CSN;
+//CBKEBKE00002  
+function CustomInfoRequest(){
+	//개별헤더데이터 세팅
+	let headerData = "TLN=CHAMS000,USR_IDNT_NO=GUEST"
+	
+	let ret = Net.Request(
+		"CM_03401002", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			xioInput.RNN = gRNN;
+		},
+		function fcb_OnAfterResponse(result, xioOutput, errorCode) {
+			// OK
+			if (result == "00") {
+				EDPS_CSN = xioOutput.EDPS_CSN;
+				console.log("실명번호구분코드 : " + xioOutput.RNN_DCD);
+				console.log("실명번호 : " + xioOutput.RNN);
+				console.log("고객 전산번호  : " + xioOutput.EDPS_CSN); //EDPS_CSN type : int
+				setTimeout(CustomNumber);
+			} else {
+				// Error Message
+				errorMsg = xioOutput;
+				console.log("Error : " + xioOutput);
+				console.log("errorCode  :  "+errorCode);
+				
+				ChangeTab("9055");
+				iwin8.setErrorMsg(errorMsg);
+
+				setTimeout(function(){
+					ATMCOMM.BusinessEnd(ATMCOMM.RET_NG);
+				}, 5000);
+			}
+		}
+	);
+}
+
+
+
+var ICN;
+var USR_NO;
+var UTL_MDIA_CD;
+var LMT_RDCT_EN;
+var PMED_NO;
+var OTP_COPCD;
+var SECU_MDIA_DCD;
+
+//CBKEBKE00318  
+function CustomNumber(){
+	let headerData = "OPTO_EMN=000000";
+	
+	let ret = Net.Request(
+		"CM_03401003", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			//xioInput.EDPS_CSN = USR_NO;
+			xioInput.EDPS_CSN  = EDPS_CSN;
+			//xioInput.EDPS_CSN = EDPS_CSN.toString();
+			
+			console.log("전산고객번호 xioInput.EDPS_CSN  typeof : "+typeof(xioInput.EDPS_CSN)); // type : number	
+			console.log("전산고객번호 xioInput.EDPS_CSN  : " + xioInput.EDPS_CSN);	
+		},
+		function fcb_OnAfterResponse(result, xioOutput,errorCode) {
+			// OK
+			if (result == "00") {			
+				USR_NO = xioOutput.USR_NO ;
+				console.log("이용자번호 : " + USR_NO);
+				
+				ICN = xioOutput.ICN;
+				console.log("내부계약번호 : " + ICN);
+				
+				EDPS_CSN = xioOutput.EDPS_CSN;
+				console.log("전산고객번호 : " + EDPS_CSN);
+				
+				gRNN = xioOutput.RNN;
+				console.log("주민등록번호 : " + gRNN);
+				
+				UTL_MDIA_CD = xioOutput.UTL_MDIA_CD;
+				console.log("이용매체코드 : " + UTL_MDIA_CD);
+				
+				LMT_RDCT_EN = xioOutput.DALY_TRLM_AMT;
+				console.log("일일이체한도금액(고객)  : " + LMT_RDCT_EN);
+				
+				//얘가 테이블 데이터에 들어감. PMED_NO
+				PMED_NO = xioOutput.PMED_NO;
+				console.log("매체별번호 : " + PMED_NO);
+				
+				OTP_COPCD = xioOutput.OTP_COPCD;
+				console.log("OTP업체코드 : " + OTP_COPCD);
+				
+				console.log("보안매체구분코드  :  " + xioOutput.SECU_MDIA_DCD);
+				SECU_MDIA_DCD = xioOutput.SECU_MDIA_DCD;
+				console.log("보안매체구분코드22  :  " + SECU_MDIA_DCD);
+				
+				//보안카드 : Y
+				if(xioOutput.SECU_MDIA_DCD == 'Y'){
+					console.log("SECU_MDIA_DCD == 'Y' 매체별번호 : " + PMED_NO);
+					//iwin2.setSecurityCardNo(PMED_NO);
+					ChangeTab("4011");
+				}
+				//OTP : O
+				//xioOutput.SECU_MDIA_DCD의 값이 'K' 로 오는 케이스 존재 --> 20-09-14 수정
+				//else if(xioOutput.SECU_MDIA_DCD =='O'){				
+				else {
+					console.log("SECU_MDIA_DCD == 'O' 매체별번호 : " + PMED_NO);
+					ChangeTab("4012");
+				}
+			} else {
+				// Error Message
+				errorMsg = xioOutput;
+				console.log("Error : " + xioOutput);
+				console.log("errorCode  :  "+errorCode);
+				
+				ChangeTab("9055");
+				iwin8.setErrorMsg(errorMsg);
+
+				setTimeout(function(){
+					ATMCOMM.BusinessEnd(ATMCOMM.RET_NG);
+				}, 5000);				
+			}			
+		}
+	);
+}
+/////////////////////////////////////////////////////////////////////////////////////////
+//																					   //
+//										Page2										   //
+//																					   //
+/////////////////////////////////////////////////////////////////////////////////////////
+var errorMsg;
+//보안카드
+function setSecurityCard(){
+	console.log("setSecurityCard");
+	let headerData = "";
+	
+	let ret = Net.Request(
+		"CM_03401004", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			//비밀번호구분코드
+			xioInput.PWD_DCD = '2';
+			console.log("비밀번호 구분코드  :  " +xioInput.PWD_DCD);
+			
+			//E뱅킹구분코드
+			xioInput.EBNK_DCD = '2';
+			console.log("E뱅킹구분코드  :  " +xioInput.EBNK_DCD);
+			
+			//실명번호
+			xioInput.RNN = gRNN;
+			console.log("실명번호  :  " +xioInput.RNN);
+			
+			//보안카드번호			
+			xioInput.SECU_CDN = PMED_NO.trim();						
+			console.log("보안카드번호   :  " +xioInput.SECU_CDN);
+			console.log("보안카드번호length   :  " +xioInput.SECU_CDN.length);
+			
+			//내부계약번호
+			xioInput.ICN = ICN;
+			console.log("내부계약번호  :  " +xioInput.ICN);
+			
+			//한도감액유무
+			xioInput.LMT_RDCT_EN = LMT_RDCT_EN.toString();
+			console.log("한도감액유무  :  " +xioInput.LMT_RDCT_EN);
+			
+			//전산고객번호
+			xioInput.EDPS_CSN = EDPS_CSN;
+			console.log("전산고객번호  :  " +xioInput.EDPS_CSN);		
+		},
+		function fcb_OnAfterResponse(result, xioOutput , errorCode) {
+			// OK
+			if (result == "00") {
+				ChangeTab("9043");
+			} else {
+				// Error Message
+				errorMsg = xioOutput;
+				console.log("Error : " + xioOutput);
+				console.log("errorCode  :  "+errorCode);
+				
+				ChangeTab("9055");
+				iwin8.setErrorMsg(errorMsg);
+
+				setTimeout(function(){
+					ATMCOMM.BusinessEnd(ATMCOMM.RET_NG);
+				}, 5000);
+			}
+		}
+	);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//																					   //
+//										Page5										   //
+//																					   //
+/////////////////////////////////////////////////////////////////////////////////////////
+//OTP
+function setOTP(){
+	console.log("setOTP");
+	let headerData = "";
+	
+	let ret = Net.Request(
+		"CM_03401005", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			//비밀번호구분코드
+			xioInput.PWD_DCD = '4';
+			console.log("비밀번호 구분코드  :  " +xioInput.PWD_DCD);
+			
+			//E뱅킹구분코드
+			xioInput.EBNK_DCD = '2';
+			console.log("E뱅킹구분코드  :  " +xioInput.EBNK_DCD);
+			
+			//E뱅킹구분코드
+			xioInput.EDPS_CSN = EDPS_CSN;
+			console.log("전산고객번호  :  " +xioInput.EDPS_CSN);
+			
+			//내부계약번호
+			xioInput.ICN = ICN;
+			console.log("내부계약번호  :  " +xioInput.ICN);
+			
+			//실명번호
+			xioInput.RNN = gRNN;
+			console.log("실명번호  :  " +xioInput.RNN);
+			
+			//OTP카드번호
+			xioInput.OTP_CDN = PMED_NO;
+			console.log("OTP카드번호  :  " +xioInput.OTP_CDN);
+			
+			//OTP업체코드
+			xioInput.OTP_COPCD = OTP_COPCD;
+			console.log("실명번호  :  " +xioInput.OTP_COPCD);
+			
+			//한도감액유무
+			xioInput.LMT_RDCT_EN = LMT_RDCT_EN.toString();
+			console.log("한도감액유무  :  " +xioInput.LMT_RDCT_EN);
+			
+		},
+		function fcb_OnAfterResponse(result, xioOutput , errorCode) {
+			// OK
+			if (result == "00") {				
+				ChangeTab("9043");
+			} else {				
+				// Error Message
+				//OTP발생번호 오류횟수가 없습니다 에러 화면
+				errorMsg = xioOutput;
+				console.log("Error : " + xioOutput);
+				console.log("errorCode  :  "+errorCode);
+				
+				ChangeTab("9055");
+				iwin8.setErrorMsg(errorMsg);
+
+				setTimeout(function(){
+					ATMCOMM.BusinessEnd(ATMCOMM.RET_NG);
+				}, 5000);
+			}			
+		}
+	);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//보안매체에 따라 결과화면 텍스트변경
+function EndPageTextChange(){
+
+	if(SECU_MDIA_DCD == 'O'){
+		iwin4.LB_label1.$.find('span').html('OTP 오류 해제가 ');
+		iwin4.LB_label2.$.find('span').html('<span style="color:#176bc8;">완료</span>되었습니다.');
+	}
+	else{
+		iwin4.LB_label1.$.find('span').html("보안카드 오류 해제가");
+		iwin4.LB_label2.$.find('span').html('<span style="color:#176bc8;">완료</span> 되었습니다.');
+	}
+}</script></xjscript></body>
+</html>

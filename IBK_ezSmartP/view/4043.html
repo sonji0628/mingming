@@ -1,0 +1,661 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1319,1049" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">SMS인증</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 31px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">고객님의 휴대전화번호를 입력하신 후　　　을 눌러 주십시오.</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span><span class="ui-control ui-button theme-blue" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="1280"><span class="ui-control ui-label" id="ui-1729d25cdfe" style="left: 153px; top: 83px; width: 239px; height: 32px; right: auto; bottom: auto; font-size: 24px; z-index: 0;" anchor="0b0101" dock="0" ui-id="LB_label4" ui-class="UILabel"><span class="ui-content">통신사 이용약관 동의</span></span><div class="ui-control ui-numberpad fixed" id="ui-171a5226656" style="left: 776px; top: 103px; width: 352px; height: 487px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="NP_phone" ui-class="UINumberPad" xonkeyclick="NP_phone_OnKeyClick"><table class="fixed" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td key="1"><div>1</div></td><td key="2"><div>2</div></td><td key="3"><div>3</div></td></tr><tr><td key="4"><div>4</div></td><td key="5"><div>5</div></td><td key="6"><div>6</div></td></tr><tr><td key="7"><div>7</div></td><td key="8"><div>8</div></td><td key="9"><div>9</div></td></tr><tr><td class="fix backspace" key=""><div></div></td><td key="0"><div>0</div></td><td class="fix clear" key="정정"><div>정정</div></td></tr></tbody></table><table class="shuffle" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td class="fix shuffle" colspan="2"><div>재배열</div></td><td class="fix backspace" key="backspace"><div></div></td><td class="fix clear" key="clear"><div>정정</div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-1729d12abaf" style="left: 153px; top: 154px; width: 475px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 2;" anchor="0b0101" dock="0" ui-id="LB_label16" ui-class="UILabel"><span class="ui-content">휴대전화번호</span></span><span class="ui-control ui-textbox" id="ui-1729d12abd7" style="left: 153px; top: 197px; width: 475px; height: 80px; right: auto; bottom: auto; font-size: 38px; z-index: 3;" anchor="0b0101" dock="0" ui-id="TB_Phone" ui-class="UITextBox" xonclick="TB_Phone_OnClick"><span><input class="ui-input" style="text-align: left;" type="text" maxlength="13"></span></span><span class="ui-control ui-label" id="ui-171a5245d17" style="left: 153px; top: 301px; width: 475px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 4;" anchor="0b0101" dock="0" ui-id="LB_label10" ui-class="UILabel"><span class="ui-content">통신사</span></span><span class="ui-control ui-button" id="ui-172a5dd0e6f" style="border-radius: 20px; border: 2px solid gainsboro; border-image: none; left: 428px; top: 80px; width: 200px; height: 38px; right: auto; bottom: auto; color: black; font-size: 20px; z-index: 5;" anchor="0b0101" dock="0" ui-id="BT_Agree" ui-class="UIButton" theme="" xonclick="BT_Agree_OnClick"><span class="ui-content">동의하기</span></span><div class="ui-control ui-table" id="ui-172a5e383b3" style="left: 153px; top: 348px; width: 475px; height: 154px; right: auto; bottom: auto; z-index: 6;" anchor="0b0101" dock="0" ui-id="TL_table1" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="237" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="50"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172a5e6135b"><span class="ui-control ui-radiobox round" id="ui-172a5e8c3d2" style="left: 38px; top: 0px; width: 158px; height: 50px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="RB_SKT" ui-class="UIRadioBox" x-style="round" group-name="telecom"><span class="ui-icon-image"><span></span></span><span class="ui-content">SKT</span></span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172a5e6135c"><span class="ui-control ui-radiobox round" id="ui-172a5e8d622" style="left: 38px; top: 0px; width: 158px; height: 50px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="RB_SKT_RESALE" ui-class="UIRadioBox" x-style="round" group-name="telecom"><span class="ui-icon-image"><span></span></span><span class="ui-content">SKT망 알뜰폰</span></span></div></td></tr><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172a5e383b6"><span class="ui-control ui-radiobox round" id="ui-172a5e3a067" style="left: 38px; top: 0px; width: 158px; height: 50px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="RB_KT" ui-class="UIRadioBox" x-style="round" group-name="telecom"><span class="ui-icon-image"><span></span></span><span class="ui-content">KT</span></span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172a5e383b7"><span class="ui-control ui-radiobox round" id="ui-172a5e8dc43" style="left: 38px; top: 0px; width: 158px; height: 50px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="RB_KT_RESALE" ui-class="UIRadioBox" x-style="round" group-name="telecom"><span class="ui-icon-image"><span></span></span><span class="ui-content">KT망 알뜰폰</span></span></div></td></tr><tr><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172a5e383b8"><span class="ui-control ui-radiobox round" id="ui-172a5e8e396" style="left: 38px; top: 0px; width: 158px; height: 50px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="RB_LGU" ui-class="UIRadioBox" x-style="round" group-name="telecom"><span class="ui-icon-image"><span></span></span><span class="ui-content">LGU+</span></span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172a5e383b9"><span class="ui-control ui-radiobox round" id="ui-172a5e8eb54" style="left: 38px; top: 0px; width: 158px; height: 50px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="RB_LGU_RESALE" ui-class="UIRadioBox" x-style="round" group-name="telecom"><span class="ui-icon-image"><span></span></span><span class="ui-content">LGU+망 알뜰폰</span></span></div></td></tr></tbody></table></div></div></div></div><xcomponent><xios><xio>{
+  "Name": "IO_03404301",
+  "Description": "CBKEBKE00218",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "MMCR_MBN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "TLTS_FNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "CNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "TLGR_MSNM_RQST_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 14,
+      "Name": "IBCI_TLGR_TRMS_TS",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "APCT_SRNM_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "EBNK_CTCT_CPN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "TLFA_CMCM_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "BIRT_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "GNDR_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NATL_CLCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "EBNK_PREP_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "F_PREP_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "USE_YNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "SMCF_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 80,
+      "Name": "EBNK_SMTS_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "SMCF_RQST_TPN",
+      "GridData": []
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "MMCR_MBN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "TLTS_FNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "CNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "TLGR_MSNM_RQST_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 14,
+      "Name": "IBCI_TLGR_TRMS_TS",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "APCT_SRNM_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "EBNK_CTCT_CPN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "TLFA_CMCM_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "BIRT_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "GNDR_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NATL_CLCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 152,
+      "Name": "DWSEC_TRK3_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "EBNK_PREP_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "F_PREP_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "RSLT_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "RPCD_NM",
+      "GridData": []
+    }
+  ]
+}</xio></xios><xcms><xcm>{
+  "Name": "CM_03404301",
+  "ServiceName": "CBKEBKE00218",
+  "RefIoName": "IO_03404301",
+  "Input": [
+    {
+      "MMCR_MBN": "MMCR_MBN"
+    },
+    {
+      "TLTS_FNCD": "TLTS_FNCD"
+    },
+    {
+      "CNCD": "CNCD"
+    },
+    {
+      "TLGR_MSNM_RQST_NO": "TLGR_MSNM_RQST_NO"
+    },
+    {
+      "IBCI_TLGR_TRMS_TS": "IBCI_TLGR_TRMS_TS"
+    },
+    {
+      "APCT_SRNM_NM": "APCT_SRNM_NM"
+    },
+    {
+      "EBNK_CTCT_CPN": "EBNK_CTCT_CPN"
+    },
+    {
+      "TLFA_CMCM_DCD": "TLFA_CMCM_DCD"
+    },
+    {
+      "BIRT_YMD": "BIRT_YMD"
+    },
+    {
+      "GNDR_DCD": "GNDR_DCD"
+    },
+    {
+      "NATL_CLCD": "NATL_CLCD"
+    },
+    {
+      "EBNK_PREP_CON": "EBNK_PREP_CON"
+    },
+    {
+      "F_PREP_CON": "F_PREP_CON"
+    },
+    {
+      "USE_YNCD": "USE_YNCD"
+    },
+    {
+      "SMCF_NO": "SMCF_NO"
+    },
+    {
+      "EBNK_SMTS_CON": "EBNK_SMTS_CON"
+    },
+    {
+      "SMCF_RQST_TPN": "SMCF_RQST_TPN"
+    }
+  ],
+  "Output": [
+    {
+      "MMCR_MBN": "MMCR_MBN"
+    },
+    {
+      "TLTS_FNCD": "TLTS_FNCD"
+    },
+    {
+      "CNCD": "CNCD"
+    },
+    {
+      "TLGR_MSNM_RQST_NO": "TLGR_MSNM_RQST_NO"
+    },
+    {
+      "IBCI_TLGR_TRMS_TS": "IBCI_TLGR_TRMS_TS"
+    },
+    {
+      "APCT_SRNM_NM": "APCT_SRNM_NM"
+    },
+    {
+      "EBNK_CTCT_CPN": "EBNK_CTCT_CPN"
+    },
+    {
+      "TLFA_CMCM_DCD": "TLFA_CMCM_DCD"
+    },
+    {
+      "BIRT_YMD": "BIRT_YMD"
+    },
+    {
+      "GNDR_DCD": "GNDR_DCD"
+    },
+    {
+      "NATL_CLCD": "NATL_CLCD"
+    },
+    {
+      "DWSEC_TRK3_CON": "DWSEC_TRK3_CON"
+    },
+    {
+      "EBNK_PREP_CON": "EBNK_PREP_CON"
+    },
+    {
+      "F_PREP_CON": "F_PREP_CON"
+    },
+    {
+      "RSLT_DCD": "RSLT_DCD"
+    },
+    {
+      "RPCD_NM": "RPCD_NM"
+    }
+  ]
+}</xcm></xcms></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*****************************************************************************
+*
+*			include
+*
+******************************************************************************/
+includeJSS("common","/KRG/0301/common.js");
+
+
+var gTelecom = '';		// 통신사
+var gRetryCount = 0;	// SMS 인증 시도 회수
+var gBackupIO; 
+
+var gCellPhone = '';	
+var gCSM = '';
+var gRNN = '';
+
+
+// 해당 화면이 처음 로드된 경우
+function Form_OnLoad(e){
+	BT_right.Enabled = false;
+	
+	NP_phone.$.find(".backspace").attr("key","backspace");
+	TB_Phone.$.find(">span>input").attr({"placeholder":"입력해주세요",'disabled':'true'})
+								  .css({"padding-left":"40px","letter-spacing":"3px"});
+	
+	TB_Phone.$.css({'border': '3px solid #046fd9'});									//Textbox border
+		
+	LB_Subtitle.$.find('> span.ui-content').html('고객님의 휴대전화번호를 입력하신 후<span>확인</span>을 눌러주십시오.');
+	LB_Subtitle.$.find('> span.ui-content > span').css({'border-radius':'5px','margin':'0 10px','padding':'4px 15px','font-size':'26px','font-weight':'bold','color':'#fff','background-color':'#176bc8'});
+
+
+	// 통신사 라디오버튼
+	RB_SKT.Tag = { val : '01' };
+	RB_KT.Tag = { val : '02' };
+	RB_LGU.Tag = { val : '03' };
+	RB_SKT_RESALE.Tag = { val : '04' };
+	RB_KT_RESALE.Tag = { val : '05' };
+	RB_LGU_RESALE.Tag = { val : '06' };
+	RB_SKT.OnChecked = 
+	RB_KT.OnChecked = 
+	RB_LGU.OnChecked =
+	RB_SKT_RESALE.OnChecked =
+	RB_KT_RESALE.OnChecked =
+	RB_LGU_RESALE.OnChecked = "OnChecked_Telecom";
+}
+
+// 해당 화면 탭이 활성화된 경우
+function InitPage(){
+	let p = parent;
+	
+	gCellPhone = p.gCellPhone;
+	gCSM = p.gCSM;
+	gRNN = p.gRNN;
+	
+	// 동의하기 버튼 초기화
+	let $BT_Agree = $("span[ui-id='BT_Agree']");	
+	
+	BT_Agree.Style = 'none';
+	$BT_Agree.css('color','black');
+	BT_Agree.BorderColor = "gainsboro";
+	BT_Agree.Text = "동의하기";
+	
+	// 핸드폰 번호
+	TB_Phone.Text = NP_phone.autoHypenPhone(gCellPhone);
+	if (TB_Phone.Text.length == 13)
+		com.numberpad.maxLength(NP_phone);
+	else
+		com.numberpad.notMaxLength(NP_phone);
+	
+	// 통신사 초기화
+	RB_SKT.Checked = false;
+	RB_KT.Checked = false;
+	RB_LGU.Checked = false;
+	RB_SKT_RESALE.Checked = false;
+	RB_KT_RESALE.Checked = false;
+	RB_LGU_RESALE.Checked = false;	
+}
+
+// 확인 버튼 활성화 조건 체크
+function CheckValid(){
+	let $BT_Agree = $("span[ui-id='BT_Agree']");
+	
+	if (TB_Phone.Text.length >= 12 && gTelecom.length > 0 && $BT_Agree.hasClass('theme-blue')){
+		BT_right.Enabled = true;
+	}
+	else{
+		BT_right.Enabled = false;
+	}
+}
+
+// 동의하기 클릭 : 통신사 이용약관 팝업
+function BT_Agree_OnClick(e){
+	let $BT_Agree = $("span[ui-id='BT_Agree']");
+	
+	console.log(BT_Agree.Style);
+	if (BT_Agree.Style == '' || BT_Agree.Style == 'none'){
+		// 부모 타임아웃 해지
+		parent.com.screen.clearTimeoutEx();
+		
+		console.log("popup : 9060");
+		com.screen.createPopup("9060");
+	}
+	else{
+		BT_Agree.Style = 'none';
+		$BT_Agree.css('color','black');
+		BT_Agree.BorderColor = "gainsboro";
+		BT_Agree.Text = "동의하기";
+	}
+}
+
+// 통신사 이용약관 팝업 닫을 때 발생하는 이벤트 
+// result : 확인(true), 취소(false)
+function OnCloseTelecomTerm(result){
+	console.log("result = " + result);
+	
+	let $BT_Agree = $("span[ui-id='BT_Agree']");	
+	
+	if (result == "timeout"){
+		parent.onScreenTimeout();
+		return;
+	}
+	else if (result == true){
+		BT_Agree.Style = 'blue';
+		$BT_Agree.css('color','white');
+		BT_Agree.BorderColor = "#176bc8";
+		BT_Agree.Text = "동의완료";
+	}
+	else{
+		BT_Agree.Style = 'none';
+		$BT_Agree.css('color','black');
+		BT_Agree.BorderColor = "gainsboro";
+		BT_Agree.Text = "동의하기";
+	}
+	// 부모 타임아웃 설정
+	parent.com.screen.setTimeoutEx(60000, parent.onScreenTimeout);
+
+	CheckValid();
+}
+
+// 통신사 라디오버튼 클릭 시 발생하는 이벤트
+function OnChecked_Telecom(e){
+	let val = this.Tag.val;
+	console.log("통신사 = " + val);
+	gTelecom = val;
+	
+	CheckValid();
+}
+
+function NP_phone_OnKeyClick(e){
+	//TB_Phone.$.find("span >input").css({'border':'3px solid rgb(4, 111, 217)'});
+	
+	if (e.key == "정정"){
+		e.key='';
+		TB_Phone.Text = TB_Phone.Text.replace(TB_Phone.Text,"");
+	}
+	else if (e.key == "backspace"){
+		e.key='';
+		let tmp = TB_Phone.Text.substring(0, TB_Phone.Text.length-1);	
+		TB_Phone.Text = NP_phone.autoHypenPhone(tmp);
+	}
+	else{
+		TB_Phone.Text += e.key;
+		TB_Phone.Text = NP_phone.autoHypenPhone(TB_Phone.Text);
+	}
+	
+	// 글자수 제한
+	if (TB_Phone.Text.length == 0){
+		//숫자 O
+		com.numberpad.notMaxLength(NP_phone);
+		//정정 back X
+		com.numberpad.btnDisabled(NP_phone);
+	}
+	else if (TB_Phone.Text.length > 0 && TB_Phone.Text.length < 13){
+		//숫자 O , 정정 back O
+		com.numberpad.notMaxLength(NP_phone);
+	}	
+	else if (TB_Phone.Text.length == 13){
+		//숫자 X
+		com.numberpad.maxLength(NP_phone);			
+	}
+	
+	CheckValid();
+}
+
+function BT_left_OnClick(e){
+
+	// 업무 종료 : 취소
+	SCREEN.WriteJnl("[추가인증[SMS]] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+function BT_right_OnClick(e){
+	let p = parent;
+	p.ChangeTab("9059");
+	setTimeout(RequestSmsAuthNumber);
+}
+
+// SMS 인증번호 요청
+function RequestSmsAuthNumber(){
+	let headerData = "TLN=CHAMS000,USR_IDNT_NO=GUEST";
+	let sysData;
+	let resultCode;
+	let resultMsg;
+	let p = parent;
+
+	let ret = Net.Request(
+		"CM_03404301", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			xioInput.MMCR_MBN = "ibk1";		// 회원사 회원번호
+			xioInput.TLTS_FNCD = "01";		// 전문전송기능코드
+			xioInput.CNCD = "01005";		// 조건코드
+			
+			sysData = com.date.getSysDateTimeString();
+			xioInput.TLGR_MSNM_RQST_NO = "CBK" + sysData + "00001";		// 전문 시리얼번호, 전문결번요청번호
+			xioInput.IBCI_TLGR_TRMS_TS = sysData;						// IBK신용정보전문전송일시
+			xioInput.APCT_SRNM_NM = gCSM;								// 이름
+			xioInput.EBNK_CTCT_CPN = TB_Phone.Text.replace(/\-/g, "");	// E뱅킹연락휴대폰번호 
+			xioInput.TLFA_CMCM_DCD = gTelecom;							// 통신사
+			xioInput.BIRT_YMD = com.util.fnGetBirthYear(gRNN) + gRNN.substr(0,6);		// 생년월일
+			xioInput.GNDR_DCD = com.util.fnGetSex(gRNN);				// 성별
+			xioInput.NATL_CLCD = com.util.fnGetFrom(gRNN);				// 국적
+            xioInput.EBNK_PREP_CON = "";								// E뱅킹예비내용
+            xioInput.F_PREP_CON = "";									// F예비내용
+            xioInput.USE_YNCD = "00";									// 사용여부코드
+            xioInput.EBNK_SMTS_CON = "[기업은행]본인확인을 위해 인증번호[XXXXXX]를 입력해주십시오.";	// E뱅킹SMS전송내용
+            xioInput.SMCF_RQST_TPN = "15662566";						// SMS인증요청전화번호
+            
+            gBackupIO = xioInput;	// 4044에서 사용됨
+		},
+		function fcb_OnAfterResponse(result, xioOutput, errorCode) {
+			// OK
+			if (result == "00") {
+				
+				resultCode = xioOutput.RSLT_DCD;	// 결과구분코드
+				resultMsg = xioOutput.RPCD_NM;		// 응답코드명
+				console.log("결과구분코드 = " + resultCode);
+				console.log("응답코드명 = " + resultMsg);
+				
+				// 성공
+				if (parseInt(resultCode) == 0){
+					// 인증번호 입력화면
+					SCREEN.WriteJnl("[추가인증 [SMS]] 인증번호 전송");
+					p.ChangeTab("4044");
+				}
+				// 실패
+				else{
+					setTimeout(ErrorRequestSmsAuthNumber);
+				}
+				
+			} else {
+				// Error Message
+				console.log("Error : " + xioOutput);
+				console.log("Error Code : " + errorCode);
+			}
+			
+		}
+	);
+}
+
+function ErrorRequestSmsAuthNumber(){
+	let p = parent;
+	// 에러 카운트 증가시킴
+	gRetryCount++;
+	
+	let msg = [];
+	msg.push("<p>SMS 인증에 실패하였습니다.</p>");
+	msg.push("<p>휴대폰 번호를 확인해 주십시오.</p>");
+	
+	// 9047 화면 취소 및 확인 버튼 visible false
+	p.SetVisible("9047", "BT_left", false);
+	p.SetVisible("9047", "BT_right", false);
+	
+	// 9047 화면에 에러 데이터 출력
+	p.DisplayMsg("9047", msg);
+	
+	setTimeout(function(){
+		if (gRetryCount > 2){
+			msg = [];
+			msg.push("<p>SMS 인증에 실패하였습니다.</p>" );
+			msg.push("<p>본인 명의의 휴대폰으로 인증을 진행하여 주십시오.</p>" );
+			// 9047 화면 취소 및 확인 버튼 visible false
+			p.SetVisible("9047", "BT_left", false);
+			p.SetVisible("9047", "BT_right", false);
+			// 9047 화면에 에러 데이터 출력
+			p.DisplayMsg("9047", msg);
+			
+			// 거래 종료
+			setTimeout(function(){
+				ATMCOMM.BusinessEnd(ATMCOMM.RET_NG);
+			}, 5000);
+		}
+		else{
+			p.ChangeTab("4043");
+		}
+	}, 5000);
+	
+}</script></xjscript></body>
+</html>

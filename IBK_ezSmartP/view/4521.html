@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1410,1150" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a564ef73" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-171a564ef76" style='left: 444px; top: 192px; width: 393px; height: 66px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK IDream M"; font-size: 54px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_label23" ui-class="UILabel"><span class="ui-content" style="left: 80px; top: 0px; right: 0px; bottom: 0px; justify-content: flex-start;">거래 선택</span><span class="ui-icon-image" style='background-position: left; background-image: url("/KRG/media/btn_internetbanking.png");'></span></span><span class="ui-control ui-label" id="ui-171a564ef78" style="left: 304px; top: 290px; width: 672px; height: 44px; right: auto; bottom: auto; font-size: 28px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label24" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">어서 오십시오, 고객님!</span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a564ef79" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-171a564ef7b" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span></div><span class="ui-control ui-button" id="ui-171a567fbf0" style='border-radius: 15px; border: 1px solid rgb(150, 162, 169); border-image: none; left: 226px; top: 489px; width: 400px; height: 255px; right: auto; bottom: auto; color: black; font-family: "IBKIDreamM", "IBK iDream M", sans-serif; font-size: 32px; z-index: 3;' anchor="0b0101" dock="0" ui-id="BT_ONE" ui-class="UIButton" xonclick="BT_ONE_OnClick" theme="" icon-image-align="center,top" back-image-pos="0px,0px" icon-image-padding="0,45,0,0"><span class="ui-content" style="left: 0px; top: 80px; right: 0px; bottom: 0px;">건별계산서 발급</span><span class="ui-icon-image" style='background-position: top; left: 0px; top: 45px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_bill.png");'></span></span><span class="ui-control ui-button" id="ui-171a5698937" style='border-radius: 15px; border: 1px solid rgb(150, 162, 169); border-image: none; left: 650px; top: 489px; width: 400px; height: 255px; right: auto; bottom: auto; color: black; font-family: "IBKIDreamM", "IBK iDream M", sans-serif; font-size: 32px; z-index: 4;' anchor="0b0101" dock="0" ui-id="BT_ALL" ui-class="UIButton" xonclick="BT_ALL_OnClick" theme="" icon-image-align="center,top" icon-image-padding="0,45,0,0"><span class="ui-content" style="left: 0px; top: 80px; right: 0px; bottom: 0px;">일괄계산서 발급</span><span class="ui-icon-image" style='background-position: top; left: 0px; top: 45px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_bill2.png");'></span></span><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><span class="ui-control ui-label" id="ui-1729d69da1c" style="left: 304px; top: 335px; width: 672px; height: 44px; right: auto; bottom: auto; font-size: 28px; z-index: 5;" anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">원하시는 거래를 선택하여 주십시오.</span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js");
+
+var p = parent;
+
+function Form_OnLoad(e)
+{
+	console.log("Init4521");
+}
+
+//건별계산서 발급
+function BT_ONE_OnClick(e)
+{
+	p.data.sort = "one";
+	p.act = "Check_loan_account";
+	SCREEN.WriteJnl("[건별 계산서 출력] 선택");
+	setTimeout(function () {
+		p.ChangeTab("9059");
+		p.sendRequest(p.act);
+	});
+	
+}
+
+//일괄계산서 발급
+function BT_ALL_OnClick(e)
+{
+	p.data.sort = "all";
+	p.act = "Check_loan_account";
+	SCREEN.WriteJnl("[일괄 계산서 출력] 선택");
+	setTimeout(function () {
+		p.ChangeTab("9059");
+		p.sendRequest(p.act);
+	});
+}
+
+//취소
+function BT_left_OnClick(e)
+{
+	SCREEN.WriteJnl("[대출(이자) 계산서 발급] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+</script></xjscript></body>
+</html>

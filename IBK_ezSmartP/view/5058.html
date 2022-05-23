@@ -1,0 +1,464 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1357,1131" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a570e5a0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("common","/KRG/0301/common.js");
+let httpQuerys = parseLocationQueryString();
+
+
+function Form_OnLoad(e){
+	$("div[ui-id='Form']").removeClass('ui-document ui-container');
+	$("div[ui-id='PN_panel1']").css('height','100%');
+}
+
+function createIssueTable(data) {
+	// 특수채권 출력여부, 신용카드 출력여부, 금융기관성실도 출력여부
+	var val = data.OTPT_TGT_CON.replace(/[ㄱ-힣:\s]/gi, "");
+	var val_3 = val[2];
+	var statMsg = "";
+	var con0 = "", con1 = "";
+	var rmrkNm1 = "", rmrkNm2 = "", rmrkNm3 = "", dshrCon = ""; 
+	
+	 //금융기관거래 여부에 따른 문구 변경 처리
+    if (["Ｙ"].indexOf(val_3) > -1) {
+        statMsg = "4) 대출금 거래상황표에는 주채무 외 보증채무, 신용카드채무, 어음채무 및 기타채무는 나타나지 않음.\n";
+    } else {
+        statMsg = "4) 대출금 거래상황표에는 주채무 외 보증채무, 신용카드채무, 어음채무 및 기타채무, 특수채권은 나타나지 않음.\n";
+    }
+    
+    // 여신증명서차주자격내용 => 금융기관 거래성실도 - 해 당 사 항 없 음 -
+    if(data.CRTF_ISNC_GRID5[0] != undefined) {
+        con0 = data.CRTF_ISNC_GRID5[0].LON_CRTF_DBTO_QLFC_CON;    
+    }
+    if(data.CRTF_ISNC_GRID5[1] != undefined) {
+        con1 = data.CRTF_ISNC_GRID5[1].LON_CRTF_DBTO_QLFC_CON;    
+    }
+    
+    // 기준일현재 연체여부
+    if(data.OVDU_RMRK_NM_1.length == 0) {
+        rmrkNm1 = "없음";
+    } else {
+        rmrkNm1 = data.OVDU_RMRK_NM_1.replace(/\s/g, "");
+    }
+    
+    // 발급일현재 신용카드 연체여부
+    if(data.OVDU_RMRK_NM_2.length == 0) {
+        rmrkNm2 = "없음";
+    } else {
+        rmrkNm2 = data.OVDU_RMRK_NM_2.replace(/\s/g, "");
+    }
+
+    // 기준일로부터 1년이내 당좌부도 발생유무
+    if(data.OVDU_RMRK_NM_3.length == 0) {
+        rmrkNm3 = "없음";
+    } else {
+        rmrkNm3 = data.OVDU_RMRK_NM_3.replace(/\s/g, "");
+        dshrCon = data.LON_CRTF_DSHR_CON;
+    }
+	
+	let grd1=[];
+	for(var i = 0; i < data.CRTF_ISNC_GRID1_ROWCOUNT; i++)
+	{
+		grd1.push(""
+			+'<tr>\n'
+			+'	<td colspan="9">'+ data.CRTF_ISNC_GRID1[i].LON_CRTF_LOAN_CON.replace(/\s/g, "&nbsp;") +'</td>\n'
+			+'</tr>\n'
+		);
+	}
+	
+	let grd2=[];
+	for(var j = 0; j < data.CRTF_ISNC_GRID2_ROWCOUNT; j++)
+	{
+		grd2.push(""
+			+'<tr>\n'
+			+'	<td colspan="10">'+ data.CRTF_ISNC_GRID2[j].LON_CRTF_MRTG_CON.replace(/\s/g, "&nbsp;") + data.CRTF_ISNC_GRID2[j].LON_CRTF_MSU_CON.replace(/\s/g, "&nbsp;") +'</td>\n'
+			+'</tr>\n'
+		);
+	}
+	
+	let grd3=[];
+	for(var k = 0; k < data.CRTF_ISNC_GRID3_ROWCOUNT; k++)
+	{
+		grd3.push(""
+			+'<tr>\n'
+			+'	<td colspan="6">'+ data.CRTF_ISNC_GRID3[k].LON_CRTF_OVDU_DSHR_CON.replace(/\s/g, "&nbsp;") + '</td>\n'
+			+'</tr>\n'
+		);
+	}
+	
+	var content = ""
+	+'<!DOCTYPE html>\n'
+	+'<html>\n'
+	+'	<head>\n'
+	+'		<meta charset="utf-8">\n'
+	+'		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">\n'
+	+'		<meta http-equiv="X-UA-Compatible" content="IE=edge">\n'
+	+'		<title>금융거래확인서</title>\n'
+	+'		<link type="text/css" rel="stylesheet" href="form.css">\n'
+	+'		<link type="text/css" rel="stylesheet" href="reset.css">\n'
+	+'		<link type="text/css" rel="stylesheet" href="theme.css">\n'
+	+'		<style>\n'
+	+'			.wrapper i-text {\n'
+	+'				font-family:"돋움체",DotumChe;\n'
+	+'				font-size:15px;\n'
+	+'			}\n'
+	+'			footer div.left-wrapper i-text{\n'
+	+'				vertical-align:bottom;\n'
+	+'			}\n'
+	+'		</style>\n'
+	+'		<style type="text/css" media="print,screen">\n'
+	+' 	       /* 프린트할 때 스타일 정의. 기본 여백 제거 */\n'
+	+' 	       @page {\n'
+	+' 	           margin: 10mm !important;\n'
+	+' 	       }\n'
+	+' 	       .headerSpan {\n'
+	+' 	       		font-family:"맑은 고딕";\n'
+	+' 	       }\n'
+	+' 	       .article-header span {\n'
+	+' 	       		font-family:"맑은 고딕";\n'
+	+' 	       }\n'
+	+' 	       .article-table thead th {\n'
+	+' 	       		font-family:"맑은 고딕";\n'
+	+' 	       }\n'
+	+' 	       .article-table tfoot th {\n'
+	+' 	       		font-family:"맑은 고딕";\n'
+	+' 	       }\n'
+	+' 	       .article-table tfoot th span{\n'
+	+' 	       		font-family:"맑은 고딕";\n'
+	+' 	       }\n'
+	+' 	       .desc-wrapper p{\n'
+	+' 	       		font-family:"맑은 고딕";\n'
+	+' 	       }\n'
+	+' 	       .desc-wrapper ul li{\n'
+	+' 	       		font-family:"맑은 고딕";\n'
+	+' 	       }\n'
+	+' 	       .tBold {\n'
+	+' 	       		font-family:"맑은 고딕";\n'
+	+' 	       }\n'
+	+'		</style>\n'
+	+'	</head>\n'
+	+'	<body>\n'
+	+'<div class="wrapper">\n'
+	+'	<header>\n'
+	+'    <div class="msg-wrapper">\n'
+	+'		<p class="header-msg" style="font-size: 12px;">* 기준일자와 발급일자가 동일자인 경우 기준일시 이후 변경사항이 있을 수 있으니 유의하시기 바랍니다.</p>\n'
+	+'    </div>\n'
+	+'    <h1>\n'
+	+'		<span class="headerSpan">금융거래확인서</span>\n'
+	+'    </h1>\n'
+	+'    <h2 style="font-size: 20px; font-family:\'맑은 고딕\';">\n'
+	+'		( 기준일자 : '+ com.util.fnGetFormatData("YYYY-MM-DD", data.ISNC_BASE_YMD) +' )\n'
+	+'    </h2>\n'
+	+'    <h3>\n'
+	+'		' + data.LON_CRIC_TIM_CON + '\n'
+	+'    </h3>\n'
+	+'    <p id="CSAC_IDNT_NO" style="font-family:\'맑은 고딕\';">고객번호 : ' + com.util.fnGetFormatData("AAA-AAAAAA", data.CSAC_IDNT_NO) + '</p>\n'
+	+'	</header>\n'
+	+'	<section>\n'
+	+'    <article>\n'
+	+'		<div class="article-header">\n'
+	+'		    <span class="article-title">1. 대출금 거래상황</span>\n'
+	+'		    <span class="article-unit">(단위 : 원)</span>\n'
+	+'		</div>\n'
+	+'		<table class="article-table" colCount="9">\n'
+	+'		    <colgroup>\n'
+	+'				<col style="width: 225px;">\n'
+	+'				<col style="width: 40px;">\n'
+	+'				<col style="width: 90px;">\n'
+	+'				<col style="width: 39px;">\n'
+	+'				<col style="width: 115px;">\n'
+	+'				<col style="width: 110px;">\n'
+	+'				<col style="width: 115px;">\n'
+	+'				<col style="width: 80px;">\n'
+	+'				<col style="width: auto;">\n'
+	+'		    </colgroup>\n'
+	+'	   		<thead>\n'
+	+'				<tr>\n'
+	+'				    <th rowspan="2">대출 종류</th>\n'
+	+'				    <th rowspan="2">용도</th>\n'
+	+'				    <th class="lS10" colspan="3">당초차입</th>\n'
+	+'				    <th rowspan="2">대출잔액</th>\n'
+	+'				    <th rowspan="2">대출원화잔액</th>\n'
+	+'				    <th rowspan="2">상환기일</th>\n'
+	+'				    <th rowspan="2"></th>\n'
+	+'			</tr>\n'
+	+'			<tr>\n'
+	+'			    <th>대출일자</th>\n'
+	+'			    <th>통화코드</th>\n'
+	+'			    <th>금액(한도설정액)</th>\n'
+	+'			</tr>\n'
+	+'	    	</thead>\n'
+	+'	 	   <tbody>\n'
+	+				grd1.join("")
+	+'	 	   </tbody>\n'
+	+'	 	   <tfoot>\n'
+	+'				<tr>\n'
+	+'				    <th colspan="9" style="padding: 5px 10px;">\n'
+	+'						' + con0 + '\n'
+	+'				    </th>\n'
+	+'				</tr>\n'
+	+'				<tr>\n'
+	+'				    <th colspan="9">\n'
+	+'						' + con1 + '\n'
+	+'				    </th>\n'
+	+'				</tr>\n'
+	+'				<br>\n'
+	+'				<tr>\n'
+	+'				    <th colspan="9" class="billiard">\n'
+	+'						미회수 어음, 수표내역 (기준일:' + com.util.fnGetFormatData("YYYY-MM-DD", data.CRTF_OTNT_BASE_YMD.replace(/\s/g, "0")) + ')\n'
+	+'				    </th>\n'
+	+'				</tr>\n'
+	+'				<tr>\n'
+	+'				    <th colspan="9">\n'
+	+'						 <span>\n'
+	+'						    어 &nbsp; 음(전자어음 포함) : ' + parseInt(data.NTRT_NOTE_QNT) + '장\n'
+	+'						 </span>\n'
+	+'						 <span class="pL40">\n'
+	+'						    수 &nbsp; 표 : ' + parseInt(data.NTRT_CHCK_QNT) + '장\n'
+	+'						 </span>\n'
+	+'				    </th>\n'
+	+'				</tr>\n'
+	+'	  	  </tfoot>\n'
+	+'		</table>\n'
+	+'		<div class="desc-wrapper">\n'
+	+'	    	<p class="desc-title">※ 유의사항</p>\n'
+	+'	    		<ul class="desc-content">\n'
+	+'					<li>\n'
+	+'		    			1) 당초 차입금액 : 해당대출에 대한 약정금액임.<br>&nbsp;&nbsp;&nbsp;즉, 한도거래인 경우에는 한도약정액을 개별거래인 경우에는 대출약정금액을 기재함.\n'
+	+'					</li>\n'
+	+'					<li>\n'
+	+'		    			2) 대출원화잔액 : 해당대출의 기준일시 현재의 원화기준 대출잔액임.\n'
+	+'					</li>\n'
+	+'					<li>\n'
+	+'		    			3) 상환기일 : 대출금의 최종 상환기일을 표시함.\n'
+	+'					</li>\n'
+	+'					<li id="statMsg">\n'
+	+		    			statMsg
+	+'					</li>\n'
+	+'					<li>\n'
+	+'		    			5) 특수채권 포기계좌, ABS발생채권, 외부매각채권 등은 본 증명서에서 제공하지 아니함.<br>&nbsp;&nbsp;(필요시 은행직원에게 별도 요청 바랍니다)\n'
+	+'					</li>\n'
+	+'					<li>\n'
+	+'		    			6) 부동산매매 또는 근저당권 피담보채무 확인용으로 사용할 수 없음.\n'
+	+'					</li>\n'
+	+'	    		</ul>\n'
+	+'		</div>\n'
+	+'    </article>\n'
+	+'    <article class="mT40">\n'
+	+'			<div class="article-header">\n'
+	+'	    		<span class="article-title">2. 담보 현황</span>\n'
+	+'	    		<span class="article-unit">(단위 : 원)</span>\n'
+	+'			</div>\n'
+	+'			<table class="article-table" colCount="10">\n'
+	+'	    		<colgroup>\n'
+	+'					<col style="width: 100px;">\n'
+	+'					<col style="width: 80px;">\n'
+	+'					<col style="width: 120px;">\n'
+	+'					<col style="width: 105px;">\n'
+	+'					<col style="width: 75px;">\n'
+	+'					<col style="width: 120px;">\n'
+	+'					<col style="width: 55px;">\n'
+	+'					<col style="width: 55px;">\n'
+	+'					<col style="width: 125px;">\n'
+	+'					<col style="width: auto">\n'
+	+'	    		</colgroup>\n'
+	+'	    		<thead>\n'
+	+'				<tr>\n'
+	+'		   			<th rowspan="2">종류</th>\n'
+	+'		    		<th rowspan="2">수량</th>\n'
+	+'		    		<th rowspan="2">감정가격</th>\n'
+	+'		    		<th rowspan="2">감정일자</th>\n'
+	+'		    		<th rowspan="2">소유자</th>\n'
+	+'		    		<th rowspan="2">비고</th>\n'
+	+'		    		<th colspan="4">설정내역</th>\n'
+	+'				</tr>\n'
+	+'				<tr>\n'
+	+'		    		<th>순위</th>\n'
+	+'		    		<th>통화</th>\n'
+	+'		    		<th class="lS10">설정액</th>\n'
+	+'		    		<th class="lS10">설정자</th>\n'
+	+'				</tr>\n'
+	+'	    	</thead>\n'
+	+'	    	<tbody>\n'
+	+				grd2.join("")
+	+'	    	</tbody>\n'
+	+'		</table>\n'
+	+'		<div class="desc-wrapper">\n'
+	+'	   		<p class="desc-tit">\n'
+	+'				3. 기준일현재 연체(연체대출금 및 지급보증대지급금 보유 또는 이자, 분할상환금, 분할상환원리금지체포함) 여부 : \n'
+	+'				' + rmrkNm1 + '\n'
+	+'				<span style="padding-left: 45px;">\n'
+	+'			    	&#60;참고&#62; 발급일현재 신용카드 연체 여부 : ' + rmrkNm2 + '\n'
+	+'				</span>\n'
+	+'		    </p>\n'
+	+'		    <p class="desc-tit pT10">\n'
+	+'				4. 기준일로부터 1년이내 당좌부도 발생유무 : ' + rmrkNm3 + '\n'
+	+'				<span style="padding-left: 25px;">\n'
+	+'			    	(1차부도일:' + com.util.fnGetFormatData("YYYY-MM-DD", data.DSHR_YMD_1.replace(/\s/g, "0")) + ',\n'
+	+'			    	2차부도일:' + com.util.fnGetFormatData("YYYY-MM-DD", data.DSHR_YMD_2.replace(/\s/g, "0")) + ',\n'
+	+'			    	3차부도일:' + com.util.fnGetFormatData("YYYY-MM-DD", data.DSHR_YMD_3.replace(/\s/g, "0")) + '\n'
+	+'			    	' + dshrCon + ')\n'
+	+'				</span>\n'
+	+'				<span style="padding-left: 25px;">※ 거래정지처분으로 이어지지 않는 부도는 표시하지 않음</span>\n'
+	+'		    </p>\n'
+	+'		</div>\n'
+	+'    </article>\n'
+	+'    <article class="mT40">\n'
+	+'		<div class="article-header">\n'
+	+'		    <span class="article-title">5. 최근 3개월이내 10일이상 계속된 연체 명세 (기산일: ' + com.util.fnGetFormatData("YYYY-MM-DD", data.DD10_ABV_OVRC_YMD.replace(/\s/g, "0")) + ')</span>\n'
+	+'		    <span class="article-unit">(단위 : 원)</span>\n'
+	+'		</div>\n'
+	+'		<table class="article-table" colCount="6">\n'
+	+'		    <colgroup>\n'
+	+'				<col style="width: 160px;">\n'
+	+'				<col style="width: 155px;">\n'
+	+'				<col style="width: 150px;">\n'
+	+'				<col style="width: 170px;">\n'
+	+'				<col style="width: 170px;">\n'
+	+'				<col style="width: auto">\n'
+	+'		    </colgroup>\n'
+	+'		    <thead>\n'
+	+'				<tr>\n'
+	+'				    <th rowspan="2">대출 종류</th>\n'
+	+'				    <th rowspan="2">연체 발생일</th>\n'
+	+'				    <th colspan="2">연 체 금 액</th>\n'
+	+'				    <th rowspan="2">연체 정리일</th>\n'
+	+'				    <th rowspan="2">연 체 일 수</th>\n'
+	+'				</tr>\n'
+	+'				<tr>\n'
+	+'				    <th>원&nbsp;&nbsp;금</th>\n'
+	+'				    <th>이&nbsp;&nbsp;자</th>\n'
+	+'				</tr>\n'
+	+'		    </thead>\n'
+	+'	    	<tbody>\n'
+	+				grd3.join("")
+	+'	    	</tbody>\n'
+	+'		</table>\n'
+	+'    </article>\n'
+	+'    <acticle class="section-bottom">\n'
+	+'			<div class="left-wrapper">\n'
+	+'			    <p>\n'
+	+'					당업체와 귀행과의 위 거래상황을 확인하여 주시기<br>바랍니다.\n'
+	+'			    </p>\n'
+	+'			    <table class="noborder-table">\n'
+	+'					<colgroup>\n'
+	+'					    <col style="width: 60px">\n'
+	+'					    <col style="width: auto">\n'
+	+'					</colgroup>\n'
+	+'					<tbody>\n'
+	+'						<tr>\n'
+	+'						    <th>용&nbsp;&nbsp;도 : </th>\n'
+	+'						    <td>\n'
+	+'								&nbsp;' + data.ISNC_USG_CON + '\n'
+	+'						    </td>\n'
+	+'						</tr>\n'
+	+'						<tr>\n'
+	+'						    <th>제출처 : </th>\n'
+	+'					   		<td>\n'
+	+'								&nbsp;' + data.SBPL_NM + '\n'
+	+'					    	</td>\n'
+	+'						</tr>\n'
+	+'					</tbody>\n'
+	+'	    		</table>\n'
+	+'	    		<p class="tCenter tBold pTB10 txtalign">\n'
+	+'					신청일자 :&nbsp;' + com.util.fnGetFormatData("YYYY-MM-DD",data.TRN_BASE_YMD) + '\n'
+	+'	    		</p>\n'
+	+'	    		<p class="tBold">신청인</p>\n'
+	+'	    		<table class="noborder-table" style="margin-left: 14px;">\n'
+	+'					<colgroup>\n'
+	+'				    	<col style="width: 100px">\n'
+	+'				   		<col style="width: auto">\n'
+	+'					</colgroup>\n'
+	+'					<tbody>\n'
+	+'						<tr>\n'
+	+'		    				<th>주&nbsp;&nbsp;&nbsp;&nbsp;소 : </th>\n'
+	+'		    				<td>\n'
+	+'								&nbsp;\n'
+	+'		    				</td>\n'
+	+'						</tr>\n'
+	+'						<tr>\n'
+	+'		    				<th>기업체명 : </th>\n'
+	+'		    				<td>\n'
+	+'								&nbsp;\n'
+	+'		    				</td>\n'
+	+'						</tr>\n'
+	+'						<tr>\n'
+	+'		    				<th>대표자명 : </th>\n'
+	+'		    				<td>\n'
+	+'								&nbsp;' + data.RPPR_KRN_NM + ' (인)\n'
+	+'		    				</td>\n'
+	+'						</tr>\n'
+	+'					</tbody>\n'
+	+'	    		</table>\n'
+	+'			</div>\n'
+	+'			<div class="right-wrapper">\n'
+	+'	    		<p>위와 같이 상이 없음을 확인함.</p>\n'
+	+'	    		<p class="tCenter tBold pTB10 txtalign" style="margin-bottom: 25px;margin-top: 22px;">\n'
+	+'					발급일자 :&nbsp;' + com.util.fnGetFormatData("YYYY-MM-DD", data.ISNC_BASE_YMD) + '\n'
+	+'	    		</p>\n'
+	+'	    		<p class="tCenter tBold txtalign">\n'
+	+'					기업은행&nbsp;' + data.CRTF_ISNC_BRM + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(부)지점장&nbsp;(인)'
+	+'	    		</p>\n'
+	+'	    		<div class="txtleft">\n'
+	+'					<ul>\n'
+	+'		    			<li>☎&nbsp;:&nbsp;' + data.BRNC_TPN + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>\n'
+	+'		    			<li>&nbsp;&nbsp;&nbsp;발급자 : ' + data.ICPN_NM + '</li>\n'
+	+'					</ul>\n'
+	+'	    		</div>\n'
+	+'	    		<p class="txtleft" style="padding-top:20px;">(주거래영업점&nbsp;:' + data.TRN_BOB_NM + '</p>\n'
+	+'	    		<div class="txtleft">\n'
+	+'					<ul>\n'
+	+'		    			<li>☎&nbsp;:&nbsp;' + data.BOB_TPN + '</li>\n'
+	+'					</ul>\n'
+	+'	    		</div>\n'
+	+'			</div>\n'
+	+'    	</acticle>\n'
+	+'	</section>\n'
+	+'	<footer>\n'
+	+'    <div class="left-wrapper">\n'
+	+'		<p>\n'
+	+'	    	증명서번호 : ' + data.CRTF_NO + '\n'
+	+'		</p>\n'
+	+'		<ul>\n'
+	+'	    	<li>중소 + 개인</li>\n'
+	+'	    	<li>\n'
+	+'				특\n'
+	+'				' + val[0] + '\n'
+	+'	    	</li>\n'
+	+'	    	<li>\n'
+	+'				신\n'
+	+'				' + val[1] + '\n'
+	+'	    	</li>\n'
+	+'	    	<li>\n'
+	+'				금\n'
+	+'				' + val[2] + '\n'
+	+'	    	</li>\n'
+	+'		</ul>\n'
+	+'    </div>\n'
+	+'    <div class="right-wrapper">\n'
+	+'    	<img src="IBK_logo.png" title="logo" width="120">\n'
+	+'    </div>\n'
+	+'	</footer>\n'
+	+'</div>\n'
+	+'</body>\n'
+	+'</html>';
+	
+	return content;
+	//SCREEN.SaveFile(url, test);
+	//SCREEN.PrintUrl(url);
+}</script></xjscript></body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1280,1024">
+<div class="ui-control ui-panel ui-container" id="ui-171aac7d84c" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel13" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container" id="ui-171aac7d854" style="left: 140px; top: 384px; width: 1001px; height: 379px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_panel1" dock="0" anchor="0b0101"><span class="ui-back-image" style='background-image: url("/KRG/media/sample_img_02.png");'></span></div><span class="ui-control ui-label" id="ui-171c36a6928" style="left: 140px; top: 295px; width: 1001px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 1;" ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">대출이자납입을 하시겠습니까?</span></span><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><span class="ui-control ui-label" id="ui-171aac7d84f" style='left: 140px; top: 218px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 2;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">안 내</span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a570e5a6" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 3; background-color: transparent;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-blue" id="ui-171a570e5a7" style='left: 986px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b0101" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange ui-hide" id="ui-171a564ef7b" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; font-weight: normal; z-index: 1;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span></div><span class="ui-control ui-label" id="ui-173091975a2" style="left: 140px; top: 335px; width: 1001px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 4;" ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;"><span style="color: rgb(23, 107, 200);">확인</span>을 누르시면 추가인증 후 이체를 진행합니다.</span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>let p = parent;
+
+// 거래취소
+function BT_left_OnClick(e){
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+// 다음화면
+function BT_right_OnClick(e){
+	p.goNextTabPage();
+}</script></xjscript></body>
+</html>

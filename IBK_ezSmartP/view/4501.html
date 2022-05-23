@@ -1,0 +1,216 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1280,1024">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">계좌조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171be2e0c0c" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-171aae89da9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span></div><div class="ui-control ui-panel ui-container" id="ui-171be2e0c0e" style="left: 0px; top: 102px; width: 1280px; height: 784px; right: auto; bottom: auto; z-index: 2;" ui-class="UIPanel" ui-id="PN_contents" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container" id="ui-173123016f4" style="left: 78px; top: 60px; width: 1106px; height: 712px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_loan" dock="0" anchor="0b0101"></div><span class="ui-control ui-scrollbar" id="ui-170d2a73c53" style="left: 1219px; top: 65px; width: 32px; height: 700px; right: auto; bottom: auto; z-index: 1;" ui-class="UIScrollBar" ui-id="SB_scrollbar1" dock="0" anchor="0b0101" scroll-control-id="PN_loan"><span class="track"></span><span class="trackbutton"></span></span><div class="ui-control ui-panel ui-container ui-hide" id="ui-17424653d9f" style="left: 241px; top: 246px; width: 800px; height: 300px; right: auto; bottom: auto; z-index: 2;" ui-class="UIPanel" ui-id="PN_loanNull" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container" id="ui-17424653da0" style="left: 364px; top: 77px; width: 73px; height: 75px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel3" dock="0" anchor="0b0101"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-17424653da1" style='left: 0px; top: 171px; width: 800px; height: 48px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 1;' ui-class="UILabel" ui-id="LB_label7" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">해당 계좌가 없습니다.</span></span></div></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js"); // LibUtil import
+/*
+	#4501 - 계좌조회(대출)
+*/
+
+let tempLoanList = []; 		// 대출이자납입 FLOW에 사용할 배열 
+let p = parent;
+
+
+const titleList = { tab : "loan", titles : ["한도대출", "일반대출", "외화대출(USD)", "외화대출(JPY)", "외화대출(EUR)"] };// 대출
+
+
+// 취소 버튼
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[계좌조회(대출)] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN)
+}
+
+// 업무에 맞는 Receive Data 처리
+function ReceiveTran(obj){
+	// 타이틀 초기화
+	InitHtml();
+		
+	// 기본 타이틀 추가 
+	MakeBaseHtml();
+	
+	// 대출
+	stepLoan(obj);
+	
+	// 여기서 스크롤 Invalidate()
+	SB_scrollbar1.Invalidate();
+}
+
+// html 초기화
+function InitHtml(){
+	PN_loan.$.empty();
+}
+
+
+// 기본 타이틀 추가  
+function MakeBaseHtml(){
+	for(let i=0; i<titleList.titles.length; i++){
+		let tag = ['<div id="group' + i + '" class="card-groups">'];
+		tag.push('<div class="card-group">');
+		tag.push(""
+			+'<div class="card-group-title">'
+   	    	+'<span>' + titleList.titles[i] + '</span>'
+   	    	+'<span class="tt">총 '
+   	    	+'<span class="account" id="' + titleList.tab + 'AccountSum' + (i+1) + '" style="color:#176bc8;"></span>'
+   	    	+ ' 계좌</span>'
+   	    	+'<span class="sumCount" id="' + titleList.tab + 'BalanceCount' + (i+1) + '"></span>'
+        	+'</div>'
+		);
+		tag.push('</div>');
+		tag.push('</div>');
+	
+		tag.push('<div class="card-panel ' + titleList.tab + (i+1) + '"></div>');
+		
+		PN_loan.$.append(tag.join(""));
+	}
+	// css
+	$('.card-groups .card-group').css({'margin-top':'50px'});
+	$('.card-group .card-group-title > .tt').css({'margin-left':'15px'});
+	$('.card-group .card-group-title > .account').css({'color':'#0068c3'});
+	$('.card-group .card-group-title > .sumCount').css({'float':'right'});
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			대출
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function stepLoan(obj){
+	// 계좌 조회 내역이 없을경우
+	if(obj.list.length == 0){
+		PN_loan.$.find(".card-group-title").hide();
+		PN_loanNull.Visible = true;
+		return;
+	}
+	
+	// 계좌 리스트 표시
+	for(let i=0; i<obj.list.length; i++){
+		AddLoanList(i, obj.list[i].row, obj.list[i].index);
+		
+		// 배열에 list.row 복사
+		tempLoanList.push(JSON.parse(JSON.stringify(obj.list[i].row)));
+	}
+	
+	
+	// 총 금액 출력
+	for(let i=0; i<obj.totalMoneyArr.length; i++){
+		PN_loan.$.find("#loanBalanceCount" + (i+1)).html(obj.totalMoneyArr[i].toLocaleString() + '<span class="tt">원</span>');
+	}
+	// 총 계좌 수 출력
+	for(let i=0; i<obj.totalCountArr.length; i++){
+		PN_loan.$.find("#loanAccountSum" + (i+1)).html(obj.totalCountArr[i]);
+	}
+	
+	// 보유계좌가 0건인 경우 예외처리
+	if(obj.totalCountArr[0] == 0) $("#group0").hide(); // 한도대출
+	if(obj.totalCountArr[1] == 0) $("#group1").hide(); // 일반대출
+	if(obj.totalCountArr[2] == 0) $("#group2").hide(); // 외화대출(USD)
+	if(obj.totalCountArr[3] == 0) $("#group3").hide(); // 외화대출(JPY)
+	if(obj.totalCountArr[4] == 0) $("#group4").hide(); // 외화대출(EUR)
+}
+
+function AddLoanList(idx, row, areaIndex){
+	const btnStyle = "position:relative;width:calc(100%-20px);margin:2px;";
+	
+	let endDate = row.EXPI_YMD; // 대출 만기일
+	let irt = row.LARV_AGRM_IRT.substr(0, row.LARV_AGRM_IRT.indexOf('.') + 3); //대출 금리
+	
+	let tag = [];
+	tag.push(""
+        +'<div class="card-item" index="' + idx + '">'
+        +'	<div class="card_info">'
+        +'		<div class="sub_title">' + row.PDM + '</div>'
+        +'		<div class="title" style="margin-top:10px;font-size:26px;">' + p.ReturnFormatAccount(row.CUS_ACN.trim()) + '</div>'
+        +'		<div class="content_text">' + row.TLAC_ABNM_NM + '</div>'
+        +'		<div class="content_text text_info top">'
+        +'			<span>대출금리</span><span>' + parseFloat(irt) + '%</span>'
+        +'		</div>'
+        +'		<div class="content_text text_info">'
+        +'			<span>대출잔액</span><span>' + parseInt(row.TLBZ_BAL).toLocaleString() + '원</span>'
+        +'		</div>'
+        +'		<div class="content_text text_info">'
+        +'			<span>대출만기일</span><span>' + p.ReturnFormatDateHyphen(endDate) + '</span>'
+        +'		</div>');
+    tag.push('		<div class="btn" style="border:none;background:none;">'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + row.CUS_ACN + '" onclick="loanStep(this)">계좌정보</button>'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + row.CUS_ACN + '" onclick="loanStep(this)">거래내역</button>');
+	    // 외화대출일경우 이자납입버튼이 없어야함
+        // 외화대출(USD) : 3    외화대출(JPY) : 4   외화대출(EUR) : 5
+        if(["3","4","5"].indexOf(areaIndex) == -1 ) {
+           	tag.push('       	<button class="btn" style="' + btnStyle + '" onclick="loanStep(this)">이자납입</button>');
+        }
+	tag.push("		</div>"
+	    +'	</div>'
+	    +'</div>');
+	
+	// 화면에 계좌 표시
+	PN_loan.$.find(".card-panel.loan"+areaIndex).append(tag.join(""));
+	
+	PN_loan.$.find(".card-panel").css({"visibility":"visible", "justify-content":"flex-start"});
+		
+	let cardPanel = PN_loan.$.find(".card-panel");
+	cardPanel.find("> div.card-item").css({'width':'344px', "margin-left":"25px"});
+	cardPanel.find("> div.card-item:nth-child(3n+1)").css({"margin-left":"0px"});
+	cardPanel.find(".text_info").css({"margin-top":"5px","display":"flex","justify-content":"space-between"});
+	cardPanel.find(".text_info.top").css({"margin-top":"40px"});
+}
+
+// 계좌정보, 거래내역, 이자납입
+function loanStep(target){
+	let index = $(target).parents("div.card-item").attr("index");		// 인덱스
+	let data = tempLoanList[index];										// 선택한 계좌 데이터 받을 배열
+	let tranName = target.innerText;									// 선택한 업무 무엇인지 체크
+	// 전역 객체에 데이터 할당
+	console.log(JSON.stringify(data));
+	p.gData.CUS_ACN = data.CUS_ACN; 			//고객계좌번호
+    p.gData.TOB_NO = data.TOB_NO; 				//회차번호
+    p.gData.SUB_CTN = data.SUB_CTN; 			//서브계약번호
+    p.gData.LARV_AGRM_IRT = data.LARV_AGRM_IRT;	//대출이율
+    p.gData.TLBZ_BAL = data.TLBZ_BAL; 			//대출잔액
+    p.gData.EXPI_YMD = data.EXPI_YMD; 			//만기년월일
+    p.gData.PDM = data.PDM; 					//상품명
+	
+	
+	console.log("CUS_ACN : " + p.gData.CUS_ACN);
+	console.log("TOB_NO : " + p.gData.TOB_NO);
+	console.log("SUB_CTN : " + p.gData.SUB_CTN);
+	console.log("LARV_AGRM_IRT : " + p.gData.LARV_AGRM_IRT);
+	console.log("TLBZ_BAL : " + p.gData.TLBZ_BAL);
+	console.log("EXPI_YMD : " + p.gData.EXPI_YMD);
+	console.log("PDM : " + p.gDataPDM);
+
+	if(tranName == "계좌정보"){
+		// 대출계좌 상세정보로 이동
+		SCREEN.WriteJnl("**계좌번호: " + data.CUS_ACN);
+		SCREEN.WriteJnl("[대출계좌 상세정보] 선택");
+		p.sendRequest("searchLoanAccountInfo");
+	} else if(tranName == "거래내역"){
+		p.gData.CTNT_TRN_DCD = "0";					// 바이오토큰값 ( 임시로 0으로 셋팅)
+		p.gData.INPT_DCD = "2";						// 입력구분코드 1 : 최근거래일조회내역, 2 : 전체거래내역 선택 ( 초기값 :  2 )
+	
+		// 대출계좌 거래내역조회로 이동
+		SCREEN.WriteJnl("**계좌번호: " + data.CUS_ACN);
+		SCREEN.WriteJnl("[대출계좌 거래내역 조회] 선택");
+		p.sendRequest("searchLoanTranList", {prevScreen:4501});
+	} else if(tranName == "이자납입"){
+		// 대출이자납입으로 이동
+		SCREEN.WriteJnl("**계좌번호: " + data.CUS_ACN);
+		SCREEN.WriteJnl("[대출이자납입] 선택");
+		p.sendRequest("searchLoanInt", {prevScreen:4501});
+	}
+}</script></xjscript></body>
+</html>

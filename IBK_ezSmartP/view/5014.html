@@ -1,0 +1,1198 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1390,1120" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad"><div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="border-radius: 0px; left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">통화 선택</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 139.83px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span><span class="ui-control ui-button theme-blue" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172c17ba416" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 139.83px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_btn_Box" ui-class="UIPanel" dock-w="1280" dock-h="686" dock-r="left:0px;top:197px;width:1280px;height:686px;right:auto;bottom:auto"><span class="ui-control ui-button" id="ui-172c1350739" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 658px; top: 22px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 16;' anchor="0b0101" dock="0" ui-id="BT_03" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px; justify-content: center;">JPY</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_jyp.png");'></span></span><span class="ui-control ui-button" id="ui-172c13511e8" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 919px; top: 22px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 17;' anchor="0b0101" dock="0" ui-id="BT_04" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">EUR</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_eur.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351a41" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 920px; top: 121px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_08" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">CHF</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_chf.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351747" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 658px; top: 122px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_07" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">NZD</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_nzd.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351596" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 394px; top: 121px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 2;' anchor="0b0101" dock="0" ui-id="BT_06" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">AUD</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_aud.png");'></span></span><span class="ui-control ui-button" id="ui-172c13513fc" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 130px; top: 122px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 3;' anchor="0b0101" dock="0" ui-id="BT_05" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">GBP</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_gbp.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351bda" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 129px; top: 216px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 4;' anchor="0b0101" dock="0" ui-id="BT_09" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">CAD</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_cad.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351d3b" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 395px; top: 214px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 5;' anchor="0b0101" dock="0" ui-id="BT_10" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">NOK</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_nok.png");'></span></span><span class="ui-control ui-button" id="ui-172c13520f4" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 128px; top: 310px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 6;' anchor="0b0101" dock="0" ui-id="BT_13" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">SGD</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_sgd.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351e65" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 657px; top: 214px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 7;' anchor="0b0101" dock="0" ui-id="BT_11" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">SEK</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_sek.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351faa" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 920px; top: 213px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 8;' anchor="0b0101" dock="0" ui-id="BT_12" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">HKD</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_hkd.png");'></span></span><span class="ui-control ui-button" id="ui-172c135258e" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 921px; top: 308px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 9;' anchor="0b0101" dock="0" ui-id="BT_16" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">AED</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_aed.png");'></span></span><span class="ui-control ui-button" id="ui-172c13523e7" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 657px; top: 310px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 10;' anchor="0b0101" dock="0" ui-id="BT_15" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">SAR</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_sar.png");'></span></span><span class="ui-control ui-button" id="ui-172c1352c9c" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 657px; top: 402px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 11;' anchor="0b0101" dock="0" ui-id="BT_19" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">MYR</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_myr.png");'></span></span><span class="ui-control ui-button" id="ui-172c1352974" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 397px; top: 401px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 12;' anchor="0b0101" dock="0" ui-id="BT_18" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">BHD</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_bhd.png");'></span></span><span class="ui-control ui-button" id="ui-172c13527a1" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 128px; top: 402px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 13;' anchor="0b0101" dock="0" ui-id="BT_17" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">KWD</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_kwd.png");'></span></span><span class="ui-control ui-button" id="ui-172c135224b" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 397px; top: 310px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 14;' anchor="0b0101" dock="0" ui-id="BT_14" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">THB</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_thb.png");'></span></span><span class="ui-control ui-button" id="ui-172c1352f0a" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 921px; top: 402px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 15;' anchor="0b0101" dock="0" ui-id="BT_20" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">IDR</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_idr.png");'></span></span><span class="ui-control ui-button" id="ui-172e56e23e0" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 394px; top: 22px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 18;' anchor="0b0101" dock="0" ui-id="BT_02" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">USD</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_usd.png");'></span></span><span class="ui-control ui-button" id="ui-172e5700c46" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 128px; top: 494px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 19;' anchor="0b0101" dock="0" ui-id="BT_21" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">CNY</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_cny.png");'></span></span><span class="ui-control ui-button" id="ui-172e578cc68" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 130px; top: 22px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 20;' anchor="0b0101" dock="0" ui-id="BT_01" ui-class="UIButton" theme="" icon-image-padding="50,0,0,0" back-image-size="100% 100%"><span class="ui-content" style="left: 50px; top: 0px; right: 0px; bottom: 0px;">KRW</span><span class="ui-icon-image" style='background-position: left; left: 50px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/ic_flag_krw.png");'></span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171ab1ec0c8" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a52210e5" style='left: 82px; top: 24px; width: 1139px; height: 45px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content" style="align-items: center;">합계금액을 표시할 통화를 선택해 주십시오.</span></span></div></div>
+</div><xcomponent><xios><xio>{
+  "Name": "IO_03152001",
+  "Description": "CBKCUS110071\r\nAMSO00063046",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "CLPH_LLN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "CLPH_TON",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "CLPH_INCS_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "PDLN_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "PDGR_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "PDTM_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "PDCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "WBCS_RLNM_ALTR_NO",
+      "GridData": []
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "ONBN_CUS_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CPN_MDFC_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RNL_TGT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "EBK_JNNG_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "ADR_MDFC_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RDNM_USE_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NOFC_IOTA_HOLD_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "MNGM_BRCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "FNTR_LMAC_HOLD_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "FNTR_OBJT_CNFA_TGYN_RSLT_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "SHTR_MLTAC_OPN_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "WBCS_RLNM_ALTR_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TLBN_JNNG_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "KSK_UTL_COSN_YN",
+      "GridData": []
+    }
+  ]
+}</xio><xio>{
+  "Name": "IO_03152002",
+  "Description": "CBKEBKE00002\r\nAMSO00063083",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TRN_BRCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "CUS_ACN",
+      "GridData": []
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "RNN_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "RNN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "BZN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 15,
+      "Name": "RPPR_RRN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 13,
+      "Name": "CGN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "KRN_CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ENSN_CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "RPPR_KRN_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "INDV_CORP_DTL_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "CUS_CLCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "PSNT_BRCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "VICS_GDCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "BNCS_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "RM_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "DBTO_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "FRGN_NRSD_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "WRPL_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "WRPL_WORK_DVM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "LAST_JBTT_JBCL_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TELRC_RFSL_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "PSML_RFRV_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CRRC_APCT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CRRC_CNPE_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "EBK_NEJN_ALCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "PSML_SNPL_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RDND_USE_YN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "RDND_ZPCD_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "RDNM_BSC_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "RDNM_DTL_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "RDNM_ALL_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "BLDN_NM_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ZPCD_BSC_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ZPCD_DTL_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "ZPCD_ALL_ADR_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "OOH_ZPCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 25,
+      "Name": "BLDN_MNGM_NO_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_HSCM_NO_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_NM_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "APT_DNG_NO_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_DNG_NM_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "APT_RNM_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TEL_LLN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TPN_TON_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "TPN_SRN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "FAX_LLN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "FAX_TON_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "FAX_SRN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "CLPH_LLN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "CLPH_TON_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "CLPH_SRN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "WRPL_ZPCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RDND_USE_YN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 25,
+      "Name": "UNQ_BLDN_MNGM_NO_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "RDND_ZPCD_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "RDNM_BSC_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "RDNM_DTL_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "RDNM_ALL_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "BLDN_NM_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 25,
+      "Name": "BLDN_MNGM_NO_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ZPCD_BSC_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ZPCD_DTL_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "ZPCD_ALL_ADR_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_HSCM_NO_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_NM_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "APT_DNG_NO_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "APT_DNG_NM_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "APT_RNM_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TEL_LLN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "TPN_TON_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "TPN_SRN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "FXN_TON_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "FAX_SRN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "FAX_LLN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "HMPG_ADR",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "EAD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "SLCT_EMN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "DTH_STMT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CHNM_STMT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NCP_STMT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TRSG_STMT_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CNTF_RLNM_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "RPPR_EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 10,
+      "Name": "BSNN_EDPS_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "RFNO_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "REF_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "SIC_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TXTN_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NFL_APLY_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "BCCA_VIP_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RM_RGTG_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "CSMN_TEAM_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "BRNC_CSN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 9,
+      "Name": "CSAC_IDNT_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "LON_ADMC_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "FEX_ADMC_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "RSDN_NTCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "NTCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "FRGN_ENCN_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "MNGM_EMN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "ADR_CNFA_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "ADR_CNFA_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CUS_BRTD_LNR_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "BRTD_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "MARY_SCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RSDN_SCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "HSNG_KIND_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "INCM_LEVL_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "TEL_CLRR_RGSN_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "SMS_RCV_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "COSN_RCL_RNG_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "BNKP_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "EML_ID",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "EML_SRVR_CD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 25,
+      "Name": "UNQ_BLDN_MNGM_NO_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "ENSN_ZPCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ENSN_ZPCD_BSC_ADR",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 100,
+      "Name": "ENSN_ZPCD_DTL_ADR",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 200,
+      "Name": "ENSN_ZPCD_ALL_ADR",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_INCS_NO_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_LLN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_TON_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "SPUS_TEL_SRN_1",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_INCS_NO_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_LLN_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "SPUS_TEL_TON_2",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "SPUS_TEL_SRN_2",
+      "GridData": []
+    }
+  ]
+}</xio></xios></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("common","/KRG/0301/common.js");
+p = parent;
+var chkTarChcd = "";	// 선택된 화폐
+let httpQuerys = parseLocationQueryString();
+let viewType = httpQuerys["type"]; // 1 : 계좌선택에서 호출, 2 : 발급의뢰서에서 호출
+
+function Form_OnLoad(e)
+{
+	BT_right.Enabled = false;
+	PN_btn_Box.$.css({'height':'580px', 'overflow':'auto', 'padding':'0 44px 0 50px', 'margin-top':'40px', 'position':'relative'});
+	var btnList= PN_btn_Box.$.find(".ui-button");
+	for(var k=0;k<btnList.length;k++)
+	{
+		$(btnList[k]).click(fnSelected);
+	}
+}
+
+function fnSelected(e)
+{
+	
+	if($(e.target.parentElement).attr('ui-id')=='PN_btn_Box')
+	{
+		return;
+	}
+	resetBtn();
+	
+	$(e.target.parentElement).toggleClass("on");
+	$(e.target.parentElement).css({'border':'3px solid #176bc8'});
+	BT_right.Enabled=true;
+}
+
+function resetBtn() {
+	var btnList= PN_btn_Box.$.find(".ui-button");
+	for(var k=0;k<btnList.length;k++)
+	{
+		if($(btnList[k]).hasClass("on"))
+		{
+			$(btnList[k]).toggleClass("on");
+			$(btnList[k]).css({'border':'3px solid #e3e3e3'});
+		}
+	}
+}
+
+function BT_right_OnClick(e) {
+	var btnList= PN_btn_Box.$.find(".ui-button");
+	for(var k=0;k<btnList.length;k++)
+	{
+		if($(btnList[k]).hasClass("on")) {
+			chkTarChcd = $(btnList[k]).find("> span.ui-content").text();
+		}
+	}
+	resetBtn();		// 다음번에 들어올 때 초기화를 위해.
+	
+	if(viewType == 1) {
+		p.allParamData.tarCrcd = chkTarChcd;
+		p.ChangeTab("9059");
+		p.sendRequest("sendCustomInfo");
+	} else if(viewType == 2) {
+		p.allParamData.tarCrcd2 = chkTarChcd;
+		p.sendRequest("issueWritePage");
+	}
+	
+}
+
+function BT_left_OnClick(e){
+	resetBtn();		// 다음번에 들어올 때 초기화를 위해.
+	if(viewType == 1) {
+		p.ChangeTab("9059");
+		p.sendRequest("sendCustomInfo");
+	} else if(viewType == 2) {
+		p.sendRequest("issueWritePage");
+	}
+}</script></xjscript></body>
+</html>

@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1365,1024">
+<div class="ui-control ui-tab" id="ui-1723644ce45" style="left: 28px; top: 31px; width: 946px; height: 753px; right: auto; bottom: auto; z-index: 0;" ui-class="UITab" ui-id="TP_tab1" dock="0" anchor="0b0101"><div class="ui-tab-heads" id="ui-1723644ce47"><div class="ui-tab-head ui-tab-selected" id="ui-1723644ce48">TabPage1</div><div class="ui-tab-head" id="ui-1723644ce49">TabPage2</div></div><div class="ui-tab-pages" id="ui-1723644ce4a"><div class="ui-tab-page ui-container ui-tab-selected" id="ui-1723644ce4b" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-1723645d80e" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0; background-color: papayawhip;" ui-class="UIPanel" ui-id="PN_panel2" dock="5" anchor="0b0101" dock-w="200" dock-h="100" dock-r="left:151px;top:61px;width:200px;height:100px;right:auto;bottom:auto"><iframe class="ui-include" src="/KRG/0301/0009.html" frameborder="0" scrolling="0"></iframe></div></div><div class="ui-tab-page ui-container" id="ui-1723644ce4c" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172364520fd" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel1" dock="5" anchor="0b0101" dock-w="200" dock-h="100" dock-r="left:151px;top:61px;width:200px;height:100px;right:auto;bottom:auto"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172c00ba249" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel3" dock="5" anchor="0b0101" dock-w="781" dock-h="643" dock-r="left:144px;top:34px;width:781px;height:643px;right:auto;bottom:auto"></div></div></div></div></div><span class="ui-control ui-button theme-blue" id="ui-17236530829" style="left: 980px; top: 100px; width: 185px; height: 80px; right: auto; bottom: auto; z-index: 1;" ui-class="UIButton" ui-id="BT_button1" dock="0" anchor="0b0101" xonclick="BT_button1_OnClick" theme="blue"><span class="ui-content">Get Include</span></span><span class="ui-control ui-button theme-blue" id="ui-1725ed91cc5" style="left: 980px; top: 189px; width: 185px; height: 80px; right: auto; bottom: auto; z-index: 2;" ui-class="UIButton" ui-id="BT_0010_SetINC" dock="0" anchor="0b0101" xonclick="BT_0010_SetINC_OnClick" theme="blue"><span class="ui-content">Set Include</span></span></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>var iwin = PN_panel2.IncludeWindow;
+var tableData;
+/*
+var	tableData = [
+			{media:'OTP' , onceSendMoney :'100000000' , daySendMoney :'500000000'}
+	];
+*/	
+function Form_OnLoad(e){
+		qq();
+}
+
+function BT_button1_OnClick(e){
+	
+	console.log(iwin);
+	console.log("q : "+iwin.q);
+	host.alert(iwin.TB_textbox.Text);
+	console.log(JSON.stringify(tableData));
+}
+
+function BT_0010_SetINC_OnClick(e){
+	
+	console.log(iwin2);
+	iwin2.TB_textbox.Text = "123";
+}
+
+
+
+function Comma(x){
+	x = x.split(",").join("");
+	console.log(x);
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function qq(){
+	console.log("strat qq");
+	tableData.push({media : 'OTP' , onceSendMoney : '100000000' , daySendMoney : '500000000'});
+	
+}</script></xjscript></body>
+</html>

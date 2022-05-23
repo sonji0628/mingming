@@ -1,0 +1,98 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ide-size="1410,1150" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm">
+<div class="ui-control ui-panel ui-container" id="ui-171a561f5a3" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a5627701" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button" id="ui-171a5647e78" style='left: 511px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0; background-color: rgb(255, 91, 69);' anchor="0b0101" dock="0" ui-id="BT_END" ui-class="UIButton" xonclick="BT_END_OnClick" theme=""><span class="ui-content">거래종료</span></span></div><span class="ui-control ui-label" id="ui-172ca39f177" style="left: 152px; top: 392px; width: 120px; height: 32px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-size: 28px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content" style="left: 0px; top: 0px; right: 0px; bottom: 10px;">상세정보</span></span><span class="ui-control ui-label" id="ui-171a564ef76" style='left: 239px; top: 150px; width: 802px; height: 66px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 2;' anchor="0b0101" dock="0" ui-id="LB_label23" ui-class="UILabel"><span class="ui-content" style="left: 0px; top: 0px; right: 0px; bottom: 0px; justify-content: flex-start;">전 금융기관 카드 분실신고 신청이</span></span><span class="ui-control ui-label" id="ui-172bbb61b53" style='left: 465px; top: 224px; width: 106px; height: 66px; right: auto; bottom: auto; color: rgb(0, 109, 196); font-family: "IBK IDream M"; font-size: 54px; z-index: 3;' anchor="0b0101" dock="0" ui-id="LB_label3" ui-class="UILabel"><span class="ui-content">완료</span></span><span class="ui-control ui-label" id="ui-172bbb4f243" style='left: 575px; top: 224px; width: 278px; height: 66px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 4;' anchor="0b0101" dock="0" ui-id="LB_label2" ui-class="UILabel"><span class="ui-content" style="left: 0px; top: 0px; right: 0px; bottom: 0px; justify-content: flex-start;">되었습니다.</span></span><span class="ui-control ui-label" id="ui-172ca64300b" style="left: 152px; top: 738px; width: 980px; height: 144px; right: auto; bottom: auto; z-index: 5;" anchor="0b0101" dock="0" ui-id="LB_label4" ui-class="UILabel"><span class="ui-content" style="justify-content: flex-start;"></span></span><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><div class="ui-control ui-panel ui-container" id="ui-172cad82928" style="left: 152px; top: 433px; width: 980px; height: 245px; right: auto; bottom: auto; z-index: 6;" anchor="0b0101" dock="0" ui-id="PN_scroll_box" ui-class="UIPanel"></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js");
+var p = parent;
+
+function Form_OnLoad(e)
+{	
+	console.log("Init3147");
+	LB_label4.$.html(""
+					+'<div class=dec-box>'
+					+'	<span class=tit-1>*유의사항<br></span>'
+					+'	<span class=tit-2>분실 일괄신고 대상카드: 본인의 신용, 체크카드본인이 가족인 가족카드(당행 카드 분실신고가 선행되어야 합니다.)<br></span>'
+					+'	<span class=tit-2>분실신고시 카드별 신고가 아닌 은행별 신고입니다.<br></span>'
+					+'	<span class=tit-2>분실 일괄신고된 카드는 일괄해제 처리가 되지 않습니다. 해제를 원하시는 경우 각 카드사별로 요청해주시기 바랍니다.<br></span>'
+					+'</div>');
+						
+	LB_label4.$.find("span.tit-1").css({'font-size':'24px', 'padding-top':'30px', 'line-height':'28px', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif'});
+	LB_label4.$.find("span.tit-2").css({'font-size':'18px', 'padding-top':'10px', 'color':'rgba(0,0,0,0.7)', 'line-height':'28px', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif'});
+}
+
+function result_Allbank_report_lostCard(data)//전금융기관 카드신고 결과 채우는 함수
+{
+	console.log("Init result_Allbank_report_lostCard\n");
+	
+	let r = data.cardInfo.SelectList;
+	
+	let tag=[];
+	
+	for(var k=0;k<r.length;k++)
+	{
+		tag.push(""
+			+'<tr>'
+			+'	<td>국민카드</td>'
+			+'	<td>일시적인 시스템오류가 발생했습니다.</td>'
+			+'</tr>'
+		);
+	}
+	
+	PN_scroll_box.$.html(""
+			+'<table>'
+			+'	<colgroup>'
+			+'		<col style="width:220px;">'
+			+'		<col style="width:auto;">'
+			+'	</colgroup>'
+			+'	<thead>'
+			+'		<tr>'
+			+'			<th>기관명</th>'
+			+'			<th>처리결과</th>'
+			+'		</tr>'
+			+'	</thead>'
+			+'	<tbody>'
+			+		tag.join("")
+			+'	</tbody>'
+			+'<table>');
+				
+	PN_scroll_box.$.css({'overflow-y':'auto'});
+	PN_scroll_box.$.find("table").css({'width':'100%','border':'2px solid #c2c2c2','border-collapse':'collapse', 'border-spacing':'0', 'empty-cells':'show'});
+	PN_scroll_box.$.find("thead").css({'border-bottom':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif'});
+	PN_scroll_box.$.find("th").css({'text-align':'center', 'background': '#f2f2f2', 'font-size':'21px', 'color':'#000', 'padding':'14px', 'border-right':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_scroll_box.$.find("td").css({'text-align':'center', 'background': '#fff', 'font-size':'22px', 'padding':'14px', 'border':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	
+	$tbody_data = $("tbody>tr");
+	var q=0;
+	$tbody_data.find("td").each(function(k)
+	{
+		if(k%2==1)
+		{
+			$(this).text(r[q].PCRS_CD_NM);
+			q++;
+		}
+		else
+		{
+			$(this).text(r[q].CRCO_NM);
+		}
+	});
+}
+
+function BT_END_OnClick(e)//거래종료 버튼 눌렀을때 동작하는 함수
+{
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_OK);
+}</script></xjscript></body>
+</html>

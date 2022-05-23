@@ -1,0 +1,257 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1445,1167" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a570e5a0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-171a570e5a3" style='left: 140px; top: 101px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">바이오 인증</span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a570e5a6" style="left: 0px; top: auto; width: auto; height: 138.36px; right: 0px; bottom: 0px; z-index: 1; background-color: transparent;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="138" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue ui-hide" id="ui-171a570e5a7" style='left: 986px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange" id="ui-171a4b083a6" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span></div><span class="ui-control ui-label" id="ui-1728334f2d6" style="left: 144px; top: 180px; width: 1001px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 2;" anchor="0b0101" dock="0" ui-id="LB_label3" ui-class="UILabel" icon-image-align="center,middle"><span class="ui-content" style="justify-content: center;">바이오 정보 인증이 진행됩니다. 아래의 안내 메시지를 따라주세요.</span></span><div class="ui-control ui-panel ui-container" id="ui-1728371d255" style="left: 0px; top: 250px; width: 1280px; height: 474px; right: auto; bottom: auto; z-index: 3;" anchor="0b0101" dock="0" ui-id="PN_panel2" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/Bio_In.gif");'></span></div><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><span class="ui-control ui-label" id="ui-173231c0884" style="left: 0px; top: 759px; width: 1280px; height: 32px; right: auto; bottom: auto; font-size: 24px; z-index: 4;" anchor="0b0101" dock="0" ui-id="LB_BioWorkMsg" ui-class="UILabel"><span class="ui-content" style="justify-content: center;"></span></span><span class="ui-control ui-label" id="ui-173231c5491" style="left: 0px; top: 791px; width: 1280px; height: 32px; right: auto; bottom: auto; font-size: 24px; z-index: 5;" anchor="0b0101" dock="0" ui-id="LB_BioGuideMsg" ui-class="UILabel"><span class="ui-content" style="justify-content: center;"></span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeCSS("9053","/KRG/0301/9053.css");
+
+var gCancel = false;
+var gTid = 0;
+
+// 취소 버튼 클릭
+function BT_left_OnClick(e){
+	
+	setTimeout(function(){
+		gCancel = true;
+		SCREEN.WriteJnl("[추가인증[바이오] 취소");
+		BioCancel();
+		// 업무종료
+		ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+	}, 10);
+}
+
+// 해당 화면 탭이 활성화된 경우
+function InitPage(){
+	gCancel = false;
+	RemoveBioEvent();
+	
+	AddBioEvent();
+	setTimeout(BioVerify, 0, CallbackBioVerify);
+}
+
+// 콜백 함수 등록
+function AddBioEvent(){
+	BIOPALM.AddEvent("CallbackMsgWork", CallbackMsgWork);
+	BIOPALM.AddEvent("CallbackMsgGuidance", CallbackMsgGuidance);
+}
+
+// 콜백 함수 해제
+function RemoveBioEvent(){
+	BIOPALM.RemoveEvent("CallbackMsgWork");
+	BIOPALM.RemoveEvent("CallbackMsgGuidance");
+}
+
+function CallbackMsgWork(data){
+	let json = eval("(" + data + ")");
+	msgCode = json.msgCode;
+	msg = json.msg;
+	
+	console.log("CallbackMsgWork msgCode=" + msgCode + ", msg=" +msg)
+	LB_BioWorkMsg.Text = msg;
+}
+
+function CallbackMsgGuidance(data){
+	let json = eval("(" + data + ")");
+	msgCode = json.msgCode;
+	msg = json.msg;
+	
+	console.log("CallbackMsgGuidance msgCode=" + msgCode + ", msg=" +msg)
+	
+	// IE에서 글자 깜박이는 효과를 내기위해 9053.css 파일에 class '.handon', '.handup' 추가
+	if (msg.indexOf("손을 올려주세요") != -1){
+		msg = "바이오인식기 위에 <span class='handon'>손을 올려주세요.</span>";
+	}
+	else if (msg.indexOf("손을 떼고") != -1){
+		msg = "고객님의 바이오정보 처리중 입니다. <span class='handup'>손을 떼고</span> 잠시만 기다려 주세요.";
+	}
+		
+	LB_BioGuideMsg.$.find('span').html(msg);
+}
+
+function BioVerify(cbFunction){
+	console.log("BioVerify Start");
+	
+	let p = parent;
+	let ret;
+	let jsonRet;
+	let msg = [];
+	let failCount = 0;
+	
+	// TIME OUT 설정 30초
+	gTid = setTimeout(function(){
+		console.log(">> BioCancle Timeout(30초) 발생 gTid = " + gTid);
+		BioCancel();
+		
+		// 업무종료
+		ATMCOMM.BusinessEnd(ATMCOMM.RET_TO);
+		
+	}, 30000);
+	
+	console.log(">> BioCancle Timeout(30초) Start gTid = " + gTid);
+	
+	ret = BIOPALM.Verify(function(response){
+	
+		// 취소 버튼 누른 경우에는 return
+		if (gCancel == true){
+			console.log("바이오 취소버튼 >> return Verify 1");
+			return;
+		}
+			
+		clearTimeout(gTid);
+		console.log(">> BioCancle Timeout(30초) Clear gTid = " + gTid);
+				
+		console.log(">> Verify : " + response);
+		let json = eval("(" + response + ")");
+		
+		// OK!
+		if (json.Result == 0){
+			console.log(">> OK!");
+			// 콜백 함수 해제
+			RemoveBioEvent();
+			// 바이오 모듈 종료
+			BIOPALM.Finalize();
+			
+			failCount = 0;
+			cbFunction(failCount);
+		}
+		// NG!
+		else{
+			console.log(">> NG!");
+			// ret가 에러 발생한 경우에도 먼저 콜백이 들어와서 무시함
+			if (json.failCnt != null){
+				failCount = json.failCnt;
+				cbFunction(failCount);
+			}
+		}
+	});
+	
+	//console.log("BIOPALM.Verify() ret = " + ret);
+	
+	jsonRet = eval("(" + ret + ")");
+	if (jsonRet.Result != 0){
+		// 취소 버튼 누른 경우에는 return
+		if (gCancel == true){
+			console.log("바이오 취소버튼 >> return Verify 2");
+			return;
+		}
+		
+		// NG이지만 failCount 가 0인 경우 
+		if (failCount == 0){
+			clearTimeout(gTid);
+			console.log(">> BioCancle Timeout(30초) Clear gTid = " + gTid);
+			
+			// 콜백 함수 해제
+			RemoveBioEvent();
+			
+			console.log("NG! BIOPALM.Verify()");
+			
+			msg.push("<p>바이오인증에 실패하였습니다.</p>");
+			msg.push("<p>" + jsonRet.Msg + "</p>");
+			msg.push("<p></p>");
+			
+			// 9047 화면에 에러 데이터 출력
+			p.DisplayMsg("9047", msg);
+		}
+	}
+}
+
+function CallbackBioVerify(FailCount){
+	let p = parent;
+	let msg = [];
+	
+	if (FailCount == 0){
+		console.log("바이오 인증 성공");
+		SCREEN.WriteJnl("[추가인증[바이오]] 업무 완료(OK)");
+		p.BioAuthOK();
+	}
+	else if (FailCount >= 5){
+		console.log("바이오 인증 오휴횟수 초과 : " + FailCount);
+		
+		// 바이오인증 오류횟수 초과 안내 메시지
+		msg.push("안 내");
+		msg.push("고객님 바이오인증 오류횟수 초과로 인증을 진행할 수 없습니다.");
+		msg.push("가까운 영업점 창구로 방문하여 오류해제 후 다시 이용해 주시기 바랍니다.");
+		
+		p.AddEvent("9054", "BT_right", "click", function(){
+			// 업무종료
+			ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+		});
+		
+		p.DisplayMsg("9054", msg);
+	}
+	else {
+		console.log("바이오 인증 오류 : " + FailCount);
+		msg.push("<p>바이오인증 " + FailCount + "회 오류입니다.</p>");
+		msg.push("<p>5회 연속 오류 발생시 신분증을 지참하여,</p>");
+		msg.push("<p>영업점을 방문하셔야 합니다.</p>");
+		
+		// 9047 화면 취소 및 확인 버튼 visible false
+		p.SetVisible("9047", "BT_left", false);
+		p.SetVisible("9047", "BT_right", false);
+		
+		if (FailCount == 1){
+			// 1번 실패한 경우 5초 후에 다시 인증 시도
+			setTimeout(function(){
+				p.ChangeTab("9053");
+			}, 5000);
+		}
+		else {
+			// 2번 이상 5번 미만 실패한 경우 5초 후에 업무 종료
+			setTimeout(function(){
+				ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+			}, 5000);
+		}
+		
+		// 9047 화면에 에러 데이터 출력
+		p.DisplayMsg("9047", msg);
+	}
+}
+
+function BioCancel(){
+	console.log("BioCancel");
+	let ret;
+	
+	clearTimeout(gTid);
+	console.log(">> BioCancle Timeout(30초) Clear gTid = " + gTid);
+	
+	// 콜백 함수 해제
+	RemoveBioEvent();
+	
+	ret = BIOPALM.Cancel();
+	//console.log(">> BIOPALM.Cancel ret = " + ret);
+	
+	let jsonRet = eval("(" + ret + ")");
+	if (jsonRet.Result != 0){
+		console.log(">> NG! BIOPALM.Cancel() " + jsonRet.Msg);
+	}
+	
+	BIOPALM.Finalize();
+	
+	return true;
+}
+
+
+
+
+
+
+
+
+
+
+
+</script></xjscript></body>
+</html>

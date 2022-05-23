@@ -1,0 +1,1277 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm">
+<div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-171a52210e0" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0; background-color: transparent;" anchor="0b0101" dock="5" ui-id="PN_panel1" ui-class="UIPanel" dock-r="left:0px;top:0px;width:1280px;height:1024px;right:auto;bottom:auto" dock-h="1024" dock-w="1280"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e2" style="left: 0px; top: 0px; width: auto; height: 101.27px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="101" dock-w="200"><span class="ui-control ui-label" id="ui-171a52210e3" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">계좌조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a52210e8" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-171a52210ea" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span></div><div class="ui-control ui-tab" id="ui-170e281eb34" style='left: 78px; top: 116px; width: 1124px; height: 761px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 24px; z-index: 2;' anchor="0b0101" dock="0" ui-id="TP_search_tab" ui-class="UITab" xonchangedtab="TP_search_tab_OnChangedTab"><div class="ui-tab-heads" id="ui-1720cc323e5"><div class="ui-tab-head ui-tab-selected" id="ui-1720cc323e6">예금</div><div class="ui-tab-head" id="ui-1720cc323e7">신탁</div><div class="ui-tab-head" id="ui-1720cc323e8">펀드/MMF</div><div class="ui-tab-head" id="ui-1720cc323e9">대출</div><div class="ui-tab-head" id="ui-1720cc323eb">외환</div><div class="ui-tab-head" id="ui-1720cc323ec">보험</div><div class="ui-tab-head" id="ui-1720cc323ed">퇴직연금</div><div class="ui-tab-head" id="ui-1720cc323ee">증권</div></div><div class="ui-tab-pages" id="ui-1720cc323ef"><div class="ui-tab-page ui-container ui-tab-selected" id="ui-1720cc323f0" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-170ec4084d5" style="left: 0px; top: 30px; width: 1109px; height: 643px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_deposit" ui-class="UIPanel"></div></div><div class="ui-tab-page ui-container" id="ui-1720cc323f1" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-17226c49ad4" style="left: 0px; top: 30px; width: 1109px; height: 643px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_trust" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container ui-hide" id="ui-17226d717c1" style="left: 163px; top: 130px; width: 800px; height: 300px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_trustNull" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-17226ce462d" style="left: 364px; top: 77px; width: 73px; height: 75px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel7" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-17226cd18f8" style='left: 0px; top: 171px; width: 800px; height: 48px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label4" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">해당 계좌가 없습니다.</span></span></div></div><div class="ui-tab-page ui-container" id="ui-1720cc323f2" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-173271b75f9" style="left: 0px; top: 30px; width: 1109px; height: 643px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_fund" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container ui-hide" id="ui-1737531ee21" style="left: 163px; top: 130px; width: 800px; height: 300px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_fundNull" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-1737531ee22" style="left: 364px; top: 77px; width: 73px; height: 75px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel4" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-1737531ee23" style='left: 0px; top: 171px; width: 800px; height: 48px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">해당 계좌가 없습니다.</span></span></div></div><div class="ui-tab-page ui-container" id="ui-1720cc323f3" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-173123016f4" style="left: 0px; top: 30px; width: 1109px; height: 643px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_loan" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container ui-hide" id="ui-17424653d9f" style="left: 163px; top: 130px; width: 800px; height: 300px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_loanNull" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-17424653da0" style="left: 364px; top: 77px; width: 73px; height: 75px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel3" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-17424653da1" style='left: 0px; top: 171px; width: 800px; height: 48px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label7" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">해당 계좌가 없습니다.</span></span></div></div><div class="ui-tab-page ui-container" id="ui-1720cc323f5" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-1730e5235c7" style="left: 0px; top: 30px; width: 1109px; height: 643px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_exchange" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container ui-hide" id="ui-173753fd0eb" style="left: 163px; top: 130px; width: 800px; height: 300px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_exchangeNull" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-173753fd0ed" style="left: 364px; top: 77px; width: 73px; height: 75px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel13" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-173753fd0ee" style='left: 0px; top: 171px; width: 800px; height: 48px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label6" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">해당 계좌가 없습니다.</span></span></div></div><div class="ui-tab-page ui-container" id="ui-1720cc323f6" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-1731291f468" style="left: 0px; top: 30px; width: 1109px; height: 643px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_banca" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container ui-hide" id="ui-173753fc832" style="left: 163px; top: 130px; width: 800px; height: 300px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_bancaNull" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-173753fc834" style="left: 364px; top: 77px; width: 73px; height: 75px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel11" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-173753fc835" style='left: 0px; top: 171px; width: 800px; height: 48px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label5" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">해당 계좌가 없습니다.</span></span></div></div><div class="ui-tab-page ui-container" id="ui-1720cc323f7" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-17312f801d7" style="left: 0px; top: 30px; width: 1109px; height: 643px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_pension" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container ui-hide" id="ui-173753fc2a0" style="left: 163px; top: 130px; width: 800px; height: 300px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_pensionNull" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-173753fc2a1" style="left: 364px; top: 77px; width: 73px; height: 75px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel9" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-173753fc2a2" style='left: 0px; top: 171px; width: 800px; height: 48px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label3" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">해당 계좌가 없습니다.</span></span></div></div><div class="ui-tab-page ui-container" id="ui-1720cc323f8" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-1731310fb3e" style="left: 0px; top: 30px; width: 1109px; height: 643px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_stock" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container ui-hide" id="ui-173753fb817" style="left: 163px; top: 130px; width: 800px; height: 300px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_stockNull" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-173753fb818" style="left: 364px; top: 77px; width: 73px; height: 75px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel6" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-173753fb819" style='left: 0px; top: 171px; width: 800px; height: 48px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label2" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">해당 계좌가 없습니다.</span></span></div></div></div></div><span class="ui-control ui-scrollbar" id="ui-170d2a73c53" style="left: 1219px; top: 208px; width: 32px; height: 624px; right: auto; bottom: auto; z-index: 3;" anchor="0b0101" dock="0" ui-id="SB_scrollbar1" ui-class="UIScrollBar" scroll-control-id="PN_deposit"><span class="track"></span><span class="trackbutton"></span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js"); // LibUtil import
+/*
+	#2511 - 계좌조회
+	
+	# 화면 Load시 CBKARR108D10 고객 보유계좌 목록조회(예금) 조회결과를 화면에 표시.
+	# 각 탭 선택시 해당 전문 송신하여 조회결과를 화면에 표시
+	# 0 : 예금, 1 : 신탁, 2 : 펀드/MMF, 3: 대출, 4 : 외환, 5 : 보험, 6 : 퇴직연금, 7 : 증권
+	# 대출탭은 2511, 대출 계좌정보, 거래내역, 이자납입은 4502 ~ 4504 사용
+*/
+// 각 탭별 사용할 데이터 객체
+let depositRecordMap = {};
+let trustRecordMap = {};
+let fundRecordMap = {};
+let exchangeRecordMap = {};
+let bancaRecordMap = {}; 
+let pensionRecordMap = {};
+
+let tempLoanList = []; 		// 대출이자납입 FLOW에 사용할 배열 
+
+let p = parent;
+
+const titleList = [
+	{ tab : "deposit", titles : ["입출금이 자유로운 예금", "목돈굴리기·목돈모으기", "채권/RP", "연금"] },   // 예금
+	{ tab : "trust", titles : ["원화신탁"] }, 														 // 신탁
+	{ tab : "fund", titles : ["펀드"] },															   	 // 펀드
+	{ tab : "loan", titles : ["한도대출", "일반대출", "외화대출(USD)", "외화대출(JPY)", "외화대출(EUR)"] },// 대출
+	{ tab : "exchange", titles : ["외화보통", "외화당좌", "외화정기", "외화통지"] },						 // 외환
+	{ tab : "banca", titles : ["보험"] },															 // 보험
+	{ tab : "pension", titles : ["퇴직연금"] },														 // 퇴직연금
+	{ tab : "stock", titles : ["증권"]}																 // 증권
+];
+
+// 취소 버튼
+function BT_left_OnClick(e){
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_OK)
+}
+
+// 탭 변경 이벤트
+function TP_search_tab_OnChangedTab(e){
+	const selectedTabIndex = e.after.index;
+
+// 탭 변경할때마다 해당 탭에 맞는 조회전문 송신
+	console.log("선택한 탭 인덱스 : " + selectedTabIndex);
+	
+	switch(selectedTabIndex){
+		// 예금
+		case 0:
+			SCREEN.WriteJnl("[예금] 선택");
+			p.sendRequest("searchDepositAccountList");
+			break;
+			
+		// 신탁
+		case 1:
+			SCREEN.WriteJnl("[신탁] 선택");
+			p.sendRequest("searchTrustAccountList");
+			break;
+			
+		// 펀드
+		case 2:
+			SCREEN.WriteJnl("[펀드] 선택");
+			p.sendRequest("searchFundAccountList");
+			break;
+			
+		// 대출
+		case 3:
+			SCREEN.WriteJnl("[대출] 선택");
+			p.sendRequest("searchLoanAccountList");
+			break;
+			
+		// 외환
+		case 4:
+			SCREEN.WriteJnl("[외환] 선택");
+			p.sendRequest("searchExchangeAccountList");
+			break;
+			
+		// 보험
+		case 5:
+			SCREEN.WriteJnl("[보험] 선택");
+			p.sendRequest("searchBancaAccountList");
+			break;
+			
+		// 퇴직연금
+		case 6:
+			SCREEN.WriteJnl("[퇴직연금] 선택");
+			p.sendRequest("searchPensionAccountList");
+			break;
+			
+		// 증권
+		case 7:
+			SCREEN.WriteJnl("[증권] 선택");
+			p.sendRequest("searchStockAccountList");
+			break;
+	}
+}
+
+// html 초기화
+function InitHtml(){
+	depositRecordMap = {}; 		// 예금 객체 초기화
+	trustRecordMap = {};   		// 신탁 객체 초기화
+	fundRecordMap = {};    		// 펀드 객체 초기화
+	exchangeRecordMap = {};  	// 외환 객체 초기화 
+	bancaRecordMap = {};		// 보험 객체 초기화
+	pensionRecordMap = {}; 		// 퇴직연금 객체 초기화
+
+	PN_deposit.$.empty();
+	PN_trust.$.empty();
+	PN_fund.$.empty();
+	PN_loan.$.empty();
+	PN_exchange.$.empty();
+	PN_banca.$.empty();
+	PN_pension.$.empty();
+	PN_stock.$.empty();
+}
+
+// 업무에 맞는 Receive Data 처리
+function ReceiveTran(obj){
+
+	let index = obj.tabIndex;
+	console.log(index);
+	
+	
+	// 타이틀 초기화
+	InitHtml();
+		
+	// 기본 타이틀 추가 
+	MakeBaseHtml(index);
+	SetScrollTarget(index);
+	
+	switch(index){
+		// 예금
+		case 0:
+			stepDeposit(obj);
+			
+			// 휴면예금조회 
+			PN_deposit.$.find("button.dormant").mousedown(function(){
+				p.PlayDing();
+				p.ChangeTab("2522");
+			});
+			// 거래중지계좌조회 
+			PN_deposit.$.find("button.stopTran").mousedown(function(){
+				p.PlayDing();
+				p.ChangeTab("2524");
+			});
+			break;
+			
+		// 신탁
+		case 1:
+			stepTrust(obj);
+			break;
+			
+		// 펀드
+		case 2:
+			stepFund(obj);
+			break;
+			
+		// 대출
+		case 3:
+			stepLoan(obj);
+			break;
+			
+		// 외환
+		case 4:
+			stepExchange(obj);
+			break;
+			
+		// 보험
+		case 5:
+			stepBanca(obj);
+			break;
+			
+		// 퇴직연금
+		case 6:
+			stepPension(obj);
+			break;
+			
+		// 증권
+		case 7:
+			stepStock(obj);
+			break;
+	}
+	
+	// 여기서 스크롤 Invalidate()?
+	SB_scrollbar1.Invalidate();
+	SB_scrollbar1.TabPageMouseDrag(SB_scrollbar1.ScrollControlID);
+}
+
+// 스크롤 대상 정하는 함수
+function SetScrollTarget(type){
+	switch(type){
+		// 예금
+		case 0:
+			SB_scrollbar1.ScrollControlID = "PN_deposit";
+			break;
+			
+		// 신탁
+		case 1:
+			SB_scrollbar1.ScrollControlID = "PN_trust";
+			break;
+			
+		// 펀드
+		case 2:
+			SB_scrollbar1.ScrollControlID = "PN_fund";
+			break;
+			
+		// 대출
+		case 3:
+			SB_scrollbar1.ScrollControlID = "PN_loan";
+			break;
+			
+		// 외환
+		case 4:
+			SB_scrollbar1.ScrollControlID = "PN_exchange";
+			break;
+			
+		// 보험
+		case 5:
+			SB_scrollbar1.ScrollControlID = "PN_banca"; 
+			break;
+			
+		// 퇴직연금
+		case 6:
+			SB_scrollbar1.ScrollControlID = "PN_pension";
+			break;
+			
+		// 증권
+		case 7:
+			SB_scrollbar1.ScrollControlID = "PN_stock";
+			break;
+	}
+}
+
+// 기본 타이틀 추가  
+function MakeBaseHtml(type){
+	for(let i=0; i<titleList[type].titles.length; i++){
+		let tag = [];
+		tag.push(""
+			+'<div class="card-groups group'+i+'">'
+			+'	<div class="card-group">'
+			+'		<div class="card-group-title">'
+			+'			<span>' + titleList[type].titles[i] + '</span>'
+			+'			<span class="tt">총 <span class="account" id="' + titleList[type].tab + 'AccountSum' + (i+1) + '" style="color:#176bc8;"></span> 계좌</span>'
+   	    	+'			<span class="sumCount" id="' + titleList[type].tab + 'BalanceCount' + (i+1) + '"></span>'
+        	+'		</div>'
+        	+'	</div>'
+        	+'</div>'
+        	+'<div class="card-panel ' + titleList[type].tab + (i+1) + '"></div>'
+		);
+
+		if(type == 0) PN_deposit.$.append(tag.join(""));
+		if(type == 1) PN_trust.$.append(tag.join(""));
+		if(type == 2) PN_fund.$.append(tag.join(""));
+		if(type == 3) PN_loan.$.append(tag.join(""));
+		if(type == 4) PN_exchange.$.append(tag.join(""));
+		if(type == 5) PN_banca.$.append(tag.join(""));
+		if(type == 6) PN_pension.$.append(tag.join(""));
+		if(type == 7) PN_stock.$.append(tag.join(""));
+	}
+	
+	// css
+	//$('.card-groups .card-group').css({'margin-top':'50px'});
+	$('.card-group .card-group-title > span').css({'font-size':'28px', 'font-family':'Noto Sans CJK KR Medium'});
+	$('.card-group .card-group-title > .tt').css({'margin-left':'15px','font-size':'20px'});
+	$('.card-group .card-group-title > .account').css({'color':'#0068c3'});
+	$('.card-group .card-group-title > .sumCount').css({'float':'right', 'color':' #000000'});
+	
+	
+	if(type == 0){
+		tag = [];
+		tag.push(""
+	        	+'<div class="card-group tab">'
+	        	+'	<div class="card-group-title open">'
+	        	+'		<span>휴면예금</span>'
+	        	+'		<img src="/KRG/media/list_ic_next.png">'
+	        	+'	</div>'
+	        	+'	<div class="card-content-box">'
+	        	+'		<div class="card-contents">'
+				+'			<div class="img"><img src="/KRG/media/ic_search_01.png"></div>'
+	        	+'			<div class="content_text">고객님의 휴면예금을 조회하시려면<br>아래의 버튼을 눌러 주십시오.</div>'
+	        	+'			<button class="btn dormant">휴면예금조회</button>'
+	        	+'		</div>'
+	        	+'	</div>'
+	        	+'</div>'
+	        	+'<div class="card-group tab">'
+	        	+'	<div class="card-group-title open">'
+	        	+'		<span>거래중지계좌</span>'
+	        	+'		<img src="/KRG/media/list_ic_next.png">'
+	        	+'	</div>'
+	        	+'	<div class="card-content-box">'
+	        	+'		<div class="card-contents">'
+				+'			<div class="img"><img src="/KRG/media/ic_search_01.png"></div>'
+	        	+'			<div class="content_text">고객님의 거래중지계좌를 조회 및 해지하시려면<br>아래의 버튼을 눌러 주십시오.</div>'
+	        	+'			<button class="btn stopTran">거래중지계좌조회</button>'
+	        	+'		</div>'
+	        	+'	</div>'
+	        	+'</div>'
+		);
+		PN_deposit.$.append(tag.join(""));
+		
+		// css
+		//$('.card-group.tab').css({'margin-top':'50px'});
+		
+		let cardTab = PN_deposit.$.find(".card-group.tab > .card-group-title");
+		cardTab.parent().css({'height':'485px'});
+		cardTab.find('img').css({'margin-right':'25px','margin-top':'6px','transform':'rotate(-90deg)','float':'right'});
+		cardTab.siblings('.card-content-box').find('.card-contents').css({'margin-top':'75px','display':'flex','justify-content':'center','align-items':'center','flex-wrap':'wrap','width':'100%'});
+		cardTab.siblings('.card-content-box').find('.content_text').css({'text-align':'center','line-height':'32px','font-size':'24px','margin-top':'25px','width':'100%'});
+		cardTab.siblings('.card-content-box').find('.btn').css({
+			'width':'288px','height':'47px','border':'1px solid #b0b0b0','border-radius':'4px','background-color':'#eee','font-size':'18px','margin-top':'36px','color':'#000'
+		});
+	
+		$(cardTab).on("click", function(e) {
+			p.PlayDing();
+	    	let $tabTarget = $(e.currentTarget);
+	
+			if ($tabTarget.hasClass("close")) {
+				$tabTarget.removeClass("close");
+	        	$tabTarget.addClass("open");
+	        	$(this).parent().css({'height':'485px'});
+	        	$(this).find('img').css({'transform':'rotate(-90deg)'});
+	        	$(this).siblings('.card-content-box').css({'display':"block"});
+	    	}else{
+		    	$tabTarget.removeClass("open");
+	        	$tabTarget.addClass("close");
+	        	$(this).parent().css({'height':'65px'});
+	        	$(this).find('img').css({'transform':'rotate(90deg)'});
+	        	$(this).siblings('.card-content-box').css({'display':"none"});
+	    	};
+		});
+	}
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			예금
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function stepDeposit(obj){
+	// 계좌 리스트 표시
+	for(let i=0; i<obj.list.length; i++){
+		AddDepositList(obj.list[i].row, obj.list[i].index);
+	}
+			
+	// 총 금액 출력
+	for(let i=0; i<obj.totalMoneyArr.length; i++){
+		PN_deposit.$.find("#depositBalanceCount" + (i+1)).html('<span class="tt" style="margin-left:8px;">총 </span>' + obj.totalMoneyArr[i].toLocaleString() + '<span class="tt" style="margin-left:8px;">원</span>');
+	}
+	// 총 계좌 수 출력
+	for(let i=0; i<obj.totalCountArr.length; i++){
+		PN_deposit.$.find("#depositAccountSum" + (i+1)).html(obj.totalCountArr[i]);
+	}
+	
+	// 보유계좌가 0건인 경우 예외처리
+	if(obj.totalCountArr[0] == 0) $(".group0").hide(); // 입출식
+	if(obj.totalCountArr[1] == 0) $(".group1").hide(); // 저축성
+	if(obj.totalCountArr[2] == 0) $(".group2").hide(); // 채권
+	if(obj.totalCountArr[3] == 0) $(".group3").hide(); // 연금형
+}
+/*
+	예금탭 계좌리스트 추가
+	@row : 계좌정보 1 row
+	@areaIndex
+		입출식 : 1
+		저축성 : 2
+		채권 : 3
+		연금형 : 4
+		* 신탁, 수익증권, 외화계좌 제외
+*/
+function AddDepositList(row, areaIndex){
+	let accountNumber = row.CUS_ACN.trim();
+	depositRecordMap[accountNumber] = row;
+	
+	const btnStyle = "position:relative;width:calc(100%-20px);margin:2px;"; 
+	let tag = [];
+	tag.push(""
+        +'<div class="card-item">'
+        +'	<div class="card_info">'
+        +'		<div class="sub_title">' + row.SUBJ_NM.trim() + '</div>'
+        +'		<div class="title" style="margin-top:10px;">' + p.ReturnFormatAccount(accountNumber) + '</div>'
+        +'		<div class="content_text">' + row.ASMB_BNKB_NAM_CON.trim() + '</div>'
+        +'		<div class="sub_content">' + parseInt(row.ACNT_BAL).toLocaleString() + '<span>원</span></div>');
+      
+    // 입출식
+	if(areaIndex == "1"){
+		// 바이오 토큰이 있으면 즉시이체버튼 들어가고 아니면 뺀다.
+		if(p.getBioTokenIs()){
+			tag.push('		<div class="btn" style="border:none;background:none;">'
+	        	+'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositAccountInfo(this, 1)">계좌정보</button>'
+	        	+'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositTranList(this)">거래내역</button>'
+	        	+'			<button class="btn" style="' + btnStyle + '" data="' + row.CUS_ACN + '" onclick="depositTransfer(this, 1)">즉시이체</button>'
+		        +'		</div>');
+		} else {
+			tag.push('		<div class="btn" style="border:none;background:none;">'
+	    	    +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositAccountInfo(this, 1)">계좌정보</button>'
+	        	+'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositTranList(this)">거래내역</button>'
+	        	+'		</div>');
+	    }
+	    
+	// 저축성
+	} else if(areaIndex == "2"){
+		// 바이오 토큰이 있으면 추가입금버튼 들어가고 아니면 뺀다.
+		if(p.getBioTokenIs()){
+			tag.push('		<div class="btn" style="border:none;background:none;">'
+	        	+'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositAccountInfo(this, 2)">계좌정보</button>'
+	        	+'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositTranList(this)">거래내역</button>');
+	        
+	   		// 정기예금일경우 추가 입금버튼 숨김
+	    	if(parseInt(row.SBCD) != 13){
+		    	tag.push('			<button class="btn" style="' + btnStyle + '" data="' + row.CUS_ACN + '" onclick="depositTransfer(this, 2)">추가입금</button>');
+		    }
+		    tag.push('		</div>');
+		} else {
+			tag.push('		<div class="btn" style="border:none;background:none;">'
+	        	+'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositAccountInfo(this, 2)">계좌정보</button>'
+	        	+'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositTranList(this)">거래내역</button>'
+	        	+'		</div>');
+		}
+	// 채권
+	} else if(areaIndex == "3"){
+		tag.push('		<div class="btn" style="border:none;background:none;">'
+	        +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositAccountInfo(this, 3)">계좌정보</button>');
+	        
+	    // 현재 탬플릿코드 에러라는 문재가 있어서 현업담당자가 TOB_NO가 0이 아닐때 거래내역 버튼 숨김처리해달라고함.(WH2J) -- 인젠트 주석
+	    if(parseInt(row.TOB_NO) == 0){
+	    	tag.push('			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositTranList(this)">거래내역</button>');
+	    }
+	    tag.push('		</div>');
+	// 연금형
+	} else if(areaIndex == "4"){
+		tag.push('		<div class="btn" style="border:none;background:none;">'
+	        +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositAccountInfo(this, 4)">계좌정보</button>'
+	        +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowDepositTranList(this)">거래내역</button>'
+	        +'		</div>');
+	}
+	
+	
+	tag.push(""
+	    +'	</div>'
+	    +'</div>'
+	);
+	
+	// 화면에 계좌 표시
+	PN_deposit.$.find(".card-panel.deposit"+areaIndex).append(tag.join(""));
+	
+	PN_deposit.$.find(".card-panel.deposit"+areaIndex).css({"visibility":"visible", "justify-content":"flex-start", "margin-bottom":"87px"});
+		
+	let cardPanel = PN_deposit.$.find(".card-panel");
+	cardPanel.find("> div.card-item").css({'width':'362px','height':'384px', 'margin-left':'11px', 'margin-bottom':'20px'});
+	cardPanel.find("> div.card-item:nth-child(3n+1)").css({"margin-left":"0px"});
+	cardPanel.find("> div.card-item .sub_content").css({'font-size':'28px'});
+	cardPanel.find("> div.card-item .sub_content > span").css({'font-size':'24px'});
+}
+
+// 계좌정보
+function ShowDepositAccountInfo(target, flag){
+	console.log('계좌정보 >>> ');
+	p.PlayDing();
+	
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let depositObj = {
+		type : "deposit",
+		CUS_ACN : depositRecordMap[key].CUS_ACN,		// 계좌번호
+		LFTM_ACN : depositRecordMap[key].LFTM_ACN,	// 평생계좌번호
+		TOB_NO : depositRecordMap[key].TOB_NO,		// 회차번호
+		depositFlag : flag,
+	}
+	
+	console.log("CUS_ACN : " + depositObj.CUS_ACN);
+	console.log("LFTM_ACN : " + depositObj.LFTM_ACN);
+	console.log("TOB_NO : " + depositObj.TOB_NO);
+	console.log("depositFlag : " + depositObj.depositFlag);
+	
+	// CBKDEP218D10 고객보유계좌목록조회 상세조회 ( 예금, 신탁, 외환, 퇴직연금 )
+	p.sendRequest("searchDetailAccount", depositObj);
+}
+
+// 거래내역
+function ShowDepositTranList(target){
+	console.log('거래내역 >>> ');
+	p.PlayDing();
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let depositObj = {
+		CUS_ACN : depositRecordMap[key].CUS_ACN,	// 계좌번호
+		TOB_NO : depositRecordMap[key].TOB_NO,		// 회차번호
+		CTNT_TRN_DCD : "0",							// O 연속거래구분코드 "0:통상거래, 1:일반연속, 2:자동연속, 3:사용자확인연속
+		INPT_DCD : "2",								// 입력구분코드 1 : 최근거래일조회내역, 2 : 전체거래내역 선택 ( 초기값 :  2 )
+	}
+	
+	console.log("CUS_ACN : " + depositObj.CUS_ACN);
+	console.log("TOB_NO : " + depositObj.TOB_NO);
+	
+	// CBKEBK848010 자동화기기 거래내역 조회(ATM요청)
+	p.sendRequest("searchTranList", depositObj);
+}
+
+// 1 : 예금 즉시이체 / 2 : 적금 추가입금
+function depositTransfer(target, flag){
+	p.PlayDing();
+	if(flag == 1){
+		let paramObj = {
+			CUS_ACN : target.getAttribute('data'),
+			ACN : target.getAttribute('data')
+		}
+		// 예금 즉시이체(2550)으로 이동
+		let params = [];
+		params.push("CUS_ACN=" + paramObj.CUS_ACN);
+		params.push("ACN=" + paramObj.ACN);
+		SCREEN.WriteJnl("**계좌선택: " + paramObj.CUS_ACN);
+		SCREEN.WriteJnl("[예금 즉시이체] 선택");
+		setTimeout(function()
+		{
+			p.com.screen.screenCall("2550", params)
+		},200);
+	} else {
+		let paramObj = {
+			CUS_ACN : target.getAttribute('data')
+		}
+		// 적금 추가입금(예: 2560)로 이동
+		let params = [];
+		params.push("CUS_ACN=" + paramObj.CUS_ACN);
+		params.push("RNN=" + p.gRNN);
+		params.push("EDPS_CSN=" + p.gEDPS_CSN);
+		params.push("gBioToken=" + p.gBioToken);
+		SCREEN.WriteJnl("**계좌선택: " + paramObj.CUS_ACN);
+		SCREEN.WriteJnl("[적금 추가입금] 선택");
+		setTimeout(function()
+		{
+			p.com.screen.screenCall("2560", params);
+		},200);
+	}
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			신탁
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function stepTrust(obj){
+	// 계좌 조회 내역이 없을경우
+	if(obj.list.length == 0){
+		PN_trust.$.find(".card-group-title").hide();
+		PN_trustNull.Visible = true;
+		return;
+	}
+
+	// 계좌 리스트 표시
+	for(let i=0; i<obj.list.length; i++){
+		AddTrustList(obj.list[i].row, obj.list[i].index);
+	}
+			
+	// 총 금액 출력
+	PN_trust.$.find("#trustBalanceCount1").html('<span class="tt" style="margin-left:8px;">총 </span>' + obj.totalMoney.toLocaleString() + '<span class="tt" style="margin-left:8px;">원</span>');
+	// 총 계좌 수 출력
+	PN_trust.$.find("#trustAccountSum1").html(obj.totalCount);
+}
+/*
+	신탁탭 계좌리스트 추가
+	@row : 계좌정보 row
+	@areaIndex 신탁 : 1
+*/
+function AddTrustList(row, areaIndex){
+	let accountNumber = row.CUS_ACN.trim();
+	trustRecordMap[accountNumber] = row;
+	
+	const btnStyle = "position:relative;width:calc(100%-20px);margin:2px;";
+	let tag = [];
+	tag.push(""
+        +'<div class="card-item">'
+        +'	<div class="card_info">'
+        +'		<div class="sub_title">' + row.SUBJ_NM.trim() + '</div>'
+        +'		<div class="title" style="margin-top:10px;">' + p.ReturnFormatAccount(accountNumber) + '</div>'
+        +'		<div class="content_text">' + row.ASMB_BNKB_NAM_CON.trim() + '</div>'
+        +'		<div class="sub_content">' + parseInt(row.ACNT_BAL).toLocaleString() + '<span style="font-size:21px;">원</span></div>');
+    tag.push('		<div class="btn" style="border:none;background:none;">'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowTrustAccountInfo(this)">계좌정보</button>'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowTrustTranList(this)">거래내역</button>'
+	    +'		</div>');
+	tag.push(""
+	    +'	</div>'
+	    +'</div>'
+	);
+	
+	// 화면에 계좌 표시
+	PN_trust.$.find(".card-panel.trust"+areaIndex).append(tag.join(""));
+	
+	PN_trust.$.find(".card-panel.trust"+areaIndex).css({"visibility":"visible", "justify-content":"flex-start", "margin-bottom":"87px"});
+		
+	let cardPanel = PN_trust.$.find(".card-panel");
+	cardPanel.find("> div.card-item").css({'width':'362px','height':'384px', 'margin-left':'11px', 'margin-bottom':'20px'});
+	cardPanel.find("> div.card-item:nth-child(3n+1)").css({"margin-left":"0px"});
+}
+
+// 계좌정보
+function ShowTrustAccountInfo(target){
+	console.log('계좌정보 >>> ');
+	p.PlayDing();
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let trustObj = {
+		type : "trust",
+		CUS_ACN : trustRecordMap[key].CUS_ACN,		// 계좌번호
+	}
+	
+	console.log("CUS_ACN : " + trustObj.CUS_ACN);
+	
+	// CBKDEP218D10 고객보유계좌목록조회 상세조회 ( 예금, 신탁, 외환, 퇴직연금 )
+	p.sendRequest("searchDetailAccount", trustObj);
+}
+
+// 거래내역
+function ShowTrustTranList(target){
+	console.log('거래내역 >>> ');
+	p.PlayDing();
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let trustObj = {
+		CUS_ACN : trustRecordMap[key].CUS_ACN,	// 계좌번호
+		TOB_NO : trustRecordMap[key].TOB_NO,	// 회차번호
+		CTNT_TRN_DCD : "0",						// O 연속거래구분코드 "0:통상거래, 1:일반연속, 2:자동연속, 3:사용자확인연속
+		INPT_DCD : "2",							// 입력구분코드 1 : 최근거래일조회내역, 2 : 전체거래내역 선택 ( 초기값 :  2 )
+	}
+	
+	console.log("CUS_ACN : " + trustObj.CUS_ACN);
+	console.log("TOB_NO : " + trustObj.TOB_NO);
+	
+	// CBKEBK848010 자동화기기 거래내역 조회(ATM요청)
+	p.sendRequest("searchTranList", trustObj);
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			펀드/MMF
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function stepFund(obj){
+	// 계좌 조회 내역이 없을경우
+	if(obj.list.length == 0){
+		PN_fund.$.find(".card-group-title").hide();
+		PN_fundNull.Visible = true;
+		return;
+	}
+	
+
+	// 계좌 리스트 표시
+	for(let i=0; i<obj.list.length; i++){
+		AddFundList(obj.list[i].row, obj.list[i].index);
+	}
+	// 총 금액 출력
+	PN_fund.$.find("#fundBalanceCount1").html('<span class="tt" style="margin-left:8px;">총 </span>' + obj.totalMoney.toLocaleString() + '<span class="tt" style="margin-left:8px;">원</span>');
+	// 총 계좌 수 출력
+	PN_fund.$.find("#fundAccountSum1").html(obj.totalCount);
+}
+function AddFundList(row, areaIndex){
+	console.log(row)
+	let accountNumber = row.CUS_ACN.trim();
+	fundRecordMap[accountNumber] = row;
+	
+	const btnStyle = "position:relative;width:calc(100%-20px);margin:2px;"; 
+	let tag = [];
+	tag.push(""
+        +'<div class="card-item">'
+        +'	<div class="card_info">'
+        +'		<div class="sub_title">' + row.FUND_NM.trim() + '</div>'
+        +'		<div class="title" style="margin-top:10px;">' + p.ReturnFormatAccount(accountNumber) + '</div>'
+        +'		<div class="info-title">누적수익율</div>'
+        +'		<div class="info-content">' + row.AMT_SYB_01 + parseFloat(row.BNSC_ACNT_ACPF_RT).toLocaleString() + '<span> %</span></div>'
+        +'		<div class="info-title">평가금액</div>'
+        +'		<div class="info-content">' + parseInt(row.VALT_AMT).toLocaleString() + '<span> 원</span></div>');
+	tag.push('		<div class="btn" style="border:none;background:none;">'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowFundAccountInfo(this)">계좌정보</button>'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" onclick="ShowFundTranList(this)">거래내역</button>'
+	    +'		</div>');
+	
+	tag.push(""
+	    +'	</div>'
+	    +'</div>'
+	);
+	
+	// 화면에 계좌 표시
+	PN_fund.$.find(".card-panel.fund"+areaIndex).append(tag.join(""));
+	
+	PN_fund.$.find(".card-panel.fund"+areaIndex).css({"visibility":"visible", "justify-content":"flex-start", "margin-bottom":"87px"});
+		
+	let cardPanel = PN_fund.$.find(".card-panel");
+	cardPanel.find("> div.card-item").css({'width':'362px','height':'384px', 'margin-left':'11px', 'margin-bottom':'20px'});
+	cardPanel.find("> div.card-item:nth-child(3n+1)").css({"margin-left":"0px"});
+	
+	cardPanel.find("div.info-title").css({"margin-top":"20px", "font-size":"16px", "font-family":'Noto Sans CJK KR Medium', "text-align":"right"});
+	cardPanel.find("div.info-content").css({"margin-top":"5px", "text-align":"right", "font-size":"32px", "font-family":"IBK iDream B"});
+	cardPanel.find("div.info-content > span").css({"font-size":"18px", "font-family":"Noto Sans CJK KR Medium"});
+}
+
+function ShowFundAccountInfo(target){
+	console.log('계좌정보 >>> ');
+	p.PlayDing();
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let fundObj = {
+		type : "fund",
+		CUS_ACN : fundRecordMap[key].CUS_ACN,		// 계좌번호
+		fundRecordMap:fundRecordMap
+	}
+	
+	console.log("CUS_ACN : " + fundObj.CUS_ACN);
+	
+	// IISIIZI01082 고객보유계좌목록조회 상세조회  (펀드)
+	p.sendRequest("searchDetailFundAccount", fundObj);
+}
+
+function ShowFundTranList(target){
+	console.log('거래내역 >>> ');
+	p.PlayDing();
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	let currentDate = p.GetCurrentDate();
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let fundObj = {
+		prevFlag : false,
+		SCN : target.getAttribute('data'),	// 계좌번호
+		valueFrom : com.date.fnGetAddDate("D", -7, currentDate),
+		valueTo : currentDate,
+		fundRecordMap:fundRecordMap
+	}
+	
+	console.log("SCN : " + fundObj.SCN);
+	console.log("valueFrom : " + fundObj.valueFrom);
+	console.log("valueTo : " + fundObj.valueTo);
+	console.log("fundRecordMap : " + JSON.stringify(fundObj.fundRecordMap));
+	
+	
+	// IISIIZK01002 거래내역조회(펀드)
+	p.sendRequest("searchFundTranList", fundObj);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			대출
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function stepLoan(obj){
+	// 계좌 조회 내역이 없을경우
+	if(obj.list.length == 0){
+		PN_loan.$.find(".card-group-title").hide();
+		PN_loanNull.Visible = true;
+		return;
+	}
+	
+	// 계좌 리스트 표시
+	for(let i=0; i<obj.list.length; i++){
+		AddLoanList(i, obj.list[i].row, obj.list[i].index);
+		
+		// 배열에 list.row 복사
+		tempLoanList.push(JSON.parse(JSON.stringify(obj.list[i].row)));
+	}
+	
+	
+	// 총 금액 출력
+	for(let i=0; i<obj.totalMoneyArr.length; i++){
+		PN_loan.$.find("#loanBalanceCount" + (i+1)).html('<span class="tt" style="margin-left:8px;">총 </span>' + obj.totalMoneyArr[i].toLocaleString() + '<span class="tt" style="margin-left:8px;">원</span>');
+	}
+	// 총 계좌 수 출력
+	for(let i=0; i<obj.totalCountArr.length; i++){
+		PN_loan.$.find("#loanAccountSum" + (i+1)).html(obj.totalCountArr[i]);
+	}
+	
+	// 보유계좌가 0건인 경우 예외처리
+	if(obj.totalCountArr[0] == 0) $(".group0").hide(); // 한도대출
+	if(obj.totalCountArr[1] == 0) $(".group1").hide(); // 일반대출
+	if(obj.totalCountArr[2] == 0) $(".group2").hide(); // 외화대출(USD)
+	if(obj.totalCountArr[3] == 0) $(".group3").hide(); // 외화대출(JPY)
+	if(obj.totalCountArr[4] == 0) $(".group4").hide(); // 외화대출(EUR)
+}
+
+function AddLoanList(idx, row, areaIndex){
+	const btnStyle = "position:relative;width:calc(100%-20px);margin:2px;";
+	
+	let endDate = row.EXPI_YMD; // 대출 만기일
+	let irt = row.LARV_AGRM_IRT.substr(0, row.LARV_AGRM_IRT.indexOf('.') + 3); //대출 금리
+	
+	let tag = [];
+	tag.push(""
+        +'<div class="card-item" index="' + idx + '">'
+        +'	<div class="card_info">'
+        +'		<div class="sub_title">' + row.PDM + '</div>'
+        +'		<div class="title" style="margin-top:10px;font-size:26px;">' + p.ReturnFormatAccount(row.CUS_ACN.trim()) + '</div>'
+        +'		<div class="content_text">' + row.TLAC_ABNM_NM + '</div>'
+        +'		<div class="content_text text_info top">'
+        +'			<span>대출금리</span><span>' + parseFloat(irt) + '%</span>'
+        +'		</div>'
+        +'		<div class="content_text text_info">'
+        +'			<span>대출잔액</span><span>' + parseInt(row.TLBZ_BAL).toLocaleString() + '원</span>'
+        +'		</div>'
+        +'		<div class="content_text text_info">'
+        +'			<span>대출만기일</span><span>' + p.ReturnFormatDateHyphen(endDate) + '</span>'
+        +'		</div>');
+	if(p.getBioTokenIs()){
+		tag.push('		<div class="btn" style="border:none;background:none;">'
+		    +'			<button class="btn" style="' + btnStyle + '" data="' + row.CUS_ACN + '" onclick="loanStep(this)">계좌정보</button>'
+	    	+'			<button class="btn" style="' + btnStyle + '" data="' + row.CUS_ACN + '" onclick="loanStep(this)">거래내역</button>');
+	    	// 외화대출일경우 이자납입버튼이 없어야함
+        	// 외화대출(USD) : 3    외화대출(JPY) : 4   외화대출(EUR) : 5
+        	if(["3","4","5"].indexOf(areaIndex) == -1 ) {
+	           	tag.push('       	<button class="btn" style="' + btnStyle + '" onclick="loanStep(this)">이자납입</button>');
+        	}
+	} else {
+		tag.push('		<div class="btn" style="border:none;background:none;">'
+		    +'			<button class="btn" style="' + btnStyle + '" data="' + row.CUS_ACN + '" onclick="loanStep(this)">계좌정보</button>'
+	    	+'			<button class="btn" style="' + btnStyle + '" data="' + row.CUS_ACN + '" onclick="loanStep(this)">거래내역</button>');
+	}
+	tag.push("		</div>"
+	    +'	</div>'
+	    +'</div>');
+	
+	// 화면에 계좌 표시
+	PN_loan.$.find(".card-panel.loan"+areaIndex).append(tag.join(""));
+	
+	PN_loan.$.find(".card-panel.loan"+areaIndex).css({"visibility":"visible", "justify-content":"flex-start", "margin-bottom":"87px"});
+		
+	let cardPanel = PN_loan.$.find(".card-panel");
+	cardPanel.find("> div.card-item").css({'width':'362px','height':'384px', 'margin-left':'11px', 'margin-bottom':'20px'});
+	cardPanel.find("> div.card-item:nth-child(3n+1)").css({"margin-left":"0px"});
+	cardPanel.find(".text_info").css({"margin-top":"5px","display":"flex","justify-content":"space-between"});
+	cardPanel.find(".text_info.top").css({"margin-top":"40px"});
+}
+
+// 계좌정보, 거래내역, 이자납입
+function loanStep(target){
+	p.PlayDing();
+	let index = $(target).parents("div.card-item").attr("index");		// 선택한 계좌가 리스트의 몇번째인지
+	let data = tempLoanList[index];										// 선택한 계좌 데이터 받을 배열
+	let tranName = target.innerText;									// 선택한 업무 무엇인지 체크
+	// 전역 객체에 데이터 할당
+	p.gData.CUS_ACN = data.CUS_ACN; 			//고객계좌번호
+    p.gData.TOB_NO = data.TOB_NO; 				//회차번호
+    p.gData.SUB_CTN = data.SUB_CTN; 			//서브계약번호
+    p.gData.LARV_AGRM_IRT = data.LARV_AGRM_IRT;	//대출이율
+    p.gData.TLBZ_BAL = data.TLBZ_BAL; 			//대출잔액
+    p.gData.EXPI_YMD = data.EXPI_YMD; 			//만기년월일
+    p.gData.PDM = data.PDM; 					//상품명
+	
+	
+	console.log("CUS_ACN : " + p.gData.CUS_ACN);
+	console.log("TOB_NO : " + p.gData.TOB_NO);
+	console.log("SUB_CTN : " + p.gData.SUB_CTN);
+	console.log("LARV_AGRM_IRT : " + p.gData.LARV_AGRM_IRT);
+	console.log("TLBZ_BAL : " + p.gData.TLBZ_BAL);
+	console.log("EXPI_YMD : " + p.gData.EXPI_YMD);
+	console.log("PDM : " + p.gDataPDM);
+
+	if(tranName == "계좌정보"){
+		// 대출계좌 상세정보로 이동
+		p.sendRequest("searchLoanAccountInfo");
+	} else if(tranName == "거래내역"){
+		p.gData.CTNT_TRN_DCD = "0";					// O 연속거래구분코드 "0:통상거래, 1:일반연속, 2:자동연속, 3:사용자확인연속
+		p.gData.INPT_DCD = "2";						// 입력구분코드 1 : 최근거래일조회내역, 2 : 전체거래내역 선택 ( 초기값 :  2 )
+	
+		// 대출계좌 거래내역조회로 이동
+		p.sendRequest("searchLoanTranList", {prevScreen:2511});
+	} else if(tranName == "이자납입"){
+		// 대출이자납입으로 이동
+		p.sendRequest("searchLoanInt", {prevScreen:2511});
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			외환
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function stepExchange(obj){
+	// 계좌 조회 내역이 없을경우
+	if(obj.list.length == 0){
+		PN_exchange.$.find(".card-group-title").hide();
+		PN_exchangeNull.Visible = true;
+		return;
+	}
+	
+	// 계좌 리스트 표시
+	for(let i=0; i<obj.list.length; i++){
+		AddExchangeList(obj.list[i].row, obj.list[i].index);
+	}
+	
+	// 총 계좌 수 출력
+	for(let i=0; i<obj.totalCountArr.length; i++){
+		PN_exchange.$.find("#exchangeAccountSum" + (i+1)).html(obj.totalCountArr[i]);
+	}
+	
+	// 보유계좌가 0건인 경우 예외처리
+	if(obj.totalCountArr[0] == 0) $(".group0").hide(); // 외화보통
+	if(obj.totalCountArr[1] == 0) $(".group1").hide(); // 외화당좌
+	if(obj.totalCountArr[2] == 0) $(".group2").hide(); // 외화정기
+	if(obj.totalCountArr[3] == 0) $(".group3").hide(); // 외화통지
+}
+
+function AddExchangeList(row, areaIndex){
+	let accountNumber = row.CUS_ACN.trim();
+	exchangeRecordMap[accountNumber] = row;
+	
+	const btnStyle = "position:relative;width:calc(100%-20px);margin:2px;"; 
+	let tag = [];
+	tag.push(""
+        +'<div class="card-item">'
+        +'	<div class="card_info">'
+        +'		<div class="sub_title">' + row.SUBJ_NM.trim() + '</div>'
+        +'		<div class="title" style="margin-top:10px;font-size:26px;">' + p.ReturnFormatAccount(accountNumber) + '</div>'
+        +'		<div class="content_text">' + row.ASMB_BNKB_NAM_CON.trim() + '</div>'
+        +'		<div class="sub_content"><span style="font-size:21px;">' + row.CRCD + ' </span>' + parseInt(row.ACNT_BAL).toLocaleString() + '</div>');
+    tag.push('		<div class="btn" style="border:none;background:none;">'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" data2="' + row.TOB_NO + '" data3="' + row.CRCD + '" onclick="ShowExchangeAccountInfo(this, ' + areaIndex + ')">계좌정보</button>'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" data2="' + row.TOB_NO + '" data3="' + row.CRCD + '" onclick="ShowExchangeTranList(this, ' + areaIndex + ')">거래내역</button>'
+	    +'		</div>');
+	tag.push(""
+	    +'	</div>'
+	    +'</div>'
+	);
+	// 화면에 계좌 표시
+	PN_exchange.$.find(".card-panel.exchange"+areaIndex).append(tag.join(""));
+	
+	PN_exchange.$.find(".card-panel.exchange"+areaIndex).css({"visibility":"visible", "justify-content":"flex-start", "margin-bottom":"87px"});
+		
+	let cardPanel = PN_exchange.$.find(".card-panel");
+	cardPanel.find("> div.card-item").css({'width':'362px','height':'384px', 'margin-left':'11px', 'margin-bottom':'20px'});
+	cardPanel.find("> div.card-item:nth-child(3n+1)").css({"margin-left":"0px"});
+}
+
+function ShowExchangeAccountInfo(target, flag){
+	console.log('계좌정보 >>> ');
+	p.PlayDing();
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let exchangeObj = {
+		type : "exchange",
+		CUS_ACN : target.getAttribute('data'),			// 계좌번호
+		TOB_NO : target.getAttribute('data2').trim(),	// 회차번호
+		CRCD : target.getAttribute('data3'),			// 통화코드
+		EXPI_YMD : exchangeRecordMap[key].EXPI_YMD,		// 통화코드
+		exchangeFlag : flag								// 1 : 외화보통, 2 : 외화당좌, 3 : 외화정기, 4 : 외화통지
+	}
+	
+	console.log("CUS_ACN : " + exchangeObj.CUS_ACN);
+	console.log("TOB_NO : " + exchangeObj.TOB_NO);
+	console.log("CRCD : " + exchangeObj.CRCD);
+	console.log("EXPI_YMD : " + exchangeObj.EXPI_YMD);
+		
+	// CBKDEP218D10 고객보유계좌목록조회 상세조회 ( 예금, 신탁, 외환, 퇴직연금 )
+	p.sendRequest("searchDetailAccount", exchangeObj);
+}
+
+function ShowExchangeTranList(target, flag){
+	console.log('거래내역 >>> ');
+	p.PlayDing();
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	let currentDate = p.GetCurrentDate();
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let exchangeObj = {
+		CUS_ACN : target.getAttribute('data'),	// 계좌번호
+		TOB_NO : target.getAttribute('data2'),	// 회차번호
+		CRCD : target.getAttribute('data3'),	// 통화코드
+		valueFrom : com.date.fnGetAddDate("D", -7, currentDate),
+		valueTo : currentDate
+	}
+	
+	console.log("CUS_ACN : " + exchangeObj.CUS_ACN);
+	console.log("TOB_NO : " + exchangeObj.TOB_NO);
+	console.log("CRCD : " + exchangeObj.CRCD);
+	
+	// CBKEBK848010 자동화기기 거래내역 조회(ATM요청)
+	p.sendRequest("searchExchangeTranList", exchangeObj);
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			보험
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+let bancaArray = {
+	acc : [],
+	list : []
+};
+function stepBanca(obj){
+	// 계좌 조회 내역이 없을경우
+	if(obj.list.length == 0){
+		PN_banca.$.find(".card-group-title").hide();
+		PN_bancaNull.Visible = true;
+		return;
+	}
+	
+	// 계좌 리스트 표시
+	for(let i=0; i<obj.list.length; i++){
+		AddBancaList(obj.list[i].row, obj.list[i].index);
+		
+		// 보험 납입내역에서 사용할 객체 
+		bancaArray.acc[i] = obj.list[i].row.SCN; // 계좌번호
+		bancaArray.list[i] = obj.list[i].row;    // 계좌 리스트 
+	}
+	
+	// 총 계좌 수 출력
+	PN_banca.$.find("#bancaAccountSum1").html(obj.totalCount);
+}
+
+function AddBancaList(row, areaIndex){
+	console.log(row)
+	let accountNumber = row.SCN;
+	bancaRecordMap[accountNumber] = row;
+	
+	const btnStyle = "position:relative;width:calc(100%-20px);margin:2px;";
+	let tag = [];
+	tag.push(""
+        +'<div class="card-item">'
+        +'	<div class="card_info">'
+        +'		<div class="title" style="margin-top:10px;">' + row.PDM.trim() + '</div>'
+        +'		<div class="content_text">' + row.SCN.trim() + '</div>'
+        +'		<div class="balance">' + parseInt(row.FTIS_CHG).toLocaleString() + '<span style="font-size:21px;">원</span></div>'
+        +'		<div class="content_text text_info top">'
+        +'			<span>계약일자</span><span>' + p.ReturnFormatDateHyphen(row.ARR_YMD) + '</span>'
+        +'		</div>'
+        +'		<div class="content_text text_info">'
+        +'			<span>보험사</span><span>' + row.ISCM_NM.trim() + '</span>'
+        +'		</div>'
+        +'		<div class="content_text text_info">'
+        +'			<span>계약상태</span><span>' + row.ARR_STTS_NM + '</span>'
+        +'		</div>'
+    	+'		<div class="btn" style="border:none;background:none;">'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" data2="' + row.BNCS_ISCM_CD + '" onclick="ShowBancaAccountInfo(this)">계약조회</button>');
+	    // 상품대분류코드가 52(화재보험)인경우 [거래내역] 버튼 숨김
+	    if(row.PDF_LRCD != "52"){
+	    	tag.push('			<button class="btn" style="' + btnStyle + '" data="' + accountNumber + '" data2="' + row.BNCS_ISCM_CD + '" onclick="ShowBancaTranList(this)">입금내역</button>');
+	    }
+	tag.push('		</div>'
+	    +'	</div>'
+	    +'</div>');
+	
+	// 화면에 계좌 표시
+	PN_banca.$.find(".card-panel.banca"+areaIndex).append(tag.join(""));
+	
+	PN_banca.$.find(".card-panel.banca"+areaIndex).css({"visibility":"visible", "justify-content":"flex-start", "margin-bottom":"87px"});
+		
+	let cardPanel = PN_banca.$.find(".card-panel");
+	cardPanel.find("> div.card-item").css({'width':'362px','height':'384px', 'margin-left':'11px', 'margin-bottom':'20px'});
+	cardPanel.find("> div.card-item:nth-child(3n+1)").css({"margin-left":"0px"});
+	cardPanel.find(".balance").css({"margin-top":"50px", "text-align":"right"});
+	cardPanel.find(".text_info").css({"margin-top":"5px","display":"flex","justify-content":"space-between"});
+	cardPanel.find(".text_info.top").css({"margin-top":"30px"});
+}
+
+function ShowBancaAccountInfo(target){
+	console.log('계좌정보 >>> ');
+	p.PlayDing();
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let bancaObj = {
+		type : "banca",
+		SCN : target.getAttribute('data'),				// 계좌번호
+		BNCS_ISCM_CD : target.getAttribute('data2'),	// //손해보험 테스트데이터(보험사코드)
+		bancaRecordMap:bancaRecordMap,
+		bancaRecordArray:bancaArray
+	}
+	
+	console.log("SCN : " + bancaObj.SCN);
+	console.log("BNCS_ISCM_CD : " + bancaObj.BNCS_ISCM_CD);
+	console.log(bancaObj.BNCS_ISCM_CD)
+	console.log(bancaObj.BNCS_ISCM_CD.substring(0,1))
+	
+	// 상품대분류코드가 52인경우 방카슈랑스기업보험계좌상세조회 IASIAZA910X / MAMSS0124386 전문 송신하도록 수정 - 2020.10.15
+	if(bancaRecordMap[key].PDF_LRCD == "52"){
+		p.sendRequest("searchBancaFire", bancaObj);	
+	} else {
+		if(bancaObj.BNCS_ISCM_CD.substring(0,1) == "L"){
+			// IASIAZA1210X 생명보험 상세내역 조회 - Banca L
+			p.sendRequest("searchDetailBancaLAccount", bancaObj);
+		} else {
+			// IASIAZA1220X 상해보험 상세내역 조회 - Banca N
+			p.sendRequest("searchDetailBancaNAccount", bancaObj);
+		}
+	}
+}
+
+// 납입내역
+function ShowBancaTranList(target){
+	console.log('거래내역 >>> ');
+	p.PlayDing();
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let bancaObj = {
+		prevFlag : false,
+		type : "banca",
+		SCN : target.getAttribute('data'),				// 계좌번호
+		BNCS_ISCM_CD : target.getAttribute('data2'),	// //손해보험 테스트데이터(보험사코드)
+		bancaRecordArray:bancaArray
+	}
+	
+	if(bancaObj.BNCS_ISCM_CD.substring(0,1) == "L"){
+		// IASIAZA1310X 생명보험 납입내역 조회 - Banca L
+		p.sendRequest("searchBancaLTranList", bancaObj);
+	} else {
+		// IASIAZA1320X 상해보험 납입내역 조회 - Banca N
+		p.sendRequest("searchBancaNTranList", bancaObj);
+	}
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			퇴직연금
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function stepPension(obj){
+	// 계좌 조회 내역이 없을경우
+	if(obj.list.length == 0){
+		PN_pension.$.find(".card-group-title").hide();
+		PN_pensionNull.Visible = true;
+		return;
+	}
+	
+	// 계좌 리스트 표시
+	for(let i=0; i<obj.list.length; i++){
+		AddPensionList(obj.list[i].row, obj.list[i].index);
+	}	
+	
+	// 총 금액 출력
+	PN_pension.$.find("#pensionBalanceCount1").html('<span class="tt" style="margin-left:8px;">총 </span>' + obj.totalMoney.toLocaleString() + '<span class="tt" style="margin-left:8px;">원</span>');
+	// 총 계좌 수 출력
+	PN_pension.$.find("#pensionAccountSum1").html(obj.totalCount);
+}
+
+function AddPensionList(row, areaIndex){
+	console.log(row)
+	let accountNumber = row.CUS_ACN;
+	pensionRecordMap[accountNumber] = row;
+	const btnStyle = "position:relative;width:calc(100%-20px);margin:2px;"; 
+	let tag = [];
+	tag.push(""
+        +'<div class="card-item">'
+        +'	<div class="card_info">'
+        +'		<div class="sub_title">' + row.SUBJ_NM.trim() + '</div>'
+        +'		<div class="title" style="margin-top:10px;">' + p.ReturnFormatAccount(row.CUS_ACN.trim()) + '</div>'
+        +'		<div class="content_text">' + row.ASMB_BNKB_NAM_CON.trim() + '</div>'
+        +'		<div class="sub_content">' + parseInt(row.ACNT_BAL).toLocaleString() + '<span style="font-size:21px;">원</span></div>');
+	tag.push('		<div class="btn" style="border:none;background:none;">'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + row.CUS_ACN + '" onclick="ShowPensionAccountInfo(this)">계좌정보</button>'
+	    +'			<button class="btn" style="' + btnStyle + '" data="' + row.CUS_ACN + '" onclick="ShowPensionTranList(this)">거래내역</button>'
+	    +'		</div>');
+	tag.push(""
+	    +'	</div>'
+	    +'</div>'
+	);
+	
+	// 화면에 계좌 표시
+	PN_pension.$.find(".card-panel.pension"+areaIndex).append(tag.join(""));
+	
+	PN_pension.$.find(".card-panel.pension"+areaIndex).css({"visibility":"visible", "justify-content":"flex-start", "margin-bottom":"87px"});
+		
+	let cardPanel = PN_pension.$.find(".card-panel");
+	cardPanel.find("> div.card-item").css({'width':'362px','height':'384px', 'margin-left':'11px', 'margin-bottom':'20px'});
+	cardPanel.find("> div.card-item:nth-child(3n+1)").css({"margin-left":"0px"});
+}
+
+function ShowPensionAccountInfo(target){
+	console.log('계좌정보 >>> ');
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let pensionObj = {
+		type : "pension",
+		CUS_ACN : target.getAttribute('data')			// 계좌번호
+	}
+	
+	console.log("CUS_ACN : " + pensionObj.CUS_ACN);
+	
+	// CBKDEP218D10 고객보유계좌목록조회 상세조회 ( 예금, 신탁, 외환, 퇴직연금 )
+	p.sendRequest("searchDetailAccount", pensionObj);
+}
+
+function ShowPensionTranList(target){
+	console.log('거래내역 >>> ');
+	let key = target.getAttribute('data'); // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+	console.log(key);
+	
+	// 이 객체 값으로 계좌정보 페이지의 상세조회 전문 송신.
+	let pensionObj = {
+		CUS_ACN : pensionRecordMap[key].CUS_ACN,	// 계좌번호
+		CTNT_TRN_DCD : "0",						// O 연속거래구분코드 "0:통상거래, 1:일반연속, 2:자동연속, 3:사용자확인연속
+		INPT_DCD : "2",							// 입력구분코드 1 : 최근거래일조회내역, 2 : 전체거래내역 선택 ( 초기값 :  2 )
+	}
+	
+	console.log("CUS_ACN : " + pensionObj.CUS_ACN);
+	
+	// CBKEBK848010 자동화기기 거래내역 조회(ATM요청)
+	p.sendRequest("searchTranList", pensionObj);
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			증권
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function stepStock(obj){
+	// 계좌 조회 내역이 없을경우
+	if(obj.list.length == 0){
+		PN_stock.$.find(".card-group-title").hide();
+		PN_stockNull.Visible = true;
+		return;
+	}
+	
+	// 계좌 리스트 표시
+	for(let i=0; i<obj.list.length; i++){
+		AddStockList(obj.list[i].row, obj.list[i].index);
+	}
+	
+	// 총 계좌 수 출력
+	PN_stock.$.find("#stockAccountSum1").html(obj.totalCount);
+}
+
+function AddStockList(row, areaIndex){ 
+	console.log(row)
+	const btnStyle = "position:relative;width:calc(100%-20px);margin:2px;"; 
+	let tag = [];
+	tag.push(""
+        +'<div class="card-item">'
+        +'	<div class="card_info">'
+        +'		<div class="title" style="margin-top:5px;font-size:18px;">' + p.ReturnFormatAccount(row.CUS_ACN.trim()) + '</div>'
+        +'		<div class="sub_title">' + row.SCRS_CMPN_NM.trim() + '</div>'
+        +'		<div class="content_text text_info top">'
+        +'			<span>증권/제휴계좌</span><span>' + row.SCRS_ACN.trim() + '</span>'
+        +'		</div>'
+        +'		<div class="content_text text_info">'
+        +'			<span>증권가상계좌</span><span>' + p.ReturnFormatAccount(row.VRTL_ACN.trim()) + '</span>'
+        +'		</div>'
+	    +'	</div>'
+	    +'</div>');
+	
+	// 화면에 계좌 표시
+	PN_stock.$.find(".card-panel.stock"+areaIndex).append(tag.join(""));
+	
+	PN_stock.$.find(".card-panel").css({"visibility":"visible", "justify-content":"flex-start"});
+		
+	let cardPanel = PN_stock.$.find(".card-panel");
+	cardPanel.find("> div.card-item").css({'width':'352px', "margin-left":"25px","height":"255px"});
+	cardPanel.find("> div.card-item:nth-child(3n+1)").css({"margin-left":"0px"});
+	cardPanel.find("> div.card-item .sub_title").css({"text-align":"left", "font-size":"24px"});
+	cardPanel.find(".text_info").css({"margin-top":"5px","display":"flex","justify-content":"space-between"});
+	cardPanel.find(".text_info.top").css({"margin-top":"50px"});
+}
+</script></xjscript></body>
+</html>

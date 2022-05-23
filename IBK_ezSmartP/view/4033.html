@@ -1,0 +1,452 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1345,1091" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a52210e0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e2" style="left: 0px; top: 0px; width: auto; height: 101.91px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a52210e3" style='left: 80px; top: 31px; width: 1134px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">전자금융 출금계좌 등록</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a52210e8" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-orange" id="ui-171a52210ea" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span><span class="ui-control ui-button theme-blue" id="ui-171a5627702" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171ab1ec0c8" style="left: 0px; top: 101.91px; width: auto; height: 91.99px; right: 0px; bottom: auto; z-index: 2; background-color: rgb(239, 240, 242);" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a52210e5" style='left: 82px; top: 24px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content"></span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-174047683f7" style="left: 0px; top: 193.9px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-w="200" dock-h="100" dock-r="left:968px;top:201px;width:200px;height:100px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-1729d2523d8" style="left: 116px; top: 55px; width: 120px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 6;" anchor="0b0101" dock="0" ui-id="LB_label2" ui-class="UILabel"><span class="ui-content">선택 계좌</span></span><span class="ui-control ui-label" id="ui-1729d25cdfe" style="left: 116px; top: 97px; width: 475px; height: 32px; right: auto; bottom: auto; color: black; font-size: 24px; z-index: 7; background-color: transparent;" anchor="0b0101" dock="0" ui-id="LB_account" ui-class="UILabel"><span class="ui-content"></span></span><span class="ui-control ui-label" id="ui-1729d12abaf" style="left: 116px; top: 163px; width: 475px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 3;" anchor="0b0101" dock="0" ui-id="LB_label16" ui-class="UILabel"><span class="ui-content">1회 이체한도</span></span><span class="ui-control ui-label" id="ui-1729d304b21" style='left: 535px; top: 222px; width: 50px; height: 87px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 9; background-color: white;' anchor="0b0101" dock="0" ui-id="LB_label8" ui-class="UILabel"><span class="ui-content" style="left: 5px; top: 0px; right: 0px; bottom: 0px;">원</span></span><span class="ui-control ui-label" id="ui-1729d272d8e" style='left: 116px; top: 337px; width: 475px; height: 22px; right: auto; bottom: auto; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 22px; z-index: 2;' anchor="0b0101" dock="0" ui-id="LB_onceLimit" ui-class="UILabel"><span class="ui-content"></span></span><span class="ui-control ui-label" id="ui-171a5245d17" style="left: 116px; top: 396px; width: 475px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label10" ui-class="UILabel"><span class="ui-content">1일 이체한도</span></span><span class="ui-control ui-textbox" id="ui-171bfd3051a" style="left: 116px; top: 448px; width: 475px; height: 100px; right: auto; bottom: auto; font-size: 38px; z-index: 5;" anchor="0b0101" dock="0" ui-id="TB_amount2" ui-class="UITextBox" xonclick="TB_amount2_OnClick"><span><input class="ui-input" style="text-align: right;" type="text" maxlength="13"></span></span><span class="ui-control ui-label" id="ui-1729d47b7a4" style='left: 535px; top: 454px; width: 50px; height: 87px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 10; background-color: white;' anchor="0b0101" dock="0" ui-id="LB_label12" ui-class="UILabel"><span class="ui-content" style="left: 5px; top: 0px; right: 0px; bottom: 0px;">원</span></span><span class="ui-control ui-label" id="ui-1729d291478" style='left: 116px; top: 568px; width: 475px; height: 22px; right: auto; bottom: auto; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 22px; z-index: 8;' anchor="0b0101" dock="0" ui-id="LB_dayLimit" ui-class="UILabel"><span class="ui-content"></span></span><span class="ui-control ui-label ui-hide" id="ui-17350440c5d" style="left: 421px; top: 60px; width: 438px; height: 32px; right: auto; bottom: auto; color: rgb(255, 113, 69); font-size: 22px; z-index: 11;" anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content">이체한도를 초과하였습니다. 다시 입력해주세요.</span></span><div class="ui-control ui-numberpad fixed" id="ui-171a5226656" style="left: 773px; top: 129px; width: 352px; height: 487px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="NP_numberpad1" ui-class="UINumberPad" xonkeyclick="NP_numberpad1_OnKeyClick"><table class="fixed" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td key="1"><div>1</div></td><td key="2"><div>2</div></td><td key="3"><div>3</div></td></tr><tr><td key="4"><div>4</div></td><td key="5"><div>5</div></td><td key="6"><div>6</div></td></tr><tr><td key="7"><div>7</div></td><td key="8"><div>8</div></td><td key="9"><div>9</div></td></tr><tr><td class="fix backspace" key=""><div></div></td><td key="0"><div>0</div></td><td class="fix clear" key="정정"><div>정정</div></td></tr></tbody></table><table class="shuffle" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td class="fix shuffle" colspan="2"><div>재배열</div></td><td class="fix backspace" key="backspace"><div></div></td><td class="fix clear" key="clear"><div>정정</div></td></tr></tbody></table></div><span class="ui-control ui-textbox" id="ui-1729d12abd7" style="left: 116px; top: 215px; width: 475px; height: 100px; right: auto; bottom: auto; font-size: 38px; z-index: 4;" anchor="0b0101" dock="0" ui-id="TB_amount1" ui-class="UITextBox" xonclick="TB_amount1_OnClick"><span><input class="ui-input" style="text-align: right;" type="text" maxlength="13" value=""></span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>let httpQuerys = parseLocationQueryString();
+let viewType = httpQuerys["type"];	//default : OTP , type:1 = 보안카드
+
+/* include */
+includeJSS("LibCommon","/KRG/0301/common.js");
+
+/*변수 선언*/
+let p = parent;
+var numBox = TB_amount1;
+
+/*  입력한 한도 담는 변수  */
+var once;			//1회 이체한도금액
+var day;			//1일 이체한도금액
+
+var money;			//한도금액
+
+
+var onceLimit 		//1회 한도
+var dayLimit		//1일 한도
+
+var gLeng;			//한도금액의 자리수
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+function Form_OnLoad(e){
+
+	numBox.$.css({'border': '3px solid #046fd9'});
+	
+	NP_numberpad1.$.find(".backspace").attr("key","backspace");
+	
+	TB_amount1.$.find(">span>input")
+		.attr("placeholder","입력해주세요")
+		.attr("disabled","true")
+		.css({"padding-right":"60px"});
+	
+	TB_amount2.$.find(">span>input")
+	//	.attr("placeholder","입력해주세요")
+		.attr("disabled","true")
+		.css({"padding-right":"60px"});
+		
+	//확인버튼 hide 
+	BT_right.$.hide();
+	
+	//정정버튼 backspace disabled	
+	com.numberpad.btnDisabled(NP_numberpad1);
+	
+} //form onload end
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//선택된계좌번호 뿌리기 & 한도 뿌리기
+function setAccountInfo(){
+	console.log("4033 setAccountInfo Init ====>>>>>>   ");
+	
+		/*
+			SECURITYMASS_CARD                // 보안카드	SECU_MDIA_DCD = Y
+			1회, 1일이체한도 1000만원
+			
+			SECURITYMASS_OTP				//OTP		SECU_MDIA_DCD = O 2 3 M K L
+			1일 5억, 1회 1억
+			
+			SECURITY_MOBILE					//모바일		SECU_MDIA_DCD = J
+			1일 5000만원, 1회 1000만원				
+			
+			보안카드일때 일일이체한도가 1000만원 이상이면 ,  1회 , 1일 이체한도를 1000만원으로 세팅 
+											 보다 작으면 1회 , 1일 이체한도를 gMoneyLimit로 세팅
+											 
+			OTP 일때 일일이체한도가 5억보다 크면 1일 5억 , 1회 1억 
+								 1억 ~ 5억 사이면  1일 gMoneyLimit , 1회 1억
+								 1억보다 작으면 1일 gMoneyLimit , 1회 gMoneyLimit 
+			
+			모바일 일때 일일이체한도가 5천만원보다 크면 1일 5천만원 , 1회 1천만원
+									1천~5천만원 사이면 1일 gMoneyLimit , 1회 1천만원
+									1천보다 작으면 1일 gMoneyLimit , 1회 gMoneyLimit
+			
+			SECU_MDIA_DCD  = N
+			else 1회,1일 천만원									
+			
+			p.gMoneyLimit : 일일고객이체한도
+			
+			J로 내려오는 데이터(모바일) 871125-1267915
+		*/
+		
+		
+	/*********************************************  보안매체 , 고객일일한도에 따른 한도세팅  S ********************************************/
+	//보안카드 : 1회, 1일이체한도 1000만원
+	if(p.SECU_MDIA_DCD == 'Y' || p.SECU_MDIA_DCD == '1'){
+		//이체한도가 천만원보다 클때
+		if(p.gMoneyLimit >= 10000000){
+			p.gMoneyLimit = 10000000;
+			onceLimit = p.gMoneyLimit;
+			dayLimit = p.gMoneyLimit; 
+			//console.log("보안카드 , 일일이체한도가 천만원 이상  ==>  "+p.gMoneyLimit);
+		}
+		else{
+			onceLimit = p.gMoneyLimit;
+			dayLimit = p.gMoneyLimit;
+			//console.log("보안카드 , 일일이체한도가 천만원 미만  ==>  "+p.gMoneyLimit);
+		}
+	}
+	
+	//OTP : 1일 5억, 1회 1억
+	else if(p.SECU_MDIA_DCD == 'O' || p.SECU_MDIA_DCD == '2' || p.SECU_MDIA_DCD == '3' || p.SECU_MDIA_DCD == 'M' || p.SECU_MDIA_DCD == 'K' || p.SECU_MDIA_DCD == 'L'){
+		if(p.gMoneyLimit >= 500000000){
+			p.gMoneyLimit = 500000000;
+			onceLimit = 100000000;
+			dayLimit = p.gMoneyLimit; 
+			//console.log("OTP , 일일이체한도가 5억원 이상  ==>  "+p.gMoneyLimit);
+		}
+		else if(p.gMoneyLimit < 500000000 && p.gMoneyLimit > 100000000){
+			onceLimit = 100000000;
+			dayLimit = p.gMoneyLimit;
+			//console.log("OTP , 일일이체한도가 1억원 이상 5억미만  ==>  "+p.gMoneyLimit);
+		}
+		else if(p.gMoneyLimit <= 100000000){
+			onceLimit = p.gMoneyLimit;
+			dayLimit = p.gMoneyLimit;
+			//console.log("OTP , 일일이체한도가 1억미만  ==>  "+p.gMoneyLimit);
+		}
+	}
+	//모바일 : 1일 5천 , 1회 1천
+	else if(p.SECU_MDIA_DCD == 'J'){
+		if(p.gMoneyLimit >= 50000000){
+			p.gMoneyLimit = 50000000;
+			onceLimit = 10000000;
+			dayLimit = p.gMoneyLimit; 
+			//console.log("모바일 , 일일이체한도가 5천만원 이상  ==>  "+p.gMoneyLimit);
+		}
+		else if(p.gMoneyLimit < 50000000 && p.gMoneyLimit > 10000000){
+			onceLimit = 10000000;
+			dayLimit = p.gMoneyLimit;
+			//console.log("모바일 , 일일이체한도가 1천만원 이상 5천만만  ==>  "+p.gMoneyLimit);
+		}
+		else if(p.gMoneyLimit <= 10000000){
+			onceLimit = p.gMoneyLimit;
+			dayLimit = p.gMoneyLimit;
+			//console.log("모바일 , 일일이체한도가 1천만원 미만  ==>  "+p.gMoneyLimit);
+		}
+	}	
+	else{
+		onceLimit = 10000000;
+		dayLimit = 10000000;
+	}
+	
+	/*********************************************  보안매체 , 고객일일한도에 따른 한도세팅  E ********************************************/
+	
+	//금액입력 최대치	
+	gLeng = (com.util.Comma(dayLimit.toString()) > com.util.Comma(onceLimit.toString())) ? com.util.Comma(dayLimit.toString()).length : com.util.Comma(onceLimit.toString()).length;
+	console.log("4033 Money.length ==>  "+gLeng);
+	
+	//계좌번호 세팅
+	LB_account.$.text(p.selectedAccount);
+	console.log("4033 account : "+p.selectedAccount);
+	
+	
+	/*********************************************  화면 CSS  ********************************************/
+	//default : OTP
+	LB_Subtitle.$.find('.ui-content').html('[OTP] 이체 한도금액 설정 <span>|</span> <span>이체한도를 눌러주십시오.</span>');		
+	LB_Subtitle.$.find('span:eq(1)').css({'margin':'0px 25px','color':'rgb(191, 191, 191)'});
+	LB_Subtitle.$.find('span:eq(2)').css({"font-size":'21px','font-family':'"IBK IDream L"'});
+	
+	LB_onceLimit.$.find('.ui-content').html('한도 설정가능 금액 <span>|</span>최대<span>&nbsp;'+com.util.Comma(onceLimit.toString())+'</span>원');
+	LB_onceLimit.$.find('span:eq(1)').css({'margin':'0px 10px','color':'rgb(191, 191, 191)'});		
+	LB_onceLimit.$.find('span:eq(2)').css({'color':'#ff7145'});
+	
+	LB_dayLimit.$.find('.ui-content').html('한도 설정가능 금액 <span>|</span> 최대 <span>&nbsp;'+com.util.Comma(dayLimit.toString())+'</span>원');
+	LB_dayLimit.$.find('span:eq(1)').css({'margin':'0px 10px','color':'rgb(191, 191, 191)'});		
+	LB_dayLimit.$.find('span:eq(2)').css({'color':'#ff7145'});
+	
+	//보안카드
+	if(p.SECU_MDIA_DCD == "Y" || p.SECU_MDIA_DCD == "1"){
+		LB_Subtitle.$.find('.ui-content').html('[씨크리트 카드] 이체 한도금액 설정 <span>|</span> <span>이체한도를 눌러주십시오.</span>');		
+		LB_Subtitle.$.find('span:eq(1)').css({'margin':'0px 25px','color':'rgb(191, 191, 191)'});
+		LB_Subtitle.$.find('span:eq(2)').css({"font-size":'21px','font-family':'"IBK IDream L"'});		
+	}
+	else if(p.SECU_MDIA_DCD == "J"){
+		LB_Subtitle.$.find('.ui-content').html('[모바일] 이체 한도금액 설정 <span>|</span> <span>이체한도를 눌러주십시오.</span>');
+		LB_Subtitle.$.find('span:eq(1)').css({'margin':'0px 25px','color':'rgb(191, 191, 191)'});
+		LB_Subtitle.$.find('span:eq(2)').css({"font-size":'21px','font-family':'"IBK IDream L"'});
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+function NP_numberpad1_OnKeyClick(e){
+	//이체한도를 초과~ 메세지 숨김처리
+	LB_label1.Visible = false;
+	
+	//텍스트박스 파란색테두리
+	numBox.$.css({'border': '3px solid #046fd9'});
+	
+	//텍스트찍을곳
+	//let box = $("[ui-id = "+numBox.ID+"]").find('span >input');	
+	
+	//커서위치
+	//let curLoc = box[0].selectionStart;
+	//let cursorEnd = box[0].selectionEnd;	
+	
+	if(e.key == "정정"){
+		e.key='';
+		numBox.Text = numBox.Text.replace(numBox.Text,"");
+	}
+	else if( e.key == "backspace"){
+		e.key='';
+		numBox.Text = com.util.Comma(numBox.Text.substring ( 0, numBox.Text.length -1));		
+		
+	}
+	//숫자 클릭
+	else{
+		//첫숫자가 0일때
+		if(numBox.Text == '0'){
+			//0뒤에 0이면 그냥 0 고정
+			if(e.key == '0'){
+				numBox.Text = '0';
+			}
+			//다른숫자들어오면 초기화 후 클릭한 숫자찍기
+			else{
+				numBox.Text = '';
+				numBox.Text += e.key;
+			}
+		}
+		//첫 숫자가 0이 아니면
+		else{			
+			//curLoc = numBox.Text.length - curLoc;
+			
+			//커서위치에 텍스트 출력
+			//insertText(box,e.key);
+			numBox.Text += e.key;
+			numBox.Text = com.util.Comma(numBox.Text);
+			
+			//커서고정
+			//box[0].selectionStart = box[0].selectionEnd = numBox.Text.length - curLoc;
+		}		
+	}
+	
+	//글자수 제한	
+	numLengthChk(gLeng);
+	
+	//한도금액체크
+	MoneyLimitChk();
+	
+	//1회 , 1일 입력한 한도 저장
+	once = TB_amount1.Text;
+	day = TB_amount2.Text;
+	
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+//글자수 제한
+function numLengthChk(length){
+	//10-05 viewType 삭제
+	if(numBox.Text.length == 0){
+		com.numberpad.notMaxLength(NP_numberpad1);
+		com.numberpad.btnDisabled(NP_numberpad1);
+	}
+	else if(numBox.Text.length > 0 && numBox.Text.length < length){
+		com.numberpad.notMaxLength(NP_numberpad1);
+	}	
+	else if(numBox.Text.length == length){
+		com.numberpad.maxLength(NP_numberpad1);			
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+//한도금액체크
+function MoneyLimitChk(){
+	//1회 , 1일 한도 저장변수
+	let onceMoney = parseInt(p.removeComma(TB_amount1.Text));
+	let dayMoney = parseInt(p.removeComma(TB_amount2.Text));
+	
+	//확인버튼 show	조건변경
+	//if(onceMoney <= parseInt(p.removeComma(money)) && dayMoney <= parseInt(p.removeComma(money))){
+	if(onceMoney <= onceLimit && dayMoney <= dayLimit){
+		if(onceMoney > dayMoney){
+			BT_right.$.hide();
+		}
+		else if(onceMoney == dayMoney){
+			BT_right.$.show();
+		}
+		else{
+			BT_right.$.show();
+		}
+	}
+	else{
+		BT_right.$.hide();
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+//커서위치에 텍스트넣기
+function insertText(field,text){
+	var start = field.prop("selectionStart");
+	var end = field.prop("selectionEnd");
+	var txt = field.val();
+	var front = txt.substring(0,start);
+	var back = txt.substring(end,txt.length);
+	
+	var s = front + text + back;
+	field.val(s);
+	
+	console.log("@@@ field.val :::   "+field.val());
+	//field[0].selectionStart = field[0].selectionEnd = start + text.length;
+	//field.focus();
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+function TB_amount1_OnClick(e){
+	numBox = this;
+	TB_amount1.$.find("input.ui-input").parent().parent().css({'border': '3px solid #046fd9'});
+	TB_amount2.$.find("input.ui-input").parent().parent().css({'border':'2px solid rgb(158, 158, 158)'});
+	
+	if(TB_amount2.Text.length == 0){
+		if(TB_amount1.Text.length != 0){
+			if(TB_amount1.Text.length == gLeng){
+				com.numberpad.maxLength(NP_numberpad1);
+			}
+			else{
+				//console.log("txtbox1 != 0  ,  txtbox3 == 0");
+				//숫자버튼 켜기
+				com.numberpad.notMaxLength(NP_numberpad1);
+			}
+		}
+		else{
+			//console.log("txtbox1 = 0  ,  txtbox3 = 0");
+			com.numberpad.notMaxLength(NP_numberpad1);
+			//백스페이스 , 정정 끄기
+			com.numberpad.btnDisabled(NP_numberpad1);	
+		}
+	}
+	else if(TB_amount2.Text.length != 0){
+		if(TB_amount1.Text.length != 0){
+			//console.log("txtbox1 != 0  ,  txtbox3 != 0 있고 있고");
+			if(TB_amount1.Text.length == gLeng){
+				com.numberpad.maxLength(NP_numberpad1);
+			}
+			else{
+				//console.log("txtbox1 != 0  ,  txtbox3 == 0");
+				//숫자버튼 켜기
+				com.numberpad.notMaxLength(NP_numberpad1);
+			}
+		}
+		else{
+			//console.log("txtbox1 != 0  ,  txtbox3 == 0 있고 없고");
+			com.numberpad.notMaxLength(NP_numberpad1);
+			com.numberpad.btnDisabled(NP_numberpad1);				
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+function TB_amount2_OnClick(e){
+	numBox = this;	
+	
+	TB_amount2.$.find("input.ui-input").parent().parent().css({'border': '3px solid #046fd9'});
+	TB_amount1.$.find("input.ui-input").parent().parent().css({'border':'2px solid rgb(158, 158, 158)'});
+	
+	if(TB_amount1.Text.length == 0){
+		if(TB_amount2.Text.length != 0){			
+			//console.log("txtbox1 = 0  ,  txtbox3 != 0");
+			if(TB_amount2.Text.length == gLeng){
+				com.numberpad.maxLength(NP_numberpad1);
+			}
+			else{				
+				//숫자버튼 켜기
+				com.numberpad.notMaxLength(NP_numberpad1);
+			}
+		}
+		else{
+			//console.log("txtbox3 = 0  ,  txtbox1 = 0");
+			com.numberpad.notMaxLength(NP_numberpad1);
+			//백스페이스 , 정정 끄기
+			com.numberpad.btnDisabled(NP_numberpad1);		
+		}
+	}
+	else if(TB_amount1.Text.length != 0){
+		if(TB_amount2.Text.length != 0){
+			if(TB_amount2.Text.length == gLeng){
+				com.numberpad.maxLength(NP_numberpad1);
+			}
+			else{
+				//console.log("txtbox3 != 0  ,  txtbox1 != 0 있고 있고");
+				com.numberpad.notMaxLength(NP_numberpad1);
+			}
+		}
+		else{
+			//console.log("txtbox3 != 0  ,  txtbox1 == 0 있고 없고");
+			com.numberpad.notMaxLength(NP_numberpad1);
+			com.numberpad.btnDisabled(NP_numberpad1);					
+		}
+	}
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//콤마제거
+function removeComma(str){
+	let n = parseInt(str.replace(/,/g,""));
+	return n;	
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+//확인버튼 클릭
+function BT_right_OnClick(e){
+	SCREEN.WriteJnl("**1회 이체한도: "+ once);
+	SCREEN.WriteJnl("**1일 이체한도: "+ day);
+	SCREEN.WriteJnl("[출금계좌 이체한도 입력] 정상");
+	p.ChangeTab("4034");
+}
+
+function BT_left_OnClick(e){
+	//취소
+	SCREEN.WriteJnl("[출금계좌 이체한도 입력] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+
+</script></xjscript></body>
+</html>

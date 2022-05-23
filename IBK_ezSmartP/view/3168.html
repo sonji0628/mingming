@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1357,1131" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a570e5a0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-171a570e5a3" style='left: 140px; top: 217px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 2;' anchor="0b0101" dock="0" ui-id="LB_label_msg1" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">포인트 사용 신청이</span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a570e5a6" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 3;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-blue" id="ui-171a570e5a7" style='left: 986px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_button_his" ui-class="UIButton" theme="blue" xonclick="BT_button_his_OnClick"><span class="ui-content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;포인트<br>사용 내역 조회</span></span><span class="ui-control ui-button theme-orange" id="ui-171a564ef7b" style='left: 56px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">거래종료</span></span><span class="ui-control ui-button theme-mint" id="ui-172c542e18c" style='left: 364px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 2;' anchor="0b0101" dock="0" ui-id="BT_button_pt" ui-class="UIButton" theme="mint" xonclick="BT_button_pt_OnClick"><span class="ui-content">포인트 조회</span></span><span class="ui-control ui-button theme-mint" id="ui-172c543d305" style='left: 674px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 3;' anchor="0b0101" dock="0" ui-id="BT_button_pt_use" ui-class="UIButton" theme="mint" xonclick="BT_button_pt_use_OnClick"><span class="ui-content">포인트 사용 신청</span></span></div><span class="ui-control ui-label" id="ui-171a5718392" style='left: 140px; top: 277px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_label_msg2" ui-class="UILabel"><span class="ui-content" style="justify-content: center;"><span style="color: rgb(23, 107, 200);">완료</span> &nbsp;되었습니다.</span></span><div class="ui-control ui-panel ui-container" id="ui-171a572d475" style="left: 140px; top: 384px; width: 1001px; height: 379px; right: auto; bottom: auto; z-index: 1; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_panel2" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/sample_img_05.png");'></span></div><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>
+var p = parent;
+
+function Form_OnLoad(e){
+
+}
+
+function BT_button_pt_OnClick(e){   
+   	// 화면로딩 탭 뷰
+   	SCREEN.WriteJnl("[포인트 조회] 선택");
+   	p.ChangeTab(p.loadScreenNo);
+   	// 카드 포인트 조회 화면 조회
+   	p.sendRequest("step2_point_search");
+}
+
+
+function BT_button_pt_use_OnClick(e){
+   	// 화면로딩 탭 뷰
+   	SCREEN.WriteJnl("[포인트 사용신청] 선택");
+   	p.ChangeTab(p.loadScreenNo);
+   	// 카드 포인트 상세조회 화면 조회
+   	p.sendRequest("step3_point_search_dtl");	
+}
+
+
+function BT_button_his_OnClick(e){
+	SCREEN.WriteJnl("[포인트 사용내역 조회] 선택");
+   	// 포인트 사용내역 화면 조회
+   	p.sendRequest("redirect_point_history");	    
+}
+
+function BT_left_OnClick(e){
+   	ATMCOMM.BusinessEnd(ATMCOMM.RET_OK);
+}</script></xjscript></body>
+</html>

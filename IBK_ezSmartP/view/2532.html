@@ -1,0 +1,238 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1479,1067" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 101.94px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content" style="align-items: center;">카드 이용한도 조회/변경</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 101.94px; width: auto; height: 91.96px; right: 0px; bottom: auto; z-index: 2; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 110px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">정보입력</span></span><div class="ui-control ui-panel ui-container ui-hide" id="ui-1741e6b4e8f" style="left: 214px; top: 36px; width: 2px; height: 20px; right: auto; bottom: auto; z-index: 1; background-color: rgb(191, 191, 191);" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"></div><span class="ui-control ui-label ui-hide" id="ui-1741e6bbdf4" style='left: 243px; top: 21px; width: 470px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 24px; z-index: 2;' anchor="0b0101" dock="0" ui-id="LB_label6" ui-class="UILabel"><span class="ui-content" style="align-items: center;">고객님께서는 한도상향 가능 대상입니다.</span></span><span class="ui-control ui-label ui-hide" id="ui-1741e703512" style='left: 243px; top: 50px; width: 946px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 24px; z-index: 3;' anchor="0b0101" dock="0" ui-id="LB_label7" ui-class="UILabel"><span class="ui-content" style="align-items: center;">변경가능한범위 내에서</span></span></div><span class="ui-control ui-scrollbar" id="ui-17231d3f263" style="left: 1219px; top: 254px; width: 32px; height: 611px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="SB_scrollbar1" ui-class="UIScrollBar" scroll-control-id="PN_limit"><span class="track"></span><span class="trackbutton" style="top: 3px;"></span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a4b083a4" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 1; background-color: white;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-171a4b083a5" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange" id="ui-171a4b083a6" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-174044f24d0" style="left: 0px; top: 193.9px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-w="200" dock-h="100" dock-r="left:124px;top:295px;width:200px;height:100px;right:auto;bottom:auto"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-171be2e0c0e" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="5" ui-id="PN_limit" ui-class="UIPanel" dock-w="1280" dock-h="658" dock-r="left:0px;top:16px;width:1280px;height:658px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-1721784f6b1" style='left: 82px; top: 589px; width: 1120px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 5;' anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content">총 한도(국내외)</span></span><div class="ui-control ui-table" id="ui-171be2e0c0f" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 82px; top: 633px; width: 1076px; height: 165px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="TL_table1" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519c9d" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">현재한도</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519c9e" style="padding: 0px 0px 0px 20px; color: rgb(29, 29, 29); font-size: 22px;"><span class="cell-control-label">500,000 원</span></div></td></tr><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519c9f" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">변경가능한도</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519ca0" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"><span class="cell-control-label">67,000원</span></div></td></tr><tr height="34%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519ca1" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">변경후한도</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519ca2" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"><span class="ui-control ui-textbox" id="ui-17231db1173" style="border-width: 0px; left: 5px; top: 6px; width: 850px; height: 40px; right: auto; bottom: auto; font-size: 22px; z-index: 0; background-color: rgb(247, 247, 247);" anchor="0b0101" dock="0" ui-id="TB_tatalLimit" ui-class="UITextBox"><span><input class="ui-input" style="text-align: right;" type="text" maxlength="32767" value=""></span></span></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-17231dcf3a8" style='left: 82px; top: 840px; width: 1120px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 3;' anchor="0b0101" dock="0" ui-id="LB_label11" ui-class="UILabel"><span class="ui-content">단기카드대출(현금서비스)한도</span></span><div class="ui-control ui-table" id="ui-17231dcf3c5" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 82px; top: 884px; width: 1076px; height: 165px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="TL_table2" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519ca3" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">현재한도</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519ca4" style="padding: 0px 0px 0px 20px; color: rgb(29, 29, 29); font-size: 22px;"><span class="cell-control-label">500,000 원</span></div></td></tr><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519ca5" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">변경가능한도</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519ca6" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"><span class="cell-control-label">67,000원</span></div></td></tr><tr height="34%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519ca7" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">변경후한도</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519ca8" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"><span class="ui-control ui-textbox" id="ui-17231dcf3c6" style="border-width: 0px; left: 5px; top: 6px; width: 850px; height: 40px; right: auto; bottom: auto; font-size: 22px; z-index: 0; background-color: rgb(247, 247, 247);" anchor="0b0101" dock="0" ui-id="TB_cashLimit" ui-class="UITextBox"><span><input class="ui-input" style="text-align: right;" type="text" maxlength="32767" value=""></span></span></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-17231dd0afe" style='left: 82px; top: 1091px; width: 1120px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label12" ui-class="UILabel"><span class="ui-content">해외 한도</span></span><div class="ui-control ui-table" id="ui-17231dd0b18" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 82px; top: 1135px; width: 1076px; height: 165px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="TL_table3" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519ca9" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">현재한도</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519caa" style="padding: 0px 0px 0px 20px; color: rgb(29, 29, 29); font-size: 22px;"><span class="cell-control-label">USD 400</span></div></td></tr><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519cab" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">변경가능한도</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519cac" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"><span class="cell-control-label">USD 400</span></div></td></tr><tr height="34%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519cad" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">변경후한도</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519cae" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"><span class="ui-control ui-textbox" id="ui-17231dd0b19" style="border-width: 0px; left: 5px; top: 6px; width: 850px; height: 40px; right: auto; bottom: auto; font-size: 22px; z-index: 0; background-color: rgb(247, 247, 247);" anchor="0b0101" dock="0" ui-id="TB_overseasLimit" ui-class="UITextBox"><span><input class="ui-input" style="text-align: right;" type="text" maxlength="32767" value=""></span></span></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-17231dfe58a" style='left: 82px; top: 32px; width: 1088px; height: 155px; right: auto; bottom: auto; font-family: "IBK IDream L"; z-index: 6;' anchor="0b0101" dock="0" ui-id="LB_noticeLabel" ui-class="UILabel"><span class="ui-content"></span></span><div class="ui-control ui-panel ui-container" id="ui-17231f8c257" style="left: 80px; top: 240px; width: 1068px; height: 1px; right: auto; bottom: auto; z-index: 7; background-color: rgb(178, 178, 178);" anchor="0b0101" dock="0" ui-id="PN_panel4" ui-class="UIPanel"></div><span class="ui-control ui-label" id="ui-1724b083695" style='left: 82px; top: 275px; width: 284px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 8;' anchor="0b0101" dock="0" ui-id="LB_label2" ui-class="UILabel"><span class="ui-content">이용한도 증액안내 동의</span></span><span class="ui-control ui-label" id="ui-17217861115" style='left: 82px; top: 313px; width: 491px; height: 30px; right: auto; bottom: auto; font-family: "IBK IDream L"; font-size: 18px; z-index: 9;' anchor="0b0101" dock="0" ui-id="LB_label3" ui-class="UILabel"><span class="ui-content" style="align-items: center;">동의를 선택하시면 이용한도 상향가능 시점에 안내드립니다.</span></span><div class="ui-control ui-panel ui-container" id="ui-1724e6d42d1" style="left: 80px; top: 373px; width: 1068px; height: 1px; right: auto; bottom: auto; z-index: 10; background-color: rgb(178, 178, 178);" anchor="0b0101" dock="0" ui-id="PN_panel6" ui-class="UIPanel"></div><span class="ui-control ui-radiobox square ui-checked ui-radiobox-92762796" id="ui-1724ea3dd4a" style="left: auto; top: 285px; width: 184px; height: 47px; right: 316px; bottom: auto; z-index: 11;" anchor="0b1001" dock="0" ui-id="RB_agree_NO" ui-class="UIRadioBox" group-name="agree" value="no" x-style="square"><span class="ui-icon-image"><span></span></span><span class="ui-content">동의안함</span></span><span class="ui-control ui-radiobox square" id="ui-1724ea46c46" style="left: auto; top: 285px; width: 184px; height: 47px; right: 133px; bottom: auto; z-index: 12;" anchor="0b1001" dock="0" ui-id="RB_agree_YES" ui-class="UIRadioBox" group-name="agree" value="yes" x-style="square"><span class="ui-icon-image"><span></span></span><span class="ui-content">동의함</span></span><span class="ui-control ui-label" id="ui-1724eb87f2f" style='left: 82px; top: 425px; width: 284px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 13;' anchor="0b0101" dock="0" ui-id="LB_label4" ui-class="UILabel"><span class="ui-content">요청 한도 등록</span></span><span class="ui-control ui-label" id="ui-1724eb87f5b" style='left: 82px; top: 463px; width: 1112px; height: 30px; right: auto; bottom: auto; font-family: "IBK IDream L"; font-size: 18px; z-index: 14;' anchor="0b0101" dock="0" ui-id="LB_label5" ui-class="UILabel"><span class="ui-content" style="align-items: center;">은행은 고객님의 요청한도를 초과하여 한도를 부여할 수 없으며, 현재한도보다 요청한도가 큰 경우 상향가능 시점에 안내드립니다.</span></span><div class="ui-control ui-table" id="ui-1724eb9bbe5" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 82px; top: 505px; width: 1076px; height: 58px; right: auto; bottom: auto; z-index: 15;" anchor="0b0101" dock="0" ui-id="TL_table4" ui-class="UITable" theme="col"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="100%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519caf" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">요청한도</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17404519cb0" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"><span class="ui-control ui-textbox" id="ui-1724eb9bbe6" style="border-width: 0px; left: 5px; top: 5px; width: 850px; height: 40px; right: auto; bottom: auto; font-size: 22px; z-index: 0; background-color: rgb(247, 247, 247);" anchor="0b0101" dock="0" ui-id="TB_reqeustLimit" ui-class="UITextBox" xonclick="TB_reqeustLimit_OnClick"><span><input class="ui-input" style="text-align: right;" type="text" maxlength="32767" value="1,000,000원"></span></span></div></td></tr></tbody></table></div></div></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>/* include */
+includeJSS("LibCommon","/KRG/0301/common.js");
+p = parent;
+//var popupNum = p.numpopup; //넘버패드 팝업
+var popupFrom = "";                       // 팝업 어디서 호출했는지 확인
+
+
+function Form_OnLoad(e){
+	BT_right.Enabled = false;
+	LB_noticeLabel.$.html(""
+			+'<ol style="font-size:18px;line-height:24px;list-style-type:none">'
+			+'	<li><span style="margin-left:-15px">*</span> 변경가능 총한도(단기카드대출 한도) 이상으로 한도 증액을 원하는 경우에는 카드 개설영업점인 수지동천역직원(031-270-4901)과<br>상의하시길 바랍니다.</li>'
+			+'	<li style="margin-top:5px;"><span style="margin-left:-15px">*</span> 변경가능 총한도(단기카드대출, 해외한도)는 당해잉 정한 일정조건에 따라 수시로 변경됩니다. 총 한도는 단기카드대출(현금서비스)<br>한도와 해외한도를 포함한 한도입니다.</li>'
+			+'	<li style="margin-top:5px;"><span style="margin-left:-15px">*</span> 한도하향 후 회원님의 신용도에 의해 변경 전 한도로 상향되지 않을 수 있습니다.</li>'
+			+'</ol>'
+	);
+
+	//라디오버튼 스타일 추가(기존에는 squre/round뿐이라 박스형 추가)
+	RB_agree_NO.$.addClass("boxtype");
+	RB_agree_YES.$.addClass("boxtype");
+	
+	//인풋박스 X(클리어) 버튼 추가
+	$("input.ui-input").before("<div class='clear' style='right:10px'><img src='/KRG/media/btn_text_remove.png' style='width:34px;height:34px;right:20px'></div>");
+	$("input.ui-input").css("padding-right","80px");
+	//ui-textbox 포커스아웃 시
+	$("input.ui-input").blur(function(e){
+		this.style.border = "none";
+	});
+ 	//SB_scrollbar1.Invalidate();
+}
+
+function setTableInfo(data){
+	p = parent;
+	let data_map = {};	
+
+	//group_code로 데이터 나누기
+	for(let i=0;i<data.length;i++){
+		let r = data[i];
+		let group = data_map[r.group_code];
+
+		if(!group){
+			group = [];
+			
+			data_map[r.group_code] = group;
+		}
+
+		group.push(r); 
+	}
+	
+	let group_codes = Object.keys(data_map);
+	
+	//데이터 넣어주기
+	for(let i=0;i<group_codes.length;i++){
+		let data_code = group_codes[i]
+		let group = data_map[data_code];
+
+		let table = {0:TL_table1,1:TL_table2,2:TL_table3};
+		
+		for(let j=0;j<group.length;j++){
+			let r = group[j];
+			table[i].DataCell(j, 1,"text", r.tabletext.toLocaleString());
+			//console.log(j + ":" + r.tabletext.toLocaleString());
+		}
+	}
+	
+	//화폐 단위 추가
+	TL_table1.$.find("> table > tbody > tr").find("> td:eq(1) > div").append("<span style='margin-left:5px'>원</span>");
+	TL_table2.$.find("> table > tbody > tr").find("> td:eq(1) > div").append("<span style='margin-left:5px'>원</span>");
+	TL_table3.$.find("> table > tbody > tr").find("> td:eq(1) > div").prepend("<span style='margin-right:5px'>USD</span>");
+}
+
+//동의여부
+$("[ui-id='RB_agree_NO'],[ui-id='RB_agree_YES']").on("click",function(e){
+	com.mp3.play("/KRG/media/ding.mp3");
+	var clickTarget = $(e.currentTarget).attr("ui-id");
+
+	if("RB_agree_NO" == clickTarget){  			//  자택 Radio 클릭
+    	//console.log('N');
+    	p.agreeType = "N"; // 전송 값 담기 	
+    } else if("RB_agree_YES" == clickTarget){  			//  자택 Radio 클릭
+    	//console.log('Y');
+    	p.agreeType = "Y"; // 전송 값 담기
+    }
+    
+    console.log("p.agreeType : " + p.agreeType);
+    return p.agreeType;
+});
+
+//인풋박스
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+//                                     금액 입력 팝업                                           //
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//요청한도(안내) 입력팝업 오픈
+$("[ui-id='TB_reqeustLimit']").on("click",function(e){
+	popupFrom = "reqeustLimit";
+	numPopOpen();
+});
+
+//총 국내외 요청한도 입력팝업 오픈
+$("[ui-id='TB_tatalLimit']").on("click",function(e){
+	popupFrom = "tatalLimit";
+	numPopOpen();
+});
+
+//현금서비스 요청한도 입력팝업 오픈
+$("[ui-id='TB_cashLimit']").on("click",function(e){
+	popupFrom = "cashLimit";
+	numPopOpen();
+});
+
+//해외 입력팝업 오픈
+$("[ui-id='TB_overseasLimit']").on("click",function(e){
+	popupFrom = "overseasLimit";
+	numPopOpen();
+});
+
+function numPopOpen(){
+	p.ChangeTab("2534");
+	var maxPayment;
+	p.numpopup.TB_amount.$.css("border","3px solid #046fd9");
+	//팝업 오픈 시 금액 초기화
+	p.numpopup.TB_amount.Text = "";
+	
+	//0925 이재형
+	//글자수에 따른 넘버패드 css 체크
+	p.numpopup.numLengthChk();
+	
+	// 입력금액이 없는 경우 확인버튼 비활성화
+	p.numpopup.BT_right.Enabled = false;
+	
+	//기본 셋팅(요청한도 안내시에만 바뀜)
+	p.numpopup.LB_notice.$.css("top","668px");
+	p.numpopup.LB_nowLimit.Visible = true;
+	p.numpopup.LB_workableLimit.Visible = true;
+	p.numpopup.LB_workableLimitLabel.Visible = true;
+	//기본 셋팅(해외한도시에만 바뀜)
+	p.numpopup.LB_monetaryUnit.Text = "원";
+	p.numpopup.LB_monetaryUnit.$.css("left","532px");
+	p.numpopup.TB_amount.$.find("> span > input").css({"padding-left":"45px","padding-right":"80px"});
+
+	if(popupFrom == "reqeustLimit"){
+		p.numpopup.LB_notice.$.css("top","618px");
+		p.numpopup.LB_nowLimit.Visible = false;
+		p.numpopup.LB_workableLimit.Visible = false;
+		p.numpopup.LB_workableLimitLabel.Visible = false;
+	}else if(popupFrom == "tatalLimit"){
+		p.numpopup.maxPayment = parseInt(p.UPTN_ABL_TOLM_AMT,10);
+		p.numpopup.LB_nowLimit.Text = "현재한도 " + parseInt(p.PSNT_TOLM_AMT,10).toLocaleString();
+		//p.numpopup.LB_notice.Visible = false;
+		p.numpopup.LB_workableLimit.Text = parseInt(p.UPTN_ABL_TOLM_AMT,10).toLocaleString();
+	}else if(popupFrom == "cashLimit"){
+		p.numpopup.maxPayment = parseInt(p.UPTN_ABL_CSLM_AMT,10);
+		p.numpopup.LB_nowLimit.Text = "현재한도 " + parseInt(p.PSNT_CSLM_AMT,10).toLocaleString();
+		p.numpopup.LB_workableLimit.Text = parseInt(p.UPTN_ABL_CSLM_AMT,10).toLocaleString();
+	}else if(popupFrom == "overseasLimit"){
+		p.numpopup.maxPayment = parseInt(p.UPTN_ABL_OVLM_AMT,10);
+		p.numpopup.LB_nowLimit.Text = "현재한도 " + parseInt(p.OVLM_AMT,10).toLocaleString();
+		p.numpopup.LB_workableLimit.Text = parseInt(p.UPTN_ABL_OVLM_AMT,10).toLocaleString();
+		p.numpopup.LB_monetaryUnit.Text = "USD";
+		p.numpopup.LB_monetaryUnit.$.css("left","170px");
+		p.numpopup.TB_amount.$.find("> span > input").css({"padding-left":"110px","padding-right":"40px"});
+	}
+}
+
+function numpopupBtn_Click(){
+	if(popupFrom == "reqeustLimit"){ // 요청한도(안내)
+		TB_reqeustLimit.$.find("input").val(p.numpopup.setMoney+"원");
+	} else if(popupFrom == "tatalLimit"){ //총 국내외 요청한도
+		TB_tatalLimit.$.find("input").val(p.numpopup.setMoney+"원");
+	} else if(popupFrom == "cashLimit"){ //현금서비스 요청한
+		TB_cashLimit.$.find("input").val(p.numpopup.setMoney+"원");
+	} else if(popupFrom == "overseasLimit"){ //해외 입력팝업
+		TB_overseasLimit.$.find("input").val("USD " + p.numpopup.setMoney);
+	}
+	fnValueSetCallback();
+}
+
+function fnValueSetCallback(){
+	if(TB_reqeustLimit.$.find("input").val() === "" || TB_tatalLimit.$.find("input").val() === "" || TB_cashLimit.$.find("input").val() === "" || TB_overseasLimit.$.find("input").val() === ""){
+		BT_right.Enabled = false;
+		
+	} else {
+		BT_right.Enabled = true;
+	}
+}
+
+function BT_right_OnClick(e){
+	p.MMBR_RQST_TOLM_AMT = TB_reqeustLimit.$.find("input").val() != "" ? TB_reqeustLimit.$.find("input").val().replace(/[원,]/g,'').trim() : ""; //회원요청 한도금액
+	p.MDFC_TOLM_AMT = TB_tatalLimit.$.find("input").val() != "" ? TB_tatalLimit.$.find("input").val().replace(/[원,]/g,'').trim() : ""; //변경총한도금액
+	p.MDFC_CSLM_AMT = TB_cashLimit.$.find("input").val() != "" ? TB_cashLimit.$.find("input").val().replace(/[원,]/g,'').trim() : ""; //변경현금서비스한도금액
+	p.OVLM_AMT = TB_overseasLimit.$.find("input").val() != "" ? TB_overseasLimit.$.find("input").val().replace(/[USD,]/g,'').trim() : ""; //해외한도금액
+	p.LIIN_SLCS_YN = (p.agreeType == "N") ? "N" : "Y";
+	
+	console.log("변경값전송##################");
+	console.log(p.MMBR_RQST_TOLM_AMT);//회원요청 한도금액
+	console.log(p.MDFC_TOLM_AMT);//변경총한도금액
+	console.log(p.MDFC_CSLM_AMT);//변경현금서비스한도금액
+	console.log(p.OVLM_AMT);//해외한도금액
+	console.log(p.LIIN_SLCS_YN);
+	SCREEN.WriteJnl("**회원요청 한도금액: " + p.MMBR_RQST_TOLM_AMT);
+	SCREEN.WriteJnl("**변경총한도금액: " + p.MDFC_TOLM_AMT);
+	SCREEN.WriteJnl("**변경현금서비스한도금액: " + p.MDFC_CSLM_AMT);
+	SCREEN.WriteJnl("**해외한도금액: " + p.OVLM_AMT);
+	SCREEN.WriteJnl("**한도증액권유동의여부: " + p.LIIN_SLCS_YN);
+	SCREEN.WriteJnl("[카드 이용한도 조회/변경 정보 입력] 정상");
+	p.ChangeTab("9041");
+	
+	//p.sendRequest("success"); 
+}
+
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[카드 이용한도 조회/변경 정보 입력] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+</script></xjscript></body>
+</html>

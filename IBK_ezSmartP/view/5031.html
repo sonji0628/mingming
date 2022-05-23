@@ -1,0 +1,181 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ide-size="1389,1120" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">간편예금잔액증명서 발급</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 320px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">발급내역 조회 </span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">종료</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="1280"><div class="ui-control ui-panel ui-container" id="ui-171a4b083d5" style="left: 100px; top: 995px; width: 1068px; height: 1px; right: auto; bottom: auto; z-index: 0; background-color: black;" anchor="0b0101" dock="0" ui-id="PN_panel26" ui-class="UIPanel"></div><span class="ui-control ui-scrollbar" id="ui-172980bda14" style="left: 1200px; top: 75px; width: 32px; height: 591px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="SB_scrollbar_pt" ui-class="UIScrollBar" scroll-control-id="PN_scroll_box"><span class="track"></span><span class="trackbutton"></span></span><div class="ui-control ui-panel ui-container" id="ui-172cad82928" style="left: 83px; top: 75px; width: 1076px; height: 591px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="PN_scroll_box" ui-class="UIPanel"></div></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("common","/KRG/0301/common.js");
+let p = parent;
+
+function Form_OnLoad(e){
+	/*
+		let data = [
+			{ a:"1", b: "2020-05-01", c:"4", d: "국문", e:"발급"},
+			{ a:"2", b: "2020-05-02", c:"3", d: "영문", e:"발급"},
+			{ a:"3", b: "2020-05-03", c:"7", d: "국문", e:"발급"},
+			{ a:"4", b: "2020-05-04", c:"2", d: "영문", e:"발급"},
+			{ a:"5", b: "2020-05-05", c:"7", d: "국문", e:"발급"},
+			{ a:"6", b: "2020-05-06", c:"3", d: "영문", e:"발급"},
+			{ a:"7", b: "2020-05-06", c:"10", d: "영문", e:"발급"},
+			{ a:"8", b: "2020-05-06", c:"4", d: "영문", e:"발급"},
+			{ a:"9", b: "2020-05-06", c:"4", d: "영문", e:"발급"}
+		];
+		
+	let tag=[];
+	
+	for(var k=0;k<data.length;k++)
+	{
+		tag.push(""
+			+'<tr>'
+			+'	<td>'+data[k].a+'</td>'
+			+'	<td>'+data[k].b+'</td>'
+			+'	<td>'+data[k].c+'</td>'
+			+'	<td>'+data[k].d+'</td>'
+			+'	<td>'+data[k].e+'</td>'
+			+'	<td><button class="btn" style="opacity:0.3" disabled>재출력</button></td>'
+			+'	<td><button class="btn">상세보기</button></td>'
+			+'</tr>'
+		);
+	}
+	
+	PN_scroll_box.$.html(""
+			+'<table>'
+			+'	<colgroup>'
+			+'		<col style="width:5%;">'
+			+'		<col style="width:20%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'	</colgroup>'
+			+'	<thead>'
+			+'		<tr>'
+			+'			<th></th>'
+			+'			<th>발급일자</th>'
+			+'			<th>계좌수</th>'
+			+'			<th>종 류</th>'
+			+'			<th>발급상태</th>'
+			+'			<th>재출력</th>'
+			+'			<th>상세보기</th>'
+			+'		</tr>'
+			+'	</thead>'
+			+'	<tbody>'
+			+		tag.join("")
+			+'	</tbody>'
+			+'<table>');
+				
+	PN_scroll_box.$.find("table").css({'width':'100%','border':'2px solid #c2c2c2','border-collapse':'collapse', 'border-spacing':'0', 'empty-cells':'show'});
+	PN_scroll_box.$.find("thead").css({'border-bottom':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif'});
+	PN_scroll_box.$.find("th").css({'text-align':'center', 'background': '#f2f2f2', 'font-size':'21px', 'color':'#000', 'padding':'14px', 'border-right':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_scroll_box.$.find("td").css({'text-align':'center', 'background': '#fff', 'font-size':'22px', 'padding':'14px', 'border':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_scroll_box.$.find(".btn").css({'width':'120px','border':'1px solid #b0b0b0','border-radius':'4px','background-color':'#eee','font-size':'20px', 'padding':'14px'});
+
+	SB_scrollbar_pt.Invalidate();
+	*/
+}
+
+function issueList(data) {
+	let tag=[];
+	var rowLength = 0;
+	var krnEnsnDcd = "";
+	for(var i = 0; i < data.length; i++)
+	{
+		var str = "";
+		var issueDate = com.date.fnGetFormatDate(data[i].FRRG_TS).substr(0,10);
+		rowLength++;
+		if (data[i].KRN_ENSN_DCD == "K") {
+			krnEnsnDcd = "국문";
+		} else {
+			krnEnsnDcd = "영문";
+		}
+		str += '<tr>';
+		str += '<td>' + rowLength + '</td>';
+		str += '<td>' + issueDate + '</td>';
+		str += '<td>' + parseInt(data[i].ISAT_CNT) + '</td>';
+		str += '<td>' + krnEnsnDcd + '</td>';
+		str += '<td>발급</td>';
+		if(data[i].FRRG_XCD == "CBKDEP219013600" || data[i].FRRG_XCD == "CBKDEP219010600") {
+			str += '<td><button class="btn" style="opacity:0.3" disabled>재출력</button></td>';
+		} else {
+			str += '<td><button class="btn" onclick="rePrient(\'' + data[i].ATRX_PRF_MNGM_NO + '\' , \'' + issueDate + '\' , \'' + data[i].KRN_ENSN_DCD + '\')">재출력</button></td>';
+		}
+		
+		str += '<td><button class="btn" onclick="viewDetail(\'' + data[i].ATRX_PRF_MNGM_NO + '\' , \'' + issueDate + '\')">상세보기</button></td>';
+		str += '</tr>';
+		
+		tag.push(str);
+	}
+	
+	PN_scroll_box.$.html(""
+			+'<table>'
+			+'	<colgroup>'
+			+'		<col style="width:5%;">'
+			+'		<col style="width:20%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'	</colgroup>'
+			+'	<thead>'
+			+'		<tr>'
+			+'			<th></th>'
+			+'			<th>발급일자</th>'
+			+'			<th>계좌수</th>'
+			+'			<th>종 류</th>'
+			+'			<th>발급상태</th>'
+			+'			<th>재출력</th>'
+			+'			<th>상세보기</th>'
+			+'		</tr>'
+			+'	</thead>'
+			+'	<tbody>'
+			+		tag.join("")
+			+'	</tbody>'
+			+'<table>');
+				
+	PN_scroll_box.$.find("table").css({'width':'100%','border':'2px solid #c2c2c2','border-collapse':'collapse', 'border-spacing':'0', 'empty-cells':'show'});
+	PN_scroll_box.$.find("thead").css({'border-bottom':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif'});
+	PN_scroll_box.$.find("th").css({'text-align':'center', 'background': '#f2f2f2', 'font-size':'21px', 'color':'#000', 'padding':'14px', 'border-right':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_scroll_box.$.find("td").css({'text-align':'center', 'background': '#fff', 'font-size':'22px', 'padding':'14px', 'border':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_scroll_box.$.find(".btn").css({'width':'120px','border':'1px solid #b0b0b0','border-radius':'4px','background-color':'#eee','font-size':'20px', 'padding':'14px'});
+
+	SB_scrollbar_pt.Invalidate();
+}
+
+function viewDetail(atrxPrfMngmNo,issueDate) {
+	p.allParamData.dataYmd 			= issueDate			//	발급일자
+	p.allParamData.ATRX_PRF_MNGM_NO = atrxPrfMngmNo;	//	제거래증명관리번호
+	SCREEN.WriteJnl("[상세보기] 선택");
+	p.sendRequest("viewDetail");
+	p.ChangeTab("9059");
+}
+
+function rePrient(atrxPrfMngmNo,issueDate,krnEnsnDcd) {
+	p.allParamData.krnEnsnDcd		= krnEnsnDcd		// 국문/영문여부
+	p.allParamData.dataYmd 			= issueDate			//	발급일자
+	p.allParamData.ATRX_PRF_MNGM_NO = atrxPrfMngmNo;	//	제거래증명관리번호
+	SCREEN.WriteJnl("[재발급] 선택");
+	p.sendRequest("getReprintIssue");
+	p.ChangeTab("9059");
+}
+
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[발급내역 조회] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);	//	고객이 취소
+}
+
+</script></xjscript></body>
+</html>

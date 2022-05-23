@@ -1,0 +1,165 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm"><div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">계좌조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 3; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">계좌정보</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171be2e0c0c" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-orange" id="ui-171aae89da9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">닫기</span></span></div><div class="ui-control ui-panel ui-container" id="ui-171be2e0c0e" style="left: 0px; top: 194px; width: 1280px; height: 690px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="PN_contents" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-172e913ccda" style="left: 91px; top: 47px; width: 1109px; height: 611px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_trustInfo" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-172e913ccdc" style='left: 0px; top: 0px; width: 1120px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_productName" ui-class="UILabel"><span class="ui-content"></span></span></div><span class="ui-control ui-scrollbar" id="ui-172e913ce28" style="left: 1209px; top: 47px; width: 32px; height: 611px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="SB_scrollbar1" ui-class="UIScrollBar" scroll-control-id="PN_trustInfo"><span class="track"></span><span class="trackbutton" style="top: 0px;"></span></span></div></div>
+</div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js"); // LibUtil import
+/*
+	#2513 - 신탁 계좌정보
+*/
+let p = parent;
+
+// 닫기버튼
+function BT_left_OnClick(e){
+	// 전체 계좌조회 - 계좌조회 페이지로 이동
+	p.ChangeTab("2511");
+}
+
+// 값 전달받았을 경우 실행함수 
+function ReceiveTran(obj){
+	SetTrustTableCell(obj); // 신탁계좌 조회
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			신탁
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function SetTrustTableCell(obj){
+	let rows = obj.list;
+	PN_trustInfo.$.find(".trust").remove();
+	
+	let infoTableTag = [];
+	infoTableTag.push(""
+		+'<label class="trust first">기본정보</label>'
+		+'<table class="trust">'
+		+'	<colgroup>'
+		+'		<col style="width:212px">'
+		+'		<col style="width:auto">'
+		+'	</colgroup>'
+		+'	<tbody>'
+		+'		<tr>'
+		+'			<th>계좌번호</th>'
+		+'			<td id="val_0"></td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>예금잔액</th>'
+		+'			<td id="val_1"></td>'
+		+'		</tr>'
+		+'		<tr class="hide">'
+		+'			<th>통화코드</th>'
+		+'			<td id="val_2"></td>'
+		+'		</tr>'
+		+'	</tbody>'
+		+'</table>');
+		
+	infoTableTag.push(""
+		+'<label class="trust">상세정보</label>'
+		+'<table class="trust">'
+		+'	<colgroup>'
+		+'		<col style="width:212px">'
+		+'		<col style="width:auto">'
+		+'	</colgroup>'
+		+'	<tbody>'
+		+'		<tr>'
+		+'			<th>운용자산</th>'
+		+'			<td id="val_3"></td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>위험분류등급</th>'
+		+'			<td id="val_4"></td>'
+		+'		</tr>'
+		+'		<tr class="hide">'
+		+'			<th>신용등급</th>'
+		+'			<td id="val_5"></td>'
+		+'		</tr>'
+		+'		<tr class="hide">'
+		+'			<th>신용보강회사</th>'
+		+'			<td id="val_6"></td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>최종거래일자</th>'
+		+'			<td id="val_7"></td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>신규일자</th>'
+		+'			<td id="val_8"></td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>만기일자</th>'
+		+'			<td id="val_9"></td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>계약기간</th>'
+		+'			<td id="val_10"></td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>세금우대여부</th>'
+		+'			<td id="val_11">0</td>' // 기본값 0
+		+'		</tr>'
+		+'	</tbody>'
+		+'</table>');
+		
+		
+	PN_trustInfo.$.append(infoTableTag.join(""));
+		
+	PN_trustInfo.$.find("label.trust").css({'display':'inline-block', 'font-size':'18px', 'padding':'20px 0px 15px 0px','font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_trustInfo.$.find("label.trust.first").css({'display':'inline-block','padding':'60px 0px 15px 0px'});
+	PN_trustInfo.$.find("table.trust").css({'width':'1076px','border':'3px solid #c2c2c2','border-collapse':'collapse', 'border-spacing':'0', 'empty-cells':'show','margin-bottom':'10px'});
+	PN_trustInfo.$.find("table.trust .hide").css({'display':'none'});
+	PN_trustInfo.$.find("table.trust th").css({'text-align':'left', 'background': '#f2f2f2', 'font-size':'21px', 'color':'#000', 'padding':'14px', 'border':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_trustInfo.$.find("table.trust td").css({'text-align':'left', 'background': '#fff', 'font-size':'22px', 'padding':'14px', 'border':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	
+	if(rows.length > 0){
+		LB_productName.setText(obj.RPRS_PDM); 								// 상품명
+		let account = p.ReturnFormatAccount(obj.info.CUS_ACN.trim()); 		// 계좌번호
+		PN_trustInfo.$.find("#val_0").text(account);						// 계좌번호
+				
+		for(let i=0; i<rows.length; i++){
+			let key = rows[i].OTPT_KRN_NM_200.trim();
+			let value = rows[i].OTPT_KRN_NM_300.trim().replace('*','');
+			console.log(key +" >> "+ value);
+			
+			// 아래의 컬럼 중 * 표시가 붙어있는 항목은 MMT계좌일 경우 숨김(hide)
+			switch(key){
+                case "신탁금액" 				: PN_trustInfo.$.find("#val_1").text(value + " 원");		break; // 예금잔액
+                case "통화명" 				: 
+                	PN_trustInfo.$.find("#val_2").text(value);											   // 통화코드*
+                	PN_trustInfo.$.find("#val_2").parent().show();   
+                	break; 
+                case "운용자산" 				: PN_trustInfo.$.find("#val_3").text(value);			break; // 운용자산
+                case "상품위험등급" 			: PN_trustInfo.$.find("#val_4").text(value);			break; // 위험분류등급
+                case "채권발행기관신용등급" 	: 
+                	PN_trustInfo.$.find("#val_5").text(value);											   // 신용등급*
+                	PN_trustInfo.$.find("#val_5").parent().show();
+                	break; 
+                case "신용보강회사" 			: 
+                	PN_trustInfo.$.find("#val_6").text(value);											   // 신용보강회사*
+                	PN_trustInfo.$.find("#val_6").parent().show();
+                	break; 
+                case "최종입출년월일" 		: PN_trustInfo.$.find("#val_7").text(value);			break; // 최종거래일자
+                case "신규일자" 				: PN_trustInfo.$.find("#val_8").text(value);			break; // 신규일자
+                case "만기년월일" 			: PN_trustInfo.$.find("#val_9").text(value);			break; // 만기일자
+                case "계약기간" 				: PN_trustInfo.$.find("#val_10").text(value);			break; // 계약기간
+                case "세금우대여부" 			: PN_trustInfo.$.find("#val_11").text(value);	break; // 세금우대여부
+                default	: break;
+			}
+		}
+	}
+	
+	SB_scrollbar1.Invalidate();
+}</script></xjscript></body>
+</html>

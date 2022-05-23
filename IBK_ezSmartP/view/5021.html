@@ -1,0 +1,248 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1389,1120" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">예금잔액증명서조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 320px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 32px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">발급내역 조회 </span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">종료</span></span><span class="ui-control ui-button theme-blue" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-w="1280" dock-h="100" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171ab4a94c0" style="left: 83px; top: 33px; width: 441px; height: 32px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-size: 26px; z-index: 0;" ui-class="UILabel" ui-id="LB_label44" dock="0" anchor="0b0101"><span class="ui-content">조회기간</span></span><span class="ui-control ui-scrollbar" id="ui-172980bda14" style="left: 1200px; top: 151px; width: 32px; height: 460px; right: auto; bottom: auto; z-index: 1;" ui-class="UIScrollBar" ui-id="SB_scrollbar_pt" dock="0" anchor="0b0101" scroll-control-id="PN_scroll_box"><span class="track"></span><span class="trackbutton"></span></span><span class="ui-control ui-datepicker" id="ui-172c9f4d016" style="left: 766px; top: 73px; width: 200px; height: 48px; right: auto; bottom: auto; z-index: 2;" ui-class="UIDatePicker" ui-id="DP_datepicker_st" dock="0" anchor="0b0101" tick="1592492400000" xonselecteddate="DP_datepicker_st_OnSelectedDate"><span class="ui-content">2020-06-19</span><span class="ui-icon-image"></span></span><span class="ui-control ui-datepicker" id="ui-172c9f980b5" style="left: 1018px; top: 73px; width: 200px; height: 48px; right: auto; bottom: auto; z-index: 3;" ui-class="UIDatePicker" ui-id="DP_datepicker_ed" dock="0" anchor="0b0101" tick="1592492400000" xonselecteddate="DP_datepicker_ed_OnSelectedDate"><span class="ui-content">2020-06-19</span><span class="ui-icon-image"></span></span><span class="ui-control ui-label" id="ui-171a517878e" style='left: 970px; top: 81px; width: 44px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 4;' ui-class="UILabel" ui-id="LB_label141" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">~</span></span><span class="ui-control ui-button" id="ui-172caf9636a" style="border-radius: 30px; border: 2px solid rgb(158, 158, 158); border-image: none; left: 432px; top: 73px; width: 92px; height: 52px; right: auto; bottom: auto; color: black; font-size: 20px; font-weight: bold; z-index: 5;" ui-class="UIButton" ui-id="BT_button_12mm" dock="0" anchor="0b0101" xonclick="BT_button_12mm_OnClick" theme=""><span class="ui-content">1년</span></span><span class="ui-control ui-button" id="ui-172cb0f1970" style="border-radius: 30px; border: 2px solid rgb(158, 158, 158); border-image: none; left: 322px; top: 73px; width: 92px; height: 52px; right: auto; bottom: auto; color: black; font-size: 20px; font-weight: bold; z-index: 6;" ui-class="UIButton" ui-id="BT_button_6mm" dock="0" anchor="0b0101" xonclick="BT_button_6mm_OnClick" theme=""><span class="ui-content">6개월</span></span><span class="ui-control ui-button" id="ui-172cb0f1e13" style="border-radius: 30px; border: 2px solid rgb(158, 158, 158); border-image: none; left: 210px; top: 73px; width: 92px; height: 52px; right: auto; bottom: auto; color: black; font-size: 20px; font-weight: bold; z-index: 7;" ui-class="UIButton" ui-id="BT_button_3mm" dock="0" anchor="0b0101" xonclick="BT_button_3mm_OnClick" theme=""><span class="ui-content">3개월</span></span><span class="ui-control ui-button" id="ui-172cb0f1fd4" style="border-radius: 30px; border: 2px solid rgb(1, 118, 188); border-image: none; left: 98px; top: 73px; width: 92px; height: 52px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-size: 20px; font-weight: bold; z-index: 8;" ui-class="UIButton" ui-id="BT_button_1mm" dock="0" anchor="0b0101" xonclick="BT_button_1mm_OnClick" theme=""><span class="ui-content">1개월</span></span><span class="ui-control ui-button" id="ui-172e97401dd" style="border-radius: 30px; border: 2px solid rgb(158, 158, 158); border-image: none; left: 542px; top: 73px; width: 92px; height: 52px; right: auto; bottom: auto; color: black; font-size: 20px; font-weight: bold; z-index: 9;" ui-class="UIButton" ui-id="BT_button_24mm" dock="0" anchor="0b0101" xonclick="BT_button_24mm_OnClick" theme=""><span class="ui-content">2년</span></span><div class="ui-control ui-panel ui-container" id="ui-172cad82928" style="left: 83px; top: 151px; width: 1076px; height: 460px; right: auto; bottom: auto; z-index: 10;" ui-class="UIPanel" ui-id="PN_scroll_box" dock="0" anchor="0b0101"></div></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("common","/KRG/0301/common.js");
+var p = parent;
+var endDateText = "";	// 조회 종료일
+var stDateText = "";	// 조회 시작일
+
+function Form_OnLoad(e){
+}
+
+function issueList(data) {
+	BT_button_init();
+	if(p.allParamData.choiceDate == "N") {
+		$("span[ui-id='BT_button_"+ p.allParamData.tarStDateValue +"mm']").css({'border':'2px solid #176bc8','color':'#176bc8'});
+	}
+	DP_datepicker_st.Text = p.gStDate.substr(0,4) + "-" + p.gStDate.substr(4,2) + "-" + p.gStDate.substr(6,2);
+    DP_datepicker_ed.Text = p.gEndDate.substr(0,4) + "-" + p.gEndDate.substr(4,2) + "-" + p.gEndDate.substr(6,2);
+	
+	let tag=[];
+	var krEngText = "";
+	var ableText = "";
+	var no = 0;
+	var date = new Date();
+	var today = "";
+	var frrgTs = "";	// 발급년월일
+	today += date.getFullYear();
+	today += com.util.fnPaddingData(date.getMonth()+1, "0", 2, true);
+	today += com.util.fnPaddingData(date.getDate(), "0", 2, true);
+	
+	console.log("today = " + today);
+	
+	for(var i = data.length-1; i >= 0; i--)
+	{
+		no++;
+		// 발급 년월일
+		frrgTs = data[i].FRRG_TS.substr(0,4) + "-" + data[i].FRRG_TS.substr(4,2) + "-" + data[i].FRRG_TS.substr(6,2);
+		
+		// 국문 영문 여부
+		if(data[i].KRN_ENSN_DCD == "K") {
+			krEngText = "국문";
+		} else {
+			krEngText = "영문";
+		}
+		
+		// 발급 가능 불가능 여부
+		if (data[i].FRRG_TS.substr(0,8) == today) {
+			if(data[i].FRRG_XCD == "CBKDEP219013600" || data[i].FRRG_XCD == "CBKDEP219010600") {
+				ableText = "불가능";
+			} else {
+				ableText = "가능";
+			}
+		} else {
+			ableText = "불가능";
+		}
+		tag.push(""
+			+'<tr>'
+			+'	<td>'+no+'</td>'
+			+'	<td>'+frrgTs+'</td>'
+			+'	<td>'+parseInt(data[i].ISAT_CNT)+'</td>'
+			+'	<td>'+krEngText +'</td>'
+			+'	<td>발급</td>'
+			+'	<td>'+ableText+'</td>'
+			+'	<td><button class="btn" onClick="moveDetail(\'' + data[i].ATRX_PRF_MNGM_NO + '\', \'' + frrgTs + '\')">상세보기</button></td>'
+			+'</tr>'
+		);
+	}
+	
+	PN_scroll_box.$.html(""
+			+'<table>'
+			+'	<colgroup>'
+			+'		<col style="width:5%;">'
+			+'		<col style="width:20%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'		<col style="width:15%;">'
+			+'	</colgroup>'
+			+'	<thead>'
+			+'		<tr>'
+			+'			<th></th>'
+			+'			<th>발급일자</th>'
+			+'			<th>계좌수</th>'
+			+'			<th>종 류</th>'
+			+'			<th>발급상태</th>'
+			+'			<th>재출력</th>'
+			+'			<th>상세보기</th>'
+			+'		</tr>'
+			+'	</thead>'
+			+'	<tbody>'
+			+		tag.join("")
+			+'	</tbody>'
+			+'<table>');
+				
+	PN_scroll_box.$.find("table").css({'width':'100%','border':'2px solid #c2c2c2','border-collapse':'collapse', 'border-spacing':'0', 'empty-cells':'show'});
+	PN_scroll_box.$.find("thead").css({'border-bottom':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif'});
+	PN_scroll_box.$.find("th").css({'text-align':'center', 'background': '#f2f2f2', 'font-size':'21px', 'color':'#000', 'padding':'14px', 'border-right':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_scroll_box.$.find("td").css({'text-align':'center', 'background': '#fff', 'font-size':'22px', 'padding':'14px', 'border':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_scroll_box.$.find(".btn").css({'border':'1px solid #b0b0b0','border-radius':'4px','background-color':'#eee','font-size':'20px', 'padding':'14px'});
+
+	if(p.allParamData.chkInitialize == true) {
+		UIScrollBar.creator.initialize(SB_scrollbar_pt);	
+	}
+	p.allParamData.chkInitialize = false;
+	SB_scrollbar_pt.Invalidate();
+}
+
+function moveDetail(atrxPrfMngmNo, dataYmd) {
+    p.allParamData.ATRX_PRF_MNGM_NO = atrxPrfMngmNo;
+    p.allParamData.dataYmd = dataYmd;
+    
+    p.ChangeTab("9059");
+
+	// 고객정보 조회 - 유효성 체크
+	p.sendRequest("getTableInfo");
+}
+
+
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[발급내역 조회] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_OK);	//	고객이 취소
+}
+
+function BT_right_OnClick(e){
+   	p.gStDate = DP_datepicker_st.Text.split("-").join("");
+    p.gEndDate = DP_datepicker_ed.Text.split("-").join("");
+
+	p.ChangeTab("9059");
+	SCREEN.WriteJnl("**조회시작일: "+p.gStDate);
+	SCREEN.WriteJnl("**조회종료일: "+p.gEndDate);
+	SCREEN.WriteJnl("[발급내역 조회] 정상");
+	// 고객정보 조회 - 유효성 체크
+	p.sendRequest("getIssueList");
+}
+
+
+function BT_button_init(){
+   BT_button_1mm.$.css({'border':'2px solid #9e9e9e','color':'#000000'});
+   BT_button_3mm.$.css({'border':'2px solid #9e9e9e','color':'#000000'});
+   BT_button_6mm.$.css({'border':'2px solid #9e9e9e','color':'#000000'});
+   BT_button_12mm.$.css({'border':'2px solid #9e9e9e','color':'#000000'});
+   BT_button_24mm.$.css({'border':'2px solid #9e9e9e','color':'#000000'});
+}
+
+function BT_button_1mm_OnClick(e){
+	p.allParamData.choiceDate = "N";
+    // 버튼 초기화
+    BT_button_init();
+    // 버튼 on
+    BT_button_1mm.$.css({'border':'2px solid #176bc8','color':'#176bc8'});
+    
+    endDateText = p.today;
+    stDateText = com.date.fnGetAddDate("M", -1, endDateText);
+    p.allParamData.tarStDateValue = 1;
+    
+    DP_datepicker_st.Text = stDateText.substr(0,4) + "-" + stDateText.substr(4,2) + "-" + stDateText.substr(6,2);
+    DP_datepicker_ed.Text = endDateText.substr(0,4) + "-" + endDateText.substr(4,2) + "-" + endDateText.substr(6,2);
+
+}
+
+function BT_button_3mm_OnClick(e){
+	p.allParamData.choiceDate = "N";
+    // 버튼 초기화
+    BT_button_init();
+    // 버튼 on
+    BT_button_3mm.$.css({'border':'2px solid #176bc8','color':'#176bc8'});
+    
+    endDateText = p.today;
+    stDateText = com.date.fnGetAddDate("M", -3, endDateText);
+    p.allParamData.tarStDateValue = 3;
+    
+    DP_datepicker_st.Text = stDateText.substr(0,4) + "-" + stDateText.substr(4,2) + "-" + stDateText.substr(6,2);
+    DP_datepicker_ed.Text = endDateText.substr(0,4) + "-" + endDateText.substr(4,2) + "-" + endDateText.substr(6,2);
+}
+
+function BT_button_6mm_OnClick(e){
+	p.allParamData.choiceDate = "N";
+    // 버튼 초기화
+    BT_button_init();
+    // 버튼 on
+    BT_button_6mm.$.css({'border':'2px solid #176bc8','color':'#176bc8'});
+    
+    endDateText = p.today;
+    stDateText = com.date.fnGetAddDate("M", -6, endDateText);
+    p.allParamData.tarStDateValue = 6;
+    
+    DP_datepicker_st.Text = stDateText.substr(0,4) + "-" + stDateText.substr(4,2) + "-" + stDateText.substr(6,2);
+    DP_datepicker_ed.Text = endDateText.substr(0,4) + "-" + endDateText.substr(4,2) + "-" + endDateText.substr(6,2);
+}
+
+function BT_button_12mm_OnClick(e){
+	p.allParamData.choiceDate = "N";
+	// 버튼 초기화
+    BT_button_init();
+    // 버튼 on
+    BT_button_12mm.$.css({'border':'2px solid #176bc8','color':'#176bc8'});
+    
+    endDateText = p.today;
+    stDateText = com.date.fnGetAddDate("Y", -1, endDateText);
+    p.allParamData.tarStDateValue = 12;
+    
+    DP_datepicker_st.Text = stDateText.substr(0,4) + "-" + stDateText.substr(4,2) + "-" + stDateText.substr(6,2);
+    DP_datepicker_ed.Text = endDateText.substr(0,4) + "-" + endDateText.substr(4,2) + "-" + endDateText.substr(6,2);
+}
+
+function BT_button_24mm_OnClick(e){
+	p.allParamData.choiceDate = "N";
+	// 버튼 초기화
+    BT_button_init();
+    // 버튼 on
+    BT_button_24mm.$.css({'border':'2px solid #176bc8','color':'#176bc8'});
+    
+    endDateText = p.today;
+    stDateText = com.date.fnGetAddDate("Y", -2, endDateText);
+    p.allParamData.tarStDateValue = 24;
+    
+    DP_datepicker_st.Text = stDateText.substr(0,4) + "-" + stDateText.substr(4,2) + "-" + stDateText.substr(6,2);
+    DP_datepicker_ed.Text = endDateText.substr(0,4) + "-" + endDateText.substr(4,2) + "-" + endDateText.substr(6,2);
+}
+
+// 달력에서 날짜 선택시 조회기간 포커스 끄기_S
+function DP_datepicker_st_OnSelectedDate(e){
+	p.allParamData.choiceDate = "Y";
+	BT_button_init();
+}
+
+function DP_datepicker_ed_OnSelectedDate(e){
+	p.allParamData.choiceDate = "Y";
+	BT_button_init();
+}
+// 달력에서 날짜 선택시 조회기간 포커스 끄기_E</script></xjscript></body>
+</html>

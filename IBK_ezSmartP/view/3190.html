@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1389,1120" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 188px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_button_pay" dock="0" anchor="0b1001" theme="blue" xonclick="BT_button_pay_OnClick"><span class="ui-content">선결제신청</span></span><span class="ui-control ui-button theme-mint" id="ui-172e549ab68" style='left: auto; top: 31px; width: 258px; height: 80px; right: 498px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_button_his" dock="0" anchor="0b1001" theme="mint" xonclick="BT_button_his_OnClick"><span class="ui-content">선결제내역 조회</span></span><span class="ui-control ui-button theme-orange" id="ui-172e54a1309" style='left: auto; top: 31px; width: 258px; height: 80px; right: 810px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 2;' ui-class="UIButton" ui-id="BT_button_end" dock="0" anchor="0b1001" theme="orange" xonclick="BT_button_end_OnClick"><span class="ui-content">거래종료</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 1;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-w="1280" dock-h="100" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-172c00c6687" style='left: 230px; top: 317px; width: 441px; height: 42px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-family: "IBK IDream M"; font-size: 24px; z-index: 0;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content">결제정보조회</span></span><div class="ui-control ui-table" id="ui-172c12f7fc6" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 230px; top: 369px; width: 820px; height: 360px; right: auto; bottom: auto; z-index: 1;" ui-class="UITable" ui-id="TL_table_payinfo" dock="0" anchor="0b0101"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="270" type="1" align-h="align-left" align-v="align-middle"></td><td type="1" align-h="align-left" align-v="align-middle"></td></tr></thead><tbody><tr height="17%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172c12f7fc8" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">결제금액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172c12f7fc9" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="17%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172c12f7fca" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">결제은행</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172c12f7fcb" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="17%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172c12f7fcc" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">결제계좌</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172c12f7fcd" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="17%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e441454a" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">선결제구분</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e441454b" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr height="17%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e53af1fc" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">결제구분</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e53af1fd" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr height="15%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e53af4de" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">최종청구일</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e53af4df" style="padding: 0px 20px; font-size: 22px;"></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-171a570e5a3" style='left: 140px; top: 128px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 2;' ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">선결제가</span></span><span class="ui-control ui-label" id="ui-171a5718392" style='left: 140px; top: 188px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 3;' ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;"><span style="color: rgb(23, 107, 200);">완료</span> &nbsp;되었습니다.</span></span><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>// 3180.css import
+importCSS("3180"     ,"3180.css");
+
+// common.js import
+includeJSS("common","/KRG/0301/common.js");
+
+var p = parent;
+
+function Form_OnLoad(e){
+   
+}
+
+// 선결제 신청결과 셋팅
+function setPayInfoResult(p_CRD_MNRC_TTAL_AMT, p_STLM_BNCD, p_STLM_ACN, p_AHST_PCSN_DNM, p_PAMENT_NM, p_RCPT_YMD) {
+  	// 결제금액
+    const CRD_MNRC_TTAL_AMT = com.util.fnGetFormatMoney(p_CRD_MNRC_TTAL_AMT);  
+	TL_table_payinfo.DataCell(0,1,"text",CRD_MNRC_TTAL_AMT);
+	
+	// 결제은행
+    const BankName = com.acct.convertBankName2(p_STLM_BNCD);
+    TL_table_payinfo.DataCell(1,1,"text",BankName);
+    
+    // 결제계좌
+    const STLM_ACN = p.G_isOthers ? p_STLM_ACN : com.acct.fnGetAccountPattern(p_STLM_ACN);
+	TL_table_payinfo.DataCell(2,1,"text",STLM_ACN);
+
+    // 선결제처리구분명
+    const AHST_PCSN_DNM = p_AHST_PCSN_DNM;
+	TL_table_payinfo.DataCell(3,1,"text",AHST_PCSN_DNM);
+	
+    // 선결제처리구분 - 결제명
+    const PAMENT_NM = p_PAMENT_NM;
+	TL_table_payinfo.DataCell(4,1,"text",PAMENT_NM);
+    
+    // 최종청구일
+    const LAST_BILG_YMD =  p.com.date.fnGetFormatDate(p_RCPT_YMD);
+	TL_table_payinfo.DataCell(5,1,"text",LAST_BILG_YMD);
+    
+    const $payinfo_tbody = TL_table_payinfo.$.find("> table > tbody");
+	$payinfo_tbody.find("> tr:eq(0) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+}
+
+
+// 거래종료
+function BT_button_end_OnClick(e){
+	
+  	// 결제금액
+    const CRD_MNRC_TTAL_AMT = TL_table_payinfo.DataCell(0,1,"text").replace(/\,/g, '').replace('원', '').trim();
+	
+	// 결제은행
+    const BankName = TL_table_payinfo.DataCell(1,1,"text");
+    
+    // 결제계좌
+    const STLM_ACN = TL_table_payinfo.DataCell(2,1,"text").replace(/\-/g, '');
+	
+    // 선결제처리구분명
+    const AHST_PCSN_DNM = TL_table_payinfo.DataCell(3,1,"text");
+	
+    // 선결제처리구분 - 결제명
+    const PAMENT_NM = TL_table_payinfo.DataCell(4,1,"text");
+	
+	var data = "TranMoney="+CRD_MNRC_TTAL_AMT+",Bankname="+BankName+",TranAcc="+STLM_ACN+",PaymentType1="+AHST_PCSN_DNM+",PaymentType2="+PAMENT_NM;
+	
+//	console.log(" BT_button_end_OnClick :::: data >>>>  " + data );
+	
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_OK,data);
+
+}
+
+// 선결제내역 조회
+function BT_button_his_OnClick(e){
+
+	// 선결제 내역 조회
+   	SCREEN.WriteJnl("[선결제내역 조회] 선택");
+   	p.sendRequest("redirect_pay_history");
+
+}
+
+// 선결제신청
+function BT_button_pay_OnClick(e){
+
+   	// 선결제 결제 구분 선택
+   	SCREEN.WriteJnl("[선결제 신청] 선택");
+   	p.sendRequest("step2_type_select");
+   
+}
+</script></xjscript></body>
+</html>

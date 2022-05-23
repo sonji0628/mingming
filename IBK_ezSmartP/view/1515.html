@@ -1,0 +1,209 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ide-size="1436,1154" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm">
+<div class="ui-control ui-panel ui-container" id="ui-171bfd1315e" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171bfd13160" style="left: 0px; top: 0px; width: auto; height: 101.97px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171bfd13161" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">Title</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171bfd13162" style="left: 0px; top: 101.97px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 3; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171bfd13163" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">SubTitle</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a52210e8" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue ui-hide" id="ui-171a52210e9" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange" id="ui-171a52210ea" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-174047052f1" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-w="200" dock-h="100" dock-r="left:149.55px;top:232.6px;width:200px;height:100px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a5245d17" style="left: 134px; top: 332px; width: 168px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 2;" anchor="0b0101" dock="0" ui-id="LB_label16" ui-class="UILabel"><span class="ui-content">비밀번호</span></span><span class="ui-control ui-label" id="ui-17347582b56" style="left: 327px; top: 338px; width: 282px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 18px; z-index: 5;" anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content">연속되지 않은 숫자로 입력해주세요.</span></span><div class="ui-control ui-numberpad shuffle" id="ui-171a5226656" style="left: 714px; top: 318px; width: 434px; height: 487px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="NP_numberpad1" ui-class="UINumberPad" xonkeyclick="NP_numberpad1_OnKeyClick"><table class="fixed" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td key="1"><div>1</div></td><td key="2"><div>2</div></td><td key="3"><div>3</div></td></tr><tr><td key="4"><div>4</div></td><td key="5"><div>5</div></td><td key="6"><div>6</div></td></tr><tr><td key="7"><div>7</div></td><td key="8"><div>8</div></td><td key="9"><div>9</div></td></tr><tr><td class="fix backspace" key=""><div></div></td><td key="0"><div>0</div></td><td class="fix clear" key="정정"><div>정정</div></td></tr></tbody></table><table class="shuffle" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td key="1"><div>1</div></td><td key="5"><div>5</div></td><td key="0"><div>0</div></td><td key="6"><div>6</div></td></tr><tr><td class="key-empty" key=""><div></div></td><td key="9"><div>9</div></td><td key="2"><div>2</div></td><td key="3"><div>3</div></td></tr><tr><td key="4"><div>4</div></td><td key="7"><div>7</div></td><td key="8"><div>8</div></td><td class="key-empty" key=""><div></div></td></tr><tr><td class="fix shuffle" colspan="2"><div>재배열</div></td><td class="fix backspace" key="backspace"><div></div></td><td class="fix clear" key="clear"><div>정정</div></td></tr></tbody></table></div><span class="ui-control ui-textbox" id="ui-171a52210eb" style="left: 134px; top: 379px; width: 475px; height: 100px; right: auto; bottom: auto; font-size: 38px; z-index: 0;" anchor="0b0101" dock="0" ui-id="TB_password" ui-class="UITextBox" xonclick="TB_password_OnClick"><span><input class="ui-input" type="password" maxlength="4"></span></span><span class="ui-control ui-label" id="ui-173475904db" style="left: 327px; top: 534px; width: 282px; height: 32px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 18px; z-index: 6;" anchor="0b0101" dock="0" ui-id="LB_label2" ui-class="UILabel"><span class="ui-content">연속되지 않은 숫자로 입력해주세요.</span></span><span class="ui-control ui-label" id="ui-171bfd30500" style="left: 134px; top: 528px; width: 191px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 3;" anchor="0b0101" dock="0" ui-id="LB_label22" ui-class="UILabel"><span class="ui-content">비밀번호 확인</span></span><span class="ui-control ui-textbox" id="ui-171bfd3051a" style="left: 134px; top: 576px; width: 475px; height: 100px; right: auto; bottom: auto; font-size: 38px; z-index: 4;" anchor="0b0101" dock="0" ui-id="TB_checkPw" ui-class="UITextBox" xonclick="TB_checkPw_OnClick"><span><input class="ui-input" type="password" maxlength="4"></span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("common","/KRG/0301/common.js");
+let httpQuerys = parseLocationQueryString();
+let p = parent;
+var viewType;
+var pwBox = TB_password;
+
+function Form_OnLoad(e){
+	//NP_numberpad1.Shuffle = true;
+}
+
+function goPwdPage() {
+	// 거래 후 다른 거래로 들어 올수 있기 때문에 초기화_S
+	resetInput();
+	// 거래 후 다른 거래로 들어 올수 있기 때문에 초기화_E
+	
+	viewType = p.allParamData.tranFlag; //  1 : 무매체 등록(무매체거래 비밀번호 설정), 2: 통장출금 등록(통장사용자번호 설정)
+	TB_password.$.find('>span >.ui-input').attr("disabled","disabled");
+	TB_checkPw.$.find('>span >.ui-input').attr("disabled","disabled");
+	pwBox = TB_password;
+	pwBox.$.css("border","3px solid #046fd9");
+	
+	TB_password.Text = "";
+	TB_checkPw.Text = "";
+	
+	LB_label1.$.css({"display":"none", "text-align":"right"});
+	LB_label2.$.css({"display":"none", "text-align":"right"});
+	
+	TB_password.$.find('.ui-input').focus();
+	TB_password.$.find('.ui-input').attr('placeholder','입 력 해 주 세 요');
+	
+	if(viewType == "1"){
+		LB_title.$.text('무매체거래 비밀번호');
+		LB_Subtitle.$.text('무매체거래 비밀번호 6자리를 입력해 주십시오.');
+		TB_password.MaxLength = 6;
+		TB_checkPw.MaxLength = 6;
+	}
+	else if(viewType == "2"){
+		LB_title.$.text('통장사용자번호');
+		LB_Subtitle.$.text('통장사용자번호 6자리를 입력해 주십시오.');
+		LB_label16.$.text('사용자번호');
+		LB_label22.$.text('사용자번호 확인');
+		TB_password.MaxLength = 6;
+		TB_checkPw.MaxLength = 6;
+	}
+}
+
+function NP_numberpad1_OnKeyClick(e){
+	if(pwBox == TB_password ){ 
+		if(e.key =='backspace'){
+			e.key = '';
+			pwBox.Text = pwBox.Text.substring ( 0, pwBox.Text.length -1);	
+		}
+		else if(e.key == 'clear'){
+			e.key = '';			 
+			pwBox.Text = pwBox.Text.replace(pwBox.Text,"");
+		} else {
+			pwBox.Text += e.key;
+		}
+		
+		//글자수 제한
+		if(pwBox.Text.length == 0){
+			com.numberpad.notMaxLength(NP_numberpad1);
+			com.numberpad.btnDisabled(NP_numberpad1);
+		} else if(pwBox.Text.length > 0 && pwBox.Text.length < 6){
+			LB_label1.$.css("display","none");
+			com.numberpad.notMaxLength(NP_numberpad1);
+		} else if(pwBox.Text.length === 6){ 
+			var rChk = com.util.fnValidation(TB_password); 
+			if(rChk === true) {
+				LB_label1.$.css({"display":"","color":"rgb(2, 111, 206)"});
+				LB_label1.$.text("사용이 가능합니다.");
+				TB_password.$.css("border","2px solid #9e9e9e");
+				e.key = "";	// 초기화 안하면 새로 추가됨.
+				
+				pwBox = TB_checkPw;
+				TB_checkPw.$.find('.ui-input').focus();
+				TB_checkPw.$.find('.ui-input').attr('placeholder','한 번 더 입 력 해 주 세 요');
+				com.numberpad.btnDisabled(NP_numberpad1);
+			} else {
+				LB_label1.$.css({"display":"","color":"rgb(244, 84, 8)"});
+				LB_label1.$.text(rChk);
+				
+				TB_password.$.find('.ui-input').focus();
+				pwBox.Text = pwBox.Text.replace(pwBox.Text,"");
+				com.numberpad.btnDisabled(NP_numberpad1);
+			}
+		}
+	
+	} else if(pwBox == TB_checkPw ){
+		if(e.key =='backspace'){
+			e.key = '';
+			pwBox.Text = pwBox.Text.substring ( 0, pwBox.Text.length -1);	
+		}
+		else if(e.key == 'clear'){
+			e.key = '';			 
+			let a = pwBox.Text.replace(pwBox.Text,"");
+			pwBox.Text = a;
+		} else {
+			pwBox.Text += e.key;
+		}
+		
+		//글자수 제한
+		if(pwBox.Text.length == 0){
+			com.numberpad.notMaxLength(NP_numberpad1);
+			com.numberpad.btnDisabled(NP_numberpad1);
+		} else if(pwBox.Text.length > 0 && pwBox.Text.length < 6){
+			LB_label2.$.css("display","none");
+			com.numberpad.notMaxLength(NP_numberpad1);
+		} else if(pwBox.Text.length === 6 && TB_password.Text.length === 6){ 
+			var rChk = com.util.fnValidation(TB_password, TB_checkPw); 
+			if(rChk === true) {
+				LB_label2.$.css("display","none");
+				// 무매체 등록(무매체거래 비밀번호 설정)_S
+				if(viewType == "1") {
+					p.allParamData.NW_BNKB_USER_NO = TB_password.Text;	//	전문에 보낼 무매체 비밀번호(암호화전)						
+					//setTimeout(p.TP_main.ChangeTab("1512"), 3000);					
+					SCREEN.WriteJnl("[무매체거래 비밀번호 입력] 정상");
+					p.ChangeTab("1512");
+					//p.sendRequest("resetAmountText");
+				}// 무매체 등록(무매체거래 비밀번호 설정)_E
+				
+				// 통장출금 등록(통장사용자번호 설정)_S
+				else if(viewType == "2") { 
+					p.allParamData.NW_BNKB_USER_NO = TB_password.Text;	//	전문에 보낼 통장사용자 번호(암호화전)											
+					SCREEN.WriteJnl("[통장사용자번호 입력] 정상");
+					// 바이오인증으로 가야함
+					p.ChangeTab("9041");
+					
+					// 테스트_S
+					//p.ChangeTab("9059")
+					//p.sendRequest("send2Info");
+					//테스트_E*/
+					
+				}// 통장출금 등록(통장사용자번호 설정)_E
+			} else {
+				LB_label2.$.css({"display":"","color":"rgb(244, 84, 8)"});
+				LB_label2.$.text(rChk);
+				
+				TB_checkPw.$.find('.ui-input').focus();
+				pwBox.Text = pwBox.Text.replace(pwBox.Text,"");
+				com.numberpad.btnDisabled(NP_numberpad1);
+			}
+		}
+	}
+	pwBox.$.css("border","3px solid #046fd9");
+}
+	
+function TB_password_OnClick(e){
+	TB_checkPw.$.css("border","2px solid #9e9e9e");
+	pwBox = this;
+	pwBox.$.css("border","3px solid #046fd9");
+	
+	changeChkBox();
+}
+
+function TB_checkPw_OnClick(e){	
+	TB_password.$.css("border","2px solid #9e9e9e");
+	pwBox = this;
+	pwBox.$.css("border","3px solid #046fd9");
+	
+	changeChkBox();
+}
+
+function changeChkBox() {
+	if(pwBox.Text.length == 0) {
+		com.numberpad.notMaxLength(NP_numberpad1);
+		com.numberpad.btnDisabled(NP_numberpad1);
+	} else if(pwBox.Text.length > 0 && pwBox.Text.length < 6) {
+		com.numberpad.notMaxLength(NP_numberpad1);
+	} else if(pwBox.Text.length == 6) {
+		com.numberpad.maxLength(NP_numberpad1);
+	}
+}
+function BT_left_OnClick(e){
+	if( viewType == 1 ){
+		SCREEN.WriteJnl("[무매체거래 비밀번호 입력] 취소");
+	}
+	else if( viewType == 2 ){
+		SCREEN.WriteJnl("[통장사용자번호 입력] 취소");
+	}	
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);	//	고객이 취소
+}
+
+function resetInput() {
+	NP_numberpad1.Shuffle = true;
+	com.numberpad.btnDisabled(NP_numberpad1);
+	TB_password.$.css("border","2px solid #9e9e9e");
+	TB_checkPw.$.css("border","2px solid #9e9e9e");
+	TB_checkPw.$.find('.ui-input').attr('placeholder','');
+}</script></xjscript></body>
+</html>

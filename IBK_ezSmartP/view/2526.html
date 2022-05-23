@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 101.97px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">거래중지계좌</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e4" style="left: 0px; top: 101.97px; width: auto; height: 91.36px; right: 0px; bottom: auto; z-index: 1; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-r="left:0px;top:92px;width:1280px;height:112px;right:auto;bottom:auto" dock-h="91" dock-w="1280"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">이용재개 업무가 가능합니다.</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a4b083a4" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2; background-color: transparent;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-171a4b083a6" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span></div><div class="ui-control ui-panel ui-container" id="ui-17225659336" style="left: 53px; top: 241px; width: 1110px; height: 641px; right: auto; bottom: auto; z-index: 3;" anchor="0b0101" dock="0" ui-id="PN_accountList" ui-class="UIPanel"></div><span class="ui-control ui-scrollbar" id="ui-1721787f7d3" style="left: 1209px; top: 241px; width: 32px; height: 641px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="SB_scrollbar1" ui-class="UIScrollBar" scroll-control-id="PN_accountList"><span class="track"></span><span class="trackbutton" style="top: 0px;"></span></span><div class="ui-control ui-panel ui-container" id="ui-17226d717c1" style="left: 240px; top: 312px; width: 800px; height: 300px; right: auto; bottom: auto; z-index: 5;" anchor="0b0101" dock="0" ui-id="PN_noDataInfo" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-17226ce462d" style="left: 364px; top: 77px; width: 73px; height: 75px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel7" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-17226cd18f8" style='left: 0px; top: 171px; width: 800px; height: 48px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 36px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label4" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">내역이 없습니다.</span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js");// LibUtil import
+/*
+	#2526 - 거래중지 계좌조회
+*/
+let p = parent;
+let records; // rows
+let dataObj; // xioOutput
+
+// 닫기버튼
+function BT_left_OnClick(e){
+	// 거래취소
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_OK)
+}
+
+// 수신 데이터 처리
+function ReceiveTran(obj){
+	PN_accountList.$.empty();
+	
+	// KRN_CSM 받아오기 위한 값
+	dataObj = obj;
+	
+	records = obj.list;				// rows
+	let count = records.length;  	// 계좌 개수
+	let ACNT_BAL_TOT = 0;			// total balance
+		
+	let tag = ['<div id="group" class="card-groups">'];
+	tag.push('<div class="card-group">');
+	tag.push(""
+		+'<div class="card-group-title">'
+   	   	+'	<span class="tt">총 	<span class="account" style="color:#176bc8;">' + count + '</span> 계좌</span>'
+   	   	+'<span class="sumCount" id="stop_ACNT_BAL_TOT"></span>'
+       	+'</div>'
+	);
+	tag.push('</div>');
+	tag.push('</div>');
+	
+	tag.push('<div class="card-panel stop"></div>');
+	PN_accountList.$.append(tag.join(""));
+	
+	// css
+	$('.card-group .card-group-title > .tt').css({'margin-left':'25px'});
+	$('.card-group .card-group-title > .account').css({'color':'#0068c3'});
+	$('.card-group .card-group-title > .sumCount').css({'float':'right'});
+	
+	console.log(count)
+	// 내역 있을경우 안내문구 제거
+	if(parseInt(count) != 0){
+		PN_noDataInfo.Visible = false;
+		for(let i=0; i<records.length; i++){
+			let row = records[i];
+			let ACNT_BAL = parseInt(row.PSNT_BAL, 10);
+			const btnStyle = "position:relative;width:calc(100%-20px);margin:2px;";
+			
+			let tag = [];
+			tag.push(""
+        		+'<div class="card-item" data-index="' + i + '">'
+        		+'	<div class="card_info">'
+        		+'		<div class="sub_title">' + com.acct.fnGetAccountPattern(row.CUS_ACN.trim()) + '</div>'
+        		+'		<div class="title" style="margin-top:10px;font-size:26px;">신규년월일 : ' +  com.date.fnGetFormatDate(row.NEW_YMD) + '</div>'
+        		+'		<div class="content_text">거래중지계좌등록일 : ' + com.date.fnGetFormatDate(row.EXPI_YMD) + '</div>'
+        		+'		<div class="balance">' + parseInt(ACNT_BAL).toLocaleString() + '<span style="font-size:21px;margin-left:5px;">원</span></div>'
+	    		+'		<div class="btn" style="border:none;background:none;">'
+	        	+'			<button class="btn" style="' + btnStyle + '" data-type="001" onclick="TranSuspensionAccountResumeUse(this)">이용재개</button>'
+	        	+'		</div>'
+	        	+'	</div>'
+			    +'</div>');
+			    
+			ACNT_BAL_TOT += ACNT_BAL;
+			
+			// 화면에 계좌 표시
+			PN_accountList.$.find(".card-panel.stop").append(tag.join(""));
+			
+			PN_accountList.$.find(".card-panel").css({"visibility":"visible", "justify-content":"flex-start"});
+						
+			let cardPanel = PN_accountList.$.find(".card-panel");
+			cardPanel.find("> div.card-item").css({'width':'344px', 'margin-left':'25px'});
+			cardPanel.find("> div.card-item .sub_title").css({'font-size':'24px','font-family':'IBK IDream M'});
+			cardPanel.find("> div.card-item .title").css({'font-size':'18px', 'font-family':'Noto sans CJK KR'});
+			cardPanel.find("> div.card-item .content_text").css({'font-size':'18px', 'font-family':'Noto sans CJK KR'});
+			cardPanel.find("> div.card-item .balance").css({'margin-top':'30px', 'font-size':'32px', 'font-family':'IBK iDream B'});
+			cardPanel.find(".text_info").css({"margin-top":"15px","display":"flex","justify-content":"space-between"});
+			cardPanel.find(".text_info.top").css({"margin-top":"150px"});
+		}
+	} else {
+		PN_noDataInfo.Visible = true;
+	}
+	// 총 금액
+	$("#stop_ACNT_BAL_TOT").html(parseInt(ACNT_BAL_TOT).toLocaleString() + '<span class="tt">원</span>');
+	
+	
+	SB_scrollbar1.Invalidate();
+}
+
+// 거래중지계좌 이용재개
+function TranSuspensionAccountResumeUse(target){
+	let index = $(target).parents("div.card-item").data("index");
+	let datas = records;
+	let data = datas[index];
+
+	// 계좌해지는 사용하지 않으므로 기존의 인젠트 코드에서 이용재개 / 계좌해지 구분하는 코드는 아래와 같이 주석처리함
+	//var screenId = $(this).data("type") == "001" ? "D28489120" : "D28529120";
+
+	// parameter 구성한 후 2527 화면으로 이동
+	p.gData.TYPE = $(this).data("type");
+	p.gData.CUS_NAME = dataObj.KRN_CSM;				// 고객명
+	p.gData.CUS_ACN = data.CUS_ACN;					// 고객 계좌번호
+	p.gData.NEW_YMD = data.NEW_YMD;     			// 신규년월일
+	p.gData.EXPI_YMD = data.EXPI_YMD;   			// 거래중지계좌등록일 : 거래만료일
+	p.gData.ACNT_BAL = parseInt(data.PSNT_BAL, 10);	// 잔액
+			
+	// 이용재개 정보확인 페이지로 이동
+	p.ChangeTab("2527");
+}
+</script></xjscript></body>
+</html>

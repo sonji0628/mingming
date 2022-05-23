@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm">
+<div class="ui-control ui-panel ui-container" id="ui-171a561f5a3" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; font-weight: bold; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><span class="ui-control ui-label" id="ui-1740ec848e7" style='left: 384px; top: 156px; width: 511px; height: 54px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-family: "IBK iDream"; font-size: 54px; font-weight: normal; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content">명세표 출력 항목 선택</span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a52210e8" style="left: 0px; top: auto; width: auto; height: 139.96px; right: 0px; bottom: 0px; z-index: 1;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="140" dock-r="left:20px;top:904px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-171bff71c97" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span></div><span class="ui-control ui-button theme-blue" id="ui-1740ee53d8e" style='left: 235px; top: 499px; width: 394px; height: 248px; right: auto; bottom: auto; font-family: "IBK iDream M"; z-index: 2;' anchor="0b0101" dock="0" ui-id="BT_button2" ui-class="UIButton" theme="blue" xonclick="BT_button2_OnClick"><span class="ui-content" style="left: 20px; top: 0px; right: 0px; bottom: 0px;">계좌번호</span><span class="ui-back-image" style='background-image: url("/KRG/media/btn_rct_check_nor.png");'></span></span><span class="ui-control ui-button" id="ui-1740eed6428" style='left: 651px; top: 499px; width: 394px; height: 248px; right: auto; bottom: auto; font-family: "IBK iDream M"; z-index: 3;' anchor="0b0101" dock="0" ui-id="BT_button3" ui-class="UIButton" theme="" xonclick="BT_button3_OnClick"><span class="ui-content" style="left: 20px; top: 0px; right: 0px; bottom: 0px;">계좌잔액</span><span class="ui-back-image" style='background-image: url("/KRG/media/btn_rct_check_nor.png");'></span></span></div><span class="ui-control ui-label" id="ui-1740e56c114" style="left: 341px; top: 250px; width: 596px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label2" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">명세표 출력을 원하시면 각 항목의 체크박스를</span></span><span class="ui-control ui-label" id="ui-1740ecaf969" style="left: 0px; top: 290px; width: 1280px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 2;" anchor="0b0101" dock="0" ui-id="LB_label3" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">선택하시고&nbsp;<span style="color: rgb(23, 107, 200); font-weight: bold;">확인</span>을 눌러 주십시오.</span></span><span class="ui-control ui-label" id="ui-1740ecd979d" style="left: 307px; top: 330px; width: 664px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 3;" anchor="0b0101" dock="0" ui-id="LB_label8" ui-class="UILabel"><span class="ui-content">선택하지 않은 항목은 명세표에 출력되지 않습니다.</span></span></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>let p = parent;
+let btnLeftFlag = false;
+let btnRightFlag = false;
+
+// 계좌번호 버튼 클릭이벤트
+function BT_button2_OnClick(e){
+	doCheck("TranAcc");
+}
+
+// 계좌잔액 버튼 클릭이벤트
+function BT_button3_OnClick(e){
+	doCheck("TranAfterMoney");
+}
+
+// 체크박스 체크이벤트
+function doCheck(type){
+	if(type == "TranAcc"){
+		// 계좌번호 선택시
+		if(!btnLeftFlag){
+			BT_button2.$.find(".ui-back-image").css({"background-image":"url(/KRG/media/btn_rct_check_sel.png)"});
+			btnLeftFlag = true;
+		} else {
+			BT_button2.$.find(".ui-back-image").css({"background-image":"url(/KRG/media/btn_rct_check_nor.png)"});	
+			btnLeftFlag = false;
+		}
+	} else if(type == "TranAfterMoney"){
+		// 계좌잔액 선택시
+		if(!btnRightFlag){
+			BT_button3.$.find(".ui-back-image").css({"background-image":"url(/KRG/media/btn_rct_check_sel.png)"});
+			btnRightFlag = true;
+		} else {
+			BT_button3.$.find(".ui-back-image").css({"background-image":"url(/KRG/media/btn_rct_check_nor.png)"});	
+			btnRightFlag = false;
+		}
+	}
+}
+
+// 확인버튼
+function BT_right_OnClick(e){
+	if(btnLeftFlag && btnRightFlag){
+		// 계좌 + 잔액 
+		p.gRct = 3;
+	} else if(btnLeftFlag == true && btnRightFlag == false){
+		// 계좌만 
+		p.gRct = 1;
+	} else if(btnLeftFlag == false && btnRightFlag == true){
+		// 잔액만 
+		p.gRct = 2;
+	} else {
+		// 둘다 선택 안함
+		p.gRct = 0;
+	}
+	
+	
+	if(p.getOwnBankIs()){
+		// 자행이체
+		// CBKEBK849001 자동화기기 당행계좌이체 전문송신
+		p.sendRequest("ownBankAccountTransfer");
+	} else {
+		// 타행이체
+		// CBKEXT112411 자동화기기 CD공동망잔액조회 전문송신(이체전문)
+		p.sendRequest("otherBankAccountTransfer");
+	}
+}</script></xjscript></body>
+</html>

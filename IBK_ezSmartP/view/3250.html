@@ -1,0 +1,725 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container ide-hide-outline" id="ui-document" lang="kr" style="background-color: transparent;" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad"><div class="ui-control ui-tab ui-dock ui-dock-top ui-tab-head-hide" id="ui-172bb80260d" style="left: 0px; top: 0px; width: auto; height: 1024px; right: 0px; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="1" ui-id="TP_main" ui-class="UITab" dock-r="left:116px;top:111px;width:200px;height:100px;right:auto;bottom:auto" dock-h="1024" dock-w="200"><div class="ui-tab-heads" id="ui-172bb802610"><div class="ui-tab-head ui-tab-selected" id="ui-1730296de31">9059</div><div class="ui-tab-head" id="ui-17321ca5cff">9055</div><div class="ui-tab-head" id="ui-1732bd79d5d">3251</div></div><div class="ui-tab-pages" id="ui-172bb802613"><div class="ui-tab-page ui-container ui-tab-selected" id="ui-1730296de32" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-1730297b9fd" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="5" ui-id="PN_panel9059" ui-class="UIPanel" dock-r="left:146px;top:174px;width:848px;height:282px;right:auto;bottom:auto" dock-h="282" dock-w="848"><iframe class="ui-include" src="9059.html" frameborder="0" scrolling="0"></iframe></div></div><div class="ui-tab-page ui-container" id="ui-17321ca5d00" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-17321ca9fb1" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="5" ui-id="PN_panel9055" ui-class="UIPanel" dock-r="left:178px;top:152px;width:494px;height:249px;right:auto;bottom:auto" dock-h="249" dock-w="494"><iframe class="ui-include" src="9055.html" frameborder="0" scrolling="0"></iframe></div></div><div class="ui-tab-page ui-container" id="ui-1732bd79d5e" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-1732bd7c1f9" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="5" ui-id="PN_panel3251" ui-class="UIPanel" dock-r="left:169px;top:160px;width:507px;height:268px;right:auto;bottom:auto" dock-h="268" dock-w="507"><iframe class="ui-include" src="3251.html" frameborder="0" scrolling="0"></iframe></div></div></div></div>
+</div><xcomponent><xios><xio>{
+  "Name": "IO_03325001",
+  "Description": "CRDRCP302040",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "CDN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "INSG_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "INQ_FNSH_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "INQ_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "MMBR_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "AHST_HST_NEXTKEY_RCPT_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Number",
+      "Size": 7,
+      "Name": "AHST_HST_NEXTKEY_RCPT_SRN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Number",
+      "Size": 7,
+      "Name": "AHST_HST_NEXTKEY_RCPT_LRRN_SRN",
+      "GridData": []
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "CDN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "INSG_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "INQ_FNSH_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "INQ_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "MMBR_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 9,
+      "Name": "CARD_MBN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "INDV_STUN_SRL_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "BSUN_MNGM_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "MMBR_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "AHST_HST_NEXTKEY_RCPT_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 7,
+      "Name": "AHST_HST_NEXTKEY_RCPT_SRN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 7,
+      "Name": "AHST_HST_NEXTKEY_RCPT_LRRN_SRN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 5,
+      "Name": "AHST_HST_ROWCOUNT",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Grid",
+      "Size": -1,
+      "Name": "Grid1",
+      "GridData": [
+        {
+          "DataType": "String",
+          "Size": 3,
+          "Name": "CRD_PDCD"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "SLIP_BNG_YMD"
+        },
+        {
+          "DataType": "String",
+          "Size": 11,
+          "Name": "CARD_AMSL_SLN"
+        },
+        {
+          "DataType": "String",
+          "Size": 50,
+          "Name": "CRD_PDCD_NM"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "AMSL_YMD"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "MNRC_RFLC_YMD"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "STLM_YMD"
+        },
+        {
+          "DataType": "String",
+          "Size": 50,
+          "Name": "AFST_NM"
+        },
+        {
+          "DataType": "String",
+          "Size": 16,
+          "Name": "CDN"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "CARD_AMSL_AMT"
+        },
+        {
+          "DataType": "String",
+          "Size": 6,
+          "Name": "MNFE_RT"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "MNRC_PRNC_AMT"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "MNRC_FEE"
+        },
+        {
+          "DataType": "String",
+          "Size": 10,
+          "Name": "AHST_CNCL_DSNC_NM"
+        },
+        {
+          "DataType": "String",
+          "Size": 10,
+          "Name": "AHST_MNRC_DCD_NM"
+        },
+        {
+          "DataType": "String",
+          "Size": 20,
+          "Name": "AHST_PCSN_MDIA_NM"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "RCPT_YMD"
+        },
+        {
+          "DataType": "Number",
+          "Size": 7,
+          "Name": "RCPT_SRN"
+        },
+        {
+          "DataType": "Number",
+          "Size": 7,
+          "Name": "RCPT_LRRN_SRN"
+        }
+      ]
+    }
+  ]
+}</xio></xios><xcms><xcm>{
+  "Name": "CM_03325001",
+  "ServiceName": "CRDRCP302040",
+  "RefIoName": "IO_03325001",
+  "Input": [
+    {
+      "CDN": "CDN"
+    },
+    {
+      "INSG_YMD": "INSG_YMD"
+    },
+    {
+      "INQ_FNSH_YMD": "INQ_FNSH_YMD"
+    },
+    {
+      "INQ_DCD": "INQ_DCD"
+    },
+    {
+      "MMBR_DCD": "MMBR_DCD"
+    },
+    {
+      "AHST_HST_NEXTKEY_RCPT_YMD": "AHST_HST_NEXTKEY_RCPT_YMD"
+    },
+    {
+      "AHST_HST_NEXTKEY_RCPT_SRN": "AHST_HST_NEXTKEY_RCPT_SRN"
+    },
+    {
+      "AHST_HST_NEXTKEY_RCPT_LRRN_SRN": "AHST_HST_NEXTKEY_RCPT_LRRN_SRN"
+    }
+  ],
+  "Output": [
+    {
+      "CDN": "CDN"
+    },
+    {
+      "INSG_YMD": "INSG_YMD"
+    },
+    {
+      "INQ_FNSH_YMD": "INQ_FNSH_YMD"
+    },
+    {
+      "INQ_DCD": "INQ_DCD"
+    },
+    {
+      "MMBR_DCD": "MMBR_DCD"
+    },
+    {
+      "CARD_MBN": "CARD_MBN"
+    },
+    {
+      "INDV_STUN_SRL_NO": "INDV_STUN_SRL_NO"
+    },
+    {
+      "BSUN_MNGM_NO": "BSUN_MNGM_NO"
+    },
+    {
+      "MMBR_NM": "MMBR_NM"
+    },
+    {
+      "AHST_HST_NEXTKEY_RCPT_YMD": "AHST_HST_NEXTKEY_RCPT_YMD"
+    },
+    {
+      "AHST_HST_NEXTKEY_RCPT_SRN": "AHST_HST_NEXTKEY_RCPT_SRN"
+    },
+    {
+      "AHST_HST_NEXTKEY_RCPT_LRRN_SRN": "AHST_HST_NEXTKEY_RCPT_LRRN_SRN"
+    },
+    {
+      "AHST_HST_ROWCOUNT": "AHST_HST_ROWCOUNT"
+    },
+    {
+      "Grid1": "Grid1"
+    }
+  ]
+}</xcm></xcms></xcomponent><xjscript><script id='xjscript' type='text/plain'>// common.js import
+includeJSS("common","/KRG/0301/common.js");
+
+
+var httpQuerys = parseLocationQueryString();
+
+var G_MMBR_DCD = httpQuerys["MMBR_DCD"];
+var G_CDN      = httpQuerys["CDN"];
+
+// 결제청구내역(더보기 조회시 적재)
+var G_payData = [];
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//			공통 화면
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var iwin9059 = PN_panel9059.IncludeWindow;
+var iwin9055 = PN_panel9055.IncludeWindow;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//			개별 화면
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var iwin3251 = PN_panel3251.IncludeWindow;
+
+var loadScreenNo = "9059";
+
+function Form_OnLoad(e){    
+   // 세션스토리지 아이템 초기화
+   com.ss.clear();
+    
+   // 화면로딩 탭 뷰
+   ChangeTab(loadScreenNo);
+
+   // 선결제 내역 조회
+   sendRequest("step_pay_history");   
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			공통
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//페이지이동
+function ChangeTab(name){
+	TP_main.ChangeTab(name, Input_OnChangedTab);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+//화면 데이터 세팅
+function Input_OnChangedTab(e){	
+
+	let time = 0;
+	
+	com.screen.clearTimeoutEx();
+	
+	// 화면 탭이 변경될 경우 mp3 재생 정지
+	com.mp3.pause();
+	
+	//TODO : 타임아웃 시간 설정
+	// 송수신 화면은 시간 설정하지 않음
+	switch(e.after){
+		// 결제청구건 화면
+		case "3251":
+			time = 30000;
+			break;
+		// 송수신 처리 화면 : mp3 재생
+		case "9059":
+			com.mp3.play("/KRG/media/tran.mp3");
+			break;
+	}
+	
+	if (time > 0)
+		com.screen.setTimeoutEx(time, onScreenTimeout);
+		
+}
+
+// 타임아웃이 발생하면 거래가 취소되어 종료된다.
+function onScreenTimeout(){
+	console.log("[4040] Screen Timeout!!!");
+	com.screen.clearTimeoutEx();
+	// 거래 취소
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_TO);
+}
+
+// 로직 분기 함수
+function sendRequest(act){	
+	switch(act){
+		case "step_pay_history":
+		     // 결제청구내역 신규 조회
+		     initPayHistory();
+		   break;
+		case "step_pay_history_add":
+		     // 결제청구내역 더보기 조회
+		     addPayHistory();
+		   break;
+		case "pop_paymentInfo":
+		    // 결제청구건 팝업 조회 
+		    searchPaymentInfoPopup();
+			break;
+	}  // end switch
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			Tab 3251 - 결제청구건 조회
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 결제청구내역 신규 조회 실행 
+function initPayHistory() {
+    // 화면로딩 탭 뷰
+    ChangeTab(loadScreenNo);
+    
+	// 신규 조회시 초기화
+    G_payData = [];	
+	G_nextKeyYMD  = "";
+	G_nextKeySRN  = 0;
+	G_nextKeyLRRN = 0;
+	iwin3251.isAppend = false;
+	
+	fnSearchPaymentList();   
+}  // end func - initPayHistory
+
+
+// 결제청구내역 더보기 조회 실행 
+function addPayHistory() {
+    // 화면로딩 탭 뷰
+    ChangeTab(loadScreenNo);
+    
+    // 추가조회 셋팅
+	iwin3251.isAppend = true;
+	
+	fnSearchPaymentList();   
+}  // end func - initPayHistory
+
+
+var G_nextKeyYMD = "", G_nextKeySRN = 0, G_nextKeyLRRN = 0;
+
+// 결제청구건 조회
+function fnSearchPaymentList(){
+
+	let $PN_panel_wrap = iwin3251.$("div[ui-id='PN_panel_wrap']");
+	
+	let datetype  = $PN_panel_wrap.find("> span.ui-button.selected").attr("type"),
+		dateminus = $PN_panel_wrap.find("> span.ui-button.selected").attr("minus"),
+	    INQ_DCD   = iwin3251.DL_combobox_type.Value,
+	    currentDate = com.date.fnGetCurrDate(),
+	    prevMonthDate = com.date.fnGetAddDate(datetype, parseInt(dateminus, 10), currentDate);
+	    
+	console.log("fnSearchPaymentList >>>> datetype : " + datetype);
+	console.log("fnSearchPaymentList >>>> dateminus : " + dateminus);
+	console.log("fnSearchPaymentList >>>> INQ_DCD : " + INQ_DCD);
+	console.log("fnSearchPaymentList >>>> parseInt(dateminus, 10) : " + parseInt(dateminus, 10));
+	console.log("fnSearchPaymentList >>>> currentDate : " + currentDate);
+	console.log("fnSearchPaymentList >>>> prevMonthDate : " + prevMonthDate);
+	
+	console.log("fnSearchPaymentList >>>> G_MMBR_DCD : " + G_MMBR_DCD);
+	console.log("fnSearchPaymentList >>>> G_CDN : " + G_CDN);
+	
+	let headerData = "";		
+	let ret = Net.Request(
+		"CM_03325001", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			xioInput.CDN          = G_CDN;		
+			xioInput.MMBR_DCD     = G_MMBR_DCD;	
+			xioInput.INQ_DCD      = INQ_DCD;		
+			xioInput.INSG_YMD     = prevMonthDate;		
+			xioInput.INQ_FNSH_YMD = currentDate;
+	        xioInput.AHST_HST_NEXTKEY_RCPT_YMD = G_nextKeyYMD;
+	        xioInput.AHST_HST_NEXTKEY_RCPT_SRN = com.util.isNull(G_nextKeySRN) ? 0 : parseInt(G_nextKeySRN, 10); 
+	        xioInput.AHST_HST_NEXTKEY_RCPT_LRRN_SRN = com.util.isNull(G_nextKeyLRRN) ? 0 : parseInt(G_nextKeyLRRN, 10);
+
+			console.log("fnSearchPaymentList >>>> xioInput.CDN  :  "+xioInput.CDN);
+			console.log("fnSearchPaymentList >>>> xioInput.MMBR_DCD  :  "+xioInput.MMBR_DCD);
+			console.log("fnSearchPaymentList >>>> xioInput.INQ_DCD  :  "+xioInput.INQ_DCD);
+			console.log("fnSearchPaymentList >>>> xioInput.INSG_YMD  :  "+xioInput.INSG_YMD);
+			console.log("fnSearchPaymentList >>>> xioInput.INQ_FNSH_YMD  :  "+xioInput.INQ_FNSH_YMD);			
+			console.log("fnSearchPaymentList >>>> xioInput.AHST_HST_NEXTKEY_RCPT_YMD  :  "+xioInput.AHST_HST_NEXTKEY_RCPT_YMD);			
+			console.log("fnSearchPaymentList >>>> xioInput.AHST_HST_NEXTKEY_RCPT_SRN  :  "+xioInput.AHST_HST_NEXTKEY_RCPT_SRN);			
+			console.log("fnSearchPaymentList >>>> xioInput.AHST_HST_NEXTKEY_RCPT_LRRN_SRN  :  "+xioInput.AHST_HST_NEXTKEY_RCPT_LRRN_SRN);			
+			
+		},
+		function fcb_OnAfterResponse(result, xioOutput, errorCode) {
+			// OK
+			if (result == "00") {
+				console.log("  ========  xioOutput - Start  ========  ");
+				console.log("fnSearchPaymentList >>>> CARD_MBN : " + xioOutput.CARD_MBN);
+				console.log("fnSearchPaymentList >>>> INDV_STUN_SRL_NO : " + xioOutput.INDV_STUN_SRL_NO);
+				console.log("fnSearchPaymentList >>>> AHST_HST_NEXTKEY_RCPT_YMD : " + xioOutput.AHST_HST_NEXTKEY_RCPT_YMD);
+				console.log("fnSearchPaymentList >>>> AHST_HST_ROWCOUNT : " + xioOutput.AHST_HST_ROWCOUNT);
+				console.log("fnSearchPaymentList >>>> Grid1 : " + xioOutput.Grid1);				
+				console.log("  ========  xioOutput - End ========  ");
+
+	            G_nextKeyYMD = xioOutput.AHST_HST_NEXTKEY_RCPT_YMD;
+	            G_nextKeySRN = xioOutput.AHST_HST_NEXTKEY_RCPT_SRN; 
+	            G_nextKeyLRRN = xioOutput.AHST_HST_NEXTKEY_RCPT_LRRN_SRN;
+
+				const records = xioOutput.Grid1;	
+				
+			    // G_payData 결제청구내역 별도셋팅
+			    for(let i = 0, Len = records.length; i < Len; i++){
+			        let record = records[i];
+			      
+			        G_payData.push({CRD_PDCD : record.CRD_PDCD, SLIP_BNG_YMD : record.SLIP_BNG_YMD, CARD_AMSL_SLN : record.CARD_AMSL_SLN
+					       		  , CRD_PDCD_NM : record.CRD_PDCD_NM, AMSL_YMD : record.AMSL_YMD, MNRC_RFLC_YMD : record.MNRC_RFLC_YMD
+					       		  , STLM_YMD : record.STLM_YMD, AFST_NM : record.AFST_NM, CDN : record.CDN
+					       		  , CARD_AMSL_AMT : record.CARD_AMSL_AMT, MNFE_RT : record.MNFE_RT, MNRC_PRNC_AMT : record.MNRC_PRNC_AMT
+					       		  , MNRC_FEE : record.MNRC_FEE, AHST_CNCL_DSNC_NM : record.AHST_CNCL_DSNC_NM, AHST_MNRC_DCD_NM : record.AHST_MNRC_DCD_NM
+					       		  , AHST_PCSN_MDIA_NM : record.AHST_PCSN_MDIA_NM, RCPT_YMD : record.RCPT_YMD, RCPT_SRN : record.RCPT_SRN
+					       		  , RCPT_LRRN_SRN : record.RCPT_LRRN_SRN
+					       		 });
+			    }  // end for - records					
+				
+				// 결제 청구 내역 리스트 출력
+				iwin3251.fnCreatePayment(records,$.trim(xioOutput.AHST_HST_NEXTKEY_RCPT_YMD));
+				
+		    	// 결제청구 내역 화면 탭 뷰
+				ChangeTab("3251");				  
+
+				if(!iwin3251.isAppend){ // 신규 조회시
+				
+				   // 화면 위치 초기화
+	   			   iwin3251.PN_panel_wrap.element.scrollTop = 0;
+
+		           // 화면 스크롤 초기화
+			       UIScrollBar.creator.initialize(iwin3251.SB_scrollbar_wrap);	   
+			       
+				} else { // 더보기시 
+				
+				   // 스크롤 트랙버튼 위치 조정
+				   setScrollBarTrackbtnRatio();
+				   
+				}
+
+				// 화면 전환 이후 Invalidate 스크롤 체크(생성) 
+			    iwin3251.SB_scrollbar_wrap.Visible = true;
+				iwin3251.SB_scrollbar_wrap.Invalidate();		
+
+			} else {
+			   // Error Message
+			   console.log("fnSearchPaymentList xioOutput : " + xioOutput);
+			   console.log("fnSearchPaymentList result : " + result);
+			   console.log("fnSearchPaymentList errorCode : " + errorCode);
+			
+			   if(errorCode == "ICRDCOM00018"){
+			      // 초기화 - 기간별 청구총액			      
+			  	  const $payinfo_tbody = iwin3251.TL_table_payinfo.$.find("> table > tbody");
+				  iwin3251.TL_table_payinfo.DataCell(0,1,"text","0");
+				  $payinfo_tbody.find("> tr:eq(0) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+                  // 초기화 - 거래내역 없음
+	 			  let $PN_panel_trans = iwin3251.$("div[ui-id='PN_panel_trans']");
+	 	 	      $PN_panel_trans.html("<div class='list-panel'></div>");	
+	 	 	      iwin3251.LB_label_msg.Visible  = true;
+	 	 	      iwin3251.PN_panel_more.Visible = false;
+				  // 화면 전환 이후 Invalidate 스크롤 히든
+				  iwin3251.SB_scrollbar_wrap.Visible = false;
+		    	  // 결제청구 내역 화면 탭 뷰
+				  ChangeTab("3251");				
+				  
+				  console.log("fnSearchPaymentList $PN_panel_trans.html() : " + $PN_panel_trans.html());
+				  
+			   } else {
+                  // Error 메시지 화면 처리
+			      const iwin9055 = PN_panel9055.IncludeWindow;
+			      iwin9055.setErrorMsg(xioOutput);
+                 
+                  // 공통 메시지 화면 탭 뷰
+                  ChangeTab("9055");		
+                  
+				  setTimeout(function(){
+					  ATMCOMM.BusinessEnd(ATMCOMM.RET_NG);
+				  }, 5000);                   
+			   }
+			}			
+		}
+	);
+    
+}  // end func - fnSearchPaymentList
+
+
+// 더보기시 스크롤 트랙버튼 위치 조정
+function setScrollBarTrackbtnRatio(){
+	let afterTop = iwin3251.PN_panel_wrap.element.scrollTop;
+	
+	let sh  = iwin3251.PN_panel_wrap.element.scrollHeight;
+	let osh = iwin3251.PN_panel_wrap.element.offsetHeight;
+	console.log("afterTop ==>  "+afterTop);
+	console.log("sh ==>  "+sh)
+	console.log("osh ==>  "+osh);				
+	
+	let percentage = Math.round((afterTop / (sh-osh))*100);
+	console.log(percentage+"\tpercentage");
+	
+	let track    = iwin3251.SB_scrollbar_wrap.$.height();
+	let trackBtn = iwin3251.SB_scrollbar_wrap.$.find("span.trackbutton").height();
+	console.log(" track >>>> " + track);
+	console.log(" trackBtn >>>> " + trackBtn);
+	
+	let btnPosi = Math.round((percentage * (track - trackBtn)) / 100)
+	console.log(btnPosi+"\t@@@@@@@@@@ btnPosi");
+	
+	iwin3251.SB_scrollbar_wrap.$.find("span.trackbutton").css("top",btnPosi);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			Tab 3295 - 결제청구내역 모달 팝업 화면
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 결제청구정보 조회
+function searchPaymentInfoPopup(){
+
+  // 선택한 청구내역 인덱스
+  var payinfo_idx = com.ss.getItem("3252_payinfo_idx");
+  
+  var payinfo = [];
+  
+  // 결제청구정보 가져오기
+  if(G_payData != null){
+	  
+	  for(let i = 0, Len = G_payData.length; i < Len; i++){
+	      if(payinfo_idx == i){
+		     let record = G_payData[i];
+		     
+	         payinfo.push({CRD_PDCD : record.CRD_PDCD, SLIP_BNG_YMD : record.SLIP_BNG_YMD, CARD_AMSL_SLN : record.CARD_AMSL_SLN
+			       		 , CRD_PDCD_NM : record.CRD_PDCD_NM, AMSL_YMD : record.AMSL_YMD, MNRC_RFLC_YMD : record.MNRC_RFLC_YMD
+			       		 , STLM_YMD : record.STLM_YMD, AFST_NM : record.AFST_NM, CDN : record.CDN
+			       		 , CARD_AMSL_AMT : record.CARD_AMSL_AMT, MNFE_RT : record.MNFE_RT, MNRC_PRNC_AMT : record.MNRC_PRNC_AMT
+			       		 , MNRC_FEE : record.MNRC_FEE, AHST_CNCL_DSNC_NM : record.AHST_CNCL_DSNC_NM, AHST_MNRC_DCD_NM : record.AHST_MNRC_DCD_NM
+			       		 , AHST_PCSN_MDIA_NM : record.AHST_PCSN_MDIA_NM, RCPT_YMD : record.RCPT_YMD, RCPT_SRN : record.RCPT_SRN
+			       		 , RCPT_LRRN_SRN : record.RCPT_LRRN_SRN
+			       		 });
+		     break;
+	      }  // end if - payinfo_idx  
+	  }  // end for - records
+	  
+  }  // end if - G_payData   
+
+  console.log(" searchPaymentInfoPopup >>> payinfo ::: " + JSON.stringify(payinfo));
+  
+  // 결제 데이터 셋팅
+  com.ss.setItem("3252_payinfo",JSON.stringify(payinfo));
+  
+  // 부모 타임아웃 해지
+  com.screen.clearTimeoutEx();  
+  
+  // 모달 팝업으로 오픈
+  com.screen.createPopup("3252");
+   	   
+}
+
+
+function OnCloseCallback3252(result){
+	console.log("result = " + result);
+	if (result == "timeout"){
+		onScreenTimeout();
+		return;
+    } else if(result == true){
+        // 확인버튼-별도 처리 없음....
+	}
+	
+	// 부모 타임아웃 설정
+	com.screen.setTimeoutEx(60000, onScreenTimeout);	
+	
+}
+
+</script></xjscript></body>
+</html>

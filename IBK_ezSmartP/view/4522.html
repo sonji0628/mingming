@@ -1,0 +1,602 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm"><div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">대출</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 25px; width: 235px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">거래내역조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">닫기</span></span><span class="ui-control ui-button" id="ui-172729ea59d" style='border-radius: 10px; left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1; background-color: rgb(23, 107, 200);' anchor="0b1001" dock="0" ui-id="BT_Search" ui-class="UIButton" xonclick="BT_Search_OnClick" theme="" icon-image-padding="0,0,0,0" icon-image-align="center,middle"><span class="ui-content" style="left: 0px; top: 0px; right: 0px; bottom: 0px;">조회</span></span><span disabled="disabled" class="ui-control ui-button ui-disabled" id="ui-173327b4117" style='border-radius: 10px; left: auto; top: 31px; width: 258px; height: 80px; right: 511px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 2; background-color: rgb(23, 107, 200);' anchor="0b1001" dock="0" ui-id="BT_Print" ui-class="UIButton" xonclick="BT_Print_OnClick" theme="" icon-image-padding="0,0,0,0" icon-image-align="center,middle"><span class="ui-content" style="left: 0px; top: 0px; right: 0px; bottom: 0px;">출력</span></span><span class="ui-control ui-label" id="ui-1733280a78b" style='left: 487px; top: 60px; width: 307px; height: 32px; right: auto; bottom: auto; color: rgb(255, 113, 69); font-family: "Noto sans CJK KR", "맑은 고딕", "Arial", "IBK IDream L", "IBK IDream M", "IBK IDream B", "IBK IDream EB", "IBK IDream Symbol", "IBK IWishR"; font-size: 24px; font-weight: bold; z-index: 3;' anchor="0b0101" dock="0" ui-id="LB_label6" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">출력할 항목을 선택해 주세요.</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="1280"><span class="ui-control ui-label" id="ui-172d9d42775" style='left: 82px; top: 50px; width: 146px; height: 32px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_label2" ui-class="UILabel"><span class="ui-content">대출계좌 선택</span></span><span class="ui-control ui-combobox" id="ui-172df74ce65" style='border-color: rgb(214, 214, 214); left: 82px; top: 92px; width: 600px; height: 50px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 18px; z-index: 1; background-color: white;' anchor="0b0101" dock="0" ui-id="DL_combobox1" ui-class="UIComboBox"><span class="ui-content"></span><span class="ui-icon-image" fontsize="16">▼ </span><select><option selected="selected"></option><option value="001">기업은행</option><option value="002">국민은행</option></select></span><span class="ui-control ui-label" id="ui-172df778658" style='left: 82px; top: 172px; width: 146px; height: 32px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 2;' anchor="0b0101" dock="0" ui-id="LB_label3" ui-class="UILabel"><span class="ui-content">날짜선택</span></span><span class="ui-control ui-label" id="ui-17336a95939" style='left: 655px; top: 172px; width: 529px; height: 32px; right: auto; bottom: auto; color: rgb(255, 113, 69); font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 21px; z-index: 3;' anchor="0b0101" dock="0" ui-id="LB_label7" ui-class="UILabel"><span class="ui-content" style="justify-content: flex-end;"></span></span><span class="ui-control ui-button" id="ui-172df794227" style="border-radius: 50px; border: 2px solid rgb(181, 181, 181); border-image: none; left: 82px; top: 216px; width: 92px; height: 55px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 18px; z-index: 4; background-color: white;" anchor="0b0101" dock="0" ui-id="BT_1Week" ui-class="UIButton" xonclick="BT_1Week_OnClick" theme="" back-image-size="100% 100%"><span class="ui-content">1주일</span></span><span class="ui-control ui-button" id="ui-172df7ebc22" style="border-radius: 50px; border: 2px solid rgb(181, 181, 181); border-image: none; left: 182px; top: 216px; width: 92px; height: 55px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 18px; z-index: 5; background-color: white;" anchor="0b0101" dock="0" ui-id="BT_1Month" ui-class="UIButton" xonclick="BT_1Month_OnClick" theme="" back-image-size="100% 100%"><span class="ui-content" style="justify-content: center;">1개월</span></span><span class="ui-control ui-button" id="ui-172df7ebe6b" style="border-radius: 50px; border: 2px solid rgb(181, 181, 181); border-image: none; left: 282px; top: 216px; width: 92px; height: 55px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 18px; z-index: 6; background-color: white;" anchor="0b0101" dock="0" ui-id="BT_3Month" ui-class="UIButton" xonclick="BT_3Month_OnClick" theme="" back-image-size="100% 100%"><span class="ui-content">3개월</span></span><span class="ui-control ui-datepicker" id="ui-172df87ffa9" style='left: 648px; top: 217px; width: 250px; height: 53px; right: auto; bottom: auto; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 7;' anchor="0b0101" dock="0" ui-id="DP_datepicker2" ui-class="UIDatePicker" tick="1590937200000" xonselecteddate="DP_datepicker2_OnSelectedDate"><span class="ui-content">2020-06-01</span><span class="ui-icon-image"></span></span><span class="ui-control ui-label" id="ui-172df980359" style='left: 913px; top: 217px; width: 6px; height: 53px; right: auto; bottom: auto; color: rgb(64, 64, 64); font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 10px; z-index: 8;' anchor="0b0101" dock="0" ui-id="LB_label4" ui-class="UILabel"><span class="ui-content">~</span></span><span class="ui-control ui-datepicker" id="ui-172df93ba53" style='left: 934px; top: 217px; width: 250px; height: 53px; right: auto; bottom: auto; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 9;' anchor="0b0101" dock="0" ui-id="DP_datepicker3" ui-class="UIDatePicker" tick="1590937200000" xonselecteddate="DP_datepicker3_OnSelectedDate"><span class="ui-content">2020-06-01</span><span class="ui-icon-image"></span></span><div class="ui-control ui-panel ui-container" id="ui-172dff74e1f" style="left: 82px; top: 272px; width: 1102px; height: 435px; right: auto; bottom: auto; z-index: 10;" anchor="0b0101" dock="0" ui-id="PN_panel6" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-hide" id="ui-172fdbf9631" style="left: 265px; top: 125px; width: 532px; height: 268px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_No_Data" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-172fdbfe5cb" style="left: 234px; top: 33px; width: 80px; height: 75px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel5" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-172fdc196d3" style='left: 100px; top: 115px; width: 332px; height: 32px; right: auto; bottom: auto; font-family: "IBKIDreamM", "IBK iDream M", sans-serif; font-size: 36px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content" style="left: 0px; top: 0px; right: 0px; bottom: 0px;">거래내역이 없습니다.</span></span></div><div class="ui-control ui-panel ui-container ui-hide" id="ui-173368c3f6a" style="left: 0px; top: 40px; width: 1102px; height: 24px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-172e0112989" style="left: 0px; top: 0px; width: 119px; height: 24px; right: auto; bottom: auto; font-size: 22px; z-index: 0;" anchor="0b0101" dock="0" ui-id="LB_label5" ui-class="UILabel"><span class="ui-content">조회결과</span></span><div class="ui-control ui-panel ui-container" id="ui-172fdbbcf15" style="left: 760px; top: 0px; width: 342px; height: 24px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_CurDate" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-171a5ca9429" style='left: 0px; top: 0px; width: 127px; height: 24px; right: auto; bottom: auto; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important; font-size: 22px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_label8" ui-class="UILabel"><span class="ui-content">조회기준일시</span></span><span class="ui-control ui-label" id="ui-171a5d1c333" style='left: 127px; top: 0px; width: 215px; height: 24px; right: auto; bottom: auto; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important; font-size: 22px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label9" ui-class="UILabel"><span class="ui-content" style="left: 0px; top: 0px; right: 0px; bottom: 0px;"></span></span></div></div><div class="ui-control ui-panel ui-container" id="ui-17345ac7bfb" style="left: 0px; top: 75px; width: 1102px; height: 360px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_List" ui-class="UIPanel"></div></div><span class="ui-control ui-scrollbar" id="ui-172dffe3a48" style="left: 1218px; top: 350px; width: 32px; height: 360px; right: auto; bottom: auto; z-index: 11;" anchor="0b0101" dock="0" ui-id="SB_scrollbar1" ui-class="UIScrollBar" scroll-control-id="PN_List"><span class="track"></span><span class="trackbutton"></span></span></div></div>
+</div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js");
+
+var p = parent;
+var curDate;
+var rangeDate;
+var isValid;
+var scroll = false;
+var clicked = false;
+function Form_OnLoad(e)
+{
+	console.log("Init4522");
+	PN_No_Data.$.css({'height':'84%', 'margin':'60px', 'justify-content':'center', 'align-items':'center', 'flex-direction':'column'});
+	curDate = new Date();
+	isValid = true;
+}
+
+//4522화면 초기화 하는 함수
+function Setting_Loan(data)
+{
+	SB_scrollbar1.Visible=false;
+	BT_1Week.$.trigger("click");
+	
+	let tag =[];
+	
+	for(var k=0;k<data.accList.length;k++)
+	{
+		let r = data.accList[k];
+		let num = r.CUS_ACN.substring(11, r.CUS_ACN.length);
+		tag.push(""+'<option value="'+k+'">'+r.PDM+'- '+num+'</option>');
+	}
+	
+	DL_combobox1.$.find("select").html(""+'<option></option>'+tag.join(""));
+	
+	if(data.sort=="one")
+	{
+		LB_label6.Visible=true;
+		BT_Print.Visible=false;
+	}
+	else
+	{
+		LB_label6.Visible=false;
+		BT_Print.Visible=true;
+		BT_Print.$.css({'opacity':'0.3'});
+	}
+	
+	SB_scrollbar1.$.find("span.trackbutton").css({'top':'0'});
+	
+	PN_List.$.find("> div").remove();
+	
+	DL_combobox1.SelectedIndex = 0;
+	
+}
+
+//건별 조회 결과 출력하는 함수
+function Result_Search_One(data)
+{
+	LB_label7.Text="";
+	console.log("Result_Search_One");
+	console.log("data.std3220017F0Vo_ROWCOUNT: "+data.std3220017F0Vo_ROWCOUNT);
+	if(data.std3220017F0Vo_ROWCOUNT<1)
+	{
+		PN_panel1.Visible = false;
+		PN_No_Data.Visible = true;
+		SB_scrollbar1.Visible=false;
+	}
+	else
+	{
+		PN_panel1.Visible = true;
+		PN_No_Data.Visible = false;
+		
+		LB_label9.Text = p.getNowDate();
+		var count = data.std3220017F0Vo_ROWCOUNT;
+		SB_scrollbar1.$.find("span.trackbutton").css({'height': 'calc(100% / '+count+')'});
+		
+		SB_scrollbar1.Visible=true;
+		
+		var $temp = $("<temp></temp>");
+		var tags = [];
+		var ZeroCnt = 0;
+		var str = data.Grid3[0].TRN_AMT.split('.');
+		for(var k=0;k<str[0].length;k++)
+		{
+			if(str[0][k]!="0")
+			{
+				break;
+			}
+			else
+			{
+				ZeroCnt++;
+			}
+		}
+		
+		for(var k=0;k<count;k++)
+		{
+			var ZeroCnt = 0;
+			var str = data.Grid3[k].TRN_AMT.split('.');
+			for(var q=0;q<str[0].length;q++)
+			{
+				if(str[0][q]!="0")
+				{
+					break;
+				}
+				else
+				{
+					ZeroCnt++;
+				}
+			}
+			
+			if(str[0]>0)
+			{
+				var TRN_AMT = str[0].substr(ZeroCnt,str[0].length);
+				var money = com.util.Comma(TRN_AMT);
+			}
+			else
+			{
+				var money="0";
+			}
+			tags.push('<div class="list_info" index='+k+'>');
+			tags.push('	<img src="/KRG/media/ic_list_payment_arrow.png">');
+			tags.push('	<div class="info_container">');
+			tags.push('		<div class="left_wrapper">');
+			tags.push('			<span class="date_text" id="text1">' + data.Grid3[k].TRN_BASE_YMD_2 + '</span>');
+			tags.push('		</div>');
+			tags.push('		<div class="right_wrapper">');
+			tags.push('			<span class="note_text" id="text2">' + data.Grid3[k].LBTX_NM + '</span>');
+			tags.push('			<div class="money-wrapper">');
+			tags.push('				<span class="mon_text" id="text3">' + money + '</span><span class="T24">원</span>');
+			tags.push('			</div>');
+			tags.push('		</div>');
+			tags.push('	</div>');
+			tags.push('<i-button>');
+			tags.push('	<img src="/KRG/media/list_ic_next.png">');
+			tags.push('</i-button>');
+			tags.push('</div>');
+		}
+		
+		PN_List.$.html(""+'<div class="list-panel">'+tags.join("")+'</div>');
+
+		PN_List.$.css({'list-style':'none'});
+
+		PN_List.$.find("> div.list-panel > div.list_info").css({'display':'flex', 'align-items':'center', 'justify-content':'space-between', 'padding':'0 58px'});
+
+		PN_List.$.find("> div.list-panel > div.list_info + div.list_info").css({'margin-top':'8px'});
+
+		PN_List.$.find("> div.list-panel > div.list_info > img").css({'margin':'38px 0'});
+
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container").css({'display':'flex', 'flex':'1 1 auto', 'align-items':'center', 'justify-content':'space-between','padding':'0 20px'});
+
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.left_wrapper").css({'display':'inline-flex', 'flex-direction':'column'});
+
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.left_wrapper > span.date_text").css({'font-size':'21px', 'color':'#000'});
+
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper").css({'display':'inline-flex', 'flex-direction':'column'});
+		
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper > div").css({'display':'flex', 'align-items':'center', 'margin-top':'12px', 'font-size':'24px', 'color':'#000'});
+
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper > div.money-wrapper").css({'justify-content':'flex-end'});
+
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper > span.note_text").css({'font-size':'21px', 'color':'#000', 'text-align':'right'});
+
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper > div.money-wrapper > span.mon_text").css({'color':'#176bc8', 'font-size':'24px'});
+
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper > div.money-wrapper > span.T24").css({'font-size':'24px'});
+
+		PN_List.$.find("> div.list-panel >div.list_info > i-button").css({'border':'none', 'background':'none', 'margin':'38px 0'});
+		
+		PN_List.$.find("> div.list-panel > div.list_info").on("click", btnDown);
+		
+		function btnDown(e)
+		{	
+			var ob = this;
+			var index = $(ob).attr("index");
+			console.log("index: "+index);
+			console.log("data.Grid3[index].TRHS_SRN: "+data.Grid3[index].TRHS_SRN);
+			p.data.selectRow = data.Grid3[index];
+			setTimeout(p.ChangeTab("4523"));
+		}
+		
+		SB_scrollbar1.Invalidate();	
+	}
+}
+
+//일괄 계산서 조회 결과 출력해주는 함수
+function Result_Search_ALL(data)
+{
+	LB_label7.Text="";
+	console.log("Result_Search_ALL");
+	if(data.std3220017F0Vo_ROWCOUNT<1)
+	{
+		PN_panel1.Visible = false;
+		PN_No_Data.Visible = true;
+		SB_scrollbar1.Visible=false;
+	}
+	else
+	{
+		PN_panel1.Visible = true;
+		PN_No_Data.Visible = false;
+		BT_Print.$.css({'opacity':'1.0'});
+		
+		BT_Print.Enabled=true;
+		
+		LB_label9.Text = p.getNowDate();
+		var count = data.std3220017F0Vo_ROWCOUNT;
+		SB_scrollbar1.$.find("span.trackbutton").css({'height': 'calc(100% / '+count+')'});
+		
+		SB_scrollbar1.Visible=true;
+		
+		var $temp = $("<temp></temp>");
+		var tags = [];
+		var ZeroCnt = 0;
+		var str = data.Grid3[0].TRN_AMT.split('.');
+		for(var k=0;k<str[0].length;k++)
+		{
+			if(str[0][k]!="0")
+			{
+				break;
+			}
+			else
+			{
+				ZeroCnt++;
+			}
+		}
+		
+		for(var k=0;k<count;k++)
+		{
+			var ZeroCnt = 0;
+			var str = data.Grid3[k].TRN_AMT.split('.');
+			for(var q=0;q<str[0].length;q++)
+			{
+				if(str[0][q]!="0")
+				{
+					break;
+				}
+				else
+				{
+					ZeroCnt++;
+				}
+			}
+			if(str[0]>0)
+			{
+				var TRN_AMT = str[0].substr(ZeroCnt,str[0].length);
+				var money = com.util.Comma(TRN_AMT);
+			}
+			else
+			{
+				var money="0";
+			}
+			tags.push('<div class="list_info" index='+k+'>');
+			tags.push('	<img src="/KRG/media/ic_list_payment_arrow.png">');
+			tags.push('	<div class="info_container">');
+			tags.push('		<div class="left_wrapper">');
+			tags.push('			<span class="date_text" id="text1">' + data.Grid3[k].TRN_BASE_YMD_2 + '</span>');
+			tags.push('		</div>');
+			tags.push('		<div class="right_wrapper">');
+			tags.push('			<span class="note_text" id="text2">' + data.Grid3[k].LBTX_NM + '</span>');
+			tags.push('			<div class="money-wrapper">');
+			tags.push('				<span class="mon_text" id="text3">' + money + '</span><span class="T24">원</span>');
+			tags.push('			</div>');
+			tags.push('		</div>');
+			tags.push('	</div>');
+			tags.push('</div>');
+		}
+		
+		PN_List.$.html(""+'<div class="list-panel">'+tags.join("")+'</div>');
+		
+		PN_List.$.css({'list-style':'none'});
+	
+		PN_List.$.find("> div.list-panel > div.list_info").css({'display':'flex', 'align-items':'center', 'justify-content':'space-between', 'padding':'0 58px'});
+	
+		PN_List.$.find("> div.list-panel > div.list_info + div.list_info").css({'margin-top':'8px'});
+	
+		PN_List.$.find("> div.list-panel > div.list_info > img").css({'margin':'38px 0'});
+	
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container").css({'display':'flex', 'flex':'1 1 auto', 'align-items':'center', 'justify-content':'space-between','padding':'0 20px'});
+	
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.left_wrapper").css({'display':'inline-flex', 'flex-direction':'column'});
+		
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.left_wrapper > span.date_text").css({'font-size':'21px', 'color':'#000'});
+		
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper").css({'display':'inline-flex', 'flex-direction':'column'});
+		
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper > div").css({'display':'flex', 'align-items':'center', 'margin-top':'12px', 'font-size':'24px', 'color':'#000'});
+		
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper > div.money-wrapper").css({'justify-content':'flex-end'});
+		
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper > span.note_text").css({'font-size':'21px', 'color':'#000', 'text-align':'right'});
+		
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper > div.money-wrapper > span.mon_text").css({'color':'#176bc8', 'font-size':'24px'});
+		
+		PN_List.$.find("> div.list-panel > div.list_info > div.info_container > div.right_wrapper > div.money-wrapper > span.T24").css({'font-size':'24px'});
+		
+		SB_scrollbar1.Invalidate();	
+	}
+}
+
+//조회 버튼 눌렀을 때 호출 되는 함수
+function BT_Search_OnClick(e)
+{
+	if(DL_combobox1.SelectedIndex<-1)
+	{
+		return;
+	}
+	
+	PN_List.$.find("> div").remove();
+	
+	p.act = "Check_loan_breakdown";
+	p.data.SelectedIndex = DL_combobox1.SelectedIndex;
+	p.data.Input_INSG_YMD = p.DateToYMD(DP_datepicker2.Value);
+	p.data.Input_INQ_FNSH_YMD = p.DateToYMD(DP_datepicker3.Value);
+	p.data.Input_INSG_YM = p.DateToYM(DP_datepicker2.Value);
+	p.data.Input_INQ_FNSH_YM = p.DateToYM(DP_datepicker3.Value);
+	
+	console.log("data.SelectedIndex: "+p.data.SelectedIndex);
+	console.log("data.Input_INSG_YMD: "+p.data.Input_INSG_YMD);
+	console.log("data.Input_INQ_FNSH_YMD: "+p.data.Input_INQ_FNSH_YMD);
+	console.log("data.Input_INSG_YM: "+p.data.Input_INSG_YM);
+	console.log("data.Input_INQ_FNSH_YM: "+p.data.Input_INQ_FNSH_YM);
+	
+	setTimeout(function(){
+		p.ChangeTab("9059");
+		p.sendRequest(p.act);
+		SB_scrollbar1.$.find("span.trackbutton").css({'top':'0'});
+		});
+}
+
+//닫기 버튼 눌렀을 때 호출 되는 함수
+function BT_left_OnClick(e)
+{
+	p.SearchData=false;
+	setTimeout(p.ChangeTab("4521"));
+}
+
+function BT_Print_OnClick(e)
+{
+	p.data.Input_TRN_STTG_YMD = p.DateToYMD(DP_datepicker2.Value);
+	p.data.Input_TRN_FNSH_YMD = p.DateToYMD(DP_datepicker3.Value);
+	setTimeout(p.ChangeTab("4523"));
+}
+
+//1주일 버튼 눌렀을 때 호출 되는 함수
+function BT_1Week_OnClick(e)
+{
+	var temp = p.GetAddDate("D",-7,curDate);
+	var yy = temp.getFullYear();
+	var mm = temp.getMonth();
+	var dd = temp.getDate();
+	
+	rangeDate = new Date(yy,mm,dd);
+	
+	DP_datepicker2.Value = rangeDate;
+	DP_datepicker3.Value = curDate;
+	
+	BT_1Week.$.addClass("on");
+	BT_1Month.$.removeClass("on");
+	BT_3Month.$.removeClass("on");
+	ChangeColor();
+}
+
+//1개월 버튼 눌렀을 때 호출 되는 함수
+function BT_1Month_OnClick(e)
+{
+	var temp = p.GetAddDate("M",-1,curDate);
+	var yy = temp.getFullYear();
+	var mm = temp.getMonth();
+	var dd = temp.getDate();
+	
+	rangeDate = new Date(yy,mm,dd);
+	
+	DP_datepicker2.Value = rangeDate;
+	DP_datepicker3.Value = curDate;
+	
+	BT_1Month.$.addClass("on");
+	BT_1Week.$.removeClass("on");
+	BT_3Month.$.removeClass("on");
+	ChangeColor();
+}
+
+//3개월 버튼 눌렀을 때 호출 되는 함수
+function BT_3Month_OnClick(e)
+{
+	var temp = p.GetAddDate("M",-3,curDate);
+	var yy = temp.getFullYear();
+	var mm = temp.getMonth();
+	var dd = temp.getDate();
+	
+	rangeDate = new Date(yy,mm,dd);
+	
+	DP_datepicker2.Value = rangeDate;
+	DP_datepicker3.Value = curDate;
+	
+	BT_3Month.$.addClass("on");
+	BT_1Week.$.removeClass("on");
+	BT_1Month.$.removeClass("on");
+	ChangeColor();
+}
+
+//1주일, 1개월, 3개월 버튼을 눌렀을 때 색 변환해주는 함수
+function ChangeColor()
+{
+	if(BT_1Week.$.hasClass("on"))
+	{
+		BT_1Week.$.css({'border':'3px solid #176bc8'});
+	}
+	else
+	{
+		BT_1Week.$.css({'border':'3px solid #b5b5b5'});
+	}
+	
+	if(BT_1Month.$.hasClass("on"))
+	{
+		BT_1Month.$.css({'border':'3px solid #176bc8'});
+	}
+	else
+	{
+		BT_1Month.$.css({'border':'3px solid #b5b5b5'});
+	}
+	
+	if(BT_3Month.$.hasClass("on"))
+	{
+		BT_3Month.$.css({'border':'3px solid #176bc8'});
+	}
+	else
+	{
+		BT_3Month.$.css({'border':'3px solid #b5b5b5'});
+	}
+}
+
+//조회시작 일자가 변경될 때 마다 호출 되는 함수
+function DP_datepicker2_OnSelectedDate(e)
+{
+	BT_1Week.$.removeClass("on");
+	BT_1Month.$.removeClass("on");
+	BT_3Month.$.removeClass("on");
+	
+	var year = e.after.getFullYear();
+	var month = e.after.getMonth();
+	var day = e.after.getDate();
+	
+	var ymd = new Date(year, month, day);
+	ChangeColor();
+	console.log("ymd: "+parseInt(ymd));
+	console.log("DP_datepicker3.Value: "+parseInt(DP_datepicker3.Value));
+	
+	if(ymd.getFullYear()>DP_datepicker3.Value.getFullYear())
+	{
+		LB_label7.Text="조회시작일자가 종료일자보다 미래일자가 될 수 없습니다.";
+		DP_datepicker3.Value = ymd;
+		return;
+	}
+	else if(ymd.getFullYear()==DP_datepicker3.Value.getFullYear())
+	{
+		if(ymd.getMonth()>DP_datepicker3.Value.getMonth())
+		{
+			LB_label7.Text="조회시작일자가 종료일자보다 미래일자가 될 수 없습니다.";
+			DP_datepicker3.Value = ymd;
+			return;
+		}
+		else if(ymd.getMonth()==DP_datepicker3.Value.getMonth())
+		{
+			if(ymd.getDate()>DP_datepicker3.Value.getDate())
+			{
+				LB_label7.Text="조회시작일자가 종료일자보다 미래일자가 될 수 없습니다.";
+				DP_datepicker3.Value = ymd;
+				return;
+			}
+		}
+	}
+	
+	IsValidationDate(ymd, DP_datepicker3.Value);
+}
+
+//조회종료 일자가 변경될 때 마다 호출 되는 함수
+function DP_datepicker3_OnSelectedDate(e)
+{
+	BT_1Week.$.removeClass("on");
+	BT_1Month.$.removeClass("on");
+	BT_3Month.$.removeClass("on");
+	
+	var year = e.after.getFullYear();
+	var month = e.after.getMonth();
+	var day = e.after.getDate();
+	
+	var ymd = new Date(year, month, day);
+	ChangeColor();
+	
+	console.log("조회시작년: "+DP_datepicker2.Value.getFullYear());
+	console.log("조회시작월: "+DP_datepicker2.Value.getMonth());
+	console.log("조회시작일: "+DP_datepicker2.Value.getDate());
+	console.log("조회종료년: "+ymd.getFullYear());
+	console.log("조회종료월: "+ymd.getMonth());
+	console.log("조회종료일: "+ymd.getDate());
+	if(DP_datepicker2.Value.getFullYear()>ymd.getFullYear())
+	{
+		console.log("!");
+		LB_label7.Text="조회시작일자가 종료일자보다 미래일자가 될 수 없습니다.";
+		DP_datepicker2.Value = ymd;
+		return;
+	}
+	else if(DP_datepicker2.Value.getFullYear()==ymd.getFullYear())
+	{
+		if(DP_datepicker2.Value.getMonth()>ymd.getMonth())
+		{
+			LB_label7.Text="조회시작일자가 종료일자보다 미래일자가 될 수 없습니다.";
+			DP_datepicker2.Value = ymd;
+			return;
+		}
+		else if(DP_datepicker2.Value.getMonth()==ymd.getMonth())
+		{
+			if(DP_datepicker2.Value.getDate()>ymd.getDate())
+			{
+				console.log("$");
+				LB_label7.Text="조회시작일자가 종료일자보다 미래일자가 될 수 없습니다.";
+				DP_datepicker2.Value = ymd;
+				return;
+			}
+		}
+	}
+	IsValidationDate(DP_datepicker2.Value, ymd);
+	
+	if(isValid==false)
+	{
+		e.after.setYear(DP_datepicker3.Value.getFullYear());
+		e.after.setMonth(DP_datepicker3.Value.getMonth());
+		e.after.setDate(DP_datepicker3.Value.getDate());
+	}
+}
+
+//조회 가능 기간인지 체크하는 함수
+function IsValidationDate(pPrevDate, pNextDate)
+{
+	console.log("pPrevDate: "+pPrevDate);
+	console.log("pNextDate: "+pNextDate);	
+	if(pPrevDate==null||pNextDate==null)
+	{
+		return;
+	}
+	var year = pPrevDate.getFullYear();
+	var month = pPrevDate.getMonth();
+	var day = pPrevDate.getDate();
+	
+	var prevDate = new Date(year, month, day);
+	
+	year = pNextDate.getFullYear();
+	month = pNextDate.getMonth();
+	day = pNextDate.getDate();
+		
+	var nextDate = new Date(year, month, day);
+	
+	console.log("prevDate: "+prevDate);
+	console.log("nextDate: "+nextDate);
+	var dayTime = 24*60*60*1000;
+	var monthTime = dayTime*30;
+	var diffDate = nextDate - prevDate;
+	isValid = parseInt(diffDate/dayTime, 10) > 365 ? false : true;
+	console.log("Calc: "+ parseInt(diffDate/dayTime, 10));
+	console.log("diffDate: "+diffDate);
+	console.log("isValid: "+isValid);
+	if(isValid)
+	{
+		LB_label7.Text="";
+	}
+	else
+	{
+		year = prevDate.getFullYear();
+		month = prevDate.getMonth()+1;
+		day = prevDate.getDate();
+		
+		LB_label7.Text=year+"년 "+month+"월 "+day+"일 이후부터 최대 1년까지 조회가 가능합니다.";
+		
+		prevDate.setYear(prevDate.getFullYear()+1);
+		
+		year = prevDate.getFullYear();
+		month = prevDate.getMonth();
+		day = prevDate.getDate();
+		
+		result = new Date(year, month, day);
+		
+		DP_datepicker3.Value = result;
+		
+		console.log("@DP_datepicker3.Value: "+DP_datepicker3.Value);
+	}
+	
+}</script></xjscript></body>
+</html>

@@ -1,0 +1,587 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container ide-hide-outline" id="ui-document" lang="kr" style="background-color: transparent;" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1280,1024"><div class="ui-control ui-tab ui-dock ui-dock-top ui-tab-head-hide" id="ui-172bb80260d" style="left: 0px; top: 0px; width: auto; height: 1024px; right: 0px; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UITab" ui-id="TP_main" dock="1" anchor="0b0101" dock-w="200" dock-h="1024" dock-r="left:116px;top:111px;width:200px;height:100px;right:auto;bottom:auto"><div class="ui-tab-heads" id="ui-172bb802610"><div class="ui-tab-head ui-tab-selected" id="ui-1730296de31">9059</div><div class="ui-tab-head" id="ui-17321ca5cff">9055</div><div class="ui-tab-head" id="ui-1732bd79d5d">3171</div></div><div class="ui-tab-pages" id="ui-172bb802613"><div class="ui-tab-page ui-container ui-tab-selected" id="ui-1730296de32" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-1730297b9fd" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel9059" dock="5" anchor="0b0101" dock-w="848" dock-h="282" dock-r="left:146px;top:174px;width:848px;height:282px;right:auto;bottom:auto"><iframe class="ui-include" src="9059.html" frameborder="0" scrolling="0"></iframe></div></div><div class="ui-tab-page ui-container" id="ui-17321ca5d00" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-17321ca9fb1" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel9055" dock="5" anchor="0b0101" dock-w="494" dock-h="249" dock-r="left:178px;top:152px;width:494px;height:249px;right:auto;bottom:auto"><iframe class="ui-include" src="9055.html" frameborder="0" scrolling="0"></iframe></div></div><div class="ui-tab-page ui-container" id="ui-1732bd79d5e" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-1732bd7c1f9" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel3171" dock="5" anchor="0b0101" dock-w="507" dock-h="268" dock-r="left:169px;top:160px;width:507px;height:268px;right:auto;bottom:auto"><iframe class="ui-include" src="3171.html" frameborder="0" scrolling="0"></iframe></div></div></div></div>
+</div><xcomponent><xios><xio>{
+  "Name": "IO_03316003",
+  "Description": "CRDPNT000022",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 15,
+      "Name": "RRN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "CDN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "BZN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "BSUN_MNGM_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CUS_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "PNT_APLC_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "INSG_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "INQ_FNSH_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "CTNT_KEY_CON",
+      "GridData": []
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 4,
+      "Name": "RPCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 40,
+      "Name": "BCCD_TLRS_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "CTNT_KEY_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 5,
+      "Name": "PNT_USE_HST_ROWCOUNT",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Grid",
+      "Size": -1,
+      "Name": "Grid1",
+      "GridData": [
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "RGSN_YMD"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "CNCL_YMD"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "USE_PNT"
+        },
+        {
+          "DataType": "String",
+          "Size": 50,
+          "Name": "PNT_USE_CLSF_NM"
+        }
+      ]
+    }
+  ]
+}</xio></xios><xcms><xcm>{
+  "Name": "CM_03317001",
+  "ServiceName": "CRDPNT000022",
+  "RefIoName": "IO_03316003",
+  "Input": [
+    {
+      "RRN": "RRN"
+    },
+    {
+      "CDN": "CDN"
+    },
+    {
+      "BZN": "BZN"
+    },
+    {
+      "BSUN_MNGM_NO": "BSUN_MNGM_NO"
+    },
+    {
+      "CUS_DCD": "CUS_DCD"
+    },
+    {
+      "PNT_APLC_DCD": "PNT_APLC_DCD"
+    },
+    {
+      "INSG_YMD": "INSG_YMD"
+    },
+    {
+      "INQ_FNSH_YMD": "INQ_FNSH_YMD"
+    },
+    {
+      "CTNT_KEY_CON": "CTNT_KEY_CON"
+    }
+  ],
+  "Output": [
+    {
+      "RPCD": "RPCD"
+    },
+    {
+      "BCCD_TLRS_CON": "BCCD_TLRS_CON"
+    },
+    {
+      "CTNT_KEY_CON": "CTNT_KEY_CON"
+    },
+    {
+      "PNT_USE_HST_ROWCOUNT": "PNT_USE_HST_ROWCOUNT"
+    },
+    {
+      "Grid1": "Grid1"
+    }
+  ]
+}</xcm></xcms></xcomponent><xjscript><script id='xjscript' type='text/plain'>// common.js import
+//importJSS("common", "common.js");
+includeJSS("common","/KRG/0301/common.js");
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//			공통 화면
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var iwin9059 = PN_panel9059.IncludeWindow;
+var iwin9055 = PN_panel9055.IncludeWindow;
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//			개별 화면
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var iwin3171 = PN_panel3171.IncludeWindow;
+
+var loadScreenNo = "9059";
+
+function Form_OnLoad(e){    
+   // 화면로딩 탭 뷰
+   ChangeTab(loadScreenNo);
+	  	  
+   // 포인트 사용내역 조회 신규 조회
+   sendRequest("step_point_history");   
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			공통
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//페이지이동
+function ChangeTab(name){
+	TP_main.ChangeTab(name, Input_OnChangedTab);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+//화면 데이터 세팅
+function Input_OnChangedTab(e){	
+
+	let time = 0;
+	
+	com.screen.clearTimeoutEx();
+	
+	// 화면 탭이 변경될 경우 mp3 재생 정지
+	com.mp3.pause();
+	
+	//TODO : 타임아웃 시간 설정
+	// 송수신 화면은 시간 설정하지 않음
+	switch(e.after){
+		// 포인트 내역조회
+		case "3171":
+			time = 30000;
+			break;
+		// 공통 메시지
+		case "9055":
+		    time = 30000;
+			break;			
+		// 송수신 처리 화면 : mp3 재생
+		case "9059":
+			com.mp3.play("/KRG/media/tran.mp3");
+			break;
+	}
+	// 타임아웃 설정
+	if (time > 0)
+		com.screen.setTimeoutEx(time, onScreenTimeout);
+}
+
+// 타임아웃이 발생하면 거래가 취소되어 종료된다.
+function onScreenTimeout(){
+	console.log("[4040] Screen Timeout!!!");
+	com.screen.clearTimeoutEx();
+	// 거래 취소
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_TO);
+}
+
+// 로직 분기 함수
+function sendRequest(act){	
+	switch(act){
+		case "step_point_history":
+		     // 포인트 사용내역 조회 신규 조회시
+			 iwin3171.BT_button_1mm_OnClick(null);
+			 initPointHistory();
+		   break;
+	}  // end switch
+}
+
+// 인증을 위한 핸드폰번호
+//var gCellPhone = "";	
+// 이름
+//var gCSM = "";			
+// 실명번호 
+var gRNN = ATMCOMM.GetInfo("jumin").trim();
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			Tab 3171 - 포인트 사용내역 조회
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var firstKey = "", nextKey= "", isNext = false;
+
+// 포인트 사용내역 재조회시 파라메터 초기화후 실행 
+function initPointHistory() {
+    // 화면로딩 탭 뷰
+    ChangeTab(loadScreenNo);
+    
+    // 초기화
+	firstKey = "", nextKey= "", isNext = false;
+	let $PN_panel_pt = iwin3171.$("div[ui-id='PN_panel_pt']");
+	$PN_panel_pt.html("");	
+	   			   
+    searchPointHistory(undefined,true);
+}  // end func - initPointHistory
+
+
+// 포인트 사용내역 조회 
+function searchPointHistory(nextKey,isFirst){
+
+	// 조회일시 셋팅
+	iwin3171.LB_label_date.$.html(com.date.nowDate());
+	// 출력 메시지 히든
+	iwin3171.LB_label_msg.Visible    = false;
+
+	let $PN_panel_pt = iwin3171.$("div[ui-id='PN_panel_pt']");
+	
+	// 리스트 초기화
+    if (!isNext) {
+		$PN_panel_pt.html("");	
+    }
+    
+    const fromDate = iwin3171.DP_datepicker_st.Text.replace(/[-]/g,'');
+    const toDate   = iwin3171.DP_datepicker_ed.Text.replace(/[-]/g,'');  
+
+    // 날짜체크
+    if( parseInt(fromDate) >  parseInt(toDate) ) {
+	    iwin3171.LB_label_msg.$.html("<span style='color:#000000;'>조회시작일자가 종료일자보다 미래일자가 될 수 없습니다.</span>");   
+	    iwin3171.LB_label_msg.Visible    = true;
+		iwin3171.SB_scrollbar_pt.Visible = false;
+    	$PN_panel_pt.css("visibility","hidden");		
+    	ChangeTab("3171");
+        return;
+    } 
+    
+    // 스크롤 뷰
+    iwin3171.SB_scrollbar_pt.Visible = true;
+   
+    let CTNT_KEY_CON = "";
+    if (nextKey) {
+        CTNT_KEY_CON = nextKey;   // 포인트신청구분코드
+    } else {
+    	if(isFirst != true){ return; } 
+    }    
+
+	let headerData = "";		
+	let ret = Net.Request(
+		"CM_03317001", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			xioInput.RRN          = gRNN;		
+			xioInput.CUS_DCD      = "1";		
+			xioInput.PNT_APLC_DCD = "1";		
+			xioInput.INSG_YMD     = iwin3171.DP_datepicker_st.Text.replace(/[-]/g,'');		
+			xioInput.INQ_FNSH_YMD = iwin3171.DP_datepicker_ed.Text.replace(/[-]/g,'');
+			xioInput.CTNT_KEY_CON = CTNT_KEY_CON;
+			
+			console.log("searchPointHistory >>>> xioInput.RRN  :  "+xioInput.RRN);
+			console.log("searchPointHistory >>>> xioInput.INSG_YMD  :  "+xioInput.INSG_YMD);
+			console.log("searchPointHistory >>>> xioInput.INQ_FNSH_YMD  :  "+xioInput.INQ_FNSH_YMD);
+			console.log("searchPointHistory >>>> xioInput.CTNT_KEY_CON  :  "+xioInput.CTNT_KEY_CON);			
+		},
+		function fcb_OnAfterResponse(result, xioOutput, errorCode) {
+			// OK
+			if (result == "00") {
+				console.log("  ========  xioOutput - Start  ========  ");
+				console.log("searchPointHistory >>>> RPCD : " + xioOutput.RPCD);
+				console.log("searchPointHistory >>>> BCCD_TLRS_CON : " + xioOutput.BCCD_TLRS_CON);
+				console.log("searchPointHistory >>>> CTNT_KEY_CON : " + xioOutput.CTNT_KEY_CON);
+				console.log("searchPointHistory >>>> PNT_USE_HST_ROWCOUNT : " + xioOutput.PNT_USE_HST_ROWCOUNT);
+				console.log("searchPointHistory >>>> Grid1 : " + xioOutput.Grid1);			
+				console.log("  ========  xioOutput - End ========  ");
+
+				const records = xioOutput.Grid1;	
+				
+		        if (records.length == 0) {
+				   iwin3171.LB_label_msg.$.html('<span class="ui-content" style="justify-content: center;"><span style="color:#f45408;">거래내역이 없습니다.</span></span>');
+				   iwin3171.LB_label_msg.Visible = true;
+				   iwin3171.SB_scrollbar_pt.Visible = false;
+			       $PN_panel_pt.css("visibility","hidden");		
+			       
+		    	    // 포인트 사용내역 조회 탭 뷰
+					ChangeTab("3171");    
+					
+					// 신규 조회시
+					if(isFirst){
+				      // 화면 위치 초기화
+				      iwin3171.PN_panel_pt.element.scrollTop = 0;
+					}
+    
+		            // 화면 스크롤 초기화
+			        UIScrollBar.creator.initialize(iwin3171.SB_scrollbar_pt);	   
+			       
+					// 화면 전환 이후 Invalidate 스크롤 체크(생성) 
+					iwin3171.SB_scrollbar_pt.Invalidate();
+			       
+		        } else if (records.length <= 10) {		   
+		        
+	                if (firstKey === '' && records.length < 10) {
+	                
+	                    // 리스트 저장된 내용에 대해 반복 그려주는 로직
+	                    isNext = false;
+	                    iwin3171.drawPoint(records);
+
+						$PN_panel_pt.find("> div.list-panel > div.list_info").each(function(i){
+							let $this = $(this);
+							$this.css({'border': '1px solid #9c9c9c'});
+							$this.mousedown(function(){
+							    comSelectAnimate.call(this,iwin3171.$("div[ui-id='PN_panel_pt'] > div.list-panel > div.list_info"));
+							});
+						});
+						$PN_panel_pt.find("> div.list-panel > div.list_info").css("visibility","visible");
+		
+				    	// 포인트 사용내역 조회 탭 뷰
+    					ChangeTab("3171");
+    					
+						// 신규 조회시
+						if(isFirst){
+					      // 화면 위치 초기화
+					      iwin3171.PN_panel_pt.element.scrollTop = 0;
+						}
+    					    
+		            	// 화면 스크롤 초기화
+			        	UIScrollBar.creator.initialize(iwin3171.SB_scrollbar_pt);	   
+    					
+						// 화면 전환 이후 Invalidate 스크롤 체크(생성) 
+						iwin3171.SB_scrollbar_pt.Invalidate();
+	
+	                } else if (firstKey !== '' && records.length < 10) {
+	                
+	                    isNext = false;
+	                    iwin3171.drawPoint(records);
+	                    
+						$PN_panel_pt.find("> div.list-panel > div.list_info").each(function(i){
+							let $this = $(this);
+							$this.css({'border': '1px solid #9c9c9c'});
+							$this.mousedown(function(){
+							    comSelectAnimate.call(this,iwin3171.$("div[ui-id='PN_panel_pt'] > div.list-panel > div.list_info"));
+							});
+						});
+						$PN_panel_pt.find("> div.list-panel > div.list_info").css("visibility","visible");		                    
+	                    
+				    	// 포인트 사용내역 조회 탭 뷰
+    					ChangeTab("3171");
+    					
+						// 신규 조회시
+						if(isFirst){
+					      // 화면 위치 초기화
+					      iwin3171.PN_panel_pt.element.scrollTop = 0;
+						}
+    
+		            	// 화면 스크롤 초기화
+			        	UIScrollBar.creator.initialize(iwin3171.SB_scrollbar_pt);	   
+    					
+						// 화면 전환 이후 Invalidate 스크롤 체크(생성) 
+						iwin3171.SB_scrollbar_pt.Invalidate();
+	
+	                } else if (firstKey === '' && records.length === 10) {
+	                
+	                    firstKey = xioOutput.CTNT_KEY_CON;
+	                    // 리스트 저장된 내용에 대해 반복 그려주는 로직
+	                    isNext = true;
+	                    iwin3171.drawPoint(records);
+	                    setTimeout(searchPointHistory, 100, firstKey);
+	                    
+	                } else if (firstKey !== '' && records.length === 10) {
+	                
+	                    nextKey = xioOutput.CTNT_KEY_CON;
+	                    // 시뮬레이터인 경우, 빠져나가도록 처리 (같은 다음키가 반복됨)
+	                    if (firstKey == nextKey) {
+	                        isNext = false;
+	                        // 리스트 저장된 내용에 대해 반복 그려주는 로직
+	                        iwin3171.drawPoint(records);
+	                        
+							$PN_panel_pt.find("> div.list-panel > div.list_info").each(function(i){
+								let $this = $(this);
+								$this.css({'border': '1px solid #9c9c9c'});
+								$this.mousedown(function(){
+								    comSelectAnimate.call(this,iwin3171.$("div[ui-id='PN_panel_pt'] > div.list-panel > div.list_info"));
+								});
+							});
+							$PN_panel_pt.find("> div.list-panel > div.list_info").css("visibility","visible");		                    
+	
+				    	    // 포인트 사용내역 조회 탭 뷰
+    						ChangeTab("3171");    
+    						
+							// 신규 조회시
+							if(isFirst){
+						      // 화면 위치 초기화
+						      iwin3171.PN_panel_pt.element.scrollTop = 0;
+							}
+    
+		            		// 화면 스크롤 초기화
+			        		UIScrollBar.creator.initialize(iwin3171.SB_scrollbar_pt);	   
+	   					
+							// 화면 전환 이후 Invalidate 스크롤 체크(생성) 
+							iwin3171.SB_scrollbar_pt.Invalidate();
+		
+	                    } else {
+	                        isNext = true;
+	                        // 리스트 저장된 내용에 대해 반복 그려주는 로직
+	                        iwin3171.drawPoint(records);
+	                        // 재조회
+	                        setTimeout(searchPointHistory, 100, nextKey);	                        
+	                    }
+	                    
+	                 }  // end if - firstKey                  
+                	
+		        }  // end if - records
+											     							     
+			} else {
+				// Error Message
+				console.log("searchPointHistory xioOutput : " + xioOutput);
+				console.log("searchPointHistory result : " + result);
+				console.log("searchPointHistory errorCode : " + errorCode);
+			
+                // Error 메시지 화면 처리
+			    const iwin9055 = PN_panel9055.IncludeWindow;
+			    iwin9055.setErrorMsg(xioOutput);
+			    
+                // 공통 메시지 화면 탭 뷰
+                ChangeTab("9055");			
+                
+				setTimeout(function(){
+					ATMCOMM.BusinessEnd(ATMCOMM.RET_NG);
+				}, 5000);                 
+			}			
+		}
+	);
+    
+}  // end func - searchPointHistory
+
+/****
+// 날짜 가져오기
+function fnNowDate(delimiter,delimiter2){
+		// 시간표시
+		var now = new Date();
+		var yyyy = now.getFullYear();
+		var mm = com.util.generateZero(now.getMonth() + 1);
+		var dd = com.util.generateZero(now.getDate());
+		var hh = com.util.generateZero(now.getHours());
+		var mi = com.util.generateZero(now.getMinutes());
+		var ss = com.util.generateZero(now.getSeconds());       
+	    
+	  if(com.util.isNull(delimiter)){
+	  	 delimiter = ".";
+	  }
+	  
+	  if(com.util.isNull(delimiter2)){
+	  	 delimiter2 = ":";
+	  }
+	    
+	  return yyyy + delimiter + mm + delimiter + dd + ' ' + hh + delimiter2 + mi + delimiter2 + ss;
+}
+
+
+
+// 콤마
+function fnComma(x){
+	x = String(x).split(",").join("");
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+// null 체크
+function fnIsNull(obj){
+    if ((obj == null) || (obj == undefined) || (obj == "")) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// 한자리수 숫자에 0붙여주기
+function fnGenerateZero(str)
+{    	    	   
+   if(str < 10) str = "0" + str;	
+     return str
+}		
+****/</script></xjscript></body>
+</html>

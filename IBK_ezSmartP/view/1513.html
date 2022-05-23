@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1541,1158" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171aac7d84c" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel13" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171aac7d850" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-blue" id="ui-171aac7d851" style='left: 660px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_button12" ui-class="UIButton" theme="blue" xonclick="BT_button12_OnClick"><span class="ui-content">통장출금 등록</span></span><span class="ui-control ui-button theme-orange" id="ui-171c36b8411" style='left: 362px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_button9" ui-class="UIButton" theme="orange" xonclick="BT_button9_OnClick"><span class="ui-content">거래종료</span></span></div><div class="ui-control ui-panel ui-container" id="ui-171aac7d854" style="left: 140px; top: 384px; width: 1001px; height: 379px; right: auto; bottom: auto; z-index: 1; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_panel62" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/sample_img_05.png");'></span></div><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><span class="ui-control ui-label" id="ui-171c36a6928" style="left: 330px; top: 346px; width: 620px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 3;" anchor="0b0101" dock="0" ui-id="LB_label39" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">통장 출금 등록도 이어서 진행하시겠습니까?</span></span><div class="ui-control ui-panel ui-container" id="ui-1721724bbb9" style="left: 140px; top: 194px; width: 1001px; height: 115px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-171aac7d84f" style='left: 0px; top: 0px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_label104" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">무매체출금 등록이</span></span><span class="ui-control ui-label" id="ui-171aac7d852" style='left: 330px; top: 59px; width: 106px; height: 56px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-family: "IBK IDream M"; font-size: 54px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label106" ui-class="UILabel"><span class="ui-content" style="justify-content: flex-start;">완료</span></span><span class="ui-control ui-label" id="ui-171aac7d853" style='left: 432px; top: 59px; width: 420px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 2;' anchor="0b0101" dock="0" ui-id="LB_label107" ui-class="UILabel"><span class="ui-content" style="justify-content: flex-start;">되었습니다.</span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>let httpQuerys = parseLocationQueryString();
+
+let p = parent;
+var viewType;
+
+function Form_OnLoad(e){
+
+}
+
+function goLastPage() {
+	viewType = p.allParamData.tranFlag; // 1 : 무매체 등록, 2: 통장출금 등록, 3: 무매체 한도변경
+	// 무매체_S 
+	if(viewType == "1"){
+		LB_label104.Text = '무매체출금 등록이';
+		if(p.allParamData.NOMD_DWOT_RGSN_YN == "N" && p.allParamData.BKNB_DROT_RGSN_YN == "N") {
+			// 화면 그대로 출력
+			BT_button12.Text = "통장출금 등록";
+			LB_label39.Text = '통장 출금 등록도 이어서 진행하시겠습니까?';
+		} else if(p.allParamData.NOMD_DWOT_RGSN_YN == "N" && p.allParamData.BKNB_DROT_RGSN_YN == "Y") {
+			// 거래종료 버튼
+			LB_label39.$.remove();
+			BT_button12.$.remove();
+			BT_button9.$.css('left','511px')
+			LB_label104.$.css('text-align','center');
+		}
+	}// 무매체_E
+	
+	// 통장출금 등록_S
+	else if(viewType == "2"){
+		LB_label104.Text = '통장출금 등록이';
+		if(p.allParamData.NOMD_DWOT_RGSN_YN == "N" && p.allParamData.BKNB_DROT_RGSN_YN == "N") {
+			// 거래종료, 무매체출금 등록 존재
+			BT_button12.Text = "무매체출금 등록";
+			LB_label39.Text = '무매체출금 등록도 이어서 진행하시겠습니까?';
+		} else if(p.allParamData.NOMD_DWOT_RGSN_YN == "Y" && p.allParamData.BKNB_DROT_RGSN_YN == "N") {
+			// 거래종료 버튼 존재
+			LB_label39.$.remove();
+			BT_button12.$.remove();
+			BT_button9.$.css('left','511px')
+			LB_label104.$.css('text-align','center');
+		}
+	}// 통장출금 등록_E 
+	
+	// 무매체 한도변경_S
+	else if(viewType == "3"){
+		LB_label104.Text = '무매체출금 한도변경이';
+		if(p.allParamData.NOMD_DWOT_RGSN_YN == "Y" && p.allParamData.BKNB_DROT_RGSN_YN == "N") {
+			// 거래종료, 무매체출금 등록 존재
+			BT_button12.Text = "무매체출금 등록";
+			LB_label39.Text = '통장 출금 등록도 이어서 진행하시겠습니까?';
+		} else if(p.allParamData.NOMD_DWOT_RGSN_YN == "Y" && p.allParamData.BKNB_DROT_RGSN_YN == "Y") {
+			// 거래종료 버튼 존재
+			
+			LB_label39.$.remove();
+			BT_button12.$.remove();
+			BT_button9.$.css('left','511px')
+			LB_label104.$.css('text-align','center');
+		}
+	}
+	// 무매체 한도변경_E
+	
+}
+
+// 계좌 리스트 화면으로 이동_S
+function BT_button12_OnClick(e){
+	p.ChangeTab("9059");
+	if(viewType == "1"){
+		SCREEN.WriteJnl("[통장출금등록 업무] 선택");
+	}
+	else if(viewType == "2"){
+		SCREEN.WriteJnl("[무매체출금 등록 업무] 선택");
+	}
+	else if(viewType == "3"){
+		SCREEN.WriteJnl("[무매체출금 등록 업무] 선택");
+	}
+	
+	p.sendRequest("getAccountList");	
+}
+// 계좌 리스트 화면으로 이동_E
+
+// 거래 종료_S
+function BT_button9_OnClick(e){
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_OK);	//	거래 성공 끝
+}
+// 거래 종료_E</script></xjscript></body>
+</html>

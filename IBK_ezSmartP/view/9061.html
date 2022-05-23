@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1419,1149" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a56a7471" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel53" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-171a56d1b7e" style="left: 544px; top: 280px; width: 195px; height: 174px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel_loader" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/loader.gif");'></span></div><span class="ui-control ui-label" id="ui-171a56e128c" style='left: 556px; top: 288px; width: 168px; height: 63px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 54px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label30" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">안   내</span></span><span class="ui-control ui-label" id="ui-171a56e1e87" style='left: 390px; top: 367px; width: 500px; height: 32px; right: auto; bottom: auto; font-family: "Noto sans CJK KR", "맑은 고딕", "Arial", "IBK IDream L", "IBK IDream M", "IBK IDream B", "IBK IDream EB", "IBK IDream Symbol", "IBK IWishR"; font-size: 32px; z-index: 2;' anchor="0b0101" dock="0" ui-id="LB_label31" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">거래 처리중입니다.</span></span><span class="ui-control ui-label" id="ui-171a56e2749" style="left: 390px; top: 407px; width: 500px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 3;" anchor="0b0101" dock="0" ui-id="LB_label32" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">잠시만 기다려 주십시오.</span></span><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>
+
+function Form_OnLoad(e){
+
+	console.log("PN_panel53.$.html() 111 :::: " + PN_panel53.$.html());
+
+	// 기본 로더 이미지 뷰
+    defaultLoader();
+
+	console.log("PN_panel53.$.html() 222 :::: " + PN_panel53.$.html());
+	
+/***
+	console.log("PN_panel53.$.html() 333 :::: " + PN_panel53.$.html());
+
+    // 페이드토글 로더 이미지 뷰
+    fadeToggleLoader();
+
+	console.log("PN_panel53.$.html() 444 :::: " + PN_panel53.$.html());
+***/
+
+}
+
+// 기본 로더 이미지 뷰
+function defaultLoader(){
+    // 로더 이미지 투명도 설정
+    $("[ui-id='PN_panel_loader']").css({"opacity":"0.4"}); 
+ 
+    // 로더 이미지 위치 설정
+    $("[ui-id='PN_panel_loader']").css({"top":"600px","left":"600px"});
+    
+    // 로더 이미지 크기 설정
+    $("[ui-id='PN_panel_loader']").css({"width":"600","height":"600"});
+
+	// 3초후 히든 설정
+    setTimeout(function(){
+		PN_panel_loader.Visible = false;   	
+    }, 3000);			
+
+};		
+
+// 페이드토글 로더 이미지 뷰
+function fadeToggleLoader(){
+
+	// 아이콘 깜빡임 적용
+	var start = setInterval(startIconToggle,400);	
+		
+	// 4초후 히든 설정
+    setTimeout(function(){
+		// 아이콘 깜빡임 중지
+		clearInterval(start);				
+		console.log("PN_panel53.$.html() 555 :::: " + PN_panel53.$.html());				
+    }, 4000);
+};		
+
+// 아이콘 깜빡임
+function startIconToggle(){
+	$("[ui-id='PN_panel_loader']").fadeToggle();
+};		
+</script></xjscript></body>
+</html>

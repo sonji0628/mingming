@@ -1,0 +1,187 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1414,1159">
+<div class="ui-control ui-panel ui-container" id="ui-171a4b0839f" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a4b083a0" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a4b083a1" style='left: 80px; top: 31px; width: 400px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">계좌 선택</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a4b083a2" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 3; background-color: whitesmoke;" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a4b083a3" style='left: 82px; top: 30px; width: 400px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">해지하실 계좌를 선택해주세요.</span></span></div><div class="ui-control ui-panel ui-container" id="ui-171822ec971" style="left: 0px; top: 194px; width: 1280px; height: 690px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_contents" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-171a5d1c333" style="left: 994px; top: 58px; width: 210px; height: 24px; right: auto; bottom: auto; font-size: 21px; z-index: 1;" ui-class="UILabel" ui-id="LB_label5" dock="0" anchor="0b0101"><span class="ui-content"></span></span><span class="ui-control ui-label" id="ui-171a5ca9429" style="left: 867px; top: 57px; width: 119px; height: 24px; right: auto; bottom: auto; font-size: 21px; z-index: 2;" ui-class="UILabel" ui-id="LB_label4" dock="0" anchor="0b0101"><span class="ui-content">조회기준일시</span></span><div class="ui-control ui-panel ui-container" id="ui-170ec4084d5" style="left: 78px; top: 99px; width: 1124px; height: 587px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_account" dock="0" anchor="0b0101"></div><span class="ui-control ui-scrollbar" id="ui-171aa7537e3" style="left: 1212px; top: 120px; width: 32px; height: 555px; right: auto; bottom: auto; z-index: 3;" ui-class="UIScrollBar" ui-id="SB_scrollbar1" dock="0" anchor="0b0101" scroll-control-id="PN_account"><span class="track"></span><span class="trackbutton"></span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a4b083a4" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2; background-color: transparent;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-171a4b083a5" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" theme="blue"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange" id="ui-171a4b083a6" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" theme="orange"><span class="ui-content">취소</span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>let httpQuerys = parseLocationQueryString();
+let viewType = httpQuerys["type"]; // 0 : 해지, 1: 입금
+
+function Form_OnLoad(e){
+	BT_button9.$.css("visibility","hidden");
+
+	// 시간표시
+	var now = new Date();
+	var yyyy = now.getFullYear();
+	var mm = generateDate(now.getMonth() + 1);
+	var dd = generateDate(now.getDate());
+	var hh = generateDate(now.getHours());
+	var m = generateDate(now.getMinutes());
+	var ss = generateDate(now.getSeconds());       
+
+	LB_label5.$.html(yyyy + '.' + mm + '.' + dd + '.' + hh + ':' + m +':' + ss); 
+
+    
+    // 한자리수 숫자에 0붙여주기
+    function generateDate(str)
+    {    	    	   
+        if(str < 10) str = "0" + str;	
+		return str
+    }
+    
+	//정보
+		//<--
+		let data = [
+			{ accountname:"1석7조통장(적립식)",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+			{ accountname:"IBK<br>W소확행통장(적립식)",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+			{ accountname:"IBK<br>평생든든 자유적금",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+			{ accountname:"1석7조통장(적립식)",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+			{ accountname:"IBK<br>W소확행통장(적립식)",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+			{ accountname:"IBK<br>평생든든 자유적금",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+			{ accountname:"1석7조통장(적립식)",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+			{ accountname:"IBK<br>W소확행통장(적립식)",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+			{ accountname:"IBK<br>평생든든 자유적금",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+			{ accountname:"1석7조통장(적립식)",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+			{ accountname:"IBK<br>W소확행통장(적립식)",accontinfo:"평생계좌",accountnum:"012-345678-**-123",date:"2020.04.24", btnname:"해지"},
+
+		];
+		
+		let tag = [];
+		
+		let rc = Math.floor( (data.length-1) / 3 ) + 1;
+		let ri = rc * 3 - data.length;
+			
+		for(let j=0;j < ri;j++){
+			data.push({emtpy : true});
+		}		
+
+		for(let i=0;i<data.length;i++){
+			let r = data[i];
+			if(r.emtpy){
+				tag.push(""
+					+'<div class="card-item emtpy">'
+					+'</div>'
+				);
+				continue;				
+			}
+			if(viewType == "0"){
+				tag.push(""
+					+'<div class="card-item">'
+					+'	<div class="card_info">'
+					+'    <div class="title">계좌이름</div>'
+					+'    <div class="content_text">계좌타입</div>'
+					+'    <div class="sub_title">1234-****-****-5678</div>'
+					+'    <div class="sub_content"></div>'
+					+'    <button class="btn">버튼이름</button>'
+					+'	</div>'
+					+'</div>'		
+					);
+			}else{
+				tag.push(""
+					+'<div class="card-item">'
+					+'	<div class="card_info">'
+					+'    <div class="title">계좌이름</div>'
+					+'    <div class="content_text">계좌타입</div>'
+					+'    <div class="sub_title">1234-****-****-5678</div>'
+					+'    <div class="sub_content"></div>'
+					+'	</div>'
+					+'</div>'		
+				);
+			}
+		}
+		//
+
+		let $PN_account = $("div[ui-id='PN_account']");
+
+		$PN_account.html(""
+			+'<div class="card-panel">'
+			+tag.join("")
+			+'</div>'
+		);
+		
+		$PN_account = $("div[ui-id='PN_account'] > div.card-panel");	
+		//if($PN_account[0].offsetHeight <= $PN_account[0].parentElement.clientHeight){
+		//	$PN_account.height("100%");
+		//}
+		
+		$PN_account.find(">div.card-item").each(function(i){
+			let $this = $(this);
+			let r = data[i];	
+			
+			$this.css({'height':'362px','width':'350px'});
+			$this.find(">div.card_info >div.content_text").text(r.accontinfo);
+			$this.find(">div.card_info >div.title").html(r.accountname)
+			$this.find(">div.card_info >div.sub_title").text(r.accountnum).css({'font-size':'24px','margin-top':'26px'});
+			$this.find(">div.card_info >div.sub_content").html(r.date).css('color','#0068c4');
+			$this.find(">div.card_info >div.sub_content>span").css('font-size','21px');
+			$this.find(">div.card_info >button.btn").text(r.btnname);
+			
+		});	
+		$PN_account.css("visibility","visible");
+		
+		if(viewType == "1"){
+			BT_button9.$.css("visibility","visible");
+			
+			let posi = PN_account.Position;
+			let size = PN_account.Size;
+			posi.Y -= 40;
+			size.Height += 40;
+			PN_account.Position = posi;
+			PN_account.Size = size;
+			
+			LB_label4.Visible = false;
+			LB_label5.Visible = false;
+			$PN_account.find(">div.card-item>div.card_info >div.sub_content").css('bottom','21px');
+			
+			posi = SB_scrollbar1.Position;
+			size = SB_scrollbar1.Size;
+			posi.Y -= 40;
+			size.Height += 40;
+			SB_scrollbar1.Position = posi;
+			SB_scrollbar1.Size = size;
+			
+			$PN_account.find(">div.card-item").mousedown(select); //버튼클릭 이벤트
+			
+			//버튼클릭 이벤트
+		    function select(e) {
+		        var chs = this;
+		        $(chs).animate({
+		            top: '+=5px',
+		            opacity: '0.5',
+		        }, 50, reback);
+		
+		        function reback() {
+		            $(chs).animate({
+		                top: '-=5px',
+		                opacity: '1',
+		            }, 50);
+		
+		            chs = null;
+		        }
+		        
+		        $PN_account.find(">div.card-item").css({'border':'1px solid #9c9c9c','padding':'42px 26px 30px'});
+		        
+		        $(chs).css({
+		            'border': '4px solid #9c9c9c','padding':'39px 23px 27px'
+		        });
+		    }
+		}
+		
+		SB_scrollbar1.Invalidate();
+
+
+
+}</script></xjscript></body>
+</html>

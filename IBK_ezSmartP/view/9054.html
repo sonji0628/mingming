@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1541,1158"><div class="ui-control ui-panel ui-container" id="ui-171aac7d84c" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel13" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container" id="ui-171aac7d854" style="left: 140px; top: 384px; width: 1001px; height: 379px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_panel1" dock="0" anchor="0b0101"><span class="ui-back-image" style='background-image: url("/KRG/media/sample_img_02.png");'></span></div><span class="ui-control ui-label" id="ui-171c36a6928" style="left: 140px; top: 295px; width: 1001px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 1;" ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;"></span></span><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><span class="ui-control ui-label" id="ui-171aac7d84f" style='left: 140px; top: 218px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 2;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">안 내</span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a570e5a6" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 3; background-color: transparent;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-171a570e5a7" style='left: 986px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b0101" theme="blue"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange ui-hide" id="ui-171a564ef7b" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; font-weight: normal; z-index: 1;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" theme="orange"><span class="ui-content">취소</span></span></div><span class="ui-control ui-label" id="ui-173091975a2" style="left: 140px; top: 335px; width: 1001px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 4;" ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;"></span></span></div>
+</div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>let httpQuerys = parseLocationQueryString();
+let viewType = httpQuerys["type"]; // 0 : 출금등록완료, 1: 한도변경완료 , 3: 지금준비중입니다. 잠시만기다려주십시오.
+
+function Form_OnLoad(e){
+
+	if(viewType == "1" || viewType == "2" ){
+		LB_label2.$.remove();
+		BT_button12.$.remove();
+		BT_button9.$.css('left','511px')
+		LB_label1.$.css('text-align','center');
+				
+		let posi = PN_panel1.Position;
+		posi.Y += 23;
+		PN_panel1.Position = posi;
+		
+		if(viewType == "1"){
+			LB_label1.$.text('무매체출금 한도변경이');
+		}else if(viewType == "2"){
+			LB_label1.$.text('통장출금 등록이');
+		}			
+	}
+	else if(viewType =='3'){
+		LB_label1.Text = '안 내';
+		LB_label2.Text = '지금 준비중 입니다.';
+		LB_label3.Text = '잠시만 기다려 주십시오.';
+		BT_right.Visible = false;
+	}
+	
+}
+
+function DisplayMsg(msg){
+	LB_label1.Text = (msg[0] != null) ? msg[0] : "";
+	LB_label2.Text = (msg[1] != null) ? msg[1] : "";
+	LB_label3.Text = (msg[2] != null) ? msg[2] : "";
+}
+
+
+function changeDisplay(tabObj,page1,page2){
+
+    if(page1 == null || page1 == "" || page1 == undefined)
+    {
+       // 준비중인 안내화면
+       page1 = "9054";
+    }
+
+    if(page2 == null || page2 == "" || page2 == undefined)
+    {
+       // 거래종료 화면
+       page2 = "9057";
+    }
+    
+    // 안내 화면 탭 뷰
+   	tabObj.ChangeTab(page1);
+ 	      
+	// 3초후 설정 화면 탭 뷰       
+    setTimeout(function(){
+   	   tabObj.ChangeTab(page2);
+    }, 3000);				
+    
+}
+</script></xjscript></body>
+</html>

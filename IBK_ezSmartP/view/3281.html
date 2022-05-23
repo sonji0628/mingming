@@ -1,0 +1,161 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1506,1225" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad"><div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">출금계좌선택</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e4" style="left: 0px; top: 102px; width: auto; height: 91.99px; right: 0px; bottom: auto; z-index: 1; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-w="1280" dock-h="92" dock-r="left:0px;top:92px;width:1280px;height:112px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 19px; width: 455px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">출금하실 계좌를 선택해주십시오.</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a4b083a4" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2; background-color: transparent;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-171a4b083a5" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange" id="ui-171a4b083a6" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">닫기</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-170cd1a2b22" style="left: 0px; top: 193.99px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_content" ui-class="UIPanel" dock-w="1280" dock-h="689" dock-r="left:0px;top:194px;width:1280px;height:689px;right:auto;bottom:auto"><span class="ui-control ui-scrollbar" id="ui-172980bda14" style="left: 1185px; top: 37px; width: 32px; height: 550px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="SB_scrollbar_acct" ui-class="UIScrollBar" scroll-control-id="PN_account"><span class="track"></span><span class="trackbutton"></span></span><div class="ui-control ui-panel ui-container" id="ui-170ec4084d5" style="left: 83px; top: 37px; width: 1076px; height: 550px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_account" ui-class="UIPanel"></div></div></div>
+</div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>// 3180.css import
+importCSS("3180"     ,"3180.css");
+
+// common.js import
+// importJSS("common", "common.js");
+includeJSS("common","/KRG/0301/common.js");
+
+var p = parent;
+
+function Form_OnLoad(e) {
+
+  // 팝업을 호출한 opener에 팝업 window 저장 (opener에서 close 가능)
+  if (host.form.opener){
+	  host.form.opener.xpopup = window;
+  }
+	
+  com.screen.setTimeoutEx(30000, onScreenTimeout);
+
+  // 확인 버튼 비활성화
+  BT_right.Enabled = false; 
+
+  fnAccountNumberList();
+  
+}
+
+// parent 화면의 타임아웃에 종속되어 주석처리함
+function onScreenTimeout(){
+	console.log("[popup] Screen Timeout!!!");
+	
+	com.screen.clearTimeoutEx();
+
+	com.screen.closePopup(function(opendlg){
+		opendlg.OnCloseCallback3281("timeout");
+	});	
+}
+
+// 전체계좌 리스트
+function fnAccountNumberList() {
+
+  let acctData,records;
+  
+  acctData = com.ss.getItem("3281_acct");
+    
+  if(acctData != null){
+	 records = jQuery.parseJSON(acctData);
+  }
+      
+  // 결제계좌정보 가져오기
+  if(records != null){
+
+  console.log(" Form_OnLoad 3281_acct ::: records >>>> " + records);	
+  console.log(" Form_OnLoad 3281_acct ::: records.length >>>> " + records.length);	
+
+      let tag = [];
+
+	  for(let i = 0, Len = records.length; i < Len; i++){
+	      let record = records[i];
+  
+          var acn_title = record.SUBJ_NM;
+          var acno = com.acct.fnGetAccountPattern(record.CUS_ACN);
+          
+       //   console.log(" record.ASMB_BNKB_NAM_CON >>>>@@@@ " + record.ASMB_BNKB_NAM_CON);	
+       //   console.log(" record.CUS_OTPT_INFR_PDM >>>>@@@@ " + record.CUS_OTPT_INFR_PDM);	
+       
+       // if(record.ASMB_BNKB_NAM_CON != ""){  원코드 조건문 내용 ::: 정황상 내용이 상이하여 아래와 같이 수정 2020.07.20
+          if($.trim(record.CUS_OTPT_INFR_PDM) != ""){
+        	 acn_title = acn_title + "(" + record.CUS_OTPT_INFR_PDM + ")"; 
+          }
+  
+		  tag.push(""
+				+'<div class="list_pay_acct" CUS_ACN="'+record.CUS_ACN+'" SUBJ_NM="'+record.SUBJ_NM+'" ACNT_BAL="'+record.ACNT_BAL+'" onclick="fnSelectAcn(this)">'
+		        +'	<div class="text_area">'
+		        +'    <div class="main_text posLT"><strong>'+acno+'</strong></div>'
+		        +'    <div class="sub_text posLB">'+acn_title+'</div>'
+		        +'    <div class="posRB">'
+		        +		'<strong>'+p.com.util.fnGetFormatMoney(record.ACNT_BAL)+'</strong>'
+		        +		'<span>원</span>'
+		        +'	  </div>'
+		        +'	</div>'
+		        +'  <div class="next_img"></div>'
+		        +'</div>'	
+		  );	  	  
+	  
+	  }  // end for - records
+	  
+	  
+	let $PN_account = $("div[ui-id='PN_account']");
+	$PN_account.html(""
+		+'<div class="list-panel">'
+		+tag.join("")
+		+'</div>'
+	);		  
+	
+	$PN_account.find("> div.list-panel > div.list_pay_acct").each(function(i){
+		let $this = $(this);
+		$this.css({'border': '1px solid #9c9c9c'});
+		$this.mousedown(function(){
+		    comSelectAnimate.call(this,$("div[ui-id='PN_account'] > div.list-panel > div.list_pay_acct"));
+		});
+	});
+	$PN_account.find("> div.list-panel > div.list_pay_acct").css("visibility","visible");	
+	
+    // 화면 스크롤 위치 초기화
+    SB_scrollbar_acct.$.find("> span.trackbutton").css({"top":"0px"});
+
+    // 화면 전환 이후 Invalidate 스크롤 체크(생성)
+    SB_scrollbar_acct.Invalidate();	  
+	  
+  }  // end if - G_CBKARR108D10Step3    
+
+}
+
+var G_CUS_ACN = "", G_SUBJ_NM = "", G_ACNT_BAL = "";
+
+function fnSelectAcn(target){
+    // 확인 버튼 활성화
+    BT_right.Enabled = true; 
+    
+	G_CUS_ACN  = target.getAttribute('CUS_ACN');
+	G_SUBJ_NM  = target.getAttribute('SUBJ_NM');
+    G_ACNT_BAL = target.getAttribute('ACNT_BAL');
+    
+    console.log(" record.ASMB_BNKB_NAM_CON >>>> G_CUS_ACN @@@@ " + G_CUS_ACN);	
+    console.log(" record.ASMB_BNKB_NAM_CON >>>> G_SUBJ_NM @@@@ " + G_SUBJ_NM);	
+    console.log(" record.ASMB_BNKB_NAM_CON >>>> G_ACNT_BAL @@@@ " + G_ACNT_BAL);	
+}
+
+function BT_left_OnClick(e){
+	setTimeout(function(){
+		com.screen.closePopup(function(opendlg){
+			opendlg.OnCloseCallback3281(false);
+		});	
+	}, 200);
+}
+
+function BT_right_OnClick(e){
+	setTimeout(function(){
+		com.screen.closePopup(function(opendlg){
+			opendlg.OnCloseCallback3281(true,G_CUS_ACN,G_SUBJ_NM,G_ACNT_BAL);
+		});	
+	}, 200);
+}</script></xjscript></body>
+</html>

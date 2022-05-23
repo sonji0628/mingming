@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1374,1106">
+<div class="ui-control ui-panel ui-container" id="ui-171a561f5a3" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container" id="ui-171a557424f" style="left: 80px; top: 365px; width: 358px; height: 294px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_panel2" dock="0" anchor="0b0101"><span class="ui-back-image" style='background-image: url("/KRG/media/img_icon_guide.png");'></span></div><span class="ui-control ui-label" id="ui-171a559cb46" style="left: 522px; top: 0px; width: 758px; height: 1024px; right: auto; bottom: auto; font-size: 0px; z-index: 1;" ui-class="UILabel" ui-id="LB_label_msg" dock="0" anchor="0b0101"><span class="ui-content" style="align-items: flex-start;"></span></span><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a5627701" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-171a5627702" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">거래계속</span></span><span class="ui-control ui-button theme-orange" id="ui-171a5647e78" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">거래취소</span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>// common.js import
+importJSS("common", "common.js");
+
+var p = parent;
+
+function Form_OnLoad(e){
+
+}
+
+
+// 선결제 신청 안내 메시지 출력
+function setMessage(){
+
+    // 선결제처리구분코드
+    var AHST_PCSN_DCD = p.G_payInfo.AHST_PCSN_DCD;
+    
+    console.log(" setMessage >>>>> AHST_PCSN_DCD :::  ===> " + AHST_PCSN_DCD);
+    
+    let text = [];
+        
+    // 7-(장기카드대출),4-(일부결제금액이월일시불),5-(일부결제금액이월단기카드대출) 에 해당되지 않는다면....!!!!   
+    if(["4","5","7"].indexOf(AHST_PCSN_DCD) == -1) {
+        fnConfirmBtn();
+        return;
+    } else { 
+        if(AHST_PCSN_DCD == "7") { // 7-(장기카드대출) 에 해당된다면....!!!!   
+			text.push("총 "+com.ss.getItem("3183_CSTP_MNRC_ROWCOUNT")+" 중 "+com.ss.getItem("3183_PAMENT_TTAL_COUNT")+"건이 청구서가 작성되지 않았습니다.<br/>");
+			text.push("청구서 미작성시 마지막월 청구분이 결제되고<br/>");		
+			text.push("당월 청구분은 다시 청구 됩니다.<br/>");		
+			text.push("그래도 결제하시겠습니까?<br/>");		
+        } else {  // 그외 4-(일부결제금액이월일시불),5-(일부결제금액이월단기카드대출) 에 해당된다면....!!!!
+			text.push("청구서가 작성되지 않은 매출건이 선택되었습니다.<br/>");
+			text.push("선결제 후 매출건의 남은 잔액은<br/>");		
+			text.push("다음 결제일에 결제비율에 따라 또 청구됩니다.<br/>")	;	
+			text.push("그래도 결제하시겠습니까?<br/>");		
+        }        
+    }  // end if - AHST_PCSN_DCD
+
+	LB_label_msg.$.html(""
+						+'<div class="notice-container">'
+						+'	<div class="info_textbox">'
+						+'		<div class="title">'
+						+'			안   내'
+						+'		</div>'
+						+'		<div class="text">'
+						+			text.join("")
+						+'		</div>'
+						+'	</div>'
+						+'</div>'
+					);		
+					
+    // 선결제 신청 안내 화면 탭 뷰(3185 탭뷰를 실행하기위해 서브 페이지에서 호출(메인에서 ChangeTab 호출시 실행 순서도가 바뀜??!!) 
+    p.ChangeTab("3184");					
+}
+
+
+function fnConfirmBtn() {
+   // 선결제처리구분 - 결제구분
+   var PAMENT_CD = p.G_payInfo.PAMENT_CD;
+        
+   console.log(" fnConfirmBtn >>>>> PAMENT_CD ::: ===> " + PAMENT_CD);    
+    
+   if(PAMENT_CD != "LIST"){
+      console.log(" 선결제 - 금액 신청 화면 조회 ");    
+      // 선결제 - 금액 신청 화면 조회
+      p.sendRequest("m2_step4_2_payamt_select");       
+   } else {
+   	  console.log(" 선결제 - 건별 신청 안내 화면 조회02 ");    
+      // 선결제 - 할부 건별 신청 안내 화면 조회02
+      p.sendRequest("step4_2_pay_guide");       
+   }
+}
+
+function BT_left_OnClick(e){
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+function BT_right_OnClick(e){
+	fnConfirmBtn();
+}</script></xjscript></body>
+</html>

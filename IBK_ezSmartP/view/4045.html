@@ -1,0 +1,367 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1374,1112">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">문자알림(SMS) 신청</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">정보입력</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 139.98px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:-715px;top:954px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span><span class="ui-control ui-button theme-blue" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 139.98px; z-index: 3;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-w="712" dock-h="712" dock-r="left:0px;top:194px;width:1280px;height:712px;right:auto;bottom:auto"><div class="ui-control ui-panel ui-container" id="ui-172a63b64b8" style="left: 685px; top: 93px; width: 547px; height: 552px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_scrollbox" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container" id="ui-1736eb91c6d" style="left: 0px; top: 0px; width: 547px; height: 111px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel2" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172a64a28af" style="left: 0px; top: 0px; width: 100px; height: 36px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_label8" dock="0" anchor="0b0101"><span class="ui-content">통지대상구분</span></span><span class="ui-control ui-label" id="ui-172a64a83c2" style="left: 101px; top: 0px; width: 430px; height: 36px; right: auto; bottom: auto; color: orangered; font-size: 17px; z-index: 1;" ui-class="UILabel" ui-id="LB_label9" dock="0" anchor="0b0101"><span class="ui-content" style="left: 6px; top: 0px; right: 0px; bottom: 0px;">*통장 없이 입출금하는 전자금융, ATM등을 통한 거래만 통지</span></span><span class="ui-control ui-radiobox round ui-checked ui-radiobox--1039690024" id="ui-172a64a0186" style="left: 18px; top: 73px; width: 200px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 2;" ui-class="UIRadioBox" ui-id="RB_radiobox1" dock="0" anchor="0b0101" x-style="round" group-name="notice" value="Y"><span class="ui-icon-image"><span></span></span><span class="ui-content">전체거래 통지</span></span><span class="ui-control ui-radiobox round" id="ui-172a64a14aa" style="left: 315px; top: 73px; width: 200px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 3;" ui-class="UIRadioBox" ui-id="RB_radiobox2" dock="0" anchor="0b0101" x-style="round" group-name="notice" value="N"><span class="ui-icon-image"><span></span></span><span class="ui-content">무통장거래만 통지</span></span></div><div class="ui-control ui-panel ui-container" id="ui-1736ebbcee9" style="left: 0px; top: 166px; width: 547px; height: 111px; right: auto; bottom: auto; z-index: 1;" ui-class="UIPanel" ui-id="PN_panel3" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172a64b3727" style="left: 0px; top: 0px; width: 100px; height: 36px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_label10" dock="0" anchor="0b0101"><span class="ui-content">통지시간</span></span><span class="ui-control ui-radiobox round ui-checked ui-radiobox-3560141" id="ui-172a64b3754" style="left: 18px; top: 73px; width: 140px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 1;" ui-class="UIRadioBox" ui-id="RB_radiobox3" dock="0" anchor="0b0101" x-style="round" group-name="time" value="01"><span class="ui-icon-image"><span></span></span><span class="ui-content">전체</span></span><span class="ui-control ui-radiobox round" id="ui-172a64b376e" style="left: 162px; top: 73px; width: 120px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 2;" ui-class="UIRadioBox" ui-id="RB_radiobox4" dock="0" anchor="0b0101" xonclick="RB_radiobox4_OnClick" x-style="round" group-name="time" value="02"><span class="ui-icon-image"><span></span></span><span class="ui-content">특정시간</span></span><span class="ui-control ui-radiobox round" id="ui-172a64b6952" style="left: 318px; top: 73px; width: 200px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 3;" ui-class="UIRadioBox" ui-id="RB_radiobox5" dock="0" anchor="0b0101" x-style="round" group-name="time" value="03"><span class="ui-icon-image"><span></span></span><span class="ui-content">익일일괄통지</span></span></div><div class="ui-control ui-panel ui-container" id="ui-1736ebe1ca7" style="left: 0px; top: 325px; width: 547px; height: 60px; right: auto; bottom: auto; z-index: 2;" ui-class="UIPanel" ui-id="PN_panel4" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172a7188e82" style="border-width: 2px; border-color: rgb(158, 158, 158); border-radius: 2px; left: 18px; top: 0px; width: 100px; height: 54px; right: auto; bottom: auto; color: gray; font-size: 32px; z-index: 0;" ui-class="UILabel" ui-id="LB_setTime" dock="0" anchor="0b0101" xonclick="LB_setTime_OnClick"><span class="ui-content" style="left: 2px; top: 2px; right: 2px; bottom: 2px; justify-content: center;"></span></span><span class="ui-control ui-label" id="ui-1736b1892c5" style="border-width: 2px; border-color: rgb(158, 158, 158); border-radius: 2px; left: 128px; top: 0px; width: 100px; height: 54px; right: auto; bottom: auto; color: gray; font-size: 32px; z-index: 1;" ui-class="UILabel" ui-id="LB_setTime2" dock="0" anchor="0b0101" xonclick="LB_setTime2_OnClick"><span class="ui-content" style="left: 2px; top: 2px; right: 2px; bottom: 2px; justify-content: center;"></span></span><span class="ui-control ui-label" id="ui-1736b1c90c9" style="left: 228px; top: 0px; width: 35px; height: 54px; right: auto; bottom: auto; z-index: 4;" ui-class="UILabel" ui-id="LB_setTime5" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">-</span></span><span class="ui-control ui-label" id="ui-1736b189c1f" style="border-width: 2px; border-color: rgb(158, 158, 158); border-radius: 2px; left: 263px; top: 0px; width: 100px; height: 54px; right: auto; bottom: auto; color: gray; font-size: 32px; z-index: 2;" ui-class="UILabel" ui-id="LB_setTime3" dock="0" anchor="0b0101" xonclick="LB_setTime3_OnClick"><span class="ui-content" style="left: 2px; top: 2px; right: 2px; bottom: 2px; justify-content: center;"></span></span><span class="ui-control ui-label" id="ui-1736b189e25" style="border-width: 2px; border-color: rgb(158, 158, 158); border-radius: 2px; left: 373px; top: 0px; width: 100px; height: 54px; right: auto; bottom: auto; color: gray; font-size: 32px; z-index: 3;" ui-class="UILabel" ui-id="LB_setTime4" dock="0" anchor="0b0101" xonclick="LB_setTime4_OnClick"><span class="ui-content" style="left: 2px; top: 2px; right: 2px; bottom: 2px; justify-content: center;"></span></span></div><div class="ui-control ui-panel ui-container" id="ui-1736ec3a9e7" style="left: 0px; top: 427px; width: 547px; height: 111px; right: auto; bottom: auto; z-index: 3;" ui-class="UIPanel" ui-id="PN_panel5" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172a64b9c7b" style="left: 0px; top: 0px; width: 205px; height: 36px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_label11" dock="0" anchor="0b0101"><span class="ui-content">잔액표시여부</span></span><span class="ui-control ui-radiobox round ui-checked ui-radiobox-104079552" id="ui-172a64b9c99" style="left: 18px; top: 73px; width: 200px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 1;" ui-class="UIRadioBox" ui-id="RB_radiobox6" dock="0" anchor="0b0101" x-style="round" group-name="money" value="Y"><span class="ui-icon-image"><span></span></span><span class="ui-content">잔액표시</span></span><span class="ui-control ui-radiobox round" id="ui-172a64b9cb4" style="left: 315px; top: 73px; width: 200px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 2;" ui-class="UIRadioBox" ui-id="RB_radiobox7" dock="0" anchor="0b0101" x-style="round" group-name="money" value="N"><span class="ui-icon-image"><span></span></span><span class="ui-content">잔액미표시</span></span></div><div class="ui-control ui-panel ui-container" id="ui-1736ec53ea3" style="left: 0px; top: 586px; width: 547px; height: 111px; right: auto; bottom: auto; z-index: 4;" ui-class="UIPanel" ui-id="PN_panel6" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172a64babf8" style="left: 0px; top: 0px; width: 205px; height: 36px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_label5" dock="0" anchor="0b0101"><span class="ui-content">계좌번호 표시구분</span></span><span class="ui-control ui-radiobox round ui-checked ui-radiobox--1177318867" id="ui-172a64bac1b" style="left: 18px; top: 73px; width: 236px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 1;" ui-class="UIRadioBox" ui-id="RB_radiobox8" dock="0" anchor="0b0101" x-style="round" group-name="account" value="N"><span class="ui-icon-image"><span></span></span><span class="ui-content">일반계좌번호로 표시</span></span><span class="ui-control ui-radiobox round" id="ui-172a64bac36" style="left: 315px; top: 73px; width: 236px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 2;" ui-class="UIRadioBox" ui-id="RB_radiobox9" dock="0" anchor="0b0101" x-style="round" group-name="account" value="Y"><span class="ui-icon-image"><span></span></span><span class="ui-content">평생 계좌번호로 표시</span></span></div><div class="ui-control ui-panel ui-container" id="ui-1736ec659b9" style="left: 0px; top: 745px; width: 547px; height: 111px; right: auto; bottom: auto; z-index: 5;" ui-class="UIPanel" ui-id="PN_panel7" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-1736b24d0f6" style="left: 0px; top: 0px; width: 205px; height: 36px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_label16" dock="0" anchor="0b0101"><span class="ui-content">수수료 결제방식</span></span><span class="ui-control ui-radiobox round ui-checked ui-radiobox-3138989" id="ui-1736b24d113" style="left: 18px; top: 73px; width: 236px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 1;" ui-class="UIRadioBox" ui-id="RB_radiobox10" dock="0" anchor="0b0101" x-style="round" group-name="fees" value="N"><span class="ui-icon-image"><span></span></span><span class="ui-content">정액제(월 900원)</span></span><span class="ui-control ui-radiobox round" id="ui-1736b24d13a" style="left: 315px; top: 73px; width: 236px; height: 38px; right: auto; bottom: auto; font-size: 18px; z-index: 2;" ui-class="UIRadioBox" ui-id="RB_radiobox11" dock="0" anchor="0b0101" x-style="round" group-name="fees" value="Y"><span class="ui-icon-image"><span></span></span><span class="ui-content">종량제(통지건당 20원)</span></span></div></div><span class="ui-control ui-label" id="ui-172a63c1ee2" style="left: 82px; top: 58px; width: 120px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 1;" ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content">기본정보</span></span><span class="ui-control ui-label" id="ui-172a63c78ba" style="left: 82px; top: 112px; width: 120px; height: 18px; right: auto; bottom: auto; font-size: 18px; z-index: 3;" ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content">계좌선택</span></span><span class="ui-control ui-label" id="ui-172a63c7f18" style="left: 82px; top: 246px; width: 120px; height: 18px; right: auto; bottom: auto; font-size: 18px; z-index: 4;" ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content">통지구분</span></span><span class="ui-control ui-combobox" id="ui-172a63d80a4" style="left: 82px; top: 143px; width: 485px; height: 55px; right: auto; bottom: auto; font-size: 18px; z-index: 5;" ui-class="UIComboBox" ui-id="DL_combobox1" dock="0" anchor="0b0101"><span class="ui-content"></span><span class="ui-icon-image" fontsize="16">▼ </span><select><option selected="selected"></option><option value="000">계좌 없음</option></select></span><span class="ui-control ui-combobox" id="ui-172a63db0c0" style="left: 82px; top: 277px; width: 485px; height: 55px; right: auto; bottom: auto; z-index: 6;" ui-class="UIComboBox" ui-id="DL_combobox2" dock="0" anchor="0b0101" xonselecteditemchanged="DL_combobox2_OnSelectedItemChanged"><span class="ui-content">입·출금</span><span class="ui-icon-image" fontsize="16">▼ </span><select><option></option><option selected="selected" value="001">입·출금</option><option value="002">특정금액 입·출금</option></select></span><span class="ui-control ui-scrollbar" id="ui-172a65510d8" style="left: 1239px; top: 103px; width: 32px; height: 568px; right: auto; bottom: auto; z-index: 2;" ui-class="UIScrollBar" ui-id="SB_scrollbar1" dock="0" anchor="0b0101" scroll-control-id="PN_scrollbox"><span class="track"></span><span class="trackbutton" style="top: 0px;"></span></span><div class="ui-control ui-panel ui-container" id="ui-1737f6f1327" style="left: 82px; top: 380px; width: 495px; height: 150px; right: auto; bottom: auto; z-index: 7;" ui-class="UIPanel" ui-id="PN_panel1" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172a63cd7b0" style="left: 0px; top: 0px; width: 172px; height: 18px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_label4" dock="0" anchor="0b0101"><span class="ui-content">통지대상 금액</span></span><span class="ui-control ui-textbox" id="ui-172a644aa61" style="left: 0px; top: 31px; width: 485px; height: 55px; right: auto; bottom: auto; font-size: 32px; z-index: 2;" ui-class="UITextBox" ui-id="TB_textbox2" dock="0" anchor="0b0101" xonclick="TB_textbox2_OnClick"><span><input class="ui-input" style="text-align: right;" type="text" maxlength="32767" value="0"></span></span><span class="ui-control ui-label" id="ui-172a647565b" style="left: 10px; top: 34px; width: 87px; height: 48px; right: auto; bottom: auto; font-size: 32px; z-index: 3; background-color: white;" ui-class="UILabel" ui-id="LB_label7" dock="0" anchor="0b0101"><span class="ui-content"> 금액</span></span><span class="ui-control ui-label" id="ui-172a643cb74" style="left: 0px; top: 99px; width: 495px; height: 45px; right: auto; bottom: auto; color: orangered; font-size: 17px; z-index: 1;" ui-class="UILabel" ui-id="LB_label6" dock="0" anchor="0b0101"><span class="ui-content">*통지대상금액을 입력할 경우 해당금액 이상의 거래내역만 통지됩니다. 금액 미 입력 시 제한금액은 0원으로 자동설정 됩니다.</span></span></div></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*	include JS */
+includeJSS("LibCommon","/KRG/0301/common.js");
+
+
+let p = parent;
+var obj;				//시간설정할때 객체가져갈 변수
+
+//4050 테이블에 뿌릴 데이터저장 변수
+var selectedTongjiMoney;		//통지금액
+var selectedTime;				//통지시간(08:00 ~ 18:00);
+var tongjiTime;					//통지시간(전체, 특정시간, 익일);
+var payType;					//수수료결제방식 ex)건당 20원 
+
+
+//라디오버튼 Value저장 변수
+var ntcvcd;					//통지구분
+var bbkntyn;				//통지대상구분
+var rgsndcd_2;				//잔액표시여부
+var ntsrtcd;				//통지서비스유형코드
+var rqstcd;					//계좌번호표시여부
+var cncd;					//통지시간
+var ebnkinqnbt31;			//수수료결제
+var ebnkAmt131;				//통지금액
+var ntcOpngHms;				//통지시간 -> 특정시간 -> 시작시간
+var ntcFnshHms;				//통지시간 -> 특정시간 -> 종료시간
+
+
+function Form_OnLoad(e){
+	
+	//스크롤바 버튼 사이즈
+	//SB_scrollbar1.$.find("span.trackbutton").css("height","250px");
+	
+	//특정금액 Textbox disabled
+	TB_textbox2.$.find('span >input').attr('disabled','true');
+	
+	//통지대상금액 visible false 
+	PN_panel1.Visible = false;
+	
+	
+	//통지시간 --> 특정시간 Position Default
+	PN_panel4.$.hide();
+	PN_panel5.$.css('top','319px');
+	PN_panel6.$.css('top','478px');
+	PN_panel7.$.css('top','637px');
+	
+	//통지시간 텍스트저장 Default(전체, 특정시간, 익일일괄통지)
+	tongjiTime = PN_panel3.$.find(".ui-checked >.ui-content").text();
+	
+	//라디오박스 클릭
+	$(".ui-radiobox").on("click",function(){
+		if($(this).attr('group-name') == 'time'){
+			//통지시간 텍스트저장 Default(전체, 특정시간, 익일일괄통지)
+			tongjiTime = $(this).text();
+			
+			if(tongjiTime == '특정시간'){
+				console.log("changeTab time select");
+				//특정시간 시간선택 텍스트박스 Position 
+				PN_panel4.$.show();
+				PN_panel5.$.css('top','427px');
+				PN_panel6.$.css('top','586px');
+				PN_panel7.$.css('top','745px');
+				LB_setTime.Text = "00시";
+				LB_setTime2.Text = "00분";
+				LB_setTime3.Text = "24시";
+				LB_setTime4.Text = "00분";
+			}
+			else{
+				PN_panel4.$.hide();
+				PN_panel5.$.css('top','319px');
+				PN_panel6.$.css('top','478px');
+				PN_panel7.$.css('top','637px');
+				LB_setTime.Text = "";
+				LB_setTime2.Text = "";
+				LB_setTime3.Text = "";
+				LB_setTime4.Text = "";
+			}
+		}
+	});
+} //Form Onload End
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+function BT_right_OnClick(e){
+
+	//통지구분
+	//입출금
+	if(DL_combobox2.Value == '001'){		
+		ntcvcd = "3";
+		ntsrtcd = "99";
+	}
+	//특정금액 입출금
+	else{
+		ntcvcd = "4";
+		ntsrtcd = "00";
+	}
+	console.log("4045 통지구분  value   :   "+ntcvcd);
+	console.log("4045 통지서비스유형코드  value   :   "+ntsrtcd);
+	
+	//통지대상구분
+	bbkntyn = PN_panel2.$.find("span.ui-checked").attr("value");
+	console.log("4045 통지대상구분  value   :   "+bbkntyn);
+	
+	//잔액표시여부
+	rgsndcd_2 = PN_panel5.$.find("span.ui-checked").attr("value");
+	console.log("4045 잔액표시여부  value   :   "+rgsndcd_2);
+	
+	//계좌번호표시여부
+	rqstcd = PN_panel6.$.find("span.ui-checked").attr("value");
+	console.log("4045 계좌번호표시여부  value   :   "+rqstcd);
+	
+	//통지시간
+	cncd = PN_panel3.$.find("span.ui-checked").attr("value");
+	console.log("4045 통지시간  value   :   "+cncd);
+	
+	/*
+		수수료결제
+		Value N = 정액제
+		Value Y = 종량제
+	*/
+	ebnkinqnbt31 = PN_panel7.$.find("span.ui-checked").attr("value");
+	console.log("4045 수수료결제  value   :   "+ebnkinqnbt31);
+	
+	//통지금액
+	TB_textbox2.$.val(0);
+	ebnkAmt131 = TB_textbox2.$.val(); 
+	console.log("4045 통지금액  value   :   "+ebnkAmt131);
+	
+	//통지시간 -> 특정시간 -> 시작시간
+	ntcOpngHms = LB_setTime.Text.substring(0,2) + LB_setTime2.Text.substring(0,2) +'00';
+	console.log("4045 시작시간  value   :   "+ntcOpngHms);
+	
+	//통지시간 -> 특정시간 -> 종료시간
+	ntcFnshHms = LB_setTime3.Text.substring(0,2) + LB_setTime4.Text.substring(0,2) +'00';
+	console.log("4045 종료시간  value   :   "+ntcFnshHms);
+	
+	
+
+	selectedTongjiMoney = DL_combobox2.Text;							//통지금액
+	payType = PN_panel7.$.find('span.ui-checked').text();				//수수료결제방식
+	
+	
+	
+	//통지시간이 특정시간이 일때
+	if(RB_radiobox4.Checked == true){
+		let startTime = ntcOpngHms.substring(0,4);
+		let endTime = ntcFnshHms.substring(0,4);
+		console.log("startTime\t\t "+startTime);
+		console.log("endTime\t\t "+endTime);
+		
+		selectedTime = fnConvertTime(startTime)+" ~ "+fnConvertTime(endTime);
+		console.log("selectedTime 4045   :::   "+selectedTime);
+	}
+	else{
+		selectedTime = '';
+	}
+	SCREEN.WriteJnl("**통지금액: " + selectedTongjiMoney);
+	SCREEN.WriteJnl("[추가인증[SMS] 정보 입력] 정상");
+	//다음페이지로 넘김
+	p.ChangeTab("4049");
+	
+} //BT_right_OnClick End
+
+
+
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[추가인증[SMS] 정보 입력] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+function TB_textbox2_OnClick(e){
+	//통지대상금액 입력 페이지로 넘기기
+	p.ChangeTab("4048");
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+function setComboboxData(){
+	let arr = [];						//계좌정보를 담을 배열
+	let row = p.AccountRow;				//계좌개수
+	let grid = p.Grid					//계좌정보
+	console.log("4045 AccountRow   :::   "+p.AccountRow);
+	console.log("4045 p.Grid   :::   "+p.Grid);
+	
+	for(let i = 0; i<row; i++){
+		if(i > 9){
+			arr.push({Text : com.acct.accountHypen(grid[i].CUS_ACN) , Value : '0'+i});	
+		}
+		else{
+			//arr 배열에 계좌번호 & Value push
+			arr.push({Text : com.acct.accountHypen(grid[i].CUS_ACN) , Value : '00'+i});
+		}
+	}
+	console.log("array   :   "+JSON.stringify(arr));
+	
+	DL_combobox1.setItemList(arr);
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//setMoney
+function setInfo(){
+	//통지대상금액
+	console.log("4045 setMoney : "+p.setMoney);
+	TB_textbox2.Text = p.setMoney;
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+/*
+//시간클릭해서 시간,분 둘다 처리
+function setTime(){
+	//통지시간
+	if(p.hour && p.min != 'undefined'){		
+		if(LB_setTime.Text.length > 0 && LB_setTime2.Text.length > 0 ){
+			let time = p.hour.split(' ');
+			LB_setTime3.Text = time[1];
+			LB_setTime4.Text = p.min;
+			
+			console.log('setTime3 setTime4 : ' + p.hour + ' && '+p.min)
+		}
+		else{
+			let time = p.hour.split(' ');
+			LB_setTime.Text = time[1];
+			LB_setTime2.Text = p.min;
+			console.log('setTime1 setTime2 : ' + p.hour + ' && '+p.min)
+		}		
+	}
+	else{
+		console.log('p.hour && p.min : ' + p.hour + ' && '+p.min)
+	}
+}
+*/
+
+function setHour(){
+	//통지시간
+	if(p.hour != 'undefined' && p.hour != ''){
+		
+		let time = p.hour.split(' ');
+		
+		//console.log("오전 오후  ==>>  " + time[0]);
+		if(time[0] == "오전"){
+			p.area.Text = time[1];
+		}
+		//오후
+		else{
+			let t = time[1];				
+			p.area.Text = parseInt(t.substring(0,2)) +12+"시";
+		}
+		//console.log('\t\tsetTime : ' + p.area.Text);
+		
+		//시작시간이 00시이면 앞에 텍스트 출력
+		/*
+		if(LB_setTime.Text == '00시'){
+			let time = p.hour.split(' ');
+			console.log("오전 오후  ==>>  " + time[0]);
+			if(time[0] == "오전"){
+				LB_setTime.Text = time[1];
+			}
+			//오후
+			else{
+				let t = time[1];				
+				LB_setTime.Text = parseInt(t.substring(0,2)) +12+"시";
+			}
+			console.log('setTime : ' + LB_setTime.Text);
+		}
+		else {
+			let time = p.hour.split(' ');
+			if(time[0] == "오전"){
+				LB_setTime3.Text = time[1];
+			}
+			//오후
+			else{
+				let t = time[1];
+				LB_setTime3.Text = parseInt(t.substring(0,2)) +12+"시";
+			}
+			console.log('setTime3 : ' + LB_setTime3.Text);
+		}
+		*/
+	}
+}
+function setMin(){
+	//통지시간 분
+	if(p.min != 'undefined' && p.min != ''){	
+		p.area.Text = p.min;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+function LB_setTime_OnClick(e){
+	obj = this;	
+	p.ChangeTab("4046");
+}
+function LB_setTime3_OnClick(e){
+	obj = this;
+	p.ChangeTab("4046");	
+}
+
+
+function LB_setTime2_OnClick(e){
+	obj = this;
+	p.ChangeTab("4047");
+}
+
+function LB_setTime4_OnClick(e){
+	obj = this;
+	p.ChangeTab("4047");
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+function DL_combobox2_OnSelectedItemChanged(e){
+	if(e.after.text == "입·출금"){
+		console.log("EE");
+		PN_panel1.Visible = false;
+	}
+	else{
+		PN_panel1.Visible = true;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+fnConvertTime(0910) -->	오전09시 10분 
+fnConvertTime(2240) -->	오후10시 40분
+			시간변환함수
+*/
+
+function fnConvertTime(strDate) {
+	var hh = strDate.substr(0, 2),
+		mm = strDate.substr(2);
+	var sep = hh > 11 ? "오후" : "오전";
+	var result = hh > 12 ? hh-12+"시 "+mm+"분" : hh+"시 "+mm+"분";
+	
+	return sep+" "+result;
+}
+</script></xjscript></body>
+</html>

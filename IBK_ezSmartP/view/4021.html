@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1389,1158" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a52210e0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e2" style="left: 0px; top: 0px; width: auto; height: 101.97px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171a52210e3" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">인터넷 뱅킹 정지고객 이용재개</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e4" style="left: 0px; top: 101.97px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 2; background-color: rgb(239, 240, 242);" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171a52210e5" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">계좌선택</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-171822ec971" style="left: 0px; top: 193.97px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-r="left:0px;top:194px;width:1280px;height:690px;right:auto;bottom:auto" dock-h="690" dock-w="1280"><div class="ui-control ui-panel ui-container" id="ui-170ec4084d5" style="left: 65px; top: 63px; width: 1104px; height: 587px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_account" ui-class="UIPanel"></div><span class="ui-control ui-scrollbar" id="ui-171aa7537e3" style="left: 1217px; top: 58px; width: 32px; height: 587px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="SB_scrollbar1" ui-class="UIScrollBar" scroll-control-id="PN_account"><span class="track"></span><span class="trackbutton"></span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a4b083a4" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 0; background-color: transparent;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span disabled="disabled" class="ui-control ui-button theme-blue ui-disabled" id="ui-171a4b083a5" style='left: auto; top: 31px; width: 258px; height: 80px; right: 65px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">다음</span></span><span class="ui-control ui-button theme-orange" id="ui-171a4b083a6" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*	include */
+includeJSS("LibCommon","/KRG/0301/common.js");
+
+var selectedIdx;				//선택한계좌 인덱스
+var selectedDayMoney;			//선택한계좌 1일이체한도
+var selectedOnceMoney;			//선택한계좌 1회이체한도
+p = parent;	
+
+
+function Form_OnLoad(e){
+
+	BT_right.Text = '다음';
+	
+	LB_Subtitle.$.find('.ui-content').html('<b>계좌선택</b> <span>|</span> <span>거래하실 계좌번호를 눌러 주십시오.</span>');		
+	LB_Subtitle.$.find('span:eq(1)').css({'margin':'0px 25px','color':'rgb(191, 191, 191)'});
+	LB_Subtitle.$.find('span:eq(2)').css({"font-size":'21px','font-family':'"IBK IDream L"'});
+}
+
+function accountList(data){
+	p = parent;
+	console.log("4021 data : "+JSON.stringify(data));
+	console.log("4021 data length : "+data.length);
+	let tag = [];
+	for(let i=0;i<data.length;i++){
+		tag.push(""
+			+'<div class="list_info">'
+			+'	<div class="text_area">'
+			+'    <div class="main_text">메인텍스트</div>'
+			+'	</div>'
+			+'  <div class="next_img"></div>'
+			+'</div>'		
+		);
+	}
+	
+	//XXX-XXXXXX-XX-XXX
+	let $PN_account = $("div[ui-id='PN_account']");
+	$PN_account.html(""
+		+'<div class="list-panel">'
+		+tag.join("")
+		+'</div>'
+	);
+	$PN_account = $("div.list-panel");
+	
+	
+	$PN_account.find(".list_info").each(function(i){
+		let $this = $(this);
+		let r = data[i];
+		let num = r.accountnum;
+		console.log("4021 num : " +num);
+		$this.find(">div.text_area >div.main_text").text(com.acct.accountHypen(num));
+		//$this.find(">div.text_area >div.main_text").text(num);
+		$this.find(">div.next_img").css({"width":"40px"})
+	});	
+	
+	$PN_account.css("visibility","visible");
+	SB_scrollbar1.Invalidate();
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//클릭이벤트
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	PN_account.$.find(".list_info").click(function(){
+		BT_right.Enabled = true;
+		PN_account.$.find("div.list_info").removeClass("select");		
+		comSelectAnimate.call(this,$("div.list_info"));						//클릭 animate 
+		$(this).addClass("select");
+	});
+	
+}//Function accountList End 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function BT_right_OnClick(e){
+	
+	selectedIdx = $('.select').index();
+	console.log("4021 selectedIndex : "+selectedIdx);
+	console.log("4021 daySendMaxMoney : "+p.account[selectedIdx].daySendMaxMoney);
+	console.log("4021 onceSendMaxMoney : "+p.account[selectedIdx].onceSendMaxMoney);
+	
+	selectedDaymoney = p.account[selectedIdx].daySendMaxMoney;
+	selectedOncemoney = p.account[selectedIdx].onceSendMaxMoney;
+	
+	console.log("[selectedDaymoney]  :  " + selectedDaymoney );
+	console.log("[selectedOncemoney] :  " + selectedOncemoney );
+	
+	
+	
+/*  보안카드 고객, 한도 1천만원 이상 고객은 안내페이지로 이동  */
+	console.log("4021 account.onceSendMaxMoney  :   "+p.account[selectedIdx].onceSendMaxMoney);
+	console.log("4021 SECU_MDIA_DCD  :  "+p.SECU_MDIA_DCD );
+	
+	//보안카드 , 한도 1천만원 이상 고개 테스트 데이터
+	//SCREEN.WriteJnl("**계좌선택: "+p.account[selectedIdx].accountnum);
+	SCREEN.WriteJnl("[인터넷 뱅킹 이용재개 계좌선택] 정상");
+	p.ChangeTab("9047");
+}
+
+
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[인터넷 뱅킹 이용재개 계좌선택] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}</script></xjscript></body>
+</html>

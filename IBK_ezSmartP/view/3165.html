@@ -1,0 +1,184 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1389,1120" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">카드목록</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">포인트 전환을 신청할 카드를 선택해 주십시오.</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">닫기</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-w="1280" dock-h="100" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto"><div class="ui-control ui-panel ui-container" id="ui-170ec4084d5" style="left: 83px; top: 67px; width: 1076px; height: 580px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel_card" dock="0" anchor="0b0101"></div><span class="ui-control ui-scrollbar" id="ui-172980bda14" style="left: 1200px; top: 67px; width: 32px; height: 580px; right: auto; bottom: auto; z-index: 1;" ui-class="UIScrollBar" ui-id="SB_scrollbar_card" dock="0" anchor="0b0101" scroll-control-id="PN_panel_card"><span class="track"></span><span class="trackbutton"></span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>// common.js import
+importJSS("common", "common.js");
+
+var p = parent;
+
+function Form_OnLoad(e){
+ // accountListTest();
+}
+
+
+// 카드 전체 리스트
+function cardListAll() {
+
+    var cardData = p.G_cardDataStep4;
+    
+    console.log("cardData : " + cardData);
+
+	// 리스트 초기화
+	let $PN_panel_card = $("div[ui-id='PN_panel_card']");
+    $PN_panel_card.html("");	
+    
+	let tag = [];
+	
+	for(let i = 0, Len = cardData.length; i < Len; i++){
+	    let record = cardData[i];
+        console.log("searchCardListStep4_1::: >>> CDN >>> " + record.CDN);  // 카드번호
+        console.log("searchCardListStep4_1::: >>> RPRS_PDM >>> " + record.RPRS_PDM);    // 대표상품명
+        console.log("searchCardListStep4_1::: >>> STLM_BNCD >>> " + record.STLM_BNCD);
+        console.log("searchCardListStep4_1::: >>> STLM_ACN >>> " + record.STLM_ACN);    
+        
+        let vCDN = (record.CDN).substr(0,4) + "-****-****-" + (record.CDN).substr(record.CDN.length-4);
+        
+	    tag.push(""
+			+'<div class="list_info" onclick="cardSelectStep4_1(\''+i+'\');">'
+	        +'	<div class="text_area">'
+	        +'    <div class="main_text">' + record.RPRS_PDM + '</div>'
+	        +'    <div class="sub_text">' + vCDN + '</div>'	        
+	        +'	</div>'
+	        +'  <div class="next_img"></div>'
+	        +'</div>'	
+		);    	       
+	}  // end for - records			
+
+	$PN_panel_card.append(""
+		+'<div class="list-panel">'
+		+tag.join("")
+		+'</div>'
+	);		
+	
+	$PN_panel_card.find("> div.list-panel > div.list_info").each(function(i){
+		let $this = $(this);
+		$this.css({'border': '1px solid #9c9c9c'});
+		$this.mousedown(function(){
+		    comSelectAnimate.call(this,$("div[ui-id='PN_panel_card'] > div.list-panel > div.list_info"));
+		});
+	});
+	$PN_panel_card.find("> div.list-panel > div.list_info").css("visibility","visible");	
+
+}
+
+// 포인트 전환 신청할 카드 리스트 클릭 이벤트
+function cardSelectStep4_1(idx) {
+   // 선택한카드 정보를 셋팅
+   p.G_cardsListInfoIndexStep4_1 = idx;
+   // 포인트 사용신청 - 캐시백 사용 신청 화면 조회
+   p.sendRequest("step4_point_cashuse_chk");
+}
+
+
+function BT_left_OnClick(e){
+   // 포인트 사용신청 - 캐시백 사용 신청 화면 조회
+   SCREEN.WriteJnl("[포인트 전환 카드 선택] 취소");
+   p.sendRequest("step4_point_cashuse_chk");
+}
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  테스트용 함수
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 결제정보 테스트용 리스트  
+function accountListTest(){
+
+		//data
+		let data = [
+			{ type:"보통예금",accountnum:"001-678764-01-036"},
+			{ type:"보통예금",accountnum:"001-678764-01-043"},
+			{ type:"보통예금",accountnum:"001-678764-01-052"},
+			{ type:"보통예금",accountnum:"001-678764-01-071"},
+			{ type:"보통예금",accountnum:"001-678764-01-089"},
+			{ type:"보통예금",accountnum:"001-678764-01-068"},
+			{ type:"보통예금",accountnum:"001-678764-01-054"},
+			{ type:"보통예금",accountnum:"001-678764-01-012"},
+			{ type:"보통예금",accountnum:"001-678764-01-026"},
+			{ type:"보통예금",accountnum:"001-678764-01-047"},
+			{ type:"보통예금",accountnum:"001-678764-01-092"},
+			{ type:"보통예금",accountnum:"001-678764-01-081"},
+			{ type:"보통예금",accountnum:"001-678764-01-036"},
+			{ type:"보통예금",accountnum:"001-678764-01-043"},
+			{ type:"보통예금",accountnum:"001-678764-01-052"},
+			{ type:"보통예금",accountnum:"001-678764-01-071"},
+			{ type:"보통예금",accountnum:"001-678764-01-089"},
+			{ type:"보통예금",accountnum:"001-678764-01-068"},
+			{ type:"보통예금",accountnum:"001-678764-01-054"},
+			{ type:"보통예금",accountnum:"001-678764-01-012"},
+			{ type:"보통예금",accountnum:"001-678764-01-026"},
+			{ type:"보통예금",accountnum:"001-678764-01-047"},
+			{ type:"보통예금",accountnum:"001-678764-01-092"},
+			{ type:"보통예금",accountnum:"001-678764-01-081"}
+		];	
+		
+		let tag = [];
+		
+		for(let i = 0, Len = data.length; i < Len; i++){
+		    let record = data[i];
+	        
+		    tag.push(""
+				+'<div class="list_info">'
+		        +'	<div class="text_area">'
+		        +'    <div class="main_text">메인텍스트</div>'
+		        +'    <div class="sub_text">타입</div>'	        
+		        +'	</div>'
+		        +'  <div class="next_img"></div>'
+		        +'</div>'	
+			);    	       
+		}  // end for - data				
+		
+	// 리스트 초기화
+	let $PN_panel_card = $("div[ui-id='PN_panel_card']");
+	$PN_panel_card.html(""
+		+'<div class="list-panel">'
+		+tag.join("")
+		+'</div>'
+	);
+    
+    /**
+	$PN_panel_card.append(""
+		+'<div class="list-panel">'
+		+tag.join("")
+		+'</div>'
+	);
+	***/
+	
+	$PN_panel_card.find("> div.list-panel > div.list_info").each(function(i){
+		let $this = $(this);
+		let r = data[i];	
+		
+		$this.find(">div.text_area >div.sub_text").text(r.type);
+		$this.find(">div.text_area >div.main_text").html(r.accountnum);
+			
+		$this.css({'border': '1px solid #9c9c9c'});
+		$this.mousedown(function(){
+		    comSelectAnimate.call(this,$("div[ui-id='PN_panel_card'] > div.list-panel > div.list_info"));
+		});
+	});
+	$PN_panel_card.find("> div.list-panel > div.list_info").css("visibility","visible");	
+	
+	// 화면 전환 이후 Invalidate 스크롤 체크(생성)
+	SB_scrollbar_card.Invalidate();	
+	
+}
+
+</script></xjscript></body>
+</html>

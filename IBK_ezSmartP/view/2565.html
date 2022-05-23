@@ -1,0 +1,108 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1280,1024" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a52210e0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_panel1" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e2" style="left: 0px; top: 0px; width: auto; height: 100.22px; right: 0px; bottom: auto; z-index: 2; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-w="200" dock-h="100" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a52210e3" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">SMS 문자전송 서비스</span></span></div><div class="ui-control ui-panel ui-container" id="ui-171a52210e4" style="left: 0px; top: 102px; width: 1280px; height: 92px; right: auto; bottom: auto; z-index: 0; background-color: whitesmoke;" ui-class="UIPanel" ui-id="PN_Subtitle" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-171a51593d6" style='border-radius: 5px; left: 480px; top: 33px; width: 74px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK IDream M"; font-size: 22px; z-index: 0; background-color: rgb(0, 104, 196);' ui-class="UILabel" ui-id="LB_label140" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">확인</span></span><span class="ui-control ui-label" id="ui-171a52210e5" style='left: 82px; top: 30px; width: 394px; height: 45px; right: auto; bottom: auto; font-family: "IBKIDreamL", "IBK iDream L", sans-serif; font-size: 28px; z-index: 1;' ui-class="UILabel" ui-id="LB_Subtitle1" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: flex-start;">수취인의 휴대폰번호를 누르신 후</span></span><span class="ui-control ui-label" id="ui-1740eacc505" style='left: 561px; top: 30px; width: 218px; height: 45px; right: auto; bottom: auto; font-family: "IBKIDreamL", "IBK iDream L", sans-serif; font-size: 28px; z-index: 2;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: flex-start;">을 눌러 주십시오.</span></span></div><div class="ui-control ui-panel ui-container" id="ui-171a52210e8" style="left: 0px; top: 884px; width: 1280px; height: 140px; right: auto; bottom: auto; z-index: 1;" ui-class="UIPanel" ui-id="PN_btn" dock="0" anchor="0b0101"><span class="ui-control ui-button theme-orange" id="ui-171a52210ea" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span><span disabled="disabled" class="ui-control ui-button theme-blue ui-disabled" id="ui-171bff71c97" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span><span disabled="disabled" class="ui-control ui-button theme-mint ui-disabled" id="ui-1740ec2ac02" style='left: 518px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 2;' ui-class="UIButton" ui-id="BT_center" dock="0" anchor="0b0101" xonclick="BT_center_OnClick" theme="mint"><span class="ui-content">송금인입력</span></span></div><span class="ui-control ui-textbox" id="ui-171a52210eb" style='left: 134px; top: 348px; width: 475px; height: 100px; right: auto; bottom: auto; font-family: "IBK iDream"; font-size: 48px; z-index: 3;' ui-class="UITextBox" ui-id="TB_transfer" dock="0" anchor="0b0101"><span><input class="ui-input" style="text-align: left;" type="text" maxlength="13" value=""></span></span><div class="ui-control ui-numberpad fixed" id="ui-171a5226656" style="left: 714px; top: 318px; width: 352px; height: 487px; right: auto; bottom: auto; z-index: 4;" ui-class="UINumberPad" ui-id="NP_numberpad1" dock="0" anchor="0b0101" xonkeyclick="NP_numberpad1_OnKeyClick"><table class="fixed" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td key="1"><div>1</div></td><td key="2"><div>2</div></td><td key="3"><div>3</div></td></tr><tr><td key="4"><div>4</div></td><td key="5"><div>5</div></td><td key="6"><div>6</div></td></tr><tr><td key="7"><div>7</div></td><td key="8"><div>8</div></td><td key="9"><div>9</div></td></tr><tr><td class="fix backspace" key=""><div></div></td><td key="0"><div>0</div></td><td class="fix clear" key="정정"><div>정정</div></td></tr></tbody></table><table class="shuffle" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td key="2"><div>2</div></td><td class="key-empty" key=""><div></div></td><td key="7"><div>7</div></td><td key="5"><div>5</div></td></tr><tr><td key="3"><div>3</div></td><td key="4"><div>4</div></td><td class="key-empty" key=""><div></div></td><td key="1"><div>1</div></td></tr><tr><td key="6"><div>6</div></td><td key="0"><div>0</div></td><td key="8"><div>8</div></td><td key="9"><div>9</div></td></tr><tr><td class="fix shuffle" colspan="2"><div>재배열</div></td><td class="fix backspace" key="backspace"><div></div></td><td class="fix clear" key="clear"><div>정정</div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-171a5245d17" style="left: 134px; top: 301px; width: 151px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 5;" ui-class="UILabel" ui-id="LB_label16" dock="0" anchor="0b0101"><span class="ui-content">휴대폰 번호</span></span><span class="ui-control ui-label" id="ui-1740eae15fc" style="left: 135px; top: 499px; width: 200px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 6;" ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content">메시지 전송 내용</span></span><div class="ui-control ui-panel ui-container" id="ui-1740eaea0f4" style="border-radius: 15px; left: 134px; top: 546px; width: 475px; height: 204px; right: auto; bottom: auto; z-index: 7; background-color: rgb(215, 234, 255);" ui-class="UIPanel" ui-id="PN_panel2" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-1740eb6ded5" style="left: 355px; top: 39px; width: 78px; height: 28px; right: auto; bottom: auto; font-size: 28px; z-index: 0;" ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: flex-end;">님께서</span></span><span class="ui-control ui-label" id="ui-1740eb8c630" style="left: 381px; top: 87px; width: 52px; height: 28px; right: auto; bottom: auto; font-size: 28px; z-index: 1;" ui-class="UILabel" ui-id="LB_label4" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: flex-end;">으로</span></span><span class="ui-control ui-label" id="ui-1740eba978e" style="left: 212px; top: 135px; width: 221px; height: 28px; right: auto; bottom: auto; font-size: 28px; z-index: 2;" ui-class="UILabel" ui-id="LB_label5" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: flex-end;">원 입금하셨습니다.</span></span><span class="ui-control ui-label" id="ui-1740ebf948d" style="left: 34px; top: 39px; width: 320px; height: 28px; right: auto; bottom: auto; font-size: 28px; font-weight: bold; z-index: 3;" ui-class="UILabel" ui-id="LB_from" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: flex-end;"></span></span><span class="ui-control ui-label" id="ui-1740ec0e8d7" style="left: 34px; top: 87px; width: 344px; height: 28px; right: auto; bottom: auto; font-size: 28px; font-weight: bold; z-index: 4;" ui-class="UILabel" ui-id="LB_to" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: flex-end;"></span></span><span class="ui-control ui-label" id="ui-1740ec1b215" style="left: 33px; top: 135px; width: 177px; height: 28px; right: auto; bottom: auto; font-size: 28px; font-weight: bold; z-index: 5;" ui-class="UILabel" ui-id="LB_money" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: flex-end;"></span></span></div><span class="ui-control ui-label" id="ui-1740ebbe7de" style="left: 133px; top: 765px; width: 407px; height: 22px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 22px; z-index: 8;" ui-class="UILabel" ui-id="LB_label6" dock="0" anchor="0b0101"><span class="ui-content">*문자 전송 서비스에 대한 수수료는 없습니다.</span></span><span class="ui-control ui-label" id="ui-1740ebcaf88" style="left: 133px; top: 804px; width: 442px; height: 22px; right: auto; bottom: auto; color: black; font-size: 22px; z-index: 9;" ui-class="UILabel" ui-id="LB_label7" dock="0" anchor="0b0101"><span class="ui-content">※ 송금인명을 입력하시려면 휴대폰 번호 입력 후</span></span><span class="ui-control ui-label" id="ui-1740ebdabd2" style="left: 158px; top: 826px; width: 336px; height: 22px; right: auto; bottom: auto; color: black; font-size: 22px; z-index: 10;" ui-class="UILabel" ui-id="LB_label8" dock="0" anchor="0b0101"><span class="ui-content"><span style="color: rgb(23, 107, 200);">송금인입력&nbsp;</span>을 눌러 주십시오.</span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js"); // LibUtil import
+/*
+	2565 - SMS문자전송 서비스
+*/
+let p = parent;
+
+// 거래종료
+function BT_left_OnClick(e){
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+// 송금인 입력화면으로 이동
+function BT_center_OnClick(e){
+	saveSMSText();
+	
+	p.ChangeTab("2564");
+}
+
+// 명세표 선택화면으로 이동
+function BT_right_OnClick(e){
+	saveSMSText();
+
+	p.ChangeTab("2566");
+}
+
+function Form_OnLoad(e){
+	init();
+}
+
+// 입력 컴포넌트 초기화
+function init(){
+	// 텍스트박스
+	TB_transfer.$.find('>span >.ui-input').attr("disabled","disabled");
+	TB_transfer.$.find(">span >.ui-input")
+		.attr("readonly","true")
+		.attr("disabled","true")
+		.css({"padding-right":"15%", "padding-left":"30px"});
+		
+	// 키패드
+	NP_numberpad1.$.find(".backspace").attr("key","backspace");
+}
+
+
+// 파란색 박스에 데이터 보여주기
+function tranDataPreview(){
+	// 송금인
+	LB_from.Text = p._RMTN_RQTR_NM;
+	// 입금받을계좌번호
+	LB_to.Text = com.acct.fnGetAccountPattern(p._MNRC_ACN);
+	// 입금액
+	LB_money.Text = parseInt(p._TRN_AMT).toLocaleString();
+	
+	// 송금인 입력을 받았다면 송금인 입력 버튼 hide
+	if(!com.util.isNull2(p._RMTN_RQTR_NM)){
+		BT_center.Visible = false;
+	}
+}
+
+function NP_numberpad1_OnKeyClick(e){
+	if(e.key == "정정"){
+		e.key='';
+		TB_transfer.Text = TB_transfer.Text.replace(TB_transfer.Text,"");
+	}
+	else if( e.key == "backspace"){
+		e.key='';
+		TB_transfer.Text = TB_transfer.Text.substring ( 0, TB_transfer.Text.length -1);	
+	}
+	//글자수 제한
+	if(TB_transfer.Text.length < 13){
+		TB_transfer.Text += e.key;
+		TB_transfer.Text = NP_numberpad1.autoHypenPhone(TB_transfer.Text);	
+		
+		if(TB_transfer.Text.length >= 11){
+			BT_center.Enabled = true;
+			BT_right.Enabled = true;
+		} else {
+			BT_center.Enabled = false;
+			BT_right.Enabled = false;
+		}
+	}
+	else{
+		$(TB_transfer).attr("readonly");
+	}	
+}
+
+// 휴대폰번호 저장
+function saveSMSText(){
+	p._TPN = TB_transfer.Text.replace(/-/g, "");
+}</script></xjscript></body>
+</html>

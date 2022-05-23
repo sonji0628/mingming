@@ -1,0 +1,168 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1280,1024">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_title" dock="1" anchor="0b0101" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_Title" dock="0" anchor="0b0101"><span class="ui-content">출금계좌선택</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">출금하실 계좌를 선택해 주십시오.</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">닫기</span></span><span disabled="disabled" class="ui-control ui-button theme-blue ui-disabled" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" ui-class="UIPanel" ui-id="PN_panel38" dock="5" anchor="0b0101" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="1280"><div class="ui-control ui-panel ui-container" id="ui-172da037597" style="left: 78px; top: 58px; width: 1124px; height: 587px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_accountList" dock="0" anchor="0b0101"></div></div><span class="ui-control ui-scrollbar" id="ui-172bb1c1485" style="left: auto; top: 254px; width: 32px; height: 587px; right: 36px; bottom: auto; z-index: 4;" ui-class="UIScrollBar" ui-id="SB_scrollbar4" dock="0" anchor="0b1001" scroll-control-id="PN_accountList"><span class="track"></span><span class="trackbutton"></span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js"); // LibUtil import
+/*
+	# 4505 - 출금계좌선택
+*/
+let currentObj = {};
+let p = parent;
+let retObj = {}; 		// 콜백함수를 통해 리턴시킬 객체
+
+function Form_OnLoad(e){
+  // 팝업을 호출한 opener에 팝업 window 저장 (opener에서 close 가능)
+  if (host.form.opener){
+	  host.form.opener.xpopup = window;
+  }
+	
+  com.screen.setTimeoutEx(30000, onScreenTimeout);
+  
+  ReceiveTran();
+}
+
+// parent 화면의 타임아웃에 종속되어 주석처리함
+function onScreenTimeout(){
+	console.log("[popup] Screen Timeout!!!");
+	
+	com.screen.clearTimeoutEx();
+
+	com.screen.closePopup(function(opendlg){
+		opendlg.OnPopupCloseCallback4505("timeout");
+	});	
+}
+
+// 업무에 맞는 Receive Data 처리
+function ReceiveTran(){
+	let obj;
+  	
+  	// 세션스토리지에서 값 가져오기 START
+  	let getObjData = com.ss.getItem("4505_accountList");
+  	
+  	if(getObjData != null){
+	 	obj = jQuery.parseJSON(getObjData);
+  	}
+  	// 세션스토리지에서 값 가져오기 END
+
+	if(obj != null){
+		let rows = obj.list;
+		let tag = [];
+	
+		for(let i=0; i<rows.length; i++){
+			let acn_title = rows[i].SUBJ_NM;
+			
+			if(!com.util.isNull(rows[i].ASMB_BNKB_NAM_CON)){
+				acn_title = acn_title + "(" + rows[i].ASMB_BNKB_NAM_CON + ")";
+			}
+		
+			tag.push(""
+				+'<div class="list_info" data1="' + rows[i].CUS_ACN.trim() + '" data2="' + rows[i].SUBJ_NM + '" data3="' + rows[i].ACNT_BAL + '" onclick="selectAccount(this)">'
+    	    	+'	<div class="text_area">'
+				+'		<div>'
+    	    	+'  		<div class="main_text usetype" style="margin-bottom:12px;">' + acn_title + '</div>'
+    	    	+'  		<div class="sub_text">' + com.acct.fnGetAccountPattern(rows[i].CUS_ACN.trim()) + '</div>'
+				+'		</div>'
+    	    	+'	</div>'
+    	    	+'  <div class="text_area_balance">'
+    	    	+'		<span style="color:#176bc8;">' + parseInt(rows[i].ACNT_BAL).toLocaleString() + ' </span><span class="won">원</span>'
+    	    	+'		<div class="img">'
+    	    	+'			<img src="/KRG/media/list_ic_next.png" />'
+    	    	+'		</div>'
+    	    	+'	</div>'
+    	    	+'</div>'
+			);
+		}
+	
+		// 리스트를 화면에 표시
+		let $PN_accountList = $("div[ui-id='PN_accountList']");
+		$PN_accountList.html(""
+			+'<div class="list-panel">'
+			+ tag.join("")
+			+'</div>'
+		);
+	
+		// PN_accountList의 height를 list-panel의 height처럼 적용되게 .. 아이콘 적용 너비에 영향을 줌
+		$PN_accountList = $("div.list-panel");
+		if($PN_accountList[0].offsetHeight <= $PN_accountList[0].parentElement.clientHeight){
+			$PN_accountList.height("100%");
+		}
+		
+		// 기타 리스트 css	
+		$PN_accountList.find(">div.list_info").css({'justify-content':'space-between', 'padding':'0 40px', 'margin-bottom':'12px'});
+		$PN_accountList.find(">div.list_info").each(function(i){
+			let $this = $(this);
+			
+			$this.find(">div.text_area").css({'display':'flex','flex-direction':'row','padding-left':'20px', 'width':'auto'});
+			$this.find(">div.text_area .main_text").css({'font-family':'IBK iDream L', 'font-size':'21px'});
+			$this.find(">div.text_area .sub_text").css({'font-family':'IBK iDream M', 'font-size':'24px'});
+			$this.find(">div.text_area_balance").css({'display':'flex','flex-direction':'row','font-size':'24px', 'font-family':'IBK iDream M'});
+			$this.find(">div.text_area_balance div.balance span").css({'order':'3', 'margin-right':'5px'});
+			$this.find(">div.text_area_balance div.balance span.won").css({'order':'2'});
+			$this.find("div.img").css({'order':'1','width':'45px','display':'flex', 'align-items':'center', 'justify-content':'flex-start', 'margin-left':'20px'});
+		});	
+	}
+	
+	// 스크롤 show/hide
+	SB_scrollbar4.Invalidate();
+}
+
+// 계좌 선택이벤트
+function selectAccount(target){
+	console.log('계좌선택 >>> ');
+	
+	// 계좌선택 이벤트
+	PN_accountList.$.find("div.list_info").removeClass("select");		
+	comSelectAnimate.call(target,$("div.list_info"));						//클릭 animate 
+	$(target).addClass("select");
+	
+	
+	// 출금계좌 전역객체에 저장
+	retObj.selectAccount = target.getAttribute('data1');
+	retObj.selectAmountName = target.getAttribute('data2');
+	retObj.selectAmount = target.getAttribute('data3');
+	
+	console.log("select_account : " + retObj.selectAccount);
+	console.log("select_amountNm : " + retObj.selectAmountName);
+	console.log("select_amount : " + retObj.selectAmount);
+	
+	// 다음버튼 enabled
+	BT_right.Enabled = true;
+}
+
+// 이자납입화면으로 이동 (닫기)
+function BT_left_OnClick(e){
+	// 팝업 닫고 아무처리 안함
+	SCREEN.WriteJnl("[출금계좌 변경] 취소");
+	setTimeout(function(){
+		com.screen.closePopup(function(opendlg){
+			openDlg.OnPopupCloseCallback4505(false);
+		});	
+	}, 200);
+}
+
+// 이자납입화면으로 이동 (확인)
+function BT_right_OnClick(e){
+	// 팝업 닫고 이자납입화면 데이터 변경
+	SCREEN.WriteJnl("**계좌번호: " + retObj.selectAccount);
+	SCREEN.WriteJnl("[출금계좌 변경] 정상");
+	setTimeout(function(){
+		com.screen.closePopup(function(opendlg){
+			openDlg.OnPopupCloseCallback4505(true, retObj);
+		});	
+	}, 200);
+}</script></xjscript></body>
+</html>

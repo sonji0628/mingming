@@ -1,0 +1,579 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ide-size="1389,1120" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 1; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">선결제</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 235px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">결제청구건 조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-blue" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="1280"><span class="ui-control ui-scrollbar" id="ui-172980bda14" style="left: 1205px; top: 84px; width: 32px; height: 560px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="SB_scrollbar_payinfo" ui-class="UIScrollBar" scroll-control-id="PN_panel_payinfo"><span class="track"></span><span class="trackbutton" style="top: 170px;"></span></span><div class="ui-control ui-panel ui-container" id="ui-172e8e859a4" style="left: 83px; top: 21px; width: 1100px; height: 620px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_panel_payinfo" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-172e8e90051" style="left: 4px; top: 28px; width: 403px; height: 42px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-size: 34px; z-index: 0;" anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content">상세조회</span></span><div class="ui-control ui-table" id="ui-172e8e95d12" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 4px; top: 76px; width: 1075px; height: 780px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="TL_table_payinfo" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="270" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d13" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">전표매입년월일</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d14" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d15" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">매출전표번호</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d16" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d17" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">이용구분</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d18" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d19" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">이용일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d1a" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d1b" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">가맹점명</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d1c" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d1d" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">이용카드</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d1e" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d1f" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">이용원금</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d20" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d27" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">미결제원금</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d28" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d29" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">최소입금액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d2a" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17394907a7e" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">최소입금원금</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17394907a7f" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173949076e4" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">당월청구금액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173949076e6" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr height="60"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-1739490736b" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">미결제잔액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-1739490736c" style="padding: 0px 20px; font-size: 22px;"></div></td></tr><tr><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17394a2cbcb" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">청구일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17394a2cbcc" style="padding: 0px 20px; font-size: 22px;"></div></td></tr></tbody></table></div></div></div></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-17354fdb1b9" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="5" ui-id="PN_loader" ui-class="UIPanel" dock-r="left:0px;top:193px;width:1281px;height:832px;right:auto;bottom:auto" dock-h="832" dock-w="1281" back-image-pos="530px,370px"><span class="ui-back-image" style='background-position: 530px 370px; background-image: url("/KRG/media/loader.gif");'></span></div></div><xcomponent><xios><xio>{
+  "Name": "IO_03318005",
+  "Description": "CRDRCP301023 - 단기카드대출 조회",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "AHST_PCSN_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "MMBR_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "STLM_UT_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "CDN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CARD_CLSD_INQ_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Number",
+      "Size": 5,
+      "Name": "CSTP_MNRC_ROWCOUNT",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "Grid",
+      "Size": -1,
+      "Name": "Grid1",
+      "GridData": [
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "SLIP_BNG_YMD"
+        },
+        {
+          "DataType": "String",
+          "Size": 11,
+          "Name": "CARD_AMSL_SLN"
+        },
+        {
+          "DataType": "String",
+          "Size": 3,
+          "Name": "CRD_PDCD"
+        },
+        {
+          "DataType": "String",
+          "Size": 15,
+          "Name": "MNRC_PRNC_AMT"
+        }
+      ]
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "AHST_PCSN_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "MMBR_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "STLM_UT_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "CARD_CLSD_INQ_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "CDN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "STLM_BNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 16,
+      "Name": "STLM_ACN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "LAST_BILG_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 15,
+      "Name": "CRD_MNRC_TTAL_AMT",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "CSM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "RCPSB_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 3,
+      "Name": "CRMP_STLM_DSLN_RCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "ACNT_GEDR_ABL_YN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Number",
+      "Size": 5,
+      "Name": "CSTP_ROWCOUNT",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "Grid",
+      "Size": -1,
+      "Name": "Grid1",
+      "GridData": [
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "SLIP_BNG_YMD"
+        },
+        {
+          "DataType": "String",
+          "Size": 11,
+          "Name": "CARD_AMSL_SLN"
+        },
+        {
+          "DataType": "String",
+          "Size": 3,
+          "Name": "CRD_PDCD"
+        },
+        {
+          "DataType": "String",
+          "Size": 16,
+          "Name": "CDN"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "AMSL_YMD"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "CARD_AMSL_AMT"
+        },
+        {
+          "DataType": "String",
+          "Size": 50,
+          "Name": "AFST_NM"
+        },
+        {
+          "DataType": "String",
+          "Size": 8,
+          "Name": "STLM_YMD"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "CRD_TMNB_AMT"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "CRD_OTST_PRNC_AMT"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "CRD_OTST_FEE"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "MNMM_MNRC_AMT"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "MNMM_MNRC_PRNC_AMT"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "OTST_TTAL_AMT"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "MNRC_RQST_AMT"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "MNRC_PRNC_AMT"
+        },
+        {
+          "DataType": "Number",
+          "Size": 15,
+          "Name": "MNRC_FEE"
+        }
+      ]
+    }
+  ]
+}</xio></xios><xcms><xcm>{
+  "Name": "CM_03328301",
+  "ServiceName": "CRDRCP301023",
+  "RefIoName": "IO_03318005",
+  "Input": [
+    {
+      "AHST_PCSN_DCD": "AHST_PCSN_DCD"
+    },
+    {
+      "MMBR_DCD": "MMBR_DCD"
+    },
+    {
+      "STLM_UT_NO": "STLM_UT_NO"
+    },
+    {
+      "CDN": "CDN"
+    },
+    {
+      "CARD_CLSD_INQ_YN": "CARD_CLSD_INQ_YN"
+    },
+    {
+      "CSTP_MNRC_ROWCOUNT": "CSTP_MNRC_ROWCOUNT"
+    },
+    {
+      "Grid1": "Grid1"
+    }
+  ],
+  "Output": [
+    {
+      "AHST_PCSN_DCD": "AHST_PCSN_DCD"
+    },
+    {
+      "MMBR_DCD": "MMBR_DCD"
+    },
+    {
+      "STLM_UT_NO": "STLM_UT_NO"
+    },
+    {
+      "CARD_CLSD_INQ_YN": "CARD_CLSD_INQ_YN"
+    },
+    {
+      "CDN": "CDN"
+    },
+    {
+      "STLM_BNCD": "STLM_BNCD"
+    },
+    {
+      "STLM_ACN": "STLM_ACN"
+    },
+    {
+      "LAST_BILG_YMD": "LAST_BILG_YMD"
+    },
+    {
+      "CRD_MNRC_TTAL_AMT": "CRD_MNRC_TTAL_AMT"
+    },
+    {
+      "CSM": "CSM"
+    },
+    {
+      "RCPSB_YN": "RCPSB_YN"
+    },
+    {
+      "CRMP_STLM_DSLN_RCD": "CRMP_STLM_DSLN_RCD"
+    },
+    {
+      "ACNT_GEDR_ABL_YN": "ACNT_GEDR_ABL_YN"
+    },
+    {
+      "CSTP_ROWCOUNT": "CSTP_ROWCOUNT"
+    },
+    {
+      "Grid1": "Grid1"
+    }
+  ]
+}</xcm></xcms></xcomponent><xjscript><script id='xjscript' type='text/plain'>// 3180.css import
+importCSS("3180"     ,"3180.css");
+
+// common.js import
+includeJSS("common","/KRG/0301/common.js");
+
+var payinfo,records,opener;
+
+function Form_OnLoad(e){
+  
+   // 팝업을 호출한 opener에 팝업 window 저장 (opener에서 close 가능)
+   if (host.form.opener){
+	   host.form.opener.xpopup = window;
+	   opener = host.form.opener;
+   }
+
+   com.screen.setTimeoutEx(30000, onScreenTimeout);
+
+   // 로딩 이미지 뷰
+   ShowLoader();
+
+   payinfo = com.ss.getItem("3283_payinfo");
+	    
+   if(payinfo != null){
+	  records = jQuery.parseJSON(payinfo);
+   } 
+
+   // 선결제처리구분코드 셋팅
+   var PCSN_DCD = com.ss.getItem("3283_AHST_PCSN_DCD");  
+   
+   // 3-(단기카드대출) 에 해당된다면,,,,
+   if(PCSN_DCD == "3") {
+      // 단기카드(현금서비스) 수수료 조회
+      selectCRDRCP301023();
+   } else {
+      // 4-(일부결제금액이월일시불),5-(일부결제금액이월단기카드대출) 에 해당된다면,,,,
+      if(["4","5"].indexOf(PCSN_DCD) > -1) {
+		  // 최소입금원금 숨기기
+		  const $payinfo_tbody = TL_table_payinfo.$.find("> table > tbody");
+		  $payinfo_tbody.find("> tr:eq(9)").css({"display":"none"});
+		  $("[ui-id='TL_table_payinfo']").css({"height":"720px"});
+      }
+      // 결제청구건 데이터 셋팅
+      fnInfomationSetting(records);
+   }
+      
+}
+
+// parent 화면의 타임아웃에 종속되어 주석처리함
+function onScreenTimeout(){
+	console.log("[popup] Screen Timeout!!!");
+	
+	com.screen.clearTimeoutEx();
+
+	com.screen.closePopup(function(opendlg){
+		opendlg.OnCloseCallback3283("timeout");
+	});	
+}
+
+
+// 기본 로더 이미지 뷰
+function ShowLoader(){
+    // 로더 이미지 투명도 설정
+    $("[ui-id='PN_loader']").css({"opacity":"0.4"});
+    $("[ui-id='PN_loader']").css({"background-color":"rgba(0,0,0, 0.4)"});
+  
+    // 로더 이미지 위치 설정
+    //$("[ui-id='PN_loader']").css({"top":"600px","left":"600px"});
+    // 로더 이미지 크기 설정
+    //$("[ui-id='PN_loader']").css({"width":"600","height":"600"});
+    
+    $("[ui-id='PN_loader']").css({'z-index':'999','position':'absolute'});
+    
+    PN_loader.Visible = true;  
+}
+
+// 단기카드(현금서비스) 수수료 조회
+function selectCRDRCP301023() {
+
+	console.log("selectCRDRCP301023  host.form.opener  :  "+host.form.opener);
+    console.log("selectCRDRCP301023  G_CRDRCP301021Step3.MMBR_DCD  :  "+opener.G_CRDRCP301021Step3.MMBR_DCD);
+    console.log("selectCRDRCP301023  G_CRDRCP301021Step3.STLM_UT_NO  :  "+opener.G_CRDRCP301021Step3.STLM_UT_NO);
+    console.log("selectCRDRCP301023  G_CRDRCP301021Step3.CDN  :  "+opener.G_CRDRCP301021Step3.CDN);
+    console.log("selectCRDRCP301023  G_CRDRCP301021Step3.CARD_CLSD_INQ_YN  :  "+opener.G_CRDRCP301021Step3.CARD_CLSD_INQ_YN);
+
+	let headerData = "";	
+	let ret = Net.Request(
+		"CM_03328301", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			
+			// 선결제처리구분코드
+			xioInput.AHST_PCSN_DCD = "F";
+
+			// 회원구분코드 
+			xioInput.MMBR_DCD = opener.G_CRDRCP301021Step3.MMBR_DCD;
+			
+			// 결제단위번호
+			xioInput.STLM_UT_NO = opener.G_CRDRCP301021Step3.STLM_UT_NO;
+			
+			// 카드번호
+			xioInput.CDN = opener.G_CRDRCP301021Step3.CDN;
+			
+			// 카드별조회여부
+			xioInput.CARD_CLSD_INQ_YN = opener.G_CRDRCP301021Step3.CARD_CLSD_INQ_YN;
+
+			// 매출건별입금_배열건수
+			xioInput.CSTP_MNRC_ROWCOUNT = 1;		    
+
+			// 매출건별입금
+  			if(records != null){
+	            for(let i = 0, Len = records.length; i < Len; i++){
+	                let record = records[i];
+	                
+	            	let row = xioInput.Grid1.RowAdd();
+					
+					// 전표매입년월일
+	            	row.SLIP_BNG_YMD = record.SLIP_BNG_YMD;
+					// 카드매출전표번호
+	            	row.CARD_AMSL_SLN = record.CARD_AMSL_SLN;
+					// 신용카드상품코드
+	            	row.CRD_PDCD = record.CRD_PDCD;
+					// 입금원금금액(신용카드미결제원금금액)        
+	            	row.MNRC_PRNC_AMT = com.util.fnPaddingData(record.CRD_OTST_PRNC_AMT, '0', 15, true);
+	            	
+	            	console.log("selectCRDRCP301023  row.SLIP_BNG_YMD  :  "+row.SLIP_BNG_YMD);
+	            	console.log("selectCRDRCP301023  row.CARD_AMSL_SLN  :  "+row.CARD_AMSL_SLN);
+	            	console.log("selectCRDRCP301023  row.CRD_PDCD  :  "+row.CRD_PDCD);
+	            	console.log("selectCRDRCP301023  row.MNRC_PRNC_AMT  :  "+row.MNRC_PRNC_AMT);
+	            }
+	        }
+	        
+			console.log("selectCRDRCP301023  xioInput.AHST_PCSN_DCD  :  "+xioInput.AHST_PCSN_DCD);
+			console.log("selectCRDRCP301023  xioInput.MMBR_DCD  :  "+xioInput.MMBR_DCD);
+			console.log("selectCRDRCP301023  xioInput.STLM_UT_NO  :  "+xioInput.STLM_UT_NO);
+			console.log("selectCRDRCP301023  xioInput.CDN  :  "+xioInput.CDN);
+			console.log("selectCRDRCP301023  xioInput.CARD_CLSD_INQ_YN  :  "+xioInput.CARD_CLSD_INQ_YN);
+			console.log("selectCRDRCP301023  xioInput.Grid1  :  "+xioInput.Grid1);
+			
+		},
+		function fcb_OnAfterResponse(result, xioOutput, errorCode) {
+			// OK
+			if (result == "00") {
+			
+				console.log("CRD_MNRC_TTAL_AMT : " + xioOutput.CRD_MNRC_TTAL_AMT);
+				console.log("STLM_ACN : " + xioOutput.STLM_ACN);
+				console.log("Grid1 : " + xioOutput.Grid1);
+				
+		        // 결제청구건 데이터 셋팅
+		        fnInfomationSetting(xioOutput.Grid1);				
+				
+			} else {
+				// Error Message
+				console.log("selectCRDRCP301023 xioOutput : " + xioOutput);
+				console.log("selectCRDRCP301023 result : " + result);
+				console.log("selectCRDRCP301023 errorCode : " + errorCode);
+
+				com.screen.closePopup(function(opendlg){
+					opendlg.OnCloseCallback3283("error",xioOutput);
+				});	
+			}			
+		}
+	);	
+
+}
+
+
+// 결제청구건 데이터 셋팅
+function fnInfomationSetting(gridData) {
+
+  console.log(" fnInfomationSetting >>> gridData ::: " + gridData);
+  
+  // 결제청구 데이터 가져오기
+  if(gridData != null && gridData.length > 0){
+    let record = gridData[0];
+    TL_table_payinfo.DataCell(0,1,"text",com.date.fnGetFormatDate(record.SLIP_BNG_YMD));
+	TL_table_payinfo.DataCell(1,1,"text",record.CARD_AMSL_SLN);
+	TL_table_payinfo.DataCell(2,1,"text",com.acct.cardProductCodes(record.CRD_PDCD));
+	TL_table_payinfo.DataCell(3,1,"text",com.date.fnGetFormatDate(record.AMSL_YMD));		
+	TL_table_payinfo.DataCell(4,1,"text",record.AFST_NM);
+	TL_table_payinfo.DataCell(5,1,"text",record.CDN);
+	TL_table_payinfo.DataCell(6,1,"text",com.util.fnGetFormatMoney(record.CARD_AMSL_AMT));
+	TL_table_payinfo.DataCell(7,1,"text",com.util.fnGetFormatMoney(record.CRD_OTST_PRNC_AMT));
+	TL_table_payinfo.DataCell(8,1,"text",com.util.fnGetFormatMoney(record.MNMM_MNRC_AMT));
+	TL_table_payinfo.DataCell(9,1,"text",com.util.fnGetFormatMoney(record.MNMM_MNRC_PRNC_AMT));
+	TL_table_payinfo.DataCell(10,1,"text",com.util.fnGetFormatMoney(record.CRD_TMNB_AMT));
+	TL_table_payinfo.DataCell(11,1,"text",com.util.fnGetFormatMoney(record.OTST_TTAL_AMT));
+    TL_table_payinfo.DataCell(12,1,"text",com.date.fnGetFormatDate(record.STLM_YMD));
+    
+    const $payinfo_tbody = TL_table_payinfo.$.find("> table > tbody");
+	$payinfo_tbody.find("> tr:eq(6) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody.find("> tr:eq(7) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody.find("> tr:eq(8) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody.find("> tr:eq(9) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody.find("> tr:eq(10) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody.find("> tr:eq(11) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+  }
+  
+   // 화면 스크롤 위치 초기화
+   SB_scrollbar_payinfo.$.find("> span.trackbutton").css({"top":"0px"});  
+  
+   // Invalidate 스크롤 체크(생성)
+   SB_scrollbar_payinfo.Invalidate();		  
+   
+   // 로딩 이미지 히든
+   $("[ui-id='PN_loader']").css({'z-index':'0','position':'static'});				
+   PN_loader.Visible = false;	
+
+}
+
+
+function BT_right_OnClick(e){
+	setTimeout(function(){
+		com.screen.closePopup(function(opendlg){
+    		opendlg.OnCloseCallback3283(true);
+		});	
+	}, 200);
+}
+</script></xjscript></body>
+</html>

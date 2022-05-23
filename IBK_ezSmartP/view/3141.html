@@ -1,0 +1,256 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1395,1145">
+<div class="ui-control ui-panel ui-container" id="ui-171a52210e0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e2" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a52210e3" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">보유카드 조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e4" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 2; background-color: whitesmoke;" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a52210e5" style='left: 82px; top: 25px; width: 524px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">보유 카드 목록</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a52210e8" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-orange" id="ui-171a52210ea" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-171822ec971" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-w="1280" dock-h="690" dock-r="left:0px;top:194px;width:1280px;height:690px;right:auto;bottom:auto"><div class="ui-control ui-panel ui-container" id="ui-170ec4084d5" style="left: 65px; top: 123px; width: 1105px; height: 500px; right: auto; bottom: auto; z-index: 8;" ui-class="UIPanel" ui-id="PN_account" dock="0" anchor="0b0101"></div><span class="ui-control ui-scrollbar" id="ui-171aa7537e3" style="left: 1195px; top: 125px; width: 32px; height: 500px; right: auto; bottom: auto; z-index: 0;" ui-class="UIScrollBar" ui-id="SB_scrollbar1" dock="0" anchor="0b0101" scroll-control-id="PN_account"><span class="track"></span><span class="trackbutton"></span></span><span class="ui-control ui-label" id="ui-171ecd57135" style='left: 66px; top: 39px; width: 66px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 21px; z-index: 1;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content">고객명</span></span><span class="ui-control ui-label" id="ui-171ecd60909" style='left: 65px; top: 74px; width: 107px; height: 32px; right: auto; bottom: auto; color: rgb(0, 104, 195); font-family: "IBK iDream M"; font-size: 28px; z-index: 2;' ui-class="UILabel" ui-id="LB_label5" dock="0" anchor="0b0101"><span class="ui-content"></span></span><div class="ui-control ui-panel ui-container" id="ui-171ecd6dd1e" style="left: 176px; top: 59px; width: 2px; height: 17px; right: auto; bottom: auto; z-index: 5; background-color: rgb(162, 162, 162);" ui-class="UIPanel" ui-id="PN_panel5" dock="0" anchor="0b0101"></div><span class="ui-control ui-label" id="ui-171ecd769fd" style='left: 210px; top: 39px; width: 138px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 21px; z-index: 4;' ui-class="UILabel" ui-id="LB_label6" dock="0" anchor="0b0101"><span class="ui-content">보유카드개수</span></span><span class="ui-control ui-label" id="ui-171ecd76a18" style='left: 210px; top: 74px; width: 107px; height: 32px; right: auto; bottom: auto; color: rgb(0, 104, 195); font-family: "IBK iDream M"; font-size: 28px; z-index: 3;' ui-class="UILabel" ui-id="LB_totalcardnum" dock="0" anchor="0b0101"><span class="ui-content"></span></span><span class="ui-control ui-label" id="ui-171a5ca9429" style="left: 834px; top: 82px; width: 119px; height: 24px; right: auto; bottom: auto; font-size: 21px; z-index: 6;" ui-class="UILabel" ui-id="LB_label8" dock="0" anchor="0b0101"><span class="ui-content">조회기준일시</span></span><span class="ui-control ui-label" id="ui-171a5d1c333" style="left: 960px; top: 82px; width: 210px; height: 24px; right: auto; bottom: auto; font-size: 21px; z-index: 7;" ui-class="UILabel" ui-id="LB_label9" dock="0" anchor="0b0101"><span class="ui-content"></span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js");
+
+var p = parent;
+
+function Form_OnLoad(e)
+{
+	console.log("Init3141");
+	
+	//스크롤바 버튼 크기 조정 Start
+   	SB_scrollbar1.$.find("span.trackbutton").css({'height':'310px'});
+    //스크롤바 버튼 크기 조정 End
+}
+
+function getCardStatus(code, code2)//code 값에 따라 카드의 상태를 정하는 함수
+{
+	switch(code)
+	{
+		case "0": return "활동";
+		case "1": return "분실";
+		case "2": return getCreditStatus(code2);//이용제한
+		case "3": return "탈회";
+		default: return "";
+	}
+}
+
+function getCreditStatus(code2)//어떤 기능이 이용 제한이 걸렸는지 정하는 함수
+{
+	switch(code2)
+	{
+		case "031" : return "할부제재";
+        case "061" : return "카드본인미수령";
+        case "091" : return "국내단기카드대출정지요청카드";
+        case "421" : return "해외임시규제";
+        case "431" : return "해외거래정지";
+        case "731" : return "해외단기카드대출규제";
+        case "871" : return "해외원화결제차단";
+        case "881" : return "해외대면거래제한";
+        case "891" : return "해외비대면거래제한";
+        default : return "이용제한";
+	}
+}
+
+function UpdateCardInfo(data)//카드 목록 만드는 함수
+{
+	console.log("Init UpdateCardInfo\n");
+	
+	var nowDate = p.getNowDate();
+	
+	LB_label9.$.html(nowDate); 
+
+    
+    // 한자리수 숫자에 0붙여주기
+    
+     
+    //이름
+    LB_label5.$.text(p.gKRN_CSM);
+    
+    //정보
+	//<--
+	let tag = [];
+	
+	let rc = Math.floor( (data.CARD_NBI) / 3 ) + 1;
+	let ri = rc * 3 - data.CARD_NBI;
+
+	for(let j=0; j < ri; j++){
+		data.Grid1.push({emtpy : true});
+	}
+
+	var param = {};
+	for(let i=0;i<data.Grid1.length;i++)
+	{
+		let r = data.Grid1[i];
+		
+		if(r.emtpy)
+		{
+			tag.push(""
+				+'<div class="card-item emtpy">'
+				+'</div>'
+			);
+			continue;				
+		}
+		
+		var CardImg = p.getImageName(r.ALL_PDCD);
+		var CardNum = r.CDN.substr(0,4) + "-****-****-" + r.CDN.substr(r.CDN.length-4);
+		var CardSts = getCardStatus(r.STTS_DCD, r.CARD_CRDT_SCD);
+		var accNo = (r.STLM_BNCD=="003") ? r.STLM_ACN.substr(0,3)+"-"+r.STLM_ACN.substr(3,6)+"-"+r.STLM_ACN.substr(9,2)+"-"+r.STLM_ACN.substr(11) : r.STLM_ACN;
+		var BankName = p.getBankName(r.STLM_BNCD);
+		var CardName = r.RPRS_PDM;
+		var accontinfo = {'5':'체크', '6':'체크(소액신용)'}[data.Grid1[i].CRD_GDCD]|| '신용';
+		var selfFmlyDcd = (data.Grid1[i].SELF_FMLY_DCD == "F") ? '가족카드':'본인카드';
+		var index = (p.PageNum*10)+i;
+		param = r;
+		
+		if(r.STTS_DCD == "0")
+		{
+			param.btnNm = "분실신고";
+			param.nextTapName= "3142";
+		}
+		else
+		{
+			param.btnNm = "분실해제";
+			param.nextTapName = "3148";
+		}
+		
+		
+		tag.push(""
+        	+'<div class="card-item">'
+        	+'	<div class="card_info">'
+        	+'		<div class="top_list">'
+        	+'			<span class="card-credit card-type-1">' + accontinfo + '</span>'
+        	+'			<span class="card-des">' + selfFmlyDcd + '</span>'
+        	+'		</div>'
+        	+'		<div class="card_inside">'
+        	+'			<span class="card-name card-name-1">' + CardName + '</span>'
+        	+'			<div style="height:98px"><img style="width:150px;height:98px" sizeMode="strech" id="picture'+index+'" src="'+CardImg+'"></div>'
+        	+'			<div class="card_status">'
+        	+'    			<div>'
+        	+'					<span class="card-inf-head">카드번호</span>'
+        	+'					<span class="card-inf">' + CardNum + '</span>'
+        	+'				</div>'
+        	+'    			<div>'
+        	+'					<span class="card-inf-head">카드상태</span>'
+        	+'					<span class="card-inf">' + CardSts + '</span>'
+        	+'				</div>'
+        	+'  	  		<div>'
+        	+'					<span class="card-inf-head">결제은행</span>' 
+        	+'					<span class="card-inf">' + BankName + '</span>'
+        	+'				</div>'
+        	+'  	  		<div>'
+        	+'					<span class="card-inf-head">결제계좌</span>' 
+        	+'					<span class="card-inf">' + accNo + '</span>'
+        	+'				</div>'
+        	+'			</div>'
+        	+'			<div class="button" id="'+index+'">'
+        	+'				<span class="text">' + param.btnNm + '</span>'
+        	+'			</div>'
+        	+'		</div>'   	
+        	+'	</div>'
+        	+'</div>');
+	}
+	
+	
+
+	// 총 카드 개수 표시
+	var cardCount = data.CARD_NBI;
+	
+	let $totalCardNum = $("span[ui-id='LB_totalcardnum']");
+	
+	$totalCardNum.html(""
+		+'<div class="total-num">'
+		+'	<span class="total">'+ cardCount +'</span>'
+		+'	<span class="tt"> 개</span>'
+		+'</div>'
+	);	
+	LB_totalcardnum.$.find(">div.total-num > span.total").css('color', '#0068c3');
+	//
+	
+	
+	let $cardPanel = $("div[ui-id='PN_account']");
+	
+	$cardPanel.html(""
+		+'<div class="card-panel">'
+		+tag.join("")
+		+'</div>'
+	);		
+	
+	
+	$cardPanel = $("div.card-panel");	
+	
+	$cardPanel.find("> div.card-item").css({'width':'350px','height':'480px', 'padding':'0px 26px 30px', 'margin-bottom':'37px'});
+	$cardPanel.find("> div.card-item > div.card_info").css({'margin':'0px'});
+	$cardPanel.find("> div.card-item > div.card_info > div.top_list").css({'display':'flex', 'justify-content':'space-between', 'align-items':'center', 'padding':'20px 0px 20px 1px'});
+	$cardPanel.find("> div.card-item > div.card_info > div.top_list > span.card-credit").css({'margin':'15px 0 0 1px', 'line-height':'1', 'display':'flex','justify-content':'center', 'align-item':'center', 'width':'60px', 'height':'30px', 'color':'#000', 'text-align':'center', 'font-size':'20px', 'background':'#eff0f2', 'padding':'5px 0 5px 0'});
+	$cardPanel.find("> div.card-item > div.card_info > div.top_list > span.card-des").css({'margin':'0px', 'line-height':'1', 'padding-right':'26px','font-size':'18px','color':'#000'});
+	$cardPanel.find("> div.card-item > div.card_info > div.card_inside > span.card-name").css({'color':'#000', 'font-size':'28px', 'line-height':'34px', 'margin-top':'1px', 'display':'flex', 'height':'93px'});
+	$cardPanel.find("> div.card-item > div.card_info > div.card_inside > span.card-name1").css({'color':'#20b3ff', 'font-size':'28px', 'line-height':'40px', 'margin-top':'15px'});
+	$cardPanel.find("> div.card-item > div.card_info > div.card_inside > div.card_status").css({'display':'flex', 'flex-direction':'column', 'padding-top':'25px'});
+	$cardPanel.find("> div.card-item > div.card_info > div.card_inside > div.card_status > div").css({'padding-bottom':'10px'});
+	$cardPanel.find("> div.card-item > div.card_info > div.card_inside > div.card_status > div > span.card-inf-head").css({'font-size':'18px', 'font-family':'"IBKIDreamL", "IBK iDream L", sans-serif', 'color':'#000'});
+	$cardPanel.find("> div.card-item > div.card_info > div.card_inside > div.card_status > div > span.card-inf").css({'font-size':'18px', 'font-family':'"IBKIDreamM", "IBK iDream M", sans-serif', 'color':'#000', 'text-align':'right', 'margin' :'10px 20px 35px 0'});
+	$cardPanel.find("> div.card-item > div.card_info > div.card_inside > div.button").css({'width':'100%', 'height':'55px', 'border':'2px solid #0068c4', 'border-radius':'7px', 'background':'#0068c4', 'margin-to':'17px', 'text-align':'center'});
+	$cardPanel.find("> div.card-item > div.card_info > div.card_inside > div.button > span.text").css({'font-size':'22px', 'color':'#fff','display':'block', 'margin':'13px 0'});
+	
+	//유의사항 작성 Start
+	$cardPanel.append(""
+			+'<div class="ch-bot-box">'
+			+'	<div class="ch-box-in">'
+			+'		<div class="card-dec-box">'
+			+'			<span class="icon-image"></span>'
+			+'			<span class="ch-tit-2">유의사항<br></span>'
+			+'			<span class="ch-tit-3">1. 거래중 오류 발생시 반드시 분실신고 조회로 정상거래 여부를 확인하십시오.<br></span>'
+			+'			<span class="ch-tit-3">2. 분실신고시 카드명을 선택하여 상세정보를 확인 후 신고하여 주십시오.<br></span>'
+			+'			<span class="ch-tit-3">3. 만 14세이상 미성년자 회원님의 경우 현금출금 기능이 있는 카드 갱신 발급시, 현금출금 및 계좌송금의 한도가 각각 1일/1회 100만원으로 제한됩니다. 한도상향을 원하시는 경우에는 기업은행 영업점으로 문의주시기 바랍니다.<br></span>'
+			+'			<span class="ch-tit-3">4. 발급기한이 5개월 이하로 남은 카드는 재발급이 어려우니 가까운 영업점에서 갱신발급후 사용하시기 바랍니다. (단, 유효기간이 경과하시는 경우 추가발급 및 갱신발급 가능여부를 먼저 확인해주시기 바랍니다.<br></span>'
+			+'		</div>'
+			+'	</div>'
+			+'</div>');
+			
+	$cardPanel.css({'visibility':'visible'});		
+
+	$cardPanel.find(">div.ch-bot-box").css({'padding':'30px 0','background':'#eff0f2','margin-top':'40px'});
+
+	$cardPanel.find(">div.ch-bot-box > div.ch-box-in").css({'padding':'0 48px', 'margin-top':'30px'});
+
+	$cardPanel.find(">div.ch-bot-box > div.ch-box-in > div.card-dec-box > span.icon-image").css({'content':'""', 'width':'33px', 'height':'33px', 'position':'absolute', 'left':'50px', 'margin-top':'10px', 'background-repeat':'no repeat', 'transform':'translateY(-50%)','background':'url("/KRG/media/ic_note.png")'});
+	
+	$cardPanel.find(">div.ch-bot-box > div.ch-box-in > div.card-dec-box > span.ch-tit-2").css({'position':'relative', 'display':'block', 'font-size':'24px', 'margin-bottom':'20px', 'padding':'0 0 0 40px'});
+	
+	$cardPanel.find(">div.ch-bot-box > div.ch-box-in > div.card-dec-box > span.ch-tit-3").css({'line-height':'35px', 'display':'block', 'font-size':'18px'});
+	
+	//유의사항 작성 End
+	
+    $cardPanel.find("> div.card-item > div.card_info > div.card_inside > div.button").mousedown(btnReport);
+    
+    function btnReport(e)
+    {
+    	var ob = this;
+    	var index=$(ob).attr("id");
+    	
+    	p.data.cardInfo = data.Grid1[index];
+    	
+    	SCREEN.WriteJnl("**카드선택: " + data.Grid1[index].CDN);
+		SCREEN.WriteJnl("[" + param.btnNm + "]" + " 선택");
+		
+    	setTimeout(p.ChangeTab(p.data.cardInfo.nextTapName));
+    }
+
+	SB_scrollbar1.Invalidate();	
+	//<--
+	
+}
+
+function BT_left_OnClick(e)//취소 버튼 눌렀을때 동작하는 함수
+{	
+	SCREEN.WriteJnl("[카드분실 신고/해제] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}</script></xjscript></body>
+</html>

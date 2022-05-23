@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm">
+<div class="ui-control ui-panel ui-container" id="ui-171a561f5a3" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; font-weight: bold; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><span class="ui-control ui-label" id="ui-1740ec848e7" style='left: 588px; top: 148px; width: 119px; height: 54px; right: auto; bottom: auto; color: black; font-family: "IBK iDream"; font-size: 54px; font-weight: normal; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content">안 내</span></span><span class="ui-control ui-label" id="ui-1745282a147" style="left: 452px; top: 227px; width: 380px; height: 32px; right: auto; bottom: auto; font-size: 32px; font-weight: normal; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label2" ui-class="UILabel"><span class="ui-content">거래가 정상 처리되었습니다.</span></span><div class="ui-control ui-table" id="ui-173bc75836b" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 300px; top: 489px; width: 680px; height: 167px; right: auto; bottom: auto; font-weight: normal; z-index: 2;" anchor="0b0101" dock="0" ui-id="TL_tranDone" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-h="align-left" align-v="align-middle"></td><td type="1" align-h="align-left" align-v="align-middle"></td></tr></thead><tbody><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17456845fb8" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">거래금액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17456845fb9" style="padding: 0px 20px; color: rgb(29, 29, 29); font-size: 21px; justify-content: flex-end;"></div></td></tr><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17456845fba" style='padding: 0px 0px 0px 20px; font-family: "Noto sans CJK KR", "맑은 고딕", "Arial", "IBK IDream L", "IBK IDream M", "IBK IDream B", "IBK IDream EB", "IBK IDream Symbol", "IBK IWishR"; font-size: 21px; background-color: rgb(242, 242, 242);'><span class="cell-control-label">수수료</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17456845fbb" style="padding: 0px 20px; font-size: 22px; justify-content: flex-end;"></div></td></tr><tr height="34%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17456845fbc" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">거래 후 잔액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17456845fbd" style="padding: 0px 20px; font-size: 22px; justify-content: flex-end;"></div></td></tr></tbody></table></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js"); // LibUtil import
+
+/*
+	#2569 이체완료 (명세표 미수취)
+*/
+let p = parent; 
+
+function init(){
+	// 거래금액
+	TL_tranDone.DataCell(0, 1, "text", parseInt(p._TRN_AMT).toLocaleString() + " 원");
+	
+	// 수수료
+	TL_tranDone.DataCell(1, 1, "text", parseInt(p._FEE).toLocaleString() + " 원");
+	
+	// 거래 후 잔액
+	TL_tranDone.DataCell(2, 1, "text", parseInt(p._PYAF_BAL).toLocaleString() + " 원");
+	
+	setTimeout(function(){
+		ATMCOMM.BusinessEnd(ATMCOMM.RET_OK);
+	}, 3000); // 3초 딜레이
+}</script></xjscript></body>
+</html>

@@ -1,0 +1,377 @@
+/* Common */
+
+
+body * {
+    font-family: '돋움체', DotumChe;
+    font-size : 15px;
+}
+
+.wrapper table i-maskedit {
+    border: 0;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+    font-style: inherit;
+}
+
+.wrapper i-text {
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+    font-style: inherit;
+}
+
+.wrapper table i-maskedit.money input {
+    text-align: right !important;
+}
+
+.bordered td {
+    border-right: 1px solid black;
+}
+
+.bordered td:last-child {
+    border-right: 0;
+}
+
+.pL20 {
+    padding-left: 20px;
+}
+
+.pL40 {
+    padding-left: 40px;
+}
+
+.pT5 {
+    padding-top: 5px;
+}
+
+.pT10 {
+    padding-top: 10px;
+}
+
+.pT20 {
+    padding-top: 20px;
+}
+
+.pTB10 {
+    padding: 10px 0;
+}
+
+.mT40 {
+    margin-top: 40px;
+}
+.mT15 {
+    margin-top: 15px;
+}
+
+.lS10 {
+    letter-spacing: 10px;
+}
+
+.tI20 {
+    text-indent: 20px;
+}
+
+.tCenter {
+    text-align: center;
+}
+
+.tRight {
+    text-align: right;
+}
+
+.tBold {
+    font-weight: bold;
+}
+
+.resultSum {
+    text-align: center;
+}
+
+.resultSum > i-text {
+    letter-spacing: 20px;
+}
+
+.tdPd {
+    padding-right: 20px !important;
+}
+
+.billiard::before {
+    content: '※';
+    left: 10px;
+    position: absolute;
+    
+}
+
+.money-wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 40px 30px;
+    min-width: 1024px;
+}
+
+
+/* header */
+
+
+header {
+    position: relative;
+}
+
+header > h1, header > h2, header > h3 {
+    text-align: center;
+}
+
+header > h2, header > h3 {
+    margin: 5px 0;
+}
+
+header > h1 > span {
+    display: inline-block;
+    margin-right: -.5em;
+    padding-left: .5em;
+    border-bottom: 1px solid black;
+    letter-spacing: .5em;
+    font-size: 28px;
+}
+
+header > h2 {
+    font-size: 21px;
+}
+
+header > h3 {
+    font-size: 16px;
+}
+
+header > p {
+    text-align: right;
+    padding-right: 40px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+header > .msg-wrapper {
+    position: absolute;
+    width: 307px;
+    padding: 5px 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+
+/* section */
+
+
+.wrapper > section {
+    padding: 40px 0 0 0;
+}
+
+
+/* article */
+
+
+.article-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article-header > span {
+    font-weight: bold;
+}
+
+
+/* article table */
+
+
+.article-table {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.article-table thead th {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #ddd;
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+.article-table tbody td {
+    padding: 5px;
+}
+
+.article-table tbody td:last-child {
+    border-right: 1px solid black;
+}
+
+.article-table tbody {
+    border-bottom: 1px solid black;
+}
+
+.article-table tfoot th {
+    position: relative;
+    text-align: left;
+    padding: 5px 25px;
+}
+
+.line-wrapper {
+    padding: 0 5px;
+}
+
+.line-wrapper > .line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+
+/* desc-wrapper */
+
+.desc-wrapper {
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.desc-wrapper ol {
+    list-style-position: inside;
+}
+
+.desc-wrapper ol > li > span {
+    display: block;
+    padding-left: 16px;
+}
+
+.desc-tit > span {
+    display: block;
+}
+
+
+/* section-bottom */
+
+
+.section-bottom {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    font-size: 14px;
+}
+
+.section-bottom > div {
+    flex: 1;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.section-bottom > div:first-child {
+    border-right: 1px solid black;
+}
+
+.noborder-table {
+    margin: 10px 0;
+}
+
+.noborder-table tr th {
+    font-weight: normal;
+    text-align: right;
+}
+
+.noborder-table tr td {
+    padding: 3px 0;
+}
+
+.center {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-bottom ul {
+    width: fit-content;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.section-bottom ul li {
+    float: left;
+    list-style: none;
+}
+
+
+/* footer */
+
+.wrapper footer {
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid black;
+}
+
+.wrapper footer .left-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper footer .left-wrapper ul {
+    padding-left: 40px;
+}
+
+.wrapper footer .left-wrapper ul > li {
+    list-style: none;
+    float: left;
+    padding-left: 20px;
+}
+
+.wrapper footer .left-wrapper ul > li:first-child {
+    padding-left: 0;
+}
+
+.noborder {
+    border-top: 0 !important;
+}
+
+.sCenter {
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.txtalign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txtleft {
+    padding: 0px 0px 0px 80px;
+}
+
+.desc-title {
+    font-weight: bold;
+}
+
+.desc-content li {
+    font-weight: bold;
+    list-style: none;
+}
+
+table {
+    page-break-inside: avoid;
+}

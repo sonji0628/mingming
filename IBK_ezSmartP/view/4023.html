@@ -1,0 +1,80 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1374,1087">
+<div class="ui-control ui-panel ui-container" id="ui-171ab471fd1" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-171ab471fd4" style='left: 299px; top: 196px; width: 731px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 0;' ui-class="UILabel" ui-id="LB_label0" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">인터넷 뱅킹 정지고객 이용재개</span></span><span class="ui-control ui-label" id="ui-171ab4a94c0" style="left: 235px; top: 300px; width: 854px; height: 38px; right: auto; bottom: auto; color: black; font-size: 33px; z-index: 1;" ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;"></span></span><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><div class="ui-control ui-table" id="ui-171ab4d9ef2" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 272px; top: 431px; width: 757px; height: 242px; right: auto; bottom: auto; z-index: 2;" ui-class="UITable" ui-id="TL_table1" dock="0" anchor="0b0101"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-h="align-left" align-v="align-middle"></td><td type="1" align-h="align-left" align-v="align-middle"></td></tr></thead><tbody><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172930046ad" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172930046ae" style="padding: 0px 40px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172930046af" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172930046b0" style="padding: 0px 40px; font-size: 22px; justify-content: flex-end;"></div></td></tr><tr height="34%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172930046b1" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172930046b2" style="padding: 0px 40px; font-size: 22px; justify-content: flex-end;"></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-1729302adea" style="left: 235px; top: 336px; width: 854px; height: 38px; right: auto; bottom: auto; color: black; font-size: 33px; z-index: 3;" ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;"></span></span><div class="ui-control ui-panel ui-container" id="ui-171a0ae46f1" style="left: 0px; top: 884px; width: 1280px; height: 140px; right: auto; bottom: auto; z-index: 4;" ui-class="UIPanel" ui-id="PN_btn" dock="0" anchor="0b0101"><span class="ui-control ui-button theme-blue" id="ui-171a0ae46f2" style='left: 957px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b0101" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange" id="ui-171a0ae46f3" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js");
+
+var tableData;
+var onceSendMoney;
+var daySendMoney;
+
+
+function Form_OnLoad(e){
+	
+	LB_label2.$.find('span').html('현재 고객님은 인터넷/스마트뱅킹&nbsp;<span style="color:#176bc8;"> 재이용 신청대상자</span>입니다.');	
+	LB_label1.$.find('span').html("재이용하시겠습니까?");
+	
+	/*
+	tableData = [
+			{media:'OTP' , onceSendMoney :'100000000' , daySendMoney :'500000000'}
+	];
+	
+	resumeTable();
+	*/
+	
+}
+function resumeTable(){
+	p = parent;
+	
+	console.log("4023 data : "+JSON.stringify(p.tableData));
+	
+	//부모페이지(4020)에 있는 객체 데이터 받아옴
+	onceSendMoney = p.tableData[0].onceSendMoney;
+	daySendMoney = p.tableData[0].daySendMoney;	
+	console.log("4023 data TEST  :  "+onceSendMoney);
+	console.log("4023 data TEST  :  "+daySendMoney);
+	
+	//테이블에 데이터 뿌려주기
+	TL_table1.DataCell(0,0,"text","보안매체");	
+	TL_table1.DataCell(0,1,"text",p.tableData[0].media);
+	
+	TL_table1.DataCell(1,0,"text","1회 이체한도");
+	//TL_table1.DataCell(1,1,"text",com.util.Comma(tableData[0].onceSendMoney)+" 원");
+	TL_table1.DataCell(1,1,"text",com.util.Comma(onceSendMoney)+" 원");
+		
+	TL_table1.DataCell(2,0,"text","1일 이체한도");
+	//TL_table1.DataCell(2,1,"text",com.util.Comma(tableData[0].daySendMoney)+" 원");
+	TL_table1.DataCell(2,1,"text",com.util.Comma(daySendMoney)+" 원");
+}
+
+function BT_right_OnClick(e){
+	p.ChangeTab("9059");
+	p.sendRequest('Confirm_Transaction');
+	
+}
+
+function Comma(x){
+	x = x.split(",").join("");
+	console.log(x);
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+
+function BT_left_OnClick(e){
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}</script></xjscript></body>
+</html>

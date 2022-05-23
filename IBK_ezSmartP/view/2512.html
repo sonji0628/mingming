@@ -1,0 +1,426 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm"><div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">계좌조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 3; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">계좌정보</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171be2e0c0c" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-orange" id="ui-171aae89da9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">닫기</span></span></div><div class="ui-control ui-panel ui-container" id="ui-171be2e0c0e" style="left: 0px; top: 194px; width: 1280px; height: 690px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="PN_contents" ui-class="UIPanel"><div class="ui-control ui-tab ui-dock ui-dock-fill ui-tab-head-hide" id="ui-173bc75242d" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="5" ui-id="TP_sub" ui-class="UITab" dock-w="706" dock-h="545" dock-r="left:251px;top:27px;width:706px;height:545px;right:auto;bottom:auto"><div class="ui-tab-heads" id="ui-173bc75242f"><div class="ui-tab-head ui-tab-selected" id="ui-173bc752430">예금</div><div class="ui-tab-head" id="ui-173bc752431">적금</div><div class="ui-tab-head" id="ui-173bc769fbb">채권</div><div class="ui-tab-head" id="ui-173bc76b345">연금</div><div class="ui-tab-head" id="ui-173bc76c60f">휴면</div></div><div class="ui-tab-pages" id="ui-173bc752432"><div class="ui-tab-page ui-container ui-tab-selected" id="ui-173bc752433" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-173bc758365" style="left: 91px; top: 47px; width: 1109px; height: 640px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_deposit_tab1" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-173bc758367" style='left: 0px; top: 0px; width: 820px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_productName1" ui-class="UILabel"><span class="ui-content"></span></span><span class="ui-control ui-label" id="ui-173bc758368" style="left: 0px; top: 48px; width: 120px; height: 32px; right: auto; bottom: auto; font-size: 18px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label32" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;">기본정보</span></span><div class="ui-control ui-table" id="ui-173bc758369" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 0px; top: 77px; width: 1076px; height: 223px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="TL_deposit1_1" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="25%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75836d" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">계좌번호</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75836e" style="padding: 0px 0px 0px 20px; color: rgb(29, 29, 29); font-size: 21px;"></div></td></tr><tr height="25%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75836f" style='padding: 0px 0px 0px 20px; font-family: "Noto sans CJK KR", "맑은 고딕", "Arial", "IBK IDream L", "IBK IDream M", "IBK IDream B", "IBK IDream EB", "IBK IDream Symbol", "IBK IWishR"; font-size: 21px; background-color: rgb(242, 242, 242);'><span class="cell-control-label">예금주</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758370" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="25%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758371" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">평생계좌</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758372" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="25%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758373" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">출금가능금액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758374" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-173bc75836a" style="left: 0px; top: 325px; width: 120px; height: 32px; right: auto; bottom: auto; font-size: 18px; z-index: 3;" anchor="0b0101" dock="0" ui-id="LB_label33" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;">상세정보</span></span><div class="ui-control ui-table" id="ui-173bc75836b" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 0px; top: 354px; width: 1076px; height: 825px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="TL_deposit1_2" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="6%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758375" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">계좌상태</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758376" style="padding: 0px 0px 0px 20px; color: rgb(29, 29, 29); font-size: 21px;"></div></td></tr><tr height="6%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758377" style='padding: 0px 0px 0px 20px; font-family: "Noto sans CJK KR", "맑은 고딕", "Arial", "IBK IDream L", "IBK IDream M", "IBK IDream B", "IBK IDream EB", "IBK IDream Symbol", "IBK IWishR"; font-size: 21px; background-color: rgb(242, 242, 242);'><span class="cell-control-label">신규구분</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758378" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="6%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758379" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">신규일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75837a" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="6%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75837b" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">최종입출년월일</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75837c" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="6%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75837d" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">세금우대여부</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75837e" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="6%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75837f" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">통장종류</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758380" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="6%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758381" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">계좌잔액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758382" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="6%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758383" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">타점1 (자기앞)</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758384" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="6%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758385" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">타점2 (약속어음)</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758386" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="6%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758387" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">타점3 (가계수표)</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758388" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="6%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758389" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">타점4 (당좌수표)</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75838b" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="6%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75838c" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">타점5 (표지어음등)</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75838d" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="6%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75838e" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">출금제한액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc75838f" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="6%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758390" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">결제전지급액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758391" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="6%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758392" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">조회필등록금액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758393" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758394" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">금융거래한도계좌</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc758395" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr></tbody></table></div><span class="ui-control ui-button theme-blue" id="ui-173bc75836c" style='border-radius: 27px; left: 855px; top: 11px; width: 219px; height: 54px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 21px; z-index: 5;' anchor="0b0101" dock="0" ui-id="BT_transfer" ui-class="UIButton" theme="blue" xonclick="BT_transfer_OnClick" back-image-pos="45px,12px"><span class="ui-content" style="left: 40px; top: 0px; right: 0px; bottom: 0px;">즉시 이체</span><span class="ui-back-image" style='background-position: 45px 12px; background-image: url("/KRG/media/btn_transfer.png");'></span></span></div><span class="ui-control ui-scrollbar" id="ui-173bc7cdd5d" style="left: 1209px; top: 47px; width: 32px; height: 638px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="SB_scrollbar1" ui-class="UIScrollBar" scroll-control-id="PN_deposit_tab1"><span class="track"></span><span class="trackbutton" style="top: 0px;"></span></span></div><div class="ui-tab-page ui-container" id="ui-173bc752434" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-173bc76eeb7" style="left: 91px; top: 47px; width: 1109px; height: 640px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_deposit_tab2" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-173bc76eeb8" style='left: 0px; top: 0px; width: 1120px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_productName2" ui-class="UILabel"><span class="ui-content"></span></span><span class="ui-control ui-label" id="ui-173bc76eeba" style="left: 0px; top: 48px; width: 120px; height: 32px; right: auto; bottom: auto; font-size: 18px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label35" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;">기본정보</span></span><div class="ui-control ui-table" id="ui-173bc76eebb" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 0px; top: 77px; width: 1076px; height: 165px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="TL_deposit2_1" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eebf" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">계좌번호</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eec0" style="padding: 0px 0px 0px 20px; color: rgb(29, 29, 29); font-size: 21px;"></div></td></tr><tr height="33%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eec1" style='padding: 0px 0px 0px 20px; font-family: "Noto sans CJK KR", "맑은 고딕", "Arial", "IBK IDream L", "IBK IDream M", "IBK IDream B", "IBK IDream EB", "IBK IDream Symbol", "IBK IWishR"; font-size: 21px; background-color: rgb(242, 242, 242);'><span class="cell-control-label">거래일시</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eec2" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="34%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eec3" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">잔액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eec4" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-173bc76eebc" style="left: 0px; top: 290px; width: 120px; height: 32px; right: auto; bottom: auto; font-size: 18px; z-index: 3;" anchor="0b0101" dock="0" ui-id="LB_label36" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;">상세정보</span></span><div class="ui-control ui-table" id="ui-173bc76eebe" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 0px; top: 319px; width: 1076px; height: 217px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="TL_deposit2_2" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="25%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eec5" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">최종거래일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eec6" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="25%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eec7" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">최종적용이율</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eec9" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="25%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eeca" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">신규일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eecb" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="25%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eecc" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">만기일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc76eecd" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr></tbody></table></div></div></div><div class="ui-tab-page ui-container" id="ui-173bc769fbc" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-173bc772689" style="left: 91px; top: 47px; width: 1109px; height: 640px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_deposit_tab3" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-173bc77268a" style='left: 0px; top: 0px; width: 1120px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_productName3" ui-class="UILabel"><span class="ui-content"></span></span><span class="ui-control ui-label" id="ui-173bc77268b" style="left: 0px; top: 48px; width: 120px; height: 32px; right: auto; bottom: auto; font-size: 18px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label41" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;">기본정보</span></span><div class="ui-control ui-table" id="ui-173bc77268c" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 0px; top: 77px; width: 1076px; height: 223px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="TL_deposit3_1" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="25%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc77268f" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">계좌번호</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc772691" style="padding: 0px 0px 0px 20px; color: rgb(29, 29, 29); font-size: 21px;"></div></td></tr><tr height="25%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc772692" style='padding: 0px 0px 0px 20px; font-family: "Noto sans CJK KR", "맑은 고딕", "Arial", "IBK IDream L", "IBK IDream M", "IBK IDream B", "IBK IDream EB", "IBK IDream Symbol", "IBK IWishR"; font-size: 21px; background-color: rgb(242, 242, 242);'><span class="cell-control-label">현재잔액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc772693" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="25%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc772694" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">실효수익률</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc772695" style="padding: 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="25%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc772696" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">출금가능액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc772697" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-173bc77268d" style="left: 0px; top: 325px; width: 120px; height: 32px; right: auto; bottom: auto; font-size: 18px; z-index: 3;" anchor="0b0101" dock="0" ui-id="LB_label42" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;">상세정보</span></span><div class="ui-control ui-table" id="ui-173bc77268e" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 0px; top: 354px; width: 1076px; height: 487px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="TL_deposit3_2" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="11%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc772698" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">최종거래일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc772699" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc77269a" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">신규일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc77269b" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc77269c" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">만기일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc77269d" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc77269e" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">계약기간</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc77269f" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7726a0" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">세금우대여부</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7726a1" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7726a2" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">출금제한금액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7726a3" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7726a4" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">액면금액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7726a5" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7726a6" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">소득세</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7726a7" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="12%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7726a8" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">농특세</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7726a9" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr></tbody></table></div></div><span class="ui-control ui-scrollbar" id="ui-173bc7d78a9" style="left: 1209px; top: 47px; width: 32px; height: 638px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="SB_scrollbar3" ui-class="UIScrollBar" scroll-control-id="PN_deposit_tab3"><span class="track"></span><span class="trackbutton" style="top: 0px;"></span></span></div><div class="ui-tab-page ui-container" id="ui-173bc76b346" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-173bc774ac9" style="left: 91px; top: 47px; width: 1109px; height: 640px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_deposit_tab4" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-173bc774acb" style='left: 0px; top: 0px; width: 1120px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_productName4" ui-class="UILabel"><span class="ui-content"></span></span><span class="ui-control ui-label" id="ui-173bc774acc" style="left: 0px; top: 48px; width: 120px; height: 32px; right: auto; bottom: auto; font-size: 18px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label44" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;">기본정보</span></span><div class="ui-control ui-table" id="ui-173bc774acd" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 0px; top: 77px; width: 1076px; height: 109px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="TL_deposit4_1" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="49%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ad1" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">계좌번호</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ad2" style="padding: 0px 0px 0px 20px; color: rgb(29, 29, 29); font-size: 21px;"></div></td></tr><tr height="51%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ad3" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">출금가능액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ad4" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-173bc774ace" style="left: 0px; top: 213px; width: 120px; height: 32px; right: auto; bottom: auto; font-size: 18px; z-index: 3;" anchor="0b0101" dock="0" ui-id="LB_label45" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;">상세정보</span></span><div class="ui-control ui-table" id="ui-173bc774acf" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 0px; top: 242px; width: 1076px; height: 487px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="TL_deposit4_2" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="11%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ad5" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">예금종류</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ad6" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ad7" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">통장종류</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ad8" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ad9" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">계좌번호</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ada" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774adb" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">현재잔액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774adc" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774add" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">신규일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ade" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774adf" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">최종거래일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ae0" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ae1" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">만기일</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ae2" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="11%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ae3" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">연간한도액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ae4" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="12%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ae5" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">누적수익율</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc774ae6" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr></tbody></table></div></div><span class="ui-control ui-scrollbar" id="ui-173bc7da353" style="left: 1209px; top: 47px; width: 32px; height: 640px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="SB_scrollbar4" ui-class="UIScrollBar" scroll-control-id="PN_deposit_tab4"><span class="track"></span><span class="trackbutton" style="top: 3px;"></span></span></div><div class="ui-tab-page ui-container" id="ui-173bc76c610" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-173bc7778d6" style="left: 91px; top: 47px; width: 1109px; height: 640px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_deposit_tab5" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-173bc7778d9" style='left: 0px; top: 0px; width: 1120px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_productName5" ui-class="UILabel"><span class="ui-content"></span></span><span class="ui-control ui-label" id="ui-173bc7778da" style="left: 0px; top: 48px; width: 120px; height: 32px; right: auto; bottom: auto; font-size: 18px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label47" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;">기본정보</span></span><div class="ui-control ui-table" id="ui-173bc7778db" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 0px; top: 77px; width: 1076px; height: 325px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="TL_deposit5_1" ui-class="UITable"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="210" type="1" align-v="align-middle" align-h="align-left"></td><td type="1" align-v="align-middle" align-h="align-left"></td></tr></thead><tbody><tr height="17%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778dd" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">예금종류</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778de" style="padding: 0px 0px 0px 20px; font-size: 22px; justify-content: flex-start;"></div></td></tr><tr height="17%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778df" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">통장종류</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778e0" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="17%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778e1" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">계좌번호</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778e2" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="17%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778e3" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">현재잔액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778e4" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="17%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778e5" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">신규일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778e6" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr><tr height="15%"><td style="border-color: rgb(29, 29, 29);"><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778e7" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">최종거래일자</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173bc7778e8" style="padding: 0px 0px 0px 20px; font-size: 22px;"></div></td></tr></tbody></table></div></div></div></div></div></div></div>
+</div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js"); // LibUtil import
+/*
+	#2512 - 예금 계좌정보
+*/
+let p = parent;
+
+// 즉시이체 2550으로 보낼 데이터
+let CUS_ACN = "";
+let ACN = "";
+
+
+// 닫기버튼
+function BT_left_OnClick(e){
+	// 전체 계좌조회 - 계좌조회 페이지로 이동
+	p.ChangeTab("2511");
+}
+
+// 즉시이체 버튼
+function BT_transfer_OnClick(e){
+	console.log("즉시이체 2550 이동");
+	
+	let params = [];
+	params.push("CUS_ACN=" + CUS_ACN);
+	params.push("ACN=" + ACN);
+	
+	p.com.screen.screenCall("2550", params);
+}
+
+// 값 전달받았을 경우 실행함수 
+function ReceiveTran(obj){
+	let type = obj.info.depositFlag; // 1 : 예금, 2 : 적금, 3: 채권, 4 : 연금, 5 : 휴면
+	
+	switch(type){
+		// 예금
+		case 1:
+			ChangeTab("예금");
+			SetDepositTableCell(obj);
+			
+			// 바이오인증을 통한 본인확인이 아닐경우 즉시이체 버튼 hide
+			if(!p.getBioTokenIs()){
+				BT_transfer.Visible = false;
+			}
+			break;
+			SB_scrollbar1.TabPageMouseDrag("PN_deposit_tab1");
+			
+		// 적금
+		case 2:
+			ChangeTab("적금");
+			SetSavingTableCell(obj);
+			break;
+			
+		// 채권
+		case 3:
+			ChangeTab("채권");
+			SetBondTableCell(obj);
+			SB_scrollbar3.TabPageMouseDrag("PN_deposit_tab3");
+			
+			break;
+			
+		// 연금
+		case 4:
+			ChangeTab("연금");
+			SetPensionTableCell(obj);
+			SB_scrollbar4.TabPageMouseDrag("PN_deposit_tab4");
+			
+			break;
+			
+		// 휴면
+		case 5:
+			ChangeTab("휴면");
+			SetDormantTableCell(obj);
+			break;
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+//페이지이동
+function ChangeTab(name){
+	TP_sub.ChangeTab(name);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			예금
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function SetDepositTableCell(obj){
+	let rows = obj.list;
+	
+	// table init
+	for(let i=0; i<4; i++){
+		TL_deposit1_1.DataCell(i, 1, "text", "");
+	}
+	for(let i=0; i<16; i++){
+		TL_deposit1_2.DataCell(i, 1, "text", "");
+	}
+	
+	if(rows.length > 0){
+		// 즉시이체 2550으로 보낼 데이터
+		let CUS_ACN = obj.info.CUS_ACN;
+		let ACN = obj.info.CUS_ACN;
+	
+		// 화면에 데이터 표시
+		LB_productName1.setText(obj.RPRS_PDM); // 상품명
+		let account = p.ReturnFormatAccount(obj.info.CUS_ACN.trim()); 		// 계좌번호
+		let lftmAccount = p.ReturnFormatAccount(obj.info.LFTM_ACN.trim());  // 평생계좌
+		
+		TL_deposit1_1.DataCell(0, 1, "text", account); 
+		TL_deposit1_1.DataCell(2, 1, "text", lftmAccount); 
+		
+		let dayArr = ['일','월','화','수','목','금','토'];
+		
+		for(let i=0; i<rows.length; i++){
+			let key = rows[i].OTPT_KRN_NM_200.trim();
+			let value = rows[i].OTPT_KRN_NM_300.trim().replace('*','');
+			console.log(key +" >> "+ value);
+			
+			switch(key){
+                case "예금주명" 				: TL_deposit1_1.DataCell(1, 1, "text", value);			break;
+                case "출금가능액" 			: TL_deposit1_1.DataCell(3, 1, "text", value + "원");	break;
+                case "계좌상태" 				: TL_deposit1_2.DataCell(0, 1, "text", value);			break;	
+                case "신규구분" 				: TL_deposit1_2.DataCell(1, 1, "text", value);			break;	
+                case "신규일자" 				: 	
+                  	if(value){
+                  		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit1_2.DataCell(2, 1, "text", value);
+                   		break;
+                   	}
+	            case "최종입출년월일" 		:
+                   	if(value){
+                   		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit1_2.DataCell(3, 1, "text", value);
+                    	break;
+                   	}
+                case "세금우대여부" 			: TL_deposit1_2.DataCell(4, 1, "text", value);			break;	
+                case "통장종류" 				: TL_deposit1_2.DataCell(5, 1, "text", value);			break;	
+                case "계좌잔액" 				: TL_deposit1_2.DataCell(6, 1, "text", value + "원");	break;	
+                case "타점1 (자기앞)"			: TL_deposit1_2.DataCell(7, 1, "text", value + "원");	break;	
+                case "타점2 (약속어음)"		: TL_deposit1_2.DataCell(8, 1, "text", value + "원");	break;	
+                case "타점3 (가계수표)"		: TL_deposit1_2.DataCell(9, 1, "text", value + "원");	break;	
+                case "타점4 (당좌수표)"	   	: TL_deposit1_2.DataCell(10, 1, "text", value + "원");	break;	
+                case "타점5 (표지어음등)"		: TL_deposit1_2.DataCell(11, 1, "text", value + "원");	break;	
+                case "출금제한액"				: TL_deposit1_2.DataCell(12, 1, "text", value + "원");	break;	
+                case "결제전지급액"			: TL_deposit1_2.DataCell(13, 1, "text", value + "원");	break;	
+                case "조회필등록금액"			: TL_deposit1_2.DataCell(14, 1, "text", value + "원");	break;	
+                case "금융거래한도계좌"		: TL_deposit1_2.DataCell(15, 1, "text", value);			break;	
+                default	: break;
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			적금
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function SetSavingTableCell(obj){
+	let rows = obj.list;
+	
+	// table init
+	for(let i=0; i<3; i++){
+		TL_deposit2_1.DataCell(i, 1, "text", "");
+	}
+	for(let i=0; i<4; i++){
+		TL_deposit2_2.DataCell(i, 1, "text", "");
+	}
+	
+	if(rows.length > 0){
+		LB_productName2.setText(obj.RPRS_PDM); // 상품명
+		let account = p.ReturnFormatAccount(obj.info.CUS_ACN.trim()); 		// 계좌번호
+		
+		TL_deposit2_1.DataCell(0, 1, "text", account); // 계좌번호
+		
+		let dayArr = ['일','월','화','수','목','금','토'];
+		let nowDate = new Date();
+		let strHour = nowDate.getHours().toString(10);
+		let strMinute = nowDate.getMinutes().toString(10);
+		let strSeconds = nowDate.getSeconds().toString(10);
+
+		if (strHour.length == 1)
+			strHour = "0" + strHour;
+		if (strMinute.length == 1)
+    		strMinute = "0" + strMinute;
+    	if (strSeconds.length == 1)
+    		strSeconds = "0" + strSeconds;
+    		
+		// 현재날짜
+    	let currentDate = p.ReturnFormatDateHyphen(p.GetCurrentDate());
+    		
+    	TL_deposit2_1.DataCell(1, 1, "text", currentDate + dayArr[new Date().getDay()] + " " + strHour +":"+ strMinute +":"+ strSeconds);// 거래일시
+		
+		for(let i=0; i<rows.length; i++){
+			let key = rows[i].OTPT_KRN_NM_200.trim();
+			let value = rows[i].OTPT_KRN_NM_300.trim().replace('*','');
+			console.log(key +" >> "+ value);
+			
+			switch(key){
+                case "계좌잔액" 				: TL_deposit2_1.DataCell(2, 1, "text", value + "원");	break;
+	            case "최종입출년월일" 		:
+                   	if(value){
+                   		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit2_2.DataCell(0, 1, "text", value);
+                    	break;
+                   	}
+                case "현재약정이율" 			: 
+                	value = parseFloat( value.replace('%', '')) + "%";
+                	TL_deposit2_2.DataCell(1, 1, "text", value);
+                	break;	
+                case "신규일자" 				: 	
+                  	if(value){
+                  		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit2_2.DataCell(2, 1, "text", value);
+                   		break;
+                   	}
+                case "만기년월일" 			: 	
+                  	if(value){
+                  		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit2_2.DataCell(3, 1, "text", value);
+                   		break;
+                   	}
+                default	: break;
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			채권
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function SetBondTableCell(obj){
+	let rows = obj.list;
+	
+	// table init
+	for(let i=0; i<4; i++){
+		TL_deposit3_1.DataCell(i, 1, "text", "");
+	}
+	for(let i=0; i<9; i++){
+		TL_deposit3_2.DataCell(i, 1, "text", "");
+	}
+	
+	if(rows.length > 0){
+		LB_productName3.setText(obj.RPRS_PDM); // 상품명
+		let account = p.ReturnFormatAccount(obj.info.CUS_ACN.trim()); 		// 계좌번호
+		
+		TL_deposit3_1.DataCell(0, 1, "text", account); // 계좌번호
+		
+		let dayArr = ['일','월','화','수','목','금','토'];
+		let val; // 계좌잔액 보관용
+		
+		for(let i=0; i<rows.length; i++){
+			let key = rows[i].OTPT_KRN_NM_200.trim();
+			let value = rows[i].OTPT_KRN_NM_300.trim().replace('*','');
+			console.log(key +" >> "+ value);
+			
+			switch(key){
+                case "계좌잔액" 				: 
+                	TL_deposit3_1.DataCell(1, 1, "text", value + "원");	
+                	val = value.replace(/,/g,'');
+                	break;
+                case "실효수익률" 			: 
+                	value = parseFloat( value.replace('%', '')) + "%";
+                	TL_deposit3_1.DataCell(2, 1, "text", value);
+                	break;	
+                	// 출금가능액 ----------------------------------------------------
+	            case "최종입출년월일" 		: // 최종거래일자
+                   	if(value){
+                   		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit3_2.DataCell(0, 1, "text", value);
+                    	break;
+                   	}
+                case "채권발행일자" 			: // 신규일자
+                  	if(value){
+                  		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit3_2.DataCell(1, 1, "text", value);
+                   		break;
+                   	}
+                case "만기년월일" 			: // 만기일자
+                  	if(value){
+                  		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit3_2.DataCell(2, 1, "text", value);
+                   		break;
+                   	}
+                case "계약기간" 				: TL_deposit3_2.DataCell(3, 1, "text", value);			break;	
+                case "세금우대여부" 			: TL_deposit3_2.DataCell(4, 1, "text", value);			break;	
+                case "출금제한액" 			:
+                	TL_deposit3_2.DataCell(5, 1, "text", value + "원");	
+                	
+                	// 인젠트 소스에 출금제한액과 출금가능액이 같은금액으로 찍힘 - 적금
+                	TL_deposit3_1.DataCell(3, 1, "text", value + "원");	
+                	break;
+                case "액면금액"				: TL_deposit3_2.DataCell(6, 1, "text", value + "원");	break;	
+                case "소득세"				: TL_deposit3_2.DataCell(7, 1, "text", value + "원");	break;	
+                case "농특세"				: TL_deposit3_2.DataCell(8, 1, "text", value + "원");	break;	
+                default	: break;
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			연금
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function SetPensionTableCell(obj){
+	let rows = obj.list;
+	
+	// table init
+	for(let i=0; i<2; i++){
+		TL_deposit4_1.DataCell(i, 1, "text", "");
+	}
+	for(let i=0; i<9; i++){
+		TL_deposit4_2.DataCell(i, 1, "text", "");
+	}
+	
+	if(rows.length > 0){
+		LB_productName4.setText(obj.RPRS_PDM); // 상품명
+		let account = p.ReturnFormatAccount(obj.info.CUS_ACN.trim()); 		// 계좌번호
+		TL_deposit4_1.DataCell(0, 1, "text", account); // 계좌번호
+		TL_deposit4_2.DataCell(2, 1, "text", account); // 계좌번호
+		
+		let dayArr = ['일','월','화','수','목','금','토'];
+		
+		for(let i=0; i<rows.length; i++){
+			let key = rows[i].OTPT_KRN_NM_200.trim();
+			let value = rows[i].OTPT_KRN_NM_300.trim().replace('*','');
+			console.log(key +" >> "+ value);
+			
+			switch(key){
+				// 출금가능액
+                case "예금종류" 				: TL_deposit4_2.DataCell(0, 1, "text", value);			break;
+                case "통장종류" 				: TL_deposit4_2.DataCell(1, 1, "text", value);			break;
+                // 계좌번호
+                case "계좌잔액" 				: 
+                	TL_deposit4_1.DataCell(1, 1, "text", value + "원");	
+                	TL_deposit4_2.DataCell(3, 1, "text", value + "원");	
+                	break;
+                case "신규일자" 				: 
+                  	if(value){
+                  		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit4_2.DataCell(4, 1, "text", value);
+                   		break;
+                   	}
+                case "최종입출년월일" 		:
+                  	if(value){
+                  		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit4_2.DataCell(5, 1, "text", value);
+                   		break;
+                   	}
+                case "만기일" 				: TL_deposit4_2.DataCell(6, 1, "text", value);			break;	
+                case "연간한도액" 			: TL_deposit4_2.DataCell(7, 1, "text", value + "원");	break;	
+                case "누적수익율" 			: TL_deposit4_2.DataCell(8, 1, "text", value);			break;
+                default	: break;
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			휴면
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function SetDormantTableCell(obj){
+	let rows = obj.list;
+	
+	// table init
+	for(let i=0; i<6; i++){
+		TL_deposit5_1.DataCell(i, 1, "text", "");
+	}
+	
+	if(rows.length > 0){
+		LB_productName5.setText("휴면예금"); // 상품명
+		let account = p.ReturnFormatAccount(obj.info.CUS_ACN.trim()); 		// 계좌번호
+		TL_deposit5_1.DataCell(2, 1, "text", account); // 계좌번호
+		
+		let dayArr = ['일','월','화','수','목','금','토'];
+		
+		for(let i=0; i<rows.length; i++){
+			let key = rows[i].OTPT_KRN_NM_200.trim();
+			let value = rows[i].OTPT_KRN_NM_300.trim().replace('*','');
+			console.log(key +" >> "+ value);
+			
+			switch(key){
+                case "예금종류" 				: TL_deposit5_1.DataCell(0, 1, "text", value);			break;
+                case "통장종류" 				: TL_deposit5_1.DataCell(1, 1, "text", value);			break;
+                case "계좌잔액" 				: TL_deposit5_1.DataCell(3, 1, "text", value + "원");	break;
+                case "신규일자" 				: 
+                  	if(value){
+                  		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit5_1.DataCell(4, 1, "text", value);
+                   		break;
+                   	}
+                case "최종입출년월일" 		:
+                  	if(value){
+                  		value = value.replace(/-/g,'.') + "(" + dayArr[p.getToDateObj(value).getDay()] + ")";
+                   		TL_deposit5_1.DataCell(5, 1, "text", value);
+                   		break;
+                   	}
+                default	: break;
+			}
+		}
+	}
+}</script></xjscript></body>
+</html>

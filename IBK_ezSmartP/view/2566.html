@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1280,1024"><div class="ui-control ui-panel ui-container" id="ui-171a561f5a3" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; font-weight: bold; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel1" dock="0" anchor="0b0101"><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><div class="ui-control ui-panel ui-container" id="ui-1740ec7a9da" style="left: 405px; top: 172px; width: 60px; height: 64px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel2" dock="0" anchor="0b0101" back-image-size="100% 100%"><span class="ui-back-image" style='background-image: url("/KRG/media/ic_bill.png"); background-size: 100% 100%;'></span></div><span class="ui-control ui-label" id="ui-1740ec848e7" style='left: 489px; top: 177px; width: 392px; height: 54px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-family: "IBK iDream"; font-size: 54px; font-weight: normal; z-index: 1;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content">명세표 출력 선택</span></span><span class="ui-control ui-button" id="ui-1740ecedd0a" style="left: 177px; top: 594px; width: 294px; height: 186px; right: auto; bottom: auto; z-index: 2;" ui-class="UIButton" ui-id="BT_rctNormal" dock="0" anchor="0b0101" theme="" xonclick="BT_rctNormal_OnClick"><span class="ui-content"></span><span class="ui-back-image" style='background-image: url("/KRG/media/btn_receipt_nor.png");'></span></span><span class="ui-control ui-button" id="ui-1740ecf7cf1" style="left: 493px; top: 594px; width: 294px; height: 186px; right: auto; bottom: auto; z-index: 3;" ui-class="UIButton" ui-id="BT_rctSelect" dock="0" anchor="0b0101" theme="" xonclick="BT_rctSelect_OnClick"><span class="ui-content"></span><span class="ui-back-image" style='background-image: url("/KRG/media/btn_receipt_sel.png");'></span></span><span class="ui-control ui-button" id="ui-1740ecf862c" style="left: 809px; top: 594px; width: 294px; height: 186px; right: auto; bottom: auto; z-index: 4;" ui-class="UIButton" ui-id="BT_rctSkip" dock="0" anchor="0b0101" theme="" xonclick="BT_rctSkip_OnClick"><span class="ui-content"></span><span class="ui-back-image" style='background-image: url("/KRG/media/btn_receipt_etc.png");'></span></span></div><span class="ui-control ui-label" id="ui-1740e56c114" style="left: 355px; top: 270px; width: 569px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 1;" ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content">출력하실 명세표 종류를 선택하여 주십시오.</span></span><span class="ui-control ui-label" id="ui-1740ecaf969" style="left: 0px; top: 350px; width: 1280px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 2;" ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">명세표를 원하지 않으면&nbsp;<span style="color: rgb(244, 84, 8); font-weight: bold;">명세표생략</span>을</span></span><span class="ui-control ui-label" id="ui-1740ecbdb9e" style="left: 270px; top: 390px; width: 738px; height: 32px; right: auto; bottom: auto; font-size: 32px; z-index: 3;" ui-class="UILabel" ui-id="LB_label6" dock="0" anchor="0b0101"><span class="ui-content">계좌번호, 계좌잔액 중 표시를 원하지 않는 항목이 있으면</span></span><span class="ui-control ui-label" id="ui-1740ecc4d44" style="left: 0px; top: 430px; width: 1280px; height: 32px; right: auto; bottom: auto; color: black; font-size: 32px; font-weight: normal; z-index: 4;" ui-class="UILabel" ui-id="LB_label7" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;"><span style="color: rgb(23, 107, 200); font-weight: bold;">명세표받음 항목선택</span>을 눌러 선택인자를 하시기 바랍니다.</span></span>
+</div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*
+	# 2566 - 명세표 선택
+*/
+let p = parent;
+
+
+// 명세표 기본
+function BT_rctNormal_OnClick(e){
+	p.gRct = 3;
+	goTransfer();
+}
+
+
+// 명세표 선택화면으로 이동
+function BT_rctSelect_OnClick(e){
+	p.ChangeTab("2567");
+}
+
+
+// 명세표 생략
+function BT_rctSkip_OnClick(e){
+	p.gRct = 0;
+
+	goTransfer();
+}
+
+// 이체전문 송신
+function goTransfer(){
+	// 로그
+	console.log(p._PASSWORD);
+	console.log(p._TRN_AMT);
+	console.log(p._DROT_BNCD);
+	console.log(p._DROT_ACN);
+	console.log(p._DRACT_DPSR_NM);
+	console.log(p._MNRC_BNCD);
+	console.log(p._MNRC_ACN);
+	console.log(p._MRACT_DPSR_NM);
+	console.log(p._RNN);
+	console.log(p._TPN);
+	console.log(p._FEE);
+	
+	if(p.getOwnBankIs()){
+		// 자행이체
+		// CBKEBK849001 자동화기기 당행계좌이체 전문송신
+		p.sendRequest("ownBankAccountTransfer");
+	} else {
+		// 타행이체
+		// CBKEXT112411 자동화기기 CD공동망잔액조회 전문송신(이체전문)
+		p.sendRequest("otherBankAccountTransfer");
+	}
+}</script></xjscript></body>
+</html>

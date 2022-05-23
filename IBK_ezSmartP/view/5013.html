@@ -1,0 +1,419 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1445,1161" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a52210e0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e2" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 2; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171a52210e3" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">예금잔액증명서발급</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a52210e8" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 1;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-171a52210ea" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span><span class="ui-control ui-button theme-blue" id="ui-171a52210e9" style='left: 986px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e4" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 3; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171a52210e5" style='left: 82px; top: 24px; width: 1139px; height: 45px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content" style="align-items: center;">증명서 신청 계좌 선택 </span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-17404772f75" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-r="left:520.75px;top:212.5px;width:200px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="200"><span class="ui-control ui-label" id="ui-172a63c1ee2" style='left: 79px; top: 211px; width: 120px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-family: "IBK iDream M"; font-size: 24px; z-index: 5;' anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content">선택계좌</span></span><span class="ui-control ui-label" id="ui-1729d25cdfe" style='left: 215px; top: 211px; width: 22px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 22px; z-index: 6;' anchor="0b0101" dock="0" ui-id="LB_label4" ui-class="UILabel"><span class="ui-content">총</span></span><span class="ui-control ui-label" id="ui-172e4d7d2c6" style='left: 247px; top: 211px; width: 30px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-family: "IBK iDream M"; font-size: 22px; z-index: 7;' anchor="0b0101" dock="0" ui-id="LB_label2" ui-class="UILabel"><span class="ui-content" style="justify-content: flex-end;">0</span></span><span class="ui-control ui-label" id="ui-172e4d7dadf" style='left: 287px; top: 211px; width: 47px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 22px; z-index: 8;' anchor="0b0101" dock="0" ui-id="LB_label3" ui-class="UILabel"><span class="ui-content">계좌</span></span><span class="ui-control ui-scrollbar" id="ui-173e0f0e363" style="left: 1219px; top: 403px; width: 32px; height: 476px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="SB_scrollbar03" ui-class="UIScrollBar" scroll-control-id="PN_tab03_card"><span class="track"></span><span class="trackbutton"></span></span><span class="ui-control ui-scrollbar" id="ui-173e0f0fda3" style="left: 1219px; top: 403px; width: 32px; height: 476px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="SB_scrollbar04" ui-class="UIScrollBar" scroll-control-id="PN_tab04_card"><span class="track"></span><span class="trackbutton"></span></span><span class="ui-control ui-scrollbar" id="ui-173e0eeb7aa" style="left: 1219px; top: 403px; width: 32px; height: 476px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="SB_scrollbar02" ui-class="UIScrollBar" scroll-control-id="PN_tab02_card"><span class="track"></span><span class="trackbutton"></span></span><span class="ui-control ui-scrollbar" id="ui-170d2a73c53" style="left: 1219px; top: 403px; width: 32px; height: 476px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="SB_scrollbar01" ui-class="UIScrollBar" scroll-control-id="PN_tab01_card"><span class="track"></span><span class="trackbutton"></span></span><div class="ui-control ui-tab" id="ui-170e281eb34" style='left: 79px; top: 271px; width: 1124px; height: 603px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 24px; z-index: 3;' anchor="0b0101" dock="0" ui-id="TP_tab2" ui-class="UITab" xonchangedtab="TP_tab2_OnChangedTab"><div class="ui-tab-heads" id="ui-1720cc323e5"><div class="ui-tab-head ui-tab-selected" id="ui-1720cc323e6">원화예금</div><div class="ui-tab-head" id="ui-1720cc323e7">신탁</div><div class="ui-tab-head" id="ui-1720cc323e8">외화예금</div><div class="ui-tab-head" id="ui-1720cc323e9">채권</div></div><div class="ui-tab-pages" id="ui-1720cc323ef"><div class="ui-tab-page ui-container ui-tab-selected" id="ui-1720cc323f0" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-170ec4084d5" style="left: 0px; top: 15px; width: 1120px; height: 515px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_tab01_card" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container" id="ui-1730318eb6e" style="left: 0px; top: 15px; width: 1120px; height: 515px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_tab01_noList" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-173031aef6a" style="left: 520px; top: 176px; width: 80px; height: 82px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel5" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-171ab4a94c0" style="left: 437px; top: 261px; width: 246px; height: 38px; right: auto; bottom: auto; color: black; font-size: 24px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label6" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">검색결과가 없습니다.</span></span></div></div><div class="ui-tab-page ui-container" id="ui-1720cc323f1" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-17226c49ad4" style="left: 0px; top: 20px; width: 1106px; height: 643px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_tab02_card" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container" id="ui-173037d81a7" style="left: 0px; top: 20px; width: 1120px; height: 514px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_tab02_noList" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-173037d81a9" style="left: 520px; top: 176px; width: 80px; height: 82px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel6" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-173037d81aa" style="left: 437px; top: 261px; width: 246px; height: 38px; right: auto; bottom: auto; color: black; font-size: 24px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label7" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">검색결과가 없습니다.</span></span></div></div><div class="ui-tab-page ui-container" id="ui-1720cc323f2" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-1730858f512" style="left: 0px; top: 67px; width: 1120px; height: 452px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_tab03_card" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container" id="ui-1730859c1bd" style="left: 0px; top: 68px; width: 1120px; height: 452px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_tab03_noList" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-1730859c1bf" style="left: 520px; top: 176px; width: 80px; height: 82px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel4" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-1730859c1c1" style="left: 437px; top: 261px; width: 246px; height: 38px; right: auto; bottom: auto; color: black; font-size: 24px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label5" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">검색결과가 없습니다.</span></span></div><span class="ui-control ui-textbox" id="ui-172e8fc2434" style="left: 876px; top: 11px; width: 246px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 2;" anchor="0b0101" dock="0" ui-id="TB_cashText" ui-class="UITextBox" back-image-pos="0px,0px"><span><input class="ui-input" type="text" maxlength="60" value=""></span></span><span disabled="disabled" class="ui-control ui-button theme-gray ui-disabled" id="ui-172e8ff4f74" style="border-radius: 10px; left: 1014px; top: 18px; width: 98px; height: 40px; right: auto; bottom: auto; font-size: 18px; z-index: 3;" anchor="0b0101" dock="0" ui-id="BT_cashCode" ui-class="UIButton" theme="gray" xonclick="BT_cashCode_OnClick"><span class="ui-content">통화버튼</span></span><span class="ui-control ui-label" id="ui-1730915a196" style='left: 718px; top: 22px; width: 149px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 20px; z-index: 4;' anchor="0b0101" dock="0" ui-id="LB_label9" ui-class="UILabel"><span class="ui-content">● 합산통화코드</span></span><span class="ui-control ui-button" id="ui-1730918f107" style="border-radius: 0px; left: 6px; top: 22px; width: 32px; height: 32px; right: auto; bottom: auto; z-index: 5;" anchor="0b0101" dock="0" ui-id="BT_button1" ui-class="UIButton" theme="" xonclick="BT_button1_OnClick"><span class="ui-content"></span><span class="ui-back-image" style='background-image: url("/KRG/media/Chk.png");'></span></span><span class="ui-control ui-label" id="ui-173091a4560" style='left: 47px; top: 22px; width: 306px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 24px; z-index: 6;' anchor="0b0101" dock="0" ui-id="LB_label10" ui-class="UILabel"><span class="ui-content">외화보통예금계좌별합산 발급</span></span></div><div class="ui-tab-page ui-container" id="ui-1720cc323f3" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-173085a8282" style="left: 0px; top: 68px; width: 1120px; height: 452px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_tab04_card" ui-class="UIPanel"></div><div class="ui-control ui-panel ui-container" id="ui-173085abe34" style="left: 0px; top: 68px; width: 1120px; height: 452px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_tab04_noList" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-173085abe36" style="left: 520px; top: 176px; width: 80px; height: 82px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel9" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/no_data_ic.png");'></span></div><span class="ui-control ui-label" id="ui-173085abe37" style="left: 437px; top: 261px; width: 246px; height: 38px; right: auto; bottom: auto; color: black; font-size: 24px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label8" ui-class="UILabel"><span class="ui-content" style="justify-content: center;">검색결과가 없습니다.</span></span></div><span class="ui-control ui-label" id="ui-173094b4c41" style='left: 18px; top: 15px; width: 99px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-family: "IBK iDream M"; font-size: 22px; z-index: 2;' anchor="0b0101" dock="0" ui-id="LB_label11" ui-class="UILabel"><span class="ui-content">발급형태</span></span><span class="ui-control ui-radiobox round ui-checked ui-radiobox--853117172" id="ui-171a4b083c4" style="left: 133px; top: 14px; width: 130px; height: 36px; right: auto; bottom: auto; color: rgb(29, 29, 29); z-index: 3;" anchor="0b0101" dock="0" ui-id="RB_issueTypeY" ui-class="UIRadioBox" value="Y" group-name="typeChk" x-style="round" xonchecked="RB_issueTypeY_OnChecked"><span class="ui-icon-image"><span></span></span><span class="ui-content">계좌별 발급</span></span><span class="ui-control ui-radiobox round" id="ui-171a4b083c5" style="left: 280px; top: 14px; width: 130px; height: 36px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="RB_issueTypeN" ui-class="UIRadioBox" value="N" group-name="typeChk" x-style="round" xonchecked="RB_issueTypeN_OnChecked"><span class="ui-icon-image"><span></span></span><span class="ui-content">회차별 발급</span></span></div></div></div></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("common","/KRG/0301/common.js");
+var chkCnt = 0;
+// tab 체크 할 경우 한번만 데이터를 끌어오기위한 변수_S
+var tabCheck = {};
+tabCheck.tab1 = false;
+tabCheck.tab2 = true;
+tabCheck.tab3 = true;
+tabCheck.tab4 = true;
+// tab 체크 할 경우 한번만 데이터를 끌어오기위한 변수_E
+
+var paramData = {};	// 선택된 데이터 담을 변수
+var getGrid1, getGrid2, getGrid3, getGrid4;	// grid값 담을 변수
+var lssuedIndex;	//	계좌, 회차 체크
+
+let p = parent;
+function TP_tab2_OnChangedTab(e){
+	
+	hideScrollbar(); 
+	         
+	let idx = e.after.index;
+	let target = TP_tab2.$.find(".ui-tab-page:eq("+idx+")").children().attr("ui-id");
+	console.log("target : " +target);
+	// 5010에서 업무구분코드를 지정해주기 위한 변수_
+	var tabNum = e.after.index+1;
+	p.gTarBswrDcd = "0"+tabNum;
+	
+	if(tabNum==1) {									// 원화예금
+		SB_scrollbar01.Visible = true;
+		SB_scrollbar01.TabPageMouseDrag(target);	// 패널로 스크롤 기능
+		if(tabCheck.tab1 == true) {
+			UIScrollBar.creator.initialize(SB_scrollbar01);	
+	        tabCheck.tab1 = false;
+	        p.ChangeTab("9059");
+	        p.sendRequest("sendCustomInfo");
+        }
+        //SB_scrollbar01.Invalidate();
+    } else if (tabNum==2) {							// 신탁
+    	SB_scrollbar02.Visible = true;
+    	SB_scrollbar02.TabPageMouseDrag(target);
+    	if(tabCheck.tab2 == true) {
+    		UIScrollBar.creator.initialize(SB_scrollbar02);	
+	        tabCheck.tab2 = false;
+	        p.ChangeTab("9059");
+	        p.sendRequest("sendCustomInfo");
+        }
+        //SB_scrollbar02.Invalidate();
+    } else if (tabNum==3) {							// 외화예금
+    	SB_scrollbar03.Visible = true;
+    	SB_scrollbar03.TabPageMouseDrag(target);
+		if(tabCheck.tab3 == true) {
+			UIScrollBar.creator.initialize(SB_scrollbar03);	
+	        tabCheck.tab3 = false;
+	        p.ChangeTab("9059");
+	        p.sendRequest("sendCustomInfo");
+        }
+        //SB_scrollbar03.Invalidate();
+    } else if (tabNum==4) {							// 채권
+    	SB_scrollbar04.Visible = true;
+    	SB_scrollbar04.TabPageMouseDrag(target);
+		if(tabCheck.tab4 == true) {
+			UIScrollBar.creator.initialize(SB_scrollbar04);	
+	        tabCheck.tab4 = false;
+	        p.allParamData.tarYn="Y";
+	        p.ChangeTab("9059");
+	        p.sendRequest("sendCustomInfo");
+        }
+        //SB_scrollbar04.Invalidate();
+    }
+    
+}
+
+function Form_OnLoad(e){
+	//hideScrollbar();
+}
+
+function accountList(data,tabCnt){
+	TB_cashText.$.html("<img class='flagImg'/> " + p.allParamData.tarCrcd);
+	TB_cashText.$.find(" > img.flagImg").css({'width':'50px','height':'32px','background':'url("/KRG/media/ic_flag_'+p.allParamData.tarCrcd+'.png")','background-repeat':'no-repeat','vertical-align':'bottom','margin':'7px 0 0 10px'});
+	
+	/*
+	data = [
+		{ CUS_ACN: "00173942101012", ISNC_DCD_NM : "중소기업금융채권", bal:"12",CRCD:"01", isncDcdNm:"전산발급",PDM:"1"},
+		{ CUS_ACN: "00211272701017", ISNC_DCD_NM : "중소기업금융채권", bal:"18,644,645",CRCD:"01", isncDcdNm:"발급불가",PDM:"1"},
+		{ CUS_ACN: "00211272714051", ISNC_DCD_NM : "정기적금7", bal:"900,000",CRCD:"01", isncDcdNm:"전산발급",PDM:"1"},
+		{ CUS_ACN: "00173942101012", ISNC_DCD_NM : "보통예금", bal:"14",CRCD:"01", isncDcdNm:"발급불가",PDM:"1"},
+		{ CUS_ACN: "00211272701017", ISNC_DCD_NM : "보통예금", bal:"18,644,645",CRCD:"01", isncDcdNm:"전산발급",PDM:"1"},
+		{ CUS_ACN: "00211272714001", ISNC_DCD_NM : "정기적금", bal:"900,000",CRCD:"01", isncDcdNm:"전산발급",PDM:"1"},
+		{ CUS_ACN: "00173942101012", ISNC_DCD_NM : "보통예금2", bal:"2",CRCD:"02", isncDcdNm:"전산발급",PDM:"1"},
+		{ CUS_ACN: "00211272701017", ISNC_DCD_NM : "보통예금2", bal:"18,644,645",CRCD:"02", isncDcdNm:"전산발급",PDM:"1"},
+		{ CUS_ACN: "00211272714001", ISNC_DCD_NM : "정기적금2", bal:"900,000",CRCD:"02", isncDcdNm:"전산발급",PDM:"1"}	
+	];
+	*/
+	
+	var tarDiv = "PN_tab"+tabCnt;
+	console.log(tarDiv+"_noList");
+	
+	if(tabCnt == "01") {
+		getGrid1	= data;
+	} else if(tabCnt == "02") {
+		getGrid2	= data;
+	} else if(tabCnt == "03") {
+		getGrid3	= data;
+	} else if(tabCnt == "04") {
+		getGrid4	= data;
+	}
+	
+	let tag = [];
+	
+	let rc = Math.floor( (data.length-1) / 3 ) + 1;
+	let ri = rc * 3 - data.length; 
+	for(let j=0;j < ri;j++){
+		data.push({emtpy : true});
+	}
+	
+	tag.push('<div class="card-group" style="margin-top:50px;">');
+	tag.push('<div class="card-panel">');	
+	if(data.length ==0 ) {	// 조회된 정보가 없음.
+		$("div[ui-id='"+tarDiv+"_noList']").css("display","");
+	} else {
+		$("div[ui-id='"+tarDiv+"_noList']").css("display","none");
+		for(let i=0;i<data.length;i++){
+			let r = data[i];
+			if(r.emtpy){
+				tag.push(""
+					+'<div class="card-item emtpy">'
+					+'</div>'
+				);
+				continue;				
+			}
+			tag.push(""
+		        +'<div class="card-item">'
+		        +'	<div class="card_info">'
+		        +'		<button class="chkimg"/>'
+		        +'		<div class="sub_title">계좌정보</div>'
+	            +'		<div class="title">계좌번호</div>'
+	            +'		<div class="disable_title"></div>'
+	            +'    	<div class="sub_content">금액</div>'
+		        +'	</div>'
+		        +'</div>'
+		    );
+		}
+		
+		tag.push('<div class="prc-dec">');	
+		tag.push('<span class="txt-1"><img class="icNote"> 유의사항</span>');
+		tag.push('<span class="txt-2">잔액증명서는 1회 발급당 최대 20개 계좌까지 선택 가능합니다.</span>');
+		tag.push('</div>');	
+	}
+	tag.push('</div>');
+	tag.push('</div>');
+	
+	
+	
+	$("div[ui-id='"+tarDiv+"_card']").html(tag.join(""));
+	let cardPanel = $("div[ui-id='"+tarDiv+"_card']").find("> div.card-group > div.card-panel");
+	cardPanel.find("> div.card-item").css({'width':'350px','height':'195px','padding':'20px','margin':'0 16px 26px 0'});
+	cardPanel.find("> div.emtpy").css({'background':'#f8f8f8','border':'none','box-shadow':'none','visibility':'visible'});
+	cardPanel.find("> div.prc-dec").css({'position':'static', 'width':'100%', 'display':'inline-block', 'height':'150px','background-color':'rgb(239, 240, 242)','padding':'20px 0 0 20px'});
+	cardPanel.find("> div.prc-dec > span.txt-1").css({'font-size':'24px','padding-top':'15px', 'line-height':'26px', 'display':'block', 'color':'rgba(0,0,0,0.8)'});
+	cardPanel.find("> div.prc-dec > span.txt-1 > img.icNote").css({'background':'url("/KRG/media/ic_note.png")','background-repeat':'no-repeat','width':'35px','vertical-align':'middle'});
+	cardPanel.find("> div.prc-dec > span.txt-2").css({'padding-top':'15px', 'line-height':'26px', 'display':'block', 'color':'rgba(0,0,0,0.8)','font-size':'20px'});
+	
+	cardPanel.find("> div.card-item > div.card_info").each(function(i){	
+		let $this = $(this);
+		let r = data[i];
+		
+		// 발급불가 데이터 처리_S
+		if(r.ISNC_DCD_NM.trim() == "발급불가") {
+			$this.css("opacity","0.3");
+			$this.find("> div.disable_title").text(r.ISNC_DCD_NM).css({'margin-top':'10px','margin-left':'35px','font-size':'21px','color':'red'});
+		} else {	// 발급불가가 아닐 때만 버튼 이벤트
+			$this.find("> button.chkimg").click(chkSelected);
+		}
+		// 발급불가 데이터 처리_E
+		
+		if(tabCnt == "02" || tabCnt == "03" || p.allParamData.tarYn1 == "N") { // 회차 보여줄 탭
+			$this.find("> div.sub_title").html(r.PDM + '<span>'+com.util.fnPaddingData(r.ARR_TOB_NO, '0', 1, true)+'회차</span>');
+		} else {
+			$this.find("> div.sub_title").html(r.PDM);	
+		}
+		
+		$this.find("> div.sub_title").css({'font-size':'26px','margin-left':'5px'});
+		$this.find("> div.sub_title>span").css({'font-size':'21px','position':'absolute','right':'0px','color':'#9c9c9c'});
+		$this.find("> div.title").text(com.acct.accountHypen(r.CUS_ACN)).css({'margin-top':'10px','margin-left':'35px','font-size':'22px'});
+		$this.find("> button.chkimg").css({'width':'32px','height':'32px','background':'url("/KRG/media/Chk.png")','box-shadow':'none','background-repeat':'no-repeat','border':'0','vertical-align':'text-top'});
+		if(tabCnt == "03") {	// 기본으론 usd로 표현.
+			var bswrDcdBal = com.util.fnUsdMoneyChgFormat(r.BAL);
+			$this.find("> div.sub_content").html(bswrDcdBal + '<span>(' + r.CRCD + ')</span>');
+		} else {
+			$this.find("> div.sub_content").html(com.util.fnGetFormatMoney(r.BAL) + '<span>원</span>');
+		}
+		
+		$this.find("> div.sub_content").css('bottom','0px');
+		$this.find("> div.sub_content>span").css('font-size','21px');
+		
+	});	
+	countCheck();
+	$("div[ui-id='"+tarDiv+"_card']").find(".card-panel").css("visibility","visible");
+	
+	if(tabCnt == "01") {
+		hideScrollbar();
+		SB_scrollbar01.Visible = true;
+		SB_scrollbar01.TabPageMouseDrag("PN_tab01_card");
+		SB_scrollbar01.Invalidate();
+	} else if(tabCnt == "02") {
+		SB_scrollbar02.Invalidate();
+	} else if(tabCnt == "03") {
+		SB_scrollbar03.Invalidate();
+	} else if(tabCnt == "04") {
+		SB_scrollbar04.Invalidate();
+	}
+}
+
+// 계좌 체크 박스 클릭_S
+function chkSelected(e) {
+	$(e.target.parentElement.parentElement).toggleClass("on");
+	if($(e.target.parentElement.parentElement).hasClass("on")) {
+		$(this.parentElement).animate({
+	        top: '+=5px',
+	        opacity: '0.5',
+    	}, 50);
+		chkCnt += 1;
+		$(e.target).css({'width':'32px','height':'32px','background':'url("/KRG/media/Chk_On.png")','box-shadow':'none','background-repeat':'no-repeat','border':'0'});
+		$(e.target.parentElement.parentElement).css('border','5px solid #9c9c9c');
+	} else {
+		$(this.parentElement).animate({
+            top: '-=5px',
+            opacity: '1',
+        }, 50);
+		chkCnt -= 1;
+		$(e.target).css({'width':'32px','height':'32px','background':'url("/KRG/media/Chk.png")','box-shadow':'none','background-repeat':'no-repeat','border':'0'});
+		$(e.target.parentElement.parentElement).css('border','1px solid #9c9c9c');
+	}
+	LB_label2.Text= chkCnt;
+	
+	countCheck();
+}
+// 계좌 체크 박스 클릭_E
+
+// 체크된 갯수에 따라서 처리_S
+function countCheck() {
+	if(chkCnt > 0 && chkCnt < 20) {
+		BT_right.Enabled = true;
+	} else if(chkCnt == 20) {
+		BT_right.Enabled = true;
+	} else {
+		BT_right.Enabled = false;
+	}
+}
+// 체크된 갯수에 따라서 처리_E
+
+function ChangeTab(index){
+	object = TP_tab2;
+	cb = Input_OnChangedTab;
+	object.SelectedTabIndex = index;
+    if ( cb ) cb({after:object.SelectedTabIndex});
+}
+
+// 외화보통예금계좌별합산 발급 클릭_S
+function BT_button1_OnClick(e){
+	$(e.target).toggleClass("on");
+	if($(e.target).hasClass("on")){	// 체크 됨
+		$(e.target).css('background','url("/KRG/media/Chk_On.png")');
+		BT_cashCode.Enabled = true;
+	} else {
+		$(e.target).css('background','url("/KRG/media/Chk.png")');
+		BT_cashCode.Enabled = false;
+		
+		TB_cashText.$.html("");		// 통화 텍스트 초기화.
+		p.allParamData.tarCrcd = "";				// 5010에 있는 tarCrcd 초기화.
+		p.allParamData.tarYn = "";				// 5010에 있는 tarYn 초기화.
+		removeChk("03");			// 새롭게 리스트 불러오기 때문에 체크박스 해제 및 체크 갯수 조정.
+		p.ChangeTab("9059");
+		p.sendRequest("sendCustomInfo");
+	}
+}
+// 외화보통예금계좌별합산 발급 클릭_E
+
+// 통화버튼 클릭_S
+function BT_cashCode_OnClick(e){
+	removeChk("03");				// 새롭게 리스트 불러오기 때문에 체크박스 해제 및 체크 갯수 조정.
+	p.allParamData.tarYn = "Y";
+	p.ChangeTab("5014_1");
+}
+// 통화버튼 클릭_E
+
+// 발급형태(계좌별) 선택_S
+function RB_issueTypeY_OnChecked(e){
+	//console.log($(e.target.parentElement).attr('value'));
+	lssuedIndex = 0;
+	removeChk("04");			// 새롭게 리스트 불러오기 때문에 체크박스 해제 및 체크 갯수 조정.
+	p.allParamData.tarYn1 = "Y";				
+	p.ChangeTab("9059");
+	p.sendRequest("sendCustomInfo");
+	
+}
+// 발급형태(계좌별) 선택_E
+
+// 발급형태(회차별) 선택_S
+function RB_issueTypeN_OnChecked(e){
+	lssuedIndex = 1;
+	removeChk("04");				// 새롭게 리스트 불러오기 때문에 체크박스 해제 및 체크 갯수 조정.
+	p.allParamData.tarYn1 = "N";
+	p.ChangeTab("9059");
+	p.sendRequest("sendCustomInfo");
+}
+// 발급형태(회차별) 선택_E
+
+// 체크박스 해제 및 체크 갯수 조정_S
+function removeChk(tarRemove) {
+	
+	var btnList= $("div[ui-id='PN_tab"+tarRemove+"_card']").find("> div.card-group > div.card-panel > div.card-item");
+	for(var k=0;k<btnList.length;k++)
+	{
+		if($(btnList[k]).hasClass("on")) {
+			$(btnList[k]).toggleClass("on");
+			$(btnList[k]).find("> div.card_info > button.chkimg").css({'width':'32px','height':'32px','background':'url("/KRG/media/Chk.png")','box-shadow':'none','background-repeat':'no-repeat','border':'0','vertical-align':'text-top'});
+			chkCnt--;
+		}
+	}
+	LB_label2.Text= chkCnt;
+}
+// 체크박스 해제 및 체크 갯수 조정_E
+
+function hideScrollbar() {
+	SB_scrollbar01.Visible = false;
+	SB_scrollbar02.Visible = false;
+	SB_scrollbar03.Visible = false;
+	SB_scrollbar04.Visible = false;
+}
+
+function BT_right_OnClick(e){
+	var selected1 = [];
+	var selected2 = [];
+	var selected3 = [];
+	var selected4 = [];
+	
+	var temp = $("div[ui-id='PN_tab01_card']").find("> div.card-group > div.card-panel > div.card-item.on").each(function(){
+        selected1.push($(this).index());
+    });
+	// 원화예금 선택 된 값 push
+    for (var i = 0; selected1.length > i; i++) {
+        if(getGrid1 !== undefined) {
+            var info = getGrid1[selected1[i]];
+            //SCREEN.WriteJnl("**원화예금계좌: " + info);
+            p.allParamData.accountInfoArr.push(info);
+        }
+    }
+    
+    temp = $("div[ui-id='PN_tab02_card']").find("> div.card-group > div.card-panel > div.card-item.on").each(function(){
+        selected2.push($(this).index());
+    });
+	// 신탁 선택 된 값 push
+    for (var i = 0; selected2.length > i; i++) {
+        if(getGrid2 !== undefined) {
+            var info = getGrid2[selected2[i]];
+            //SCREEN.WriteJnl("**신탁계좌: " + info);
+            p.allParamData.accountInfoArr.push(info);
+        }
+    }
+    
+    temp = $("div[ui-id='PN_tab03_card']").find("> div.card-group > div.card-panel > div.card-item.on").each(function(){
+        selected3.push($(this).index());
+    });
+	// 외화예금 선택 된 값 push
+    for (var i = 0; selected3.length > i; i++) {
+        if(getGrid3 !== undefined) {
+            var info = getGrid3[selected3[i]];
+            //SCREEN.WriteJnl("**외화예금계좌: "+info);
+            p.allParamData.accountInfoArr.push(info);
+        }
+    }
+    
+    temp = $("div[ui-id='PN_tab04_card']").find("> div.card-group > div.card-panel > div.card-item.on").each(function(){
+        selected4.push($(this).index());
+    });
+	// 채권 선택 된 값 push
+    for (var i = 0; selected4.length > i; i++) {
+        if(getGrid4 !== undefined) {
+            var info = getGrid4[selected4[i]];
+            //SCREEN.WriteJnl("**채권: " + info);
+            p.allParamData.accountInfoArr.push(info);
+        }
+    }
+    
+    p.allParamData.rnn		= p.gRNN;					// 주민등록번호
+    p.allParamData.baseYmd	= p.allParamData.tarDt.replace(/-/g,"");	// 기준년월일
+    if(lssuedIndex == 1){
+    	p.allParamData.tarYn1	= "N"					// 여부_1
+    } else {
+    	p.allParamData.tarYn1	= "Y"					// 여부_1
+    }
+    SCREEN.WriteJnl("[증명서 신청 계좌 선택] 정상");
+    p.sendRequest("issueWritePage");
+}
+
+
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[증명서 신청 계좌 선택] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);	//	고객이 취소
+}</script></xjscript></body>
+</html>

@@ -1,0 +1,793 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ide-size="1389,1120" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">선결제</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><div class="ui-control ui-panel ui-container" id="ui-17355fb3e22" style="left: 80px; top: 12px; width: 1150px; height: 68px; right: auto; bottom: auto; z-index: 0; background-color: rgb(239, 240, 242);" anchor="0b0101" dock="0" ui-id="PN_Subtitle_wrap" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-172bff56e8d" style='left: 240px; top: 19px; width: 780px; height: 30px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 20px; z-index: 2;' anchor="0b0101" dock="0" ui-id="LB_Subtitle_guide" ui-class="UILabel"><span class="ui-content">청구금액/미청구금액의 전체결제를 신청하시겠습니까?</span></span><span class="ui-control ui-label" id="ui-172bfef05a8" style='left: 208px; top: 17px; width: 13px; height: 34px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 20px; z-index: 1;' anchor="0b0101" dock="0" ui-id="LB_label10" ui-class="UILabel" icon-image-align="left,middle"><span class="ui-content" style="justify-content: center;"> | </span></span><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 4px; top: 13px; width: 180px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">선결제 신청</span></span></div></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span><span disabled="disabled" class="ui-control ui-button theme-blue ui-disabled" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="1280"><div class="ui-control ui-panel ui-container" id="ui-172ea605b36" style="left: 83px; top: 20px; width: 1100px; height: 660px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_wrap" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-172ea60f7fe" style='left: 16px; top: 16px; width: 441px; height: 32px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-family: "IBK iDream M"; font-size: 24px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_label2" ui-class="UILabel"><span class="ui-content">결제계좌정보</span></span><span class="ui-control ui-label" id="ui-172ea60f829" style="left: 734px; top: 20px; width: 119px; height: 24px; right: auto; bottom: auto; font-size: 21px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label3" ui-class="UILabel"><span class="ui-content">조회기준일시</span></span><span class="ui-control ui-label" id="ui-172ea60f855" style="left: 861px; top: 20px; width: 210px; height: 24px; right: auto; bottom: auto; font-size: 21px; z-index: 2;" anchor="0b0101" dock="0" ui-id="LB_label_date" ui-class="UILabel"><span class="ui-content"></span></span><div class="ui-control ui-panel ui-container" id="ui-172ea6174b0" style="left: 16px; top: 55px; width: 1050px; height: 194px; right: auto; bottom: auto; z-index: 3;" anchor="0b0101" dock="0" ui-id="PN_account" ui-class="UIPanel"></div><span class="ui-control ui-label" id="ui-172ea623a68" style='left: 16px; top: 288px; width: 441px; height: 32px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-family: "IBK iDream M"; font-size: 24px; z-index: 4;' anchor="0b0101" dock="0" ui-id="LB_label5" ui-class="UILabel"><span class="ui-content">결제 청구 건</span></span><span class="ui-control ui-checkbox" id="ui-172ea623a93" style="left: 54px; top: 332px; width: 202px; height: 44px; right: auto; bottom: auto; z-index: 5;" anchor="0b0101" dock="0" ui-id="CB_checkbox_all" ui-class="UICheckBox" xonchecked="CB_checkbox_all_OnChecked"><span class="ui-icon-image"><span></span></span><span class="ui-content">전체선택/해제</span></span><div class="ui-control ui-panel ui-container" id="ui-172ea62d2ab" style="left: 16px; top: 387px; width: 1050px; height: 140px; right: auto; bottom: auto; z-index: 6;" anchor="0b0101" dock="0" ui-id="PN_panel_trans" ui-class="UIPanel"></div><span class="ui-control ui-label" id="ui-1738e2c0128" style="left: 270px; top: 338px; width: 500px; height: 32px; right: auto; bottom: auto; color: rgb(255, 66, 0); font-size: 22px; z-index: 7;" anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content">* 선결제는 최대 10건까지 신청하실 수 있습니다.</span></span><div class="ui-control ui-panel ui-container" id="ui-1738ed6cb20" style="left: 16px; top: 540px; width: 1050px; height: 110px; right: auto; bottom: auto; z-index: 8;" anchor="0b0101" dock="0" ui-id="PN_panel_more" ui-class="UIPanel" xonclick="PN_panel_more_OnClick"></div></div><span class="ui-control ui-scrollbar" id="ui-172980bda14" style="left: 1220px; top: 20px; width: 32px; height: 660px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="SB_scrollbar_wrap" ui-class="UIScrollBar" scroll-control-id="PN_wrap"><span class="track"></span><span class="trackbutton" style="top: 417px;"></span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>// 3180.css import
+importCSS("3180"     ,"3180.css");
+
+// common.js import
+importJSS("common", "common.js");
+
+var p = parent;
+
+var isAppend = false;  // 추가조회 여부
+
+function Form_OnLoad(e){
+   
+/***   
+	// 조회일시 셋팅
+	LB_label_date.$.html(com.date.nowDate());
+	
+	// 결제정보 테스트용 리스트 
+    accountList();
+    
+    // 결제청구 테스트용 리스트  
+    transList();
+
+	// 더보기 버튼 테스트용
+	createBtnMoreTest();
+***/
+
+}
+
+
+/* 결제계좌정보 출력 */
+function fnSetAcnInfo( ){
+
+  // 추가조회시 셋팅 안 함(계좌선택)
+  if(isAppend){
+    return;
+  }
+
+  let ATLM_ACN = "", ACNT_BAL = 0, STLM_ACN = "", SUBJ_NM = "";
+
+  // 결제계좌번호 가져오기    
+  if(p.G_CRDRCP301021Step3 != null){
+     STLM_ACN = p.G_CRDRCP301021Step3.STLM_ACN;
+  }
+
+
+  // 결제계좌정보 가져오기
+  if(p.G_CBKARR108D10Step3 != null){
+  
+	  const records = p.G_CBKARR108D10Step3.Grid1;	
+	  
+	  for(let i = 0, Len = records.length; i < Len; i++){
+	      let record = records[i];
+          if(STLM_ACN == record.CUS_ACN) {
+             ATLM_ACN = record.CUS_ACN;
+             ACNT_BAL = record.ACNT_BAL; 
+             SUBJ_NM  = record.SUBJ_NM;
+                        
+             p.G_CRDRCP301021Step3.STLM_BNCD = "003";
+             p.G_CRDRCP301021Step3.STLM_ACN = ATLM_ACN;
+             p.G_CRDRCP301021Step3.ACNT_BAL = ACNT_BAL;
+             break;
+          }
+	  }  // end for - records
+	  	  
+	  
+	// 계좌번호 셋팅
+	if(p.G_isOthers){
+	   // 타행인경우 계좌번호 패턴 X
+	} else {
+	   STLM_ACN = p.com.acct.fnGetAccountPattern(p.G_CRDRCP301021Step3.STLM_ACN);
+	}
+	  
+	// 은행명 셋팅
+	if(p.G_isOthers){
+	   SUBJ_NM = p.com.acct.convertBankName(p.G_CRDRCP301021Step3.STLM_BNCD);
+	} else {
+	   //
+	}
+	
+	const LASTBILGYMD =  p.com.date.fnGetFormatDate(p.G_CRDRCP301021Step3.LAST_BILG_YMD);
+
+    let tag = [];
+	tag.push(""
+		+'<div class="list_info_pay" onclick="acctSelectPop();">'
+        +'	<div class="text_area">'
+        +'    <div class="main_text posLT"><strong>'+STLM_ACN+'</strong></div>'
+        +'    <div class="sub_text posLB">'+SUBJ_NM+'</div>'
+        +'    <div class="posRT">출금가능금액</div>'
+        +'    <div class="posRB">'
+        +		'<strong>'+p.com.util.fnGetFormatMoney(ACNT_BAL)+'</strong>'
+        +		'<span>원</span>'
+        +'	  </div>'
+        +'	</div>'
+        +'  <div class="next_img"></div>'
+        +'  <div class="text_area_bottom"><span>최종 청구일</span> <div class="divider">|</div> <span>'+LASTBILGYMD+'</span> </div>'
+        +'</div>'	
+	);	  
+	  
+	let $PN_account = $("div[ui-id='PN_account']");
+	$PN_account.html(""
+		+'<div class="list-panel">'
+		+tag.join("")
+		+'</div>'
+	);		  
+	
+	// mousedown 이벤트 삭제					   
+    $PN_account.find("> div.list-panel > div.list_info_pay").off("mousedown");
+    // mousedown 이벤트 생성
+	$PN_account.find("> div.list-panel > div.list_info_pay").each(function(i){
+		let $this = $(this);
+		$this.css({'border': '1px solid #9c9c9c'});
+		$this.mousedown(function(){
+		    comSelectAnimate.call(this,$("div[ui-id='PN_account'] > div.list-panel > div.list_info_pay"));
+		});
+	});
+	$PN_account.find("> div.list-panel > div.list_info_pay").css("visibility","visible");	
+	  
+  }  // end if - G_CBKARR108D10Step3
+	
+}
+
+
+function acctSelectPop(){
+   // 출금계좌 리스트 팝업 실행화면
+   com.ss.setItem("pop_accountAll_act","3183");
+   
+   // 전체계좌 팝업 조회
+   p.sendRequest("pop_accountAll");     
+}
+
+
+// 결제 청구 리스트 출력
+function fnCreatePaymentList(){
+
+  // 더보기 패널 초기화 
+  PN_panel_more.Visible = false; 
+   
+  // 결제 청구 리스트 가져오기
+  if(p.G_CRDRCP301021Step3 != null){
+
+    // 더보기 패널 Visible 셋팅
+    if(com.util.isNull($.trim(p.G_CRDRCP301021Step3.CSTP_NEXTKEY_SLIP_BNG_YMD))) { 
+        PN_panel_more.Visible = false; 
+    } else {
+        PN_panel_more.Visible = true;     
+    }
+
+     // 초기화
+	 let $PN_panel_trans = $("div[ui-id='PN_panel_trans']");
+	 
+	 // 추가조회가 아니면,,,,
+	 if(!isAppend){
+	 	 $PN_panel_trans.html("<div class='list-panel'></div>");	
+	 }
+	
+     let tag = [];
+
+	 const records = p.G_CRDRCP301021Step3.Grid2;	
+
+	 if(records != null && records.length > 0){
+	 
+	     const list_info_len = $PN_panel_trans.find("> div.list-panel > div.list_info_check").length;
+	 
+		 for(let i = 0, Len = records.length; i < Len; i++){
+		 
+		     let record = records[i],
+		         // 신용카드상품코드
+	             CRD_PDNM = com.acct.cardProductCodes(record.CRD_PDCD),
+	             // 결제년월일
+	             STLM_YMD = com.date.fnGetFormatDate(record.STLM_YMD),
+	             // 가맹점명
+	             AFST_NM  = record.AFST_NM,
+	             // 신용카드미결제원금금액
+	             PCRD_TMNB_AMT = com.util.fnGetFormatMoney(record.CRD_OTST_PRNC_AMT),
+	             // 미결제총금액
+	             POTST_TTAL_AMT = com.util.fnGetFormatMoney(record.OTST_TTAL_AMT);
+	             
+	          let idx = eval(list_info_len+i);
+	          
+				 tag.push(""
+					+'<div class="list_info_check">'
+			        +'  <div class="ic_check">'
+					+'     <span class="ui-control ui-checkbox" ui-class="UICheckBox" ui-id="CB_checkbox'+idx+'" idx="'+idx+'"><span class="ui-icon-image"><span></span></span><span class="ui-content">checkbox2</span></span>'		        
+			        +'	</div>'
+			        +'	<div class="text_area" onclick="paymentSelectPop(this,\''+idx+'\')">'
+			        +'    <div class="main_text posLT"><strong>'+CRD_PDNM+'</strong></div>'
+			        +'    <div class="sub_text posLB">'+ STLM_YMD +' &nbsp;|&nbsp; '+ AFST_NM +'</div>'
+			        +'    <div class="posRT"> 이용원금  <strong>'+PCRD_TMNB_AMT+'</strong> 원</div>'
+			        +'    <div class="posRB">미결제금액 <strong>'+POTST_TTAL_AMT+'</strong> 원</div>'
+			        +'	</div>'
+			        +'  <div class="next_img" onclick="paymentSelectPop(this,\''+idx+'\')"></div>'
+			        +'</div>'	
+				 );
+				
+		 }  // end for - records     
+		
+		
+		// 결제청구내역 패널 높이 설정
+		if(!isAppend){  // 신규 조회시
+			const panel_trans_height = (126 * records.length);		  
+			$PN_panel_trans.css({"height":panel_trans_height});
+		} else { // 더보기시
+		//	console.log(" $PN_panel_trans.height() >>>> " + $PN_panel_trans.height() );	
+			const panel_trans_height = ((126 * records.length) + $PN_panel_trans.height());
+			$PN_panel_trans.css({"height":panel_trans_height});
+
+			// 더보기 패널 위치 잡기
+		//  position().top : 0 으로 가져옴??!!
+		//	const panel_more_top =  $PN_panel_trans.height() + $PN_panel_trans.position().top;		
+			const panel_more_top =  $PN_panel_trans.height() + 387;		
+			
+			console.log(" panel_more_top >>>> " + panel_more_top );
+		}
+			 
+		$PN_panel_trans.find("> div.list-panel").append(""
+													 	+tag.join("")
+													   );			
+													   
+	   // console.log("$PN_panel_trans.html() >>> " +  $PN_panel_trans.html() );
+	   
+	  // console.log("$PN_contents.html() >>>##### " +  $("div[ui-id='PN_contents']").html() );
+		 
+	}  // end if - records
+	
+	// mousedown 이벤트 삭제					   
+    $PN_panel_trans.find("> div.list-panel > div.list_info_check").off("click");
+    // mousedown 이벤트 생성
+	$PN_panel_trans.find("> div.list-panel > div.list_info_check").each(function(i){
+		let $this = $(this);
+		$this.css({'border': '1px solid #9c9c9c'});
+		$this.click(selectAnimate);
+		
+		// 리스트 클릭 이벤트
+		function selectAnimate(e) {
+		    var chs = this;
+		    $(chs).animate({
+		        top: '+=5px',
+		        opacity: '0.5',
+		    }, 50, reback);
+		
+		    function reback() {
+		        $(chs).animate({
+		            top: '-=5px',
+		            opacity: '1',
+		        }, 50);
+		
+		        chs = null;
+		    }
+		    
+		    // 리스트 박스 테두리 디폴트 셋팅    			        
+		    $PN_panel_trans.find("> div.list-panel > div.list_info_check").css({'border': '1px solid #9c9c9c'});	        
+		    
+		    // 선택한 박스 테두리 셋팅
+		    $(chs).css({'border': '4px solid #9c9c9c'});	        
+		    
+			// 더보기 버튼 패널 테두리 디폴트 셋팅
+		    $("div[ui-id='PN_panel_more'] > div.list-panel > div.list_info").css({'border': '1px solid #9c9c9c'});
+		} 	
+		
+ 	});
+ 	
+	// 체크박스 click 이벤트 삭제					   
+    $PN_panel_trans.find(".ui-checkbox").off("click");
+    // 체크박스 click 이벤트 생성
+	$PN_panel_trans.on("click",".ui-checkbox",function(e){
+		let control = UIControls.attach(this);
+		let oldChecked  = control.Checked;
+		// control.Checked = !oldChecked;
+		// console.log(" control >>>!!! " +  control );	
+		// console.log(" control.Checked >>>!!! " +  control.Checked );	
+	
+		fnIsChecked(control);
+	});	    
+ 	
+	$PN_panel_trans.find("> div.list-panel > div.list_info_check").css("visibility","visible");			
+     
+    // 더보기 버튼용 패널 생성 
+    createBtnMore(PN_panel_more.Visible);
+    
+  }  // end if - G_CBKARR108D10Step3    
+   
+}
+
+
+function paymentSelectPop(obj,index){
+   // 결제내역 인덱스 셋팅
+   com.ss.setItem("3283_payinfo_idx",index);
+   
+   // 결제청구건 팝업 조회 
+   p.sendRequest("pop_paymentInfo");    
+}
+
+
+// 더보기 버튼용 패널 생성 
+function createBtnMore(flag){
+
+  if(flag){
+		let tag = [];
+		tag.push(""
+			+'<div class="list_info">'
+	        +'	<div class="text_area">'
+	        +'    <div class="main_text" style="text-align:center;">+ 더보기</div>'
+	        +'	</div>'
+	        +'</div>'	
+		);
+						
+		let $PN_panel_more = $("div[ui-id='PN_panel_more']");
+		$PN_panel_more.html(""
+			+'<div class="list-panel">'
+			+tag.join("")
+			+'</div>'
+		);	
+		
+		// 더보기 패널 위치 잡기
+		let $PN_panel_trans = $("div[ui-id='PN_panel_trans']");
+	//  position().top => 0 으로 가져옴??!!
+	//	const panel_more_top =  $PN_panel_trans.height() + $PN_panel_trans.position().top;		
+		const panel_more_top =  $PN_panel_trans.height() + 387;		
+		
+		$PN_panel_more.css({"top":panel_more_top+"px"});
+	
+		console.log(" panel_more_top >>> " +  panel_more_top );	
+	
+		$PN_panel_more.find("> div.list-panel > div.list_info").each(function(i){			
+		    let $this = $(this);
+		    $this.css({'border': '1px solid #9c9c9c'});
+			$this.mousedown(function(){
+			    comSelectAnimate.call(this,$("div[ui-id='PN_panel_more'] > div.list-panel > div.list_info"));
+			    // 결제 청구 리스트 테두리 디폴트 셋팅
+			    $("div[ui-id='PN_panel_trans'] > div.list-panel > div.list_info_check").css({'border': '1px solid #9c9c9c'});		    
+			});
+		});
+	  // $PN_panel_more.css("visibility","visible");	
+   } else {
+		let $PN_panel_more = $("div[ui-id='PN_panel_more']");
+		$PN_panel_more.html(""
+			+'<div class="list-panel">'
+			+'</div>'
+		);	   
+   }
+
+}
+
+
+function PN_panel_more_OnClick(e){
+    // 추가조회 셋팅
+    isAppend = true;
+
+    // 화면로딩 탭 뷰
+    p.ChangeTab(p.loadScreenNo);
+    
+    // 선결제 입금 대상 추가 조회
+    p.sendRequest("step3_pay_select_add");    
+}
+
+
+function CB_checkbox_all_OnChecked(e){
+	fnAllCheck();
+}
+
+
+function fnAllCheck() {
+    let isChecked = CB_checkbox_all.Checked;
+    
+    let $panel_trans_check = PN_panel_trans.$.find("div.list-panel > div.list_info_check > div.ic_check");
+    
+  	if(CB_checkbox_all.Checked){  // 전체선택 체크
+  	
+  	   $panel_trans_check.find("> span").addClass("ui-checked");  	
+       if($panel_trans_check.find("> span.ui-checked").length > 10 && isChecked) {
+          isChecked = false;
+       }
+       
+  	} else { // 전체선택 해제
+  	
+  	   $panel_trans_check.find("> span.ui-checked").removeClass("ui-checked");
+  	   
+  	}      	
+  	
+  	// 확인버튼 활성화 체크
+  	BT_right.Enabled = isChecked; 
+}
+
+
+function fnIsChecked(control) {    
+
+	let controlchecked  = !control.Checked;
+	
+	console.log("controlchecked >>> " +  controlchecked );	
+			
+    let $panel_trans_check = PN_panel_trans.$.find("div.list-panel > div.list_info_check > div.ic_check");
+    
+    // 체크박스 체크 카운트는 별도 계산필요....
+    var nChecked = $panel_trans_check.find("> span.ui-checked").length;
+    if(controlchecked){
+       nChecked = nChecked + 1;
+    } else {
+       nChecked = nChecked - 1;
+    }
+    console.log(" nChecked >>> " +  nChecked );	
+    
+  	// 확인버튼 활성화 체크
+    var isEnable =  nChecked > 10 || nChecked ===  0 ? false : true;
+  	BT_right.Enabled = isEnable; 
+  	
+  	// 전체선택 체크박스 체크
+  	const listLen = PN_panel_trans.$.find("> div.list-panel > div.list_info_check").length;
+    if(listLen == nChecked ) {
+       CB_checkbox_all.Checked = true;      
+    } else {
+       CB_checkbox_all.Checked = false;      
+    }
+               
+}
+
+
+// 체크박스 체크 데이터 셋팅
+function getCheckRecords(){
+
+  let $panel_trans_check = PN_panel_trans.$.find("div.list-panel > div.list_info_check > div.ic_check");
+
+  let checkRows = $panel_trans_check.find("> span.ui-checked"),
+      selectLeng = checkRows.length,
+      AHST_PCSN_DCD = p.G_payInfo.AHST_PCSN_DCD,
+      PAMENT_CD = p.G_payInfo.PAMENT_CD, 
+      UNC_BILG_COUNT = 0,
+      CRD_MNRC_TTAL_AMT = 0,
+      tempGrid = [],
+      records  = [];
+      
+    for(var i = 0; i < selectLeng; i++) {
+        
+        var index = $(checkRows[i]).attr("idx"),
+            record = p.G_payDataStep3[index],
+            PRNCAMT = "0",
+            MNMM_MNRC_PRNC_AMT = AHST_PCSN_DCD === "3" ? record.MNMM_MNRC_PRNC_AMT : record.MNMM_MNRC_AMT;
+            
+        if(AHST_PCSN_DCD === "3" && PAMENT_CD == "LIST") {
+            PRNCAMT = record.CRD_OTST_PRNC_AMT;
+        }
+        
+        if( parseInt(record.CRD_TMNB_AMT, 10) == 0 ) {
+            UNC_BILG_COUNT+=1;
+        }
+        
+        console.log(" index >>> " +  index );	
+        console.log(" record >>> " +  record );	
+        console.log(" PRNCAMT >>> " +  PRNCAMT );	
+        console.log(" record.MNMM_MNRC_PRNC_AMT  >>> " +  record.MNMM_MNRC_PRNC_AMT  );	
+        console.log(" record.MNMM_MNRC_AMT >>> " +  record.MNMM_MNRC_AMT );	
+        console.log(" MNMM_MNRC_PRNC_AMT >>> " +  MNMM_MNRC_PRNC_AMT );	
+        console.log(" PRNCAMT >>> " +  PRNCAMT );        
+        console.log(" CRD_TMNB_AMT 0001 >>> " +  record.CRD_TMNB_AMT );	
+        console.log(" CRD_TMNB_AMT 0002 >>> " +  parseInt(record.CRD_TMNB_AMT, 10));	
+		console.log(" UNC_BILG_COUNT >>> " +  UNC_BILG_COUNT );        
+        
+        // tempGrid 리스트 적재
+        tempGrid.push({
+            SLIP_BNG_YMD : record.SLIP_BNG_YMD,                                           // 전표매입년월일
+            CARD_AMSL_SLN : record.CARD_AMSL_SLN,                                         // 카드매출전표번호
+            CRD_PDCD : record.CRD_PDCD,                                                   // 신용카드상품코드
+            MNRC_RQST_AMT : com.util.fnPaddingData(record.OTST_TTAL_AMT, '0', 15, true),  // 입금요청금액(신용카드당월청구금액)
+            MNRC_PRNC_AMT : com.util.fnPaddingData(PRNCAMT, '0', 15, true ),              // 입금원금금액(신용카드미결제원금금액)
+            MNRC_FEE : com.util.fnPaddingData("0", '0', 15, true ),                       // 입금수수료(미결제 수수료)
+            MNMM_MNRC_PRNC_AMT: MNMM_MNRC_PRNC_AMT                               		  // MNMM_MNRC_AMT : "최소입금금액"    MNMM_MNRC_PRNC_AMT : "최소입금원금금액"
+        });
+        
+        // records 리스트 적재 
+        records.push(record);
+                
+        CRD_MNRC_TTAL_AMT+= parseInt(record.OTST_TTAL_AMT, 10);
+        
+    }      
+    
+    // 세션스토리지 셋팅
+    com.ss.setItem("3183_Grid1",JSON.stringify(tempGrid));
+    com.ss.setItem("3183_CRD_MNRC_TTAL_AMT",CRD_MNRC_TTAL_AMT);
+    com.ss.setItem("3183_PAMENT_TTAL_COUNT",UNC_BILG_COUNT);
+    com.ss.setItem("3183_CSTP_MNRC_ROWCOUNT",selectLeng);
+    com.ss.setItem("3183_SELECT_DATA_ORIGIN",JSON.stringify(records));
+
+}
+
+
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[선결제 전체결제 신청] 취소");
+   	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+function BT_right_OnClick(e){
+
+  	//타행 거래불가 상태일때
+  	if(p.G_isOthers && p.comFnOthersCheck() == false)
+  	{
+  		return ;
+  	}
+  
+  	// 체크박스 체크 데이터 셋팅
+  	getCheckRecords();  
+    
+  	if(p.G_isOthers && p.comFnOthersCheck())	
+  	{
+    	// 타행은 비밀번호 입력 패스 
+    	p.G_SkipPwdStep3 = true;
+  	}  
+
+	// 선결제 신청 안내 화면 조회
+	SCREEN.WriteJnl("**결제계좌: " + p.G_CRDRCP301021Step3.STLM_ACN);	
+  	SCREEN.WriteJnl("[선결제 전체결제 신청] 정상");
+  	p.sendRequest("step4_pay_guide");
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  테스트용 함수
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 결제정보 테스트용 리스트  
+function accountList(){
+
+		//data
+		let data = [
+			{ type:"보통예금",accountnum:"001-678764-01-081"}
+		];	
+
+/**
+		//data
+		let data = [
+			{ type:"보통예금",accountnum:"001-678764-01-036"},
+			{ type:"보통예금",accountnum:"001-678764-01-043"},
+			{ type:"보통예금",accountnum:"001-678764-01-052"},
+			{ type:"보통예금",accountnum:"001-678764-01-071"},
+			{ type:"보통예금",accountnum:"001-678764-01-089"},
+			{ type:"보통예금",accountnum:"001-678764-01-068"},
+			{ type:"보통예금",accountnum:"001-678764-01-054"},
+			{ type:"보통예금",accountnum:"001-678764-01-012"},
+			{ type:"보통예금",accountnum:"001-678764-01-026"},
+			{ type:"보통예금",accountnum:"001-678764-01-047"},
+			{ type:"보통예금",accountnum:"001-678764-01-092"},
+			{ type:"보통예금",accountnum:"001-678764-01-081"}
+		];	
+**/		
+		let tag = [];
+		for(let i=0;i<data.length;i++){
+			tag.push(""
+				+'<div class="list_info_pay">'
+		        +'	<div class="text_area">'
+		        +'    <div class="main_text posLT"><strong>메인텍스트</strong></div>'
+		        +'    <div class="sub_text posLB">2020-06-19</div>'
+		        +'    <div class="posRT">출금가능금액</div>'
+		        +'    <div class="posRB">'
+		        +		'<strong>15,352,000</strong>'
+		        +		'<span>원</span>'
+		        +'	  </div>'
+		        +'	</div>'
+		        +'  <div class="next_img"></div>'
+		        +'  <div class="text_area_bottom"><span>최종 청구일</span> <div class="divider">|</div> <span>2019.01.27</span> </div>'
+		        +'</div>'	
+			);
+		}
+	
+	
+		let $PN_account = $("div[ui-id='PN_account']");
+		$PN_account.html(""
+			+'<div class="list-panel">'
+			+tag.join("")
+			+'</div>'
+		);	
+		
+		$PN_account.find("> div.list-panel > div.list_info_pay").each(function(i){
+			let $this = $(this);
+			let r = data[i];	
+			
+			$this.find(">div.text_area >div.sub_text").text(r.type);
+			$this.find(">div.text_area >div.main_text").html(r.accountnum);
+			$this.css({'border': '1px solid #9c9c9c'});
+			$this.mousedown(select); //버튼클릭 이벤트
+		});	
+		$PN_account.css("visibility","visible");	
+
+
+		//버튼클릭 이벤트
+	    function select(e) {
+	    	    	        
+	        var chs = this;
+	        $(chs).animate({
+	            top: '+=5px',
+	            opacity: '0.5',
+	        }, 50, reback);
+	
+	        function reback() {
+	            $(chs).animate({
+	                top: '-=5px',
+	                opacity: '1',
+	            }, 50);
+	
+	            chs = null;
+	        }
+	        
+	    	// 리스트 박스 테두리 디폴트 셋팅
+	        $PN_account.find("div.list-panel > div.list_info_pay").css({'border': '1px solid #9c9c9c'});
+	        
+	        // 선택한 박스 테두리 셋팅
+	        $(chs).css({'border': '4px solid #9c9c9c'});
+	        
+	    }  // end func - select
+	
+}
+
+
+// 결제청구 테스트용 리스트  
+function transList(){
+
+		//data
+		let data = [
+			{ date:"2020-02-25 | 현대백화점-식품1",histoycontent:"국내일시불1"},
+			{ date:"2020-02-27 | 현대백화점-식품2",histoycontent:"국내일시불2"},
+			{ date:"2020-02-29 | 현대백화점-식품3",histoycontent:"국내일시불3"},
+			{ date:"2020-03-21 | 현대백화점-식품4",histoycontent:"국내일시불4"},
+			{ date:"2020-03-24 | 현대백화점-식품5",histoycontent:"국내일시불5"},
+			{ date:"2020-03-26 | 현대백화점-식품6",histoycontent:"국내일시불6"},
+			{ date:"2020-03-30 | 현대백화점-식품7",histoycontent:"국내일시불7"},
+			{ date:"2020-04-11 | 현대백화점-식품8",histoycontent:"국내일시불8"},
+			{ date:"2020-04-18 | 현대백화점-식품9",histoycontent:"국내일시불9"},
+			{ date:"2020-04-22 | 현대백화점-식품10",histoycontent:"국내일시불10"},
+			{ date:"2020-05-25 | 현대백화점-식품11",histoycontent:"국내일시불11"},
+			{ date:"2020-05-28 | 현대백화점-식품12",histoycontent:"국내일시불12"}
+		];	
+		
+		// parent.com.util.generateZero(i)
+		
+		let tag = [];
+		for(let i=0;i<data.length;i++){
+			tag.push(""
+				+'<div class="list_info_check">'
+		        +'  <div class="ic_check">'
+				+'     <span class="ui-control ui-checkbox" ui-class="UICheckBox" ui-id="CB_checkbox'+i+'"><span class="ui-icon-image"><span></span></span><span class="ui-content">checkbox2</span></span>'		        
+		        +'	</div>'
+		        +'	<div class="text_area">'
+		        +'    <div class="main_text posLT"><strong>메인텍스트</strong></div>'
+		        +'    <div class="sub_text posLB"><span>2020-04-22'+(i)+'</span> <div class="divider">|</div> <span>현대백화점-식품'+i+'</span></div>'
+		        +'    <div class="posRT"> 이용원금  <strong>30,000</strong> 원</div>'
+		        +'    <div class="posRB">미결제금액 <strong>30,000</strong> 원</div>'
+		        +'	</div>'
+		        +'  <div class="next_img"></div>'
+		        +'</div>'	
+			);
+		}
+			
+		let $PN_panel_trans = $("div[ui-id='PN_panel_trans']");
+		
+		// 결제청구건 내역 패널 높이 설정
+		const panel_trans_height = (126 * data.length);
+        console.log(" panel_trans_height >>>> " + panel_trans_height);	
+		$PN_panel_trans.css({"height":panel_trans_height});
+		
+		$PN_panel_trans.html(""
+			+'<div class="list-panel">'
+			+tag.join("")
+			+'</div>'
+		);	
+		
+		$PN_panel_trans.find("> div.list-panel > div.list_info_check").each(function(i){
+			let $this = $(this);
+			let r = data[i];	
+			
+	//		$this.find(">div.text_area >div.sub_text").text(r.date);
+			$this.find(">div.text_area >div.main_text").html(r.histoycontent);
+						
+			$this.mousedown(select); //버튼클릭 이벤트
+			
+		});	
+		$PN_panel_trans.css("visibility","visible");	
+
+
+		//버튼클릭 이벤트
+	    function select(e) {
+	        var chs = this;
+	        $(chs).animate({
+	            top: '+=5px',
+	            opacity: '0.5',
+	        }, 50, reback);
+	
+	        function reback() {
+	            $(chs).animate({
+	                top: '-=5px',
+	                opacity: '1',
+	            }, 50);
+	
+	            chs = null;
+	        }
+	        
+	        // 리스트 박스 테두리 디폴트 셋팅
+	        $PN_panel_trans.find(">div.list_info_check").css({'border':'1px solid #9c9c9c'});
+	        
+	        // 선택한 박스 테두리 셋팅
+	        $(chs).css({'border': '4px solid #9c9c9c'});
+	    }
+	    
+}
+
+// 더보기 버튼용 패널 테스트용  
+function createBtnMoreTest(){
+
+// console.log(" fnCreatePaymentList >>> ");	
+// console.log(PN_panel_more);	 
+// PN_panel_more.Visible = false;
+ 
+		let tag = [];
+		tag.push(""
+			+'<div class="list_info">'
+	        +'	<div class="text_area">'
+	        +'    <div class="main_text" style="text-align:center;">+ 더보기</div>'
+	        +'    <div class="sub_text">EEEEE</div>'
+	        +'	</div>'
+	        +'  <div class="next_img"></div>'
+	        +'</div>'	
+		);
+		
+		let $PN_panel_trans = $("div[ui-id='PN_panel_trans']");
+		console.log(" PN_panel_trans ::: " + $PN_panel_trans.offset() );	
+		console.log($PN_panel_trans.offset() );	
+		console.log($PN_panel_trans.position() );	
+		console.log("  $PN_panel_trans.height() === ");	
+		console.log($PN_panel_trans.height() );	
+		
+		// 더보기 패널 위치 잡기
+		const panel_more_top =  $PN_panel_trans.height() + $PN_panel_trans.position().top;
+			
+		console.log(" panel_more_top >>> " + panel_more_top );	
+		
+		let $PN_panel_more = $("div[ui-id='PN_panel_more']");
+				
+		$PN_panel_more.html(""
+			+'<div class="list-panel">'
+			+tag.join("")
+			+'</div>'
+		);	
+		$PN_panel_more.css({"top":panel_more_top+"px"});
+
+
+		$PN_panel_more.find("> div.list-panel > div.list_info").each(function(i){			
+		    let $this = $(this);
+			$this.mousedown(select); //버튼클릭 이벤트			
+		});	
+		$PN_panel_more.css("visibility","visible");	
+		
+		//버튼클릭 이벤트
+	    function select(e) {
+	        var chs = this;
+	        $(chs).animate({
+	            top: '+=5px',
+	            opacity: '0.5',
+	        }, 50, reback);
+	
+	        function reback() {
+	            $(chs).animate({
+	                top: '-=5px',
+	                opacity: '1',
+	            }, 50);
+	
+	            chs = null;
+	        }
+	        
+	        // 리스트 박스 테두리 디폴트 셋팅
+	        $PN_panel_trans.find(">div.list_info_check").css({'border':'1px solid #9c9c9c'});
+	        
+	        // 선택한 박스 테두리 셋팅
+	        $(chs).css({'border': '4px solid #9c9c9c'});
+	    }		
+	    
+}
+</script></xjscript></body>
+</html>

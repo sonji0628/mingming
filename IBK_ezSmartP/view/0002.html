@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartPlatform</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1080,810" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-1709f35f244" style="left: 0px; top: 0px; width: auto; height: 76px; right: 0px; bottom: auto; z-index: 0; background-color: dodgerblue;" anchor="0b0101" dock="1" ui-id="PN_panel1" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="76" dock-w="200"><span class="ui-control ui-label" id="ui-1709f379e29" style="left: 20px; top: 22px; width: 207px; height: 32px; right: auto; bottom: auto; color: white; font-size: 24px; z-index: 0;" anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content">ezSmartPlatform</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-1709f37060e" style="left: 0px; top: auto; width: auto; height: 59px; right: 0px; bottom: 0px; z-index: 3; background-color: whitesmoke;" anchor="0b0101" dock="2" ui-id="PN_panel2" ui-class="UIPanel" dock-r="left:235px;top:633px;width:200px;height:100px;right:auto;bottom:auto" dock-h="59" dock-w="200"></div><div class="ui-control ui-panel ui-container" id="ui-170a37a45f9" style="left: 1px; top: 76px; width: 783px; height: 627px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_panel3" ui-class="UIPanel"><iframe class="ui-include" src="0001.html" frameborder="0" scrolling="0"></iframe></div><span class="ui-control ui-scrollbar" id="ui-170a41075bf" style="left: 789px; top: 75px; width: 47px; height: 627px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="SB_scrollbar1" ui-class="UIScrollBar"><span class="track"></span><span class="trackbutton"></span></span><span class="ui-control ui-button theme-blue" id="ui-170a43ad659" style="left: 889px; top: 144px; width: 142px; height: 37px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="BT_button4" ui-class="UIButton" theme="blue" xonclick="BT_button4_OnClick"><span class="ui-content">button4</span></span><span class="ui-control ui-button theme-blue" id="ui-170be5cd0c2" style="left: 262px; top: 351px; width: 200px; height: 80px; right: auto; bottom: auto; z-index: 5;" anchor="0b0101" dock="0" ui-id="BT_button1" ui-class="UIButton" theme="blue"><span class="ui-content">button1</span></span></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>function Form_OnLoad(e){
+	SB_scrollbar1.ScrollControlID = "PN_panel3";
+	SB_scrollbar1.AutoScroll = true;
+	SB_scrollbar1.Cacl();
+}
+
+function BT_button4_OnClick(e){
+	Form.Alert("TTT",PN_panel3.IncludeWindow.BT_button1.Text);
+}</script></xjscript></body>
+</html>

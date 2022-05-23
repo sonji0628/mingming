@@ -1,0 +1,242 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-171a52210e0" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0; background-color: transparent;" anchor="0b0101" dock="5" ui-id="PN_form" ui-class="UIPanel" dock-r="left:0px;top:0px;width:1280px;height:1024px;right:auto;bottom:auto" dock-h="1024" dock-w="1280"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e4" style="left: 0px; top: 101.95px; width: auto; height: 91.99px; right: 0px; bottom: auto; z-index: 1; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171a52210e5" style='left: 82px; top: 24px; width: 1120px; height: 45px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">입금하실 은행 또는 증권사를 선택하여 주십시오.</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a52210e8" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-171a52210ea" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span><span disabled="disabled" class="ui-control ui-button theme-blue ui-disabled" id="ui-171bff71c97" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a52210e2" style="left: 0px; top: 0px; width: auto; height: 101.95px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:0px;top:0px;width:1280px;height:102px;right:auto;bottom:auto" dock-h="102" dock-w="1280"><span class="ui-control ui-label" id="ui-171a52210e3" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content" style="justify-content: flex-start;">은행 / 증권사 선택</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-174d3b2f7e2" style="left: 0px; top: 193.94px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_panel1" ui-class="UIPanel" dock-r="left:292px;top:322px;width:200px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="200"><div class="ui-control ui-tab" id="ui-1737ff082e1" style='left: 68px; top: 30px; width: 1144px; height: 660px; right: auto; bottom: auto; font-family: "IBKIDreamM", "IBK iDream M", sans-serif; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="TP_tab1" ui-class="UITab" xonchangedtab="TP_tab1_OnChangedTab"><div class="ui-tab-heads" id="ui-174d3b35d9d"><div class="ui-tab-head ui-tab-selected" id="ui-174d3b35d9e">은행</div><div class="ui-tab-head" id="ui-174d3b35d9f">증권사</div><div class="ui-tab-head" id="ui-174d3b35da0">직접입력</div></div><div class="ui-tab-pages" id="ui-174d3b35da1"><div class="ui-tab-page ui-container ui-tab-selected" id="ui-174d3b35da2" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-1737ff34a5a" style="left: 0px; top: auto; width: auto; height: 550px; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="2" ui-id="PN_tab1" ui-class="UIPanel" dock-r="left:0px;top:40px;width:1144px;height:550px;right:auto;bottom:auto" dock-h="550" dock-w="1144"></div></div><div class="ui-tab-page ui-container" id="ui-174d3b35da3" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-1737ff38aa1" style="left: 0px; top: auto; width: auto; height: 550px; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="2" ui-id="PN_tab2" ui-class="UIPanel" dock-r="left:249px;top:134px;width:1144px;height:550px;right:auto;bottom:auto" dock-h="550" dock-w="1144"></div></div><div class="ui-tab-page ui-container" id="ui-174d3b35da4" ui-class="UITapPage"></div></div></div><span class="ui-control ui-scrollbar" id="ui-1749b14ead4" style="left: 1223px; top: 137px; width: 32px; height: 527px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="SB_scrollbar2" ui-class="UIScrollBar" scroll-control-id="PN_tab2"><span class="track"></span><span class="trackbutton"></span></span><span class="ui-control ui-scrollbar" id="ui-1737ff2d8a4" style="left: 1223px; top: 137px; width: 32px; height: 527px; right: auto; bottom: auto; z-index: 2;" anchor="0b0101" dock="0" ui-id="SB_scrollbar1" ui-class="UIScrollBar" scroll-control-id="PN_tab1"><span class="track"></span><span class="trackbutton"></span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js"); // LibUtil import
+/*
+	#2554 - 은행 / 증권사 선택 
+*/
+let p = parent;
+let imgObj = {
+	bank1 : [ // 은행
+		{code:"003", img:"bank-type-0.png"},	// 기업은행
+		{code:"002", img:"bank-type-1.png"},	// 산업은행
+		{code:"004", img:"bank-type-2.png"},	// 국민은행
+		{code:"011", img:"bank-type-3.png"},	// 농협은행
+		{code:"012", img:"bank-type-3.png"},	// 지역농축협
+		{code:"020", img:"bank-type-4.png"},	// 우리은행
+		{code:"023", img:"bank-type-5.png"},	// SC(제일)
+		{code:"027", img:"bank-type-6.png"},	// 씨티은행
+		{code:"031", img:"bank-type-7.png"},	// 대구은행
+		{code:"032", img:"bank-type-8.png"},	// 부산
+		{code:"034", img:"bank-type-9.png"},	// 광주은행
+		{code:"035", img:"bank-type-10.png"},	// 제주은행
+		{code:"037", img:"bank-type-9.png"},	// 전북은행
+		{code:"039", img:"bank-type-8.png"},	// 경남
+		{code:"045", img:"bank-type-11.png"},	// 새마을금고
+		{code:"048", img:"bank-type-12.png"},	// 신협
+		{code:"071", img:"bank-type-13.png"},	// 우체국
+		{code:"081", img:"bank-type-14.png"},	// 하나은행
+		{code:"088", img:"bank-type-10.png"},	// 신한은행
+		{code:"089", img:"bank-type-15.png"},	// 케이뱅크
+		{code:"090", img:"bank-type-16.png"}	// 카카오뱅크
+	],
+	bank2 : [ // 증권사
+		{code:"261", img:"stock-type-0.png"},	// 교보
+		{code:"267", img:"stock-type-1.png"},	// 대신
+		{code:"287", img:"stock-type-2.png"},	// 메리츠
+		{code:"268", img:"stock-type-3.png"},	// 솔로몬
+		{code:"278", img:"stock-type-4.png"},	// 신한금융투자
+		{code:"280", img:"stock-type-5.png"},	// 유진투자
+		{code:"270", img:"stock-type-6.png"},	// 하나금융투자
+		{code:"269", img:"stock-type-7.png"},	// 한화
+		{code:"279", img:"stock-type-8.png"},	// 동부
+		{code:"238", img:"stock-type-9.png"},	// 미래에셋대우
+		{code:"290", img:"stock-type-10.png"},	// 부국
+		{code:"291", img:"stock-type-11.png"},	// 신영
+		{code:"247", img:"stock-type-12.png"},	// NH투자
+		{code:"265", img:"stock-type-13.png"},	// 이베스트투자
+		{code:"262", img:"stock-type-14.png"},	// 하이투자
+		{code:"218", img:"stock-type-15.png"},	// KB
+		{code:"209", img:"stock-type-16.png"},	// 유안타
+		{code:"240", img:"stock-type-17.png"},	// 삼성
+		{code:"264", img:"stock-type-18.png"},	// 키움
+		{code:"243", img:"stock-type-19.png"},	// 한국투자
+		{code:"263", img:"stock-type-20.png"},	// 현대차투자
+		{code:"266", img:"stock-type-21.png"},	// SK
+		{code:"292", img:"stock-type-22.png"}	// LIG투자
+	]
+}
+let selectedIndex; // 탭 인덱스
+
+function Form_OnLoad(e){
+	setBankList1(); // 은행
+	setBankList2(); // 증권사
+	
+	init();
+}
+
+function init(){
+	// 은행 선택상태로 변경
+	TP_tab1.setSelectedTabIndex(0);
+	
+	
+	SB_scrollbar1.Visible = true;
+	SB_scrollbar2.Visible = false;
+}
+
+// 탭 변경 이벤트
+function TP_tab1_OnChangedTab(e){
+	selectedIndex = e.after.index;
+	
+	console.log("바뀐 탭 인덱스 : " + selectedIndex);
+	// 0 : 은행 리스트, 1 : 증권사 리스트, 2 : 직접입력 화면 이동
+	if(selectedIndex == 0){
+		SB_scrollbar1.Visible = true;
+		SB_scrollbar2.Visible = false;
+		SB_scrollbar1.TabPageMouseDrag("PN_tab1");
+	} else if(selectedIndex == 1){
+		SB_scrollbar1.Visible = false;
+		SB_scrollbar2.Visible = true;
+		SB_scrollbar2.TabPageMouseDrag("PN_tab2");
+	} else if(selectedIndex == 2){
+		// 이동
+		p.ChangeTab("2555");
+	}
+}
+// 은행 그리기 
+function setBankList1(){
+	let tag = [];
+	for(let i=0; i<imgObj.bank1.length; i++){
+		let item = imgObj.bank1;
+		let code = item[i].code;
+		let text = convertBankName1(code);
+		tag.push(''
+			+'<div class="bankList__bank" data="' + code + '" onclick="btnClick(this)">'
+			+'	<img src="/KRG/media/' + item[i].img + '"/>'
+			+'	<span>' + text + '</span>' 
+			+'</div>');
+	}
+	
+	PN_tab1.$.html(tag.join(""));
+	PN_tab1.$.css({'padding':'0px 58px', 'font-family':'Noto Sans CJK KR Medium'});
+	PN_tab1.$.find(".bankList__bank").css({
+		'float':'left','display':'flex','align-items':'center','justify-content':'center',
+		'margin-right':'32px','margin-bottom':'22px',
+		'width':'225px','height':'80px','border':'3px solid #e3e3e3','border-radius':'50px'});
+		
+	PN_tab1.$.find(".bankList__bank span").css({'font-size':'18px'});
+	
+}
+
+// 증권사 그리기
+function setBankList2(){
+	let tag = [];
+	for(let i=0; i<imgObj.bank2.length; i++){
+		let item = imgObj.bank2;
+		let code = item[i].code;
+		let text = convertBankName2(code);
+		tag.push(''
+			+'<div class="bankList__bank" data="' + code + '" onclick="btnClick(this)">'
+			+'	<img src="/KRG/media/' + item[i].img + '"/>'
+			+'	<span>' + text + '</span>' 
+			+'</div>');
+	}
+	
+	PN_tab2.$.append(tag.join(""));
+	PN_tab2.$.css({'padding':'0px 58px', 'font-family':'Noto Sans CJK KR Medium'});
+	PN_tab2.$.find(".bankList__bank").css({
+		'float':'left','display':'flex','align-items':'center','justify-content':'center',
+		'margin-right':'32px','margin-bottom':'22px',
+		'width':'225px','height':'80px','border':'3px solid #e3e3e3','border-radius':'50px'});
+	PN_tab2.$.find(".bankList__bank img").css({'margin-right':'10px'});	
+	PN_tab2.$.find(".bankList__bank span").css({'font-size':'18px'});
+	
+}
+
+// 은행 및 증권사 선택시 이벤트
+function btnClick(target){
+	// 버튼 css 적용 
+	PN_tab1.$.find(".bankList__bank").removeClass('selected').css({'border':'3px solid #e3e3e3'});
+	PN_tab2.$.find(".bankList__bank").removeClass('selected').css({'border':'3px solid #e3e3e3'});
+	$(target).addClass('selected');
+	PN_tab1.$.find(".bankList__bank.selected").css({'border':'3px solid #176bc8'});
+	PN_tab2.$.find(".bankList__bank.selected").css({'border':'3px solid #176bc8'});
+	
+	// 선택한 은행 / 증권사 코드값 저장
+	p._MNRC_BNCD = target.getAttribute('data'); 
+	
+	// 선택하면 무조건 확인버튼 enabled상태로 변경.
+	BT_right.Enabled = true;
+}
+
+// 거래종료
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[은행/증권사 선택] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+// 확인버튼
+function BT_right_OnClick(e){
+	// 이체 계좌번호 입력 화면으로 이동		
+	SCREEN.WriteJnl("[은행/증권사 선택] 정상");
+	p.ChangeTab("2556");
+}
+
+// 은행 이름 리턴
+function convertBankName1(pParam){
+	if(pParam == "002") return   "산업은행";
+    if(pParam == "003") return   "기업은행";
+    if(pParam == "004") return   "국민은행";
+    if(pParam == "005") return   "외환";
+    if(pParam == "011") return   "농협은행";
+    if(pParam == "012") return   "지역농축협";
+    if(pParam == "020") return   "우리은행";
+    if(pParam == "023") return   "SC(제일)";
+    if(pParam == "027") return   "씨티은행";
+    if(pParam == "031") return   "대구은행";
+    if(pParam == "032") return   "부산";
+    if(pParam == "034") return   "광주은행";
+    if(pParam == "035") return   "제주은행";
+    if(pParam == "037") return   "전북은행";
+    if(pParam == "039") return   "경남";
+    if(pParam == "045") return   "새마을금고";
+    if(pParam == "048") return   "신협";
+    if(pParam == "071") return   "우체국";
+    if(pParam == "081") return   "KEB하나";
+    if(pParam == "088") return   "신한은행";
+    if(pParam == "089") return   "케이뱅크";
+    if(pParam == "090") return   "카카오뱅크";
+}
+
+// 증권사 이름 리턴
+function convertBankName2(pParam){
+	if(pParam == "261") return   "교보";
+    if(pParam == "267") return   "대신";
+    if(pParam == "287") return   "메리츠";
+    if(pParam == "268") return   "솔로몬투자";
+    if(pParam == "278") return   "신한금융투자";
+    if(pParam == "280") return   "유진투자";
+    if(pParam == "270") return   "하나금융투자";
+    if(pParam == "269") return   "한화";
+    if(pParam == "279") return   "동부";
+    if(pParam == "238") return   "미래에셋대우";
+    if(pParam == "290") return   "부국";
+    if(pParam == "291") return   "신영";
+    if(pParam == "247") return   "NH투자";
+    if(pParam == "265") return   "이베스트투자";
+    if(pParam == "262") return   "하이투자";
+    if(pParam == "218") return   "KB";
+    if(pParam == "209") return   "유안타";
+    if(pParam == "240") return   "삼성";
+    if(pParam == "264") return   "키움";
+    if(pParam == "243") return   "한국투자";
+    if(pParam == "263") return   "현대차투자";
+    if(pParam == "266") return   "SK";
+    if(pParam == "292") return   "LIG투자";
+}</script></xjscript></body>
+</html>

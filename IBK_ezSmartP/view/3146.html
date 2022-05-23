@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1390,1120">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="border-radius: 0px; left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">카드 분실신고 및 해제</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 139.83px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span><span class="ui-control ui-button theme-blue" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172c17ba416" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 139.83px; z-index: 3;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-r="left:0px;top:197px;width:1280px;height:686px;right:auto;bottom:auto" dock-h="686" dock-w="1280"><span class="ui-control ui-button" id="ui-172c1350739" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 658px; top: 97px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 16;' ui-class="UIButton" ui-id="BT_03" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px; justify-content: center;">신한은행</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-10.png");'></span></span><span class="ui-control ui-button" id="ui-172c13511e8" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 919px; top: 97px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 17;' ui-class="UIButton" ui-id="BT_06" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">광주은행</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-9.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351a41" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 920px; top: 196px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 0;' ui-class="UIButton" ui-id="BT_12" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">현대카드</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/card-bank-type-2.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351747" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 658px; top: 197px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 1;' ui-class="UIButton" ui-id="BT_11" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">롯데카드</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/card-bank-type-1.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351596" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 394px; top: 196px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 2;' ui-class="UIButton" ui-id="BT_08" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">전북은행</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-9.png");'></span></span><span class="ui-control ui-button" id="ui-172c13513fc" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 130px; top: 197px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 3;' ui-class="UIButton" ui-id="BT_07" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">제주은행</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-10.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351bda" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 129px; top: 291px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 4;' ui-class="UIButton" ui-id="BT_13" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">삼성카드</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/card-bank-type-3.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351d3b" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 395px; top: 289px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 5;' ui-class="UIButton" ui-id="BT_18" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">시티은행</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-6.png");'></span></span><span class="ui-control ui-button" id="ui-172c13520f4" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 128px; top: 385px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 6;' ui-class="UIButton" ui-id="BT_21" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">하나카드</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-14.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351e65" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 657px; top: 289px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 7;' ui-class="UIButton" ui-id="BT_19" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">농협NH카드</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-3.png");'></span></span><span class="ui-control ui-button" id="ui-172c1351faa" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 920px; top: 288px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 8;' ui-class="UIButton" ui-id="BT_20" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">수협중앙회</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-17.png");'></span></span><span class="ui-control ui-button" id="ui-172c135258e" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 921px; top: 383px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 9;' ui-class="UIButton" ui-id="BT_53" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">SC(제일)</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-5.png");'></span></span><span class="ui-control ui-button" id="ui-172c13523e7" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 657px; top: 385px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 10;' ui-class="UIButton" ui-id="BT_44" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">비씨(바로카드)</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/card-bank-type-4.png");'></span></span><span class="ui-control ui-button" id="ui-172c1352c9c" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 657px; top: 477px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 11;' ui-class="UIButton" ui-id="BT_74" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 110px; top: 0px; right: 0px; bottom: 0px;">경남은행</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-8.png");'></span></span><span class="ui-control ui-button" id="ui-172c1352974" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 397px; top: 476px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 12;' ui-class="UIButton" ui-id="BT_67" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 110px; top: 0px; right: 0px; bottom: 0px;">부산은행</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-8.png");'></span></span><span class="ui-control ui-button" id="ui-172c13527a1" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 128px; top: 477px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 13;' ui-class="UIButton" ui-id="BT_66" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">대구은행</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-7.png");'></span></span><span class="ui-control ui-button" id="ui-172c135224b" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 397px; top: 385px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 14;' ui-class="UIButton" ui-id="BT_23" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">우리카드</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-4.png");'></span></span><span class="ui-control ui-button" id="ui-172c1352f0a" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 921px; top: 477px; width: 237px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 15;' ui-class="UIButton" ui-id="BT_01" dock="0" anchor="0b0101" theme="" back-image-size="100% 100%" icon-image-padding="16,3,16,3"><span class="ui-content" style="left: 70px; top: 0px; right: 0px; bottom: 0px;">국민카드</span><span class="ui-icon-image" style='background-position: left; left: 16px; top: 3px; right: 16px; bottom: 3px; background-image: url("/KRG/media/bank-type-2.png");'></span></span><span class="ui-control ui-button" id="ui-172c4be134f" style='border-radius: 50px; border: 3px solid rgb(227, 227, 227); border-image: none; left: 131px; top: 97px; width: 492px; height: 80px; right: auto; bottom: auto; color: black; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif; font-size: 24px; z-index: 18;' ui-class="UIButton" ui-id="BT_All" dock="0" anchor="0b0101" theme="" xonclick="BT_All_OnClick" back-image-size="100% 100%" icon-image-padding="0,0,0,0"><span class="ui-content" style="left: 0px; top: 0px; right: 0px; bottom: 0px; justify-content: center;">일괄신고(전기관)</span></span><span class="ui-control ui-label" id="ui-172ca17e75e" style='left: 162px; top: 26px; width: 64px; height: 32px; right: auto; bottom: auto; font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important; font-size: 22px; z-index: 19;' ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content">고객명</span></span><span class="ui-control ui-label" id="ui-172ca1b65ff" style="left: 233px; top: 27px; width: 120px; height: 32px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-family: inherit; font-size: 28px; z-index: 20;" ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content" style="left: 25px; top: 0px; right: 0px; bottom: 0px;">label3</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171ab1ec0c8" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: whitesmoke;" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-r="left:165px;top:133px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171a52210e5" style='left: 82px; top: 25px; width: 236px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">분실 대상기관 선택</span></span><div class="ui-control ui-panel ui-container" id="ui-171e7b1fba2" style="left: 326px; top: 36px; width: 2px; height: 20px; right: auto; bottom: auto; z-index: 1; background-color: rgb(191, 191, 191);" ui-class="UIPanel" ui-id="PN_panel5" dock="0" anchor="0b0101"></div><span class="ui-control ui-label" id="ui-171e7b84b09" style='left: 342px; top: 25px; width: 597px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 24px; z-index: 2;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content">중복선택 가능, 두번 클릭 시 선택 해제됩니다.</span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js");
+
+var p = parent;
+
+function Form_OnLoad(e)
+{
+	console.log("Init3146");
+	BT_right.Enabled = false;
+	PN_contents.$.css({'height':'580px', 'overflow':'auto', 'padding':'0 44px 0 50px', 'margin-top':'40px', 'position':'relative'});
+	var btnList= PN_contents.$.find(".ui-button");
+	for(var k=0;k<btnList.length;k++)
+	{
+		if($(btnList[k]).attr('ui-id')=='BT_All')
+		{
+			continue;
+		}
+		else
+		{
+			$(btnList[k]).click(fnSelected);
+		}
+	}
+}
+
+function BT_All_OnClick(e)//일괄신고(전기관) 버튼 눌렀을때 동작하는 함수
+{
+	BT_All.$.toggleClass("on");
+	var btnList= PN_contents.$.find(".ui-button");
+	for(var k=0;k<btnList.length;k++)
+	{
+		var flag="on";
+		if(BT_All.$.hasClass("on"))
+		{
+			BT_right.Enabled=true;
+			flag="on";
+		}
+		else
+		{
+			BT_right.Enabled=false;
+			flag="off";
+		}
+		$(btnList[k]).removeClass("on");
+		$(btnList[k]).removeClass("off");
+		$(btnList[k]).addClass(flag);
+		if($(btnList[k]).hasClass("on"))
+		{
+			$(btnList[k]).css({'border':'3px solid #176bc8'});
+		}
+		else
+		{
+			$(btnList[k]).css({'border':'3px solid #e3e3e3'});
+		}
+	}
+}
+
+function fnSelected(e)//카드사 버튼 눌렀을때 동작하는 함수
+{
+	if($(e.target.parentElement).attr('ui-id')=='PN_contents')
+	{
+		return;
+	}
+	
+	$(e.target.parentElement).toggleClass("on");
+	if($(e.target.parentElement).hasClass("on"))
+	{
+		$(e.target.parentElement).css({'border':'3px solid #176bc8'});
+	}
+	else
+	{
+		$(e.target.parentElement).css({'border':'3px solid #e3e3e3'});
+	}
+	
+	var flag= chkSelectedLen();
+	if(flag)
+	{
+		BT_right.Enabled=true;
+	}
+	else
+	{
+		BT_right.Enabled=false;
+	}
+}
+
+function chkSelectedLen()//카드사 버튼이 눌려있는지 안 눌려있는지 체크하는 함수, 카드사 버튼이 아무것도 안 눌려있으면 확인 비활성화
+{
+	var btnList= PN_contents.$.find(".ui-button");
+	for(var k=0;k<btnList.length;k++)
+	{
+		if($(btnList[k]).attr('ui-id')!="BT_All" && $(btnList[k]).hasClass("on"))
+		{
+			return true;
+		}
+	}
+	
+	return false;
+}
+
+
+
+function BT_right_OnClick(e)//확인 버튼 눌렀을때 동작하는 함수
+{
+	var SelectList=[];
+	var btnList= PN_contents.$.find(".ui-button");
+	
+	for(var k=0;k<btnList.length;k++)
+	{
+		if($(btnList[k]).attr('ui-id')!="BT_All" && $(btnList[k]).hasClass("on"))
+		{
+			var obj = {};
+			obj.RCIP_CRCO_CD = "76";
+			obj.ISNC_CRCO_CD = $(btnList[k]).attr('ui-id').substr(3,2);
+			obj.CRCO_NM = $(btnList[k]).find(">span.ui-content").text();
+			SCREEN.WriteJnl("**카드사명: " + obj.CRCO_NM);
+			SelectList.push(obj);
+		}
+	}
+	p.act = "Report_of_all_financial_institution";
+	p.data.cardInfo.SelectList = SelectList;	
+	SCREEN.WriteJnl("[분실대상기관 선택] 정상");
+	setTimeout(p.ChangeTab("9041"));
+}
+
+function BT_left_OnClick(e)//취소 버튼 눌렀을때 동작하는 함수
+{
+	SCREEN.WriteJnl("[분실대상기관 선택] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}</script></xjscript></body>
+</html>

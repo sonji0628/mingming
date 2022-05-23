@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1334,1069">
+<div class="ui-control ui-panel ui-container" id="ui-171ab1ec0c4" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171ab1ec0c6" style="left: 0px; top: 0px; width: auto; height: 101.97px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171ab1ec0c7" style='left: 80px; top: 31px; width: 400px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">전자금융 출금계좌 해지</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171ab1ec0c8" style="left: 0px; top: 101.97px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 2; background-color: rgb(239, 240, 242);" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a52210e5" style='left: 82px; top: 24px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content"></span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171ab1ec0cb" style="left: 0px; top: auto; width: auto; height: 139.98px; right: 0px; bottom: 0px; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-171ab1ec0cc" style='left: 986px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b0101" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">다음</span></span><span class="ui-control ui-button theme-orange" id="ui-171ab1ec0cd" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-171ab1ec0ce" style="left: 0px; top: 193.97px; width: auto; height: auto; right: 0px; bottom: 139.98px; z-index: 3;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-w="1280" dock-h="690" dock-r="left:0px;top:194px;width:1280px;height:690px;right:auto;bottom:auto"><div class="ui-control ui-panel ui-container" id="ui-171ab1ec0d1" style="left: 78px; top: 58px; width: 1124px; height: 587px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel39" dock="0" anchor="0b0101"></div><span class="ui-control ui-scrollbar" id="ui-171ab1ec0d2" style="left: 1217px; top: 58px; width: 32px; height: 587px; right: auto; bottom: auto; z-index: 1;" ui-class="UIScrollBar" ui-id="SB_scrollbar1" dock="0" anchor="0b0101" scroll-control-id="PN_panel39"><span class="track"></span><span class="trackbutton"></span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js");
+
+p = parent;	
+var selectedAccount;
+var selectedOnce;
+var selectedDay;
+
+
+function Form_OnLoad(e){
+	BT_right.Enabled = false;
+	
+	LB_Subtitle.$.find('.ui-content').html('계좌선택 <span>|</span> <span>거래하실 계좌를 눌러 주십시오.</span>');		
+	LB_Subtitle.$.find('span:eq(1)').css({'margin':'0px 25px','color':'rgb(191, 191, 191)'});
+	LB_Subtitle.$.find('span:eq(2)').css({"font-size":'21px'});
+}
+//////////////////////////////////////////////////////////////////////////////////////
+function cancelAccoountSelect(data){
+	let tag = [];
+
+	let rc = Math.floor( (data.length-1) / 3 ) + 1;
+	let ri = rc * 3 - data.length;
+
+	for(let j = 0; j < ri; j++){
+		data.push({emtpy : true});
+	}	
+	
+	for(let i=0;i<data.length;i++){
+		let r = data[i];
+		if(r.emtpy){
+				tag.push(""
+					+'<div class="card-item emtpy">'
+					+'</div>'
+				);
+				continue;				
+			}			
+		tag.push(""
+	        +'<div class="card-item">'
+	        +'	<div class="card_info">'
+            +'    <div class="card_num">1234-****-****-5678</div>'
+            +'    <div class="card_oncelimit">100,000</div>'
+            +'    <div class="card_daylimit">1,000,000,000</div>'
+            +'	</div>'
+	        +'</div>'		
+		);
+	}
+	
+
+	let $PN_panel39 = $("div[ui-id='PN_panel39']");
+
+	$PN_panel39.html(""
+		+'<div class="card-panel">'
+		+tag.join("")
+		+'</div>'
+	);
+	
+	$PN_panel39 = $("div[ui-id='PN_panel39'] > div.card-panel");
+	
+	$PN_panel39.find(">div.card-item").each(function(i){
+		let $this = $(this);
+		let r = data[i];		
+		$this.css({'height':'280px','width':'344px'});
+		$this.find(">div.card_info >div.card_num").text(com.acct.accountHypen(r.accountnum)).css({'font-size':'24px'});
+		
+		$this.find(">div.card_info >div.card_oncelimit").html('<span class="left">계좌1회 이체한도</span>' + '<span class="right">' +com.util.Comma(r.oncelimit)+ '</span>'+ '원').css({'font-size':'18px','position':'absolute','top':'160px','width':'100%'});
+		$this.find(">div.card_info >div.card_oncelimit >span.left").css({'display':'inline-block','width':'50%'});
+		$this.find(">div.card_info >div.card_oncelimit >span.right").css({'display':'inline-block','width':'40%','text-align':'right','margin-left':'10px'});
+		
+		$this.find(">div.card_info >div.card_daylimit ").html('<br/><span class="left">1일 이체한도</span>' + '<span class="right">' +com.util.Comma(r.daylimit)+ '</span>'+ '원').css({'font-size':'18px','position':'absolute','top':'175px','width':'100%'});
+		$this.find(">div.card_info >div.card_daylimit >span.left").css({'display':'inline-block','width':'40%'});
+		$this.find(">div.card_info >div.card_daylimit >span.right").css({'display':'inline-block','width':'50%','text-align':'right','margin-left':'10px'});
+	});	
+	$PN_panel39.css("visibility","visible");
+	
+	SB_scrollbar1.Invalidate();
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//클릭이벤트
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	PN_panel39.$.find(".card-item").click(function(){
+		PN_panel39.$.find("div.card-item").removeClass("select");
+		BT_right.Enabled = true;
+		
+		comSelectAnimate.call(this,$("div.card-item"));																				//클릭 animate
+		$(this).addClass("select");
+		
+		selectedAccount = removeHypen(PN_panel39.$.find("div.card-panel >.select >.card_info >.card_num").text());					//선택한계좌번호 저장
+		selectedOnce = removeComma(PN_panel39.$.find("div.card-panel >.select >.card_info >.card_oncelimit >.right").text());		//선택한1회이체한도 저장
+		selectedDay = removeComma(PN_panel39.$.find("div.card-panel >.select >.card_info >.card_daylimit>.right").text());			//선택한1일이체한도 저장
+		
+		console.log("4036 selectedAccount : " + selectedAccount);
+		console.log("4036 selectedOnce : " + selectedOnce);
+		console.log("4036 selectedDay : " + selectedDay);
+	});
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//콤마제거
+function removeComma(str){
+	let n = parseInt(str.replace(/,/g,""));
+	return n;
+}
+
+//하이푼제거
+function removeHypen(str){
+	let n = str.replace(/\-/g,"");
+	return n;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+function BT_right_OnClick(e){
+	SCREEN.WriteJnl("**계좌번호: " + selectedAccount);
+	SCREEN.WriteJnl("**1회 이체한도: " + selectedOnce);
+	SCREEN.WriteJnl("**1일 이체한도: " + selectedDay);
+	SCREEN.WriteJnl("[출금계좌 해제] 정상");
+	p.ChangeTab("9059");
+	p.sendRequest('Cancel_Confirm_Transaction');
+}
+
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[출금계좌 해제] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+</script></xjscript></body>
+</html>

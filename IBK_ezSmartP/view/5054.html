@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1414,1150" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a561f5a3" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-171a557424f" style="left: 80px; top: 365px; width: 358px; height: 294px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_panel2" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/img_icon_guide.png");'></span></div><span class="ui-control ui-label" id="ui-171a559cb46" style="left: 522px; top: 0px; width: 758px; height: 1024px; right: auto; bottom: auto; font-size: 16px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;"></span></span><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a5627701" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-blue" id="ui-171a5627702" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange" id="ui-171a52210ea" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>let p = parent;
+
+function Form_OnLoad(e){
+
+		let text = [];
+			
+		text.push(""
+				+'보증채무, 특수채권포기계좌, ABS발행채권, 특수채권, 신용카드<br>'
+				+'내역은 본 확인서에서 제공하지 않습니다.<br><br>'
+				+'발급신청인이 개인(개인사업자포함)인 경우 가계 및 개인기업 관련<br>'
+				+'여신이 포함되어 출력됩니다.<br><br>'
+				+'본 증명서는 과거 3년간(당일자 제외)에 한하여 발급이 가능합니다.<br><br>'
+				+'금융기관 성실도 관련은 당행이 선정한 패밀리기업, 우선지원기업등의<br>' 
+				+'대상인 경우 해당 여부를 출력해 주는 것입니다.'
+			);
+	
+		LB_label1.$.html(""
+				+'<div class="notice-container">'
+				+'	<div class="info_textbox">'
+				+'		<div class="title">'
+				+'			유의사항'
+				+'		</div>'
+				+'		<div class="text">'
+				+			text.join("")
+				+'		</div>'
+				+'	</div>'
+				+'</div>'
+		);
+		
+		LB_label1.$.find('div > .text').css({'font-size':'24px','line-height':'33px'});;
+}
+
+function BT_right_OnClick(e){
+	p.ChangeTab("5055");
+}
+
+
+function BT_left_OnClick(e){
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);	// 고객 취소
+}</script></xjscript></body>
+</html>

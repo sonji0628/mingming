@@ -1,0 +1,36 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1357,1131">
+<div class="ui-control ui-panel ui-container" id="ui-171a570e5a0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel1" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-171a570e5a3" style='left: 140px; top: 217px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 2;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">고객님의 정보가</span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a570e5a6" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 3;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-171a570e5a7" style='left: 986px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b0101" theme="blue"><span class="ui-content">확인</span></span></div><span class="ui-control ui-label" id="ui-171a5718392" style='left: 140px; top: 277px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 0;' ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">등록완료 되었습니다.</span></span><div class="ui-control ui-panel ui-container" id="ui-171a572d475" style="left: 140px; top: 384px; width: 1001px; height: 379px; right: auto; bottom: auto; z-index: 1; background-color: transparent;" ui-class="UIPanel" ui-id="PN_panel2" dock="0" anchor="0b0101"><span class="ui-back-image" style='background-image: url("/KRG/media/sample_img_05.png");'></span></div><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>let httpQuerys = parseLocationQueryString();
+let viewType = httpQuerys["type"]; // 0 : 등록완료, 1: 변경완료 , 2: 가운데 주황색버튼
+
+function Form_OnLoad(e){
+
+	LB_label2.$.find('span').html('<span style="color:#176bc8;">등록</span>완료 되었습니다.');
+	
+	if(viewType == '1'){
+		LB_label1.$.find('span').text('고객님의 정보 변경이')
+		LB_label2.$.find('span').html('<span style="color:#176bc8;">완료</span>되었습니다.');
+	}
+	else if(viewType == '2'){
+		BT_right.$.css({'left':'511px'});
+		BT_right.Style = 'orange';
+		BT_right.Text = '거래종료';
+	}
+}</script></xjscript></body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1280,1024">
+<div class="ui-control ui-panel ui-container" id="ui-171a570e5a0" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_searchInfo" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-171a570e5a3" style='left: 140px; top: 218px; width: 1001px; height: 56px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "IBK IDream M"; font-size: 54px; z-index: 1;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">안 내</span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a570e5a6" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:-3px;top:747px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-171a4b083a6" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">닫기</span></span><span class="ui-control ui-button theme-blue" id="ui-171a4b083a5" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container" id="ui-171a572d475" style="left: 140px; top: 441px; width: 1001px; height: 270px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_panel2" dock="0" anchor="0b0101" back-image-size="auto" back-image-pos="310px,0px"><span class="ui-back-image" style='background-position: 310px 0px; background-image: url("/KRG/media/img_info_01.png"); background-repeat: no-repeat; background-size: auto;'></span></div><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><span class="ui-control ui-label" id="ui-1736fc78203" style='left: 140px; top: 302px; width: 1001px; height: 32px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "Noto Sans CJK KR Medium", "NotoSansCJKkrMedium", sans-serif !important; font-size: 32px; z-index: 3;' ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">조회 업무만 가능하며 해지 및 환급 관련 문의는</span></span><span class="ui-control ui-label" id="ui-1736fc8b6d0" style='left: 140px; top: 354px; width: 1001px; height: 32px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-family: "Noto Sans CJK KR Medium", "NotoSansCJKkrMedium", sans-serif !important; font-size: 32px; z-index: 4;' ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">영업점 창구를 방문해 주시기 바랍니다.</span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*
+	#2522 - 휴면예금조회 안내
+*/
+let p = parent;
+
+// 닫기버튼
+function BT_left_OnClick(e){
+	// 전체 계좌조회 - 계좌조회 페이지로 이동
+	p.ChangeTab("2511");
+}
+
+// 확인버튼
+function BT_right_OnClick(e){
+	// CBKEBKE00074 고객보유계좌목록조회(휴면)
+	p.sendRequest("searchDormantList");
+}</script></xjscript></body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1354,1115" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a514f762" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a514f763" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 2; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a514f764" style='left: 80px; top: 31px; width: 400px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">입력</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a514f765" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 3; background-color: whitesmoke;" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171a514f766" style='left: 82px; top: 30px; width: 1044px; height: 40px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">입력하신 후 </span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a514f767" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 1;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-171a514f768" style='left: 986px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_right" ui-class="UIButton" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange" id="ui-171a514f769" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">닫기</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-17404a802bc" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-w="200" dock-h="100" dock-r="left:125.47px;top:320.79px;width:200px;height:100px;right:auto;bottom:auto"><div class="ui-control ui-panel ui-container" id="ui-171a51dda23" style="left: 0px; top: 412px; width: 1280px; height: 469px; right: auto; bottom: auto; z-index: 1;" anchor="0b0101" dock="0" ui-id="PN_panel3" ui-class="UIPanel"><iframe class="ui-include" src="/core/keyboard.html" frameborder="0" scrolling="0"></iframe></div><span class="ui-control ui-textbox" id="ui-171a51ed163" style="left: 338px; top: 262px; width: 604px; height: 100px; right: auto; bottom: auto; font-size: 38px; z-index: 0;" anchor="0b0101" dock="0" ui-id="TB_textbox1" ui-class="UITextBox"><span><input class="ui-input" type="text" maxlength="32767"></span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>let httpQuerys = parseLocationQueryString();
+let viewType = httpQuerys["type"]; // 0 : 제출처, 1 : 용도
+let p = parent;
+let iwin = PN_panel3.IncludeWindow;
+
+function Form_OnLoad(e){
+	//keyboard
+	TB_textbox1.$.find('>span >.ui-input').attr("disabled","disabled");
+	TB_textbox1.$.css("border","3px solid #046fd9");
+	
+	iwin.txtBox = TB_textbox1;
+	
+	LB_Subtitle.$.css('line-height','45px');
+	LB_Subtitle.$.html('입력하신후 <span>확인</span> 을 눌러 주십시오.');
+	
+	LB_Subtitle.$.find('> span').css({'border-radius':'5px','padding':'4px 15px','font-size':'26px','font-weight':'bold','color':'#fff','background-color':'#176bc8',});
+}
+
+function showTarText() {
+	if(p.allParamData.krEngChk == "1") { //한글
+		iwin.Lang = 0;
+		iwin.make();
+		TB_textbox1.$.find('> span > input.ui-input').val(p.allParamData.isncUsgCon);
+	} else if(p.allParamData.krEngChk == "2") {//영문이름
+		iwin.Lang = 1;
+		iwin.make();
+		TB_textbox1.$.find('> span > input.ui-input').val(p.allParamData.ensnCsm);
+	}
+}
+
+
+function BT_right_OnClick(e){
+	if(p.allParamData.krEngChk == "1") {
+		p.allParamData.isncUsgCon = TB_textbox1.$.find('> span > input.ui-input').val();
+	} else if(p.allParamData.krEngChk == "2") {
+		p.allParamData.ensnCsm = TB_textbox1.$.find('> span > input.ui-input').val();
+	}
+	TB_textbox1.$.find('> span > input.ui-input').val("");
+	p.sendRequest("issueWritePage");
+}
+
+function BT_left_OnClick(e){
+	p.sendRequest("issueWritePage");
+}
+
+</script></xjscript></body>
+</html>

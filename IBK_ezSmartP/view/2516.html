@@ -1,0 +1,387 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1280,1024">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">계좌조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 3; background-color: whitesmoke;" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">계약조회</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171be2e0c0c" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-171aae89da9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">닫기</span></span></div><div class="ui-control ui-panel ui-container" id="ui-171be2e0c0e" style="left: 0px; top: 194px; width: 1280px; height: 690px; right: auto; bottom: auto; z-index: 2;" ui-class="UIPanel" ui-id="PN_contents" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container" id="ui-1732d838923" style="left: 91px; top: 47px; width: 1109px; height: 611px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_banca" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-1732d838925" style='left: 0px; top: 0px; width: 820px; height: 30px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 0;' ui-class="UILabel" ui-id="LB_productName" dock="0" anchor="0b0101"><span class="ui-content"></span></span><span class="ui-control ui-button theme-blue" id="ui-1732d83892a" style='border-radius: 27px; left: 855px; top: 11px; width: 219px; height: 54px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 21px; z-index: 1;' ui-class="UIButton" ui-id="BT_bancaTranList" dock="0" anchor="0b0101" theme="blue" back-image-pos="45px,12px"><span class="ui-content" style="left: 40px; top: 0px; right: 0px; bottom: 0px;">입금내역</span><span class="ui-back-image" style='background-position: 45px 12px; background-image: url("/KRG/media/btn_transfer.png");'></span></span></div><span class="ui-control ui-scrollbar" id="ui-1732d838ae8" style="left: 1209px; top: 47px; width: 32px; height: 611px; right: auto; bottom: auto; z-index: 1;" ui-class="UIScrollBar" ui-id="SB_scrollbar9" dock="0" anchor="0b0101" scroll-control-id="PN_banca"><span class="track"></span><span class="trackbutton" style="top: 0px;"></span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js"); // LibUtil import
+/*
+	#2516 - 보험 계약조회
+*/
+let p = parent;
+
+// 닫기버튼
+function BT_left_OnClick(e){
+	// 전체 계좌조회 - 계좌조회 페이지로 이동
+	p.ChangeTab("2511");
+}
+
+// 값 전달받았을 경우 실행함수 
+function ReceiveTran(obj){
+	PN_banca.$.find(".banca_L").remove();
+	PN_banca.$.find(".banca_N").remove();
+	
+	if(obj.info.BNCS_ISCM_CD.substring(0,1) == "L"){
+		SetBancaLTableCell(obj); // 생명보험
+		
+		// 상품대분류코드 52일경우 [입금내역] 숨김
+		if(obj.IASIAZA1210X.PDF_LRCD == "52"){
+			BT_bancaTranList.$.hide();
+		} else {
+			BT_bancaTranList.$.show();
+		}
+	} else {
+		SetBancaNTableCell(obj); // 손해보험
+		
+		// 상품대분류코드 52일경우 [입금내역] 숨김
+		if(obj.IASIAZA1220X.PDF_LRCD == "52"){
+			BT_bancaTranList.$.hide();
+		} else {
+			BT_bancaTranList.$.show();
+		}
+	}
+	
+	// 기존 이벤트 제거
+	PN_banca.$.find('span[ui-id="BT_bancaTranList"]').unbind('mousedown');
+	// 입금내역 버튼 이벤트 추가 
+	PN_banca.$.find('span[ui-id="BT_bancaTranList"]').mousedown(function(){
+		console.log('거래내역 >>> ');
+		let key = obj.info.SCN; // 선택한 계좌번호를 통해 아래의 객체값을 만듬.
+		p.PlayDing();
+		console.log(key);
+		
+		// 이 객체 값으로 계약조회 페이지의 상세조회 전문 송신.
+		let bancaObj = {
+			prevFlag : true,
+			SCN : obj.info.SCN,				// 계좌번호
+			BNCS_ISCM_CD : obj.info.BNCS_ISCM_CD,	// //손해보험 테스트데이터(보험사코드)
+			bancaRecordArray:obj.info.bancaRecordArray
+		}
+	
+		if(obj.info.BNCS_ISCM_CD.substring(0,1) == "L"){
+			// IASIAZA1310X 생명보험 납입내역 조회 - Banca L
+			p.sendRequest("searchBancaLTranList", bancaObj);
+		} else {
+			// IASIAZA1320X 손해보험 납입내역 조회 - Banca N
+			p.sendRequest("searchBancaNTranList", bancaObj);
+		}
+	});
+	
+	SB_scrollbar9.Invalidate();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			보험 - 생명보험
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function SetBancaLTableCell(obj){
+	let rows = obj.list;
+	let dataObj = obj.IASIAZA1210X;
+	let dayArr = ['일','월','화','수','목','금','토'];
+	let infoTableTag = [];
+	
+	// 테이블 값 추가 
+	// 상품명
+	if(dataObj.PDM)
+		LB_productName.setText(dataObj.PDM.trim());
+	
+	
+	// TEST ST
+	console.log(JSON.stringify(dataObj));
+	// TEST ED
+	
+	
+	
+	// 계약일자
+	let ARR_YMD="";
+	if(dataObj.ARR_YMD.trim() != ""){
+		ARR_YMD =  p.ReturnFormatDateHyphen(dataObj.ARR_YMD) + "(" + dayArr[p.getToDateObj(dataObj.ARR_YMD).getDay()] + ")"
+	}
+	
+	infoTableTag.push(""
+		+'<label class="banca_L first">기본정보</label>'
+		+'<table class="banca_L">'
+		+'	<colgroup>'
+		+'		<col style="width:212px">'
+		+'		<col style="width:auto">'
+		+'	</colgroup>'
+		+'	<tbody>'
+		+'		<tr>'
+		+'			<th>증권번호</th>'
+		+'			<td>' + dataObj.SCN + '</td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>보험사</th>'
+		+'			<td>' + dataObj.ISCM_NM + '</td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>보험료</th>'
+		+'			<td>' + parseInt(dataObj.SUM_INSN_CHG).toLocaleString() + '원</td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>계약일자</th>'
+		+'			<td>' + ARR_YMD + '</td>'
+		+'		</tr>'
+		+'	</tbody>'
+		+'</table>');
+		
+	// 보험기간
+	let INSN_OPNG_YMD="";
+	if(dataObj.INSN_OPNG_YMD.trim() != ""){
+		INSN_OPNG_YMD = p.ReturnFormatDateHyphen(dataObj.INSN_OPNG_YMD) + "(" + dayArr[p.getToDateObj(dataObj.INSN_OPNG_YMD).getDay()] + ")"
+							+ ' ~ ' + p.ReturnFormatDateHyphen(dataObj.EXPI_YMD) + "(" + dayArr[p.getToDateObj(dataObj.EXPI_YMD).getDay()] + ")";
+	}
+	
+	infoTableTag.push(""
+		+'<label class="banca_L">상세정보</label>'
+		+'<table class="banca_L">'
+		+'	<colgroup>'
+		+'		<col style="width:212px">'
+		+'		<col style="width:auto">'
+		+'	</colgroup>'
+		+'	<tbody>'
+		+'		<tr>'
+		+'			<th>상품유형</th>'
+		+'			<td>' + dataObj.PLN_NM + '</td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>납입기간</th>'
+		+'			<td>' + dataObj.PMPD_CON + '</td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>납입주기</th>'
+		+'			<td>' + dataObj.PMCC_NM + '</td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>보험기간</th>'
+		+'			<td>' + INSN_OPNG_YMD + '</td>'
+		+'		</tr>'
+		// 가입금액 화면에서 제거 - 보험팀 요청
+		//+'		<tr>'
+		//+'			<th>가입금액</th>'
+		//+'			<td>' + parseInt(dataObj.ARR_AMT).toLocaleString() + '원</td>'
+		//+'		</tr>'
+		+'		<tr>'
+		+'			<th>계약상태</th>'
+		+'			<td>' + dataObj.ARR_STTS_NM + '</td>'
+		+'		</tr>'
+		+'	</tbody>'
+		+'</table>');
+	
+	if(rows.length > 0){
+		for(let i=0; i<rows.length; i++){
+			console.log(rows[i]);
+			let BNFC_TCD = {
+				"11" : "계약자",
+				"12" : "계약자+주피보험자",
+				"13" : "계약자+종피보험자",
+				"19" : "계약자 역할",
+				"21" : "주피보험자",
+				"22" : "주피보험자 역할",
+				"23" : "종피보험자",
+				"24" : "자녀",
+				"25" : "부모형제",
+				"26" : "자녀1",
+				"27" : "자녀2",
+				"28" : "자녀3",
+				"29" : "배우자",
+				"31" : "만기시 수익자",
+				"33" : "상해시 수익자",
+				"35" : "사망시 수익자",
+				"36" : "사망시 수익자1",
+				"37" : "사망시 수익자2",
+				"38" : "사망시 수익자3",
+				"41" : "납입자",
+				"51" : "친권자",
+				"61" : "후견인",
+				"71" : "대표 피보험자",
+				"72" : "피보험자"
+			}[rows[i].BNFC_TCD] || "";
+			
+			infoTableTag.push(""
+				+'<label class="banca_L">상세정보</label>'
+				+'<table class="banca_L">'
+				+'	<colgroup>'
+				+'		<col style="width:212px">'
+				+'		<col style="width:auto">'
+				+'	</colgroup>'
+				+'	<tbody>'
+				+'		<tr>'
+				+'			<th>구분</th>'
+				+'			<td>' + BNFC_TCD + '</td>'
+				+'		</tr>'
+				+'		<tr>'
+				+'			<th>성명</th>'
+				+'			<td>' + rows[i].BNFC_NM + '</td>'
+				+'		</tr>'
+				+'		<tr>'
+				+'			<th>지급률</th>'
+				+'			<td>' + parseInt(rows[i].PAMT_RT).toLocaleString() + "%" + '</td>'
+				+'		</tr>'
+				+'	</tbody>'
+				+'</table>');
+		}
+	}
+		
+	PN_banca.$.append(infoTableTag.join(""));
+		
+	PN_banca.$.find("label.banca_L").css({'display':'inline-block', 'font-size':'18px', 'padding':'20px 0px 15px 0px','font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_banca.$.find("label.banca_L.first").css({'display':'inline-block','padding':'60px 0px 15px 0px'});
+	PN_banca.$.find("table.banca_L").css({'width':'1076px','border':'3px solid #c2c2c2','border-collapse':'collapse', 'border-spacing':'0', 'empty-cells':'show','margin-bottom':'10px'});
+	PN_banca.$.find("table.banca_L th").css({'text-align':'left', 'background': '#f2f2f2', 'font-size':'21px', 'color':'#000', 'padding':'14px', 'border':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_banca.$.find("table.banca_L td").css({'text-align':'left', 'background': '#fff', 'font-size':'22px', 'padding':'14px', 'border':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//			보험 - 손해보험
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function SetBancaNTableCell(obj){
+	let rows = obj.list;
+	let dataObj = obj.IASIAZA1220X;
+	let dayArr = ['일','월','화','수','목','금','토'];
+	let infoTableTag = [];
+	
+	// 테이블 값 추가 
+	// 상품명
+	if(dataObj.PDM)
+		LB_productName.setText(dataObj.PDM);
+		
+	// 계약일자
+	let ARR_YMD;
+	if(dataObj.ARR_YMD.trim() != ""){
+		ARR_YMD = p.ReturnFormatDateHyphen(dataObj.ARR_YMD) + "(" + dayArr[p.getToDateObj(dataObj.ARR_YMD).getDay()] + ")"
+	}
+	
+	infoTableTag.push(""
+		+'<label class="banca_N first">기본정보</label>'
+		+'<table class="banca_N">'
+		+'	<colgroup>'
+		+'		<col style="width:212px">'
+		+'		<col style="width:auto">'
+		+'	</colgroup>'
+		+'	<tbody>'
+		+'		<tr>'
+		+'			<th>증권번호</th>'
+		+'			<td>' + dataObj.SCN + '</td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>보험사</th>'
+		+'			<td>' + dataObj.ISCM_NM + '</td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>보험료</th>'
+		+'			<td>' + parseInt(dataObj.SUM_INSN_CHG).toLocaleString() + '원</td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>계약일자</th>'
+		+'			<td>' + ARR_YMD + '</td>'
+		+'		</tr>'
+		+'	</tbody>'
+		+'</table>');
+	
+	// 보험기간
+	let INSN_OPNG_YMD;
+	if(dataObj.INSN_OPNG_YMD.trim() != "" && dataObj.EXPI_YMD.trim() != ""){
+		INSN_OPNG_YMD = p.ReturnFormatDateHyphen(dataObj.INSN_OPNG_YMD) + "(" + dayArr[p.getToDateObj(dataObj.INSN_OPNG_YMD).getDay()] + ")"
+							+ ' ~ ' + p.ReturnFormatDateHyphen(dataObj.EXPI_YMD) + "(" + dayArr[p.getToDateObj(dataObj.EXPI_YMD).getDay()] + ")";
+	}
+	
+	infoTableTag.push(""
+		+'<label class="banca_N">상세정보</label>'
+		+'<table class="banca_N">'
+		+'	<colgroup>'
+		+'		<col style="width:212px">'
+		+'		<col style="width:auto">'
+		+'	</colgroup>'
+		+'	<tbody>');
+	// 상품대분류코드가 52인경우 상품유형, 납입기간 표시하지 않음.
+	if(dataObj.PDF_LRCD != "52"){
+		infoTableTag.push(""
+			+'		<tr>'
+			+'			<th>상품유형</th>'
+			+'			<td>' + dataObj.PLN_NM + '</td>'
+			+'		</tr>'
+			+'		<tr>'
+			+'			<th>납입기간</th>'
+			+'			<td>' + dataObj.PMPD_CON + '</td>'
+			+'		</tr>');
+	}
+	infoTableTag.push(""
+		+'		<tr>'
+		+'			<th>납입주기</th>'
+		+'			<td>' + dataObj.PMCC_NM + '</td>'
+		+'		</tr>'
+		+'		<tr>'
+		+'			<th>보험기간</th>'
+		+'			<td>' + INSN_OPNG_YMD + '</td>'
+		+'		</tr>');
+	// 생명, 손해보험은 가입금액 표시안함, 상품대분류코드 52일경우에만 "총납입보험료"로 표시하여 ARR_AMT값 사용하여 표시.
+	if(dataObj.PDF_LRCD == "52"){
+		infoTableTag.push('		<tr>'
+		+'			<th>총납입보험료</th>'
+		+'			<td>' + parseInt(dataObj.ARR_AMT).toLocaleString() + '원</td>'
+		+'		</tr>');
+	}
+	infoTableTag.push('<tr>'
+		+'			<th>계약상태</th>'
+		+'			<td>' + dataObj.ARR_STTS_NM + '</td>'
+		+'		</tr>'
+		+'	</tbody>'
+		+'</table>');
+		
+	// 손해보험의 경우, 상품대분류코드 52인경우 상세정보의 계약상태까지만 표시하고 아래부분은 보이지 않게 설정.
+	if(dataObj.PDF_LRCD != "52"){
+		if(rows.length > 0){
+			for(let i=0; i<rows.length; i++){
+				let BNFC_TCD = {
+					"01" : "만기시 수익자",
+					"02" : "사망시 수익자",
+					"03" : "상해시 수익자"
+				}[rows[i].BNFC_TCD] || "";
+				
+				infoTableTag.push(""
+					+'<label class="banca_N">상세정보</label>'
+					+'<table class="banca_N">'
+					+'	<colgroup>'
+					+'		<col style="width:212px">'
+					+'		<col style="width:auto">'
+					+'	</colgroup>'
+					+'	<tbody>'
+					+'		<tr>'
+					+'			<th>구분</th>'
+					+'			<td>' + BNFC_TCD + '</td>'
+					+'		</tr>'
+					+'		<tr>'
+					+'			<th>성명</th>'
+					+'			<td>' + rows[i].BNFC_NM + '</td>'
+					+'		</tr>'
+					+'	</tbody>'
+					+'</table>');
+			}
+		}
+	}
+	
+	PN_banca.$.append(infoTableTag.join(""));
+		
+	PN_banca.$.find("label.banca_N").css({'display':'inline-block', 'font-size':'18px', 'padding':'20px 0px 15px 0px','font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_banca.$.find("label.banca_N.first").css({'display':'inline-block','padding':'60px 0px 15px 0px'});
+	PN_banca.$.find("table.banca_N").css({'width':'1076px','border':'3px solid #c2c2c2','border-collapse':'collapse', 'border-spacing':'0', 'empty-cells':'show','margin-bottom':'10px'});
+	PN_banca.$.find("table.banca_N th").css({'text-align':'left', 'background': '#f2f2f2', 'font-size':'21px', 'color':'#000', 'padding':'14px', 'border':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+	PN_banca.$.find("table.banca_N td").css({'text-align':'left', 'background': '#fff', 'font-size':'22px', 'padding':'14px', 'border':'1px solid #ccc', 'font-family':'"Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important'});
+}</script></xjscript></body>
+</html>

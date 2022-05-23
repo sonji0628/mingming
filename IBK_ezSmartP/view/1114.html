@@ -1,0 +1,45 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1461,1159">
+<div class="ui-control ui-panel ui-container" id="ui-171a561f5a3" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel1" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container" id="ui-171a557424f" style="left: 80px; top: 365px; width: 358px; height: 294px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_panel2" dock="0" anchor="0b0101"><span class="ui-back-image" style='background-image: url("/KRG/media/img_icon_guide.png");'></span></div><span class="ui-control ui-label" id="ui-171a559cb46" style="left: 522px; top: 0px; width: 758px; height: 1024px; right: auto; bottom: auto; font-size: 0px; z-index: 1;" ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content" style="align-items: flex-start;"></span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a5627701" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-blue" id="ui-171a5627702" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" theme="blue"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange ui-hide" id="ui-171a5647e78" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" theme="orange"><span class="ui-content">취소</span></span></div><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>function Form_OnLoad(e){
+
+		let text = [];
+						
+		text.push("「특정금융거래정보의보고 및 이용 등에 관한 법률」에 따라<br>")
+		text.push("당행과 거래 시 고객확인에 필요한 정보 및 동 내용에 대한<br>")
+		text.push("확인(검증)을 위해 당행이 요청하는 정보, 문서, 자료 등<br>")
+		text.push("(“이하 정보“라 함)을 제공해야 합니다.<br>")		
+		text.push("만일 정보를 제공하지 않거나 제공한 정보가 충분하지<br>")		
+		text.push("않을 경우 또는 제공한 정보에 대한 검증이 불가능한<br>")		
+		text.push("경우에는 거래가 지연되거나 거절될 수 있으며,<br>")		
+		text.push("제공하신 정보는 동법에 의거 용도 외 목적으로<br>사용되지 않습니다.")		
+	
+		LB_label1.$.html(""
+				+'<div class="notice-container">'
+				+'	<div class="info_textbox">'
+				+'		<div class="title">'
+				+'			개인고객 확인의무'
+				+'		</div>'
+				+'		<div class="text">'
+				+			text.join("")
+				+'		</div>'
+				+'	</div>'
+				+'</div>'
+		);
+}</script></xjscript></body>
+</html>

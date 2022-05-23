@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1442,1250" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">카드 분실신고 및 해제</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 25px; width: 370px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">분실 일괄신고 유의사항 안내</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" theme="orange" xonclick="BT_left_OnClick"><span class="ui-content">취소</span></span><span class="ui-control ui-button theme-blue" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" theme="blue" xonclick="BT_right_OnClick"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172bf975120" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-r="left:66px;top:223px;width:1150px;height:650px;right:auto;bottom:auto" dock-h="650" dock-w="1150"><span class="ui-control ui-label" id="ui-172bf9a604a" style='left: 66px; top: 40px; width: 1150px; height: 650px; right: auto; bottom: auto; font-family: "IBK iDream M"; z-index: 0;' ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content">label1</span></span></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>includeJSS("LibCommon","/KRG/0301/common.js");
+
+var p = parent;
+
+function Form_OnLoad(e)
+{
+	console.log("Init3144");
+	LB_label1.$.html(""
+				+'<div class=content>'
+				+'	<span class=udec-tit>유의사항을 꼭 읽어주세요!<p></span>'
+				+'	<div class=udec-txt>'
+				+'		<span class=i-text>카드 분실 일괄신고 접수시시, 요청하신 발급사 본인 명의의 모든 개인카드(신용, 체크, 가족카드)가 사용 중지됩니다.<br></span>'
+				+'		<span class=i-text>보유하신 모든 개인카드의 분실신고를 원하지 않으실 경우, 개별 카드 분실신고를 이용해 주시기 바랍니다.<br></span>'
+				+'		<span class=i-text>개별카드 분실신고 후, 분실 일괄신고를 중복으로 요청하실 경우에도 대상기관의 모든 개인카드가 분실신고가 됩니다.<br></span>'
+				+'		<span class=i-text>기업카드(법인카드) 분실신고 처리는 불가능하오니, 각 카드사/은행(으)로 별도 접수 부탁드립니다.<br></span>'
+				+'		<span class=i-text>분실 일괄신고된 카드는 일괄해제 처리가 되지 않습니다. 고객의 오입력으로 인하여 분실 일괄신고가 잘못되었을 경우라도 <br/>분실신고 해제가 불가능합니다.<br></span>'
+				+'		<span class=i-text>카드 재발급을 원하실 경우, 각 기관의 재발급 절차(발급은행 방문, 홈페이지 신청 등)에 따라 재발급이 가능합니다.<br></span>'
+				+'		<span class=i-text>타사카드 분실 일괄신고 접수 시, 고객님의 개인정보(성명, 주민번호, 입력하신 휴대폰번호)가 접수하신 모든 기관에 제공됩니다.<br></span>'
+				+'		<span class=i-text>타사카드 분실 일괄신고는 입력하신 주민등록번호(외국인의 경우, 입력하신 외국인 등록번호)로 등록된 카드에 한하여 접수처리 됩니다.<br></span>'
+				+'		<span class=i-text>당사 홈페이지를 통하여 최초분실 일괄신고를 진행 후, 1시간 내에 분실 일괄신고 재신청이 불가합니다.<br></span>'
+				+'		<span class=i-text>타사카드 분실 일괄신고 진행을 위해 추가 인증절차 및 대인정보 활용 동의가 필요합니다.</span>'
+				+'	</div>'
+				+'</div>'
+				);
+	LB_label1.$.find("div.content").css({'border':'1px solid #9c9c9c','border-radius':'20px','padding':'48px 50px'});
+	LB_label1.$.find("div.udec-txt").css({'font-size':'18px', 'line-height':'40px','padding':'0', 'background':'transparent'});
+	LB_label1.$.find("span.udec-tit").css({'font-size':'32px', 'padding-bottom':'35px'});
+	LB_label1.$.find("span.i-text").css({'font-size':'18px', 'line-height':'1.5'});
+}
+
+
+function BT_right_OnClick(e)//확인 버튼 눌렀을때 동작하는 함수
+{
+	SCREEN.WriteJnl("[분실 일괄신고 유의사항 안내] 정상");
+	setTimeout(p.goNextTabPage());
+}
+
+function BT_left_OnClick(e)//취소 버튼 눌렀을때 동작하는 함수
+{
+	SCREEN.WriteJnl("[분실 일괄신고 유의사항 안내] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}</script></xjscript></body>
+</html>

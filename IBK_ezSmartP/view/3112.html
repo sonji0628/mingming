@@ -1,0 +1,552 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1637,1822">
+<div class="ui-control ui-panel ui-container" id="ui-171a4b0839f" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a4b083a0" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171a4b083a1" style='left: 80px; top: 31px; width: 400px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: flex-start; align-items: center;">카드회원정보 변경</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a4b083a2" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: whitesmoke;" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171a4b083a3" style='left: 82px; top: 30px; width: 400px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">회원정보 변경</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a4b083a4" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-blue" id="ui-171a4b083a5" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange" id="ui-171a4b083a6" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-171a4b083a7" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-r="left:0px;top:194px;width:1280px;height:690px;right:auto;bottom:auto" dock-h="690" dock-w="1280"><div class="ui-control ui-panel ui-container" id="ui-172e8f907fa" style="left: 80px; top: 40px; width: 1067px; height: 620px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel1" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-171a4b083a8" style='left: 0px; top: 63px; width: 193px; height: 32px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 5;' ui-class="UILabel" ui-id="LB_label38" dock="0" anchor="0b0101"><span class="ui-content">기본정보</span></span><span class="ui-control ui-label" id="ui-171a4b083ae" style="left: 0px; top: 327px; width: 120px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 6;" ui-class="UILabel" ui-id="LB_jumin" dock="0" anchor="0b0101"><span class="ui-content">주민등록번호</span></span><span disabled="disabled" class="ui-control ui-textbox ui-disabled" id="ui-171a4b083ad" style="left: 0px; top: 357px; width: 222px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 7;" ui-class="UITextBox" ui-id="TB_jumin1" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="6" value=""></span></span><span disabled="disabled" class="ui-control ui-textbox ui-disabled" id="ui-171a4b083b0" style="left: 273px; top: 357px; width: 222px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 8;" ui-class="UITextBox" ui-id="TB_jumin2" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="7" value=""></span></span><div class="ui-control ui-panel ui-container" id="ui-171a4b083af" style="left: 241px; top: 383px; width: 15px; height: 3px; right: auto; bottom: auto; z-index: 9; background-color: black;" ui-class="UIPanel" ui-id="PN_panel24" dock="0" anchor="0b0101"></div><span class="ui-control ui-label" id="ui-171a4b083c1" style='left: 0px; top: 634px; width: 495px; height: 47px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 10;' ui-class="UILabel" ui-id="LB_homeInfo" dock="0" anchor="0b0101"><span class="ui-content">자택정보</span></span><span class="ui-control ui-label" id="ui-172e8fbe7a1" style="left: 0px; top: 0px; width: 683px; height: 32px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 18px; z-index: 11;" ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content" style="align-items: flex-start;">* 회원정보 변경 시 비씨카드사 및 회원은행간 정보가 연계되어 함께 변경 예정입니다.</span></span><span class="ui-control ui-label" id="ui-171a4e1a705" style="left: 0px; top: 113px; width: 120px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 12;" ui-class="UILabel" ui-id="LB_name" dock="0" anchor="0b0101"><span class="ui-content">이름</span></span><span disabled="disabled" class="ui-control ui-textbox ui-disabled" id="ui-171a4e1a721" style="left: 0px; top: 143px; width: 495px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 13;" ui-class="UITextBox" ui-id="TB_name" dock="0" anchor="0b0101" xonclick="TB_name_OnClick"><span><input class="ui-input" type="text" maxlength="32767" value=""></span></span><span disabled="disabled" class="ui-control ui-textbox ui-disabled" id="ui-172e8fe8f48" style="left: 0px; top: 250px; width: 495px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 14;" ui-class="UITextBox" ui-id="TB_nameE" dock="0" anchor="0b0101" xonclick="TB_nameE_OnClick"><span><input class="ui-input" type="text" maxlength="32767" value=""></span></span><span class="ui-control ui-label" id="ui-172e8fe8f6b" style="left: 0px; top: 220px; width: 120px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 15;" ui-class="UILabel" ui-id="LB_nameE" dock="0" anchor="0b0101"><span class="ui-content">영문명</span></span><span class="ui-control ui-label" id="ui-172e903a5bc" style="left: 0px; top: 544px; width: 492px; height: 20px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 18px; z-index: 16;" ui-class="UILabel" ui-id="LB_label4" dock="0" anchor="0b0101"><span class="ui-content">* 본인명의 휴대폰번호만 변경 가능합니다.</span></span><span class="ui-control ui-label" id="ui-172e904225e" style="left: 0px; top: 565px; width: 641px; height: 20px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 18px; z-index: 17; background-color: transparent;" ui-class="UILabel" ui-id="LB_label5" dock="0" anchor="0b0101"><span class="ui-content" style="left: 10px; top: 0px; right: 0px; bottom: 0px;">휴대폰번호 변경 시 문자 알림서비스에서의 정보 변경은 별도로 신청하셔야합니다.</span></span><span class="ui-control ui-label" id="ui-172e90a23dd" style="left: 572px; top: 113px; width: 120px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 18;" ui-class="UILabel" ui-id="LB_label6" dock="0" anchor="0b0101"><span class="ui-content">청구서발송방법</span></span><span class="ui-control ui-label" id="ui-172e90a23fd" style="left: 697px; top: 113px; width: 60px; height: 20px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 18px; z-index: 19;" ui-class="UILabel" ui-id="LB_label7" dock="0" anchor="0b0101"><span class="ui-content">(필수)</span></span><div class="ui-control ui-panel ui-container" id="ui-172e90acc0f" style="border-width: 2px; border-color: rgb(158, 158, 158); left: 572px; top: 143px; width: 495px; height: 159px; right: auto; bottom: auto; z-index: 20;" ui-class="UIPanel" ui-id="PN_panel2" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172e90c3157" style='left: 15px; top: 15px; width: 60px; height: 20px; right: auto; bottom: auto; font-family: "IBK IDream L"; font-size: 18px; z-index: 0;' ui-class="UILabel" ui-id="LB_label10" dock="0" anchor="0b0101"><span class="ui-content">우편</span></span><span class="ui-control ui-radiobox round" id="ui-172e90ced19" style="left: 15px; top: 50px; width: 122px; height: 36px; right: auto; bottom: auto; z-index: 1;" ui-class="UIRadioBox" ui-id="RB_home" dock="0" anchor="0b0101" value="자택" group-name="MNPB_ASAR_DCD" x-style="round"><span class="ui-icon-image"><span></span></span><span class="ui-content">자택</span></span><span class="ui-control ui-radiobox round" id="ui-172e90d41b9" style="left: 184px; top: 50px; width: 122px; height: 36px; right: auto; bottom: auto; z-index: 2;" ui-class="UIRadioBox" ui-id="RB_job" dock="0" anchor="0b0101" value="직장" group-name="MNPB_ASAR_DCD" x-style="round"><span class="ui-icon-image"><span></span></span><span class="ui-content">직장</span></span><span class="ui-control ui-radiobox round" id="ui-172e90d4e6a" style="left: 349px; top: 50px; width: 122px; height: 36px; right: auto; bottom: auto; z-index: 3;" ui-class="UIRadioBox" ui-id="RB_etc" dock="0" anchor="0b0101" value="별도청구지" group-name="MNPB_ASAR_DCD" x-style="round"><span class="ui-icon-image"><span></span></span><span class="ui-content">별도청구지</span></span><span class="ui-control ui-radiobox round" id="ui-172e90e29bc" style="left: 15px; top: 104px; width: 122px; height: 36px; right: auto; bottom: auto; z-index: 4;" ui-class="UIRadioBox" ui-id="RB_email" dock="0" anchor="0b0101" value="이메일" group-name="MNPB_ASAR_DCD" x-style="round"><span class="ui-icon-image"><span></span></span><span class="ui-content">이메일</span></span><span class="ui-control ui-radiobox round" id="ui-172e90e29eb" style="left: 184px; top: 104px; width: 241px; height: 36px; right: auto; bottom: auto; z-index: 5;" ui-class="UIRadioBox" ui-id="RB_LMS" dock="0" anchor="0b0101" value="스마트명세서" group-name="MNPB_ASAR_DCD" x-style="round"><span class="ui-icon-image"><span></span></span><span class="ui-content">스마트명세서(LMS)</span></span></div><span class="ui-control ui-label" id="ui-172e916ffbd" style="left: 572px; top: 314px; width: 492px; height: 20px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-size: 18px; z-index: 21;" ui-class="UILabel" ui-id="LB_label11" dock="0" anchor="0b0101"><span class="ui-content">* 이메일 또는 스마트명세서(LMS) 선택시 이용대금명세서를</span></span><span class="ui-control ui-label" id="ui-172e91c855e" style="left: 572px; top: 336px; width: 492px; height: 20px; right: auto; bottom: auto; color: rgb(29, 29, 29); font-size: 18px; z-index: 22;" ui-class="UILabel" ui-id="LB_label12" dock="0" anchor="0b0101"><span class="ui-content" style="left: 10px; top: 0px; right: 0px; bottom: 0px;">제외한 각종 안내장은 자택으로 발송될 수 있습니다.</span></span><span class="ui-control ui-label" id="ui-172e92c39a1" style='left: 572px; top: 634px; width: 495px; height: 47px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 23;' ui-class="UILabel" ui-id="LB_jobInfo" dock="0" anchor="0b0101"><span class="ui-content">직장정보</span></span><span class="ui-control ui-label" id="ui-172e92d546b" style="left: 572px; top: 709px; width: 492px; height: 20px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 14px; z-index: 24;" ui-class="UILabel" ui-id="LB_label22" dock="0" anchor="0b0101"><span class="ui-content">※ 주의 오른쪽 버튼 클릭시 아래 내용이 지워집니다.</span></span><span class="ui-control ui-button theme-blue" id="ui-172e92dd18d" style="border-radius: 20px; left: 911px; top: 699px; width: 156px; height: 40px; right: auto; bottom: auto; font-size: 16px; z-index: 25;" ui-class="UIButton" ui-id="BT_companyClear" dock="0" anchor="0b0101" xonclick="BT_companyClear_OnClick" theme="blue"><span class="ui-content">직장정보 지우기</span></span><span class="ui-control ui-label" id="ui-172e939cc3d" style='left: 0px; top: 1074px; width: 495px; height: 47px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK iDream M"; font-size: 24px; z-index: 26;' ui-class="UILabel" ui-id="LB_etcInfo" dock="0" anchor="0b0101"><span class="ui-content">별도 청구지 정보</span></span><span class="ui-control ui-button theme-blue" id="ui-172e939cc5c" style="border-radius: 20px; left: 305px; top: 1140px; width: 190px; height: 40px; right: auto; bottom: auto; font-size: 16px; z-index: 27;" ui-class="UIButton" ui-id="BT_etcClear" dock="0" anchor="0b0101" xonclick="BT_etcClear_OnClick" theme="blue"><span class="ui-content">별도 청구지 정보 지우기</span></span><span class="ui-control ui-label" id="ui-172e939cc7f" style="left: 0px; top: 1150px; width: 492px; height: 20px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 14px; z-index: 0;" ui-class="UILabel" ui-id="LB_label30" dock="0" anchor="0b0101"><span class="ui-content">※ 주의 오른쪽 버튼 클릭시 아래 내용이 지워집니다.</span></span><div class="ui-control ui-panel ui-container" id="ui-174299e3086" style="left: 572px; top: 761px; width: 495px; height: 526px; right: auto; bottom: auto; z-index: 4;" ui-class="UIPanel" ui-id="PN_job" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172e92f1c1f" style="left: 0px; top: 0px; width: 230px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_jobname" dock="0" anchor="0b0101"><span class="ui-content">직장명</span></span><span class="ui-control ui-textbox" id="ui-172e92f1c4a" style="left: 0px; top: 30px; width: 495px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 1;" ui-class="UITextBox" ui-id="TB_jobName" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="32767" value=""></span></span><span class="ui-control ui-label" id="ui-172e935c291" style="left: 0px; top: 104px; width: 230px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 2;" ui-class="UILabel" ui-id="LB_jobteam" dock="0" anchor="0b0101"><span class="ui-content">부서명</span></span><span class="ui-control ui-textbox" id="ui-172e935c2df" style="left: 0px; top: 134px; width: 495px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 3;" ui-class="UITextBox" ui-id="TB_jobTeam" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="32767" value=""></span></span><span class="ui-control ui-label" id="ui-172e936be01" style="left: 0px; top: 208px; width: 230px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 4;" ui-class="UILabel" ui-id="LB_jobAddress" dock="0" anchor="0b0101"><span class="ui-content">직장 주소</span></span><span disabled="disabled" class="ui-control ui-textbox ui-disabled" id="ui-172e936be5d" style="left: 0px; top: 238px; width: 347px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 5;" ui-class="UITextBox" ui-id="TB_jobZipCode" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="5" value=""></span></span><span class="ui-control ui-button theme-gray" id="ui-172e936bea1" style="left: 359px; top: 238px; width: 136px; height: 54px; right: auto; bottom: auto; font-size: 18px; z-index: 6;" ui-class="UIButton" ui-id="BT_button5" dock="0" anchor="0b0101" xonclick="BT_button5_OnClick" theme="gray"><span class="ui-content">주소검색</span></span><span disabled="disabled" class="ui-control ui-textbox ui-disabled" id="ui-172e936bedc" style="left: 0px; top: 302px; width: 495px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 7;" ui-class="UITextBox" ui-id="TB_jobAddress" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="32767" value=""></span></span><span class="ui-control ui-textbox" id="ui-172e936bf06" style="left: 0px; top: 366px; width: 495px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 8;" ui-class="UITextBox" ui-id="TB_jobDetails" dock="0" anchor="0b0101"><span><input class="ui-input" style="text-align: left;" type="text" maxlength="60" value=""></span></span><span class="ui-control ui-label" id="ui-172e936bf27" style="left: 0px; top: 440px; width: 230px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 9;" ui-class="UILabel" ui-id="LB_jobCall" dock="0" anchor="0b0101"><span class="ui-content">직장 전화번호</span></span><span class="ui-control ui-textbox" id="ui-172e936bf6e" style="left: 0px; top: 470px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 10;" ui-class="UITextBox" ui-id="TB_jobCall1" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="3" value=""></span></span><span class="ui-control ui-textbox" id="ui-172e936bf8d" style="left: 169px; top: 470px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 11;" ui-class="UITextBox" ui-id="TB_jobCall2" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="4" value=""></span></span><span class="ui-control ui-textbox" id="ui-172e936bfb3" style="left: 337px; top: 470px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 12;" ui-class="UITextBox" ui-id="TB_jobCall3" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="4" value=""></span></span></div><div class="ui-control ui-panel ui-container" id="ui-17429ae0776" style="left: 572px; top: 428px; width: 495px; height: 100px; right: auto; bottom: auto; z-index: 3;" ui-class="UIPanel" ui-id="PN_email" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-171a4b083bb" style="left: 0px; top: 10px; width: 259px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_email" dock="0" anchor="0b0101"><span class="ui-content">이메일주소</span></span><span class="ui-control ui-button theme-blue" id="ui-172e91e1647" style="border-radius: 20px; left: 339px; top: 0px; width: 156px; height: 40px; right: auto; bottom: auto; font-size: 16px; z-index: 1;" ui-class="UIButton" ui-id="BT_emailClear" dock="0" anchor="0b0101" xonclick="BT_emailClear_OnClick" theme="blue"><span class="ui-content">이메일 지우기</span></span><span class="ui-control ui-textbox" id="ui-171a4b083bc" style="left: 0px; top: 46px; width: 230px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 2;" ui-class="UITextBox" ui-id="TB_email" dock="0" anchor="0b0101" xonclick="TB_email_OnClick" xonchanged="TB_email_OnChanged"><span><input class="ui-input" type="text" maxlength="20" value=""></span></span><span class="ui-control ui-combobox" id="ui-171a4b083be" style="border-color: rgb(158, 158, 158); left: 265px; top: 46px; width: 230px; height: 54px; right: auto; bottom: auto; z-index: 3;" ui-class="UIComboBox" ui-id="DL_emailAddress" dock="0" anchor="0b0101" xonclick="DL_combobox4_OnClick" xonselecteditemchanged="DL_combobox4_OnSelectedItemChanged"><span class="ui-content">직접입력</span><span class="ui-icon-image" fontsize="16">▼ </span><select><option></option><option value="001">gmail.com</option><option value="002">kiupbank.co.kr</option><option value="003">netian.com</option><option value="004">naver.com</option><option value="005">nate.com</option><option value="006">daum.net</option><option value="007">dreamwiz.com</option><option value="008">lycos.co.kr</option><option value="009">yahoo.co.kr</option><option value="010">empal.com</option><option value="011">orgio.com</option><option value="012">unitel.co.kr</option><option value="013">chollian.net</option><option value="014">korea.com</option><option value="015">hitel.net</option><option value="016">hanmail.net</option><option value="017">hanmir.com</option><option value="018">hotmail.com</option><option selected="selected" value="019">직접입력</option></select></span><span class="ui-control ui-label" id="ui-171a4b083bd" style="left: 234px; top: 57px; width: 28px; height: 32px; right: auto; bottom: auto; font-size: 24px; z-index: 4;" ui-class="UILabel" ui-id="LB_label50" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: flex-start;">@</span></span></div><div class="ui-control ui-panel ui-container" id="ui-17429b0a201" style="left: 0px; top: 1211px; width: 495px; height: 318px; right: auto; bottom: auto; z-index: 2;" ui-class="UIPanel" ui-id="PN_etc" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172e93ad7d0" style="left: 0px; top: 0px; width: 300px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_etcAddress" dock="0" anchor="0b0101"><span class="ui-content">별도 청구지 주소</span></span><span disabled="disabled" class="ui-control ui-textbox ui-disabled" id="ui-172e93ad7f7" style="left: 0px; top: 30px; width: 347px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 1;" ui-class="UITextBox" ui-id="TB_etcZipCode" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="5" value=""></span></span><span class="ui-control ui-button theme-gray" id="ui-172e93ad81e" style="left: 359px; top: 30px; width: 136px; height: 54px; right: auto; bottom: auto; font-size: 18px; z-index: 2;" ui-class="UIButton" ui-id="BT_button7" dock="0" anchor="0b0101" xonclick="BT_button7_OnClick" theme="gray"><span class="ui-content">주소검색</span></span><span disabled="disabled" class="ui-control ui-textbox ui-disabled" id="ui-172e93ad843" style="left: 0px; top: 94px; width: 495px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 3;" ui-class="UITextBox" ui-id="TB_etcAddress" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="32767" value=""></span></span><span class="ui-control ui-textbox" id="ui-172e93ad88b" style="left: 0px; top: 158px; width: 495px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 4;" ui-class="UITextBox" ui-id="TB_etcDetails" dock="0" anchor="0b0101"><span><input class="ui-input" style="text-align: left;" type="text" maxlength="60" value=""></span></span><span class="ui-control ui-label" id="ui-172e93ad8e4" style="left: 0px; top: 232px; width: 300px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 5;" ui-class="UILabel" ui-id="LB_etcCall" dock="0" anchor="0b0101"><span class="ui-content">별도 청구지 전화번호</span></span><span class="ui-control ui-textbox" id="ui-172e93ad90f" style="left: 0px; top: 264px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 6;" ui-class="UITextBox" ui-id="TB_etcCall1" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="3" value=""></span></span><span class="ui-control ui-textbox" id="ui-172e93ad975" style="left: 168px; top: 264px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 7;" ui-class="UITextBox" ui-id="TB_etcCall2" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="4" value=""></span></span><span class="ui-control ui-textbox" id="ui-172e93ad99a" style="left: 337px; top: 264px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 8;" ui-class="UITextBox" ui-id="TB_etcCall3" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="4" value=""></span></span></div><div class="ui-control ui-panel ui-container" id="ui-17429c92e35" style="left: 0px; top: 423px; width: 495px; height: 105px; right: auto; bottom: auto; z-index: 28; background-color: transparent;" ui-class="UIPanel" ui-id="PN_phone" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-171a4b083b3" style="left: 0px; top: 15px; width: 120px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_phone" dock="0" anchor="0b0101"><span class="ui-content">휴대폰번호</span></span><span class="ui-control ui-textbox" id="ui-171a4b083b2" style="left: 0px; top: 51px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 1;" ui-class="UITextBox" ui-id="TB_phone1" dock="0" anchor="0b0101" xonclick="TB_phone1_OnClick"><span><input class="ui-input" type="text" maxlength="3" value="010"></span></span><span class="ui-control ui-textbox" id="ui-171a4b083b4" style="left: 168px; top: 51px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 2;" ui-class="UITextBox" ui-id="TB_phone2" dock="0" anchor="0b0101" xonclick="TB_phone2_OnClick"><span><input class="ui-input" type="text" maxlength="4" value=""></span></span><span class="ui-control ui-textbox" id="ui-171a4b083b5" style="left: 337px; top: 51px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 3;" ui-class="UITextBox" ui-id="TB_phone3" dock="0" anchor="0b0101" xonclick="TB_phone3_OnClick"><span><input class="ui-input" type="text" maxlength="4" value=""></span></span><span class="ui-control ui-label" id="ui-172e903301b" style="left: 90px; top: 15px; width: 60px; height: 20px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 18px; z-index: 4;" ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content">(필수)</span></span></div><div class="ui-control ui-panel ui-container" id="ui-17429ce38ac" style="left: 0px; top: 697px; width: 495px; height: 319px; right: auto; bottom: auto; z-index: 1;" ui-class="UIPanel" ui-id="PN_home" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172e9201c21" style="left: 0px; top: 0px; width: 120px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 0;" ui-class="UILabel" ui-id="LB_homeAddress" dock="0" anchor="0b0101"><span class="ui-content">자택 주소</span></span><span class="ui-control ui-label" id="ui-172e92147a8" style="left: 78px; top: 0px; width: 60px; height: 20px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 18px; z-index: 1;" ui-class="UILabel" ui-id="LB_label14" dock="0" anchor="0b0101"><span class="ui-content">(필수)</span></span><span disabled="disabled" class="ui-control ui-textbox ui-disabled" id="ui-172e9201c46" style="left: 0px; top: 30px; width: 347px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 2;" ui-class="UITextBox" ui-id="TB_homeZipCode" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="5" value=""></span></span><span class="ui-control ui-button theme-gray" id="ui-172e9201c6a" style="left: 359px; top: 30px; width: 136px; height: 54px; right: auto; bottom: auto; font-size: 18px; z-index: 3;" ui-class="UIButton" ui-id="BT_button2" dock="0" anchor="0b0101" xonclick="BT_button2_OnClick" theme="gray"><span class="ui-content">주소검색</span></span><span disabled="disabled" class="ui-control ui-textbox ui-disabled" id="ui-172e9201c87" style="left: 0px; top: 94px; width: 495px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 4;" ui-class="UITextBox" ui-id="TB_homeAddress" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="32767" value=""></span></span><span class="ui-control ui-textbox" id="ui-172e9201caf" style="left: 0px; top: 158px; width: 495px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 5;" ui-class="UITextBox" ui-id="TB_homeDetails" dock="0" anchor="0b0101"><span><input class="ui-input" style="text-align: left;" type="text" maxlength="60" value=""></span></span><span class="ui-control ui-textbox" id="ui-172e9230016" style="left: 0px; top: 265px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 6;" ui-class="UITextBox" ui-id="TB_homeCall1" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="3" value=""></span></span><span class="ui-control ui-textbox" id="ui-172e923004a" style="left: 168px; top: 265px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 7;" ui-class="UITextBox" ui-id="TB_homeCall2" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="4" value=""></span></span><span class="ui-control ui-textbox" id="ui-172e9230068" style="left: 337px; top: 265px; width: 158px; height: 54px; right: auto; bottom: auto; color: rgb(0, 0, 0); font-size: 24px; z-index: 8;" ui-class="UITextBox" ui-id="TB_homeCall3" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="4" value=""></span></span><span class="ui-control ui-label" id="ui-172e922ffd8" style="left: 0px; top: 235px; width: 120px; height: 20px; right: auto; bottom: auto; font-size: 18px; z-index: 9;" ui-class="UILabel" ui-id="LB_homeCall" dock="0" anchor="0b0101"><span class="ui-content">자택 전화번호</span></span><span class="ui-control ui-label" id="ui-172e922fff5" style="left: 110px; top: 235px; width: 60px; height: 20px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 18px; z-index: 10;" ui-class="UILabel" ui-id="LB_label16" dock="0" anchor="0b0101"><span class="ui-content">(필수)</span></span></div></div></div><span class="ui-control ui-scrollbar" id="ui-171a4b08408" style="left: auto; top: 209px; width: 32px; height: 660px; right: 28px; bottom: auto; z-index: 4;" ui-class="UIScrollBar" ui-id="SB_scrollbar1" dock="0" anchor="0b1001" xonclick="SB_scrollbar1_OnClick" scroll-control-id="PN_panel1"><span class="track"></span><span class="trackbutton" style="top: 0px;"></span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*	includeJs	*/
+includeJSS("LibCommon","/KRG/0301/common.js");
+
+var popupFrom = "";                       // 팝업 어디서 호출했는지 확인
+var curSel;  // 이메일주소 인덱스값
+var selectedLabel;    // 이메일주소 텍스트
+var setAddressArr;                        // 상세주소 담기
+var setAddressArr1;                       // 상세주소 - 주소
+var setAddressArr2;                       // 상세주소 - 건물명
+var homeBN;
+var jobBN;
+var etcBN;
+var emailFinal;                           // 최종 이메일 주소
+
+var setAddrHomeType;		//집주소 탭인덱스(도로명/지번구분)
+var setAddrJobType;			//직장주소 탭인덱스(도로명/지번구분)
+var setAddrEtcType;		    //별도청구지주소 탭인덱스(도로명/지번구분)
+
+p = parent;	
+
+	
+function Form_OnLoad(e){
+
+	var style = document.createElement('style');
+    var styleText = document.createTextNode(""		
+		+".placeholder:before{content:'이메일주소입력';font-size:18px;color:#ff7145;font-style:oblique}"
+		+"input:-ms-input-placeholder{padding-left:10px;font-size:18px;color:#ff7145;font-style:oblique}"
+		+".validephonetext:after{width:280px;}"
+	    +".emailTitle.valideText:after{margin-left:135px;padding:0px 5px;height:40px;line-height:40px}"
+	    +".homeTitle.valideText:after, .jobTitle.valideText:after{margin-left:100px;}"
+	    +".spaeTitle.valideText:after{margin-left:190px;}"
+    );
+
+    style.appendChild(styleText);
+	document.head.appendChild(style);	
+}
+
+//대금청구지 전송값 및 필수값 셋팅
+$("[ui-id='RB_home'],[ui-id='RB_job'],[ui-id='RB_etc'],[ui-id='RB_email'],[ui-id='RB_LMS']").on("click",function(e){
+	var clickTarget = $(e.currentTarget).attr("ui-id");
+	
+	//필수값 초기화
+	$(".vital").remove();
+	$(".ui-input").removeAttr("placeholder");
+	PN_phone.$.find(".ui-input").attr("placeholder","(필수)");
+	PN_home.$.find(".ui-input").attr("placeholder","(필수)");
+	DL_emailAddress.$.find(".ui-content").removeClass("placeholder");
+
+	if("RB_home" == clickTarget){  			//  자택 Radio 클릭
+    	p.infoAddr.MNPB_ASAR_DCD = "1"; // 전송 값 담기 	
+    } else if("RB_job" == clickTarget){  			// 직장 Radio 클릭
+    	p.infoAddr.MNPB_ASAR_DCD = "2"; // 전송 값 담기
+    	setVital(PN_job);
+    } else if("RB_etc" == clickTarget){  			//  별도청구지 Radio 클릭
+    	p.infoAddr.MNPB_ASAR_DCD = "3"; // 전송 값 담기
+    	setVital(PN_etc);
+    } else if("RB_email" == clickTarget){  			//  이메일 Radio 클릭
+    	p.infoAddr.MNPB_ASAR_DCD = "4"; // 전송 값 담기
+    	if(DL_emailAddress.SelectedIndex == -1){setEmailText();}
+    	setVital(PN_email);
+    } else if("RB_LMS" == clickTarget){  			//  스마트명세서 Radio 클릭
+    	p.infoAddr.MNPB_ASAR_DCD = "I"; // 전송 값 담기
+    }
+    console.log("p.infoAddr.MNPB_ASAR_DCD : " + p.infoAddr.MNPB_ASAR_DCD);
+    return p.infoAddr.MNPB_ASAR_DCD;
+});
+
+//대금청구지에 따른 필수값 셋팅
+function setVital(pn){
+	if($('.vital')){$('.vital').remove()};
+	pn.$.find(".ui-label > .ui-content").append("<span class='vital' style='font-size:18px;color:#ff7145;padding-left:3px;'>(필수)</span>");
+	pn.$.find(".ui-input").attr("placeholder","(필수)");
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//    										전화번호 팝업
+//
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+//휴대폰번호 입력 텍스트박스 클릭 이벤트
+$("[ui-id='TB_phone1'],[ui-id='TB_phone2'],[ui-id='TB_phone3']").on("click",function(e){
+	popupFrom = "phone";
+	setInputValueNum(TB_phone1, TB_phone2, TB_phone3);
+	p.popupNum.LB_label10.Text = "핸드폰 번호";
+});
+
+//자택 전화번호 입력 텍스트박스 클릭 이벤트
+$("[ui-id='TB_homeCall1'],[ui-id='TB_homeCall2'],[ui-id='TB_homeCall3']").on("click",function(e){
+	popupFrom = "call";
+	setInputValueNum(TB_homeCall1, TB_homeCall2, TB_homeCall3);
+	p.popupNum.LB_label10.Text = "일반 번호";
+});
+
+//직장 전화번호 입력 텍스트박스 클릭 이벤트
+$("[ui-id='TB_jobCall1'],[ui-id='TB_jobCall2'],[ui-id='TB_jobCall3']").on("click",function(e){
+	popupFrom = "companyCall";
+	setInputValueNum(TB_jobCall1, TB_jobCall2, TB_jobCall3);
+	p.popupNum.LB_label10.Text = "일반 번호";
+});
+
+//별도청구지 전화번호 입력 텍스트박스 클릭 이벤트
+$("[ui-id='TB_etcCall1'],[ui-id='TB_etcCall2'],[ui-id='TB_etcCall3']").on("click",function(e){
+	popupFrom = "etc";
+	setInputValueNum(TB_etcCall1, TB_etcCall2, TB_etcCall3);
+	p.popupNum.LB_label10.Text = "일반 번호";
+});
+
+// 전화번호 저장 및 팝업 오픈 함수
+function setInputValueNum(textBoxNum1, textBoxNum2, textBoxNum3){
+	var olddata = textBoxNum1.Text+"-"+textBoxNum2.Text+"-"+textBoxNum3.Text;
+	if(olddata == "--"){olddata = ""}
+	console.log(olddata);
+	p.popupNum.numBox.Text = olddata;	
+	//인풋 포커스 컨트롤
+	p.popupNum.numBox.$.css({'border': '3px solid #046fd9'});
+	$('input').parent().parent().css("border","2px solid #9e9e9e");
+	$('.ui-combobox').css("border","2px solid #9e9e9e");
+	textBoxNum1.$.css({'border': '3px solid #046fd9'});
+	textBoxNum2.$.css({'border': '3px solid #046fd9'});
+	textBoxNum3.$.css({'border': '3px solid #046fd9'});
+	//
+	//글자수 제한
+	p.popupNum.numLengthChk();
+	
+	p.ChangeTab("9045");
+	console.log("글자수 : " + olddata.length);
+}
+
+//전화번호 입력창에서 확인 버튼 클릭 시 
+//각 텍스트박스에 값 셋팅
+function numpopupBtn_Click(){
+		
+	var phNoArr = p.popupNum.phNo.split("-");//"-"기준으로 숫자 나누기
+	if(popupFrom == "phone"){ // 휴대폰번호
+		TB_phone1.Text = phNoArr[0];
+		TB_phone2.Text = phNoArr[1];
+		TB_phone3.Text = phNoArr[2];
+	} else if(popupFrom == "call"){ // 자택 전화번호
+		TB_homeCall1.Text = phNoArr[0];
+		TB_homeCall2.Text = phNoArr[1];
+		TB_homeCall3.Text = phNoArr[2];
+	} else if(popupFrom == "companyCall"){ // 직장 전화번호
+		TB_jobCall1.Text = phNoArr[0];
+		TB_jobCall2.Text = phNoArr[1];
+		TB_jobCall3.Text = phNoArr[2];
+	} else if(popupFrom == "etc"){ // 별도청구지 전화번호
+		TB_etcCall1.Text = phNoArr[0];
+		TB_etcCall2.Text = phNoArr[1];
+		TB_etcCall3.Text = phNoArr[2];
+	}
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//                                       키보드 입력 팝업
+//
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////
+//      이메일       //
+//////////////////////
+
+
+//이메일 지우기 버튼
+function BT_emailClear_OnClick(e){
+	TB_email.Text = "";
+	DL_emailAddress.SelectedIndex = -1;
+	emailFinal = "";
+	if(p.infoAddr.MNPB_ASAR_DCD == "4"){
+		setVital(PN_email);
+		setEmailText();
+	}
+	
+}
+
+//이메일주소 텍스트
+function setEmailText(){
+	if(DL_emailAddress.SelectedIndex == -1){
+		DL_emailAddress.$.find(".ui-content").addClass("placeholder");
+	}
+}
+
+//이메일 주소 ID 입력 텍스트박스 클릭 이벤트
+$("[ui-id='TB_email']").on("click",function(e){
+	popupFrom = "emailID";
+	
+	//키보드 영어모드
+	p.popupKey.keyPadLang_EN();
+	setInputValueText(TB_email);
+});
+
+//이메일 콤보박스 입력 텍스트박스 클릭 이벤트
+function DL_emailAddress_OnSelectedItemChanged(e){
+	DL_emailAddress.$.find(".ui-content").removeClass("placeholder");
+	//curSel = e.after.index;
+	//selectedLabel = e.after.text;
+	
+	//이메일 콤보박스 '직접입력' 클릭 시 팝업 오픈
+	if(e.after.value == 019){
+		popupFrom = "emailPortal";
+		
+		//키보드 영어모드
+		p.popupKey.keyPadLang_EN();
+		setInputValueText(DL_emailAddress);
+	}
+}
+
+//콤보박스 클릭 포커스
+$("[ui-id='DL_emailAddress']").on("click",function(e){
+	//인풋 포커스 컨트롤
+	$('input').parent().parent().css("border","2px solid #9e9e9e");
+	$(this).css({'border': '3px solid #046fd9'});
+	//
+});
+
+
+//////////////////////////////////////////////////
+
+
+//자택상세주소 입력 텍스트박스 클릭 이벤트
+$("[ui-id='TB_homeDetails']").on("click",function(e){
+	popupFrom = "myHomeAddress";
+	setInputValueText(TB_homeDetails);
+	console.log(setAddressArr);
+});
+
+
+//////////////////////
+//     직장정보      //
+//////////////////////
+
+//직장정보 지우기 버튼
+function BT_companyClear_OnClick(e){
+	TB_jobName.Text = "";
+	TB_jobTeam.Text = "";
+	TB_jobZipCode.Text = "";
+	TB_jobAddress.Text = "";
+	TB_jobDetails.Text = "";
+	TB_jobCall1.Text = "";
+	TB_jobCall2.Text = "";
+	TB_jobCall3.Text = "";
+}
+
+//직장명 입력 텍스트박스 클릭 이벤트
+$("[ui-id='TB_jobName']").on("click",function(e){
+	popupFrom = "companyName";
+	setInputValueText(TB_jobName);
+});
+
+//부서명 입력 텍스트박스 클릭 이벤트
+$("[ui-id='TB_jobTeam']").on("click",function(e){
+	popupFrom = "sectionName";
+	setInputValueText(TB_jobTeam);
+});
+
+//직장상세주소 입력 텍스트박스 클릭 이벤트
+$("[ui-id='TB_jobDetails']").on("click",function(e){
+	popupFrom = "companyAddress";
+	setInputValueText(TB_jobDetails);
+	console.log(setAddressArr);
+});
+
+
+//////////////////////////////////////////////////
+
+
+//////////////////////
+//    별도청구지     //
+/////////////////////
+
+//별도청구지 지우기 버튼
+function BT_etcClear_OnClick(e){
+	TB_etcZipCode.Text = "";
+	TB_etcAddress.Text = "";
+	TB_etcDetails.Text = "";
+	TB_etcCall1.Text = "";
+	TB_etcCall2.Text = "";
+	TB_etcCall3.Text = "";
+}
+
+//별도청구지상세주소 입력 텍스트박스 클릭 이벤트
+$("[ui-id='TB_etcDetails']").on("click",function(e){
+	popupFrom = "etcAddress";
+	setInputValueText(TB_etcDetails);
+	console.log(setAddressArr);
+});
+
+// 입력내용 저장 및 팝업 오픈 함수
+function setInputValueText(textBox){
+	var olddata = textBox.Text.split("(");
+	p.popupKey.TB_textbox1.Text = olddata[0].trim();
+	console.log("p.popupKey.TB_textbox1.Text: "+p.popupKey.TB_textbox1.Text);
+	//인풋 포커스 컨트롤
+	p.popupKey.TB_textbox1.$.css({'border': '3px solid #046fd9'});
+	$('input').parent().parent().css("border","2px solid #9e9e9e");
+	$('.ui-combobox').css("border","2px solid #9e9e9e");
+	textBox.$.css({'border': '3px solid #046fd9'});
+	//
+	p.ChangeTab("9044");
+}
+
+
+//텍스트 입력창에서 확인 버튼 클릭 시 
+//각 텍스트박스에 값 셋팅
+function textpopupBtn_Click(){
+	console.log("popupKey.tt"+p.popupKey.tt);
+	
+	if(popupFrom == "emailID"){ // 이메일아이디
+		TB_email.Text = p.popupKey.tt;
+		//이메일아이디 키패드에서 전체주소 입력시 처리
+		if(p.popupKey.tt.indexOf("@") > -1){
+			var emSplit = (p.popupKey.tt.split("@"));
+			TB_email.Text = emSplit[0];
+			
+			//전체주소 입력 시 자동으로 직접입력한 이메일서버주소로 셋팅되도록 처리
+			if(emSplit[1] == "gmail.com"){
+			    DL_emailAddress.SelectedIndex = 0; 	    // 이메일 회사 주소
+			} else if (emSplit[1] == "kiupbank.co.kr"){
+			    DL_emailAddress.SelectedIndex = 1; 	    // 이메일 회사 주소
+			} else if (emSplit[1] == "netian.com"){
+			    DL_emailAddress.SelectedIndex = 2; 	    // 이메일 회사 주소
+			} else if (emSplit[1] == "naver.com"){
+			    DL_emailAddress.SelectedIndex = 3; 	    // 이메일 회사 주소
+			} else if (emSplit[1] == "nate.com"){
+			    DL_emailAddress.SelectedIndex = 4; 	    // 이메일 회사 주소
+			} else if (emSplit[1] == "daum.net"){
+			    DL_emailAddress.SelectedIndex = 5; 	    // 이메일 회사 주소
+			} else if (emSplit[1] =="dreamwiz.com"){
+			    DL_emailAddress.SelectedIndex = 6; 	    // 이메일 회사 주소
+			} else if (emSplit[1] == "lycos.co.kr"){
+			    DL_emailAddress.SelectedIndex = 7; 	    // 이메일 회사 주소
+			} else if (emSplit[1] == "yahoo.co.kr"){
+			    DL_emailAddress.SelectedIndex = 8; 	    // 이메일 회사 주소
+			} else if (emSplit[1] == "empal.com"){
+			    DL_emailAddress.SelectedIndex = 9; 	    // 이메일 회사 주소
+			} else if (emSplit[1] == "orgio.com"){
+			    DL_emailAddress.SelectedIndex = 10; 	    // 이메일 회사 주소
+			} else if (emSplit[1] =="unitel.co.kr"){
+			    DL_emailAddress.SelectedIndex = 11; 	    // 이메일 회사 주소
+			} else if (emSplit[1] =="chollian.net"){
+			    DL_emailAddress.SelectedIndex = 12; 	    // 이메일 회사 주소
+			} else if (emSplit[1] =="korea.com"){
+			    DL_emailAddress.SelectedIndex = 13; 	    // 이메일 회사 주소
+			} else if (emSplit[1] =="hitel.net"){
+			    DL_emailAddress.SelectedIndex = 14; 	    // 이메일 회사 주소
+			} else if (emSplit[1] =="hanmail.net"){
+			    DL_emailAddress.SelectedIndex = 15; 	    // 이메일 회사 주소
+			} else if (emSplit[1] =="hanmir.com"){
+			    DL_emailAddress.SelectedIndex = 16; 	    // 이메일 회사 주소
+			} else if (emSplit[1] =="hotmail.com") {
+			    DL_emailAddress.SelectedIndex = 17; 	    // 이메일 회사 주소
+			} else {
+				 DL_emailAddress.SelectedIndex = 18; 	    // 이메일 회사 주소
+			}
+
+
+			DL_emailAddress.$.find(".ui-content").removeClass("placeholder");
+			DL_emailAddress.$.find(".ui-content").text(emSplit[1]);
+			console.log(TB_email.Text);
+			console.log(DL_emailAddress.$.find(".ui-content").text());
+			emailFinal = TB_email.Text + '@' + DL_emailAddress.$.find(".ui-content").text()
+			console.log(emailFinal);
+			
+			return emailFinal;
+		}
+	} else if(popupFrom == "emailPortal"){ // 이메일서비스주소
+		DL_emailAddress.$.find(".ui-content").text(p.popupKey.tt);
+	} else if(popupFrom == "myHomeAddress"){ // 자택상세주소
+		homeBN = ' (' + p.infoAddr.OOH_RDNM_DTL_ADR + ')';
+		TB_homeDetails.Text = p.infoAddr.OOH_RDNM_DTL_ADR == "" ? p.popupKey.tt : p.popupKey.tt + homeBN;	
+	} else if(popupFrom == "companyName"){ // 직장명
+		p.infoAddr.WRPL_NM = TB_jobName.$.find("input").val(p.popupKey.tt);
+	} else if(popupFrom == "sectionName"){ // 부서명
+		TB_jobTeam.Text = p.popupKey.tt;
+	} else if(popupFrom == "companyAddress"){ // 직장상세주소
+		jobBN = ' (' + p.infoAddr.WRPL_RDNM_DTL_ADR + ')';
+		TB_jobDetails.Text = p.infoAddr.WRPL_RDNM_DTL_ADR == "" ? p.popupKey.tt : p.popupKey.tt + jobBN;
+		
+	} else if(popupFrom == "etcAddress"){ // 별도청구지상세주소
+		etcBN = ' (' + p.infoAddr.SPAE_RDNM_DTL_ADR + ')';
+		TB_etcDetails.Text = p.infoAddr.SPAE_RDNM_DTL_ADR == "" ? p.popupKey.tt : p.popupKey.tt + etcBN;
+		
+	}
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//                                       주소 입력 팝업
+//
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//주소검색
+$("[ui-id='BT_button2'],[ui-id='BT_button5'],[ui-id='BT_button7']").on("click",function(e){
+	//numPopOpen();
+	var clickTargetID = $(e.currentTarget).parent().attr("ui-id");
+	
+	if(clickTargetID == "PN_home"){
+		searchFrom = "searchHome";
+		popupFrom = "myHomeAddress";
+	}else if(clickTargetID == "PN_job"){
+		searchFrom = "searchJob";
+		popupFrom = "companyAddress";
+	}else if(clickTargetID == "PN_etc"){
+		searchFrom = "searchEtc";
+		popupFrom = "etcAddress";
+	}
+	
+	//페이지 새로 오픈 시 초기화
+	p.gWin1113.TP_tab2.SelectedTabIndex = 0; //도로명,지번 선택 탭
+	p.gWin1113.TP_tab1.SelectedTabIndex = 0; //키보드,검색결과 탭
+	p.gWin1113.DL_newaddr.SelectedIndex = 0;
+	p.gWin1113.DL_oldaddr.SelectedIndex = 0;
+	p.gWin1113.TB_roadNum.$.css("border","2px solid #9e9e9e");
+	p.gWin1113.TB_cityName_new.Text = "";
+	p.gWin1113.TB_roadName.Text = "";
+	p.gWin1113.TB_roadNum.Text = "";
+	p.gWin1113.TB_cityName_old.Text = "";
+	p.gWin1113.TB_district.Text = "";
+	p.gWin1113.TB_districtNum1.Text = "";
+	p.gWin1113.TB_districtNum2.Text = "";
+	p.gWin1113.setZipCode = "";
+	p.gWin1113.addressText = "";
+	setAddressArr = "";
+	setAddressArr1 = "";
+	setAddressArr2 = "";
+	p.gWin1113.BT_right.Enabled = false;
+	//
+	
+	p.ChangeTab("1113");
+});
+
+
+function addrBtn_Click(){
+	console.log("addrBtn_Click Call");
+	//주소 검색 시 넘어온 값에 빌딩 명 있을 경우
+	setAddressArr = p.gWin1113.addressText.split("(");//"("기준으로 숫자 나누기
+	setAddressArr1 = setAddressArr[0];
+	setAddressArr2 = setAddressArr[1];
+	console.log("setAddressArr1: "+setAddressArr1);
+	console.log("setAddressArr2: "+setAddressArr2);
+	if(searchFrom == "searchHome"){
+		TB_homeZipCode.Text = p.gWin1113.codeText;
+		TB_homeAddress.Text = setAddressArr1;
+		TB_homeDetails.Text = '('+ setAddressArr2;
+		p.infoAddr.OOH_RDNM_DTL_ADR = setAddressArr2.replace(')','');
+		setAddrHomeType = p.gWin1113.tabIndex;
+		p.infoAddr.OOH_BLDN_MNGM_NO = p.gWin1113.setBuildingNum;
+	}else if(searchFrom == "searchJob"){
+		TB_jobZipCode.Text = p.gWin1113.codeText;
+		TB_jobAddress.Text = setAddressArr1;
+		TB_jobDetails.Text = '('+ setAddressArr2;
+		p.infoAddr.WRPL_RDNM_DTL_ADR = setAddressArr2.replace(')','');
+		setAddrJobType = p.gWin1113.tabIndex;
+		p.infoAddr.WRPL_BLDN_MNGM_NO = p.gWin1113.setBuildingNum;
+	}else if(searchFrom == "searchEtc"){
+		TB_etcZipCode.Text = p.gWin1113.codeText;
+		TB_etcAddress.Text = setAddressArr1;
+		TB_etcDetails.Text = '('+ setAddressArr2;
+		p.infoAddr.SPAE_RDNM_DTL_ADR = setAddressArr2.replace(')','');
+		setAddrEtcType = p.gWin1113.tabIndex;
+		p.infoAddr.SPAE_BLDN_MNGM_NO = p.gWin1113.setBuildingNum;
+	}
+}
+
+LB_phone.$.attr("formid","phoneTitle");
+LB_email.$.attr("formid","emailTitle");
+LB_homeInfo.$.attr("formid","homeTitle");
+LB_jobInfo.$.attr("formid","jobTitle");
+LB_etcInfo.$.attr("formid","spaeTitle");
+LB_phone.$.addClass('phoneTitle');
+PN_email.$.addClass("emailTitle");
+LB_homeInfo.$.addClass("homeTitle");
+LB_jobInfo.$.addClass("jobTitle");
+LB_etcInfo.$.addClass("spaeTitle");
+	
+// 블링크 문구 처리
+function enableConfirmBtn(flag, el) {
+    //기존 항목체크 문구 일괄 제거 처리후 검사
+    if (flag == false) {   
+        var valideArr = $(this.document).find(".valideText");
+        //$.each(valideArr, function(index,item){ $(item).removeClass('valideText')});
+        var target = $("[formid ="+el+"]");
+        var targetId = $(target)[0].classList[2];
+        var chgScrollTrack = SB_scrollbar1.$.find(".trackbutton")[0];
+        var scrollControl = $("[ui-id=PN_panel1]");
+
+        // 스크롤 영역
+        switch(el) {
+			case "phoneTitle" : chgScrollTrack.style.top="66px"; scrollControl.scrollTop(107); break;
+            case "emailTitle" : chgScrollTrack.style.top="66px"; scrollControl.scrollTop(107); break;
+            case "homeTitle" : chgScrollTrack.style.top="382px"; scrollControl.scrollTop(620); break;
+            case "jobTitle" : chgScrollTrack.style.top="382px"; scrollControl.scrollTop(620); break;
+            case "spaeTitle" : chgScrollTrack.style.top="560px"; scrollControl.scrollTop(910); break;
+        }
+
+        if(targetId == "phoneTitle") {
+            PN_phone.$
+            	.addClass("validephonetext")
+            	.css('overflow','visible');
+        } else {
+            $("." + el).addClass("valideText");
+            $(".phonetitle").removeClass("validePhoneText");
+        }
+    } else {
+        $("." + el).removeClass("validePhoneText");
+        $("." + el).removeClass("valideText");
+        
+    }
+
+    //BT_right.Enabled = false;
+    return false; 
+}
+
+
+//이전, 다음 버튼 설정
+function BT_right_OnClick(e){
+	curSel = DL_emailAddress.SelectedIndex;
+	selectedLabel = DL_emailAddress.Text;
+	SCREEN.WriteJnl("[회원정보 변경] 정상");
+	p.btnModify();
+
+}
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[회원정보 변경] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}</script></xjscript></body>
+</html>

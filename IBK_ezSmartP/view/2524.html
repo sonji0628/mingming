@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1280,1024" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad"><div class="ui-control ui-panel ui-container" id="ui-171a561f5a3" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel1" ui-class="UIPanel"><div class="ui-control ui-panel ui-container" id="ui-171a557424f" style="left: 80px; top: 333px; width: 358px; height: 294px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_panel2" ui-class="UIPanel"><span class="ui-back-image" style='background-image: url("/KRG/media/img_icon_guide.png");'></span></div><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a5627701" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 1;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-blue" id="ui-171a5627702" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">동의</span></span><span class="ui-control ui-button theme-orange" id="ui-171a5647e78" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">닫기</span></span></div><span class="ui-control ui-label" id="ui-171a559cb46" style="left: 522px; top: 0px; width: 758px; height: 881px; right: auto; bottom: auto; font-size: 16px; z-index: 2;" anchor="0b0101" dock="0" ui-id="LB_label1" ui-class="UILabel"><span class="ui-content" style="align-items: flex-start;"></span></span></div>
+</div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*
+	#2524 - 거래중지 계좌조회 - 안내
+*/
+let p = parent;
+
+// 닫기버튼
+function BT_left_OnClick(e){
+	// 전체 계좌조회 - 계좌조회 페이지로 이동
+	p.ChangeTab("2511");
+}
+
+// 동의 버튼
+function BT_right_OnClick(e){
+	// 거래중지계좌 이용재개 (2525)로 이동 ~~~~
+	console.log("거래중지계좌 이용재개 (2525)로 이동 ~~~~ ");
+	
+	let params = [];
+	
+	params.push("gRNN=" + p.gRNN);
+	params.push("gEDPS_CSN=" + p.gEDPS_CSN);
+	
+	p.com.screen.screenCall("2525", params);
+}
+
+function Form_OnLoad(e){
+	let text = [];
+
+	text.push("<span>대포통장 발생요인의 사전적 차단을 위하여</span><br>");
+	text.push("<span><ins>거래중지계좌 제도</ins>가 시행됨에 따라</span><br>");
+	text.push("<span>고객님께서 보유하신 입출금이 자유로운 예금 중</span><br>");
+	text.push("<span>아래 요건에 해당되는 경우 '거래중지계좌'로 관리되어</span><br>");
+	text.push("<span>입출금 거래 등이 제한될 수 있습니다.</span><br><br>");
+	text.push("<div class='text-bold'>1. 예금잔액이 <span class='text-blue'>1만원 미만</span>이며,<br>");
+	text.push("<span class='text-orange'>1년 이상 입출금 거래가 없는 계좌</span><br><br>");
+	text.push("2. 예금잔액이 <span class='text-blue'>1만원 이상 5만원 미만</span>이며,<br>");
+	text.push("<span class='text-orange'>2년 이상 입출금 거래가 없는 계좌</span><br><br>");
+	text.push("3. 예금잔액이 <span class='text-blue'>5만원 이상 10만원 미만</span>이며,<br>");
+	text.push("<span class='text-orange'>3년 이상 입출금 거래가 없는 계좌</span><br><br></div>");
+	
+	LB_label1.$.html(""
+			+'<div class="notice-container">'
+			+'	<div class="info_textbox">'
+			+'		<div class="title">'
+			+'			안 내'
+			+'		</div>'
+			+'		<div class="text">'
+			+			text.join("")
+			+'		</div>'
+			+'	</div>'
+			+'</div>'
+	);
+	
+	LB_label1.$.find('div > .text').css({'font-size':'24px','line-height':'1'});
+	LB_label1.$.find('div > .text div.text-bold').css({'font-weight': 'bold'});
+	LB_label1.$.find('div > .text span').css({'display':'inline-block','margin-top':'10px'});
+	LB_label1.$.find('div > .text span.text-orange').css({'text-indent':'40px'});
+}
+</script></xjscript></body>
+</html>

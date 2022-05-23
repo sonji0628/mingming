@@ -1,0 +1,161 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1389,1120" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-w="200" dock-h="102" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">선결제</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-w="1280" dock-h="92" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 235px; height: 43px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 32px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">당월 미청구금액</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-w="1280" dock-h="140" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto"><span class="ui-control ui-button theme-blue" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-w="1280" dock-h="100" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto"><span class="ui-control ui-scrollbar" id="ui-172980bda14" style="left: 1205px; top: 21px; width: 32px; height: 620px; right: auto; bottom: auto; z-index: 0;" ui-class="UIScrollBar" ui-id="SB_scrollbar_payinfo" dock="0" anchor="0b0101" scroll-control-id="PN_panel_payinfo"><span class="track"></span><span class="trackbutton" style="top: 0px;"></span></span><div class="ui-control ui-panel ui-container" id="ui-172e8e859a4" style="left: 83px; top: 21px; width: 1100px; height: 620px; right: auto; bottom: auto; z-index: 1;" ui-class="UIPanel" ui-id="PN_panel_payinfo" dock="0" anchor="0b0101"><span class="ui-control ui-label" id="ui-172e8e90051" style="left: 4px; top: 118px; width: 600px; height: 42px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-size: 28px; z-index: 0;" ui-class="UILabel" ui-id="LB_label1" dock="0" anchor="0b0101"><span class="ui-content">카드이용내역</span></span><div class="ui-control ui-table" id="ui-172e8e95d12" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 4px; top: 166px; width: 1075px; height: 240px; right: auto; bottom: auto; z-index: 1;" ui-class="UITable" ui-id="TL_table_payinfo2" dock="0" anchor="0b0101"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="270" type="1" align-h="align-left" align-v="align-middle"></td><td type="1" align-h="align-left" align-v="align-middle"></td></tr></thead><tbody><tr height="20%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d29" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">할부</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-172e8e95d2a" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td></tr><tr height="20%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17394907a7e" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">할부수수료</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17394907a7f" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td></tr><tr height="20%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173949076e4" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">연회비</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173949076e6" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td></tr><tr height="20%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-1739490736b" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">일시불</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-1739490736c" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td></tr><tr height="20%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17394a2cbcb" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">일시불 수수료</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-17394a2cbcc" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td></tr></tbody></table></div><div class="ui-control ui-table" id="ui-173c210e074" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 4px; top: 22px; width: 1075px; height: 60px; right: auto; bottom: auto; z-index: 2;" ui-class="UITable" ui-id="TL_table_payinfo1" dock="0" anchor="0b0101"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="270" type="1" align-h="align-left" align-v="align-middle"></td><td type="1" align-h="align-left" align-v="align-middle"></td></tr></thead><tbody><tr height="100%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c210e08e" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">미청구총액</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c210e08f" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-173c218190c" style="left: 4px; top: 444px; width: 600px; height: 42px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-size: 28px; z-index: 3;" ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content">단기카드대출 (현금서비스)</span></span><div class="ui-control ui-table" id="ui-173c218cf71" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 4px; top: 490px; width: 1075px; height: 60px; right: auto; bottom: auto; z-index: 4;" ui-class="UITable" ui-id="TL_table_payinfo3" dock="0" anchor="0b0101"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td></tr></thead><tbody><tr height="100%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c218cf73" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">원금</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c219892b" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c219930f" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">수수료</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c218cf74" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td></tr></tbody></table></div><div class="ui-control ui-table" id="ui-173c21e34d8" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 4px; top: 630px; width: 1075px; height: 60px; right: auto; bottom: auto; z-index: 5;" ui-class="UITable" ui-id="TL_table_payinfo4" dock="0" anchor="0b0101"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td></tr></thead><tbody><tr height="100%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c21e34db" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">원금</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c21e34dc" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c21e34dd" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">수수료</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c21e34de" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-173c21e3506" style="left: 4px; top: 584px; width: 600px; height: 42px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-size: 28px; z-index: 6;" ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content">일부결제금액이월약정 (리볼빙)</span></span><div class="ui-control ui-table" id="ui-173c21f60f8" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 4px; top: 770px; width: 1075px; height: 60px; right: auto; bottom: auto; z-index: 7;" ui-class="UITable" ui-id="TL_table_payinfo5" dock="0" anchor="0b0101"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td></tr></thead><tbody><tr height="100%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c21f60fb" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">원금</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c21f60fc" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c21f60fd" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">수수료</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c21f60fe" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td></tr></tbody></table></div><span class="ui-control ui-label" id="ui-173c21f6156" style="left: 4px; top: 724px; width: 600px; height: 42px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-size: 28px; z-index: 8;" ui-class="UILabel" ui-id="LB_label4" dock="0" anchor="0b0101"><span class="ui-content">일부결제금액이월약정 단기카드대출</span></span><span class="ui-control ui-label" id="ui-173c2253118" style="left: 4px; top: 864px; width: 600px; height: 42px; right: auto; bottom: auto; color: rgb(23, 107, 200); font-size: 28px; z-index: 9;" ui-class="UILabel" ui-id="LB_label5" dock="0" anchor="0b0101"><span class="ui-content">장기카드대출</span></span><div class="ui-control ui-table" id="ui-173c2253153" style="border-width: 2px; border-color: rgb(194, 194, 194); left: 4px; top: 910px; width: 1075px; height: 60px; right: auto; bottom: auto; z-index: 10;" ui-class="UITable" ui-id="TL_table_payinfo6" dock="0" anchor="0b0101"><table border="0" cellspacing="0" cellpadding="0"><thead><tr><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td><td width="25%" type="1" align-h="align-left" align-v="align-middle"></td></tr></thead><tbody><tr height="100%"><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c2253154" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">원금</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c2253155" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c2253156" style="padding: 0px 0px 0px 20px; font-size: 21px; background-color: rgb(242, 242, 242);"><span class="cell-control-label">수수료</span></div></td><td><div class="ui-table-cell align-left align-middle ui-container" id="ui-173c2253157" style="padding: 0px 20px; font-size: 22px;"><span class="cell-control-label">0 원</span></div></td></tr></tbody></table></div></div></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>// 3180.css import
+importCSS("3180"     ,"3180.css");
+
+// common.js import
+includeJSS("common","/KRG/0301/common.js");
+
+function Form_OnLoad(e){
+  
+   // 팝업을 호출한 opener에 팝업 window 저장 (opener에서 close 가능)
+   if (host.form.opener){
+	   host.form.opener.xpopup = window;
+   }
+	
+   com.screen.setTimeoutEx(30000, onScreenTimeout);
+   
+   fnInfomationSetting();
+   
+}
+
+// parent 화면의 타임아웃에 종속되어 주석처리함
+function onScreenTimeout(){
+	console.log("[popup] Screen Timeout!!!");
+	
+	com.screen.clearTimeoutEx();
+
+	com.screen.closePopup(function(opendlg){
+		opendlg.OnCloseCallback3286("timeout");
+	});	
+}
+
+// 결제청구건 데이터 셋팅
+function fnInfomationSetting() {
+
+  let payinfo,popup_param,jsonPay;
+  
+  popup_param = com.ss.getItem("3286_popup_param");
+    
+  if(popup_param != null){
+	 jsonPay = jQuery.parseJSON(popup_param);
+  }
+  
+  // 결제청구 데이터 가져오기
+  if(jsonPay != null){
+  
+    // 타이틀 셋팅
+    LB_Subtitle.Text = jsonPay.TITLE;
+
+
+    // 미청구총액 셋팅
+    TL_table_payinfo1.DataCell(0,1,"text",com.util.fnGetFormatMoney(jsonPay.TTAL_AMT));
+
+    const $payinfo_tbody1 = TL_table_payinfo1.$.find("> table > tbody");
+	$payinfo_tbody1.find("> tr:eq(0) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+
+
+    // 카드이용내역 > 할부 셋팅
+    TL_table_payinfo2.DataCell(0,1,"text",com.util.fnGetFormatMoney(jsonPay.INSL_PRNC_AMT));
+    
+    // 카드이용내역 > 할부수수료 셋팅
+    TL_table_payinfo2.DataCell(1,1,"text",com.util.fnGetFormatMoney(jsonPay.INSL_FEE));
+
+    // 카드이용내역 > 연회비 셋팅
+    TL_table_payinfo2.DataCell(2,1,"text",com.util.fnGetFormatMoney(jsonPay.ANF_AMT));
+
+    // 카드이용내역 > 일시불 셋팅
+    TL_table_payinfo2.DataCell(3,1,"text",com.util.fnGetFormatMoney(jsonPay.LSP_PRNC_AMT));
+
+    // 카드이용내역 > 일시불 수수료 셋팅
+    TL_table_payinfo2.DataCell(4,1,"text",com.util.fnGetFormatMoney(jsonPay.LSP_FEE));
+
+    const $payinfo_tbody2 = TL_table_payinfo2.$.find("> table > tbody");
+	$payinfo_tbody2.find("> tr:eq(0) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody2.find("> tr:eq(1) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody2.find("> tr:eq(2) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody2.find("> tr:eq(3) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody2.find("> tr:eq(4) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+
+
+    // 단기카드대출 (현금서비스) > 원금 셋팅
+    TL_table_payinfo3.DataCell(0,1,"text",com.util.fnGetFormatMoney(jsonPay.CSRV_PRNC_AMT));
+
+    // 단기카드대출 (현금서비스) > 수수료 셋팅
+    TL_table_payinfo3.DataCell(0,3,"text",com.util.fnGetFormatMoney(jsonPay.CSRV_FEE));
+
+    const $payinfo_tbody3 = TL_table_payinfo3.$.find("> table > tbody");
+	$payinfo_tbody3.find("> tr:eq(0) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody3.find("> tr:eq(0) > td:eq(3) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+
+
+    // 일부결제금액이월약정 (리볼빙) > 원금 셋팅
+    TL_table_payinfo4.DataCell(0,1,"text",com.util.fnGetFormatMoney(jsonPay.RVLM_PRNC_AMT));
+
+    // 일부결제금액이월약정 (리볼빙) > 수수료 셋팅
+    TL_table_payinfo4.DataCell(0,3,"text",com.util.fnGetFormatMoney(jsonPay.RVLM_FEE));
+
+    const $payinfo_tbody4 = TL_table_payinfo4.$.find("> table > tbody");
+	$payinfo_tbody4.find("> tr:eq(0) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody4.find("> tr:eq(0) > td:eq(3) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+
+
+    // 일부결제금액이월약정 단기카드대출 > 원금 셋팅
+    TL_table_payinfo5.DataCell(0,1,"text",com.util.fnGetFormatMoney(jsonPay.RVCS_PRNC_AMT));
+
+    // 일부결제금액이월약정 단기카드대출 > 수수료 셋팅
+    TL_table_payinfo5.DataCell(0,3,"text",com.util.fnGetFormatMoney(jsonPay.RVCS_FEE));
+
+    const $payinfo_tbody5 = TL_table_payinfo5.$.find("> table > tbody");
+	$payinfo_tbody5.find("> tr:eq(0) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody5.find("> tr:eq(0) > td:eq(3) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+
+
+    // 장기카드대출 > 원금 셋팅
+    TL_table_payinfo6.DataCell(0,1,"text",com.util.fnGetFormatMoney(jsonPay.CRLN_PRNC_AMT));
+
+    // 장기카드대출 > 수수료 셋팅
+    TL_table_payinfo6.DataCell(0,3,"text",com.util.fnGetFormatMoney(jsonPay.CRLN_FEE));
+
+    const $payinfo_tbody6 = TL_table_payinfo6.$.find("> table > tbody");
+	$payinfo_tbody6.find("> tr:eq(0) > td:eq(1) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+	$payinfo_tbody6.find("> tr:eq(0) > td:eq(3) > div.ui-table-cell > span.cell-control-label").append('<span class="table-won"> 원</span>');
+
+    // 화면 스크롤 위치 초기화
+    SB_scrollbar_payinfo.$.find("> span.trackbutton").css({"top":"0px"});
+    
+    // Invalidate 스크롤 체크(생성)
+    SB_scrollbar_payinfo.Invalidate();
+  }  // end if - payinfo
+    
+}
+
+
+function BT_right_OnClick(e)
+{
+	setTimeout(function()
+	{
+		com.screen.closePopup(function(opendlg)
+		{
+	    	opendlg.OnCloseCallback3286(true);
+		});
+	}, 200);
+}
+</script></xjscript></body>
+</html>

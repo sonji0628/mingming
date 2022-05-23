@@ -1,0 +1,112 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1402,1978">
+<div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_title" dock="1" anchor="0b0101" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_Title" dock="0" anchor="0b0101"><span class="ui-content">수수료 결제계좌 선택</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" ui-class="UIPanel" ui-id="PN_Subtitle" dock="1" anchor="0b0101" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 80px; top: 31px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_Subtitle" dock="0" anchor="0b0101"><span class="ui-content">수수료 결제를 신청하실 계좌를 선택해 주세요.</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span><span disabled="disabled" class="ui-control ui-button theme-blue ui-disabled" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" ui-class="UIPanel" ui-id="PN_contents" dock="5" anchor="0b0101" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="1280"><div class="ui-control ui-panel ui-container" id="ui-172da037597" style="left: 78px; top: 58px; width: 1124px; height: 587px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel39" dock="0" anchor="0b0101"></div></div><span class="ui-control ui-scrollbar" id="ui-172bb1c1485" style="left: auto; top: 252px; width: 32px; height: 587px; right: 31px; bottom: auto; z-index: 4;" ui-class="UIScrollBar" ui-id="SB_scrollbar1" dock="0" anchor="0b1001" scroll-control-id="PN_panel39"><span class="track"></span><span class="trackbutton"></span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*	include */
+includeJSS("LibCommon","/KRG/0301/common.js");
+
+let p = parent;
+
+function Form_OnLoad(e){
+}
+
+
+function accountList(data){
+		console.log("4049에 들어온 계좌데이터\t\t"+JSON.stringify(data));
+		let tag = [];
+
+		let rc = Math.floor( (data.length-1) / 3 ) + 1;
+		let ri = rc * 3 - data.length;
+	
+		for(let j = 0; j < ri; j++){
+			data.push({emtpy : true});
+		}	
+		
+		for(let i=0;i<data.length;i++){
+			let r = data[i];
+			if(r.emtpy){
+					tag.push(""
+						+'<div class="card-item emtpy">'
+						+'</div>'
+					);
+					continue;
+				}			
+			tag.push(""
+		        +'<div class="card-item">'
+		        +'	<div class="card_info">'
+	            +'    <div class="type">계좌타입</div>'
+	            +'    <div class="card_num">1234-****-****-5678</div>'
+	            +'    <div class="card_sum">123,456,789</div>'
+	            +'	</div>'
+		        +'</div>'		
+			);
+		}
+		//
+
+		let $PN_panel39 = $("div[ui-id='PN_panel39']");
+		
+		$PN_panel39.html(""
+			+'<div class="card-panel">'
+			+tag.join("")
+			+'</div>'
+		);
+		
+		$PN_panel39 = $("div[ui-id='PN_panel39'] > div.card-panel");	
+		if($PN_panel39[0].offsetHeight <= $PN_panel39[0].parentElement.clientHeight){
+			//$PN_panel39.height("100%");
+		}
+		
+		$PN_panel39.find(">div.card-item").each(function(i){
+			let $this = $(this);
+			let r = data[i];
+			let pSum = parseInt(r.sum);
+			$this.css({'height':'290px','width':'350px'});
+			$this.find(">div.card_info >div.type").text(r.type).css({"font-size":"26px",'font-weight':'bold'});
+			$this.find(">div.card_info >div.card_num").text(com.acct.accountHypen(r.accountnum)).css({'font-size':'24px','margin-top':'40px'});
+			$this.find(">div.card_info >div.card_sum").html(com.util.Comma(pSum.toString()) + '<span>원</span>').css({'bottom':'5px','position':'absolute','font-size':'26px','color':'#176bc8','font-weight':'bold'});
+		});	
+		$PN_panel39.css("visibility","visible");
+		
+		
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//클릭이벤트
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		PN_panel39.$.find(".card-item").click(function(){
+			BT_right.Enabled = true;
+			PN_panel39.$.find("div.card-item").removeClass("select");
+			comSelectAnimate.call(this,$("div.card-item"));
+			$(this).addClass("select");
+			selectedAccount = PN_panel39.$.find("div.card-panel >.select >.card_info >.card_num").text().trim();
+			console.log("4049 selectedAccount : " + selectedAccount);
+		});
+}
+
+
+function BT_right_OnClick(e){
+	SCREEN.WriteJnl("**계좌번호: " + selectedAccount);
+	SCREEN.WriteJnl("[수수료 결제계좌 선택] 정상");
+	p.ChangeTab("9047");
+}
+
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[수수료 결제계좌 선택] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+</script></xjscript></body>
+</html>

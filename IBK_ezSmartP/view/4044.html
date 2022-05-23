@@ -1,0 +1,689 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1410,1083" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad"><div class="ui-control ui-panel ui-container" id="ui-171be2e0c07" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 1; background-color: transparent;" anchor="0b0101" dock="0" ui-id="PN_form" ui-class="UIPanel"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c08" style="left: 0px; top: 0px; width: auto; height: 102px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" anchor="0b0101" dock="1" ui-id="PN_Title" ui-class="UIPanel" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171be2e0c09" style='left: 80px; top: 31px; width: 1120px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_title" ui-class="UILabel"><span class="ui-content">인증번호 입력</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171be2e0c0a" style="left: 0px; top: 102px; width: auto; height: 92px; right: 0px; bottom: auto; z-index: 1; background-color: rgb(239, 240, 242);" anchor="0b0101" dock="1" ui-id="PN_Subtitle" ui-class="UIPanel" dock-r="left:0px;top:102px;width:1280px;height:92px;right:auto;bottom:auto" dock-h="92" dock-w="1280"><span class="ui-control ui-label" id="ui-171be2e0c0b" style='left: 82px; top: 30px; width: 1120px; height: 32px; right: auto; bottom: auto; font-family: "IBK iDream L"; font-size: 28px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_Subtitle" ui-class="UILabel"><span class="ui-content">고객님의 휴대폰으로 전송된 인증번호를 입력하신 후 　　　을 눌러 주십시오.</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-172729dbaaf" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-172729e45a9" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span><span class="ui-control ui-button theme-blue" id="ui-172729ea59d" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' anchor="0b1001" dock="0" ui-id="BT_right" ui-class="UIButton" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-blue" id="ui-172a63023df" style='left: auto; top: 31px; width: 258px; height: 80px; right: 511px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 2;' anchor="0b1001" dock="0" ui-id="BT_requestAuthNo" ui-class="UIButton" xonclick="BT_requestAuthNo_OnClick" theme="blue"><span class="ui-content">재전송</span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-172729f3b0f" style="left: 0px; top: 194px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" anchor="0b0101" dock="5" ui-id="PN_contents" ui-class="UIPanel" dock-r="left:0px;top:194px;width:1280px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="1280"><div class="ui-control ui-numberpad fixed" id="ui-171a5226656" style="left: 756px; top: 104px; width: 352px; height: 487px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="NP_numberpad1" ui-class="UINumberPad" xonkeyclick="NP_numberpad1_OnKeyClick"><table class="fixed" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td key="1"><div>1</div></td><td key="2"><div>2</div></td><td key="3"><div>3</div></td></tr><tr><td key="4"><div>4</div></td><td key="5"><div>5</div></td><td key="6"><div>6</div></td></tr><tr><td key="7"><div>7</div></td><td key="8"><div>8</div></td><td key="9"><div>9</div></td></tr><tr><td class="fix backspace" key=""><div></div></td><td key="0"><div>0</div></td><td class="fix clear" key="정정"><div>정정</div></td></tr></tbody></table><table class="shuffle" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td class="fix shuffle" colspan="2"><div>재배열</div></td><td class="fix backspace" key="backspace"><div></div></td><td class="fix clear" key="clear"><div>정정</div></td></tr></tbody></table></div><span class="ui-control ui-textbox" id="ui-1729d12abd7" style="left: 124px; top: 270px; width: 475px; height: 80px; right: auto; bottom: auto; font-size: 38px; z-index: 1;" anchor="0b0101" dock="0" ui-id="TB_authNumber" ui-class="UITextBox" xonclick="TB_authNumber_OnClick"><span><input class="ui-input" style="text-align: left;" type="text" maxlength="6"></span></span><span class="ui-control ui-label" id="ui-1729d12abaf" style="left: 124px; top: 227px; width: 173px; height: 32px; right: auto; bottom: auto; color: rgb(2, 111, 206); font-size: 28px; z-index: 2;" anchor="0b0101" dock="0" ui-id="LB_label16" ui-class="UILabel"><span class="ui-content">인증번호입력</span></span><span class="ui-control ui-label" id="ui-172a62cc60f" style="left: 465px; top: 294px; width: 110px; height: 32px; right: auto; bottom: auto; color: rgb(255, 113, 69); font-size: 24px; z-index: 3;" anchor="0b0101" dock="0" ui-id="LB_timer" ui-class="UILabel"><span class="ui-content" style="justify-content: flex-end;"></span></span><span class="ui-control ui-label ui-hide" id="ui-17347dbf2a1" style="left: 124px; top: 363px; width: 520px; height: 32px; right: auto; bottom: auto; color: rgb(255, 113, 69); font-size: 20px; z-index: 4;" anchor="0b0101" dock="0" ui-id="LB_notice" ui-class="UILabel"><span class="ui-content" style="justify-content: flex-start;">인증에 실패하였습니다. 재전송 버튼을 눌러주십시오.</span></span></div></div>
+<div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-17354fdb1b9" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" anchor="0b0101" dock="5" ui-id="PN_loader" ui-class="UIPanel" dock-r="left:0px;top:193px;width:1281px;height:832px;right:auto;bottom:auto" dock-h="832" dock-w="1281" back-image-pos="530px,370px"><span class="ui-back-image" style='background-position: 530px 370px; background-image: url("/KRG/media/loader.gif");'></span></div></div><xcomponent><xios><xio>{
+  "Name": "IO_03404301",
+  "Description": "CBKEBKE00218",
+  "Input": [
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "MMCR_MBN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "TLTS_FNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "CNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "TLGR_MSNM_RQST_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 14,
+      "Name": "IBCI_TLGR_TRMS_TS",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "APCT_SRNM_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "EBNK_CTCT_CPN",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "TLFA_CMCM_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "BIRT_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "GNDR_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NATL_CLCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "EBNK_PREP_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "F_PREP_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "USE_YNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 6,
+      "Name": "SMCF_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 80,
+      "Name": "EBNK_SMTS_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Input",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "SMCF_RQST_TPN",
+      "GridData": []
+    }
+  ],
+  "Output": [
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 10,
+      "Name": "MMCR_MBN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "TLTS_FNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 5,
+      "Name": "CNCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 30,
+      "Name": "TLGR_MSNM_RQST_NO",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 14,
+      "Name": "IBCI_TLGR_TRMS_TS",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 20,
+      "Name": "APCT_SRNM_NM",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 12,
+      "Name": "EBNK_CTCT_CPN",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "TLFA_CMCM_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 8,
+      "Name": "BIRT_YMD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "GNDR_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 1,
+      "Name": "NATL_CLCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 152,
+      "Name": "DWSEC_TRK3_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "EBNK_PREP_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "F_PREP_CON",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 2,
+      "Name": "RSLT_DCD",
+      "GridData": []
+    },
+    {
+      "InOut": "Output",
+      "DataType": "String",
+      "Size": 50,
+      "Name": "RPCD_NM",
+      "GridData": []
+    }
+  ]
+}</xio></xios><xcms><xcm>{
+  "Name": "CM_03404401",
+  "ServiceName": "CBKEBKE00218",
+  "RefIoName": "IO_03404301",
+  "Input": [
+    {
+      "MMCR_MBN": "MMCR_MBN"
+    },
+    {
+      "TLTS_FNCD": "TLTS_FNCD"
+    },
+    {
+      "CNCD": "CNCD"
+    },
+    {
+      "TLGR_MSNM_RQST_NO": "TLGR_MSNM_RQST_NO"
+    },
+    {
+      "IBCI_TLGR_TRMS_TS": "IBCI_TLGR_TRMS_TS"
+    },
+    {
+      "APCT_SRNM_NM": "APCT_SRNM_NM"
+    },
+    {
+      "EBNK_CTCT_CPN": "EBNK_CTCT_CPN"
+    },
+    {
+      "TLFA_CMCM_DCD": "TLFA_CMCM_DCD"
+    },
+    {
+      "BIRT_YMD": "BIRT_YMD"
+    },
+    {
+      "GNDR_DCD": "GNDR_DCD"
+    },
+    {
+      "NATL_CLCD": "NATL_CLCD"
+    },
+    {
+      "EBNK_PREP_CON": "EBNK_PREP_CON"
+    },
+    {
+      "F_PREP_CON": "F_PREP_CON"
+    },
+    {
+      "USE_YNCD": "USE_YNCD"
+    },
+    {
+      "SMCF_NO": "SMCF_NO"
+    },
+    {
+      "EBNK_SMTS_CON": "EBNK_SMTS_CON"
+    },
+    {
+      "SMCF_RQST_TPN": "SMCF_RQST_TPN"
+    }
+  ],
+  "Output": [
+    {
+      "MMCR_MBN": "MMCR_MBN"
+    },
+    {
+      "TLTS_FNCD": "TLTS_FNCD"
+    },
+    {
+      "CNCD": "CNCD"
+    },
+    {
+      "TLGR_MSNM_RQST_NO": "TLGR_MSNM_RQST_NO"
+    },
+    {
+      "IBCI_TLGR_TRMS_TS": "IBCI_TLGR_TRMS_TS"
+    },
+    {
+      "APCT_SRNM_NM": "APCT_SRNM_NM"
+    },
+    {
+      "EBNK_CTCT_CPN": "EBNK_CTCT_CPN"
+    },
+    {
+      "TLFA_CMCM_DCD": "TLFA_CMCM_DCD"
+    },
+    {
+      "BIRT_YMD": "BIRT_YMD"
+    },
+    {
+      "GNDR_DCD": "GNDR_DCD"
+    },
+    {
+      "NATL_CLCD": "NATL_CLCD"
+    },
+    {
+      "DWSEC_TRK3_CON": "DWSEC_TRK3_CON"
+    },
+    {
+      "EBNK_PREP_CON": "EBNK_PREP_CON"
+    },
+    {
+      "F_PREP_CON": "F_PREP_CON"
+    },
+    {
+      "RSLT_DCD": "RSLT_DCD"
+    },
+    {
+      "RPCD_NM": "RPCD_NM"
+    }
+  ]
+}</xcm></xcms></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*****************************************************************************
+*
+*			include
+*
+******************************************************************************/
+includeJSS("common","/KRG/0301/common.js");
+
+
+var gTimerId = -1;
+var gBackupIO;	// 4043에서 백업한 송신IO
+
+
+function Form_OnLoad(e){
+	BT_right.Enabled = false;
+	
+	NP_numberpad1.$.find(".backspace").attr("key","backspace");
+	TB_authNumber.$.find("span >input").css({"padding-left":"40px","letter-spacing":"3px"})
+									   .attr({"disabled":"true"});
+	
+	TB_authNumber.$.css({'border': '3px solid #046fd9'});		//Textbox border
+	
+	//정정, <- 버튼 Disabled
+	com.numberpad.btnDisabled(NP_numberpad1);		
+	
+	LB_Subtitle.$.find('> span.ui-content').html('고객님의 휴대폰으로 전송된 인증번호를 입력하신 후<span>확인</span>을 눌러주십시오.');
+	LB_Subtitle.$.find('> span.ui-content > span').css({'border-radius':'5px','margin':'0 10px','padding':'4px 15px','font-size':'26px','font-weight':'bold','color':'#fff','background-color':'#176bc8'});
+}
+
+// 해당 화면 탭이 활성화된 경우
+function InitPage(backupIO){
+	console.log("InitPage");
+	
+	let p = parent;
+	
+	gBackupIO = backupIO;
+	
+	//타이머 초기화
+	LB_timer.$.find('> span.ui-content').html(timer(180));
+	
+	//업무 진입시 텍스트박스 초기화
+	TB_authNumber.Text = "";
+	
+	//글자수에 따른 넘버패드 활성화함수
+	numLengthChk();
+}
+
+function timer(t){
+	console.log("4044 timer in");
+	var time = t;
+	var min = "";
+	var sec = "";
+	
+	min = parseInt(time/60);
+	sec = time % 60;
+	LB_timer.$.find('> span.ui-content').html(min + ':' + com.util.generateZero(sec));
+	LB_timer.$.find('> span.ui-content > span').css({'color':'rgb(2, 111, 206)','margin-right':'10px'});
+	
+	gTimerId = setInterval(function(){
+		min = parseInt(time/60);
+		sec = time % 60;
+	
+		LB_timer.$.find('> span.ui-content').html(min + ':' + com.util.generateZero(sec));
+		time--;
+	
+		if(time < 0 ){
+			clearInterval(gTimerId);
+			LB_timer.$.find('> span.ui-content').html('시간초과');
+			// 거래 취소
+			setTimeout(function(){
+				ATMCOMM.BusinessEnd(ATMCOMM.RET_TO);
+			}, 1000);
+		}
+		LB_timer.$.find('> span.ui-content > span').css({'color':'rgb(2, 111, 206)','margin-right':'10px'});
+	},1000);
+}
+
+
+function NP_numberpad1_OnKeyClick(e){	
+	if(e.key == "정정"){
+		e.key='';
+		TB_authNumber.Text = TB_authNumber.Text.replace(TB_authNumber.Text,"");
+	}
+	else if( e.key == "backspace"){
+		e.key='';
+		TB_authNumber.Text = TB_authNumber.Text.substring ( 0, TB_authNumber.Text.length -1);	
+	}
+	else{
+		TB_authNumber.Text += e.key;
+	}
+
+	//글자수체크
+	numLengthChk();
+
+	/*확인버튼 Enabled*/
+	if(TB_authNumber.Text.length != 0){
+		BT_right.Enabled = true;
+	}
+	else{
+		BT_right.Enabled = false;
+	}
+}
+
+/*  글자수 체크  */
+function numLengthChk(){
+	// 글자수에 따른 버튼 Disabled 
+	if (TB_authNumber.Text.length == 0){
+		com.numberpad.notMaxLength(NP_numberpad1);
+		com.numberpad.btnDisabled(NP_numberpad1);
+	}
+	else if (TB_authNumber.Text.length > 0 && TB_authNumber.Text.length < 6){
+		com.numberpad.notMaxLength(NP_numberpad1);
+	}	
+	else if (TB_authNumber.Text.length == 6){
+		com.numberpad.maxLength(NP_numberpad1);
+	}
+}
+
+/*	확인클릭	*/
+function BT_right_OnClick(e){
+	SCREEN.WriteJnl("[추가인증[SMS]] 업무 완료(OK)");
+	setTimeout(CheckSmsAuthNumber);
+}
+
+/*	취소클릭	*/
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[추가인증[SMS]] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+// SMS 인증번호 검증
+function CheckSmsAuthNumber(){
+	console.log("SMS 인증번호 검증");
+	
+	let headerData = "TLN=CHAMS000,USR_IDNT_NO=GUEST";
+	let sysData;
+	let resultCode;
+	let resultMsg;
+	let p = parent;
+	
+	p.ChangeTab("9059");
+	
+	let ret = Net.Request(
+		"CM_03404401", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			xioInput.MMCR_MBN = "ibk1";		// 회원사 회원번호
+			xioInput.TLTS_FNCD = "02";		// 전문전송기능코드
+			xioInput.CNCD = "01005";		// 조건코드
+			
+			xioInput.TLGR_MSNM_RQST_NO = gBackupIO.TLGR_MSNM_RQST_NO;	// 전문결번요청번호 : 4043 데이터
+			xioInput.IBCI_TLGR_TRMS_TS = gBackupIO.IBCI_TLGR_TRMS_TS;	// IBK신용정보전문전송일시 : 4043 데이터
+			xioInput.APCT_SRNM_NM = gBackupIO.APCT_SRNM_NM;				// 이름
+			xioInput.EBNK_CTCT_CPN = gBackupIO.EBNK_CTCT_CPN;			// E뱅킹연락휴대폰번호 
+			xioInput.TLFA_CMCM_DCD = gBackupIO.TLFA_CMCM_DCD;			// 통신사
+			xioInput.BIRT_YMD = gBackupIO.BIRT_YMD;						// 생년월일
+			xioInput.GNDR_DCD = gBackupIO.GNDR_DCD;						// 성별
+			xioInput.NATL_CLCD = gBackupIO.NATL_CLCD;					// 국적
+            xioInput.EBNK_PREP_CON = "";								// E뱅킹예비내용
+            xioInput.F_PREP_CON = "";									// F예비내용
+            xioInput.USE_YNCD = "00";									// 사용여부코드
+            xioInput.EBNK_SMTS_CON = "";								// E뱅킹SMS전송내용
+            xioInput.SMCF_NO = TB_authNumber.Text;						// SMS인증번호
+            xioInput.SMCF_RQST_TPN = "15662566";						// SMS인증요청전화번호
+		},
+		function fcb_OnAfterResponse(result, xioOutput) {
+			// OK
+			if (result == "00") {
+				
+				resultCode = xioOutput.RSLT_DCD;	// 결과구분코드
+				resultMsg = xioOutput.RPCD_NM;		// 응답코드명
+				console.log("결과구분코드 = " + resultCode);
+				console.log("응답코드명 = " + resultMsg);
+				
+				// 성공
+				if (parseInt(resultCode) == 0){
+					console.log("clearInterval");
+					clearInterval(gTimerId);
+					p.SmsAuthOK();
+				}
+				// 실패
+				else{
+					console.log("실패");
+					p.ChangeTab("4044");
+					TB_authNumber.Text = "";	// 인증번호 초기화
+					LB_notice.Visible = true;	// 알림 문구 표시
+				}
+				
+			} else {
+				// Error Message
+				console.log("Error : " + xioOutput);
+			}
+			
+		}
+	);
+}
+
+// 인증번호 재전송
+function BT_requestAuthNo_OnClick(e){
+	clearInterval(gTimerId);
+	
+	TB_authNumber.Text = "";	// 인증번호 초기화
+	
+	notMaxLength();				// 넘버패드 Disabled 해지
+	
+	// 모래시계 이미지
+	ShowLoader();
+	
+	setTimeout(RetryRequestSmsAuthNumber);
+}
+
+// 기본 로더 이미지 뷰
+function ShowLoader(){
+    // 로더 이미지 투명도 설정
+    $("[ui-id='PN_loader']").css({"opacity":"0.4"});
+    $("[ui-id='PN_loader']").css({"background-color":"rgba(0,0,0, 0.4)"});
+  
+    // 로더 이미지 위치 설정
+    //$("[ui-id='PN_loader']").css({"top":"600px","left":"600px"});
+    // 로더 이미지 크기 설정
+    //$("[ui-id='PN_loader']").css({"width":"600","height":"600"});
+    
+    $("[ui-id='PN_loader']").css({'z-index':'999','position':'absolute'});
+    
+    PN_loader.Visible = true;  
+}
+
+// SMS 인증번호 요청
+function RetryRequestSmsAuthNumber(){
+	console.log("SMS 인증번호 요청");
+	
+	let headerData = "TLN=CHAMS000,USR_IDNT_NO=GUEST";
+	let sysData;
+	let resultCode;
+	let resultMsg;
+	let p = parent;
+	
+	let ret = Net.Request(
+		"CM_03404401", headerData,
+		function fcb_OnBeforeRequest(xioInput) {
+			xioInput.MMCR_MBN = "ibk1";		// 회원사 회원번호
+			xioInput.TLTS_FNCD = "01";		// 전문전송기능코드
+			xioInput.CNCD = "01005";		// 조건코드
+			
+			sysData = com.date.getSysDateTimeString();
+			xioInput.TLGR_MSNM_RQST_NO = "CBK" + sysData + "00001";		// 전문 시리얼번호, 전문결번요청번호
+			xioInput.IBCI_TLGR_TRMS_TS = sysData;						// IBK신용정보전문전송일시
+			xioInput.APCT_SRNM_NM = gBackupIO.APCT_SRNM_NM;				// 이름
+			xioInput.EBNK_CTCT_CPN = gBackupIO.EBNK_CTCT_CPN;			// E뱅킹연락휴대폰번호 
+			xioInput.TLFA_CMCM_DCD = gBackupIO.TLFA_CMCM_DCD;			// 통신사
+			xioInput.BIRT_YMD = gBackupIO.BIRT_YMD;						// 생년월일
+			xioInput.GNDR_DCD = gBackupIO.GNDR_DCD;						// 성별
+			xioInput.NATL_CLCD = gBackupIO.NATL_CLCD;					// 국적
+            xioInput.EBNK_PREP_CON = "";								// E뱅킹예비내용
+            xioInput.F_PREP_CON = "";									// F예비내용
+            xioInput.USE_YNCD = "00";									// 사용여부코드
+            xioInput.EBNK_SMTS_CON = "[기업은행]본인확인을 위해 인증번호[XXXXXX]를 입력해주십시오.";	// E뱅킹SMS전송내용
+            xioInput.SMCF_RQST_TPN = "15662566";						// SMS인증요청전화번호
+            
+            gBackupIO = xioInput;	// 4044에서 사용됨
+		},
+		function fcb_OnAfterResponse(result, xioOutput) {
+		
+			$("[ui-id='PN_loader']").css({'z-index':'0','position':'static'});				
+			PN_loader.Visible = false;	// 
+		
+			// OK
+			if (result == "00") {
+				
+				resultCode = xioOutput.RSLT_DCD;	// 결과구분코드
+				resultMsg = xioOutput.RPCD_NM;		// 응답코드명
+				console.log("결과구분코드 = " + resultCode);
+				console.log("응답코드명 = " + resultMsg);
+				
+				// 성공
+				if (parseInt(resultCode) == 0){
+					LB_timer.$.find('> span.ui-content').html(timer(180));
+					
+				}
+				// 실패
+				else{
+					setTimeout(ErrorRequestSmsAuthNumber);
+				}
+				
+			} else {
+				// Error Message
+				console.log("Error : " + xioOutput);
+			}
+			
+		}
+	);
+}
+
+// 기존 ATM 소스에는 실패했을 때 로직이 없음
+function ErrorRequestSmsAuthNumber(){
+	let p = parent;
+	
+	let msg = [];
+	msg.push("<p>SMS 인증에 실패하였습니다.</p>");
+	msg.push("<p>휴대폰 번호를 확인해 주십시오.</p>");
+	
+	// 9047 화면 취소 및 확인 버튼 visible false
+	p.SetVisible("9047", "BT_left", false);
+	p.SetVisible("9047", "BT_right", false);
+	
+	// 9047 화면에 에러 데이터 출력
+	p.DisplayMsg("9047", msg);
+	
+	setTimeout(function(){
+
+		msg = [];
+		msg.push("<p>SMS 인증에 실패하였습니다.</p>" );
+		msg.push("<p>본인 명의의 휴대폰으로 인증을 진행하여 주십시오.</p>" );
+		// 9047 화면 취소 및 확인 버튼 visible false
+		p.SetVisible("9047", "BT_left", false);
+		p.SetVisible("9047", "BT_right", false);
+		// 9047 화면에 에러 데이터 출력
+		p.DisplayMsg("9047", msg);
+		
+		// 거래 종료 : NG
+		setTimeout(function(){
+			ATMCOMM.BusinessEnd(ATMCOMM.RET_NG);
+		}, 5000);
+		
+	}, 5000);
+	
+}</script></xjscript></body>
+</html>

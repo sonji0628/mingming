@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/***********************************************
+*
+*				양쪽 텍스트 리스트형 레이아웃 css
+*
+************************************************/
+
+.list_info_trans {
+	position: relative;
+	width: 100%;
+	height: 106px;
+	border: 1px solid #9c9c9c;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 55px;
+	box-sizing: border-box;
+}
+
+.list_info_trans:hover {
+	border: 1px solid #046fd9;
+}
+
+.list-panel .list_info_trans .sub_text {
+	font-size: 24px;
+	line-height: 24px;
+	text-align: left;
+	display: flex;
+}
+
+.list-panel .list_info_trans .main_text {
+	width: 100%;
+	font-family: 'IBK iDream M', 'IBKIDREAMM', 'IBK iDream M';
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.list-panel .list_info_trans .text_area {
+	width: 100%;
+}
+
+.list-panel .list_info_trans .text_area .posLT {
+	position: relative; 
+	top: 40px; 
+	padding-left: 20px;
+}
+
+.list-panel .list_info_trans .text_area .posLB {
+	position: relative; 
+	top: 53px; 
+	padding-left: 20px;
+}
+
+.list-panel .list_info_trans .text_area .posRT {
+	position: relative; 
+	top: -10px; 
+	right: 470px; 
+	text-align: right; 
+	font-size: 21px;
+	font-family: 'IBK iDream L', 'IBKIDREAML', 'IBK iDream L';
+}
+
+.list-panel .list_info_trans .text_area .posRT2 {
+	position: relative; 
+	top: -33px; 
+	left: 530px; 
+	width: 430px;
+	font-size: 21px;
+	font-family: 'IBK iDream L', 'IBKIDREAML', 'IBK iDream L';
+	text-align: right;
+}
+
+.list-panel .list_info_trans .text_area .posRB {
+	position: relative; 
+	top: -16px; 
+	right: 470px; 
+	text-align: right; 
+	font-size: 21px;
+  font-family: 'IBK iDream L', 'IBKIDREAML', 'IBK iDream L';
+}
+
+.list-panel .list_info_trans .text_area .posRB2 {
+	position: relative; 
+	top: -37px; 
+	right: 34px; 
+	text-align: right; 
+	font-size: 21px;
+  font-family: 'IBK iDream L', 'IBKIDREAML', 'IBK iDream L';
+}
+
+.list-panel .list_info_trans .text_area .divider {
+      font-size: 14px;
+      padding: 4px 14px;
+      color: #bfbfbf;
+}
+
+.list-panel .list_info_trans .text_area .sub_text > span {
+    font-family: 'IBK iDream L', 'IBKIDREAML', 'IBK iDream L';
+    font-size: 22px;
+}
+
+.list-panel .list_info_trans .text_area .posLB > strong
+{
+	font-size: 22px;
+	font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important;
+}
+
+
+.list-panel .list_info_trans .text_area .posRT2 > strong, 
+.list-panel .list_info_trans .text_area .posRB2 > strong
+{
+	font-size: 22px;
+	font-family: "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important;
+	padding-left : 10px;
+}
+
+.list-panel .list_info_trans .ic_check {
+	position: relative; 
+	top: 0px; 
+	left: -18px;
+	width: 40px;
+	height: 40px; 	
+}
+
+.list-panel .list_info_trans .ic_check .ui-checkbox {
+	width: 36px;
+	height: 36px; 	
+	right: auto; 
+	bottom: auto; 
+	z-index: 7;
+}
+
+.list-panel .list_info_trans .next_img {
+	width: 10px;
+	height: 18px;
+	background: url(/core/image/list_ic_next.png) no-repeat;
+	background-size: 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/***********************************************
+*
+*				기타 css
+*
+************************************************/
+
+.table-won {
+  font-size : 20px !important;
+  font-weight : normal !important;
+  font-family : "Noto Sans CJK KR Medium", "NotoSansCJKKRMedium", sans-serif !important;
+}

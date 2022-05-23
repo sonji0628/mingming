@@ -1,0 +1,187 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" ide-size="1339,1107" anchor="0b0101" dock="5" ui-id="Form" ui-class="UIForm" xonload="Form_OnLoad">
+<div class="ui-control ui-panel ui-container" id="ui-171a564ef73" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0;" anchor="0b0101" dock="0" ui-id="PN_panel49" ui-class="UIPanel"><span class="ui-control ui-label" id="ui-171a564ef76" style='left: 444px; top: 192px; width: 393px; height: 66px; right: auto; bottom: auto; color: rgb(0, 104, 196); font-family: "IBK IDream M"; font-size: 54px; z-index: 0;' anchor="0b0101" dock="0" ui-id="LB_label23" ui-class="UILabel"><span class="ui-content" style="left: 80px; top: 0px; right: 0px; bottom: 0px; justify-content: flex-start;">인증방법선택</span><span class="ui-icon-image" style='background-position: left; background-image: url("/KRG/media/ic_iz.png");'></span></span><span class="ui-control ui-label" id="ui-171a564ef78" style="left: 304px; top: 289px; width: 672px; height: 42px; right: auto; bottom: auto; font-size: 32px; z-index: 1;" anchor="0b0101" dock="0" ui-id="LB_label24" ui-class="UILabel"><span class="ui-content" style="justify-content: center; align-items: flex-start;">원하시는 인증방법의 버튼을 눌러주십시오.</span></span><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a564ef79" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 2;" anchor="0b0101" dock="2" ui-id="PN_btn" ui-class="UIPanel" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span class="ui-control ui-button theme-orange" id="ui-171a564ef7b" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; font-weight: normal; z-index: 0;' anchor="0b0101" dock="0" ui-id="BT_left" ui-class="UIButton" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">취소</span></span></div><span class="ui-control ui-button" id="ui-171a567fbf0" style="left: 235px; top: 492px; width: 394px; height: 248px; right: auto; bottom: auto; z-index: 3; background-color: transparent;" anchor="0b0101" dock="0" ui-id="BT_BIO" ui-class="UIButton" xonclick="BT_BIO_OnClick" theme=""><span class="ui-content"></span><span class="ui-back-image" style='background-image: url("/KRG/media/btn_bioiz.png");'></span></span><span class="ui-control ui-button" id="ui-171a5698937" style="left: 651px; top: 492px; width: 394px; height: 248px; right: auto; bottom: auto; z-index: 4;" anchor="0b0101" dock="0" ui-id="BT_SMS" ui-class="UIButton" xonclick="BT_SMS_OnClick" theme=""><span class="ui-content"></span><span class="ui-back-image" style='background-image: url("/KRG/media/btn_smsiz.png");'></span></span><span class="ui-back-image" style='background-image: url("/KRG/media/bg_normal_logo.png");'></span><span class="ui-control ui-label" id="ui-173285dbcb3" style="left: 234px; top: 760px; width: 812px; height: 32px; right: auto; bottom: auto; color: rgb(244, 84, 8); font-size: 24px; z-index: 5;" anchor="0b0101" dock="0" ui-id="LB_Msg" ui-class="UILabel"><span class="ui-content" style="justify-content: center;"></span></span></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>function Form_OnLoad(e){
+	//IE10 이상은 filter가 적용되지 않음
+	//이미지버튼의 경우 grayscale 이미지 따로 추가하여 사용할 것
+	/*
+	if(BT_BIO.Enabled == false){
+		BT_BIO.BackImage = "/KRG/media/btn_bioiz_off.png";
+	}
+	if(BT_SMS.Enabled == false){
+		BT_SMS.BackImage = "/KRG/media/btn_smsiz_off.png";
+	}
+	*/
+	InitPage();		// 탭페이지가 아닌 페이지로 호출 시 필요(탭페이지인 경우에도 주석처리할 필요 없음)
+}
+
+function InitPage(){
+	//TODO : 실제 기기 거래에서 주석 해제 필요
+	let auth = ATMCOMM.GetInfo("Auth");		// 1:실명인증, 2:본인인증
+	let cif = ATMCOMM.GetInfo("cif");		// 바이오인증한 경우 데이터 존재함
+	console.log("auth = " + auth);
+	console.log("cif = " + cif);
+	
+	// 실명인증 단계에서 바이오로 인증 했으면 추가인증 단계에서는 SMS 인증만 가능함
+	if (auth == 1 && cif.length > 0){
+		BT_BIO.Enabled = false;
+		BT_BIO.BackImage = "/KRG/media/btn_bioiz_off.png";
+		LB_Msg.Text = "바이오로 인증한 경우 추가인증은 SMS인증만 가능합니다.";
+	}
+}
+
+// 바이오인증
+function BT_BIO_OnClick(e){
+	//BioAuth();
+	SCREEN.WriteJnl("[추가인증[바이오]] 선택");
+	setTimeout(BioAuth, 10);
+}
+
+// SMS 인증
+function BT_SMS_OnClick(e){
+	//SmsAuth();
+	SCREEN.WriteJnl("[추가인증[SMS]] 선택");
+	setTimeout(SmsAuth, 10);
+}
+
+// 바이오 인증
+function BioAuth(){
+	console.log("바이오 인증");
+	
+	let ret;
+	let p = parent;
+
+	// 처리중 화면 탭
+	p.ChangeTab("9059");
+	
+	// 바이오 초기화
+	ret = BioInit();
+	
+	if (ret.Result == 0) {
+		// 바이오 인증 화면 탭
+		SCREEN.WriteJnl("[추가인증 [바이오]] 업무 진행");
+		p.ChangeTab("9053");
+	}
+	else {
+		// 9047 화면 취소 및 확인 버튼 visible false
+		p.SetVisible("9047", "BT_left", false);
+		p.SetVisible("9047", "BT_right", false);
+		// 9047 화면에 에러 데이터 출력 
+		p.DisplayMsg("9047", ret.Data);
+		
+		// SMS 인증 안내 유도
+		setTimeout(GuideSMSAuth, 5000);
+	}	
+}
+
+// SMS 인증
+function SmsAuth(){
+	console.log("SMS 인증");
+	
+	let ret;
+	let p = parent;
+	SCREEN.WriteJnl("[추가인증[SMS]] 업무 진행");
+	p.ChangeTab("4043");
+}
+
+function BioInit(){
+	let ret;
+	let jsonRet;
+	let msg = [];
+	
+	ret = BIOPALM.Initialize();
+	
+	jsonRet = eval("(" + ret + ")");
+	if (jsonRet.Result != 0) {
+		console.log("NG! BIOPALM.Initialize()");
+		
+		msg.push("<p>바이오 초기화 실패하였습니다.</p>");
+		msg.push("<p>" + jsonRet.Msg + "</p>");
+		msg.push("<p></p>");
+	}
+	else {
+		ret = BIOPALM.IsEnroll();
+		
+		jsonRet = eval("(" + ret + ")");
+		if (jsonRet.Result != 0){
+			console.log("NG! BIOPALM.IsEnroll()");
+			
+			msg.push("<p>바이오 사전조회에 실패하였습니다.</p>");
+			msg.push("<p>" + jsonRet.Msg + "</p>");
+			msg.push("창구에 문의하여 주십시오.</p>");
+		}
+		else {
+			ret = BIOPALM.IsSensorConnected();
+			
+			jsonRet = eval("(" + ret + ")");
+			if (jsonRet.Result != 0){
+				console.log("NG! BIOPALM.IsSensorConnected()");
+				
+				msg.push("<p></p>");
+				msg.push("<p>바이오 모듈 연결 상태 이상.</p>");
+				msg.push("<p>모듈 연결 상태를 확인해 주십시오.</p>");
+			}
+		}
+	}
+	
+	let retData = { Result: {}, Data: {} };
+	retData.Result = jsonRet.Result;
+	retData.Data = msg;
+	
+	return retData;
+}
+
+// SMS 인증 안내 유도
+function GuideSMSAuth(){
+	let p = parent;
+	let msg = [];
+	
+	msg.push("안 내");
+	msg.push("고객님의 바이오정보가 확인되지 않습니다.");
+	msg.push("SMS를 통해 인증을 진행해주세요.");
+	
+
+	// 취소 버튼 show
+	p.SetVisible("9054", "BT_left", true);
+	
+	// 취소 버튼 클릭
+	p.AddEvent("9054", "BT_left", "click", function(){
+		// 업무종료
+		ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+	});
+	
+	// 확인 버튼 클릭
+	p.AddEvent("9054", "BT_right", "click", function(){
+		// SMS 인증
+		p.ChangeTab("4043");
+	});
+	
+	
+	p.DisplayMsg("9054", msg);
+}
+
+// 취소버튼
+function BT_left_OnClick(e){
+	SCREEN.WriteJnl("[추가인증] 취소");
+	ATMCOMM.BusinessEnd(ATMCOMM.RET_CAN);
+}
+
+
+
+</script></xjscript></body>
+</html>

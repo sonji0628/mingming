@@ -1,0 +1,429 @@
+﻿<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartAtm Builder Form 새문서</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1446,1158">
+<div class="ui-control ui-panel ui-container" id="ui-171a0ae46eb" style="left: 0px; top: 0px; width: 1280px; height: 1024px; right: auto; bottom: auto; z-index: 0; background-color: transparent;" ui-class="UIPanel" ui-id="PN_form" dock="0" anchor="0b0101"><div class="ui-control ui-panel ui-container ui-dock ui-dock-top" id="ui-171a0ae46ec" style="left: 0px; top: 0px; width: auto; height: 101.97px; right: 0px; bottom: auto; z-index: 0; background-color: rgb(23, 107, 200);" ui-class="UIPanel" ui-id="PN_Title" dock="1" anchor="0b0101" dock-r="left:98px;top:1px;width:200px;height:76px;right:auto;bottom:auto" dock-h="102" dock-w="200"><span class="ui-control ui-label" id="ui-171a0ae46ed" style='left: 80px; top: 31px; width: 400px; height: 40px; right: auto; bottom: auto; color: white; font-family: "IBK iDream M"; font-size: 38px; z-index: 0;' ui-class="UILabel" ui-id="LB_title" dock="0" anchor="0b0101"><span class="ui-content">주소검색</span></span><span class="ui-control ui-button" id="ui-171a1030c79" style="left: 1028px; top: 22px; width: 199px; height: 64px; right: auto; bottom: auto; z-index: 1;" ui-class="UIButton" ui-id="BT_button20" dock="0" anchor="0b0101" xonclick="BT_button20_OnClick" theme=""><span class="ui-content"></span><span class="ui-back-image" style='background-image: url("/KRG/media/btn_voice_input_nor.png");'></span></span></div><div class="ui-control ui-panel ui-container ui-dock ui-dock-bottom" id="ui-171a0ae46f1" style="left: 0px; top: auto; width: auto; height: 140px; right: 0px; bottom: 0px; z-index: 1;" ui-class="UIPanel" ui-id="PN_btn" dock="2" anchor="0b0101" dock-r="left:0px;top:884px;width:1280px;height:140px;right:auto;bottom:auto" dock-h="140" dock-w="1280"><span disabled="disabled" class="ui-control ui-button theme-blue ui-disabled" id="ui-171a0ae46f2" style='left: auto; top: 31px; width: 258px; height: 80px; right: 36px; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 0;' ui-class="UIButton" ui-id="BT_right" dock="0" anchor="0b1001" xonclick="BT_right_OnClick" theme="blue"><span class="ui-content">확인</span></span><span class="ui-control ui-button theme-orange" id="ui-171a0ae46f3" style='left: 36px; top: 31px; width: 258px; height: 80px; right: auto; bottom: auto; font-family: "IBK iDream M"; font-size: 32px; z-index: 1;' ui-class="UIButton" ui-id="BT_left" dock="0" anchor="0b0101" xonclick="BT_left_OnClick" theme="orange"><span class="ui-content">닫기</span></span></div><div class="ui-control ui-tab ui-dock ui-dock-top" id="ui-171a0af8802" style='left: 0px; top: 101.97px; width: auto; height: 312px; right: 0px; bottom: auto; font-family: "IBK IDream M"; font-size: 28px; z-index: 2;' ui-class="UITab" ui-id="TP_tab2" dock="1" anchor="0b0101" dock-r="left:0px;top:102px;width:1280px;height:312px;right:auto;bottom:auto" dock-h="312" dock-w="1280" xonchangedtab="TP_tab2_OnChangedTab"><div class="ui-tab-heads" id="ui-1744237e023"><div class="ui-tab-head" id="ui-1744237e024">도로명</div><div class="ui-tab-head ui-tab-selected" id="ui-1744237e025">지번(구주소)</div></div><div class="ui-tab-pages" id="ui-1744237e026"><div class="ui-tab-page ui-container" id="ui-1744237e027" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-171a0f44aa6" style="left: 0px; top: 0px; width: 1280px; height: 242px; right: auto; bottom: auto; z-index: 0; background-color: rgb(242, 242, 242);" ui-class="UIPanel" ui-id="PN_panel6" dock="0" anchor="0b0101"><span class="ui-control ui-combobox" id="ui-171a0f519ad" style="border-color: rgb(158, 158, 158); left: 130px; top: 64px; width: 404px; height: 54px; right: auto; bottom: auto; color: rgb(102, 102, 102); font-size: 18px; z-index: 1;" ui-class="UIComboBox" ui-id="DL_newaddr" dock="0" anchor="0b0101" xonselecteditemchanged="DL_newaddr_OnSelectedItemChanged"><span class="ui-content">전체</span><span class="ui-icon-image" fontsize="16">▼ </span><select><option></option><option selected="selected" value="001">전체</option><option value="002">서울특별시</option><option value="003">부산광역시</option><option value="004">대구광역시</option><option value="005">인천광역시</option><option value="006">광주광역시</option><option value="007">대전광역시</option><option value="008">울산광역시</option><option value="009">세종특별자치시</option><option value="010">경기도</option><option value="011">강원도</option><option value="012">충청북도</option><option value="013">충청남도</option><option value="014">전라북도</option><option value="015">전라남도</option><option value="016">경상북도</option><option value="017">경상남도</option><option value="018">제주특별자치도</option></select></span><span class="ui-control ui-textbox" id="ui-171a0f5a2c6" style="left: 130px; top: 138px; width: 404px; height: 54px; right: auto; bottom: auto; color: rgb(102, 102, 102); font-size: 21px; z-index: 2;" ui-class="UITextBox" ui-id="TB_roadName" dock="0" anchor="0b0101" xonclick="TB_roadName_OnClick"><span><input class="ui-input" type="text" maxlength="20" value=""></span></span><span class="ui-control ui-textbox" id="ui-171a0f5e859" style="left: 554px; top: 138px; width: 404px; height: 54px; right: auto; bottom: auto; color: rgb(102, 102, 102); font-size: 21px; z-index: 3;" ui-class="UITextBox" ui-id="TB_roadNum" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="20" value=""></span></span><span class="ui-control ui-button theme-blue" id="ui-171a0f63dd5" style="border-radius: 12px; left: 1007px; top: 67px; width: 144px; height: 123px; right: auto; bottom: auto; font-size: 24px; z-index: 4;" ui-class="UIButton" ui-id="BT_newAddr" dock="0" anchor="0b0101" theme="blue" icon-image-padding="30,0,0,0"><span class="ui-content" style="left: 15px; top: 0px; right: 0px; bottom: 0px;">검색</span><span class="ui-icon-image" style='background-position: left; left: 30px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/search.png");'></span></span><span class="ui-control ui-textbox" id="ui-173bc8a3139" style="left: 554px; top: 64px; width: 404px; height: 54px; right: auto; bottom: auto; color: rgb(102, 102, 102); font-size: 21px; z-index: 0;" ui-class="UITextBox" ui-id="TB_cityName_new" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="20" value=""></span></span><span class="ui-control ui-label" id="ui-17471509a69" style='left: 130px; top: 196px; width: 404px; height: 32px; right: auto; bottom: auto; font-family: "Noto sans CJK KR"; font-size: 20px; z-index: 5;' ui-class="UILabel" ui-id="LB_label2" dock="0" anchor="0b0101"><span class="ui-content">(예: 마포대로 20번길, 중앙대로)</span></span><span class="ui-control ui-label" id="ui-17471516c89" style='left: 555px; top: 196px; width: 404px; height: 32px; right: auto; bottom: auto; font-family: "Noto sans CJK KR"; font-size: 20px; z-index: 6;' ui-class="UILabel" ui-id="LB_label3" dock="0" anchor="0b0101"><span class="ui-content">(예: 26, 101)</span></span></div></div><div class="ui-tab-page ui-container ui-tab-selected" id="ui-1744237e028" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-173c158cb7a" style="left: 0px; top: 0px; width: 1280px; height: 242px; right: auto; bottom: auto; z-index: 0; background-color: rgb(242, 242, 242);" ui-class="UIPanel" ui-id="PN_panel3" dock="0" anchor="0b0101"><span class="ui-control ui-combobox" id="ui-173c158cb7c" style="border-color: rgb(158, 158, 158); left: 130px; top: 64px; width: 404px; height: 54px; right: auto; bottom: auto; color: rgb(102, 102, 102); font-size: 18px; z-index: 1;" ui-class="UIComboBox" ui-id="DL_oldaddr" dock="0" anchor="0b0101" xonselecteditemchanged="DL_oldaddr_OnSelectedItemChanged"><span class="ui-content">전체</span><span class="ui-icon-image" fontsize="16">▼ </span><select><option></option><option selected="selected" value="001">전체</option><option value="002">서울특별시</option><option value="003">부산광역시</option><option value="004">대구광역시</option><option value="005">인천광역시</option><option value="006">광주광역시</option><option value="007">대전광역시</option><option value="008">울산광역시</option><option value="009">세종특별자치시</option><option value="010">경기도</option><option value="011">강원도</option><option value="012">충청북도</option><option value="013">충청남도</option><option value="014">전라북도</option><option value="015">전라남도</option><option value="016">경상북도</option><option value="017">경상남도</option><option value="018">제주특별자치도</option></select></span><span class="ui-control ui-textbox" id="ui-173c158cb7d" style="left: 130px; top: 138px; width: 404px; height: 54px; right: auto; bottom: auto; color: rgb(102, 102, 102); font-size: 21px; z-index: 2;" ui-class="UITextBox" ui-id="TB_district" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="20" value=""></span></span><span class="ui-control ui-textbox" id="ui-173c158cb7e" style="left: 554px; top: 138px; width: 201px; height: 54px; right: auto; bottom: auto; color: rgb(102, 102, 102); font-size: 21px; z-index: 3;" ui-class="UITextBox" ui-id="TB_districtNum1" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="20" value=""></span></span><span class="ui-control ui-button theme-blue" id="ui-173c158cb7f" style="border-radius: 12px; left: 1007px; top: 67px; width: 144px; height: 123px; right: auto; bottom: auto; font-size: 24px; z-index: 4;" ui-class="UIButton" ui-id="BT_oldAddr" dock="0" anchor="0b0101" theme="blue" icon-image-padding="30,0,0,0"><span class="ui-content" style="left: 15px; top: 0px; right: 0px; bottom: 0px;">검색</span><span class="ui-icon-image" style='background-position: left; left: 30px; top: 0px; right: 0px; bottom: 0px; background-image: url("/KRG/media/search.png");'></span></span><span class="ui-control ui-textbox" id="ui-173c158cb80" style="left: 554px; top: 64px; width: 404px; height: 54px; right: auto; bottom: auto; color: rgb(102, 102, 102); font-size: 21px; z-index: 0;" ui-class="UITextBox" ui-id="TB_cityName_old" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="20" value=""></span></span><span class="ui-control ui-textbox" id="ui-1741f29b8d9" style="left: 774px; top: 138px; width: 184px; height: 54px; right: auto; bottom: auto; color: rgb(102, 102, 102); font-size: 21px; z-index: 5;" ui-class="UITextBox" ui-id="TB_districtNum2" dock="0" anchor="0b0101"><span><input class="ui-input" type="text" maxlength="20" value=""></span></span><span class="ui-control ui-label" id="ui-174715204ec" style='left: 130px; top: 196px; width: 404px; height: 32px; right: auto; bottom: auto; font-family: "Noto sans CJK KR"; font-size: 20px; z-index: 6;' ui-class="UILabel" ui-id="LB_label4" dock="0" anchor="0b0101"><span class="ui-content">(예: 대치동, 등촌동, 효자동, 방배3동)</span></span><span class="ui-control ui-label" id="ui-17471520504" style='left: 554px; top: 196px; width: 404px; height: 32px; right: auto; bottom: auto; font-family: "Noto sans CJK KR"; font-size: 20px; z-index: 7;' ui-class="UILabel" ui-id="LB_label5" dock="0" anchor="0b0101"><span class="ui-content">(예: 185)</span></span></div></div></div></div><div class="ui-control ui-tab ui-dock ui-dock-fill ui-tab-head-hide" id="ui-174335ffb68" style="left: 0px; top: 413.97px; width: auto; height: auto; right: 0px; bottom: 140px; z-index: 3;" ui-class="UITab" ui-id="TP_tab1" dock="5" anchor="0b0101" dock-r="left:91.4px;top:510.58px;width:200px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="200" xonchangedtab="TP_tab1_OnChangedTab"><div class="ui-tab-heads" id="ui-1744237e029"><div class="ui-tab-head ui-tab-selected" id="ui-1744237e02a">keyboard</div><div class="ui-tab-head" id="ui-1744237e02b">NO_AddressList</div><div class="ui-tab-head" id="ui-1744237e02c">AddressList</div><div class="ui-tab-head" id="ui-17470acf11f">새탭</div></div><div class="ui-tab-pages" id="ui-1744237e02d"><div class="ui-tab-page ui-container ui-tab-selected" id="ui-1744237e02e" ui-class="UITapPage"><div class="ui-control ui-panel ui-container ui-dock ui-dock-fill" id="ui-174336081e8" style="left: 0px; top: 0px; width: auto; height: auto; right: 0px; bottom: 0px; z-index: 0;" ui-class="UIPanel" ui-id="PN_keyboard" dock="5" anchor="0b0101" dock-r="left:376.11px;top:187.79px;width:200px;height:100px;right:auto;bottom:auto" dock-h="100" dock-w="200"><iframe class="ui-include" src="/core/keyboard.html" frameborder="0" scrolling="0"></iframe></div></div><div class="ui-tab-page ui-container" id="ui-1744237e02f" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-171a16cadee" style="left: 90px; top: 20px; width: 1080px; height: 430px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_address_NO" dock="0" anchor="0b0101" back-image-pos="508px,150px"><span class="ui-back-image" style='background-position: 508px 150px; background-image: url("/KRG/media/no_data_ic.png");'></span><span class="ui-control ui-label" id="ui-171a16f17de" style='left: 413px; top: 252px; width: 255px; height: 32px; right: auto; bottom: auto; font-family: "IBK IDream M"; font-size: 28px; z-index: 0;' ui-class="UILabel" ui-id="LB_label29" dock="0" anchor="0b0101"><span class="ui-content" style="justify-content: center;">검색결과가 없습니다.</span></span></div></div><div class="ui-tab-page ui-container" id="ui-1744237e030" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-171a104a9ff" style="left: 90px; top: 30px; width: 1080px; height: 410px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_address" dock="0" anchor="0b0101"></div><span class="ui-control ui-scrollbar" id="ui-171a1060ca8" style="left: 1219px; top: 20px; width: 32px; height: 434px; right: auto; bottom: auto; z-index: 1;" ui-class="UIScrollBar" ui-id="SB_scrollbar6" dock="0" anchor="0b0101" scroll-control-id="PN_address"><span class="track"></span><span class="trackbutton"></span></span></div><div class="ui-tab-page ui-container" id="ui-17470acf120" ui-class="UITapPage"><div class="ui-control ui-panel ui-container" id="ui-171a56d1b7e" style="left: 540px; top: 135px; width: 200px; height: 200px; right: auto; bottom: auto; z-index: 0;" ui-class="UIPanel" ui-id="PN_panel_loader" dock="0" anchor="0b0101"><span class="ui-back-image" style='background-image: url("/KRG/media/loader.gif");'></span></div></div></div></div></div></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>/*****************************************************************************
+*
+*			include
+*
+******************************************************************************/
+includeJSS("common","/KRG/0301/common.js");
+
+
+var keyboard = PN_keyboard.IncludeWindow;
+//var newAddress = '';
+//var oldAddress = '';
+
+var addrFrom = "";                       // 주소 어디서 호출했는지 확인
+var buildingNum = "";                        // 건물관리번호
+
+//선택된 주소 값 저장
+var codeText;
+var addressText;
+var listSelect;
+var buildingText;
+//
+
+var tabIndex;
+var addrSidoNm;
+var p = parent;
+
+function Form_OnLoad(e){
+
+	TB_cityName_new.$.find("> span > input").attr("placeholder","시군구").addClass("small");
+	TB_roadName.$.find("> span > input").attr("placeholder","도로명(필수)").addClass("orange");
+	TB_roadNum.$.find("> span > input").attr("placeholder","본건물번호(필수)").addClass("orange");
+	
+	TB_cityName_old.$.find("> span > input").attr("placeholder","시군구").addClass("small");
+	TB_district.$.find("> span > input").attr("placeholder","행정동(필수)").addClass("orange");
+	TB_districtNum1.$.find("> span > input").attr("placeholder","본번(필수)").addClass("orange");
+	TB_districtNum2.$.find("> span > input").attr("placeholder","부번").addClass("small");
+	
+	var style = document.createElement('style');
+	style.innerHTML = ".small:-ms-input-placeholder{padding-left:10px;font-size:18px;color:rgb(102, 102, 102);};"
+	document.head.appendChild(style);
+	DL_newaddr.$.find(">.ui-content").css("font-size","21px");
+	DL_oldaddr.$.find(">.ui-content").css("font-size","21px");
+
+	
+	$(Form.element).on("click","[ui-id=TB_cityName_new]",function(e){
+		keyboard.txtBox = TB_cityName_new;
+		inputFocus(this);
+	})
+	$(Form.element).on("click","[ui-id=TB_roadName]",function(e){
+		keyboard.txtBox = TB_roadName;
+		inputFocus(this);
+	})
+	$(Form.element).on("click","[ui-id=TB_roadNum]",function(e){
+		keyboard.txtBox = TB_roadNum;
+		inputFocus(this);
+	})
+	$(Form.element).on("click","[ui-id=TB_cityName_old]",function(e){
+		keyboard.txtBox = TB_cityName_old;
+		inputFocus(this);
+	})
+	$(Form.element).on("click","[ui-id=TB_district]",function(e){
+		keyboard.txtBox = TB_district;
+		inputFocus(this);
+	})
+	$(Form.element).on("click","[ui-id=TB_districtNum1]",function(e){
+		keyboard.txtBox = TB_districtNum1;
+		inputFocus(this);
+	})
+	$(Form.element).on("click","[ui-id=TB_districtNum2]",function(e){
+		keyboard.txtBox = TB_districtNum2;
+		inputFocus(this);
+	})
+
+}
+function inputFocus(ip){
+	//인풋 포커스 컨트롤
+	$('input').parent().parent().css("border","2px solid #9e9e9e");
+	$('.ui-combobox').css("border","2px solid #9e9e9e");
+	$(ip).css({'border': '3px solid #046fd9'});
+	
+	//인풋 클릭 시 키보드로 탭 전환
+	TP_tab1.SelectedTabIndex = 0;
+	//
+}
+
+//도로명 시 콤보박스 클릭 포커스
+$("[ui-id='DL_newaddr']").on("mousedown",function(e){
+	//인풋 포커스 컨트롤
+	$('input').parent().parent().css("border","2px solid #9e9e9e");
+	$(this).css({'border': '3px solid #046fd9'});
+	//
+});
+
+//지번 시 콤보박스 클릭 포커스
+$("[ui-id='DL_oldaddr']").on("mousedown",function(e){
+	//인풋 포커스 컨트롤
+	$('input').parent().parent().css("border","2px solid #9e9e9e");
+	$(this).css({'border': '3px solid #046fd9'});
+	//
+});
+
+
+
+
+///////////////////////////////////////////////////////////////////////////
+//
+//                          주소 검색 
+//
+///////////////////////////////////////////////////////////////////////////
+
+	
+
+	//도로명 시도명 값 전송
+	function DL_newaddr_OnSelectedItemChanged(e){
+		addrSidoNm = e.after.text;		
+		return addrSidoNm;
+	}
+	//지번 시도명 값 전송
+	function DL_oldaddr_OnSelectedItemChanged(e){
+		addrSidoNm = e.after.text;		
+		return addrSidoNm;
+	}
+
+	//도로명탭 검색버튼 
+	BT_newAddr.$.click(function(){
+		// 주소 검색 실행
+		tabIndex = TP_tab2.SelectedTabIndex;
+		addrSidoNm = DL_newaddr.Text == "전체" ? "" : addrSidoNm;
+		p.fnSearch();
+
+	});
+	
+	//지번탭 검색버튼
+	BT_oldAddr.$.click(function(){
+		// 주소 검색 실행
+		tabIndex = TP_tab2.SelectedTabIndex;
+		addrSidoNm = DL_oldaddr.Text == "전체" ? "" : addrSidoNm;
+		p.fnSearch();
+
+	});
+
+var newAddrInfo//신주소
+var oldAddrDong//행정동
+var oldAddrBon1//본번지
+var oldAddrBon2//부번지
+var buildingInfo//빌딩명
+
+var addrInfo; //주소합치기
+
+	//주소 검색 결과 리스트 화면
+	function setAddressCard(data){	
+		
+		let tag = [];
+		
+		for(let i=0;i<data.length;i++){
+			let r = data[i];
+			
+			newAddrInfo = r.RDN1_ADR.trim(); //신주소
+			oldAddrDong = r.EMD_ADR.trim(); //행정동
+			oldAddrBon1 = r.OGNL_NAD.trim(); //본번지
+			oldAddrBon2 = r.SB_NAD.trim(); //부번지
+			buildingInfo = r.BLDN_NM.trim(); //빌딩명
+			buildingNum = r.BLDN_MNGM_NO;//건물관리번호
+			console.log(i + ', 건물관리번호 : ' + buildingNum);
+			if(addrFrom == "newaddr"){
+				//신주소
+				//빌딩명 유무에 따른 처리
+				addrInfo = buildingInfo == '' ? newAddrInfo + ' (' + oldAddrDong + ')' : newAddrInfo + ' (' + oldAddrDong + ', ' + buildingInfo + ')';
+			}else if(addrFrom == "oldaddr"){
+				//구주소
+				//부번 유무에 따른 처리
+				var subAdd = oldAddrBon2 == '' ? ' (' + oldAddrDong + " " + oldAddrBon1 : ' (' + oldAddrDong + " " + oldAddrBon1 + "-" + oldAddrBon2;
+				//빌딩명 유무에 따른 처리
+				var bulidingInfo = buildingInfo == '' ? ')' : ', ' + buildingInfo + ')';
+				addrInfo = newAddrInfo + subAdd + bulidingInfo;
+			}
+			
+			tag.push(""
+		        +'<div class="list_info">'
+		        +'	<div class="text_area">'
+		        +'    <div class="sub_text code">' + r.ZPCD + '</div>'
+		        +'    <div class="main_text address">' + addrInfo + '</div>'
+		        +'	  <span class="buildingNum" style="display:none;">' + buildingNum + '</span>'
+		        +'	</div>'
+		        +'  <div class="next_img"></div>'
+		        +'</div>'		
+			);
+		}
+		
+		
+		//
+		let $PN_address = $("div[ui-id='PN_address']");
+		
+		$PN_address.html(""
+			+'<div class="list-panel">'
+			+tag.join("")
+			+'</div>'
+		);		
+		$PN_address_panel = $("div[ui-id='PN_account'] > div.list-panel");
+	    $PN_address_panel.css("visibility","visible");	
+		SB_scrollbar6.Invalidate();
+	    //리스트 버튼 이벤트
+	    PN_address.$.find(".list_info").mousedown(select);
+
+	    function select(e) {
+	    	PN_address.$.find("div.list_info").css('border','1px solid #9c9c9c');
+	        
+	        var click = this;
+	        $(click).animate({
+	            top: '+=5px',
+	            opacity: '0.5',
+	        }, 50, reback);
+	
+	        function reback() {
+	            $(click).animate({
+	                top: '-=5px',
+	                opacity: '1',
+	            }, 50);	
+	            click = null;
+	        }
+
+	        $(click).css({ "border": "3px solid #046fd9"});
+	        BT_right.Enabled = true;
+	        chs = null;
+	       
+	        //선택된 값 저장
+	        codeText = $(click).find('.code').text();
+	        addressText = $(click).find('.address').text();
+	        buildingText = $(click).find('.buildingNum').text();
+	        console.log('선택된 건물관리번호 : ' + buildingText);
+	    };
+	};
+
+
+///////////////////////////////////////////////////////
+// 음성인식 관련 로직 추가
+
+var gSttType = 0;
+
+function BT_button20_OnClick(e){
+	
+	let tabPage = TP_tab2.SelectedTabIndex;
+
+	if (tabPage == 0)
+		gSttType = 2;		// 주소(도로명)
+	else
+		gSttType = 1;		// 주소(지번)
+	
+	let p = parent;
+	p.ChangeTab("9052");	
+}
+
+function DisplayMsg(msg){
+console.log(msg);
+	
+	//TODO : 아래 msg를 각 텍스트박스에  출력 필요
+	// "경기도|용인시|신수로|799|"
+	// "||신수로|799|
+	// "서울특별시|마포구|||"
+	// "||||"	-> 빈 응답이 올 수 있음
+	
+	var msgArr;//주소 배열
+	
+	if(msg){
+		msgArr = msg.split("|");//"|"기준으로 숫자 나누기
+		if(gSttType == 2){
+			if(msgArr[0].length !== 0){
+				if(msgArr[0] == "서울특별시" || msgArr[0] == "서울시"){
+				    DL_newaddr.SelectedIndex = 1;
+				} else if(msgArr[0] == "부산광역시" || msgArr[0] == "부산시"){
+				    DL_newaddr.SelectedIndex = 2;
+				} else if(msgArr[0] == "대구광역시" || msgArr[0] == "대구시"){
+				    DL_newaddr.SelectedIndex = 3;
+				} else if(msgArr[0] == "인천광역시" || msgArr[0] == "인천시"){
+				    DL_newaddr.SelectedIndex = 4;
+				} else if(msgArr[0] == "광주광역시" || msgArr[0] == "광주시"){
+				    DL_newaddr.SelectedIndex = 5;
+				} else if(msgArr[0] == "대전광역시" || msgArr[0] == "대전시"){
+				    DL_newaddr.SelectedIndex = 6;
+				} else if(msgArr[0] == "울산광역시" || msgArr[0] == "울산시"){
+				    DL_newaddr.SelectedIndex = 7;
+				} else if(msgArr[0] == "세종특별자치시" || msgArr[0] == "세종시"){
+				    DL_newaddr.SelectedIndex = 8;
+				} else if(msgArr[0] == "경기도"){
+				    DL_newaddr.SelectedIndex = 9;
+				} else if(msgArr[0] == "강원도"){
+				    DL_newaddr.SelectedIndex = 10;
+				} else if(msgArr[0] == "충청북도" || msgArr[0] == "충북"){
+				    DL_newaddr.SelectedIndex = 11;
+				} else if(msgArr[0] == "충청남도" || msgArr[0] == "충남"){
+				    DL_newaddr.SelectedIndex = 12;
+				} else if(msgArr[0] == "전라북도" || msgArr[0] == "전북"){
+				    DL_newaddr.SelectedIndex = 13;
+				} else if(msgArr[0] == "전라남도" || msgArr[0] == "전남"){
+				    DL_newaddr.SelectedIndex = 14;
+				} else if(msgArr[0] == "경상북도" || msgArr[0] == "경북"){
+				    DL_newaddr.SelectedIndex = 15;
+				} else if(msgArr[0] == "경상남도" || msgArr[0] == "경남"){
+				    DL_newaddr.SelectedIndex = 16;
+				} else if(msgArr[0] == "제주특별자치도" || msgArr[0] == "제주도"){
+				    DL_newaddr.SelectedIndex = 17;
+				} else{
+					DL_newaddr.SelectedIndex = 0;
+				}
+			}
+	
+			TB_cityName_new.Text = msgArr[1].length !== 0 ? msgArr[1] : "";
+			TB_roadName.Text = msgArr[2].length !== 0 ? msgArr[2] : "";
+			TB_roadNum.Text = msgArr[3].length !== 0 ? msgArr[3] : "";
+	
+	
+		} else {
+		
+			if(msgArr[0].length !== 0){
+				if(msgArr[0] == "서울특별시" || msgArr[0] == "서울시"){
+				    DL_oldaddr.SelectedIndex = 1;
+				} else if(msgArr[0] == "부산광역시" || msgArr[0] == "부산시"){
+				    DL_oldaddr.SelectedIndex = 2;
+				} else if(msgArr[0] == "대구광역시" || msgArr[0] == "대구시"){
+				    DL_oldaddr.SelectedIndex = 3;
+				} else if(msgArr[0] == "인천광역시" || msgArr[0] == "인천시"){
+				    DL_oldaddr.SelectedIndex = 4;
+				} else if(msgArr[0] == "광주광역시" || msgArr[0] == "광주시"){
+				    DL_oldaddr.SelectedIndex = 5;
+				} else if(msgArr[0] == "대전광역시" || msgArr[0] == "대전시"){
+				    DL_oldaddr.SelectedIndex = 6;
+				} else if(msgArr[0] == "울산광역시" || msgArr[0] == "울산시"){
+				    DL_oldaddr.SelectedIndex = 7;
+				} else if(msgArr[0] == "세종특별자치시" || msgArr[0] == "세종시"){
+				    DL_oldaddr.SelectedIndex = 8;
+				} else if(msgArr[0] == "경기도"){
+				    DL_oldaddr.SelectedIndex = 9;
+				} else if(msgArr[0] == "강원도"){
+				    DL_oldaddr.SelectedIndex = 10;
+				} else if(msgArr[0] == "충청북도" || msgArr[0] == "충북"){
+				    DL_oldaddr.SelectedIndex = 11;
+				} else if(msgArr[0] == "충청남도" || msgArr[0] == "충남"){
+				    DL_oldaddr.SelectedIndex = 12;
+				} else if(msgArr[0] == "전라북도" || msgArr[0] == "전북"){
+				    DL_oldaddr.SelectedIndex = 13;
+				} else if(msgArr[0] == "전라남도" || msgArr[0] == "전남"){
+				    DL_oldaddr.SelectedIndex = 14;
+				} else if(msgArr[0] == "경상북도" || msgArr[0] == "경북"){
+				    DL_oldaddr.SelectedIndex = 15;
+				} else if(msgArr[0] == "경상남도" || msgArr[0] == "경남"){
+				    DL_oldaddr.SelectedIndex = 16;
+				} else if(msgArr[0] == "제주특별자치도" || msgArr[0] == "제주도"){
+				    DL_oldaddr.SelectedIndex = 17;
+				} else{
+					DL_oldaddr.SelectedIndex = 0;
+				}
+				console.log(msgArr[0]);
+			}		
+			TB_cityName_old.Text = msgArr[1].length !== 0 ? msgArr[1] : "";
+			TB_district.Text = msgArr[2].length !== 0 ? msgArr[2] : "";
+			TB_districtNum1.Text = msgArr[3].length !== 0 ? msgArr[3] : "";
+			TB_districtNum2.Text = msgArr[4].length !== 0 ? msgArr[4] : "";	
+		}
+	}
+}
+///////////////////////////////////////////////////////
+
+
+
+
+
+		
+var setZipCode;	
+var setAddress;
+var setBuildingNum;
+
+function BT_right_OnClick(e){
+	setZipCode = codeText;	
+	setAddress = addressText;
+	setBuildingNum = buildingText;
+	p.iwin4.addrBtn_Click();
+	//p.ChangeTab("3112");
+	p.popupKey.TB_textbox1.Text = "";
+	p.ChangeTab("9044");
+}
+
+//도로명,지번 탭 변경 시 하단 탭 키보드로 바뀌도록
+function TP_tab2_OnChangedTab(e){
+console.log('1')
+console.log(e.after.index)
+	TP_tab1.SelectedTabIndex = 0;
+	DL_newaddr.SelectedIndex = 0;
+	DL_oldaddr.SelectedIndex = 0;
+	$('input').val("");
+	$('input').parent().parent().css("border","2px solid #9e9e9e");
+	if(e.after.index == 0){
+		p.gWin1113.TB_roadName.$.css("border","3px solid #046fd9");
+		keyboard.txtBox = TB_roadName;
+	}else{
+		p.gWin1113.TB_district.$.css("border","3px solid #046fd9");
+		keyboard.txtBox = TB_district;
+	}
+	
+	
+}
+
+//주소 검색 키보드, 리스트 등 탭 변경 시 확인버튼 컨트롤
+function TP_tab1_OnChangedTab(e){
+	BT_right.Enabled = false;
+}
+
+
+function BT_left_OnClick(e){
+	p.ChangeTab("3112");
+}</script></xjscript></body>
+</html>

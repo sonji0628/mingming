@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.handup {
+	color:#f45408;
+	-ms-animation-name : hands-up;
+	-ms-animation-duration : .3s;
+	-ms-animation-direction:alternate;
+	-ms-animation-iteration-count:infinite;
+	-ms-animation-timing-function:ease-in;
+}
+
+@-ms-keyframes hands-up {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.handon {
+	color:#176bc8;
+	-ms-animation-name : hands_on;
+	-ms-animation-duration : .3s;
+	-ms-animation-direction:alternate;
+	-ms-animation-iteration-count:infinite;
+	-ms-animation-timing-function:ease-in;
+}
+
+@-ms-keyframes hands_on {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,744 @@
+<!doctype html>
+<html version="1000">
+<head>
+	<meta charset="utf-8">
+	<title>ezSmartPlatform</title>
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="[김윤섭][kkobiboy]">
+	<link id="ui-style-core" rel="stylesheet" type="text/css" href="/core/app.controls.css">
+	<script type="text/javascript" charset="utf-8" src="/HtaPlatform/Core/Form.JsApi"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.jquery.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/core/app.controls.js"></script>
+	<style id="ui-style-user" type="text/css"></style>
+	<script id="ui-script-user" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;" class="ui-pre-load"><div class="ui-document ui-container" id="ui-document" lang="kr" xonload="Form_OnLoad" ui-class="UIForm" ui-id="Form" dock="5" anchor="0b0101" ide-size="1280,657"><span class="ui-control ui-button theme-blue" id="ui-171051452fb" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 70px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 0; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_1" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_1_OnClick"><span class="ui-content">1</span></span><span class="ui-control ui-button theme-blue" id="ui-171051ccabc" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 165px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 1; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_2" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_2_OnClick"><span class="ui-content">2</span></span><span class="ui-control ui-button theme-blue" id="ui-171051ce788" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 260px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 2; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_3" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_3_OnClick"><span class="ui-content">3</span></span><span class="ui-control ui-button theme-blue" id="ui-171051ce7c8" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 355px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 3; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_4" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_4_OnClick"><span class="ui-content">4</span></span><span class="ui-control ui-button theme-blue" id="ui-171051d0be2" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 450px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 4; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_5" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_5_OnClick"><span class="ui-content">5</span></span><span class="ui-control ui-button theme-blue" id="ui-171051d0bfb" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 545px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 5; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_6" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_6_OnClick"><span class="ui-content">6</span></span><span class="ui-control ui-button theme-blue" id="ui-171051e56c8" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 640px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 6; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_7" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_7_OnClick"><span class="ui-content">7</span></span><span class="ui-control ui-button theme-blue" id="ui-171051e5703" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 735px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 7; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_8" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_8_OnClick"><span class="ui-content">8</span></span><span class="ui-control ui-button theme-blue" id="ui-171051e5724" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 830px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 8; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_9" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_9_OnClick"><span class="ui-content">9</span></span><span class="ui-control ui-button theme-blue" id="ui-171051e573d" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 925px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 9; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_10" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_10_OnClick"><span class="ui-content">0</span></span><span class="ui-control ui-button theme-blue" id="ui-171051e5756" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 1020px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: white; font-size: 35px; font-weight: bold; z-index: 10; background-color: skyblue;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_11" dock="0" anchor="0b0101" theme="blue" icon-image-align="left,middle" xonclick="BT_KEY_KOR_1_11_OnClick"><span class="ui-content">←</span></span><span class="ui-control ui-button theme-blue" id="ui-171051e576f" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 1115px; top: 158px; width: 90px; height: 90px; right: auto; bottom: auto; color: white; font-size: 26px; font-weight: bold; z-index: 11;" ui-class="UIButton" ui-id="BT_KEY_KOR_1_12" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_1_12_OnClick"><span class="ui-content">정정</span></span><span class="ui-control ui-button theme-blue" id="ui-171051eb050" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 165px; top: 253px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 12; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_2_1" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_2_1_OnClick"><span class="ui-content">ㅂ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051eb069" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 260px; top: 253px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 13; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_2_2" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_2_2_OnClick"><span class="ui-content">ㅈ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051eb080" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 355px; top: 253px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 14; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_2_3" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_2_3_OnClick"><span class="ui-content">ㄷ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051eb0a6" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 450px; top: 253px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 15; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_2_4" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_2_4_OnClick"><span class="ui-content">ㄱ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051eb0be" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 545px; top: 253px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 16; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_2_5" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_2_5_OnClick"><span class="ui-content">ㅅ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051eb0d7" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 640px; top: 253px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 17; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_2_6" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_2_6_OnClick"><span class="ui-content">ㅛ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051eb0ef" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 735px; top: 253px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 18; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_2_7" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_2_7_OnClick"><span class="ui-content">ㅕ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051eb118" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 830px; top: 253px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 19; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_2_8" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_2_8_OnClick"><span class="ui-content">ㅑ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051eb130" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 925px; top: 253px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 20; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_2_9" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_2_9_OnClick"><span class="ui-content">ㅐ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051eb149" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 1020px; top: 253px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 21; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_2_10" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_2_10_OnClick"><span class="ui-content">ㅔ</span></span>
+<span class="ui-control ui-button theme-blue" id="ui-171051f507e" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 212px; top: 348px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 22; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_3_1" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_3_1_OnClick"><span class="ui-content">ㅁ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f5099" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 307px; top: 348px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 23; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_3_2" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_3_2_OnClick"><span class="ui-content">ㄴ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f50b2" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 402px; top: 348px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 24; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_3_3" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_3_3_OnClick"><span class="ui-content">ㅇ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f50cc" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 497px; top: 348px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 25; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_3_4" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_3_4_OnClick"><span class="ui-content">ㄹ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f50f6" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 592px; top: 348px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 26; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_3_5" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_3_5_OnClick"><span class="ui-content">ㅎ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f510f" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 687px; top: 348px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 27; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_3_6" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_3_6_OnClick"><span class="ui-content">ㅗ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f5128" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 782px; top: 348px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 28; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_3_7" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_3_7_OnClick"><span class="ui-content">ㅓ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f5142" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 877px; top: 348px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 29; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_3_8" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_3_8_OnClick"><span class="ui-content">ㅏ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f515b" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 972px; top: 348px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 30; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_3_9" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_3_9_OnClick"><span class="ui-content">ㅣ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f51a7" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 70px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 31; background-color: silver;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_1" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_1_OnClick"><span class="ui-content">-</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f51c1" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 165px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 32; background-color: silver;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_2" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_2_OnClick"><span class="ui-content">↑</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f51da" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 260px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 33; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_3" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_3_OnClick"><span class="ui-content">ㅋ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f5207" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 355px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 34; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_4" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_4_OnClick"><span class="ui-content">ㅌ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f5220" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 450px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 35; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_5" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_5_OnClick"><span class="ui-content">ㅊ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f523a" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 545px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 36; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_6" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_6_OnClick"><span class="ui-content">ㅍ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f5254" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 640px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 37; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_7" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_7_OnClick"><span class="ui-content">ㅠ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f526d" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 735px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 38; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_8" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_8_OnClick"><span class="ui-content">ㅜ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f5289" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 830px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 39; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_9" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_9_OnClick"><span class="ui-content">ㅡ</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f52a3" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 925px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 40; background-color: silver;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_10" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_10_OnClick"><span class="ui-content">&lt;</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f52bc" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 1020px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 41; background-color: silver;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_11" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_11_OnClick"><span class="ui-content">&gt;</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f52dc" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 1115px; top: 443px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 42; background-color: silver;" ui-class="UIButton" ui-id="BT_KEY_KOR_4_12" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_4_12_OnClick"><span class="ui-content">@</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f7fb4" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 115px; top: 538px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 43; background-color: silver;" ui-class="UIButton" ui-id="BT_KEY_KOR_5_1" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_5_1_OnClick"><span class="ui-content">_</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f7fcd" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 210px; top: 538px; width: 191px; height: 90px; right: auto; bottom: auto; color: black; font-size: 28px; font-weight: bold; z-index: 44; background-color: silver;" ui-class="UIButton" ui-id="BT_KEY_KOR_5_2" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_5_2_OnClick"><span class="ui-content">한/영</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f8005" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 406px; top: 538px; width: 466px; height: 90px; right: auto; bottom: auto; color: black; font-size: 28px; font-weight: bold; z-index: 45; background-color: whitesmoke;" ui-class="UIButton" ui-id="BT_KEY_KOR_5_3" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_5_3_OnClick"><span class="ui-content">한칸 띄우기</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f8086" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 877px; top: 538px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 46; background-color: silver;" ui-class="UIButton" ui-id="BT_KEY_KOR_5_4" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_5_4_OnClick"><span class="ui-content">(</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f80b2" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 972px; top: 538px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 47; background-color: silver;" ui-class="UIButton" ui-id="BT_KEY_KOR_5_5" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_5_5_OnClick"><span class="ui-content">)</span></span><span class="ui-control ui-button theme-blue" id="ui-171051f80cb" style="border-radius: 60px; border: 1px solid darkgray; border-image: none; left: 1067px; top: 538px; width: 90px; height: 90px; right: auto; bottom: auto; color: black; font-size: 35px; font-weight: bold; z-index: 48; background-color: silver;" ui-class="UIButton" ui-id="BT_KEY_KOR_5_6" dock="0" anchor="0b0101" theme="blue" xonclick="BT_KEY_KOR_5_6_OnClick"><span class="ui-content">.</span></span><span class="ui-control ui-textbox" id="ui-17105215057" style="border-width: 2px; left: 357px; top: 37px; width: 559px; height: 77px; right: auto; bottom: auto; font-size: 38px; z-index: 49;" ui-class="UITextBox" ui-id="TB_KEY_KOR" dock="0" anchor="0b0101"><span><input class="ui-input" style="text-align: center;" type="text" maxlength="32767"></span></span></div><xcomponent></xcomponent><xjscript><script id='xjscript' type='text/plain'>var IsShift = false;
+var IsHangul = true;
+
+
+function BT_KEY_KOR_4_2_OnClick(e){
+	
+	if ( IsShift == false && IsHangul == true ){	
+		BT_KEY_KOR_2_1.Text = "ㅃ";
+		BT_KEY_KOR_2_2.Text = "ㅉ";
+		BT_KEY_KOR_2_3.Text = "ㄸ";
+		BT_KEY_KOR_2_4.Text = "ㄲ";
+		BT_KEY_KOR_2_5.Text = "ㅆ";
+		BT_KEY_KOR_2_6.Text = "ㅛ";
+		BT_KEY_KOR_2_7.Text = "ㅕ";
+		BT_KEY_KOR_2_8.Text = "ㅑ";
+		BT_KEY_KOR_2_9.Text = "ㅒ";
+		BT_KEY_KOR_2_10.Text = "ㅖ";
+		
+		BT_KEY_KOR_3_1.Text = "ㅁ";
+		BT_KEY_KOR_3_2.Text = "ㄴ";
+		BT_KEY_KOR_3_3.Text = "ㅇ";
+		BT_KEY_KOR_3_4.Text = "ㄹ";
+		BT_KEY_KOR_3_5.Text = "ㅎ";
+		BT_KEY_KOR_3_6.Text = "ㅗ";
+		BT_KEY_KOR_3_7.Text = "ㅓ";
+		BT_KEY_KOR_3_8.Text = "ㅏ";
+		BT_KEY_KOR_3_9.Text = "ㅣ";
+				
+		BT_KEY_KOR_4_3.Text = "ㅋ";
+		BT_KEY_KOR_4_4.Text = "ㅌ";
+		BT_KEY_KOR_4_5.Text = "ㅊ";
+		BT_KEY_KOR_4_6.Text = "ㅍ";
+		BT_KEY_KOR_4_7.Text = "ㅠ";
+		BT_KEY_KOR_4_8.Text = "ㅜ";
+		BT_KEY_KOR_4_9.Text = "ㅡ";
+		
+		
+		BT_KEY_KOR_4_2.BackColor = "SkyBlue";
+		BT_KEY_KOR_4_2.FontColor = "White";
+		IsShift = true;
+	}
+	else if ( IsShift == true && IsHangul == true ){
+		BT_KEY_KOR_2_1.Text = "ㅂ";
+		BT_KEY_KOR_2_2.Text = "ㅈ";
+		BT_KEY_KOR_2_3.Text = "ㄷ";
+		BT_KEY_KOR_2_4.Text = "ㄱ";
+		BT_KEY_KOR_2_5.Text = "ㅅ";
+		BT_KEY_KOR_2_6.Text = "ㅛ";
+		BT_KEY_KOR_2_7.Text = "ㅕ";
+		BT_KEY_KOR_2_8.Text = "ㅑ";
+		BT_KEY_KOR_2_9.Text = "ㅐ";
+		BT_KEY_KOR_2_10.Text = "ㅔ";
+		
+		BT_KEY_KOR_3_1.Text = "ㅁ";
+		BT_KEY_KOR_3_2.Text = "ㄴ";
+		BT_KEY_KOR_3_3.Text = "ㅇ";
+		BT_KEY_KOR_3_4.Text = "ㄹ";
+		BT_KEY_KOR_3_5.Text = "ㅎ";
+		BT_KEY_KOR_3_6.Text = "ㅗ";
+		BT_KEY_KOR_3_7.Text = "ㅓ";
+		BT_KEY_KOR_3_8.Text = "ㅏ";
+		BT_KEY_KOR_3_9.Text = "ㅣ";		
+				
+		BT_KEY_KOR_4_3.Text = "ㅋ";
+		BT_KEY_KOR_4_4.Text = "ㅌ";
+		BT_KEY_KOR_4_5.Text = "ㅊ";
+		BT_KEY_KOR_4_6.Text = "ㅍ";
+		BT_KEY_KOR_4_7.Text = "ㅠ";
+		BT_KEY_KOR_4_8.Text = "ㅜ";
+		BT_KEY_KOR_4_9.Text = "ㅡ";
+		
+		BT_KEY_KOR_4_2.BackColor = "Silver";
+		BT_KEY_KOR_4_2.FontColor = "Black";		
+		IsShift = false;	
+	}
+	else if ( IsShift == false && IsHangul == false ){
+		BT_KEY_KOR_2_1.Text = "Q";
+		BT_KEY_KOR_2_2.Text = "W";
+		BT_KEY_KOR_2_3.Text = "E";
+		BT_KEY_KOR_2_4.Text = "R";
+		BT_KEY_KOR_2_5.Text = "T";
+		BT_KEY_KOR_2_6.Text = "Y";
+		BT_KEY_KOR_2_7.Text = "U";
+		BT_KEY_KOR_2_8.Text = "I";
+		BT_KEY_KOR_2_9.Text = "O";
+		BT_KEY_KOR_2_10.Text = "P";
+		
+		BT_KEY_KOR_3_1.Text = "A";
+		BT_KEY_KOR_3_2.Text = "S";
+		BT_KEY_KOR_3_3.Text = "D";
+		BT_KEY_KOR_3_4.Text = "F";
+		BT_KEY_KOR_3_5.Text = "G";
+		BT_KEY_KOR_3_6.Text = "H";
+		BT_KEY_KOR_3_7.Text = "J";
+		BT_KEY_KOR_3_8.Text = "K";
+		BT_KEY_KOR_3_9.Text = "L";		
+				
+		BT_KEY_KOR_4_3.Text = "Z";
+		BT_KEY_KOR_4_4.Text = "X";
+		BT_KEY_KOR_4_5.Text = "C";
+		BT_KEY_KOR_4_6.Text = "V";
+		BT_KEY_KOR_4_7.Text = "B";
+		BT_KEY_KOR_4_8.Text = "N";
+		BT_KEY_KOR_4_9.Text = "M";		
+		
+		BT_KEY_KOR_4_2.BackColor = "SkyBlue";
+		BT_KEY_KOR_4_2.FontColor = "White";		
+		IsShift = true;
+	}
+	else if ( IsShift == true && IsHangul == false ){
+		BT_KEY_KOR_2_1.Text = "q";
+		BT_KEY_KOR_2_2.Text = "w";
+		BT_KEY_KOR_2_3.Text = "e";
+		BT_KEY_KOR_2_4.Text = "r";
+		BT_KEY_KOR_2_5.Text = "t";
+		BT_KEY_KOR_2_6.Text = "y";
+		BT_KEY_KOR_2_7.Text = "u";
+		BT_KEY_KOR_2_8.Text = "i";
+		BT_KEY_KOR_2_9.Text = "o";
+		BT_KEY_KOR_2_10.Text = "p";
+		
+		BT_KEY_KOR_3_1.Text = "a";
+		BT_KEY_KOR_3_2.Text = "s";
+		BT_KEY_KOR_3_3.Text = "d";
+		BT_KEY_KOR_3_4.Text = "f";
+		BT_KEY_KOR_3_5.Text = "g";
+		BT_KEY_KOR_3_6.Text = "h";
+		BT_KEY_KOR_3_7.Text = "j";
+		BT_KEY_KOR_3_8.Text = "k";
+		BT_KEY_KOR_3_9.Text = "l";		
+				
+		BT_KEY_KOR_4_3.Text = "z";
+		BT_KEY_KOR_4_4.Text = "x";
+		BT_KEY_KOR_4_5.Text = "c";
+		BT_KEY_KOR_4_6.Text = "v";
+		BT_KEY_KOR_4_7.Text = "b";
+		BT_KEY_KOR_4_8.Text = "n";
+		BT_KEY_KOR_4_9.Text = "m";	
+		
+		BT_KEY_KOR_4_2.BackColor = "Silver";
+		BT_KEY_KOR_4_2.FontColor = "Black";			
+		IsShift = false;
+	}
+}
+
+function BT_KEY_KOR_5_2_OnClick(e){
+	if ( IsShift == false && IsHangul == false ){
+		BT_KEY_KOR_2_1.Text = "ㅂ";
+		BT_KEY_KOR_2_2.Text = "ㅈ";
+		BT_KEY_KOR_2_3.Text = "ㄷ";
+		BT_KEY_KOR_2_4.Text = "ㄱ";
+		BT_KEY_KOR_2_5.Text = "ㅅ";
+		BT_KEY_KOR_2_6.Text = "ㅛ";
+		BT_KEY_KOR_2_7.Text = "ㅕ";
+		BT_KEY_KOR_2_8.Text = "ㅑ";
+		BT_KEY_KOR_2_9.Text = "ㅐ";
+		BT_KEY_KOR_2_10.Text = "ㅔ";
+		
+		BT_KEY_KOR_3_1.Text = "ㅁ";
+		BT_KEY_KOR_3_2.Text = "ㄴ";
+		BT_KEY_KOR_3_3.Text = "ㅇ";
+		BT_KEY_KOR_3_4.Text = "ㄹ";
+		BT_KEY_KOR_3_5.Text = "ㅎ";
+		BT_KEY_KOR_3_6.Text = "ㅗ";
+		BT_KEY_KOR_3_7.Text = "ㅓ";
+		BT_KEY_KOR_3_8.Text = "ㅏ";
+		BT_KEY_KOR_3_9.Text = "ㅣ";		
+				
+		BT_KEY_KOR_4_3.Text = "ㅋ";
+		BT_KEY_KOR_4_4.Text = "ㅌ";
+		BT_KEY_KOR_4_5.Text = "ㅊ";
+		BT_KEY_KOR_4_6.Text = "ㅍ";
+		BT_KEY_KOR_4_7.Text = "ㅠ";
+		BT_KEY_KOR_4_8.Text = "ㅜ";
+		BT_KEY_KOR_4_9.Text = "ㅡ";
+		
+		BT_KEY_KOR_5_2.BackColor = "Silver";
+		BT_KEY_KOR_5_2.FontColor = "Black";			
+		IsHangul = true;
+	}
+	else if ( IsShift == true && IsHangul == false ){
+		BT_KEY_KOR_2_1.Text = "ㅃ";
+		BT_KEY_KOR_2_2.Text = "ㅉ";
+		BT_KEY_KOR_2_3.Text = "ㄸ";
+		BT_KEY_KOR_2_4.Text = "ㄲ";
+		BT_KEY_KOR_2_5.Text = "ㅆ";
+		BT_KEY_KOR_2_6.Text = "ㅛ";
+		BT_KEY_KOR_2_7.Text = "ㅕ";
+		BT_KEY_KOR_2_8.Text = "ㅑ";
+		BT_KEY_KOR_2_9.Text = "ㅒ";
+		BT_KEY_KOR_2_10.Text = "ㅖ";
+		
+		BT_KEY_KOR_3_1.Text = "ㅁ";
+		BT_KEY_KOR_3_2.Text = "ㄴ";
+		BT_KEY_KOR_3_3.Text = "ㅇ";
+		BT_KEY_KOR_3_4.Text = "ㄹ";
+		BT_KEY_KOR_3_5.Text = "ㅎ";
+		BT_KEY_KOR_3_6.Text = "ㅗ";
+		BT_KEY_KOR_3_7.Text = "ㅓ";
+		BT_KEY_KOR_3_8.Text = "ㅏ";
+		BT_KEY_KOR_3_9.Text = "ㅣ";
+				
+		BT_KEY_KOR_4_3.Text = "ㅋ";
+		BT_KEY_KOR_4_4.Text = "ㅌ";
+		BT_KEY_KOR_4_5.Text = "ㅊ";
+		BT_KEY_KOR_4_6.Text = "ㅍ";
+		BT_KEY_KOR_4_7.Text = "ㅠ";
+		BT_KEY_KOR_4_8.Text = "ㅜ";
+		BT_KEY_KOR_4_9.Text = "ㅡ";
+		
+		BT_KEY_KOR_5_2.BackColor = "Silver";
+		BT_KEY_KOR_5_2.FontColor = "Black";			
+		IsHangul = true;	
+	}
+	else if ( IsShift == false && IsHangul == true ){
+		BT_KEY_KOR_2_1.Text = "q";
+		BT_KEY_KOR_2_2.Text = "w";
+		BT_KEY_KOR_2_3.Text = "e";
+		BT_KEY_KOR_2_4.Text = "r";
+		BT_KEY_KOR_2_5.Text = "t";
+		BT_KEY_KOR_2_6.Text = "y";
+		BT_KEY_KOR_2_7.Text = "u";
+		BT_KEY_KOR_2_8.Text = "i";
+		BT_KEY_KOR_2_9.Text = "o";
+		BT_KEY_KOR_2_10.Text = "p";
+		
+		BT_KEY_KOR_3_1.Text = "a";
+		BT_KEY_KOR_3_2.Text = "s";
+		BT_KEY_KOR_3_3.Text = "d";
+		BT_KEY_KOR_3_4.Text = "f";
+		BT_KEY_KOR_3_5.Text = "g";
+		BT_KEY_KOR_3_6.Text = "h";
+		BT_KEY_KOR_3_7.Text = "j";
+		BT_KEY_KOR_3_8.Text = "k";
+		BT_KEY_KOR_3_9.Text = "l";		
+				
+		BT_KEY_KOR_4_3.Text = "z";
+		BT_KEY_KOR_4_4.Text = "x";
+		BT_KEY_KOR_4_5.Text = "c";
+		BT_KEY_KOR_4_6.Text = "v";
+		BT_KEY_KOR_4_7.Text = "b";
+		BT_KEY_KOR_4_8.Text = "n";
+		BT_KEY_KOR_4_9.Text = "m";
+		
+		BT_KEY_KOR_5_2.BackColor = "Skyblue";
+		BT_KEY_KOR_5_2.FontColor = "White";		
+		IsHangul = false;
+	}
+	else if ( IsShift == true && IsHangul == true ){
+		BT_KEY_KOR_2_1.Text = "Q";
+		BT_KEY_KOR_2_2.Text = "W";
+		BT_KEY_KOR_2_3.Text = "E";
+		BT_KEY_KOR_2_4.Text = "R";
+		BT_KEY_KOR_2_5.Text = "T";
+		BT_KEY_KOR_2_6.Text = "Y";
+		BT_KEY_KOR_2_7.Text = "U";
+		BT_KEY_KOR_2_8.Text = "I";
+		BT_KEY_KOR_2_9.Text = "O";
+		BT_KEY_KOR_2_10.Text = "P";
+		
+		BT_KEY_KOR_3_1.Text = "A";
+		BT_KEY_KOR_3_2.Text = "S";
+		BT_KEY_KOR_3_3.Text = "D";
+		BT_KEY_KOR_3_4.Text = "F";
+		BT_KEY_KOR_3_5.Text = "G";
+		BT_KEY_KOR_3_6.Text = "H";
+		BT_KEY_KOR_3_7.Text = "J";
+		BT_KEY_KOR_3_8.Text = "K";
+		BT_KEY_KOR_3_9.Text = "L";		
+				
+		BT_KEY_KOR_4_3.Text = "Z";
+		BT_KEY_KOR_4_4.Text = "X";
+		BT_KEY_KOR_4_5.Text = "C";
+		BT_KEY_KOR_4_6.Text = "V";
+		BT_KEY_KOR_4_7.Text = "B";
+		BT_KEY_KOR_4_8.Text = "N";
+		BT_KEY_KOR_4_9.Text = "M";
+		
+		BT_KEY_KOR_5_2.BackColor = "Skyblue";
+		BT_KEY_KOR_5_2.FontColor = "White";			
+		IsHangul = false;	
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/* 20-05-26 이재형 */
+
+var f; //초성
+var s;	//중성
+var e;	//종성
+var str;
+var obj;
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// 초성INDEX
+    var indexI = [
+          'ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 
+          'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 
+          'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ']
+
+    // 중성INDEX
+    var indexM = [
+          'ㅏ', 'ㅐ', 'ㅑ', 'ㅒ', 'ㅓ', 
+          'ㅔ', 'ㅕ', 'ㅖ', 'ㅗ', 'ㅘ', 'ㅙ', 
+          'ㅚ', 'ㅛ', 'ㅜ', 'ㅝ', 'ㅞ', 'ㅟ', 
+          'ㅠ', 'ㅡ', 'ㅢ', 'ㅣ' ];
+
+    // 종성INDEX
+    var indexT = [
+          '', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ', 'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', 
+          'ㄺ', 'ㄻ', 'ㄼ', 'ㄽ', 'ㄾ', 'ㄿ', 'ㅀ', 'ㅁ', 
+          'ㅂ', 'ㅄ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ']; 
+     
+     
+	// 조합INDEX
+    var indexJComb1 = ['ㄳ','ㄵ','ㄶ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅄ'];
+    var indexJComb2 = ['ㄱㅅ','ㄴㅈ','ㄴㅎ','ㄹㄱ','ㄹㅁ','ㄹㅂ','ㄹㅅ','ㄹㅌ','ㄹㅍ','ㄹㅎ','ㅂㅅ'];
+    var indexMComb1 = ['ㅘ','ㅙ','ㅚ','ㅝ','ㅞ','ㅟ','ㅢ'];
+    var indexMComb2 = ['ㅗㅏ','ㅗㅐ','ㅗㅣ','ㅜㅓ','ㅜㅔ','ㅜㅣ','ㅡㅣ'];
+    
+    // 한글 자모 범위 (3130~318F)
+	var jaCode = 'ㄱ'.charCodeAt(0);
+	var jaCodeLast = 'ㅎ'.charCodeAt(0);
+	var moCode = 'ㅏ'.charCodeAt(0);
+	var moCodeLast = 'ㅣ'.charCodeAt(0);
+    
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 텍스트박스의 텍스트 초,중,종성 구하기 함수 */
+//초성
+function init(a){
+	var v = a.charCodeAt(0)-0xAC00;
+	var r = (v /28) / 21;
+	var t = parseInt(r);
+	console.log("parseInt : "+t );	//index로 출
+	return t;
+}
+//중성
+function second(a){	//중성
+	var v = a.charCodeAt(0)-0xAC00;
+	var r = (v / 28) % 21; 
+	var t = parseInt(r);
+	console.log("second T : " + t);
+	return t;
+}
+//종성
+function end(a){
+	var v = a.charCodeAt(0)-0xAC00;
+	var r = (v) % 28;
+	var t = parseInt(r);
+	console.log("end T : " + t);
+	return t;
+}
+//초,중,종성으로 문자만들기
+function makeChar(f,s,e){	
+	var str = String.fromCharCode(((f * 21) + s) * 28 + e + 0xAC00);
+	return str;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+var cc = '공';
+var obj = makeChar(2,8,21);
+TB_KEY_KOR.Text = cc;
+TB_KEY_KOR.Text = obj;
+init(TB_KEY_KOR.Text);
+second(TB_KEY_KOR.Text);
+end(TB_KEY_KOR.Text);
+*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//글씨쓰는 함수
+function Input_KEY_KOR(a){
+var txtBox = TB_KEY_KOR;	//텍스트박스
+var tt = a;	//클릭한 텍스트가 매개변수로 들어옴 
+
+var code = tt.charCodeAt(0);
+//자음, 모음 체크
+var jaum = jaCode <= code && code <= jaCodeLast; 
+var moum = moCode <= code && code <= moCodeLast; 
+console.log("code = "+code);
+
+	if(txtBox.Text){
+		var lst = txtBox.Text.substring(txtBox.Text.length -1);		
+		console.log("lst : "+lst);
+		var lastChrCode = lst.charCodeAt(0);
+		console.log("@@@ : "+ lastChrCode);
+		//lst ㄱ
+	    //lastChrcode : 12593 -> 0x3131;
+		if (jaCode <= lastChrCode && lastChrCode <= moCodeLast) {
+	        // 자음,모음
+	        if (jaCode <= lastChrCode && lastChrCode <= jaCodeLast) {
+	            if (moum) {
+	                var i = indexI.indexOf(lst);
+	                var m = indexM.indexOf(tt);
+	                var t = 0;
+	                var c = makeChar(i, m, t);
+	                txtBox.Text = txtBox.Text.substring(0, txtBox.Text.length-1) + c;                        
+	                return;
+	            }
+	        } 
+		}		
+		else if (lastChrCode >= 0xAC00 && lastChrCode <= 0xAC00 + 0x2BA4) { //unicode 한글범위
+	        // 한글
+	        var i = init(lst);
+	        var m = second(lst);
+	        var t = end(lst);
+	        if (t == 0) {
+	            // 종성이 없는경우
+	            if (jaum){
+	                t = indexT.indexOf(tt);
+	                var c = makeChar(i, m, t);
+	                txtBox.Text = txtBox.Text.substring(0,txtBox.Text.length-1) + c;                        
+	                return;
+	            } 
+	            else if (moum) {
+	                // 모음조합문자
+	                var chkChr = indexM[m] + tt; // ㅏ + 0
+	                var combIndex = indexMComb2.indexOf(chkChr);
+	                if (combIndex!=-1) {
+	                    var combChr = indexMComb1[combIndex];
+	                    m = indexM.indexOf(combChr);
+	                    var c = makeChar(i, m, t);                  
+	                    txtBox.Text = txtBox.Text.substring(0,txtBox.Text.length-1) + c;     
+	                    return;
+	                }
+	            }
+	        } 
+	        else {
+	        // 종성이 있는경우
+	            if (moum) {
+	                var tChr = indexT[t];
+	
+	                // 조합문자일경우 다시 쪼갠다
+	                var combIndex = indexJComb1.indexOf(tChr);
+	                if (combIndex!=-1) {
+	                    var partChr = indexJComb2[combIndex];
+	                    t = indexT.indexOf(partChr[0]);
+	                    tChr = partChr[1];
+	                } 
+	                else {
+	                    t = 0;
+	                }
+	
+	                var c1 = makeChar(i, m, t);
+	                i = indexI.indexOf(tChr);
+	                if (i!=-1) {
+	                    m = indexM.indexOf(tt);
+	                    var c2 = makeChar(i, m, 0);
+	                    
+	                    txtBox.Text = txtBox.Text.substring(0,txtBox.Text.length-1) + c1 + c2;    
+	                    return;
+	                }
+	            } 
+	            else if (jaum) {
+	                // 자음조합문자                    
+	                var chkChr = indexT[t] + tt;
+	                var combIndex = indexJComb2.indexOf(chkChr);
+	                if (combIndex!=-1) {
+	                    var combChr = indexJComb1[combIndex];
+	                    t = indexT.indexOf(combChr);
+	                    var c = makeChar(i, m, t);          
+	                    txtBox.Text = txtBox.Text.substring(0,txtBox.Text.length-1) + c;    
+	                    return;
+	                }
+	            }
+	        }
+		}		
+	} //if(txtBox.Text) end
+	txtBox.Text = txtBox.Text + tt;
+} //function end
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/* 자음 */
+function BT_KEY_KOR_2_4_OnClick(e){	//ㄱ 클릭
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+function BT_KEY_KOR_3_2_OnClick(e){	//ㄴ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+function BT_KEY_KOR_2_3_OnClick(e){ //ㄷ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+function BT_KEY_KOR_3_4_OnClick(e){ //ㄹ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_3_1_OnClick(e){ //ㅁ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_2_1_OnClick(e){ //ㅂ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+function BT_KEY_KOR_2_5_OnClick(e){ //ㅅ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+function BT_KEY_KOR_3_3_OnClick(e){ //ㅇ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_2_2_OnClick(e){ //ㅈ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_4_5_OnClick(e){ //ㅊ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_4_3_OnClick(e){ //ㅋ	
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_4_4_OnClick(e){ //ㅌ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_4_6_OnClick(e){ //ㅍ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_3_5_OnClick(e){ //ㅎ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/* 모음 */
+function BT_KEY_KOR_3_8_OnClick(e){	//ㅏ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_2_9_OnClick(e){ //ㅐ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+
+function BT_KEY_KOR_2_8_OnClick(e){ //ㅑ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_3_7_OnClick(e){ // ㅓ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_2_10_OnClick(e){ //ㅔ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_2_7_OnClick(e){ //ㅕ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_3_6_OnClick(e){ //ㅗ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_2_6_OnClick(e){ //ㅛ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_4_8_OnClick(e){ //ㅜ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_4_7_OnClick(e){ //ㅠ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_4_9_OnClick(e){ //ㅡ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_3_9_OnClick(e){ //ㅣ
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/* 특수문자 */
+function BT_KEY_KOR_4_1_OnClick(e){ // -
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_5_1_OnClick(e){ // _
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_5_4_OnClick(e){ // (
+	var tt = this.Text;
+	Input_KEY_KOR(tt);	
+}
+
+function BT_KEY_KOR_5_5_OnClick(e){ // )
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_4_10_OnClick(e){ // <
+	var tt = this.Text;
+	var rt = tt.replace("&lt;" , "<");
+	Input_KEY_KOR(rt);
+}
+
+function BT_KEY_KOR_4_11_OnClick(e){ // >
+	var tt = this.Text;
+	var rt = tt.replace("&gt;" , ">");
+	Input_KEY_KOR(rt);
+}
+
+function BT_KEY_KOR_4_12_OnClick(e){ // @
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_5_6_OnClick(e){ // .
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/* 숫자 */
+
+function BT_KEY_KOR_1_1_OnClick(e){ //1
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_1_2_OnClick(e){ //2
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_1_3_OnClick(e){ //3
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_1_4_OnClick(e){ //4
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_1_5_OnClick(e){ //5
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_1_6_OnClick(e){ //6
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_1_7_OnClick(e){ //7
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_1_8_OnClick(e){ //8
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_1_9_OnClick(e){ //9
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+function BT_KEY_KOR_1_10_OnClick(e){ //0
+	var tt = this.Text;
+	Input_KEY_KOR(tt);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/* 기타 */
+
+function BT_KEY_KOR_5_3_OnClick(e){ //space 
+	TB_KEY_KOR.Text += ' ';
+}
+
+function BT_KEY_KOR_1_12_OnClick(e){	//정정
+	var txtBox = TB_KEY_KOR;
+	//console.log(txtBox.Text);
+	var q = txtBox.Text.replace(txtBox.Text,"");
+	txtBox.Text = q;
+}
+
+function BT_KEY_KOR_1_11_OnClick(e){	//backspace
+	var txtBox = TB_KEY_KOR;
+	//console.log(txtBox.Text);
+	txtBox.Text = txtBox.Text.substring ( 0, txtBox.Text.length -1);
+}
+
+</script></xjscript></body>
+</html>
