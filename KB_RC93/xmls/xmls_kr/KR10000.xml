@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="0xffffff" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+  </BasicBox>
+  <sButton>
+    <btns className="" urlpath="btn_deposit2.png" breturn="B[1001]" bx="81" by="266" bw="274" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="1">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+    <btns className="" urlpath="btn_withdraw2.png" breturn="A[1000]" bx="375" by="266" bw="274" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="228.05" />
+    </btns>
+    <btns className="" urlpath="btn_bongtwoTransaction.png" breturn="G[1009]" bx="669" by="266" bw="274" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="2" rtnUIC="0" ign="false" levelIs="2" indexG="6" depthG="3">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="228.05" />
+    </btns>
+    <btns className="" urlpath="btn_refill.png" breturn="C[1002]" bx="81" by="366" bw="274" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="3" rtnUIC="0" ign="false" levelIs="0" indexG="3" depthG="4">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="228.05" />
+    </btns>
+    <btns className="" urlpath="btn_putout.png" breturn="D[1003]" bx="375" by="366" bw="274" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="4" rtnUIC="0" ign="false" levelIs="0" indexG="4" depthG="5">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+    <btns className="" urlpath="btn_coinSum.png" breturn="G[1010]" bx="669" by="366" bw="274" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="5" rtnUIC="0" ign="false" levelIs="0" indexG="5" depthG="6">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="228.05" />
+    </btns>
+    <btns className="" urlpath="btn_close.png" breturn="E[1004]" bx="81" by="466" bw="274" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="6" rtnUIC="0" ign="false" levelIs="0" indexG="6" depthG="7">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="228.05" />
+    </btns>
+    <btns className="" urlpath="btn_release.png" breturn="F[1005]" bx="375" by="466" bw="274" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="7" rtnUIC="0" ign="false" levelIs="0" indexG="7" depthG="8">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+    <btns className="" urlpath="btn_finger.png" breturn="H[1006]" bx="669" by="466" bw="274" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="8" rtnUIC="0" ign="false" levelIs="0" indexG="8" depthG="9">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+    <btns className="" urlpath="btn_coinAudit.png" breturn="G[1011]" bx="669" by="566" bw="274" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="9" rtnUIC="0" ign="false" levelIs="0" indexG="9" depthG="10">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="228.05" />
+    </btns>
+    <btns className="home_btn" urlpath="../btn/confirm_bg.png" breturn="~[~]" bx="402" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="10" rtnUIC="0" ign="false" levelIs="0" indexG="10" depthG="11">
+      <textIs btext="HOME" tcolor="0xffffff" tsize="24" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+  </sButton>
+  <Tenkey />
+  <BlockBox />
+  <Flv />
+  <BlockMsg>
+    <bm className="select_title center" bText="원하시는 거래를 선택하여 주십시오" bmx="0" bmy="140" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+    KR10000
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>거래선택</comment>
+  </ScreenName>
+  <Custom>
+  </Custom>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>

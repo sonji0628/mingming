@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="0xf7f7f7" balpha="1" shadowis="0" iname="3" rotate="0" indexG="3" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="4" />
+    <bgx className="" xgab="20" ygab="126" wgab="982" hgab="542" lth="1" lalpha="1" xround="20" lco="15329769" bgco="16777215" balpha="1" shadowis="0" iname="0" rotate="0" indexG="0" globalIs="0" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+    <bgx className="" xgab="512" ygab="156" wgab="1" hgab="486" lth="0" lalpha="0" xround="0" lco="15329769" bgco="14737632" balpha="1" shadowis="0" iname="1" rotate="0" indexG="1" globalIs="0" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="3" />
+    <bgx className="" xgab="545" ygab="416" wgab="420" hgab="1" lth="0" lalpha="0" xround="0" lco="15329769" bgco="14737632" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="4" />
+    <bgx className="" xgab="545" ygab="600" wgab="420" hgab="1" lth="0" lalpha="0" xround="0" lco="15329769" bgco="14737632" balpha="1" shadowis="0" iname="4" rotate="0" indexG="4" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="4" />
+  </BasicBox>
+  <sButton>
+    <btns className="main_IDlogin_icon" urlpath="../btn/main_btn1.png" breturn="A[690]" bx="0" by="688" bw="256" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="1">
+      <textIs btext="ID 로그인" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="228.05" />
+    </btns>
+    <btns className="main_fingerLogin_icon" urlpath="../btn/main_btn2.png" breturn="B[691]" bx="256" by="688" bw="256" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="2" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+      <textIs btext="지문 로그인" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+    <btns className="main_refresh_icon" urlpath="../btn/main_btn3.png" breturn="C[692]" bx="512" by="688" bw="256" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="3" rtnUIC="0" ign="false" levelIs="0" indexG="2" depthG="3">
+      <textIs btext="단말시재조회&lt;br&gt;(새로고침)" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="4" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+    <btns className="main_poweroff_icon" urlpath="../btn/main_btn3.png" breturn="D[693]" bx="768" by="688" bw="256" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="4" rtnUIC="0" ign="false" levelIs="0" indexG="3" depthG="4">
+      <textIs btext="전원OFF" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+  </sButton>
+  <Tenkey />
+  <BlockBox />
+  <Flv />
+  <BlockMsg />
+  <InputMsg>
+    <im className="" bText="" bmx="23" bmy="25" tsize="50" tcolor="0xff0000" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="0" fontis="bg" indexG="0" depthG="10" uLineis="0" inputis="0" />
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+		KR0010
+	</ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>메인화면-거래선택화면</comment>
+  </ScreenName>
+  <Custom>
+    <cm isBtn="" isTenkey="" urlpath="" iname="HostCashInfo" mbx="53" mby="156" mbw="422" mbh="492" src="ATEC_setData_hostCash.js" class="setData_hostCash" param="" paramClass="" />
+    <cm isBtn="" isTenkey="" urlpath="" iname="LocalCashInfo" mbx="0" mby="0" mbw="0" mbh="0" src="ATEC_setData_localCash.js" class="setData_localCash" param="" paramClass="" />
+    <cm isBtn="" isTenkey="" urlpath="" iname="AddInfo" mbx="0" mby="0" mbw="0" mbh="0" src="ATEC_setData_addInfo.js" class="setData_addInfo" param="" paramClass="" />
+    <cm isBtn="" isTenkey="" urlpath="" iname="WithdInfo" mbx="546" mby="156" mbw="422" mbh="240" src="ATEC_make_withdrawChart.js" class="make_withdrawChart" param="" paramClass="" />
+    <cm isBtn="" isTenkey="" urlpath="" iname="CoinDepInfo" mbx="546" mby="440" mbw="418" mbh="135" src="ATEC_make_coinDepositChart.js" class="make_coinDepositChart" param="" paramClass="" />
+    <cm isBtn="" isTenkey="" urlpath="" iname="FEAmount" mbx="546" mby="618" mbw="418" mbh="30" src="ATEC_make_pouchDeposit.js" class="make_pouchDeposit" param="" paramClass="" />
+    <cm isBtn="" isTenkey="" urlpath="" iname="0" mbx="53" mby="156" mbw="422" mbh="492" src="ATEC_make_moneyState.js" class="make_moneyState" param="" paramClass="" param2="" param2Class="" />
+  </Custom>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+    <update cmd="sendMsg" param1="HostCashInfo" param2="200000000;오만원|1000000;만원|500000;오천원|10000;천원|53000;오백원|32000;백원|1000;오십원|5000;십원|500" />
+    <update cmd="sendMsg" param1="LocalCashInfo" param2="400000000;90;오만원|1000000;만원|500000;오천원|10000;천원|53000;오백원|32000;백원|1000;오십원|5000;십원|500" />
+    <update cmd="sendMsg" param1="WithdInfo" param2="1000000000;99000000;2000000;50000|3800|1000;10000|3800|2000;5000|1500|300;1000|1500|200;500|1500|0;100|2500|200;50|3000|50;10|3500|100;" />
+    <update cmd="sendMsg" param1="CoinDepInfo" param2="2000000;500|1500|0;100|2500|200;50|3000|50;10|3500|100;" />
+    <update cmd="sendMsg" param1="FEAmount" param2="2000000" />
+    <preShow sTag="cm" sAttr="iname" sValue="HostCashInfo" rAttr="param" rValue="200000000;오만원|1000000;만원|500000;오천원|10000;천원|53000;오백원|32000;백원|1000;오십원|5000;십원|500" />
+    <preShow sTag="cm" sAttr="iname" sValue="LocalCashInfo" rAttr="param" rValue="400000000;90;오만원|1000000;만원|500000;오천원|10000;천원|53000;오백원|32000;백원|1000;오십원|5000;십원|500" />
+    <preShow sTag="cm" sAttr="iname" sValue="AddInfo" rAttr="param" rValue="50000|10000|5000|1000|500|100|50|10;50000|10000|5000|1000|500|100|50|10;" />
+  </TestData>
+  <TTS />
+</Display>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display viewtype='Bank'>
+	<BasicBox>
+		<bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="668" lth="0" lalpha="0" xround="0" lco="0" bgco="0xf7f7f7" balpha="1" shadowis="0" iname="2" rotate="0" indexG="0" globalIs="0" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0"/>
+	</BasicBox>
+	<sButton/>
+	<Tenkey/>
+	<BlockBox>
+		<msg className="bgBox" urlpath="../img/loadingMotion.gif" mbx="402" mby="550" mbw="220" mbh="60" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="2"/>
+	</BlockBox>
+	<Flv/>
+	<BlockMsg>
+		<bm className="normal_title center" bText="[보충] 처리 중입니다" bmx="0" bmy="300" tsize="40" tcolor="0x0000ff" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="1" boldis="0" uLineis="0"/>
+		<bm className="notice_text center" bText="보충하신 금액을 시재에 반영합니다" bmx="0" bmy="85" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="1" boldis="0" uLineis="0"/>
+	</BlockMsg>
+	<InputMsg/>
+	<aniBox/>
+	<Snd/>
+	<ScreenNumber>
+		KR10604
+	</ScreenNumber>
+	<ScreenName depth="0" display="0" type="" shortType="">
+		<comment>보충처리 중2</comment>
+	</ScreenName>
+	<Custom>
+</Custom>
+	<ArrowSts start="">
+	</ArrowSts>
+	<TestData/>
+	<TTS/>
+</Display>

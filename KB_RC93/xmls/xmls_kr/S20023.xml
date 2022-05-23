@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display viewtype='Bank'>
+	<BasicBox>
+		<bgx className="bgBox" xgab="42" ygab="176" wgab="940" hgab="482" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="0" rotate="0" indexG="0" globalIs="1" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="5"/>
+	</BasicBox>
+	<sLine/>
+	<sButton>
+		<btns className="smcBrownBtn" urlpath="../btn/manage_btn1.png" breturn="~[~]" bx="12" by="686" bw="501" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="0"  rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="2">
+			<textIs btext="취소" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn2.png" breturn="=[=]" bx="512" by="686" bw="500" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="confirm"  rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="3">
+			<textIs btext="확인" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48"/>
+		</btns>
+	</sButton>
+	<Tenkey/>
+	<Flv/>
+	<BlockMsg>
+		<bm className="normal_title center" bText="관리 모드" bmx="0" bmy="100" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="6" boldis="0" uLineis="0"/>
+		<bm className="normal_title center" bText="전자 저널 검색 일자 선택" bmx="0" bmy="130" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="1" fontis="Noto Sans CJK KR Regular" indexG="1" depthG="7" boldis="0" uLineis="0"/>
+		<bm className="center" bText="검색할 시작 날짜와 종료 날짜를 선택하시고&lt;br&gt; [확인] 버튼을 눌러주십시오" bmx="80" bmy="235" tsize="24" tcolor="6710886" lspacing="0" linesp="10"  talign="CENTER" rotate="0" xscale="1" alp="1" iname="2" fontis="kr" indexG="2" depthG="6" boldis="0" uLineis="0"/>
+	</BlockMsg>
+	<InputMsg/>
+	<aniBox/>
+	<ipage/>
+	<Snd/>
+	<TTS/>
+	<commentt/>
+    <Custom>
+	    <cm urlpath="" iname="test1" mbx="142" mby="420" mbw="800" mbh="0" src="SMC_calendar.js" class="calendar" param="" paramClass="" />
+    </Custom>
+			<ScreenNumber>
+    S20023
+  </ScreenNumber>
+	<ScreenName depth="0" display="0" type="" shortType="">
+		<comment>계원모드-전자저널 날짜 지정</comment>
+	</ScreenName>
+</Display>

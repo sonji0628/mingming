@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display viewtype='Bank'>
+	<BasicBox>
+		<bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="16777215" balpha="1" shadowis="0" iname="2" rotate="0" indexG="0" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="3"/>
+		<bgx className="bgBox" xgab="267" ygab="256" wgab="490" hgab="76" lth="1" lalpha="1" xround="0" lco="12303291" bgco="16777215" balpha="1" shadowis="0" iname="1" rotate="0" indexG="1" globalIs="0" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="4"/>
+	</BasicBox>
+	<sButton>
+		<btns className="cancel_btn" urlpath="../btn/cancel_bg.png" breturn="~[~]" bx="40" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="1">
+			<textIs btext="취 소" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="16.4" xscale="1" lmargin="86.8"/>
+		</btns>
+<btns className="confirm_btn2" urlpath="../btn/confirm_bg.png" breturn="A[A]" bx="402" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="R1" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="3">
+      <textIs btext="이 전" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+		<btns className="confirm_btn" urlpath="../btn/confirm_bg.png" breturn="=[=]" bx="764" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+			<textIs btext="확 인" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="16.4" xscale="1" lmargin="86.8"/>
+		</btns>
+	</sButton>
+	<Tenkey/>
+	<BlockBox/>
+	<Flv/>
+	<BlockMsg>
+		<bm className="select_title center" bText="보충 금액 확인" bmx="0" bmy="152" tsize="36" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="" bText="보충금액" bmx="309" bmy="279" tsize="20" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="" bText="원" bmx="700" bmy="279" tsize="20" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0"/>
+	</BlockMsg>
+	<InputMsg>
+    	<im className="" bText="" bmx="396" bmy="275" tsize="32" tcolor="5525573" lspacing="-1" linesp="10"  talign="right" bwidth="302" bheight="44" iname="0" fontis="Noto Sans CJK KR Bold"  indexG="0" depthG="5" uLineis="0" inputis="0"/>
+    </InputMsg>
+	<aniBox/>
+	<Snd/>
+	<ScreenNumber>
+		KR10605
+	</ScreenNumber>
+	<ScreenName depth="0" display="0" type="" shortType="">
+		<comment>보충 금액확인</comment>
+	</ScreenName>
+	<Custom>
+  	  <cm isBtn="" isTenkey="" urlpath="" iname="WithdInfo" mbx="51" mby="388" mbw="922" mbh="220" src="ATEC_makeTable.js" class="makeTable" param="" paramClass="" param2="" param2Class=""/>
+    </Custom>
+	<ArrowSts start="">
+	</ArrowSts>
+	<TestData/>
+	<TTS/>
+</Display>

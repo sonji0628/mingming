@@ -1,0 +1,181 @@
+/*************************************************************************************
+    FileName			:	calendar.css
+    Description		    :	와이드 모니터의 좌측영역 (L-Banner) 에 칼렌더를 표시하기 위한 css 정의
+                        
+	Created Date		:	2021.02.25
+	Created By			:	ATEC AP, cyg
+    Revision History	:	
+             ver 1.0.0.0 - 최초작성
+**************************************************************************************/
+
+/*************************************************************************************
+           (c) Copyright  2020  ATEC AP Inc. All Rights Reserved
+            
+       THIS IS UNPUBLISHED PROPRIETARY SOURCE CODE OF ATEC AP  Inc.
+       The copyright notice above does not evidence any actual or intended
+       publication of such source code.
+**************************************************************************************/
+
+
+/* calender 스타일 정의 */
+table#calendar
+{
+    background-color: #d7eded; 
+    width: 100%;
+    font-family:'나눔스퀘어 Regular';
+}
+
+/* 칼렌더 head 영역 */
+table#calendar #cal-Head
+{
+    background-color:#048c8d;
+}
+
+table#calendar #cal-Head > td
+{
+    padding:15px 10px;
+    box-sizing: border-box;
+}
+
+/* 좌측, 우측 두 구역으로 문구 출력함 */
+table#calendar #cal-Head-LeftSide
+{
+    float: left;
+}
+table#calendar #cal-Head-RightSide
+{
+    float: right;    
+}
+
+/* 년도 - 숫자*/
+table#calendar #cal-Head-Year
+{
+    font-size: 22pt;
+    text-align: left;
+    color: white;
+}
+
+/* 칼렌더 - 영문 타이틀 */
+table#calendar #cal-Head-CaptionEng
+{
+    font-size: 12pt;
+    color: rgba(255,255,255,0.5);
+    text-align: left;
+    margin-top: 3px;
+}
+
+/* 월 - 숫자 */
+table#calendar #cal-Head-Month
+{
+    font-size: 45pt;
+    color: white;
+    height:60px;
+    line-height: 63px;
+    text-align: right;
+}
+
+/* 월 - 영문 */
+table#calendar #cal-Head-MonthEng
+{
+    font-size: 15pt;
+    color: rgba(255,255,255,0.5);
+    text-align: left;
+    line-height: 20px;
+    margin-top:5px;
+}
+
+/* 날짜 표시 공통 스타일 */
+table#calendar .cal-Body
+{
+    text-align: center;
+    font-size: 14pt;
+    height:40px;
+    line-height: 40px;
+}
+
+table#calendar .cal-Body:first-of-type td{font-size:15pt;border:1px solid red;}
+
+/* 일요일 - 붉은색 */
+table#calendar .cal-sun
+{
+    color: #e6095c;
+}
+
+/* 평일 - 검은색 */
+table#calendar .cal-day
+{
+    color: #222;
+}
+
+/* 토요일 - 파란색 */
+table#calendar .cal-sat
+{
+    color: #1f34b6;
+}
+
+/* 오늘 - 파란색 원형 배경 */
+table#calendar .cal-today
+{
+    border-radius: 6px;
+    background: rgba(2,139,140,0.6);
+    color:#Fff;
+    font-weight: bold;
+}
+
+/* 칼렌더 마지막 라인 - 투명글자, 1줄 space 추가 목적 */
+table#calendar .cal-end
+{
+    opacity: 0;
+}
+
+/** div 화면 나누기 **/
+#LBanner-container
+{
+    background: #d7eded url(../images/img/cal_bg.png) no-repeat right bottom;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 256px;
+    height: 1024px;    
+    
+}
+
+
+.calendar_wrap {display:flex;justify-content:center;align-items:center;}
+
+.calendar_box {width: 400px;}
+
+.calendar_header {width: 400px;background-color: #ffbc00;}
+.calendar_list {width: 400px;display: flex;flex-wrap: wrap;flex-direction: row;height: 285px;align-content: space-between;}
+
+.calendar_date {width: 43px;height: 43px;margin: 2px 7px;display:flex;border-radius: 29px;justify-content:center;align-items:center;font-size: 20px;}
+
+.calendar_date_select { background-color:#dddddd; }
+
+.calendar_year_select {color:#ffffff;line-height: 50px;text-align:center;border-top-left-radius:10px;border-top-right-radius:10px;display: flex;justify-content: space-between;}
+
+.calendar_left_arrow {width: 50px;font-size: 30px;}
+.calendar_year {font-size: 16px;}
+.calendar_year > span {font-size: 22px;font-weight:bold;}
+.calendar_year > label {font-size: 22px;font-weight:bold;}
+.calendar_right_arrow {width: 50px;font-size: 30px;}
+
+.calendar_week_wrap {width: 400px;background-color:#eeeeee;display: flex;align-items: center;justify-content: space-between;}
+.calendar_week {width: 53px;height: 40px;font-size: 18px;text-align:center;line-height: 40px;}
+
+.date_sat { color:blue; }
+.date_sun { color:red; }
+
+
+.calendar_input_box {width: 300px;height: 280px;display: flex;flex-direction: column;justify-content: space-between;margin-top: 99px;align-items: center;}
+
+.calendar_input_title {text-align:center;font-size: 20px;height: 38px;}
+
+.calendar_input_start {height: 70px;border:2px solid #999999;font-size: 30px;text-align:center;line-height: 65px;width: 260px;}
+.calendar_input_end {height: 70px;border:2px solid #999999;font-size: 30px;text-align:center;line-height: 65px;width: 260px;}
+
+.calendar_input_select {border: 2px solid #ffbc00;font-weight: bold;box-shadow: 0 0 0 2px #ffbc00;}
+
+.calendar_input_alert {visibility: hidden;font-size: 20px;font-weight:bold;color:#d71820;width: 375px;}
+

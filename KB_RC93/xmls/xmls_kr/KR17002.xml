@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="0xf7f7f7" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+  </BasicBox>
+  <sButton>
+  </sButton>
+  <Tenkey />
+  <BlockBox/>
+  <Flv />
+  <BlockMsg>
+    <bm className="normal_title center" bText="단말인증 정보 불일치" bmx="" bmy="270" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+    <bm className="" bText="기기정보 : " bmx="100" bmy="400" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+    <bm className="" bText="단말정보 : " bmx="100" bmy="500" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+    <im className="" bText="" bmx="235" bmy="405" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="left" bwidth="982" bheight="24" iname="0" fontis="bg" indexG="0" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="320" bmy="405" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="left" bwidth="982" bheight="24" iname="1" fontis="bg" indexG="1" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="400" bmy="405" tsize="32" tcolor="0x545045" lspacing="0" linesp="4" talign="left" bwidth="982" bheight="24" iname="2" fontis="bg" indexG="2" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="700" bmy="405" tsize="32" tcolor="0x545045" lspacing="0" linesp="4" talign="left" bwidth="982" bheight="24" iname="3" fontis="bg" indexG="3" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="235" bmy="507" tsize="32" tcolor="0x545045" lspacing="0" linesp="4" talign="left" bwidth="982" bheight="24" iname="4" fontis="bg" indexG="4" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="320" bmy="507" tsize="32" tcolor="0x545045" lspacing="0" linesp="4" talign="left" bwidth="982" bheight="24" iname="5" fontis="bg" indexG="5" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="400" bmy="507" tsize="32" tcolor="0x545045" lspacing="0" linesp="4" talign="left" bwidth="982" bheight="24" iname="6" fontis="bg" indexG="6" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="700" bmy="507" tsize="32" tcolor="0x545045" lspacing="0" linesp="4" talign="left" bwidth="982" bheight="24" iname="7" fontis="bg" indexG="7" depthG="10" uLineis="0" inputis="0" />
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+    KR17002
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>단말인증오류</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>

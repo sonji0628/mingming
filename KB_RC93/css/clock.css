@@ -1,0 +1,46 @@
+/**************************************************************
+    공용
+    날짜,시간 클래스에 대한 css
+    신성철
+**************************************************************/
+#clock {
+  position: absolute; 
+  color: #ffffff;
+  font-family: 'Noto Sans CJK KR R';
+  z-index: 35;
+  line-height: 100%; width: 270px;
+}
+.ampm {
+  font-size: 24px;
+  top:27px;
+  left:346px;
+  white-space: nowrap;
+  position: absolute;
+}
+.time {
+  font-size: 24px;
+/*  color: black;*/
+  top:27px;
+  left:395px;
+  position: absolute;
+}
+.mm-dd {
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  top:26px;
+  left:189px;
+  letter-spacing: normal;
+  position: absolute; width: 141px; white-space: nowrap;
+}
+.day {
+  font-size: 34px;
+  color: #464D57;
+/*  color: black;*/
+  text-align: left;
+  top:90px;
+  left:135px;
+  position: absolute;
+}
+
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="522" lth="0" lalpha="0" xround="0" lco="0" bgco="0xf7f7f7" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+  </BasicBox>
+  <sButton>
+		<btns className="confirm_btn2" urlpath="../btn/confirm_bg.png" breturn="=[=]" bx="40" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+			<textIs btext="추가등록" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="16.4" xscale="1" lmargin="86.8"/>
+		</btns>
+<btns className="confirm_btn" urlpath="../btn/confirm_bg.png" breturn="B[B]" bx="400" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+			<textIs btext="지문관리" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="16.4" xscale="1" lmargin="86.8"/>
+		</btns>
+		<btns className="cancel_btn" urlpath="../btn/cancel_bg.png" breturn="~[~]" bx="764" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="1">
+			<textIs btext="종 료" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="16.4" xscale="1" lmargin="86.8"/>
+		</btns>
+  </sButton>
+  <Tenkey />
+  <BlockBox>
+    <msg className="" urlpath="../icons/ic_confirm_l.png" mbx="452" mby="200" mbw="125" mbh="120" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="2"/>
+  </BlockBox>
+  <Flv />
+  <BlockMsg>
+    <bm className="notice_text center" bText="지문 등록이 정상 처리 되었습니다" bmx="" bmy="90" tsize="36" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+    <bm className="notice_text center" bText="추가 등록을 하시려면 [추가등록] 버튼을 눌러주십시오 " bmx="" bmy="150" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="1" fontis="Noto Sans CJK KR Regular" indexG="1" depthG="0" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+    KR10403
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>지문등록처리OK</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>

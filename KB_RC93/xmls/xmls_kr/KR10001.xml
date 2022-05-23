@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="0xffffff" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+  </BasicBox>
+  <sButton>
+    <btns className="" urlpath="btn_withdraw.png" breturn="A[1000]" bx="360" by="326" bw="300" bh="200" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="1">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="228.05" />
+    </btns>
+    <btns className="" urlpath="btn_deposit.png" breturn="B[1001]" bx="40" by="326" bw="300" bh="200" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="2" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+    <btns className="" urlpath="btn_bongtwoTransaction2.png" breturn="C[1009]" bx="680" by="326" bw="300" bh="200" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="3" rtnUIC="0" ign="false" levelIs="0" indexG="2" depthG="2">
+      <textIs btext="" tcolor="0xffffff" tsize="20" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+    <btns className="home_btn" urlpath="../btn/confirm_bg.png" breturn="~[~]" bx="402" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="8" depthG="2">
+      <textIs btext="HOME" tcolor="0xffffff" tsize="24" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+  </sButton>
+  <Tenkey />
+  <BlockBox />
+  <Flv />
+  <BlockMsg>
+    <bm className="select_title center" bText="원하시는 거래를 선택하여 주십시오" bmx="0" bmy="200" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+    KR10001
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>거래선택</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>

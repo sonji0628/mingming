@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+  </BasicBox>
+  <sButton>
+  </sButton>
+  <Tenkey />
+  <BlockBox>
+		<msg className="bgBox" urlpath="../img/star_friends.png" mbx="150" mby="200" mbw="720" mbh="260" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="1"/>
+	</BlockBox>
+  <Flv />
+  <BlockMsg>
+    <bm className="notice_text center" bText="거래가 정상 종료 되었습니다" bmx="" bmy="215" tsize="36" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+    KR16002
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>거래 종료</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>

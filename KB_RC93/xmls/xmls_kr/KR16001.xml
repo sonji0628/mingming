@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display viewtype='Bank'>
+	<BasicBox>
+		<bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="668" lth="0" lalpha="0" xround="0" lco="0" bgco="0xf7f7f7" balpha="1" shadowis="0" iname="2" rotate="0" indexG="0" globalIs="0" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0"/>
+	</BasicBox>
+	<sButton/>
+	<Tenkey/>
+	<BlockBox>
+		<msg className="bgBox" urlpath="../img/loadingMotion.gif" mbx="402" mby="450" mbw="220" mbh="60" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="2"/>
+	</BlockBox>
+	<Flv/>
+	<BlockMsg/>
+	<InputMsg>
+		<im className="" bText="" bmx="23" bmy="320" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="0" fontis="bg" indexG="0" depthG="10" uLineis="0" inputis="0" />
+    		<im className="" bText="" bmx="23" bmy="360" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="1" fontis="bg" indexG="1" depthG="10" uLineis="0" inputis="0" />
+    		<im className="" bText="" bmx="23" bmy="400" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="2" fontis="bg" indexG="2" depthG="10" uLineis="0" inputis="0" />
+            </InputMsg>
+	<aniBox/>
+	<Snd/>
+	<ScreenNumber>
+		KR16001
+	</ScreenNumber>
+	<ScreenName depth="0" display="0" type="" shortType="">
+		<comment>처리 중</comment>
+	</ScreenName>
+	<Custom>
+	</Custom>
+	<ArrowSts start="">
+	</ArrowSts>
+	<TestData/>
+	<TTS/>
+</Display>

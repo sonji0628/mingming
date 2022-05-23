@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display viewtype='Bank'>
+	<BasicBox>
+		<bgx className="bgBox" xgab="42" ygab="176" wgab="940" hgab="395" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="0" rotate="0" indexG="0" globalIs="1" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="5"/>
+	</BasicBox>
+	<sLine/>
+	<sButton>
+        <btns className="smcYellowBtn" urlpath="../btn/manage_btn1.png"  breturn="A[4001]" bx="12" by="597" bw="201" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="0"  rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="5">
+			<textIs btext="통신변수" tcolor="0xffffff" tsize="22" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="kr" tmargin="21.45" xscale="1" lmargin="41.4"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn1.png"  breturn="B[4002]" bx="212" by="597" bw="201" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="1"  rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="6">
+			<textIs btext="동작변수" tcolor="0xffffff" tsize="22" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="kr" tmargin="21.45" xscale="1" lmargin="41.4"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn1.png"  breturn="C[4003]" bx="412" by="597" bw="201" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="2"  rtnUIC="0" ign="false" levelIs="0" indexG="2" depthG="7">
+			<textIs btext="모듈제한" tcolor="0xffffff" tsize="22" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="kr" tmargin="21.45" xscale="1" lmargin="41.4"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn1.png"  breturn="D[4005]" bx="612" by="597" bw="201" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="3"  rtnUIC="0" ign="false" levelIs="0" indexG="3" depthG="8">
+			<textIs btext="일자/시간&lt;br&gt;변경" tcolor="0xffffff" tsize="22" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="kr" tmargin="9.85" xscale="1" lmargin="38.05"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn1.png"  breturn="F[4017]" bx="812" by="597" bw="201" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="5"  rtnUIC="0" ign="false" levelIs="0" indexG="5" depthG="10">
+			<textIs btext="로그 삭제/&lt;br&gt;공장 초기화" tcolor="0xffffff" tsize="22" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="kr" tmargin="9.85" xscale="1" lmargin="28.4"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn1.png"  breturn="G[4007]" bx="12" by="676" bw="201" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="6"  rtnUIC="0" ign="false" levelIs="0" indexG="6" depthG="11">
+			<textIs btext="BBM CLEAR&lt;br&gt;(통신변수포함)" tcolor="0xffffff" tsize="22" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="LEFT" fontis="kr" tmargin="15.9" xscale="1" lmargin="53.4"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn1.png"  breturn="H[4008]" bx="212" by="676" bw="201" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="7"  rtnUIC="0" ign="false" levelIs="0" indexG="7" depthG="12">
+			<textIs btext="BBM CLEAR&lt;br&gt;(통신변수제외)" tcolor="0xffffff" tsize="22" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="kr" tmargin="10" xscale="1" lmargin="10"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn1.png"  breturn="I[4011]" bx="412" by="676" bw="201" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="8"  rtnUIC="0" ign="false" levelIs="0" indexG="8" depthG="13">
+			<textIs btext="보수TP&lt;br&gt;기동" tcolor="0xffffff" tsize="22" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="kr" tmargin="9.85" xscale="1" lmargin="49"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn1.png"  breturn="E[4004]" bx="612" by="676" bw="201" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="9"  rtnUIC="0" ign="false" levelIs="0" indexG="9" depthG="14">
+			<textIs btext="장애 정보" tcolor="0xffffff" tsize="22" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="kr" tmargin="21.45" xscale="1" lmargin="38.3"/>
+		</btns>
+		<btns className="smcBrownBtn" urlpath="../btn/manage_btn1.png"  breturn="J[J]" bx="812" by="676" bw="201" bh="80" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po=""  iname="10"  rtnUIC="0" ign="false" levelIs="0" indexG="10" depthG="16">
+			<textIs btext="취소" tcolor="0xffffff" tsize="22" lspacing="0" linesp="0" filteris="0" centeris="1" globalIs="1" talign="LEFT" fontis="kr" tmargin="15.9" xscale="1" lmargin="53.4"/>
+		</btns>
+	</sButton>
+	<Tenkey/>
+	<Flv/>
+	<BlockMsg>
+		<bm className="normal_title center" bText="관리 모드" bmx="0" bmy="100" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="6" boldis="0" uLineis="0"/>
+		<bm className="normal_title center" bText="CE모드" bmx="0" bmy="130" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="1" fontis="Noto Sans CJK KR Regular" indexG="1" depthG="7" boldis="0" uLineis="0"/>
+		<bm className="smc_notice_text" bText="원하시는 업무의 버튼을 눌러주십시오" bmx="42" bmy="240" tsize="24" tcolor="6710886" lspacing="0" linesp="10"  talign="CENTER" rotate="0" xscale="1" alp="1" iname="2" fontis="kr" indexG="2" depthG="6" boldis="0" uLineis="0"/>
+	</BlockMsg>
+	<InputMsg>
+		<im className="" bText="" bmx="42" bmy="500" tsize="24" tcolor="0xff0000" lspacing="0" linesp="0"  talign="CENTER" bwidth="940" bheight="35" iname="0" fontis="kr"  indexG="0" depthG="18" uLineis="0" inputis="0"/>
+		<im className="" bText="" bmx="42" bmy="530" tsize="24" tcolor="0xff0000" lspacing="0" linesp="0"  talign="CENTER" bwidth="940" bheight="35" iname="1" fontis="kr"  indexG="0" depthG="19" uLineis="0" inputis="0"/>
+ 	 </InputMsg>
+	<aniBox/>
+	<ipage/>
+	<Snd/>
+	<TTS/>
+	<commentt/>
+	<ScreenNumber>
+    S20013
+  </ScreenNumber>
+	<ScreenName depth="0" display="0" type="" shortType="">
+		<comment>계원모드-CE모드</comment>
+	</ScreenName>
+</Display>

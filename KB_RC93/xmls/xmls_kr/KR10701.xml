@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="tenBox" xgab="1200" ygab="121" wgab="309" hgab="418" lth="0" lalpha="1" xround="6" lco="0" bgco="16777215" balpha="1" shadowis="0" iname="0" rotate="0" indexG="0" globalIs="0" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="2" />
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="16777215" balpha="1" shadowis="0" iname="2" rotate="0" indexG="1" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="3" />
+    <bgx className="bgBox" xgab="40" ygab="232" wgab="270" hgab="208" lth="1" lalpha="1" xround="0" lco="12303291" bgco="16777215" balpha="1" shadowis="0" iname="1" rotate="0" indexG="2" globalIs="0" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="4" />
+  </BasicBox>
+  <sButton>
+    <btns className="cancel_btn" urlpath="../btn/cancel_bg.png" breturn="~[~]" bx="40" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="1">
+      <textIs btext="취 소" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="16.4" xscale="1" lmargin="86.8" />
+    </btns>
+    <btns className="confirm_btn" urlpath="../btn/confirm_bg.png" breturn="=[]" bx="764" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="1" ignorePo="0" po="R1" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="3">
+      <textIs btext="확 인" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+  </sButton>
+  <Tenkey imgIndex="0" dxtIndex="0" confirmurl="R1">
+    <ten tenx="0" teny="0" tenw="90" tenh="84" tendata="0유무:1|최소값/금액한글화 인덱스값:1|최대값/비교텍스트인덱스값:4|자동리턴유무(만,천키 있을시자동리턴이 아닌경우=3):0|비밀번호유무 및 주민번호/아스타처리NO인 두번째텍스트인덱스:0/0|콤마삽입유무:0|만천키및특수문자유무:0-a,b,c|재배열:0|ten키올딤드유무:0|날짜조회경고창유무:0|텐키멀티유무:1_normalTenkey" tcolor="16777215" tsize="24" snd="ding.mp3" tenurl="ten.png" dimd="1" del="0" clr="0" txtHide="0" fontis="kr" indexG="0" ign="true" depthG="0" />
+  </Tenkey>
+  <BlockBox />
+  <Flv />
+  <BlockMsg>
+    <bm className="normal_title center" bText="회수 금액 입력" bmx="0" bmy="137" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+    <bm className="" bText="기기 보유 금액" bmx="70" bmy="256" tsize="20" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+    <bm className="" bText="회수 금액" bmx="70" bmy="345" tsize="20" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+    <im className="ten_input" bText="" bmx="1200" bmy="269" tsize="32" tcolor="0x000000" lspacing="0" linesp="0" talign="right" bwidth="222" bheight="40" iname="0" fontis="f3" indexG="0" depthG="5" uLineis="0" inputis="0" />
+    <im className="ramainCash_input" bText="" bmx="70" bmy="290" tsize="28" tcolor="0x545045" lspacing="-1" linesp="0" talign="left" bwidth="220" bheight="30" iname="2" fontis="Noto Sans CJK KR Bold" indexG="2" depthG="10" uLineis="0" inputis="0" />
+    <im className="putoutCash_input" bText="" bmx="70" bmy="380" tsize="28" tcolor="0x545045" lspacing="-1" linesp="0" talign="left" bwidth="220" bheight="30" iname="1" fontis="Noto Sans CJK KR Bold" indexG="1" depthG="10" uLineis="0" inputis="0" />
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+		KR10701
+	</ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>회수금액입력</comment>
+  </ScreenName>
+  <Custom>
+    <cm isBtn="" isTenkey="1" urlpath="ATEC_10701.png" iname="CashPutoutRemain" mbx="0" mby="0" mbw="0" mbh="0" src="ATEC_10701.js" class="10701" param="" paramClass="" param2="" param2Class="kr10701" />
+  </Custom>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+    <preShow sTag="cm" sAttr="iname" sValue="CashPutoutRemain" rAttr="param" rValue="2000000000;50000|3796|0;10000|0|0;5000|500|0;1000|500|0;500|500|0;100|500|0;50|200|0;10|300|0;" />
+    <preShow sTag="cm" sAttr="iname" sValue="CashPutoutRemain" rAttr="param" rValue="2000000000;50000|3796|100;10000|0|0;5000|500|0;1000|500|10;500|500|0;100|500|0;50|200|0;10|300|0;" />
+  </TestData>
+  <TTS />
+</Display>

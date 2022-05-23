@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display viewtype='Bank'>
+	<BasicBox>
+		<bgx className="bgBox" xgab="42" ygab="176" wgab="940" hgab="546" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="0" rotate="0" indexG="0" globalIs="1" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="5"/>
+	</BasicBox>
+	<sLine/>
+	<sButton>
+	</sButton>
+	<Tenkey/>
+	<Flv/>
+           <BlockBox>
+		<msg className="bgBox" urlpath="../img/loadingMotion.gif" mbx="402" mby="480" mbw="220" mbh="60" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="2"/>
+	</BlockBox>
+	<BlockMsg>
+		<bm className="normal_title center" bText="관리 모드" bmx="0" bmy="100" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="6" boldis="0" uLineis="0"/>
+		<bm className="normal_title center" bText="시스템 리부팅" bmx="0" bmy="130" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="1" fontis="Noto Sans CJK KR Regular" indexG="1" depthG="7" boldis="0" uLineis="0"/>
+		<bm className="smc_notice_text" bText="시스템을 리부팅 합니다&lt;br&gt;잠시만 기다려 주십시오" bmx="42" bmy="360" tsize="36" tcolor="6710886" lspacing="0" linesp="10"  talign="CENTER" rotate="0" xscale="1" alp="1" iname="2" fontis="kr" indexG="2" depthG="6" boldis="0" uLineis="0"/>
+	</BlockMsg>
+	<InputMsg/>
+	<aniBox/>
+	<ipage/>
+	<Snd/>
+	<TTS/>
+	<commentt/>
+	<ScreenNumber>
+    S20011
+  </ScreenNumber>
+	<ScreenName depth="0" display="0" type="" shortType="">
+		<comment>리부팅화면</comment>
+	</ScreenName>
+</Display>

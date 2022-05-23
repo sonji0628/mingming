@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display viewtype='Bank'>
+	<BasicBox>
+		<bgx className="" xgab="42" ygab="176" wgab="940" hgab="1" lth="1" lalpha="1" xround="0" lco="12828864" bgco="12828864" balpha="1" shadowis="0" iname="1" rotate="0" indexG="0" globalIs="0" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="18"/>
+		<bgx className="bgBox" xgab="43" ygab="229" wgab="465" hgab="450" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="1" rotate="0" indexG="1" globalIs="0" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="19"/>
+		<bgx className="bgBox" xgab="517" ygab="229" wgab="465" hgab="144" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="0" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="20"/>
+		<bgx className="bgBox" xgab="517" ygab="382" wgab="465" hgab="144" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="3" rotate="0" indexG="3" globalIs="0" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="21"/>
+	    <bgxXX className="bgBox" xgab="43" ygab="535" wgab="465" hgab="144" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="4" rotate="0" indexG="4" globalIs="0" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="20"/>
+		<bgx className="bgBox" xgab="517" ygab="535" wgab="465" hgab="144" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="5" rotate="0" indexG="5" globalIs="0" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="21"/>
+	</BasicBox>
+	<sButton>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn2.png" breturn="A[5002]" bx="12" by="686" bw="201" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="0">
+			<textIs btext="동전방출&lt;br&gt;테스트" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn2.png" breturn="B[5003]" bx="212" by="686" bw="201" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="1">
+			<textIs btext="현금방출&lt;br&gt;테스트" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn2.png" breturn="C[5004]" bx="412" by="686" bw="201" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="2" rtnUIC="0" ign="false" levelIs="0" indexG="2" depthG="2">
+			<textIs btext="현금부&lt;br&gt;셔터테스트" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn2.png" breturn="D[5005]" bx="612" by="686" bw="201" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="3" rtnUIC="0" ign="false" levelIs="0" indexG="3" depthG="3">
+			<textIs btext="동전부 수취함&lt;br&gt;셔터테스트" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48"/>
+		</btns>
+		<btns className="smcBrownBtn" urlpath="../btn/manage_btn1.png" breturn="J[J]" bx="812" by="686" bw="201" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="5" rtnUIC="0" ign="false" levelIs="0" indexG="5" depthG="5">
+			<textIs btext="취소" tcolor="16777215" tsize="24" lspacing="0" linesp="8" filteris="0" centeris="1" globalIs="1" talign="left" fontis="kr" tmargin="16.5" xscale="1" lmargin="59"/>
+		</btns>
+	</sButton>
+	<Tenkey/>
+	<BlockBox/>
+	<Flv/>
+	<BlockMsg>
+		<bm className="normal_title center" bText="관리 모드" bmx="0" bmy="100" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="6" boldis="0" uLineis="0"/>
+		<bm className="normal_title center" bText="디바이스 상태" bmx="0" bmy="130" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="1" fontis="Noto Sans CJK KR Regular" indexG="1" depthG="7" boldis="0" uLineis="0"/>
+		<bm className="" bText="원하시는 테스트의 버튼을 눌러 주십시오" bmx="341" bmy="189" tsize="20" tcolor="4276290" lspacing="0" linesp="0" talign="CENTER" rotate="0" xscale="1" alp="1" iname="2" fontis="yg" indexG="2" depthG="8" boldis="0" uLineis="0"/>
+		<bm className="myBox_title center" bText="현금환류부" bmx="43" bmy="248" tsize="24" tcolor="4276290" lspacing="0" linesp="0" talign="left" rotate="0" xscale="1" alp="1" iname="3" fontis="yg" indexG="3" depthG="9" boldis="0" uLineis="0"/>
+		<bm className="myBox_title center" bText="동전출금부 FW" bmx="517" bmy="248" tsize="24" tcolor="4276290" lspacing="0" linesp="0" talign="left" rotate="0" xscale="1" alp="1" iname="4" fontis="yg" indexG="4" depthG="10" boldis="0" uLineis="0"/>
+		<bm className="myBox_title center" bText="동전입금부 FW" bmx="517" bmy="403" tsize="24" tcolor="4276290" lspacing="0" linesp="0" talign="left" rotate="0" xscale="1" alp="1" iname="5" fontis="yg" indexG="5" depthG="11" boldis="0" uLineis="0"/>
+		<bm className="myBox_title center" bText="명세표부 FW" bmx="517" bmy="556" tsize="24" tcolor="4276290" lspacing="0" linesp="0" talign="left" rotate="0" xscale="1" alp="1" iname="6" fontis="yg" indexG="6" depthG="12" boldis="0" uLineis="0"/>
+	</BlockMsg>
+	<InputMsg>
+		<im className="smcSpacePre" bText="" bmx="50" bmy="280" tsize="16" tcolor="10328992" lspacing="0" linesp="10"  talign="center"  bwidth="450" bheight="395" iname="0" fontis="kr" indexG="0" depthG="13" uLineis="0" inputis="0"/>
+		<im className="smcSpacePre" bText="" bmx="524" bmy="280" tsize="16" tcolor="10328992" lspacing="0" linesp="10"  talign="center"  bwidth="450" bheight="35" iname="1" fontis="kr" indexG="1" depthG="14" uLineis="0" inputis="0"/>
+		<im className="smcSpacePre" bText="" bmx="524" bmy="435" tsize="16" tcolor="10328992" lspacing="0" linesp="10"  talign="center"  bwidth="450" bheight="35" iname="2" fontis="kr" indexG="2" depthG="15" uLineis="0" inputis="0"/>
+		<im className="smcSpacePre" bText="" bmx="524" bmy="588" tsize="16" tcolor="10328992" lspacing="0" linesp="10"  talign="center"  bwidth="450" bheight="35" iname="3" fontis="kr" indexG="3" depthG="16" uLineis="0" inputis="0"/>
+		<imXX className="smcSpacePre" bText="" bmx="50" bmy="556" tsize="16" tcolor="10328992" lspacing="0" linesp="10"  talign="center"  bwidth="450" bheight="35" iname="4" fontis="kr" indexG="4" depthG="17" uLineis="0" inputis="0"/>
+	</InputMsg>
+	<aniBox/>
+	<Snd/>
+	<ScreenNumber>
+		S20002
+	</ScreenNumber>
+	<ScreenName depth="0" display="0" type="" shortType="">
+		<comment>계원모드-디바이스상태</comment>
+	</ScreenName>
+	<Custom>
+	</Custom>
+	<ArrowSts start="">
+	</ArrowSts>
+	<TestData>
+	</TestData>
+	<TTS/>
+</Display>

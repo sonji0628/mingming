@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="bgBox" xgab="42" ygab="176" wgab="940" hgab="482" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="0" rotate="0" indexG="0" globalIs="1" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="5" />
+  </BasicBox>
+  <sLine />
+  <sButton>
+    <btns className="smcBrownBtn" urlpath="../btn/manage_btn1.png" breturn="J[J]" bx="12" by="686" bw="334" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="2">
+      <textIs btext="취소" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48" />
+    </btns>
+    <btns className="smcGrayBtn" urlpath="../btn/manage_btn2.png" breturn="1[1]" bx="346" by="686" bw="333" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="retPrev" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="3">
+      <textIs btext="이전일" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48" />
+    </btns>
+    <btns className="smcGrayBtn" urlpath="../btn/manage_btn2.png" breturn="2[2]" bx="679" by="686" bw="333" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="retNext" rtnUIC="0" ign="false" levelIs="0" indexG="2" depthG="3">
+      <textIs btext="다음일" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48" />
+    </btns>
+  </sButton>
+  <Tenkey />
+  <Flv />
+  <BlockMsg>
+    <bm className="normal_title center" bText="관리 모드" bmx="0" bmy="100" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="6" boldis="0" uLineis="0" />
+    <bm className="normal_title center" bText="장애 내역" bmx="0" bmy="130" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="1" fontis="Noto Sans CJK KR Regular" indexG="1" depthG="7" boldis="0" uLineis="0" />
+    <bm className="smc_notice_text" bText="화면을 스크롤하여 내용을 확인할 수 있습니다" bmx="42" bmy="190" tsize="20" tcolor="6710886" lspacing="0" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="2" fontis="kr" indexG="2" depthG="6" boldis="0" uLineis="0" />
+    <bm className="smc_notice_text searchDate" bText="검색일 :          월             일" bmx="42" bmy="235" tsize="24" tcolor="0" lspacing="0" linesp="0" talign="CENTER" rotate="0" xscale="1" alp="1" iname="3" fontis="Noto Sans CJK KR Medium" indexG="3" depthG="2" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+    <im className="" bText="" bmx="-200" bmy="352" tsize="25" tcolor="16777215" lspacing="0" linesp="0" talign="left" bwidth="300" bheight="35" iname="0" fontis="kr" indexG="0" depthG="7" uLineis="0" inputis="0" />
+    <im className="SMC_20009_txt" bText="" bmx="72" bmy="275" tsize="22" tcolor="4408131" lspacing="0" linesp="13" talign="left" bwidth="890" bheight="366" iname="1" fontis="lg" indexG="1" depthG="8" uLineis="0" inputis="0" />
+  </InputMsg>
+  <aniBox />
+  <ipage />
+  <Snd />
+  <TTS />
+  <commentt />
+  <Custom>
+    <cm urlpath="" iname="test1" mbx="142" mby="430" mbw="800" mbh="0" src="SMC_20009.js" class="20009" param="" paramClass="" />
+  </Custom>
+  <ScreenNumber>
+    S20009
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>계원모드-장애저널 검색일자 선택</comment>
+  </ScreenName>
+  <TestData>
+    <preShow sTag="im" sAttr="iname" sValue="0" rAttr="bText" rValue="20211111" />
+    <preShow sTag="im" sAttr="iname" sValue="1" rAttr="bText" rValue="출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트 출력 문구 테스트" />
+  </TestData>
+</Display>

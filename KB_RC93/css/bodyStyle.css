@@ -1,0 +1,158 @@
+﻿/*********************************************************
+    배경 이미지를 가운데에 크게 위치 시키는 body CSS 입니다.
+    이미지는 되도록이면 벡터이미지(svg)를 이용해 주세요
+
+    작성:전기준 black™
+    일시:2015.04.27
+
+    Revision History
+        ver 1.0.0.0 - 최초작성
+        ver 1.0.0.1 (2021.01.22) - 화면기본정보 영역 추가 (page번호, 리턴데이터, 화면이름) (cyg)  
+        ver 1.0.0.2 (2021.02.25) - L-Banner 영역추가를 위해 html, body 의 배경이미지를 #container 로 이동, postion: absolute 주석처리 (cyg)
+        ver 1.0.0.3 (2021.03.16) - skin 폴더위치 변경대응 (../skin => ../images/skin/ )
+        ver 1.0.0.4 (2021.09.24) - 국민은행 시재관리기 전용 ver
+                                   container 사이즈 수정, pageHeader 수정 (sjm)
+                                   
+**************************************************************/
+
+html,body
+{
+    /*background-color: rgba(0,0,0,0);*/
+
+    /* 배경이미지를 #container 로 이동 (cyg) */
+/*    background: url(../skin/bg.png) no-repeat;  */
+    /*transform : scaleX(.8) scaleY(.75);*/
+    transform-origin: 0% 0%;
+    margin:0px 0px 0px 0px;
+/*    overflow:hidden;*/
+    background-color: #ffffff;
+    width : 1024px;
+    height: 768px;  
+    box-sizing: border-box;
+    font-family: 'Noto Sans CJK KR';
+    /* postion 정보를 주석처리 (cyg) */
+/*    position: absolute;  */
+
+    /* 마우스 드래그 방지 */
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none
+
+}
+
+#container {
+   /* background: url(../images/skin/bg.png) no-repeat; */
+    width : 1024px;
+    height: 768px;
+
+    /* postion 정보 수정 (cyg) */
+    /* position: relative; */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #f3f5f7;
+}
+
+#skin
+{
+    /*
+    background-image: url(../images/skin/bg.png); 
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    */
+
+    background: #fff; 
+    width : 1024px;
+    height: 768px;
+    display: block;
+
+    /* postion 정보 수정 (cyg) */
+    /* position: relative; */
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+}
+
+#skin_lv
+{
+    background: url(../images/skin/bg_lv.png) no-repeat; 
+    width : 1024px;
+    height: 768px;
+    display: none;
+
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+}
+
+#skin_bp
+{
+    background: url(../images/skin/bg_bp.png) no-repeat; 
+    width : 1024px;
+    height: 768px;
+    display: none;
+
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+}
+
+/* common header */
+#pageHeader {position: absolute; left: 0; top: 0; z-index: 1; width: 1024px; height: 106px; padding: 16px 40px; background: url('../images/styles/header_bg.png') center 0 no-repeat;text-align: right;display:flex;flex-direction:column;justify-content:space-between;}
+#pageHeader .date_box {font-size: 18px;color: #d5ccbb;line-height: 24px;}
+#pageHeader #branchName{font-size: 16px;color: #bcae97;}
+
+
+
+/* 코드통합 2021.01.22 (cyg) start ==>  */
+
+/* 화면번호 출력 영역 - 디버깅용 */
+#pageNumber{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size:12px;
+    z-index:13;
+}
+/* 리턴값 출력 영역 - 디버깅용 */
+#rtn{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    font-size:12px;
+    z-index:14; 
+}
+/* 화면 네비게이션 출력 영역 */
+#screenName{
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    font-size:20px;
+    color: white;
+    z-index:15; 
+    font-family: 'KoPub돋움체 Medium';
+}
+/* 코드통합 2021.01.22 (cyg) end <== */
+
+/* 가운데 정렬 확인용 */
+#container:before {content: ""; display: none; width: 1px; height: 100%; background-color: rgba(0,0,0,0.08); position: absolute; left: 50%; top: 0; z-index: 9999;}
+
+/* 디버그용
+div{
+    border: solid black 1px;
+}
+div.btn div
+{
+    border: solid black 1px;
+}
+*/
+
+ /*스크롤바 css
+ ::-webkit-scrollbar {width: 35px; height: 8px; border: 3px solid #fff; }
+ ::-webkit-scrollbar-button:start:decrement, ::-webkit-scrollbar-button:end:increment {display: block; height: 10px; background: #efefef}
+ ::-webkit-scrollbar-track {background: #efefef; -webkit-border-radius: 10px; border-radius:10px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.2)}
+ ::-webkit-scrollbar-thumb {height: 50px; width: 50px; background: rgba(0,0,0,.2); -webkit-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.1)}
+*/
+

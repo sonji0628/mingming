@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display viewtype='Bank'>
+	<BasicBox>
+		<bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="16777215" balpha="1" shadowis="0" iname="2" rotate="0" indexG="0" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="2"/>
+	</BasicBox>
+	<sButton/>
+	<Tenkey/>
+	<BlockBox>
+		<msg className="bgBox" urlpath="../img/out_receiptMoney.gif" mbx="117.5" mby="287" mbw="789" mbh="483" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="1"/>
+	</BlockBox>
+	<Flv/>
+	<BlockMsg>
+		<bm className="motion_text center" bText="명세표와 지폐를 받아 주십시오" bmx="0" bmy="105" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0"/>
+	</BlockMsg>
+	<InputMsg/>
+	<aniBox/>
+	<Snd/>
+	<ScreenNumber>
+		KR19053
+	</ScreenNumber>
+	<ScreenName depth="0" display="0" type="" shortType="">
+		<comment>출금 명세표 / 금액 방출</comment>
+	</ScreenName>
+<Custom/>
+	<ArrowSts start="">
+	</ArrowSts>
+	<TestData/>
+	<TTS/>
+</Display>

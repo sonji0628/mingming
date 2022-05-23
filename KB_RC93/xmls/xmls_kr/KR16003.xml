@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="450" lth="0" lalpha="0" xround="0" lco="0" bgco="0xf7f7f7" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+    <bgx className="baseWrap" xgab="0" ygab="570" wgab="1024" hgab="198" lth="0" lalpha="0" xround="0" lco="0" bgco="0xffffff" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+  </BasicBox>
+  <sButton />
+  <Tenkey />
+  <BlockBox></BlockBox>
+  <Flv />
+  <BlockMsg>
+    <bm className="notice_text_btn center" bText="거래 복원 처리 중입니다&lt;br&gt;잠시만 기다려 주시기 바랍니다&lt;br&gt;&lt;br&gt;&lt;br&gt;" bmx="0" bmy="115" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="1" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg/>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+		KR16003
+	</ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>취소처리중</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start="1">
+    <img pos="1" left="152" top="592" width="92" height="" />
+    <img pos="2" left="260" top="634" width="187" height="" />
+    <img pos="3" left="463" top="592" width="92" height="" />
+    <img pos="4" left="575" top="634" width="187" height="" />
+    <img pos="5" left="780" top="592" width="92" height="" />
+    <sts step="1" img1="start1.png" img2="../img/loading.gif" img3="mid0.png" img4="../img/loading0.png" img5="end0.png" />
+    <sts step="2" img1="start1.png" img2="../img/loading1.png" img3="mid1.png" img4="../img/loading.gif" img5="end0.png" />
+    <sts step="3" img1="start1.png" img2="../img/loading1.png" img3="mid1.png" img4="../img/loading1.png" img5="end1.png" />
+  </ArrowSts>
+  <TestData>
+    <update cmd="arrowSts" param1="1" param2="" />
+    <update cmd="arrowSts" param1="2" param2="" />
+    <update cmd="arrowSts" param1="3" param2="" />
+    <update cmd="arrowSts" param1="1" param2="" />
+    <update cmd="arrowSts" param1="3" param2="" />
+  </TestData>
+  <TTS/>
+</Display>

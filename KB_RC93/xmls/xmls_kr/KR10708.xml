@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="522" lth="0" lalpha="0" xround="0" lco="0" bgco="0xf7f7f7" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+    <bgx className="baseWrap" xgab="0" ygab="628" wgab="1024" hgab="140" lth="0" lalpha="0" xround="0" lco="0" bgco="0xffffff" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+  </BasicBox>
+  <sButton>
+    <btns className="confirm_btn" urlpath="../btn/confirm_bg.png" breturn="=[=]" bx="764" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+      <textIs btext="확 인" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+  </sButton>
+  <Tenkey />
+  <BlockBox>
+     <msg className="bgBox" urlpath="../img/loading.gif" mbx="300" mby="500" mbw="400" mbh="15" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="2"/>
+ </BlockBox>
+  <Flv />
+  <BlockMsg>
+    <bm className="notice_text_btn center" bText="모든 동전 입금 개수가 0개로 초기화 되었습니다&lt;br&gt;동전 입금함을 열어 입금된 동전을 모두 회수하여 주십시오" bmx="" bmy="40" tsize="36" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+     <bm className="notice_text_btn center" bText="※ 모든 권종의 동전을 회수 하신 후 [확인]버튼을 눌러 주십시오&lt;br&gt;입금 동전의 회수내역은 명세표를 확인하여 주십시오" bmx="" bmy="150" tsize="28" tcolor="0x0000ff" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+ </BlockMsg>
+  <InputMsg>
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+    KR10708
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>입금동전회수안내</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>

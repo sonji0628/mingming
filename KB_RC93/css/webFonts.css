@@ -1,0 +1,482 @@
+/*************************************************************************************
+    FileName			:	webFpmts.css
+    Description		:	Font 적용을 위한 font-face 정의
+                     - "KoPub돋움체 Light" 등과 같이 font 의 family name 과 title 이 틀린경우, 
+                         system font 를 가져오지 못하는 경우가 발생된다.
+                     - 이를 극복하기 위해, webFont 방식으로 폰트를 로딩하기 위해 font-face 를 구성함.    
+                        
+	Created Date		:	2022.03.08
+	Created By			:	ATEC AP, cyg
+    Revision History	:	
+             ver 1.0.0.0 - 최초작성
+             ver 1.0.0.1 (2021.03.17) - 동일 폰트를 여러이름으로 사용하기 위해 font-family 추가, cyg
+             ver 1.0.0.2 (2021.05.21) - 스리랑카어의 font-family 를 추가(이중) 등록함, cyg
+**************************************************************************************/
+
+/*************************************************************************************
+           (c) Copyright  2020  ATEC AP Inc. All Rights Reserved
+            
+       THIS IS UNPUBLISHED PROPRIETARY SOURCE CODE OF ATEC AP  Inc.
+       The copyright notice above does not evidence any actual or intended
+       publication of such source code.
+**************************************************************************************/
+
+/* 이전 사용하던 폰트이름..호환성을 위해 이중 등록함 ==> */
+/**  아래의 해당되는 FONT-FACE 에 FONT-FAMILY 를 추가함
+@font-face {
+  font-family: "Noto Sans CJK KR";
+  src: local('Noto Sans CJK KR Regular'),
+      url('../fonts/NotoSansCJKkr-Regular.otf');
+}
+
+@font-face {
+  font-family: "Noto Sans CJK KR M";
+  src: local('Noto Sans CJK KR Medium'),
+      url('../fonts/NotoSansCJKkr-Medium.otf');
+}
+
+@font-face {
+  font-family: "Noto Sans CJK KR B";
+  src: local('Noto Sans CJK KR Bold'),
+      url('../fonts/NotoSansCJKkr-Bold.otf');
+}
+
+@font-face {
+  font-family: "KoPubDotum B";
+  src: local('KoPub돋움체 Bold'),
+       url('../fonts/KoPubDotumBold.eot'),
+       url('../fonts/KoPubDotumBold.woff2') format('woff2'),
+       url('../fonts/KoPubDotumBold.woff') format('woff'),
+       url('../fonts/KoPubDotumBold.ttf') format('truetype'),
+       url('../fonts/KoPubDotumBold.svg#KoPubDotumBold') format('svg'),
+       url('../fonts/KoPubDotumBold.eot?#iefix') format('embedded-opentype');
+
+}
+
+@font-face {
+  font-family: "KoPubDotum L";
+  src: local('KoPub돋움체 Light'),
+       url('../fonts/KoPubDotumLight.eot'),
+       url('../fonts/KoPubDotumLight.woff2') format('woff2'),
+       url('../fonts/KoPubDotumLight.woff') format('woff'),
+       url('../fonts/KoPubDotumLight.ttf') format('truetype'),
+       url('../fonts/KoPubDotumLight.svg#KoPubDotumLight') format('svg'),
+       url('../fonts/KoPubDotumLight.eot?#iefix') format('embedded-opentype');
+
+
+}
+@font-face {
+  font-family: "KoPubDotum M";
+  src: local('KoPub돋움체 Medium'),
+      url('../fonts/KoPubDotumMedium.eot'),
+      url('../fonts/KoPubDotumMedium.woff2') format('woff2'),
+      url('../fonts/KoPubDotumMedium.woff') format('woff'),
+      url('../fonts/KoPubDotumMedium.ttf') format('truetype'),
+      url('../fonts/KoPubDotumMedium.svg#KoPubDotumMedium') format('svg'),
+      url('../fonts/KoPubDotumMedium.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "나눔스퀘어";
+  src: local('나눔스퀘어 Regular'),
+      url('../fonts/NanumSquareR.ttf');
+}
+
+@font-face {
+  font-family: "NanumSquare";
+  src: local('나눔스퀘어 Bold'),
+      url('../fonts/NanumSquareB.ttf');
+}
+**/
+/* 이전 사용하던 폰트이름..호환성을 위해 이중 등록함 <== */
+
+/* 기본 폰트 */
+
+/* ---> */
+@font-face {
+  font-family: '맑은 고딕';                 /* 한글 title */
+  src: local('맑은 고딕'), 
+       url('../fonts/malgun.ttf');
+}
+@font-face {
+  font-family: 'Malgun Gothic';             /* 영문 title */
+  src: local('맑은 고딕'), 
+       url('../fonts/malgun.ttf');
+}
+/* <--- */
+
+/* ---> */
+@font-face {
+  font-family: '맑은 고딕 Bold';            /* 한글 title */
+  src: local('맑은 고딕 Bold'),
+       url('../fonts/malgunbd.ttf');
+}
+@font-face {
+  font-family: 'Malgun Gothic Bold';        /* 영문 title */
+  src: local('맑은 고딕 Bold'),
+       url('../fonts/malgunbd.ttf');
+}
+/* <--- */
+
+
+/* ---> */
+@font-face {
+  font-family: '나눔스퀘어 Light';          /* 한글 title */
+  src: local('나눔스퀘어 Light'),
+      url('../fonts/NanumSquareL.ttf');
+}
+
+@font-face {
+  font-family: 'NanumSquare Light';       /* 영문 title */
+  src: local('나눔스퀘어 Light'),
+      url('../fonts/NanumSquareL.ttf');
+}
+/* <--- */
+
+/* ---> */
+@font-face {
+  font-family: "나눔스퀘어 Regular";        /* 한글 title */
+  src: local('나눔스퀘어 Regular'),
+       url('../fonts/NanumSquareR.ttf');
+}
+@font-face {
+  font-family: "NanumSquare Regular";       /* 영문 title */
+  src: local('나눔스퀘어 Regular'),
+       url('../fonts/NanumSquareR.ttf');
+}
+@font-face {
+  font-family: "나눔스퀘어";                /* 이전 사용하던 폰트이름..호환성을 위해 이중 등록함 */
+  src: local('나눔스퀘어 Regular'),
+       url('../fonts/NanumSquareR.ttf');
+}
+/* <--- */
+
+
+/* ---> */
+@font-face {
+  font-family: '나눔스퀘어 Bold';           /* 한글 title */
+  src: local('나눔스퀘어 Bold'),
+       url('../fonts/NanumSquareB.ttf');
+}
+@font-face {
+  font-family: 'NanumSquare Bold';          /* 영문 title */
+  src: local('나눔스퀘어 Bold'),
+       url('../fonts/NanumSquareB.ttf');
+}
+@font-face {
+  font-family: 'NanumSquare';               /* 이전 사용하던 폰트이름..호환성을 위해 이중 등록함 */
+  src: local('나눔스퀘어 Bold'),
+       url('../fonts/NanumSquareB.ttf');
+}
+/* <--- */
+
+
+/* ---> */
+@font-face {
+  font-family: "나눔스퀘어 ExtraBold";        /* 한글 title */
+  src: local('나눔스퀘어 ExtraBold'),
+       url('../fonts/NanumSquareEB.ttf');
+}
+@font-face {
+  font-family: "NanumSquare ExtraBold";       /* 영문 title */
+  src: local('나눔스퀘어 ExtraBold'),
+       url('../fonts/NanumSquareEB.ttf');
+}
+/* <--- */
+
+
+/* ---> */
+@font-face {
+  font-family: "나눔고딕 Bold";                /* 한글 title */
+  src: local('나눔고딕 Bold'),
+       url('../fonts/NanumGothicBold.ttf');
+}
+@font-face {
+  font-family: "NaumGothic Bold";               /* 영문 title */
+  src: local('나눔고딕 Bold'),
+       url('../fonts/NanumGothicBold.ttf');
+}
+/* <--- */
+
+/* ---> */
+@font-face {
+  font-family: "나눔고딕 ExtraBold";             /* 한글 title */
+  src: local('나눔고딕 ExtraBold'),
+       url('../fonts/NanumGothicExtraBold.ttf');
+}
+@font-face {
+  font-family: "NaumGothic ExtraBold";             /* 영문 title */
+  src: local('나눔고딕 ExtraBold'),
+       url('../fonts/NanumGothicExtraBold.ttf');
+}
+/* <--- */
+
+
+/* ---> */
+@font-face {
+  font-family: "나눔바른고딕";                      /* 한글 title */
+  src: local('나눔바른고딕'),
+       url('../fonts/NanumBarunGothic.ttf');
+}
+@font-face {
+  font-family: "NaumBarunGothic";                   /* 영문 title */
+  src: local('나눔바른고딕'),
+       url('../fonts/NanumBarunGothic.ttf');
+}
+/* <--- */
+
+/* ---> */
+@font-face {
+  font-family: "나눔명조";                          /* 한글 title */
+  src: local('나눔명조'),
+       url('../fonts/NanumMyeongjo.ttf');
+}
+@font-face {
+  font-family: "NaumMyeongjo";                      /* 영문 title */
+  src: local('나눔명조'),
+       url('../fonts/NanumMyeongjo.ttf');
+}
+/* <--- */
+
+/* ---> */
+@font-face {
+  font-family: "나눔손글씨 펜";                     /* 한글 title */
+  src: local('나눔손글씨 펜'),
+       url('../fonts/NanumPen.ttf');
+}
+@font-face {
+  font-family: "NaumPen Script";                     /* 영문 title */
+  src: local('나눔손글씨 펜'),
+       url('../fonts/NanumPen.ttf');
+}
+/* <--- */
+
+/* ---> */
+@font-face {
+  font-family: "나눔손글씨 붓";                     /* 한글 title */
+  src: local('나눔손글씨 붓'),
+       url('../fonts/NanumBrush.ttf');
+}
+@font-face {
+  font-family: "NaumBarun Script";                   /* 영문 title */
+  src: local('나눔손글씨 붓'),
+       url('../fonts/NanumBrush.ttf');
+}
+/* <--- */
+
+/* ---> */
+@font-face {
+  font-family: "Noto Sans CJK KR Light";        /* 한글, 영문 title */
+  src: local('Noto Sans CJK KR Light'),
+      url('../fonts/NotoSansKR-Light.otf');
+}
+@font-face {
+  font-family: "Noto Sans CJK KR Regular";        /* 한글, 영문 title */
+  src: local('Noto Sans CJK KR Regular'),
+      url('../fonts/NotoSansKR-Regular.otf');
+}
+@font-face {
+  font-family: "Noto Sans CJK KR";                  /* 이전 사용하던 폰트이름..호환성을 위해 이중 등록함  */
+  src: local('Noto Sans CJK KR Regular'),
+      url('../fonts/NotoSansKR-Regular.otf');
+}
+/* <--- */
+
+/* ---> */
+@font-face {
+  font-family: "Noto Sans CJK KR Medium";       /* 한글, 영문 title */
+  src: local('Noto Sans CJK KR Medium'),
+      url('../fonts/NotoSansKR-Medium.otf');
+}
+@font-face {
+  font-family: "Noto Sans CJK KR";       /* 한글, 영문 title */
+  font-weight: 500;
+  src: local('Noto Sans CJK KR Medium'),
+      url('../fonts/NotoSansKR-Medium.otf');
+}
+@font-face {
+  font-family: "Noto Sans CJK KR M";              /* 이전 사용하던 폰트이름..호환성을 위해 이중 등록함  */
+  src: local('Noto Sans CJK KR Medium'),
+       url('../fonts/NotoSansKR-Medium.otf');
+}
+/* <--- */
+
+
+
+/* ---> */
+@font-face {
+  font-family: "Noto Sans CJK KR Bold";       /* 한글, 영문 title */
+  src: local('Noto Sans CJK KR Bold'),
+      url('../fonts/NotoSansKR-Bold.otf');
+}
+@font-face {
+  font-family: "Noto Sans CJK KR B";              /* 이전 사용하던 폰트이름..호환성을 위해 이중 등록함  */
+  src: local('Noto Sans CJK KR Bold'),
+      url('../fonts/NotoSansKR-Bold.otf');
+}
+/* <--- */
+
+/* 영어, 독일어, 인도네시아어, 프랑스어, 필리핀어 */
+@font-face {
+  font-family: 'Arial';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Arial'),
+      url('../fonts/arial.ttf') format('truetype');
+}
+
+/* 일본어 */
+@font-face {
+  font-family: 'MS Gothic', 'MS PGothic', 'MS UIGothic';  /* title 에 3가지가 동시에 표시됨 */
+  font-weight: normal;
+  font-style: normal;
+  src: local('MS Gothic'), local('MS PGothic'), local('MS UIGothic'),
+      url('../fonts/msgothic.ttc') format('truetype');
+}
+
+/* 중국어 */
+@font-face {
+  font-family: 'SimSun';
+  font-weight: normal;
+  font-style: normal;
+  src: local('SimSun'),
+      url('../fonts/simsun.ttc') format('truetype');
+}
+
+/* 러시아어, 몽골어, 베트남어, 스페인어 */
+@font-face {
+  font-family: 'Tahoma';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Tahoma'),
+      url('../fonts/tahoma.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Tahoma Bold';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Tahoma Bold'),
+      url('../fonts/tahomabd.ttf') format('truetype');
+}
+
+/* 몽골어 */
+@font-face {
+  font-family: "Mongols";
+  src: local('Mongols'),
+      url('../fonts/MONGOLS.TTF');
+}
+
+
+/* 방글라데시어 */
+@font-face {
+  font-family: 'Bangla';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Bangla'),
+      url('../fonts/Bangla.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TonnyBanglaMJ';
+  font-weight: normal;
+  font-style: normal;
+  src: local('TonnyBanglaMJ'),
+      url('../fonts/TONNBM.TTF') format('truetype');
+}
+
+
+/* 스리랑카어 */
+/* ---> */
+@font-face {
+  font-family: 'FMBindumathi x';
+  font-weight: normal;
+  font-style: normal;
+  src: local('FMBindumathi x'),
+      url('../fonts/FM_BINDU.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'FMBindumathi';    /* UI Studio Code 에서 폰트이름을 잘못 저장하고 있어서, 중복 등록함 */
+  font-weight: normal;
+  font-style: normal;
+  src: local('FMBindumathi x'),
+      url('../fonts/FM_BINDU.TTF') format('truetype');
+}
+/* <--- */
+
+/* 인도 (힌디어) */
+@font-face {
+  font-family: 'Mangal';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Mangal'),
+      url('../fonts/MANGAL.TTF') format('truetype');
+}
+
+/* 태국어 */
+@font-face {
+  font-family: 'TH Baijam';
+  font-weight: normal;
+  font-style: normal;
+  src: local('TH Baijam'),
+      url('../fonts/TH Baijam Bold.ttf') format('truetype');
+}
+
+/* 파키스탄어 */
+@font-face {
+  font-family: 'Jameel Noori Nastaleeq';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Jameel Noori Nastaleeq'),
+      url('../fonts/Jameel Noori Nastaleeq.ttf') format('truetype');
+}
+
+/* 캄보디아어 */
+@font-face {
+  font-family: 'ABC-TEXT-02';
+  font-weight: normal;
+  font-style: normal;
+  src: local('ABC-TEXT-02'),
+      url('../fonts/TEXT02.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'ABC-TEXT-01';
+  font-weight: normal;
+  font-style: normal;
+  src: local('ABC-TEXT-01'),
+      url('../fonts/TEXT01.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'ABC-HEAD-01';
+  font-weight: normal;
+  font-style: normal;
+  src: local('ABC-HEAD-01'),
+      url('../fonts/HEAD01.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'ABC-HEAD-02';
+  font-weight: normal;
+  font-style: normal;
+  src: local('ABC-HEAD-02'),
+      url('../fonts/HEAD02.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: "Limon S2";
+  src: local('Limon S2'),
+      url('../fonts/Limon-S2.ttf');
+}
+
+/* 네팔어 */
+@font-face {
+  font-family: 'Preeti';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Preeti'),
+      url('../fonts/Preeti.ttf') format('truetype');
+}
+

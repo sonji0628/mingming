@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox/>
+  <sLine />
+  <sButton/>
+  <Tenkey />
+  <Flv />
+  <BlockMsg/>
+  <InputMsg />
+  <aniBox />
+  <ipage />
+  <Snd />
+  <TTS />
+  <commentt />
+  <Custom>
+    <cm urlpath="" iname="" mbx="0" mby="0" mbw="0" mbh="0" src="SMC_menual.js" class="menual" param="" paramClass="" />
+  </Custom>
+  <ScreenNumber>
+    S20100
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>매뉴얼</comment>
+  </ScreenName>
+  <TestData/>
+</Display>

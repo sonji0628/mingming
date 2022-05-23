@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="16777215" balpha="1" shadowis="0" iname="2" rotate="0" indexG="1" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="3" />
+    <bgx className="bgBox" xgab="40" ygab="232" wgab="336" hgab="208" lth="1" lalpha="1" xround="0" lco="12303291" bgco="16777215" balpha="1" shadowis="0" iname="1" rotate="0" indexG="2" globalIs="0" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="4" />
+  </BasicBox>
+  <sButton>
+    <btns className="cancel_btn" urlpath="../btn/cancel_bg.png" breturn="~[~]" bx="40" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="1">
+      <textIs btext="취 소" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="16.4" xscale="1" lmargin="86.8" />
+    </btns>
+    <btns className="confirm_btn" urlpath="../btn/confirm_bg.png" breturn="=[=]" bx="764" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="3">
+      <textIs btext="시재동기화" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+  </sButton>
+  <Tenkey />
+  <BlockBox />
+  <Flv />
+  <BlockMsg>
+    <bm className="normal_title center" bText="[시재동기화] 버튼을 누르시면 불일치 권종의 기기시재가 단말시재로 변경됩니다" bmx="0" bmy="137" tsize="26" tcolor="0xff0000" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="0" boldis="0" uLineis="0" />
+    <bm className="" bText="단말시재 금액" bmx="70" bmy="256" tsize="20" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+    <bm className="" bText="기기시재 금액" bmx="70" bmy="345" tsize="20" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+    <im className="hostAmountInput" bText="" bmx="70" bmy="290" tsize="28" tcolor="0x545045" lspacing="0" linesp="0" talign="left" bwidth="250" bheight="30" iname="2" fontis="Noto Sans CJK KR Bold" indexG="2" depthG="10" uLineis="0" inputis="0" />
+    <im className="localAmountInput" bText="" bmx="70" bmy="380" tsize="28" tcolor="0x545045" lspacing="0" linesp="0" talign="left" bwidth="250" bheight="30" iname="1" fontis="Noto Sans CJK KR Bold" indexG="1" depthG="10" uLineis="0" inputis="0" />
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+		KR10301
+	</ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>시재 조정 화면</comment>
+  </ScreenName>
+  <Custom>
+    <cm isBtn="" isTenkey="" urlpath="" iname="HostAmount" mbx="0" mby="0" mbw="0" mbh="0" src="ATEC_10301Host.js" class="10301Host" param="" paramClass="" />
+    <cm isBtn="" isTenkey="" urlpath="" iname="LocalAmount" mbx="0" mby="0" mbw="0" mbh="0" src="ATEC_10301Local.js" class="10301Local" param="" paramClass="" />
+    <cm isBtn="" isTenkey="" urlpath="" iname="Compare" mbx="0" mby="0" mbw="0" mbh="0" src="ATEC_10301Compare.js" class="10301Compare" param="" paramClass="" />
+    <cm isBtn="" isTenkey="" urlpath="" iname="" mbx="0" mby="0" mbw="0" mbh="0" src="ATEC_10301.js" class="10301" param="" paramClass="" param2="" param2Class="kr10301" />
+  </Custom>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+    <preShow sTag="cm" sAttr="iname" sValue="HostAmount" rAttr="param" rValue="10000000;50000|1000000;10000|2000000;5000|20000;1000|100000;500|1000;100|20000;50|500;10|100;" />
+    <preShow sTag="cm" sAttr="iname" sValue="LocalAmount" rAttr="param" rValue="10000000;50000|1000000;10000|2000000;5000|20000;1000|100000;500|1000;100|20000;50|500;10|100;" />
+    <preShow sTag="cm" sAttr="iname" sValue="Compare" rAttr="param" rValue="50000|1;10000|0;5000|1;1000|0;500|0;100|0;50|0;10|0;" />
+
+  </TestData>
+  <TTS />
+</Display>

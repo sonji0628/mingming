@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="bgBox" xgab="42" ygab="176" wgab="940" hgab="482" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="0" rotate="0" indexG="0" globalIs="1" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="5" />
+  </BasicBox>
+  <sLine />
+  <sButton>
+    <btns className="smcBrownBtn" urlpath="../btn/manage_btn1.png" breturn="J[J]" bx="12" by="686" bw="501" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="2">
+      <textIs btext="취소" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48" />
+    </btns>
+    <btns className="smcYellowBtn" urlpath="../btn/manage_btn2.png" breturn="=[=]" bx="512" by="686" bw="500" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="3">
+      <textIs btext="확인" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="3.85" xscale="1" lmargin="48" />
+    </btns>
+  </sButton>
+  <Tenkey />
+  <Custom>
+    <cm urlpath="" iname="moduleconbtn" mbx="42" mby="230" mbw="940" mbh="400" src="SMC_20016.js" class="20016" param="08|카메라|0;" paramClass="" param2="" param2Class="" param3="" param3Class="" />
+  </Custom>
+  <Flv />
+  <BlockMsg>
+    <bm className="normal_title center" bText="관리 모드" bmx="0" bmy="100" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="6" boldis="0" uLineis="0" />
+    <bm className="normal_title center" bText="모듈 제한" bmx="0" bmy="130" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="1" fontis="Noto Sans CJK KR Regular" indexG="1" depthG="7" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg />
+  <aniBox />
+  <ipage />
+  <Snd />
+  <TTS />
+  <commentt />
+  <screenNumber>
+		S20016
+	</screenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>계원모드-모듈 제한</comment>
+  </ScreenName>
+  <TestData>
+    <update cmd="sendMsg" param1="moduleconbtn" param2="08|카메라|0;08|카메라|0;08|카메라|0;" />
+  </TestData>
+</Display>

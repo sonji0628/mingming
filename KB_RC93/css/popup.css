@@ -1,0 +1,98 @@
+
+
+.popup {
+    position: absolute;
+    font-family: "Noto Sans CJK KR";
+}
+
+#popup_background_div_black {
+    top: 0px;
+    left: 0px;
+    width: 1080px;
+    height: 1920px;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 16;
+}
+
+#popup_background_div_white {
+    top: 350px;
+    left: 40px;
+    width: 1000px;
+    height: 1150px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#popup_line {
+    top: 180px;
+    left: 80px;
+    width: 830px; 
+    height: 4px;
+}
+
+.popup_txt {
+    left: 90px;
+    text-align: left;
+    font-weight: bold;
+    transform: rotate(0deg) scaleX(1);
+    transform-origin: left top 0px;
+    filter: opacity(100%);
+    white-space: pre; 
+}
+
+#popup_title {
+    top: 50px;
+    font-size: 80px;
+}
+
+#popup_content {
+    top: 330px;
+    font-size: 40px;
+    width:820px;
+    height:600px;
+}
+
+#popup_warning_text {
+    top: 830px;
+    left: 90px;
+    font-size: 40px;
+    width:820px;
+    height:600px;
+    color:#921051;
+}
+
+#popup_timer {
+    top: 1045px;
+    left: 270px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    text-align: left;
+}
+
+#popup_close_btn {
+    top: 1035px;
+    left: 770px;
+    width: 150px;
+    height: 60px;
+    background-color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+#popup_close_btn2 {
+    width: 150px; 
+    height: 60px; 
+    top: 0px; 
+    left: 0px;
+}
+
+#popup_close_txt {
+    top: 12px;
+    left: 0px;
+    width: 150px;
+    height: 60px;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(37, 113, 100);
+}

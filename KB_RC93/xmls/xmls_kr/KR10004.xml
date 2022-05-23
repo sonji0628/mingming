@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="0xffffff" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+  </BasicBox>
+  <sButton>
+    <btns className="cancel_btn" urlpath="../btn/cancel_bg.png" breturn="~[~]" bx="402" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+      <textIs btext="취 소" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+  </sButton>
+  <Tenkey />
+    <BlockBox>
+		<msg className="bgBox" urlpath="../img/fingerread.gif" mbx="310" mby="300" mbw="400" mbh="300" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="1"/>
+	</BlockBox>
+  <Flv />
+  <BlockMsg>
+    <bm className="motion_text_btn center" bText="지문을 인식하여 주십시오" bmx="" bmy="105" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+    <im className="" bText="" bmx="23" bmy="485" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="0" fontis="bg" indexG="0" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="23" bmy="535" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="1" fontis="bg" indexG="1" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="23" bmy="585" tsize="32" tcolor="0xff0000" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="2" fontis="bg" indexG="2" depthG="10" uLineis="0" inputis="0" />
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+    KR10004
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>지문인식</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display viewtype='Bank'>
+	<BasicBox>
+		<bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="16777215" balpha="1" shadowis="0" iname="2" rotate="0" indexG="0" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="4"/>
+	</BasicBox>
+	<sButton>
+		<btns className="" urlpath="btn_normal.png" breturn="A[A]" bx="200" by="270" bw="300" bh="200" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="1">
+			<textIs btext="구 10원 제외&lt;br&gt;합산 처리" tcolor="5525573" tsize="24" lspacing="-1" linesp="4" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Regular" tmargin="83.1" xscale="1" lmargin="35.5"/>
+		</btns>
+		<btns className="" urlpath="btn_normal.png" breturn="B[B]" bx="524" by="270" bw="300" bh="200" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="2" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+			<textIs btext="모든 동전&lt;br&gt;합산 처리" tcolor="5525573" tsize="24" lspacing="-1" linesp="4" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Regular" tmargin="83.1" xscale="1" lmargin="56.65"/>
+		</btns>
+		<btns className="cancel_btn" urlpath="../btn/cancel_bg.png" breturn="~[~]" bx="402" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="2" depthG="3">
+			<textIs btext="취 소" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="13.1" xscale="1" lmargin="88.75"/>
+		</btns>
+	</sButton>
+	<Tenkey/>
+	<BlockBox/>
+	<Flv/>
+	<BlockMsg>
+		<bm className="" bText="원하시는 거래를 선택하여 주십시오" bmx="300" bmy="140" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="" bText="동전 입금함에 구 10원 주화가              개 존재 합니다." bmx="220" bmy="195" tsize="28" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="" bText="구 10원 동전은 출금함에&lt;br&gt;합산되지 않고 회수 처리 됩니다.&lt;br&gt;거래 종료 후 구 10원 동전을&lt;br&gt;입금함에서 꺼내 주십시오." bmx="210" bmy="475" tsize="22" tcolor="0xFF0000" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="" bText="모든 동전이 출금함에&lt;br&gt;합산 처리됩니다." bmx="580" bmy="475" tsize="22" tcolor="0xFF0000" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0"/>
+	</BlockMsg>
+	<InputMsg>
+    	<im className="" bText="" bmx="545" bmy="197" tsize="30" tcolor="0x0000ff" lspacing="-1" linesp="10"  talign="right" bwidth="70" bheight="44" iname="0" fontis="Noto Sans CJK KR Bold"  indexG="0" depthG="5" uLineis="0" inputis="0"/>
+            </InputMsg>
+	<aniBox/>
+	<Snd/>
+	<ScreenNumber>
+		KR10312
+	</ScreenNumber>
+	<ScreenName depth="0" display="0" type="" shortType="">
+		<comment>동전합산방법선택</comment>
+	</ScreenName>
+	<Custom/>
+	<ArrowSts start="">
+	</ArrowSts>
+	<TestData/>
+	<TTS/>
+</Display>

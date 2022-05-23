@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Display viewtype='Bank'>
+	<BasicBox>
+		<bgx className="tenBox smcTenBox" xgab="590" ygab="290" wgab="254" hgab="330" lth="0" lalpha="1" xround="6" lco="0" bgco="16777215" balpha="1" shadowis="0" iname="0" rotate="0" indexG="0" globalIs="0" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="10"/>
+		<bgx className="bgBox" xgab="42" ygab="176" wgab="940" hgab="482" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="1" rotate="0" indexG="1" globalIs="1" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="0"/>
+		<bgx className="bgBox" xgab="180" ygab="350" wgab="330" hgab="80" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="11"/>
+		<bgx className="bgBox" xgab="180" ygab="500" wgab="330" hgab="80" lth="1" lalpha="1" xround="0" lco="12631485" bgco="15658734" balpha="1" shadowis="0" iname="2" rotate="0" indexG="3" globalIs="0" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="12"/>
+	</BasicBox>
+	<sButton>
+		<btns className="smcBrownBtn" urlpath="../btn/manage_btn1.png" breturn="J[J]" bx="12" by="686" bw="501" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="1">
+			<textIs btext="취소" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="17.25" xscale="1" lmargin="226.6"/>
+		</btns>
+		<btns className="smcYellowBtn" urlpath="../btn/manage_btn2.png" breturn="=[=]" bx="755" by="120" bw="500" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="R1" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+			<textIs btext="확인" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="17.25" xscale="1" lmargin="226.1"/>
+		</btns>
+	</sButton>
+	<Tenkey imgIndex="0" dxtIndex="0" confirmurl="R1">
+		<ten className="" tenX="0" tenY="0" tenWidth="100" tenHeight="100" txtHide="0" tendata="0유무:1|최소값/금액한글화 인덱스값:1|최대값/비교텍스트인덱스값:4|자동리턴유무(만,천키 있을시자동리턴이 아닌경우=3):0|비밀번호유무 및 주민번호/아스타처리NO인 두번째텍스트인덱스:0/0|콤마삽입유무:0|만천키및특수문자유무:0-a,b,c|재배열:0|ten키올딤드유무:0|날짜조회경고창유무:0|텐키멀티유무:0|초기값:/686-512|언어수동세팅값:kr _normalTenkey" dimd="1" indexG="0" depthG="4" tenurl="ten.png" fontis="" />
+	</Tenkey>
+	<BlockBox/>
+	<Flv/>
+	<BlockMsg>
+		<bm className="normal_title center" bText="관리 모드" bmx="0" bmy="100" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="4" boldis="0" uLineis="0"/>
+		<bm className="normal_title center" bText="일련번호 수정" bmx="0" bmy="130" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="1" fontis="Noto Sans CJK KR Regular" indexG="1" depthG="5" boldis="0" uLineis="0"/>
+		<bm className="smc_notice_text" bText="변경하고자 하는 신규 일련번호를 입력 후, [확인]을 눌러주십시오" bmx="42" bmy="215" tsize="24" tcolor="6710886" lspacing="0" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="2" fontis="kr" indexG="2" depthG="6" boldis="0" uLineis="0"/>
+		<bm className="" bText="신규 일련번호" bmx="180" bmy="310" tsize="20" tcolor="6710886" lspacing="-2" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="2" fontis="kr" indexG="3" depthG="7" boldis="0" uLineis="0"/>
+		<bm className="" bText="기존 일련번호" bmx="180" bmy="460" tsize="20" tcolor="6710886" lspacing="-2" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="2" fontis="kr" indexG="4" depthG="8" boldis="0" uLineis="0"/>
+	</BlockMsg>
+	<InputMsg>
+		<im className="ten_input" bText="" bmx="180" bmy="370" tsize="40" tcolor="0" lspacing="10" linesp="40" talign="CENTER" bwidth="330" bheight="80" iname="0" fontis="kr" indexG="0" depthG="9" uLineis="0" inputis="0"/>
+		<im className="" bText="0498" bmx="180" bmy="520" tsize="40" tcolor="0" lspacing="10" linesp="40" talign="CENTER" bwidth="330" bheight="80" iname="1" fontis="kr" indexG="1" depthG="9" uLineis="0" inputis="0"/>
+	</InputMsg>
+	<aniBox/>
+	<Snd/>
+	<ScreenNumber>
+		S20021
+	</ScreenNumber>
+	<ScreenName depth="0" display="0" type="" shortType="">
+		<comment>계원모드-일련번호 수정</comment>
+	</ScreenName>
+	<Custom>
+	</Custom>
+	<ArrowSts start="">
+	</ArrowSts>
+	<TestData>
+        <preShow sTag="im" sAttr="iname" sValue="1" rAttr="bText" rValue="1111" />
+    </TestData>
+	<TTS/>
+</Display>

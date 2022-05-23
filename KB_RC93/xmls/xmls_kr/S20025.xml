@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="tenBox smcTenBox" xgab="680" ygab="330" wgab="254" hgab="330" lth="0" lalpha="1" xround="6" lco="0" bgco="16777215" balpha="1" shadowis="0" iname="0" rotate="0" indexG="0" globalIs="0" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="2" />
+    <bgx className="bgBox" xgab="42" ygab="176" wgab="940" hgab="500" lth="1" lalpha="1" xround="0" lco="12631485" bgco="16777215" balpha="1" shadowis="0" iname="1" rotate="0" indexG="1" globalIs="1" shadowDi="5" shadowAn="45" shadowCo="0" shadowAl="1" shadowBl="5" shadowSt="1" shadowIn="false" depthG="5" />
+    <bgx className="bgBox" xgab="680" ygab="264" wgab="254" hgab="58" lth="1" lalpha="1" xround="0" lco="12303291" bgco="16777215" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="0" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="4" />
+  </BasicBox>
+  <sButton>
+    <btns className="smcBrownBtn" urlpath="../btn/manage_btn1.png" breturn="J[J]" bx="12" by="686" bw="501" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="1">
+      <textIs btext="취소" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="17.5" xscale="1" lmargin="226.5" />
+    </btns>
+    <btns className="smcYellowBtn" urlpath="../btn/manage_btn2.png" breturn="=[=]" bx="755" by="120" bw="500" bh="70" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="R1" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+      <textIs btext="확인" tcolor="16777215" tsize="24" lspacing="-2" linesp="4" filteris="0" centeris="1" globalIs="0" talign="LEFT" fontis="kr" tmargin="17.5" xscale="1" lmargin="226" />
+    </btns>
+  </sButton>
+  <Tenkey imgIndex="0" dxtIndex="0" confirmurl="R1">
+    <ten className="" tenX="0" tenY="0" tenWidth="100" tenHeight="100" txtHide="0" tendata="0유무:1|최소값/금액한글화 인덱스값:1|최대값/비교텍스트인덱스값:4|자동리턴유무(만,천키 있을시자동리턴이 아닌경우=3):0|비밀번호유무 및 주민번호/아스타처리NO인 두번째텍스트인덱스:0/0|콤마삽입유무:0|만천키및특수문자유무:0-a,b,c|재배열:0|ten키올딤드유무:0|날짜조회경고창유무:0|텐키멀티유무:1|초기값:/686-512|언어수동세팅값:kr _normalTenkey" dimd="1" indexG="0" depthG="0" tenurl="ten.png" fontis="" />
+  </Tenkey>
+  <BlockBox />
+  <Flv />
+  <BlockMsg>
+    <bm className="normal_title center" bText="CE모드" bmx="0" bmy="100" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="3" boldis="0" uLineis="0" />
+    <bm className="normal_title center" bText="카세트 COUNTER SET" bmx="0" bmy="130" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="1" fontis="Noto Sans CJK KR Regular" indexG="1" depthG="4" boldis="0" uLineis="0" />
+    <bm className="normal_title center" bText="카세트 교체 시에 이전 매수 확인하시고 동일 매수로 입력하여 주십시오" bmx="0" bmy="185" tsize="20" tcolor="6710886" lspacing="0" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="3" fontis="Noto Sans CJK KR Regular" indexG="3" depthG="6" boldis="0" uLineis="0" />
+    <bm className="" bText="※ 회수함 교체 시 전체 현금부 정보 재설정 바람" bmx="70" bmy="628" tsize="18" tcolor="6710886" lspacing="0" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="4" fontis="kr" indexG="4" depthG="7" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+    <im className="ten_input smcTenInput moneyType" bText="" bmx="690" bmy="276" tsize="32" tcolor="0x000000" lspacing="0" linesp="0" talign="right" bwidth="224" bheight="34" iname="0" fontis="f3" indexG="0" depthG="5" uLineis="0" inputis="0" />
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+		S20025
+	</ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>CE모드-카세트 COUNTER SET</comment>
+  </ScreenName>
+  <Custom>
+    <cm isBtn="" isTenkey="1" urlpath="SMC_20025.png" iname="test1" mbx="60" mby="240" mbw="580" mbh="" src="SMC_20025.js" class="20025" param="" paramClass="" />
+  </Custom>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+    <update cmd="sendMsg" param1="test1" param2="50000|20;10000|14;5000|0;1000|20;500|0;100|0;50|10;10|100;" />
+    <preShow sTag="cm" sAttr="iname" sValue="test1" rAttr="param" rValue="50000|20;10000|14;5000|0;1000|20;500|0;100|0;50|10;10|100;" />
+  </TestData>
+  <TTS />
+</Display>

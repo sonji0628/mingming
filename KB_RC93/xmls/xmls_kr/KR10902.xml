@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="16777215" balpha="1" shadowis="0" iname="2" rotate="0" indexG="0" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="3"/>
+    <bgx className="bgBox" xgab="57" ygab="203" wgab="910" hgab="136" lth="1" lalpha="1" xround="0" lco="12303291" bgco="16777215" balpha="1" shadowis="0" iname="1" rotate="0" indexG="1" globalIs="0" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="4"/>
+    <bgx className="bgBox" xgab="57" ygab="348" wgab="910" hgab="136" lth="1" lalpha="1" xround="0" lco="12303291" bgco="16777215" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="0" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="4"/>
+  </BasicBox>
+  <sButton>
+    <btns className="cancel_btn" urlpath="../btn/cancel_bg.png" breturn="~[~]" bx="40" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="0" depthG="2">
+      <textIs btext="취 소" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+    <btns className="confirm_btn" urlpath="../btn/confirm_bg.png" breturn="=[=]" bx="764" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="3">
+      <textIs btext="확 인" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+  </sButton>
+  <Tenkey />
+  <Flv />
+  <BlockMsg>
+		<bm className="normal_title center" bText="동전 감사" bmx="0" bmy="152" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="normal_text center" bText="동전 잔량" bmx="0" bmy="231" tsize="20" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="1" fontis="Noto Sans CJK KR Regular" indexG="1" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="normal_text center" bText="누적 방출 동전" bmx="0" bmy="376" tsize="20" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="2" fontis="Noto Sans CJK KR Regular" indexG="2" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="normal_text center" bText="확인을 누르시면 동전이 50개씩 출금 됩니다&lt;br&gt;시재에는 변동이 없으니,  모든 동전이 출금 되면 반드시 출금함에 다시 넣어 주십시오" bmx="0" bmy="513" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="3" fontis="Noto Sans CJK KR Regular" indexG="3" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="coinUnit10902" bText="오백원" bmx="87" bmy="280" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="justify" rotate="0" xscale="1" alp="1" iname="5" fontis="Noto Sans CJK KR Regular" indexG="5" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="coinUnit10902" bText="백 원" bmx="308" bmy="280" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="justify" rotate="0" xscale="1" alp="1" iname="6" fontis="Noto Sans CJK KR Regular" indexG="6" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="coinUnit10902" bText="오십원" bmx="530" bmy="280" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="justify" rotate="0" xscale="1" alp="1" iname="7" fontis="Noto Sans CJK KR Regular" indexG="7" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="coinUnit10902" bText="십 원" bmx="751" bmy="280" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="justify" rotate="0" xscale="1" alp="1" iname="8" fontis="Noto Sans CJK KR Regular" indexG="8" depthG="0" boldis="0" uLineis="0"/>
+	    <bm className="coinUnit10902" bText="오백원" bmx="87" bmy="425" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="justify" rotate="0" xscale="1" alp="1" iname="9" fontis="Noto Sans CJK KR Regular" indexG="9" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="coinUnit10902" bText="백 원" bmx="308" bmy="425" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="justify" rotate="0" xscale="1" alp="1" iname="10" fontis="Noto Sans CJK KR Regular" indexG="10" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="coinUnit10902" bText="오십원" bmx="530" bmy="425" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="justify" rotate="0" xscale="1" alp="1" iname="11" fontis="Noto Sans CJK KR Regular" indexG="11" depthG="0" boldis="0" uLineis="0"/>
+		<bm className="coinUnit10902" bText="십 원" bmx="751" bmy="425" tsize="24" tcolor="0x545045" lspacing="-1" linesp="10" talign="justify" rotate="0" xscale="1" alp="1" iname="12" fontis="Noto Sans CJK KR Regular" indexG="12" depthG="0" boldis="0" uLineis="0"/>
+	</BlockMsg>
+  <InputMsg>
+    <im className="coinAudit" bText="" bmx="180" bmy="280" tsize="30" tcolor="0x545045" lspacing="0" linesp="0" talign="right" bwidth="94" bheight="28" iname="0" fontis="Noto Sans CJK KR Medium" indexG="0" depthG="10" uLineis="0" inputis="0" />
+    <im className="coinAudit" bText="" bmx="401" bmy="280" tsize="30" tcolor="0x545045" lspacing="0" linesp="0" talign="right" bwidth="94" bheight="28" iname="1" fontis="Noto Sans CJK KR Medium" indexG="1" depthG="10" uLineis="0" inputis="0" />
+    <im className="coinAudit" bText="" bmx="623" bmy="280" tsize="30" tcolor="0x545045" lspacing="0" linesp="0" talign="right" bwidth="94" bheight="28" iname="2" fontis="Noto Sans CJK KR Medium" indexG="2" depthG="10" uLineis="0" inputis="0" />
+    <im className="coinAudit" bText="" bmx="844" bmy="280" tsize="30" tcolor="0x545045" lspacing="0" linesp="0" talign="right" bwidth="94" bheight="28" iname="3" fontis="Noto Sans CJK KR Medium" indexG="3" depthG="10" uLineis="0" inputis="0" />
+    <im className="coinAudit" bText="" bmx="180" bmy="426" tsize="30" tcolor="0xff0000" lspacing="0" linesp="0" talign="right" bwidth="94" bheight="28" iname="4" fontis="Noto Sans CJK KR Medium" indexG="4" depthG="10" uLineis="0" inputis="0" />
+    <im className="coinAudit" bText="" bmx="401" bmy="426" tsize="30" tcolor="0xff0000" lspacing="0" linesp="0" talign="right" bwidth="94" bheight="28" iname="5" fontis="Noto Sans CJK KR Medium" indexG="5" depthG="10" uLineis="0" inputis="0" />
+    <im className="coinAudit" bText="" bmx="623" bmy="426" tsize="30" tcolor="0xff0000" lspacing="0" linesp="0" talign="right" bwidth="94" bheight="28" iname="6" fontis="Noto Sans CJK KR Medium" indexG="6" depthG="10" uLineis="0" inputis="0" />
+    <im className="coinAudit" bText="" bmx="844" bmy="426" tsize="30" tcolor="0xff0000" lspacing="0" linesp="0" talign="right" bwidth="94" bheight="28" iname="7" fontis="Noto Sans CJK KR Medium" indexG="7" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="57" bmy="590" tsize="20" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="910" bheight="28" iname="8" fontis="Noto Sans CJK KR Regular" indexG="8" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="57" bmy="620" tsize="20" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="910" bheight="28" iname="9" fontis="Noto Sans CJK KR Regular" indexG="9" depthG="10" uLineis="0" inputis="0" />
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+        KR10902
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>동전감사</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>

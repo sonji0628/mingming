@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="662" lth="0" lalpha="0" xround="0" lco="0" bgco="0xffffff" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+  </BasicBox>
+  <sButton>
+  </sButton>
+  <Tenkey />
+  <BlockBox>
+		<msg className="bgBox" urlpath="../img/out_coinMoney_ver2.gif" mbx="362.5" mby="287" mbw="299" mbh="483" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="1"/>
+	</BlockBox>
+  <Flv />
+  <BlockMsg>
+    <bm className="motion_text_2line center" bText="지폐와 동전을 반환하고 있습니다&lt;br&gt;잠시만 기다려 주십시오" bmx="" bmy="105" tsize="32" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+  </BlockMsg>
+  <InputMsg>
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+    KR19061
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>지폐/동전 반환</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>

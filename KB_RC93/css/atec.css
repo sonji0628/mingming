@@ -1,0 +1,479 @@
+/**************************************************************
+                    국민은행 시재관리기 CSS
+**************************************************************/
+
+/* 기존 css (신원미상으로 임시 유지..) */
+.dimd{opacity: 35%;background:rgba(0,0,0,0.4) !important;pointer-events:none;}
+
+/* popup */
+.dimBg{width:1024px;height:768px;background: rgba(0,0,0,0.8);position:fixed;top:0;left:0;z-index:9999;display:flex;flex-direction: column;justify-content: center;align-items:center;box-sizing: border-box;padding-bottom: 30px;}
+.dimBg .cancel_btn {width:220px;height:60px;background: url(../images/btn/cancel_bg.png) no-repeat center center;}
+.dimBg .confirm_btn {width:220px;height:60px;background: url(../images/btn/confirm_bg.png) no-repeat center center;}
+.dimBg .etc_btn {width:220px;height:60px;background:#ffbc00;}
+.dimBg .empty_btn {width:220px;height:60px;}
+.dimBg .btnArea div div.btnTxt{height: 100%;display: flex;justify-content: center;align-items: center;}
+
+.bold{font-weight: bold !important;}
+
+/*스크롤바 css*/
+::-webkit-scrollbar {width: 20px; height:186px;border: none;   border-radius: 15px;}
+/*::-webkit-scrollbar-button:start:decrement {display: block; height: 50px; background-image: url(../images/icons/Arrow_N_b.png); background-size: contain; background-repeat: no-repeat; background-color: #ffffff;}
+::-webkit-scrollbar-button:end:increment {display: block; height: 50px; background-image: url(../images/icons/Arrow_S_b.png); background-size: contain; background-repeat: no-repeat; background-color: #ffffff;}*/
+/* 스크롤바 배경은 #858585로 설정하고 border를 좌우로 10px 흰색을 줘서 스크롤바 thumb가 track보다 커보이는 효과*/
+::-webkit-scrollbar-track {background: #f3f3f3; border: 1px solid #d9d9d9;border-radius: 15px; }
+::-webkit-scrollbar-thumb {background: #ffbc00; height: 2px; width: 20px; -webkit-border-radius: 30px; border-radius: 15px; }
+
+/* 공통 */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+.hide {position: absolute; overflow: hidden; width: 1px; height: 1px; margin: -1px; clip: rect(0,0,0,0); font-size: 1px;}
+ol, ul, li {list-style: none;}
+*:focus {outline: none !important;}
+
+/* main */
+#branchName {white-space:pre}
+.main_IDlogin_icon div.btnTxt::before{content:"               ";background: url(../images/icons/icon_IDlogin.png) no-repeat center center;height:24px;background-size: 22px 24px;width:22px;margin-right: 10px;}
+.main_fingerLogin_icon div.btnTxt::before{content:"               ";background: url(../images/icons/icon_fingerLogin.png) no-repeat center center;height:32px;background-size: 34px 32px;width:34px;margin-right: 10px;}
+.main_refresh_icon div.btnTxt::before{content:"           ";background: url(../images/icons/icon_refresh.png) no-repeat center center;height:23px;background-size: 20px 23px;width:20px;margin-right: 10px;}
+.main_fingerLogin_icon, .main_refresh_icon, .main_poweroff_icon{border-left: 1px solid #fff;}
+.main_poweroff_icon div.btnTxt::before{content:"           ";background: url(../images/icons/icon_powerOff.png) no-repeat center center;height:21px;background-size: 20px 21px;width:20px;margin-right: 10px;}
+
+.mainBox{border: 1px solid #e9e9e9;border-radius: 10px;background: #fff;width: 460px;}
+.mainBox_section{display: flex;flex-direction:column;justify-content: space-between;}
+
+.sectionTitle p {font-size: 20px;color: #646056;letter-spacing: -1px;line-height: 24px;}
+
+/* 서브_공통 */
+.home_btn div.btnTxt::before{content:"               ";background: url(../images/icons/icon_home.png) no-repeat center center;height:22px;background-size: 24px 22px;width:24px;margin-right: 10px;}
+.cancel_btn, .confirm_btn, .confirm_btn2{z-index: 99 !important}
+.cancel_btn div.btnTxt::before{content:"               ";background: url(../images/icons/icon_cancel.png) no-repeat center center;width:15px;height:14px;background-size: 15px 14px;margin-right: 10px;}
+.confirm_btn div.btnTxt::before, .confirm_btn2 div.btnTxt::before{content:"               ";background: url(../images/icons/icon_confirm.png) no-repeat center center;width:15px;height:14px;background-size: 15px 14px;margin-right: 10px;}
+.confirm_btn2{background:#ffbc00;}
+.confirm_btn2 img{display: none;}
+.normal_btn {border:1px solid #bbbbbb; border-radius: 10px;}
+.normal_btn img{display: none;}
+.cashMachine::before {position: absolute;content:"               ";background: url(../images/img/machine_btn_cash.gif) no-repeat center center;width:300px;height:260px;background-size: 160px auto;}
+.coinMachine::before {position: absolute;content:"               ";background: url(../images/img/machine_btn_coinIn.gif) no-repeat center center;width:300px;height:260px;background-size: 160px auto;}
+.cashMachine .btnTxt, .coinMachine .btnTxt {align-items: flex-end !important;line-height: 80px !important;}
+
+.baseWrap, .bgBox {z-index: 0 !important;}
+
+.center{display: flex;align-items: center;justify-content: center;word-break:keep-all}
+.notice_text_btn , .notice_text , .motion_text , .motion_text_2line , .motion_text_btn , .select_title, .normal_title, .normal_text{width:1024px;color:#545045;}
+.notice_text_btn{height:522px;}
+.notice_text{height:622px;}
+
+.motion_text{height:302px;background: rgba(0,0,0,0);}
+.motion_text_2line{height:344px;background: rgba(0,0,0,0);}
+.motion_text_btn{height:240px;}
+
+.select_title{height:100px;}
+.normal_title{height:42px;}
+
+
+.text_blue_point { color: #383EE6;font-family: "Noto Sans CJK KR Bold";}
+.text_red_point { color: #FB3F6B;font-family: "Noto Sans CJK KR Bold";}
+
+.noticeIcon{font-size: 20px;color:#FB3F6B !important;line-height: 22px;}
+.noticeIcon::before{content: '         ';background: url(../images/icons/icon_notice.png) no-repeat center center;width: 23px;height:30px;background-size: 23px 23px;}
+
+.coinAudit::after {content: '개';text-align: right;font-size: 24px;color: #545044;font-family: "Noto Sans CJK KR Light";margin-left: 3px;}
+.coinUnit10902 {width: 88px;height: 36px;display:inline-block;white-space:normal !important;background: #edf3f3;padding: 0 10px 0 14px;}
+.coinUnit10902::before {content: "          ";width: 7px;background: #a7c3c4;position: absolute;height: 36px;left: 0;}
+.coinUnit10902::after {content:""; display:inline-block; width:100%}
+
+/* 시재현황테이블 */
+#moneyState .stateTable {width: 422px;height: 456px;margin-top: 15px;}
+#moneyState .stateTable .table_title{height: 30px;display: flex;justify-content: flex-end;flex-wrap: wrap;border-bottom: 1px solid #b0b0b0;line-height: 20px;}
+#moneyState .stateTable .table_title div{width: 174px;text-align: center;font-size: 17px;color: #2c2c2c;letter-spacing: -2px;}
+#moneyState .stateTable .table_title div:nth-child(2){width: 1px;font-size: 14px;color: #b0b0b0;}
+
+#moneyState .stateTable ul .table_title {border-bottom: 1px solid #b0b0b0;}
+#moneyState .stateTable ul .cashWrap, #moneyState .stateTable ul .coinWrap, #moneyState .stateTable ul .totalWrap{border-bottom: 1px solid #b0b0b0;display: flex;flex-direction: row;}
+#moneyState .stateTable ul .cashWrap .wrapTitle, #moneyState .stateTable ul .coinWrap .wrapTitle, #moneyState .stateTable ul .totalWrap .wrapTitle{writing-mode: vertical-rl;text-orientation: upright;display: flex;justify-content: center;align-items: flex-start;/* border-right: 1px solid #b0b0b0; *//* background: rgba(232,232,232,0.5); */width: 23px;color: #545045;font-size: 16px;padding-right: 4px;}
+#moneyState .stateTable ul .cashWrap .wrapTitle, #moneyState .stateTable ul .coinWrap .wrapTitle{border-right: 1px solid #b0b0b0;}
+
+
+#moneyState .stateTable ul li {display: flex;justify-content: space-between;font-size: 16px;color: #544e44;}
+#moneyState .stateTable ul li .title{width: 55px;text-align: center;/* padding-right: 10px; */letter-spacing: -2px;}
+#moneyState .stateTable ul li .title span{width: 42px;text-align: justify;display:inline-block;}
+#moneyState .stateTable ul li .title span::after {content:""; display:inline-block; width:100%}
+#moneyState .stateTable ul li {height: 42px;line-height: 42px;}
+#moneyState .stateTable .cashUnit div:nth-child(n+2), #moneyState .stateTable .recoveryShip div:nth-child(n+2) {width: 172px;text-align: right;padding: 0 6px 0 8px;}
+#moneyState .stateTable .cashUnit:nth-child(-n+10) div:nth-child(n+2) span, #moneyState .stateTable .recoveryShip div:last-child span {font-size: 22px;color: #464646;font-family: "Noto Sans CJK KR Bold";letter-spacing: -1px;}
+#moneyState .stateTable .cashUnit:nth-child(-n+10) div {border-bottom: 1px solid #e9e9e9;}
+#moneyState .stateTable .cashUnit:last-child div{border:none}
+
+/* 기기시재 더보기 영역 */
+#addInfoArea .sectionTitle {width: 100%;height: 50px;background: #ffe44d;border-radius: 10px 10px 0 0;}
+#addInfoArea .sectionTitle p {text-align: center;line-height: 50px;}
+#addInfoArea .sectionTitle .closePop {position: absolute;right: 0;top:0;background: #ffbc00;width: 50px;height: 50px;display: flex;align-items: center;justify-content: space-around;border-radius: 0 10px 0 0;}
+#addInfoArea .infoTable {width: 470px;padding: 20px 12px 12px;background: #fff;border: 1px solid #e9e9e9;border-top: none;border-radius: 0 0 10px 10px;}
+#addInfoArea .infoTable .table_title{height: 30px;display: flex;justify-content:flex-end;flex-wrap: wrap;border-bottom: 1px solid #b0b0b0;line-height: 20px;}
+#addInfoArea .infoTable .table_title div{width: 125px;text-align: center;font-size: 17px;color: #2c2c2c;letter-spacing: -2px;}
+#addInfoArea .infoTable .table_title div:nth-child(2), #addInfoArea .infoTable .table_title div:nth-child(4){width: 1px;font-size: 14px;color: #b0b0b0;}
+
+#addInfoArea .infoTable ul .cashWrap {border-bottom: 1px solid #e9e9e9;display: flex;flex-direction: row;}
+#addInfoArea .infoTable ul .coinWrap {border-top:1px solid #b0b0b0;}
+#addInfoArea .infoTable ul .coinWrap, #addInfoArea .infoTable ul .totalWrap{border-bottom: 1px solid #b0b0b0;display: flex;flex-direction: row;}
+#addInfoArea .infoTable ul .cashWrap .wrapTitle, #addInfoArea .infoTable ul .coinWrap .wrapTitle, #addInfoArea .infoTable ul .totalWrap .wrapTitle{writing-mode: vertical-rl;text-orientation: upright;display: flex;justify-content: center;align-items: flex-start;/* border-right: 1px solid #b0b0b0; *//* background: rgba(232,232,232,0.5); */width: 20px;color: #545045;font-size: 16px;padding-right: 3px;}
+#addInfoArea .infoTable ul .cashWrap .wrapTitle, #addInfoArea .infoTable ul .coinWrap .wrapTitle{border-right: 1px solid #b0b0b0;}
+
+#addInfoArea .infoTable ul li {display: flex;justify-content: space-between;font-size: 16px;color: #544e44;}
+#addInfoArea .infoTable ul .cashUnit {height: 42px;line-height: 42px;}
+#addInfoArea .infoTable ul li .title{width: 50px;text-align: center;letter-spacing: -2px;}
+#addInfoArea .infoTable ul li .title span{width: 42px; text-align: justify;display:inline-block;}
+#addInfoArea .infoTable ul li .title span::after {content:""; display:inline-block; width:100%}
+#addInfoArea .infoTable .cashUnit  li:nth-child(n+2) {height: 42px;line-height: 42px;}
+#addInfoArea .infoTable .cashUnit div:nth-child(n+2){width: 123px;text-align: right;padding-right: 2px;font-size: 14px;}
+#addInfoArea .infoTable .cashUnit div:nth-child(n+2) span {font-size: 17px;color: #464646;font-family: "Noto Sans CJK KR medium";letter-spacing: -1px;}
+#addInfoArea .infoTable .cashUnit:nth-child(-n+10) div {border-bottom: 1px solid #e9e9e9;}
+#addInfoArea .infoTable .cashUnit.empty div {border-bottom:none}
+#addInfoArea .infoTable .cashUnit:last-child div{border-bottom: none;}
+.infoBtn.flip img{transform:rotate(0deg);transform: scaleX(-1);filter: FlipH;}
+
+
+
+
+/* 출금부 현황 */
+#withdrawArea {display: flex;justify-content: space-between;flex-direction:column}
+#withdrawArea .info {width: 100%;display: flex;justify-content: space-between;}
+#withdrawArea .info .myMoneyState {width: 280px;}
+#withdrawArea .myMoneyState_option {display: flex;height: 31px;border-bottom: 1px solid #e9e9e9;justify-content: space-between;}
+#withdrawArea .myMoneyState_option:last-child{border: 0;}
+
+#depositArea {display: flex;justify-content: space-between;}
+#depositArea .info {width: 130px;display: flex;flex-direction: column;justify-content: space-between;}
+#depositArea .myMoneyState_option {display: flex;flex-direction: column;justify-content: flex-start;}
+
+.info .sectionTitle button {width: 78px;height: 22px;background: url(../images/icons/detail_btn.png) no-repeat 0 50%;background-size: 74px 20px;border: none;font-size: 14px;color: #826739;line-height: 15px;text-align: right;margin-top: 5px;}
+
+.myMoneyState_option span{display: inline-block;}
+.myMoneyState_option .title {text-align: left;font-size: 16px;color: #544e44;letter-spacing: -1px;}
+.myMoneyState_option .money {text-align: right;font-size: 20px;line-height: 24px;color: #464646;font-family: "Noto Sans CJK KR Bold";letter-spacing: -1px;}
+#depositArea .myMoneyState_option .money {text-align: left;font-size: 20px;line-height: 24px;color: #464646;font-family: "Noto Sans CJK KR Bold";letter-spacing: -1px;}
+.myMoneyState_option .money::after {content: ' 원';width: 17px;text-align: right;font-size: 16px;color: #545044;font-family: "Noto Sans CJK KR Light";letter-spacing: -1px;}
+
+/* main-graph */
+.myChart ul {width: 100%;display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;}
+#depositArea .myChart ul {width: 200px;}
+#withdrawArea .myChart ul li:nth-child(n+0):nth-child(-n+4) .myData::after{content: '매';}
+#withdrawArea .myChart ul li:nth-child(n+5):nth-child(-n+8) .myData::after{content: '개';}
+#depositArea .myChart ul li:nth-child(n+0):nth-child(-n+4) .myData::after{content: '개';}
+.myName {height:22px;line-height: 22px;font-size: 16px;color:#545045;}
+.myGraph{width:15px;height: 80px;border: 1px solid #dadada;box-sizing: content-box;}
+.myGraph_bar{height:10px;transform:translateY(70px) scaleY(1);transform-origin:bottom center;}
+.myStateText{margin-top: 8px;text-align: center;}
+.myStateText .myName{font-size: 18px;}
+.myStateText .myData{font-size: 14px;color: #666666;}
+
+
+/* 금액입력페이지 공통 */
+.ramainCash_input::after, .refillCash_input::after, .putoutCash_input::after{content: " 원";font-size: 20px;font-family: "Noto Sans CJK KR Regular";}
+#cashTableSection {position: absolute;}
+#cashTableSection .cashTable {display: flex;justify-content: space-between;flex-wrap: wrap;}
+#cashTableSection .cashTable ul li {display: flex;justify-content: space-between;font-size: 20px;color: #544e44;border-bottom: 1px solid #e8e8e8;}
+#cashTableSection .cashTable ul li:last-child{border:none}
+#cashTableSection .cashTable ul li[dimd = "1"] {background:rgba(0,0,0,0.2);-webkit-filter: grayscale(70%) opacity(0.5)}
+#cashTableSection .cashTable ul li div{text-align: right;font-size: 20px;color: #2c2c2c;letter-spacing: -2px;}
+
+#cashTableSection .cashTable ul .table_title {border-bottom: 1px solid #b0b0b0;}
+#cashTableSection .cashTable ul .cashWrap, #cashTableSection .cashTable ul .coinWrap{border-bottom: 1px solid #b0b0b0;display: flex;flex-direction: row;}
+#cashTableSection .cashTable ul .cashWrap .wrapTitle, #cashTableSection .cashTable ul .coinWrap  .wrapTitle{writing-mode: vertical-rl;text-orientation: upright;display: flex;justify-content: center;align-items: flex-end;/* border-right: 1px solid #b0b0b0; *//* background: rgba(232,232,232,0.5); */width: 30px;color: #545045;}
+#cashTableSection .cashTable ul li.table_title div{text-align: center;line-height: 35px;}
+#cashTableSection .cashTable ul li.table_title .title{width: 110px;}
+#cashTableSection .cashTable ul li.table_title div:last-child, #cashTableSection .cashTable ul li.table_title div:first-child {border-bottom: 0px;}
+
+#cashTableSection .cashTable ul li.cashUnit div{display: flex;justify-content: center;text-align: center;letter-spacing: -1px;height: 50px;line-height: 50px;color: #545045;}
+#cashTableSection .cashTable ul li.cashUnit[dimd = "0"] div.refillPaper, #cashTableSection .cashTable ul li.cashUnit[dimd = "0"] div.putoutPaper {background:#fff8e6}
+#cashTableSection .cashTable ul li.cashUnit div.refillPaper span {font-weight: bold;}
+
+#cashTableSection .cashTable ul li.cashUnit div.title span{width: 60px;text-align: justify;display:inline-block;padding-right: 0px;}
+#cashTableSection .cashTable ul li.cashUnit div.title span::after {content:""; display:inline-block; width:100%}
+#cashTableSection .cashTable ul li.cashUnit.coin div.title span::after {content: "";}
+
+#cashTableSection .cashTable ul li.cashUnit div span::after {content: ' 매';width: 17px;text-align: right;font-size: 16px;color: #545044;font-family: "Noto Sans CJK KR Light";letter-spacing: -1px;}
+#cashTableSection .cashTable ul li.cashUnit.coin div span::after {content: ' 개';}
+#cashTableSection .cashTable ul li.cashUnit div.inputCash span::after {content: ' 원';}
+#cashTableSection .cashTable ul li.cashUnit div span{width: 70px; text-align: right;padding-right: 5px;}
+#cashTableSection .cashTable ul li.cashUnit div.selectBtn {display: flex;align-items: center;}
+#cashTableSection .cashTable ul li.cashUnit div.selectBtn button {width: 60px;height: 28px;color: #fff;border:0px;border-radius: 4px;background: #ffbc00;line-height: 0;}
+
+.popBg {width:864px;height: 588px;background-color:#fff;border-radius:30px;margin:0 auto;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:40px 40px 0;}
+.pop_btn_area {display: flex;padding: 18px 160px;border-top: 1px solid #cdcdcd;width: 100%;justify-content: space-between;}
+.pop_btn_area div{display: flex; align-items: center; justify-content: center; width: 220px; height: 60px; text-align: center; line-height: 20px;font-family: "Noto Sans CJK KR Medium"; font-size: 20px;color: rgb(255, 255, 255); letter-spacing: -1px;}
+.pop_btn_area .cancelBtn{background:#84888b;}
+.pop_btn_area .confirmBtn{background:#60584c;}
+.pop_btn_area .cancelBtn::before{content:"               ";background: url(../images/icons/icon_cancel.png) no-repeat center center;width:15px;height:14px;background-size: 15px 14px;margin-right: 10px;}
+.pop_btn_area .confirmBtn::before{content:"               ";background: url(../images/icons/icon_confirm.png) no-repeat center center;width:15px;height:14px;background-size: 15px 14px;margin-right: 10px;}
+
+.inputCashPopup {padding:25px 0 0 15px}
+.inputCashPopup .title {font-size: 32px;color:#545045;line-height: 38px;}
+.inputCashPopup .title p {font-weight: bold;}
+.inputCashPopup .inputInfoArea {margin-top:30px;width:400px;height: 260px;border:1px solid #bbbbbb;color:#545045;font-size: 20px;display: flex;justify-content: center;flex-wrap: wrap;align-items:flex-start;}
+.inputCashPopup .inputInfoArea div {width: 360px;display: flex;justify-content: space-between;flex-wrap: wrap;}
+
+.inputCashInfo, .remainPaperInfo, .refillPaperInfo {line-height: 40px;height: 40px;}
+.inputCashPopup .inputInfoArea div span{line-height: 52px;}
+.inputCashPopup .inputInfoArea .tenInputArea {height: 87px;line-height: 87px;border-bottom: 1px solid #bbbbbb;}
+.inputCashPopup .inputInfoArea div p.text{font-size: 28px;font-weight: bold;}
+.inputCashPopup .inputInfoArea div p.text::after{content: attr(data-content);color:#545045;font-size: 20px;font-weight: normal;margin-left: 10px;}
+.inputCashPopup .inputInfoArea .inputCashInfo p.text::after{content: '원';color:#545045;font-size: 20px;font-weight: normal;margin-left: 10px;}
+
+.pop_notice{font-size: 20px;color:#FB3F6B;padding-left: 15px;line-height: 22px;}
+.pop_notice span{margin-left: 5px;}
+.pop_notice::before{content: '                ';background: url(../images/icons/icon_notice.png) no-repeat center center;width: 23px;height:30px;background-size: 23px 23px;}
+
+/* 보충 금액 입력 페이지 KR10601 */
+.kr10601 #cashTableSection{width:650px;height: 460px;left: 339px;top: 202px;}
+.kr10601 #cashTableSection .cashTable ul li div{width: 92px;}
+.kr10601 #cashTableSection .cashTable ul li div.inputCash{width:164px}
+.kr10601 #cashTableSection .cashTable ul li div.selectBtn{width:80px}
+.kr10601 #cashTableSection .cashTable ul li.cashUnit div.inputCash span{width:150px}
+
+/* 출금 금액 입력 테이블 KR10102 */
+.kr10102 #cashTableSection{width:550px;height: 460px;left: 439px;top: 202px;}
+.kr10102 #cashTableSection .cashTable ul li div{width: 90px;}
+.kr10102 #cashTableSection .cashTable ul li div.inputCash{width:164px}
+.kr10102 #cashTableSection .cashTable ul li div.selectBtn{width:80px}
+.kr10102 #cashTableSection .cashTable ul li.cashUnit div.inputCash span{width: 150px;}
+
+/* 출금 금액 입력 테이블 KR10103 */
+.cash_input::after{content: " 원";font-size: 20px;font-family: "Noto Sans CJK KR Regular";}
+.kr10103 #cashTableSection{width:550px;height: 460px;left: 439px;top: 202px;}
+.kr10103 #cashTableSection .cashTable ul li.notice {background:rgba(255,180,180,1)}
+.kr10103 #cashTableSection .cashTable ul li div.notice{position: absolute;right: 6px;background: url(../images/icons/icon_notice.png) no-repeat center center;width: 23px;background-size: 23px 23px;height: 50px;}
+.kr10103 #cashTableSection .cashTable ul li div{width: 80px;}
+.kr10103 #cashTableSection .cashTable ul li div.inputCash{width:164px}
+.kr10103 #cashTableSection .cashTable ul li div.selectBtn{width:80px}
+.kr10103 #cashTableSection .cashTable ul li.cashUnit div.inputCash span{width:150px}
+
+/* 회수함 금액 입력 테이블 KR10310 */
+.kr10310 #cashTableSection{width:550px;height: 240px;left: 439px;top: 270px;}
+.kr10310 #cashTableSection .cashTable ul li div{width: 90px;}
+.kr10310 #cashTableSection .cashTable ul li div.inputCash{width:164px}
+.kr10310 #cashTableSection .cashTable ul li div.selectBtn{width:80px}
+.kr10310 #cashTableSection .cashTable ul li.cashUnit div.inputCash span{width: 150px;}
+
+/* 보충 금액 입력 페이지 KR10701 */
+.kr10701 #cashTableSection{width:650px;height: 460px;left: 339px;top: 202px;}
+.kr10701 #cashTableSection .cashTable ul li div{width: 92px;}
+.kr10701 #cashTableSection .cashTable ul li div.inputCash{width:164px}
+.kr10701 #cashTableSection .cashTable ul li div.selectBtn{width:80px}
+.kr10701 #cashTableSection .cashTable ul li.cashUnit div.inputCash span{width:150px}
+.kr10701 .allCashPutout{position:absolute;top:668px;left: 392px;}
+.kr10701 .allCashPutout button{background:#ffbc00;font-family:"Noto Sans CJK KR Medium";font-size: 24px;height:60px;border: none;width: 240px;color: #fff;letter-spacing: -1.5px;}
+
+/* 출금 금액 입력 테이블 KR10801 */
+.kr10801 #cashTableSection{width:550px;height: 460px;left: 439px;top: 202px;}
+.kr10801 #cashTableSection .cashTable ul li div{width: 100px;}
+.kr10801 #cashTableSection .cashTable ul li div.inputCash{width:164px}
+.kr10801 #cashTableSection .cashTable ul li div.selectBtn{width:80px}
+.kr10801 #cashTableSection .cashTable ul li.cashUnit div.inputCash span{width:140px}
+
+/* 금액확인화면 KR10104 */
+#tableSection .cashTable {display: flex;justify-content: space-between;flex-wrap: wrap;}
+#tableSection .cashTable ul {display: flex;flex-direction: column;flex-wrap: wrap;justify-content: space-between;align-content: space-between;}
+#tableSection .cashTable ul li {display: flex;justify-content: space-between;font-size: 28px;color: #544e44;}
+#tableSection .cashTable ul li div.title {position: relative;width: 105px;border: none;font-family:"Noto Sans CJK KR Regular";text-align: left;justify-content: flex-start;}
+#tableSection .cashTable ul li div.title span{text-align: justify;display:inline-block;width: 92px;position: absolute;text-indent: 12px;letter-spacing:-2px}
+#tableSection .cashTable ul li div.title span::after {content:""; display:inline-block; width:100%}
+#tableSection .cashTable ul li div.title div.background{position: absolute;padding: 9px 0;border: none;justify-content: flex-start;}
+#tableSection .cashTable ul li div.title div.background .bar{width: 6px;height: 30px;}
+#tableSection .cashTable ul li div.title div.background .bg{width: 105px;opacity: 0.2;height: 30px;}
+
+#tableSection .cashTable ul li div {font-family:"Noto Sans CJK KR Bold";color: #545045;border-bottom: 1px solid #ececec;height: 52px;line-height: 46px;letter-spacing: -1px;display: flex;justify-content: center;text-align: center;}
+#tableSection .cashTable ul li:last-child div{border: none;}
+#tableSection .cashTable ul li div span {text-align: right;}
+#tableSection .cashTable ul li div span::after{width: 17px;text-align: right;font-size: 16px;color: #545044;font-family: "Noto Sans CJK KR Light";letter-spacing: -1px;}
+
+#tableSection .cashTable ul li div.Paper {width: 120px;}
+#tableSection .cashTable ul li div.Paper span {width: 90px;}
+#tableSection .cashTable ul li div.Paper span::after{content: ' 매'}
+#tableSection .cashTable.coin ul li div.Paper span::after{content: ' 개'}
+#tableSection .cashTable ul li:nth-child(n+5) div.Paper span::after{content: ' 개';}
+#tableSection .cashTable ul li div.money {width: 220px;}
+#tableSection .cashTable ul li div.money span {width: 212px;}
+#tableSection .cashTable ul li div.money span::after{content: ' 원';}
+
+/* 시재마감화면 KR10301 */
+.hostAmountInput::after, .localAmountInput::after{content: " 원";font-size: 20px;font-family: "Noto Sans CJK KR Regular";}
+.amountTableSection {position: absolute;width:580px;height: 460px;left: 403px;top: 202px;}
+.amountTableSection .cashTable {display: flex;justify-content: space-between;flex-wrap: wrap;}
+
+.amountTableSection .cashTable ul li {display: flex;justify-content: space-between;font-size: 20px;color: #544e44;border-bottom: 1px solid #e8e8e8;}
+.amountTableSection .cashTable ul li:last-child{border:none}
+.amountTableSection .cashTable ul li div{width: 190px;text-align: right;font-size: 20px;color: #2c2c2c;letter-spacing: -2px;}
+.amountTableSection .cashTable ul li div.title{width: 85px;}
+.amountTableSection .cashTable ul li div.compare{width:80px}
+
+.amountTableSection .cashTable ul .table_title {border-bottom: 1px solid #b0b0b0;}
+.amountTableSection .cashTable ul .cashWrap, .amountTableSection .cashTable ul .coinWrap{border-bottom: 1px solid #b0b0b0;display: flex;flex-direction: row;}
+.amountTableSection .cashTable ul .cashWrap .wrapTitle, .amountTableSection .cashTable ul .coinWrap .wrapTitle{writing-mode: vertical-rl;text-orientation: upright;display: flex;justify-content: center;align-items: flex-end;/* border-right: 1px solid #b0b0b0; *//* background: rgba(232,232,232,0.5); */width: 30px;color: #545045;}
+
+.amountTableSection .cashTable ul li.table_title div{text-align: center;line-height: 35px;}
+.amountTableSection .cashTable ul li.table_title div:last-child, .amountTableSection .cashTable ul li.table_title div:first-child {border-bottom: 0px;}
+
+.amountTableSection .cashTable ul li.cashUnit div{display: flex;justify-content: center;text-align: center;letter-spacing: -1px;height: 50px;line-height: 50px;color: #545045;}
+
+.amountTableSection .cashTable ul li.cashUnit div.title span{width: 60px;text-align: justify;display:inline-block;padding-right: 0px;}
+.amountTableSection .cashTable ul li.cashUnit div.title span::after {content:""; display:inline-block; width:100%}
+
+.amountTableSection .cashTable ul li.cashUnit div span{width: 170px;text-align: right;padding-right: 5px;}
+.amountTableSection .cashTable ul li.cashUnit div span::after {content: ' 원';width: 17px;text-align: right;font-size: 16px;color: #545044;font-family: "Noto Sans CJK KR Light";letter-spacing: -1px;}
+.amountTableSection .cashTable ul li.cashUnit div.compare span {text-align: center !important;font-family: "Noto Sans CJK KR Bold";}
+.amountTableSection .cashTable ul li.cashUnit div.compare span::after {content: '';}
+.amountTableSection .cashTable ul li.cashUnit div.compare span.no {color:#FB3F6B}
+
+/* 리스트 */
+.moneyListSection .pagelist {display: flex;justify-content:space-between;color: #545045;font-family: "Noto Sans CJK KR Medium";}
+.moneyListSection .pagelist .cashList.empty {border:none; visibility: hidden;}
+.moneyListSection .pagelist .cashList {width: 304px;height: 428px;border: 1px solid #bbbbbb;border-radius: 16px;padding: 25px 20px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;}
+.moneyListSection .pagelist .cashList[dimd = "1"] {background:rgba(0,0,0,0.1);-webkit-filter: grayscale(70%) opacity(0.5);border: none;}
+.moneyListSection .pagelist .cashList .totalAmount{font-size: 19px;line-height: 26px;display: flex;letter-spacing: -2px;justify-content: space-between;align-items: center;width: 100%;}
+.moneyListSection .pagelist .cashList .totalAmount span {font-size: 28px;font-family: "Noto Sans CJK KR Bold";}
+.moneyListSection .pagelist .cashList .totalAmount span::after{font-size: 19px;content: ' 원';font-family: "Noto Sans CJK KR Medium";bottom: 8px;}
+.moneyListSection .pagelist .cashList ul{width: 100%;height: 332px;display: flex;flex-direction: column;justify-content: space-between;flex-wrap: nowrap;}
+.moneyListSection .pagelist .cashList ul li.cashUnit {display: flex;justify-content: space-between;}
+
+.moneyListSection .pagelist .cashList ul li.cashUnit div.title {font-size: 16px;color:#b9b6ad;width: 66px;display: flex;align-items: center;}
+.moneyListSection .pagelist .cashList ul li.cashUnit div.title span.colorBox {width: 6px;height: 6px;}
+.moneyListSection .pagelist .cashList ul li.cashUnit div.title span.text{width: 50px;text-align: justify;display:inline-block;padding-right: 0px;height: 28px;line-height: 28px;letter-spacing: -3px;text-indent: 8px;}
+.moneyListSection .pagelist .cashList ul li.cashUnit div.title span.text::after {content:"";display:inline-block;width:100%;}
+
+.moneyListSection .pagelist .cashList ul li.cashUnit div.money{font-size: 22px;border-bottom: 1px solid #cccccc;width: 160px;text-align: right;}
+.moneyListSection .pagelist .cashList ul li.cashUnit:last-child div.money{border:none;}
+.moneyListSection .pagelist .cashList ul li.cashUnit div.money span::after {content: ' 원';width: 17px;text-align: right;font-size: 16px;color: #545044;font-family: "Noto Sans CJK KR Light";letter-spacing: -1px;}
+.moneyListSection .nextPrevBtn_area {position: relative;width: 220px;height: 57px;display: flex;justify-content: space-between;margin: 0 auto;top: 18px;align-items:center}
+.moneyListSection .nextPrevBtn_area .pageNum {margin:0 10px}
+
+/* 지문DB페이지 KR10406 */
+#fingerDBSection .fingerDBList ul li{display: flex;justify-content:space-between;color: #545045;font-family: "Noto Sans CJK KR Medium";text-align: center;border-bottom: 1px solid #ececec;}
+#fingerDBSection .fingerDBList ul li.list_title{font-size: 16px;background: #f7f7f7;line-height: 30px;height: 32px;}
+#fingerDBSection .fingerDBList ul.data {height: 400px;}
+#fingerDBSection .fingerDBList ul.data li.fingerList{font-size: 20px;width: 100%;line-height: 52px;}
+#fingerDBSection .fingerDBList ul.data li.fingerList[dimd = "1"] {background:rgba(0,0,0,0.2);-webkit-filter: grayscale(70%) opacity(0.5)}
+/* .fingerDBList ul li.fingerList:nth-child(odd) {background:#fdffce} */
+
+#fingerDBSection .fingerDBList ul li div{width: 100%;}
+#fingerDBSection .fingerDBList ul li div.listNum, #fingerDBSection .fingerDBList ul li div.useInfo{width: 45%;letter-spacing: -1px;}
+
+
+
+/* video page(KR10110,) */
+#videoSection {display: flex;justify-content: center;align-items: center;}
+#videoSection .videoPlayBtn {position: absolute;width: 450px;height: 460px;display: flex;align-items: center;justify-content: center;z-index: 9999;}
+#videoSection .videoPlayBtn .btn {position: absolute;}
+#videoSection .videoPlayBtn .bgdimd {background: rgba(0,0,0,0.3);width: 450px;height: 460px;}
+
+
+/*------------------- 장애 화면 디자인 변경 (기존 atec smc css) ----------------------------*/
+.error_info_outline { float:left; width:923px; height:1250px; overflow-x:hidden; overflow-y:hidden; margin:720px 0px 0px 88px; }
+
+.error_info_box { float:left; width:903px; padding:32px 0px 32px 0px; background-color:#f4f4f4; margin:0px 0px 16px 0px; }
+.error_info_box2 { float:left; width:903px; height:540px; padding:32px 0px 32px 0px; background-color:#f4f4f4; margin:0px 0px 16px 0px; }
+
+.error_info_title { float:left; width:903px; text-align:center; font-size:48px; }
+.error_info_subtitle { float:left; width:903px; text-align:center; color:#ff0000; font-size:26px; margin:15px 0px 43px 0px; }
+.error_info_text { float:left; width:860px; margin:0px 0px 0px 43px; font-size:26px; }
+
+.error_module_box { float:left; width:923px; height:500px; display:flex; align-items:center; justify-content:center; }
+
+.error_module_receipt { display:none; position:absolute; margin:-45px 0px 0px -300px; width:300px; height:100px; font-size:34px; font-weight:bold; }
+.error_module_cash_in { display:none; position:absolute; margin:15px 0px 0px -300px; width:300px; height:100px; font-size:34px; font-weight:bold; }
+.error_module_cash_box { display:none; position:absolute; margin:110px 0px 0px -300px; width:300px; height:100px; font-size:34px; font-weight:bold; }
+.error_module_coin { display:none; position:absolute; margin:-5px 0px 0px 300px; width:300px; height:100px; font-size:34px; font-weight:bold; text-align:right; }
+.error_module_collect { display:none; position:absolute; margin:135px 0px 0px 300px; width:300px; height:100px; font-size:34px; font-weight:bold; text-align:right; }
+
+.error_module_right_point { position:absolute; width:300px; height:3px; background-color:#921051; }
+.error_module_right_circle { position:absolute; width:9px; height:9px; border-radius:4.5px; margin:-3px 0px 0px 298px; background-color:#921051; }
+.error_module_left_point { position:absolute; width:300px; height:3px; background-color:#921051;  }
+.error_module_left_circle { position:absolute; width:9px; height:9px; border-radius:4.5px; margin:-3px 0px 0px -7px; background-color:#921051; }
+
+.error_module_image { width:247px; height:400px; background-image:url("../images/error_menual/200204_RC91_전체.png"); background-size:cover; }
+
+.error_envelope { float:left; width:923px; height:140px; display:flex; align-items:center; justify-content:center; margin:35px 0px 0px 0px; font-size:34px; text-align:left; font-weight:bold; border-top:1px solid #0e72c8; border-bottom:1px solid #0e72c8; }
+.error_envelope_btn { border-radius:10px; padding:20px 30px 20px 30px; margin:0px 0px 0px 100px; border:1px solid #dddddd; color:#ffffff; text-align:center; line-height:50px; font-size:31px; background-color:#921051; display:flex; align-items:center; justify-content:center; }
+
+.error_list_box { float:left; width:923px; height:500px; overflow-x:hidden; overflow-y:auto; }
+.error_list_box_random { float:left; width:923px; height:500px; margin:20px 0px 0px 0px; background-image:url("../images/error_menual/RC91_sensor.png"); background-size:contain; background-repeat:no-repeat; background-position:center; }
+.error_list_box_sensor { display:none; position:absolute; float:left; width:50px; height:50px; border-radius:25px; border:1px solid #dddddd; text-align:center; line-height:47px; font-size:31px; font-weight:bold; animation-name:sensorAnimation; animation-duration:1s; animation-iteration-count:infinite; }
+.error_list_box_sensor > span { display:none; }
+.error_list_box_sensor > label { display:none; }
+.error_list_box_sensor_print { position:absolute; display:none; float:left; width:50px; height:50px; border-radius:25px; border:1px solid #dddddd; text-align:center; line-height:47px; font-size:31px; font-weight:bold; animation-name:sensorAnimation; animation-duration:1s; animation-iteration-count:infinite; }
+.error_list_box_sensor_print > span { display:none; }
+.error_list_box_sensor_print > label { display:none; }
+
+@keyframes sensorAnimation {
+  0%   {background-color: #eeeeee; opacity:0.5;}
+  50% {background-color: red; opacity:0.7; }
+  100%   {background-color: #eeeeee; opacity:0.5; }
+}
+
+@keyframes sensorBgAnimation {
+  0%   { opacity:0;}
+  50% { opacity:1; }
+  100%   { opacity:0; }
+}
+
+.error_box_rct_coin{ width: 200px; height: 200px; margin: 200px 0px 0px 50px; background-image:url("../images/error_menual/RC91_rct&coin.png"); background-size:contain; background-repeat:no-repeat; background-position:center;  }
+.error_box_rct_coin > div > span { display:none; }
+.error_box_rct_coin > div > label { display:none; }
+.error_box_sensor_rct{ display:none; position: absolute; top: 783px; left: 137px;  float: left; width: 201px; height: 92px; background-image: url("../images/error_menual/RC91_rct.png"); background-size: contain; background-repeat: no-repeat; background-position: center; animation-name:sensorBgAnimation; animation-duration:1s; animation-iteration-count:infinite; }
+.error_box_sensor_coin{ display:none; position: absolute; top: 839px; left: 139px;  float: left; width: 201px; height: 92px; background-image: url("../images/error_menual/RC91_coin.png"); background-size: contain; background-repeat: no-repeat; background-position: center; animation-name:sensorBgAnimation; animation-duration:1s; animation-iteration-count:infinite; }
+
+.error_pop_box_rct_coin{ width: 200px; height: 200px; margin: 135px 0px 0px 80px; background-image:url("../images/error_menual/RC91_rct&coin.png"); background-size:contain; background-repeat:no-repeat; background-position:center;  }
+.error_pop_box_rct_coin > div > span { display:none; }
+.error_pop_box_rct_coin > div > label { display:none; }
+.error_pop_box_sensor_rct{ display:none; position: absolute; top: 678px; left: 120px; float: left; width: 201px; height: 92px; background-image: url("../images/error_menual/RC91_rct.png"); background-size: contain; background-repeat: no-repeat; background-position: center; animation-name:sensorBgAnimation; animation-duration:1s; animation-iteration-count:infinite; }
+.error_pop_box_sensor_coin{ display:none; position: absolute; top: 734px; left: 121px; float: left; width: 201px; height: 92px; background-image: url("../images/error_menual/RC91_coin.png"); background-size: contain; background-repeat: no-repeat; background-position: center; animation-name:sensorBgAnimation; animation-duration:1s; animation-iteration-count:infinite; }
+
+
+.error_list { float:left; width:903px; background-color:#efefef; margin:10px 0px 10px 0px; padding:0px 0px 15px 0px; }
+.error_list_title { float:left; width:873px; height:70px; font-size:43px; font-weight:bold; color:#333333; margin:0px 0px 0px 30px; line-height:70px; }
+.error_list_code { float:left; width:883px; margin:0px 0px 5px 20px; font-size:32px; color:#444444; }
+.error_list_text { float:left; width:883px; margin:0px 0px 20px 20px; font-size:32px; color:#444444; }
+.error_list_button { margin:0 auto; width:200px; height:70px; font-size:34px; font-weight:bold; color:#ffffff; background-color:#921051; text-align:center; display:flex; justify-content:center; align-items:center; }
+.error_list_button > span { display:none; }
+
+.error_caution_box { float:left; width:923px; font-size:34px; margin:10px 0px 0px 0px; }
+.error_caution_box2 { float:left; width:923px; font-size:34px; margin:30px 0px 0px 0px; overflow-x:hidden; overflow-y:auto; }
+.error_caution_box2_bg { float:left; width:923px; font-size:34px; margin:30px 0px 0px 0px; padding:10px 0px 10px 0px; border-top:1px solid #eeeeee; border-bottom:1px solid #eeeeee; overflow-x:hidden; overflow-y:auto; background-color:#efefef; }
+
+.error_caution_info { float:left; width:923px; margin:2px 0px 2px 0px; padding:0px 0px 0px 15px; display:flex; flex-direction:row; }
+.error_caution_info > span { font-weight:bold; color:#921051; }
+.error_caution_info > table { margin:0px; padding:0px; text-align:left; }
+.error_caution_info table tr > td:nth-child(1) { width:179px; vertical-align:top; }
+.error_caution_info table tr > td:nth-child(2) { width:714px; word-break:break-all; }
+.error_caution_info_center { float:left; width:923px; margin:2px 0px 2px 0px; display:flex; align-items:center; justify-content:center; }
+.error_caution_info_center > span { font-weight:bold; color:#921051;  }
+.error_caution_info_exBtn { background-color:#921051; color:#ffffff !important; padding:2px 10px 2px 10px; font-size:31px; }
+
+.error_pop_frame { position:absolute; margin:1920px 0px 0px 0px; width:1080px; height:1920px; background-color:rgba(0,0,0,0.5); z-index:10000; display:flex; align-items:center; flex-direction:column-reverse; }
+
+.error_pop_box { float:left; width:1000px; background-color:#ffffff; margin:0px 0px 40px 0px; }
+
+.error_pop_title { float:left; width:1000px; height:100px; background-color:#921051; font-size:44px; font-weight:bold; color:#ffffff; padding:0px 0px 0px 20px; line-height:105px; }
+
+.error_pop_image_frame { float:left; width:923px; height:500px; margin:50px 0px 0px 39px; background-image:url('../images/error_menual/RC91_sensor.png'); background-repeat:no-repeat; background-size:contain; background-position:center; }
+
+.error_pop_movie_title { float:left; width:1000px; height:50px; font-size:34px; font-weight:bold; text-align:center; line-height:70px; }
+
+.error_pop_movie_frame { float:left; width:1000px; height:600px; display:flex; justify-content:center; align-items:center; }
+.error_pop_movie_frame > video { width:900px; height:560px; }
+
+.error_pop_movie_frame_ex { position:absolute; float:left; width:900px; height:530px; margin:415px 0px 0px 50px; background-color:rgba(0,0,0,0.7); z-index:1; display:flex; justify-content:center; align-items:center; }
+.error_pop_movie_frame_ex_play { border-top: 100px solid transparent; border-bottom: 100px solid transparent; border-left: 200px solid rgb(245, 245, 245); margin:0px 0px 50px 50px; }
+
+.error_pop_close { float:left; width:1000px; height:100px; background-color:#921051; font-size:44px; font-weight:bold; color:#ffffff; display:flex; align-items:center; justify-content:center; }
+.error_pop_close > span { display:none; }
+
+.error_main_btn_box {float:left; display:none; width:1080px; height:120px; margin: 30px 0 0; font-size:35px; color:#ffffff;}
+.error_main_btn_red { float:left; width:267px; height:120px; margin-right:4px; text-align:center; display:flex; justify-content:center; align-items:center; background-color:#921051; }
+.error_main_btn_black { float:left; width:267px; height:120px; margin-right:4px; text-align:center; display:flex; justify-content:center; align-items:center; background-color:#464d57; }
+.error_main_btn_box > div:last-child { margin-right:0px; }
+
+.click_effect > span { display:none; }
+
+.main_graph_error_box { position:absolute; width:680px; height:100px; margin:-1220px 0px 0px 47px; font-weight:bold; }
+.main_graph_error_code { float:left; width:680px; font-size:26px; color:#ee0000; }
+.main_graph_error_info { float:left; width:680px; font-size:26px; color:#ee0000; }

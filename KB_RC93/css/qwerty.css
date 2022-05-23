@@ -1,0 +1,70 @@
+/**************************************************************
+                    국민은행 시재관리기 쿼티 CSS
+**************************************************************/
+#qwerty_wrap {position: absolute; left: 52px; top: 390px; overflow: hidden; width: 920px; height: 240px;}
+#qwerty {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /*top: 550px;*/ /* 모션용 */
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    width: 920px;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 27px 27px 0 0;
+    transition: all 0.3s;
+    box-shadow: 0 -10px 20px rgba(0,0,0,0.05);
+}
+
+.qwerty_key_line {display: flex;justify-content: space-between; width: 874px;}
+.qwerty_key_line:nth-child(2){margin-left: 46px;}
+.qwerty_key {
+    width:80px;
+    height:80px;
+    border:2px solid #cfcfcf;
+    background-color: #eceef1;
+    border-radius:42px;
+    color: #000000;
+    text-align:center;
+    font-size: 36px;
+    line-height:68px;
+    font-family: "Noto Sans CJK KR Medium";
+}
+.qwerty_key.num {font-size: 28px; line-height: 76px; background-color: #cbcfd5;border-color: #a8afba;}
+.qwerty_key.back {font-size: 0px; background: url('../images/styles/qwerty_back.png') center no-repeat; border-color: #cc9808;background-color: #ffbc00;}
+.qwerty_key.clear {font-size: 28px; line-height: 76px; color:#fff;border-color: #545045;background-color: #8d744a;}
+.qwerty_key.shift {font-size: 0px; background: url('../images/styles/qwerty_arrow.png') center no-repeat; background-color: #cbcfd5; border-color: #a8afba; }
+
+
+/* .qwerty_key_line > div:active { background-color:#ffbc00; border-color: #cc9808; color:#ffffff; } */
+.qwerty_key_line > div.back:active {background-image: url('../images/styles/qwerty_arrow.png'); transform: rotate(270deg);}
+
+.qwerty_key:active { background-color:#ffbc00; border-color: #cc9808; color:#ffffff; }
+
+.qwerty_key_disabled {
+    width:80px;
+    height:80px;
+    border:2px solid #cfcfcf;
+    background-color: #eceef1;
+    border-radius:42px;
+    color: #000000;
+    text-align:center;
+    font-size: 36px;
+    line-height:68px;
+    font-family: "Noto Sans CJK KR Medium";
+    opacity: 0.33;
+}
+.qwerty_key_disabled:active { background-color: #eceef1; border-color: #cfcfcf; color:#ffffff; }
+
+
+/* .inputBox.focus + #qwerty_wrap #qwerty {top: 30px;} */ /* 모션용 */
+#input_wrap{ position:absolute; left:80px; top:245px; width:864px; height: 105px;box-sizing: border-box; display: flex; justify-content: space-between;}
+#input_wrap .inputArea{display: flex; flex-direction: column; justify-content: space-between;}
+#input_wrap .inputBox {width:400px; height:76px; font-size: 32px; line-height: 76px; background-color:#fff; border:1px solid #bbbbbb; padding-left:23px;}
+#input_wrap label {width: 400px;font-size: 20px; line-height: 20px; color:#545045;}
+#input_wrap input::placeholder {font-size:22px;}
+#input_wrap input.focus {border:4px solid #ffbc00;padding-left: 20px;}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="668" lth="0" lalpha="0" xround="0" lco="0" bgco="0xf7f7f7" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+  </BasicBox>
+  <sButton></sButton>
+  <Tenkey />
+  <BlockBox>
+    <msg className="" urlpath="../icons/ic_confirm_l.png" mbx="452" mby="200" mbw="125" mbh="120" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="2"/>
+  </BlockBox>
+  <Flv />
+  <BlockMsg />
+  <InputMsg>
+    <im className="" bText="" bmx="23" bmy="400" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="0" fontis="bg" indexG="0" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="23" bmy="460" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="1" fontis="bg" indexG="1" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="23" bmy="520" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="2" fontis="bg" indexG="2" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="23" bmy="580" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="3" fontis="bg" indexG="3" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="23" bmy="640" tsize="32" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="4" fontis="bg" indexG="4" depthG="10" uLineis="0" inputis="0" />
+  </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+        KR18000
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>확인안내</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>

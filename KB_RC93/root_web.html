@@ -1,0 +1,83 @@
+<!---------------------------------------------------------------------------------------------------------------------------------
+			소켓 통신을 통한 화면 전환 프로토타입  
+            2015. 06. 11
+            전기준 black™ (010-4255-3564)
+            * 아래 내용 수정시 수정내용과 수정날짜 수정자 정보를 반드시 기록할것!            
+
+            Revision history:
+                - ver 1.0.0.0 - 최초작성
+                - node web-kit(nw.js)을 이용하여 json데이터를 불러오도록 변경(call_f.js수정)
+                - webserver 불필요/ 원래 http프로토콜을 통해서만 jquery가 json파일을 불러와 파싱할 수 있음.
+                - nodewebkit은 node모듈 사용이 가능함. fs모듈로 파일로딩하여 json데이터 만들도록 함.
+                  2015.09.04
+                - json이 아닌 xml데이터로드하도록 변경 (2016.01.07)
+                - iframe추가(2016.01.19)
+                - 전맹용 키패드를 위한 키보드 이벤트와 키보드이벤트용 콘트롤러가 있는 인덱스값 전역에 추가-keylistener.js(2016_03_16)
+                - 소켓 자동연결기능 추가(2016_03_16)
+                - 소켓 데이터 보내는 함수(2016_12_27) 추가 함
+                - 소켓 포트 담은 js파일 불러오도록 함. CAT과 동일(2016_12_27)
+                - 관련있는 js파일들을 별도의 js파일로 그룹처리함(2017_01_19)
+                - 국민은행 시재관리기 버전과 통합. load.js를 통해서 자바스크립트파일 동적로드하도록 함. (black™-전기준/2018.06.18)
+                - 특수화면용 자바스크립트 파일을 필요한 화면에서만 동적으로 로드하도록 수정함 .(black™-전기준/2018.06.19) 
+                - root에 있는 기본 div들에 대한 css파일을 별도로 뺌(black™-전기준/2018.07.06) 
+                - ver 1.0.0.1 (2021.01.22) - 화면기본정보 영역 추가 (page번호, 리턴데이터, 화면이름), common.js 로딩 (cyg)  
+                - ver 1.0.0.2 (2021.02.15) - 소스통합, 폴더구조 변경 대응 (cyg)
+                - ver 1.0.0.3 (2021.02.26) - L-Banner 영역추가, skin 및 screen 관련부분은 container 내부로 이동 (cyg)
+                - ver 1.0.0.4 (2021.09.24) - 국민은행 시재관리기 ver으로 pageHeader부분 수정 (sjm)
+                - ver 1.0.0.5 (2021.10.26) - main화면과 계원화면 등등 화면전환으로 인한 스킨 변경을 위해
+                                             AP에서 directCmd 데이터를 전송하면 container에 클래스 추가
+                                           - default class => ""
+                                           - 클래스 추가를 위해서는 ap개발자와 협의 후 call_f2.js > directCmd함수에 내용 추가
+                                           - atec_smc.css에 해당 클래스를 추가하고 스킨을 설정 한다.
+----------------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="utf-8">
+    <title>국민은행 시재관리기</title>
+    <script src="./js/lib/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <script src="./js/load.js"></script>
+    <script src="./js/common.js"></script>
+
+    <!--이곳에 모든 오브젝트가 들어가도록 함-->
+    <!--div id="container"-->
+    <div oncontextmenu="return false" onselectstart="return false" ondragstart="return false" id="container">
+    <!-- <div oncontextmenu="return false" onselectstart="return false" ondragstart="return false" id="container" class="manage"> -->
+        <!-- 공통 헤더 -->
+        <div id="pageHeader">
+            <div class="date_box">
+                <p class="mm-dd"></p>
+                <span class="ampm"></span>
+                <span class="time"></span>
+            </div>
+            <span id="branchName" class="area"></span>
+        </div>
+        <!-- 계원모드 헤더 (2021.08.13 : 현대 헤더로 통일) -->
+        <!-- <div id="smcHeader" class="smc_header_top"><div class="smc_header_top_logo"></div></div> -->
+        
+        <!-- 화면 기본정보 출력 영역 -->
+        <div id="pageNumber"></div>
+        <div id="rtn"></div>
+        <div id="screenName"></div>
+        
+        <!--스킨-->
+        <div id="skin"></div> <!-- 일반화면 공통 스킨-->
+        <div id="skin_lv"></div>  <!-- 저시력인 화면 스킨-->
+        <div id="skin_bp"></div>  <!-- 전맹일 화면 스킨-->
+
+    </div>
+
+    <!--div id="atmMenu"></div-->
+    <!--<div id="continueMenu">연속거래메뉴 레이어</div>-->
+    <!--<div id="gnbMenu">상단메뉴바 레이어</div>-->
+    <!--<div id="yakGuan">약관 레이어 2016_09_06추가</div>-->
+    <!--<div id="popUpMenu">팝업메뉴 레이어</div> -->
+    <!--div id="allMenu"><전체메뉴></div-->
+    <!--div id="keypad"><키패드></div-->
+    <!--<div id="querty">키보드</div>-->
+</body>
+
+</html>

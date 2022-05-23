@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Display viewtype="Bank">
+  <BasicBox>
+    <bgx className="baseWrap" xgab="0" ygab="106" wgab="1024" hgab="522" lth="0" lalpha="0" xround="0" lco="0" bgco="0xf7f7f7" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+    <bgx className="baseWrap" xgab="0" ygab="628" wgab="1024" hgab="140" lth="0" lalpha="0" xround="0" lco="0" bgco="0xffffff" balpha="1" shadowis="0" iname="2" rotate="0" indexG="2" globalIs="1" shadowDi="0" shadowAn="0" shadowCo="NaN" shadowAl="NaN" shadowBl="NaN" shadowSt="NaN" shadowIn="false" depthG="0" />
+  </BasicBox>
+  <sButton>
+     <btns className="confirm_btn" urlpath="../btn/confirm_bg.png" breturn="X[X]" bx="252" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="0" rtnUIC="0" ign="false" levelIs="0" indexG="1" depthG="2">
+      <textIs btext="관리 모드" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="center" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="202.05" />
+    </btns>
+     <btns className="confirm_btn" urlpath="../btn/confirm_bg.png" breturn="=[1009]" bx="552" by="668" bw="220" bh="60" visibleis="show" snd="ding.mp3" dimd="0" ignorePo="0" po="" iname="1" rtnUIC="0" ign="false" levelIs="0" indexG="6" depthG="1">
+      <textIs btext="봉투 거래" tcolor="0xffffff" tsize="24" lspacing="-1" linesp="0" filteris="0" centeris="1" globalIs="1" talign="left" fontis="Noto Sans CJK KR Medium" tmargin="23.1" xscale="1" lmargin="228.05" />
+    </btns>
+  </sButton>
+  <Tenkey />
+  <BlockBox>
+   <msg className="" urlpath="../icons/ic_notice.png" mbx="452" mby="200" mbw="120" mbh="120" param="" ign="false" iname="0" indexG="0" rotate="0" depthG="2"/>
+  </BlockBox>
+  <Flv />
+   <BlockMsg>
+     <bm className="notice_text center" bText="지금은 사용하실 수 없습니다" bmy="60" tsize="36" tcolor="0x545045" lspacing="-1" linesp="10" talign="CENTER" rotate="0" xscale="1" alp="1" iname="0" fontis="Noto Sans CJK KR Regular" indexG="0" depthG="0" boldis="0" uLineis="0" />
+ </BlockMsg>
+<InputMsg>
+    <im className="" bText="" bmx="23" bmy="400" tsize="28" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="0" fontis="bg" indexG="0" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="23" bmy="440" tsize="28" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="1" fontis="bg" indexG="1" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="23" bmy="480" tsize="28" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="2" fontis="bg" indexG="2" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="23" bmy="520" tsize="28" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="3" fontis="bg" indexG="3" depthG="10" uLineis="0" inputis="0" />
+    <im className="" bText="" bmx="23" bmy="560" tsize="28" tcolor="0x545045" lspacing="0" linesp="0" talign="center" bwidth="982" bheight="35" iname="4" fontis="bg" indexG="4" depthG="10" uLineis="0" inputis="0" />
+ </InputMsg>
+  <aniBox />
+  <Snd />
+  <ScreenNumber>
+    KR18004
+  </ScreenNumber>
+  <ScreenName depth="0" display="0" type="" shortType="">
+    <comment>장애화면</comment>
+  </ScreenName>
+  <Custom/>
+  <ArrowSts start=""></ArrowSts>
+  <TestData>
+  </TestData>
+  <TTS />
+</Display>
